@@ -101,7 +101,7 @@
 	
 	<target name="zip" depends="api, lib, testprotocol">
 		<mkdir dir="build" />
-		<tar destfile="build/exedio-cope-home.tar.bz2"
+		<tar destfile="build/exedio-cope-web.tar.bz2"
 			  compression="bzip2">
 			<tarfileset dir="${basedir}/home" />
 		</tar>
@@ -114,7 +114,7 @@
 
 	<target name="cruise" depends="clean, all">
 		<copy todir="${basedir}/cruise">
-			<fileset file="${basedir}/build/exedio-cope-home.tar.bz2" />
+			<fileset file="${basedir}/build/exedio-cope-web.tar.bz2" />
 		</copy>
 	</target>
 	
