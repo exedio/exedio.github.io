@@ -7,37 +7,12 @@
 	
 	<taskdef name="LoadFile" classname="org.apache.tools.ant.taskdefs.LoadFile" />
 	
-	<macrodef name="ljavac">
-		<attribute name="srcdir" />
-		<attribute name="destdir" />
-		<attribute name="includeAntRuntime" default="false" />
-		<element name="classpath" optional="true" implicit="true" />
-		<sequential>
-			<!--echo message="local compile @{srcdir} to @{destdir}" /-->
-			<mkdir dir="@{destdir}" />
-			<javac srcdir="@{srcdir}"
-					 destdir="@{destdir}"
-					 includeAntRuntime="@{includeAntRuntime}"
-					 source="1.5"
-					 deprecation="on"
-					 debug="on"
-					 optimize="off">
-				<classpath />
-				<compilerarg value="-Xlint" />
-				<compilerarg value="-encoding" />
-				<compilerarg value="ascii" />
-			</javac>
-		</sequential>
-	</macrodef>
-	
 	<target name="clean">
 		<delete dir="home/api" />
 		<delete dir="build" />
 		<delete dir="home/lib" />
 		<delete dir="home/testprotocol.html" />
 	</target>
-	
-	<!-- home -->
 	
 	<target name="home.api">
 
