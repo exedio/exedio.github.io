@@ -8,8 +8,8 @@
 	<taskdef name="LoadFile" classname="org.apache.tools.ant.taskdefs.LoadFile" />
 	
 	<target name="clean">
-		<delete dir="home/api" />
 		<delete dir="build" />
+		<delete dir="home/api" />
 		<delete dir="home/lib" />
 		<delete dir="home/testprotocol.html" />
 	</target>
@@ -23,9 +23,6 @@
 		<property name="api.link.j2ee"  value="http://java.sun.com/j2ee/1.4/docs/api" />
 		<property name="api.link.junit" value="http://junit.sourceforge.net/javadoc" />
 		<property name="api.link.ant"   value="http://www.dpml.net/api/ant/1.6.5" />
-
-		<delete dir="home/api" />
-		<mkdir  dir="home/api" />
 
 		<javadoc
 				destdir="home/api"
