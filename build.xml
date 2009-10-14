@@ -14,7 +14,7 @@
 		<delete dir="home/testprotocol.html" />
 	</target>
 	
-	<target name="home.api">
+	<target name="api">
 
 		<mkdir dir="build/cope" />
 		<unzip src="lib/exedio-cope.jar-src.zip" dest="build/cope" />
@@ -66,9 +66,8 @@
 		</javadoc>
 	</target>
 	
-	<target name="api" depends="home.api" />
 	
-	<target name="home.lib">
+	<target name="lib">
 		<copy todir="home/lib">
 			<fileset dir="lib">
 				<include name="exedio-cope.jar" />
@@ -80,7 +79,7 @@
 		</copy>
 	</target>
 
-	<target name="home.testprotocol">
+	<target name="testprotocol">
 		<java classname="com.exedio.cope.console.EnvironmentCop" taskname="testprotocol"
 				fork="yes" failonerror="yes">
 			<classpath>
@@ -104,7 +103,7 @@
 		</copy>
 	</target>
 	
-	<target name="home.zip" depends="home.api, home.lib, home.testprotocol">
+	<target name="zip" depends="api, lib, testprotocol">
 		<mkdir dir="build" />
 		<tar destfile="build/exedio-cope-home.tar.bz2"
 			  compression="bzip2">
@@ -112,10 +111,8 @@
 		</tar>
 	</target>
 	
-	<target name="home" depends="home.zip" />
-	
 	<target name="build"
-			depends="home" />
+			depends="zip" />
 	
 	<target name="all" depends="build" />
 
