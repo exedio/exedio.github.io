@@ -9,11 +9,8 @@
 			<fileset dir="lib">
 				<include name="exedio-cope.jar-CHANGELOG" />
 				<include name="exedio-cops.jar-CHANGELOG" />
-				<include name="exedio-cops.jar-src.zip" />
 				<include name="exedio-cope-util.jar-CHANGELOG" />
-				<include name="exedio-cope-util.jar-src.zip" />
 				<include name="commons-io.jar" />
-				<include name="commons-fileupload.jar" />
 				<include name="cojen.jar" />
 			</fileset>
 		</delete>

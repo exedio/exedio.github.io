@@ -16,9 +16,10 @@
 	
 	<target name="api">
 
-		<unzip src="lib/exedio-cope.jar-src.zip" dest="build/cope" />
+		<unzip src="lib/exedio-cope.jar-src.zip" dest="build/src" />
+		<unzip src="lib/exedio-cops.jar-src.zip" dest="build/src" />
+		<unzip src="lib/exedio-cope-util.jar-src.zip" dest="build/src" />
 
-		<property name="api.link.cops"  value="http://download.exedio.com/api/cops" />
 		<property name="api.link.jdk"   value="http://java.sun.com/j2se/1.5.0/docs/api" />
 		<property name="api.link.j2ee"  value="http://java.sun.com/j2ee/1.4/docs/api" />
 		<property name="api.link.junit" value="http://junit.sourceforge.net/javadoc" />
@@ -44,21 +45,20 @@
 			<link href="${api.link.j2ee}"  packagelistLoc="package-list/j2ee"  offline="true" />
 			<link href="${api.link.junit}" packagelistLoc="package-list/junit" offline="true" />
 			<link href="${api.link.ant}"   packagelistLoc="package-list/ant"   offline="true" />
-			<link href="${api.link.cops}"  packagelistLoc="package-list/cops"  offline="true" />
-			<fileset file="build/cope" includes="**/*.java" />
+			<fileset file="build/src" includes="**/*.java" />
 			<classpath>
 				<pathelement location="lib/trove.jar" />
 				<pathelement location="lib/junit.jar" />
 				<pathelement location="${ant.jar}" />
 				<pathelement location="lib/bsh-core.jar" />
 				<pathelement location="lib/cojen.jar" />
-				<pathelement location="lib/exedio-cops.jar" />
-				<pathelement location="lib/exedio-cope-util.jar" />
 				<pathelement location="lib/servlet-api.jar" />
+				<pathelement location="lib/commons-fileupload.jar" />
 			</classpath>
-			<group title="Cope Runtime Library" packages="com.exedio.cope:com.exedio.cope.*" />
+			<group title="Cope Persistence Framework" packages="com.exedio.cope:com.exedio.cope.*" />
 			<group title="Cope Instrumentor" packages="com.exedio.cope.instrument" />
 			<group title="Database Schema Management Facility" packages="com.exedio.dsmf" />
+			<group title="Cops Web Framework" packages="com.exedio.cops" />
 		</javadoc>
 	</target>
 	
