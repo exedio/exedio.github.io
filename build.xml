@@ -16,7 +16,6 @@
 	
 	<target name="api">
 
-		<mkdir dir="build/cope" />
 		<unzip src="lib/exedio-cope.jar-src.zip" dest="build/cope" />
 
 		<property name="api.link.cops"  value="http://download.exedio.com/api/cops" />
