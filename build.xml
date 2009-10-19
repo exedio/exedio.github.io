@@ -16,6 +16,7 @@
 	
 	<target name="api">
 
+		<unzip src="lib/exedio-cope-live.jar-src.zip" dest="build/src" />
 		<unzip src="lib/exedio-cope.jar-src.zip" dest="build/src" />
 		<unzip src="lib/exedio-cops.jar-src.zip" dest="build/src" />
 		<unzip src="lib/exedio-cope-util.jar-src.zip" dest="build/src" />
@@ -58,6 +59,7 @@
 			</classpath>
 			<group title="Cope Persistence Framework" packages="com.exedio.cope:com.exedio.cope.*" />
 			<group title="Cope Instrumentor" packages="com.exedio.cope.instrument" />
+			<group title="Cope Live Editor" packages="com.exedio.cope.live:com.exedio.cope.live.*" />
 			<group title="Database Schema Management Facility" packages="com.exedio.dsmf" />
 			<group title="Cops Web Framework" packages="com.exedio.cops" />
 		</javadoc>
