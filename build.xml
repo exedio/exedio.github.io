@@ -121,4 +121,10 @@
 		</copy>
 	</target>
 	
+	<target name="hudson" depends="all">
+		<copy todir="${basedir}/build/success">
+			<fileset file="${basedir}/build/exedio-cope-web.tar.bz2" />
+		</copy>
+	</target>
+
 </project>
