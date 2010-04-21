@@ -113,12 +113,6 @@
 			depends="zip" />
 	
 	<target name="all" depends="build" />
-
-	<target name="cruise" depends="clean, all">
-		<copy todir="${basedir}/cruise">
-			<fileset file="${basedir}/build/exedio-cope-web.tar.bz2" />
-		</copy>
-	</target>
 	
 	<target name="hudson" depends="all">
 		<copy todir="${basedir}/build/success">
