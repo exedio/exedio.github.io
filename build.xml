@@ -48,6 +48,8 @@
 			<link href="${api.link.junit}" packagelistLoc="package-list/junit" offline="true" />
 			<link href="${api.link.ant}"   packagelistLoc="package-list/ant"   offline="true" />
 			<fileset file="build/src" includes="**/*.java" />
+			<fileset file="mountsrc/instrument" includes="**/*.java" />
+			<fileset file="mountsrc/instrumentant" includes="**/*.java" />
 			<classpath>
 				<pathelement location="lib/trove.jar" />
 				<pathelement location="lib/junit.jar" />
@@ -55,6 +57,7 @@
 				<pathelement location="lib/cojen.jar" />
 				<pathelement location="lib/servlet-api.jar" />
 				<pathelement location="lib/commons-fileupload.jar" />
+				<pathelement location="${ant.core.lib}" />
 			</classpath>
 			<group title="Cope Persistence Framework" packages="com.exedio.cope:com.exedio.cope.*" />
 			<group title="Cope Instrumentor" packages="com.exedio.cope.instrument" />
