@@ -3,7 +3,7 @@
 <project name="copeweb" default="build" basedir=".">
 
 	<property file="local.properties" />
-	<property name="build.file.tag" value="unlabeled" />
+	<property file="project.properties" />
 	
 	<taskdef name="LoadFile" classname="org.apache.tools.ant.taskdefs.LoadFile" />
 	
@@ -20,11 +20,6 @@
 		<unzip src="lib/exedio-cope.jar-src.zip" dest="build/src" />
 		<unzip src="lib/exedio-cops.jar-src.zip" dest="build/src" />
 		<unzip src="lib/exedio-cope-util.jar-src.zip" dest="build/src" />
-
-		<property name="api.link.jdk"   value="http://java.sun.com/j2se/1.5.0/docs/api" />
-		<property name="api.link.j2ee"  value="http://java.sun.com/j2ee/1.4/docs/api" />
-		<property name="api.link.junit" value="http://junit.org/apidocs" />
-		<property name="api.link.ant"   value="http://www.dpml.net/api/ant/1.6.5" />
 
 		<javadoc
 				destdir="home/api"
