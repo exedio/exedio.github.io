@@ -19,6 +19,7 @@
 		<unzip src="lib/exedio-cope-src.zip" dest="build/src" />
 		<unzip src="lib/exedio-cops-src.zip" dest="build/src" />
 		<unzip src="lib/exedio-cope-util-src.zip" dest="build/src" />
+		<delete file="build/src/com/exedio/cops/FileServlet.java" />
 
 		<javadoc
 				destdir="home/api"
