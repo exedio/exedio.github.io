@@ -37,7 +37,7 @@
 			<doctitle><![CDATA[exedio cope<br>API Specification]]></doctitle>
 			<header><![CDATA[<b>exedio cope<b>]]></header>
 			<footer><![CDATA[Cope with<br>Object<br>Persistence]]></footer>
-			<bottom><![CDATA[<a href="http://sourceforge.net/projects/cope"><img src="http://sflogo.sourceforge.net/sflogo.php?group_id=152867&amp;type=12" width="120" height="30" border="0" align="right" alt="Get COPE at SourceForge.net." /></a><small>Copyright &copy; 2004-2009 <a href="http://www.exedio.com/" target="_top">exedio</a> Gesellschaft f&uuml;r Softwareentwicklung mbH. All rights reserved.</small><br><font size="-3">${build.tag}</font>]]></bottom>
+			<bottom><![CDATA[<a href="http://sourceforge.net/projects/cope"><img src="http://sflogo.sourceforge.net/sflogo.php?group_id=152867&amp;type=12" width="120" height="30" border="0" align="right" alt="Get COPE at SourceForge.net." /></a><small>Copyright &copy; 2004-2014 <a href="http://www.exedio.com/" target="_top">exedio</a> Gesellschaft f&uuml;r Softwareentwicklung mbH. All rights reserved.</small><br><font size="-3">${build.tag}</font>]]></bottom>
 			<link href="${api.link.jdk}"   packagelistLoc="package-list/jdk"   offline="true" />
 			<link href="${api.link.j2ee}"  packagelistLoc="package-list/j2ee"  offline="true" />
 			<link href="${api.link.junit}" packagelistLoc="package-list/junit" offline="true" />
