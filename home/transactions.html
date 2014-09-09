@@ -79,6 +79,17 @@ finally
    Main.model.<a href="api/com/exedio/cope/Model.html#rollbackIfNotCommitted()">rollbackIfNotCommitted</a>();
 }
 </pre>
+		<div>
+			For even more convenience you may use the try-with-resources syntax
+			introduced in Java 1.7:
+		</div>
+<pre>
+try(<a href="api/com/exedio/cope/TransactionTry.html">TransactionTry</a> tx = Main.model.<a href="api/com/exedio/cope/Model.html#startTransactionTry(java.lang.String)">startTransactionTry</a>("web"))
+{
+   // put the body of the transaction here
+   tx.<a href="api/com/exedio/cope/TransactionTry.html#commit()">commit</a>();
+}
+</pre>
 		<h3>Further Reading</h3>
 		<div>
 			There is not much more to say about transactions,
