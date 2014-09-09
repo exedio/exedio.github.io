@@ -49,15 +49,15 @@
 boolean failure = true;
 try
 {
-   Main.model.startTransaction();
+   Main.model.<a href="api/com/exedio/cope/Model.html#startTransaction()">startTransaction</a>();
    // put the body of the transaction here
-   Main.model.commit();
+   Main.model.<a href="api/com/exedio/cope/Model.html#commit()">commit</a>();
    failure = false;
 }
 finally
 {
    if(failure)
-      Main.model.rollback();
+      Main.model.<a href="api/com/exedio/cope/Model.html#rollback()">rollback</a>();
 }
 </pre>
 		<div>
@@ -70,13 +70,13 @@ finally
 <pre>
 try
 {
-   Main.model.startTransaction();
+   Main.model.<a href="api/com/exedio/cope/Model.html#startTransaction()">startTransaction</a>();
    // put the body of the transaction here
-   Main.model.commit();
+   Main.model.<a href="api/com/exedio/cope/Model.html#commit()">commit</a>();
 }
 finally
 {
-   Main.model.rollbackIfNotCommitted();
+   Main.model.<a href="api/com/exedio/cope/Model.html#rollbackIfNotCommitted()">rollbackIfNotCommitted</a>();
 }
 </pre>
 		<h3>Further Reading</h3>
