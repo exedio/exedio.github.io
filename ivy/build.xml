@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<project name="ivy" default="copy">
+	<import file="common.xml" />
+	<target name="copy" depends="resolve">
+		
+		<copy overwrite="true" todir="../lib">
+			<firstmatchmapper>
+				<globmapper from="*-jar.jar" to="*.jar" />
+				<globmapper from="*-dist.tar.gz" to="*.tar.gz" />
+				<globmapper from="*" to="*" />
+			</firstmatchmapper>
+			<fileset dir="artifacts/lib">
+				<exclude name="*-log.txt" />
+				<exclude name="bsh-src.jar" />
+				<exclude name="trove-src.jar" />
+				<exclude name="exedio-cope-servletutil-src.zip" />
+				<exclude name="servlet-api-source.jar" />
+				<exclude name="cojen-jar.jar" />
+			</fileset>
+		</copy>
+		
+	</target>
+</project>

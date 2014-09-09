@@ -16,15 +16,14 @@
 	
 	<target name="api">
 
-		<unzip src="lib/exedio-cope-live.jar-src.zip" dest="build/src" />
-		<unzip src="lib/exedio-cope.jar-src.zip" dest="build/src" />
-		<unzip src="lib/exedio-cops.jar-src.zip" dest="build/src" />
-		<unzip src="lib/exedio-cope-util.jar-src.zip" dest="build/src" />
+		<unzip src="lib/exedio-cope-src.zip" dest="build/src" />
+		<unzip src="lib/exedio-cops-src.zip" dest="build/src" />
+		<unzip src="lib/exedio-cope-util-src.zip" dest="build/src" />
 
 		<javadoc
 				destdir="home/api"
 				maxmemory="60m"
-				source="1.5"
+				source="1.7"
 				private="off"
 				author="on"
 				use="on"
@@ -49,13 +48,12 @@
 				<pathelement location="lib/bsh-core.jar" />
 				<pathelement location="lib/cojen.jar" />
 				<pathelement location="lib/servlet-api.jar" />
-				<pathelement location="lib/commons-fileupload.jar" />
+				<pathelement location="lib/exedio-cope-instrument-annotations.jar" />
 				<pathelement location="${ant.core.lib}" />
 			</classpath>
 			<group title="Persistence Framework" packages="com.exedio.cope:com.exedio.cope.*" />
 			<group title="Instrumentor" packages="com.exedio.cope.instrument" />
-			<group title="Live Editor" packages="com.exedio.cope.live:com.exedio.cope.live.*" />
-			<group title="Database Schema Management Facility" packages="com.exedio.dsmf" />
+			<group title="Database Schema Management Facility" packages="com.exedio.dsmf:com.exedio.dsmf.*" />
 			<group title="Web Framework" packages="com.exedio.cops" />
 		</javadoc>
 	</target>
@@ -82,6 +80,7 @@
 				<pathelement location="lib/trove.jar" />
 				<pathelement location="lib/exedio-cops.jar" />
 				<pathelement location="lib/servlet-api.jar" />
+				<pathelement location="lib/slf4j-api.jar" />
 			</classpath>
 			<arg value="build/testprotocol.html"/>
 			<assertions><enable/></assertions>
