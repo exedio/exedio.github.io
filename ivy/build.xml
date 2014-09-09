@@ -16,6 +16,7 @@
 				<exclude name="exedio-cope-servletutil-src.zip" />
 				<exclude name="servlet-api-source.jar" />
 				<exclude name="cojen-jar.jar" />
+				<exclude name="findbugs-dist.tar.gz" />
 			</fileset>
 		</copy>
 		
