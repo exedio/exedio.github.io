@@ -50,6 +50,7 @@
 				<pathelement location="lib/slf4j-api.jar" />
 				<pathelement location="lib/servlet-api.jar" />
 				<pathelement location="lib/exedio-cope-instrument-annotations.jar" />
+				<pathelement location="lib/exedio-cope-servletutil.jar" />
 				<pathelement location="lib/findbugs-annotations.jar" />
 				<pathelement location="${ant.core.lib}" />
 			</classpath>
