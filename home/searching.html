@@ -307,7 +307,7 @@ List&lt;Order&gt; orders = q.search();
 			using a convenience method:
 		</div>
 <pre>
-q.join(Order.TYPE, Order.buyer.<b>equalTarget()</b>);
+q.join(Customer.TYPE, Order.buyer.<b>equalTarget()</b>);
 </pre>
 		<h3><a name="further">Further Reading</a></h3>
 		<div>
