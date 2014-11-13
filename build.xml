@@ -32,6 +32,7 @@
 				version="on"
 				windowtitle="exedio cope"
 				noindex="true"
+				nodeprecatedlist="true"
 				failonerror="true"
 				additionalparam="-notimestamp"
 			>
