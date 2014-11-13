@@ -32,7 +32,6 @@
 				version="on"
 				windowtitle="exedio cope"
 				noindex="true"
-				linksource="on"
 				failonerror="true"
 				additionalparam="-notimestamp"
 			>
