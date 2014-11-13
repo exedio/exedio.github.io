@@ -31,7 +31,7 @@
 				use="on"
 				version="on"
 				windowtitle="exedio cope"
-				splitindex="on"
+				noindex="true"
 				linksource="on"
 				failonerror="true"
 				additionalparam="-notimestamp"
