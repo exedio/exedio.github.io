@@ -21,6 +21,7 @@
 		<unzip src="lib/exedio-cope-util-src.zip" dest="build/src" />
 		<delete file="build/src/com/exedio/cops/FileServlet.java" />
 
+		<delete dir="home/api" />
 		<javadoc
 				destdir="home/api"
 				maxmemory="60m"
