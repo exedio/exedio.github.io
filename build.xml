@@ -28,7 +28,6 @@
 				source="1.7"
 				private="off"
 				author="on"
-				use="on"
 				version="on"
 				windowtitle="exedio cope"
 				noindex="true"
