@@ -33,6 +33,7 @@
 				splitindex="on"
 				linksource="on"
 				failonerror="true"
+				additionalparam="-notimestamp"
 			>
 			<doctitle><![CDATA[exedio cope<br>API Specification]]></doctitle>
 			<header><![CDATA[<b>exedio cope<b>]]></header>
