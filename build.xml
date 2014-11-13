@@ -26,7 +26,6 @@
 				destdir="home/api"
 				maxmemory="60m"
 				source="1.7"
-				private="off"
 				author="on"
 				version="on"
 				windowtitle="exedio cope"
