@@ -2,17 +2,16 @@
 <html>
 	<head>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8">
-		<title>COPE - Introduction Trail</title>
+		<title>exedio persistence - Introduction Trail</title>
 		<meta name="keywords" content="Persistence, Java">
-		<meta name="description" content="COPE - a persistence framework for Java">
+		<meta name="description" content="persistence framework for java">
 		<link rel="stylesheet" href="cope.css">
 	</head>
 	<body>
 		<a href="http://www.exedio.com/">
 			<img src="exedio.png" class="exedio" alt="Exedio Logo" />
 		</a>
-		<h1><a href="index.html">COPE</a></h1>
-		<div>Cope with Object Persistence</div>
+		<h1><a href="index.html">exedio persistence</a></h1>
 		
 		<h2>Introduction Trail</h2>
 		<a href="http://sourceforge.net/projects/cope">
@@ -20,12 +19,12 @@
 				class="sf" alt="Get COPE at SourceForge.net." />
 		</a>
 		<div>
-			This is the initial trail of the cope documentation trails.
-			It gives you a step-by-step introduction into the persistence framework cope.
+			This is the initial trail of the documentation trails.
+			It gives you a step-by-step introduction into the persistence framework.
 		</div>
 		<div>
-			If you already decided to use cope for a project,
-			you may want to use the cope demoshop as a template.
+			If you already decided to use exedio persistence for a project,
+			you may want to use the demoshop as a template.
 			This way you can skip most of the steps described here.
 			The demoshop is available under the
 			<a href="http://www.opensource.org/licenses/mit-license.php">The&nbsp;MIT&nbsp;License</a>.
@@ -42,7 +41,7 @@
 		</ul>
 		<h3><a name="item">Your first item</a></h3>
 		<div>
-			Creating a new persistent class within COPE is
+			Creating a new persistent class is
 			as easy as creating any java class.
 			Make sure, the class extends <a href="api/com/exedio/cope/Item.html">Item</a>:
 		</div>
@@ -66,7 +65,7 @@ class Customer extends <a href="api/com/exedio/cope/Item.html">Item</a>
 </pre>
 		<div>
 			Thats the way you declare persistent classes and fields.
-			Now we have to setup the cope source code instrumentor.
+			Now we have to setup the source code instrumentor.
 		</div>
 		<h3><a name="instrument">Setting up the instrumentor</a></h3>
 		<div>
@@ -166,8 +165,8 @@ Customer(ReactivationConstructorDummy d, int pk)
 </pre>
 		<div>
 			All you need to know about this for now is,
-			that COPE uses this constructor internally and you don't have to care about.
-			This constructor is one of the few things cope has to demand for all persistent classes.
+			that the framework uses this constructor internally and you don't have to care about.
+			This constructor is one of the few things the framework has to demand for all persistent classes.
 		</div>
 		<div>
 			Next are the <i>field getter</i>
@@ -208,7 +207,7 @@ static final Type&lt;Customer&gt; TYPE =
 		</div>
 		<h3><a name="run">Make it run</a></h3>
 		<div>
-			First we have to tell cope,
+			First we have to tell the framework,
 			which persistent types are to be maintained by the project.
 			For now this will be type <tt>Customer</tt> only.
 			So we write a new class <tt>Main</tt>:
@@ -227,7 +226,7 @@ class Main
 			Just make sure, that all your persistent types show up in the list.
 		</div>
 		<div>
-			Next we will setup the database connection to be used by cope.
+			Next we will setup the database connection to be used by exedio persistence.
 			First put a jdbc driver
 			(i.e. <tt>hsqldb.jar</tt> or <tt>mysql-connector-bin-3.1.12.jar</tt>)
 			in your classpath.
@@ -285,7 +284,7 @@ public static void main(String[] args)
 		</div>
 		<h3><a name="further">Further Reading</a></h3>
 		<div>
-			This was the initial trail of the cope tour.
+			This was the initial trail of the tour.
 			You may now proceed to the following trails:
 			<ul>
 				<li>
@@ -298,7 +297,7 @@ public static void main(String[] args)
 				</li>
 				<li>
 					<a href="webapplications.html">Web Application Trail</a>
-					shows you the little differences when using cope within a web container.
+					shows you the little differences when using exedio persistence within a web container.
 				</li>
 			</ul>
 		</div>
