@@ -2,17 +2,16 @@
 <html>
 	<head>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8">
-		<title>COPE - Field Reloaded Trail</title>
+		<title>exedio persistence - Field Reloaded Trail</title>
 		<meta name="keywords" content="Persistence, Java">
-		<meta name="description" content="COPE - a persistence framework for Java">
+		<meta name="description" content="persistence framework for java">
 		<link rel="stylesheet" href="cope.css">
 	</head>
 	<body>
 		<a href="http://www.exedio.com/">
 			<img src="exedio.png" class="exedio" alt="Exedio Logo" />
 		</a>
-		<h1><a href="index.html">COPE</a></h1>
-		<div>Cope with Object Persistence</div>
+		<h1><a href="index.html">exedio persistence</a></h1>
 		
 		<h2>Field Reloaded Trail</h2>
 		<a href="http://sourceforge.net/projects/cope">
@@ -22,7 +21,7 @@
 		<div>
 			While the <a href="fields.html">Field Trail</a>
 			covered the most fundamental fields only,
-			this trails shows you some more special ways to store data with COPE.
+			this trails shows you some more special ways to store data.
 			Although most of the features below are not fields in a formal sense
 			(means subclasses of class <a href="api/com/exedio/cope/Field.html">Field</a>)
 			you don't have to care about this until you want to develop such features yourself.
@@ -147,7 +146,7 @@ static final <a href="api/com/exedio/cope/pattern/EnumMapField.html">EnumMapFiel
 			However, sometimes you just want to store a day.
 			Millisecond precision is then just an additional source for mistakes.
 			Since the java runtime library does not provide a value class for this,
-			COPE has to introduce it's own <a href="api/com/exedio/cope/util/Day.html">Day</a>.
+			exedio persistence has to introduce it's own <a href="api/com/exedio/cope/util/Day.html">Day</a>.
 			To define a <i>day field</i> within a type write:
 		</div>
 <pre>
@@ -155,7 +154,7 @@ static final <a href="api/com/exedio/cope/DayField.html">DayField</a> dateOfBirt
 </pre>
 		<h3><a name="constraints">Check Constraints</a></h3>
 		<div>
-			COPE makes it easy to define check constraints for persistent fields.
+			exedio persistence makes it easy to define check constraints for persistent fields.
 			Here an example with a string field, that holds at most 40 characters
 			and an integer field that must not be negative:
 		</div>
@@ -175,20 +174,20 @@ class Customer extends Item
 		</div>
 		<h3><a name="further">Further Reading</a></h3>
 		<div>
-			This was the advanced field trail of the cope tour.
+			This was the advanced field trail of the tour.
 			You may now proceed to trails:
 			<ul>
 				<li>
 					<a href="transactions.html">Transactions Trail</a>
-					tells you how to use transactions in cope.
+					tells you how to use transactions in exedio persistence.
 				</li>
 				<li>
 					<a href="searching.html">Searching Trail</a>
-					gives you an introduction into the searching capabilities of cope.
+					gives you an introduction into the searching capabilities of exedio persistence.
 				</li>
 				<li>
 					<a href="webapplications.html">Web Application Trail</a>
-					shows you the little differences when using cope within a web container.
+					shows you the little differences when using the framework within a web container.
 				</li>
 			</ul>
 		</div>
