@@ -2,17 +2,16 @@
 <html>
 	<head>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8">
-		<title>COPE - Web Application Trail</title>
+		<title>exedio persistence - Web Application Trail</title>
 		<meta name="keywords" content="Persistence, Java">
-		<meta name="description" content="COPE - a persistence framework for Java">
+		<meta name="description" content="persistence framework for java">
 		<link rel="stylesheet" href="cope.css">
 	</head>
 	<body>
 		<a href="http://www.exedio.com/">
 			<img src="exedio.png" class="exedio" alt="Exedio Logo" />
 		</a>
-		<h1><a href="index.html">COPE</a></h1>
-		<div>Cope with Object Persistence</div>
+		<h1><a href="index.html">exedio persistence</a></h1>
 		
 		<h2>Web Application Trail</h2>
 		<a href="http://sourceforge.net/projects/cope">
@@ -20,13 +19,13 @@
 				class="sf" alt="Get COPE at SourceForge.net." />
 		</a>
 		<div>
-			COPE itself doesn't care,
+			exedio persistence itself doesn't care,
 			whether it runs in a web container or not.
 			However it provides some additional convenience,
 			when used within web applications.
 		</div>
 		<div>
-			If you already decided to use cope for a project,
+			If you already decided to use exedio persistence for a project,
 			you may want to use the demo application as a template.
 			This way you can skip the steps described here.
 			The demo application is available under the
@@ -38,14 +37,14 @@
 		<ul>
 			<li><a href="#connect">Connecting</a></li>
 			<li><a href="#transactions">Transactions</a></li>
-			<li><a href="#console">COPE Console</a></li>
+			<li><a href="#console">exedio console</a></li>
 			<li><a href="#copernica">Copernica</a></li>
 			<li><a href="#context">Context Parameter</a></li>
 			<li><a href="#further">Further Reading</a></li>
 		</ul>
 		<h3><a name="connect">Connecting</a></h3>
 		<div>
-			COPE must be told, where to connect to the database.
+			The framework must be told, where to connect to the database.
 			Within a servlet you probably
 			want to do this in the <tt>init()</tt> method.
 			The file <tt>cope.properties</tt> should be in the
@@ -83,7 +82,7 @@ public void init() throws ServletException
 		<h3><a name="transactions">Transactions</a></h3>
 		<div>
 			From the <a href="transactions.html">Transaction Trail</a> you
-			already know, how to use transactions with COPE.
+			already know, how to use transactions with exedio persistence.
 			With a single servlet you may want to write something like this:
 		</div>
 <pre>
@@ -145,24 +144,24 @@ protected void doGet(
 			model in its own <tt>init()</tt>,
 			so you don't have to care about it anymore.
 		</div>
-		<h3><a name="console">COPE Console</a></h3>
+		<h3><a name="console">exedio console</a></h3>
 		<img src="console.png" alt="Console Screenshot" width="406" height="241" border="0" align="right">
 		<div>
 			When you start up your web application,
 			you have to create the database schema at least once.
 			This is done by calling <tt>Main.model.createDatabase()</tt>.
 			Instead of putting a button somewhere in a jsp of your application,
-			you can use the <i>COPE Console</i>,
+			you can use the <i>exedio console</i>,
 			which assists you in creating/dropping/revising the database schema
 			and more.
 		</div>
 		<div>
-			On the right you see the relevant part of the <i>COPE Console</i>.
+			On the right you see the relevant part of the <i>exedio console</i>.
 			The button <i>create</i> creates the database schema,
 			the button <i>drop</i> drops it.
 		</div>
 		<div>
-			To deploy the <i>COPE Console</i> in your application,
+			To deploy the <i>exedio console</i> in your application,
 			put the file <tt>exedio-cope-console.jar</tt> into your
 			<tt>WEB-INF/lib</tt> directory.
 			Then you just mount another servlet within your <tt>web.xml</tt>:
@@ -195,9 +194,9 @@ protected void doGet(
 			<img src="copernica2.w200.jpg" alt="Copernica Screenshot 2" width="200" height="113" border="0" align="right">
 		</a>
 		<div>
-			<i>Copernica</i> is an experimental generic backoffice for COPE.
+			<i>Copernica</i> is an experimental generic backoffice for exedio persistence.
 			It allows the user to query and manipulate the data stored
-			in a COPE model.
+			in a model.
 		</div>
 		<div>
 			Although <i>Copernica</i> is still in a very early stage of development,
@@ -206,7 +205,7 @@ protected void doGet(
 		</div>
 		<div>
 			Deploying <i>Copernica</i> in your application
-			is very similar to the <i>COPE console</i>.
+			is very similar to the <i>exedio console</i>.
 			Put the file <tt>exedio-copernica.jar</tt> into your
 			<tt>WEB-INF/lib</tt> directory
 			and the following snippet into your <tt>web.xml</tt>:
@@ -254,20 +253,20 @@ protected void doGet(
 		</div>
 		<h3><a name="further">Further Reading</a></h3>
 		<div>
-			This was the web application trail of the cope tour.
+			This was the web application trail of the tour.
 			You may now proceed to trails:
 			<ul>
 				<li>
 					<a href="searching.html">Searching Trail</a>
-					gives you an introduction into the searching capabilities of cope.
+					gives you an introduction into the searching capabilities of exedio persistence.
 				</li>
 				<li>
 					<a href="fields2.html">Field Reloaded Trail</a>
-					covers all the more specific possibilities to store data with cope.
+					covers all the more specific possibilities to store data.
 				</li>
 				<li>
 					<a href="schema.html">Schema Trail</a>
-					shows you the schema evolution support of the <i>COPE Console</i>.
+					shows you the schema evolution support of the <i>exedio console</i>.
 				</li>
 			</ul>
 		</div>
