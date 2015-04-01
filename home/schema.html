@@ -2,9 +2,9 @@
 <html>
 	<head>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8">
-		<title>COPE - Schema Trail</title>
+		<title>exedio persistence - Schema Trail</title>
 		<meta name="keywords" content="Persistence, Java">
-		<meta name="description" content="COPE - a persistence framework for Java">
+		<meta name="description" content="persistence framework for java">
 		<link rel="stylesheet" href="cope.css">
 		<style type="text/css">
 			img.console
@@ -18,8 +18,7 @@
 		<a href="http://www.exedio.com/">
 			<img src="exedio.png" class="exedio" alt="Exedio Logo" />
 		</a>
-		<h1><a href="index.html">COPE</a></h1>
-		<div>Cope with Object Persistence</div>
+		<h1><a href="index.html">exedio persistence</a></h1>
 		
 		<h2>Schema Trail</h2>
 		<a href="http://sourceforge.net/projects/cope">
@@ -27,11 +26,11 @@
 				class="sf" alt="Get COPE at SourceForge.net." />
 		</a>
 		<div>
-			The <a href="webapplications.html#console">COPE Console</a>
-			gathers various runtime information around COPE,
+			The <a href="webapplications.html#console">exedio console</a>
+			gathers various runtime information around the framework,
 			such as cache statistics, connection pool, jdbc driver etc.
 			This trail highlights it's schema evolution capabilities.
-			It assumes that you have already deployed the <i>COPE Console</i> into your
+			It assumes that you have already deployed the <i>exedio console</i> into your
 			web application.
 		</div>
 		<h3><a name="contents">Contents</a></h3>
@@ -44,7 +43,7 @@
 		<h3><a name="inspection">Inspection</a></h3>
 		<div>
 			You may want to know first,
-			which database schema is created by COPE.
+			which database schema is created by the framework.
 			Open up the Console in your browser,
 			select the Tabulator <i>Schema</i>,
 			and you will see something like this:
@@ -78,7 +77,7 @@ public class Customer extends Item
 					the field <tt>email</tt>.
 			</ul>
 			Following the columns there are the details of database constraints
-			set up by COPE,
+			set up by the framework,
 			but we won't deal with them in this trail.
 		</div>
 		<h3><a name="modification">Modification</a></h3>
@@ -97,7 +96,7 @@ public class Customer extends Item
 			without loosing all your data,
 			you have to issue some SQL like
 			<tt>alter table Customer add column blocked integer</tt>.
-			COPE can do that for you,
+			The framework can do that for you,
 			but much more comfortable.
 		</div>
 		<div>
@@ -149,8 +148,8 @@ public class Customer extends Item
 				<li>If there is already any production system, apply it to it,
 					once your modification is deployed there.</li>
 			</ul>
-			With <i>COPE Revisions</i> both is achieved easily.
-			All you have to do is to register the sql command at the COPE model
+			With <i>Revisions</i> both is achieved easily.
+			All you have to do is to register the sql command at the model
 			of your application.
 			The model currently looks like this:
 		</div>
@@ -211,29 +210,29 @@ static final <a href="api/com/exedio/cope/Model.html">Model</a> model = new <a h
 					you don't have do do anything, the filter calls Model.revise() for you.
 				</li>
 				<li>
-					COPE stores the information about revisions already applied to
+					exedio persistence stores the information about revisions already applied to
 					the database schema in an extra table named '<code>while</code>'.
-					Create this table with the COPE Console,
+					Create this table with the <i>exedio console</i>,
 					and make sure, this is done on the production system and the systems
 					of your coworkers as well.
 					It will be the last time, you have to do something like this manually.
 				</li>
 			</ol>
-			The COPE Console also shows information about revisions
+			exedio console also shows information about revisions
 			and their execution on the database currently used.
 		</div>
 		<h3><a name="further">Further Reading</a></h3>
 		<div>
-			After having a look at the COPE Console,
-			you may want to go back to COPE itself.
+			After having a look at the exedio console,
+			you may want to go back to exedio persistence itself.
 			<ul>
 				<li>
 					<a href="searching.html">Searching Trail</a>
-					gives you an introduction into the searching capabilities of cope.
+					gives you an introduction into the searching capabilities of exedio persistence.
 				</li>
 				<li>
 					<a href="fields2.html">Field Reloaded Trail</a>
-					covers all the more specific possibilities to store data with cope.
+					covers all the more specific possibilities to store data.
 				</li>
 			</ul>
 		</div>
