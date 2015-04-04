@@ -2,17 +2,16 @@
 <html>
 	<head>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8">
-		<title>COPE - Transactions Trail</title>
+		<title>exedio persistence - Transactions Trail</title>
 		<meta name="keywords" content="Persistence, Java">
-		<meta name="description" content="COPE - a persistence framework for Java">
+		<meta name="description" content="persistence framework for java">
 		<link rel="stylesheet" href="cope.css">
 	</head>
 	<body>
 		<a href="http://www.exedio.com/">
 			<img src="exedio.png" class="exedio" alt="Exedio Logo" />
 		</a>
-		<h1><a href="index.html">COPE</a></h1>
-		<div>Cope with Object Persistence</div>
+		<h1><a href="index.html">exedio persistence</a></h1>
 		
 		<h2>Transactions Trail</h2>
 		<a href="http://sourceforge.net/projects/cope">
@@ -23,7 +22,7 @@
 			This trail assumes,
 			that you are already familar with the general meaning of
 			<a href="http://en.wikipedia.org/wiki/Database_transaction">transactions</a>.
-			It shows you, how to start, commit and rollback transactions within cope.
+			It shows you, how to start, commit and rollback transactions.
 		</div>
 		<h3>When to use transactions</h3>
 		<div>
@@ -61,7 +60,7 @@ finally
 }
 </pre>
 		<div>
-			For your convenience, cope provides a method
+			For your convenience, the framework provides a method
 			<tt>Model.rollbackIfNotCommitted()</tt>
 			which does a <i>rollback</i> if and only if the transaction
 			has not been closed (committed or rolled back) before.
@@ -97,15 +96,15 @@ try(<a href="api/com/exedio/cope/TransactionTry.html">TransactionTry</a> tx = Ma
 			<ul>
 				<li>
 					<a href="searching.html">Searching Trail</a>
-					gives you an introduction into the searching capabilities of cope.
+					gives you an introduction into the searching capabilities of exedio persistence.
 				</li>
 				<li>
 					<a href="fields2.html">Field Reloaded Trail</a>
-					covers all the more specific possibilities to store data with cope.
+					covers all the more specific possibilities to store data with exedio persistence.
 				</li>
 				<li>
 					<a href="webapplications.html">Web Application Trail</a>
-					shows you the little differences when using cope within a web container.
+					shows you the little differences when using the framework within a web container.
 					This includes a helper class for managing transactions as well.
 				</li>
 			</ul>

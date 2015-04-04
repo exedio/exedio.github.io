@@ -28,15 +28,15 @@
 				source="1.7"
 				author="on"
 				version="on"
-				windowtitle="exedio cope"
+				windowtitle="exedio persistence"
 				noindex="true"
 				nodeprecatedlist="true"
 				failonerror="true"
 				additionalparam="-notimestamp"
 			>
-			<doctitle><![CDATA[exedio cope<br>API Specification]]></doctitle>
-			<header><![CDATA[<b>exedio cope<b>]]></header>
-			<footer><![CDATA[Cope with<br>Object<br>Persistence]]></footer>
+			<doctitle><![CDATA[exedio persistence<br>API Specification]]></doctitle>
+			<header><![CDATA[exedio persistence]]></header>
+			<footer><![CDATA[exedio persistence]]></footer>
 			<bottom><![CDATA[<a href="http://sourceforge.net/projects/cope"><img src="http://sflogo.sourceforge.net/sflogo.php?group_id=152867&amp;type=12" width="120" height="30" border="0" align="right" alt="Get COPE at SourceForge.net." /></a>Copyright &copy; 2004-2014 <a href="http://www.exedio.com/" target="_top">exedio</a> Gesellschaft f&uuml;r Softwareentwicklung mbH.<br>${build.tag}]]></bottom>
 			<link href="${api.link.jdk}"   packagelistLoc="package-list/jdk"   offline="true" />
 			<link href="${api.link.j2ee}"  packagelistLoc="package-list/j2ee"  offline="true" />
