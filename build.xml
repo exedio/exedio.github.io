@@ -87,23 +87,9 @@
 		</copy>
 	</target>
 	
-	<target name="zip" depends="api, testprotocol">
-		<mkdir dir="build" />
-		<tar destfile="build/exedio-cope-web.tar.bz2"
-			  compression="bzip2">
-			<tarfileset dir="${basedir}/home" />
-		</tar>
-	</target>
-	
-	<target name="build"
-			depends="zip" />
-	
+	<target name="build" depends="api, testprotocol" />
 	<target name="all" depends="build" />
 	
-	<target name="jenkins" depends="all">
-		<copy todir="${basedir}/build/success">
-			<fileset file="${basedir}/build/exedio-cope-web.tar.bz2" />
-		</copy>
-	</target>
+	<target name="jenkins" depends="all" />
 
 </project>
