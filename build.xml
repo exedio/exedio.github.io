@@ -9,9 +9,11 @@
 	
 	<target name="clean">
 		<delete dir="build" />
-		<delete dir="home/api" />
+		<delete dir="home/api" /><!-- not created anymore -->
 		<delete dir="home/lib" /><!-- not created anymore -->
-		<delete dir="home/testprotocol.html" />
+		<delete dir="home/testprotocol.html" /><!-- not created anymore -->
+		<delete dir="api" />
+		<delete dir="testprotocol.html" />
 	</target>
 	
 	<target name="api">
@@ -21,9 +23,9 @@
 		<unzip src="lib/exedio-cope-util-src.zip" dest="build/src" />
 		<delete file="build/src/com/exedio/cops/FileServlet.java" />
 
-		<delete dir="home/api" />
+		<delete dir="api" />
 		<javadoc
-				destdir="home/api"
+				destdir="api"
 				maxmemory="60m"
 				source="1.7"
 				author="on"
@@ -77,8 +79,8 @@
 			<assertions><enable/></assertions>
 		</java>
 		<LoadFile srcFile="build/testprotocol.html" property="testprotocol.html" />
-		<copy file="home/testprotocol-template.html"
-				tofile="home/testprotocol.html"
+		<copy file="testprotocol-template.html"
+				tofile="testprotocol.html"
 				overwrite="true">
 			<filterset>
 				<filter token="TABLE" value="${testprotocol.html}" />
