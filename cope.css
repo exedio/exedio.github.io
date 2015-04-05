@@ -11,3 +11,8 @@ a.validhtml
 	text-decoration:none;
 	font-size:small;
 }
+
+h3 a
+{
+	color:#222;
+}
