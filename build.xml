@@ -10,7 +10,7 @@
 	<target name="clean">
 		<delete dir="build" />
 		<delete dir="home/api" />
-		<delete dir="home/lib" />
+		<delete dir="home/lib" /><!-- not created anymore -->
 		<delete dir="home/testprotocol.html" />
 	</target>
 	
@@ -62,19 +62,6 @@
 		</javadoc>
 	</target>
 	
-	
-	<target name="lib">
-		<copy todir="home/lib">
-			<fileset dir="lib">
-				<include name="exedio-cope.jar" />
-				<include name="exedio-cope-test.jar" />
-				<include name="exedio-cope-instrument.jar" />
-				<include name="trove.jar" />
-				<include name="bsh-core.jar" />
-			</fileset>
-		</copy>
-	</target>
-
 	<target name="testprotocol">
 		<java classname="com.exedio.cope.console.EnvironmentCop" taskname="testprotocol"
 				fork="yes" failonerror="yes">
@@ -100,7 +87,7 @@
 		</copy>
 	</target>
 	
-	<target name="zip" depends="api, lib, testprotocol">
+	<target name="zip" depends="api, testprotocol">
 		<mkdir dir="build" />
 		<tar destfile="build/exedio-cope-web.tar.bz2"
 			  compression="bzip2">
