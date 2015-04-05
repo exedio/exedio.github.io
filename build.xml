@@ -57,10 +57,11 @@
 				<pathelement location="lib/findbugs-annotations.jar" />
 				<pathelement location="${ant.core.lib}" />
 			</classpath>
-			<group title="Persistence Framework" packages="com.exedio.cope:com.exedio.cope.*" />
-			<group title="Instrumentor" packages="com.exedio.cope.instrument" />
+			<group title="Persistence" packages="com.exedio.cope:com.exedio.cope.*" />
+			<group title="Instrumentor" packages="com.exedio.cope.instrument:com.exedio.cope.misc.instrument" />
 			<group title="Database Schema Management Facility" packages="com.exedio.dsmf:com.exedio.dsmf.*" />
 			<group title="Web Framework" packages="com.exedio.cops" />
+			<group title="Utilities" packages="com.exedio.cope.util" />
 		</javadoc>
 	</target>
 	
