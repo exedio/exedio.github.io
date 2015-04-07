@@ -3,6 +3,9 @@
 	<import file="common.xml" />
 	<target name="copy" depends="resolve">
 		
+		<delete dir="../lib">
+			<include name="*" />
+		</delete>
 		<copy overwrite="true" todir="../lib">
 			<firstmatchmapper>
 				<globmapper from="*-jar.jar" to="*.jar" />
