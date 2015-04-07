@@ -7,7 +7,7 @@
 			module="copeweb">
 	</info>
 	<dependencies>
-		<dependency org="com.exedio" name="cope" rev="8035" conf="default->junit,sources" />
+		<dependency org="com.exedio" name="cope" rev="8259" conf="default->junit,sources" />
 		<dependency org="com.exedio" name="copeconsole" rev="6592" />
 		<dependency org="findbugs-x" name="findbugs" rev="2.0.1" />
 	</dependencies>
