@@ -1,4 +1,4 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"  "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE html>
 <html>
 	<head>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8">
@@ -7,50 +7,34 @@
 		<meta name="description" content="persistence framework for java">
 		<link rel="stylesheet" href="cope.css">
 		<style type="text/css">
-			table
-			{
-				margin-top:12pt;
-			}
-			
-			table th
-			{
-				text-align:left;
-				vertical-align:top;
-				background:#eef;
-				border:solid 1px #eef;
-				padding:1px 3px;
-				font-weight:normal;
-			}
-			
 			table th a
 			{
-				text-decoration:none;
-			}
-			
-			table td
-			{
-				text-align:left;
-				vertical-align:top;
-				border:solid 1px #ccc;
-				padding:1px 3px;
+				color:#FFF;
 			}
 		</style>
 	</head>
 	<body>
-		<a href="http://www.exedio.com/">
-			<img src="exedio.png" class="exedio" alt="Exedio Logo" />
-		</a>
-		<h1><a href="index.html">exedio persistence</a></h1>
+<!-- HEADER -->
+<div id="header_wrap" class="outer">
+	<header class="inner">
+		<a id="forkme_banner" href="https://github.com/exedio">View on GitHub</a>
+		<h1 id="project_title">exedio persistence</h1>
+		<h2 id="project_tagline">Persistence Framework for Java.</h2>
+	</header>
+</div>
+<!-- MAIN CONTENT -->
+<div id="main_content_wrap" class="outer">
+	<section id="main_content" class="inner">
 		
 		<h2>Test Environments</h2>
-		<div>
+		<p>
 			Each build of exedio persistence is subject to extensive automated unit
 			testing on various environments.
 			An environment is the combination of the
 			Database Management System (DBMS), the JDBC driver and the Connect Properties.
 			The following table lists all environments,
 			the framework is tested on.
-		</div>
+		</p>
 		<table>
 			<tr>
 				<th rowspan="2">Environment</th>
@@ -65,12 +49,12 @@
 				<th><a href="http://docs.oracle.com/javase/7/docs/api/java/sql/DatabaseMetaData.html#getDriverVersion()">Version</a> (<a href="http://docs.oracle.com/javase/7/docs/api/java/sql/DatabaseMetaData.html#getDriverMajorVersion()">i</a>.<a href="http://docs.oracle.com/javase/7/docs/api/java/sql/DatabaseMetaData.html#getDriverMinorVersion()">j</a>)</th>
 			</tr>@TABLE@
 		</table>
-		<div>
+		<p>
 			The <i>exedio console</i> shows your environment
 			along with the list of enviroments,
 			your version of exedio persistence has been tested on.
-		</div>
-		<div>
+		</p>
+		<p>
 			You may want to try the tests on your own environment,
 			to make sure, that your project's combination of
 			DBMS, JDBC driver and Connect Properties works correctly.
@@ -81,14 +65,18 @@
 			that you may execute to verify your environment.
 			Please note, that the demoshop already has an ant target
 			<tt>copetest</tt> for this purpose.
-		</div>
-		<address>
-			<a href="http://validator.w3.org/check?uri=referer">
-				<img src="valid-html401.png" class="validhtml" alt="Valid HTML 4.01 Transitional" />
-			</a>
+		</p>
+	</section>
+</div>
+
+<!-- FOOTER  -->
+<div id="footer_wrap" class="outer">
+	<footer class="inner">
+			<a href="http://validator.w3.org/check?uri=referer" class="validhtml">Valid HTML5</a>
 			Copyright &copy; 2004-2014
 			<a href="http://www.exedio.com/" target="_top">exedio</a>
 			Gesellschaft f&uuml;r Softwareentwicklung mbH.
-		</address>
+	</footer>
+</div>
 	</body>
 </html>
