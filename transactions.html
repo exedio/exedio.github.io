@@ -1,4 +1,4 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"  "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE html>
 <html>
 	<head>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8">
@@ -8,38 +8,46 @@
 		<link rel="stylesheet" href="cope.css">
 	</head>
 	<body>
-		<a href="http://www.exedio.com/">
-			<img src="exedio.png" class="exedio" alt="Exedio Logo" />
-		</a>
-		<h1><a href="index.html">exedio persistence</a></h1>
+<!-- HEADER -->
+<div id="header_wrap" class="outer">
+	<header class="inner">
+		<a id="forkme_banner" href="https://github.com/exedio">View on GitHub</a>
+		<h1 id="project_title">exedio persistence</h1>
+		<h2 id="project_tagline">Persistence Framework for Java.</h2>
+	</header>
+</div>
+<!-- MAIN CONTENT -->
+<div id="main_content_wrap" class="outer">
+	<section id="main_content" class="inner">
+		
 		
 		<h2>Transactions Trail</h2>
-		<div>
+		<p>
 			This trail assumes,
 			that you are already familar with the general meaning of
 			<a href="http://en.wikipedia.org/wiki/Database_transaction">transactions</a>.
 			It shows you, how to start, commit and rollback transactions.
-		</div>
+		</p>
 		<h3>When to use transactions</h3>
-		<div>
+		<p>
 			The short anser is <i>always</i>.
 			Whenever you want to read, write or search persistent data,
 			this must happen within the boundaries of a transaction.
 			These boundaries are marked by calls to the methods
 			<tt>Model.startTransaction()</tt> and <tt>Model.commit()</tt>
 			or <tt>Model.rollback()</tt>.
-		</div>
-		<div>
+		</p>
+		<p>
 			Any attempt to access persistent data outside a transaction
 			will cause an exception.
 			There is no equivalent to what is known as <i>auto-commit</i>
 			in relational databases.
-		</div>
+		</p>
 		<h3>Example</h3>
-		<div>
+		<p>
 			Since you also have to take care of exceptions,
 			the standard way of using transactions looks like this:
-		</div>
+		</p>
 <pre>
 boolean failure = true;
 try
@@ -55,13 +63,13 @@ finally
       Main.model.<a href="api/com/exedio/cope/Model.html#rollback()">rollback</a>();
 }
 </pre>
-		<div>
+		<p>
 			For your convenience, the framework provides a method
 			<tt>Model.rollbackIfNotCommitted()</tt>
 			which does a <i>rollback</i> if and only if the transaction
 			has not been closed (committed or rolled back) before.
 			Therefore you can make the code a little bit shorter:
-		</div>
+		</p>
 <pre>
 try
 {
@@ -74,10 +82,10 @@ finally
    Main.model.<a href="api/com/exedio/cope/Model.html#rollbackIfNotCommitted()">rollbackIfNotCommitted</a>();
 }
 </pre>
-		<div>
+		<p>
 			For even more convenience you may use the try-with-resources syntax
 			introduced in Java 1.7:
-		</div>
+		</p>
 <pre>
 try(<a href="api/com/exedio/cope/TransactionTry.html">TransactionTry</a> tx = Main.model.<a href="api/com/exedio/cope/Model.html#startTransactionTry(java.lang.String)">startTransactionTry</a>("web"))
 {
@@ -86,7 +94,7 @@ try(<a href="api/com/exedio/cope/TransactionTry.html">TransactionTry</a> tx = Ma
 }
 </pre>
 		<h3>Further Reading</h3>
-		<div>
+		<p>
 			There is not much more to say about transactions,
 			so you may want to proceed to any of the following trails:
 			<ul>
@@ -104,14 +112,18 @@ try(<a href="api/com/exedio/cope/TransactionTry.html">TransactionTry</a> tx = Ma
 					This includes a helper class for managing transactions as well.
 				</li>
 			</ul>
-		</div>
-		<address>
-			<a href="http://validator.w3.org/check?uri=referer">
-				<img src="valid-html401.png" class="validhtml" alt="Valid HTML 4.01 Transitional" />
-			</a>
+		</p>
+	</section>
+</div>
+
+<!-- FOOTER  -->
+<div id="footer_wrap" class="outer">
+	<footer class="inner">
+			<a href="http://validator.w3.org/check?uri=referer" class="validhtml">Valid HTML5</a>
 			Copyright &copy; 2004-2014
 			<a href="http://www.exedio.com/" target="_top">exedio</a>
 			Gesellschaft f&uuml;r Softwareentwicklung mbH.
-		</address>
+	</footer>
+</div>
 	</body>
 </html>
