@@ -1,4 +1,4 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"  "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE html>
 <html>
 	<head>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8">
@@ -15,20 +15,27 @@
 		</style>
 	</head>
 	<body>
-		<a href="http://www.exedio.com/">
-			<img src="exedio.png" class="exedio" alt="Exedio Logo" />
-		</a>
-		<h1><a href="index.html">exedio persistence</a></h1>
+<!-- HEADER -->
+<div id="header_wrap" class="outer">
+	<header class="inner">
+		<a id="forkme_banner" href="https://github.com/exedio">View on GitHub</a>
+		<h1 id="project_title">exedio persistence</h1>
+		<h2 id="project_tagline">Persistence Framework for Java.</h2>
+	</header>
+</div>
+<!-- MAIN CONTENT -->
+<div id="main_content_wrap" class="outer">
+	<section id="main_content" class="inner">
 		
 		<h2>Schema Trail</h2>
-		<div>
+		<p>
 			The <a href="webapplications.html#console">exedio console</a>
 			gathers various runtime information around the framework,
 			such as cache statistics, connection pool, jdbc driver etc.
 			This trail highlights it's schema evolution capabilities.
 			It assumes that you have already deployed the <i>exedio console</i> into your
 			web application.
-		</div>
+		</p>
 		<h3><a name="contents">Contents</a></h3>
 		<ul>
 			<li><a href="#inspection">Inspection</a></li>
@@ -37,31 +44,31 @@
 			<li><a href="#further">Further Reading</a></li>
 		</ul>
 		<h3><a name="inspection">Inspection</a></h3>
-		<div>
+		<p>
 			You may want to know first,
 			which database schema is created by the framework.
 			Open up the Console in your browser,
 			select the Tabulator <i>Schema</i>,
 			and you will see something like this:
-		</div>
+		</p>
 		<img src="schema1.png" alt="Console Screenshot 1" class="console" width="500" height="51">
-		<div>
+		<p>
 			The example model used to create this screenshot
 			contains two types <tt>Customer</tt> and <tt>Order</tt>.
 			Lets say, type <tt>Customer</tt> looks like this:
-		</div>
+		</p>
 <pre>
 public class Customer extends Item
 {
    static final StringField email = new StringField().<a href="api/com/exedio/cope/StringField.html#unique()">unique</a>();
 }
 </pre>
-		<div>
+		<p>
 			Now click on the table <i>Customer</i>
 			to see the table details:
-		</div>
+		</p>
 		<img src="schema2.png" alt="Console Screenshot 2" class="console" width="500" height="75">
-		<div>
+		<p>
 			This shows you two columns:
 			<ul>
 				<li>
@@ -75,11 +82,11 @@ public class Customer extends Item
 			Following the columns there are the details of database constraints
 			set up by the framework,
 			but we won't deal with them in this trail.
-		</div>
+		</p>
 		<h3><a name="modification">Modification</a></h3>
-		<div>
+		<p>
 			Let's say you want to add a new field to your type:
-		</div>
+		</p>
 <pre>
 public class Customer extends Item
 {
@@ -87,26 +94,26 @@ public class Customer extends Item
    <b>static final BooleanField blocked = new BooleanField();</b>
 }
 </pre>
-		<div>
+		<p>
 			If you want to adjust the database schema
 			without loosing all your data,
 			you have to issue some SQL like
 			<tt>alter table Customer add column blocked integer</tt>.
 			The framework can do that for you,
 			but much more comfortable.
-		</div>
-		<div>
+		</p>
+		<p>
 			If you start up the new application containing the new field,
 			the <i>Schema</i> looks like this:
-		</div>
+		</p>
 		<img src="schema3.png" alt="Console Screenshot 3" class="console" width="500" height="54">
-		<div>
+		<p>
 			The red color tells you,
 			something is wrong with table <i>Customer</i>.
 			Click on it for further details:
-		</div>
+		</p>
 		<img src="schema4.png" alt="Console Screenshot 4" class="console" width="500" height="100">
-		<div>
+		<p>
 			Again, the red color tells you,
 			that something is wrong with column <i>blocked</i>.
 			In fact it is just missing, as expected.
@@ -114,16 +121,16 @@ public class Customer extends Item
 			Select it (already done in this screenshot)
 			and push the button <i>Apply</i> further up the page.
 			The next screen looks like this:
-		</div>
+		</p>
 		<img src="schema5.png" alt="Console Screenshot 5" class="console" width="500" height="101">
-		<div>
+		<p>
 			Column <i>blocked</i> does exist now,
 			and therefore the red background turned to green.
 			On the same page the sql statement sent to the database
 			is logged:
-		</div>
+		</p>
 		<img src="schema5a.png" alt="Console Screenshot 5a" class="console" width="500" height="59">
-		<div>
+		<p>
 			In a similar way you may deal with dropped columns,
 			changed column types, new tables, changed constraints etc.
 			It's recommended to check for red color
@@ -132,9 +139,9 @@ public class Customer extends Item
 			on an existing database schema.
 			If everything is green, then there is a very little chance,
 			that application and database schema don't fit to each other.
-		</div>
+		</p>
 		<h3><a name="revision">Revision</a></h3>
-		<div>
+		<p>
 			Now that you have some sql for revising your database
 			to the new application version,
 			you may want to reuse it for two purposes:
@@ -148,16 +155,16 @@ public class Customer extends Item
 			All you have to do is to register the sql command at the model
 			of your application.
 			The model currently looks like this:
-		</div>
+		</p>
 <pre>
 static final <a href="api/com/exedio/cope/Model.html">Model</a> model = new <a href="api/com/exedio/cope/Model.html#Model(com.exedio.cope.Type...)">Model</a>(
    Customer.TYPE,
    Order.TYPE);
 </pre>
-		<div>
+		<p>
 			Now insert a list of revisions with the first revision
 			containing your sql command:
-		</div>
+		</p>
 <pre>
 static final <a href="api/com/exedio/cope/Model.html">Model</a> model = new <a href="api/com/exedio/cope/Model.html#Model(com.exedio.cope.Revisions, com.exedio.cope.Type...)">Model</a>(
    <b>new <a href="api/com/exedio/cope/Revisions.html#Revisions(com.exedio.cope.Revision...)">Revisions</a>(
@@ -167,18 +174,18 @@ static final <a href="api/com/exedio/cope/Model.html">Model</a> model = new <a h
    Customer.TYPE,
    Order.TYPE);
 </pre>
-		<div>
+		<p>
 			So your sql command is executed,
 			whenever your application starts up on a database,
 			where revision 1 has not yet been applied.
 			So this happens both on the systems of your coworkers
 			and on the production system as well without any further action needed.
-		</div>
-		<div>
+		</p>
+		<p>
 			Of course you can have more than one revision,
 			and each revision can consist of more than one sql command.
 			Below the date of last modification is added to both types:
-		</div>
+		</p>
 <pre>
 static final <a href="api/com/exedio/cope/Model.html">Model</a> model = new <a href="api/com/exedio/cope/Model.html#Model(com.exedio.cope.Revisions, com.exedio.cope.Type...)">Model</a>(
    new <a href="api/com/exedio/cope/Revisions.html#Revisions(com.exedio.cope.Revision...)">Revisions</a>(
@@ -191,7 +198,7 @@ static final <a href="api/com/exedio/cope/Model.html">Model</a> model = new <a h
    Customer.TYPE,
    Order.TYPE);
 </pre>
-		<div>
+		<p>
 			However, before you really can start with revisions,
 			you have to do two one-time preparations:
 			<ol>
@@ -216,9 +223,9 @@ static final <a href="api/com/exedio/cope/Model.html">Model</a> model = new <a h
 			</ol>
 			exedio console also shows information about revisions
 			and their execution on the database currently used.
-		</div>
+		</p>
 		<h3><a name="further">Further Reading</a></h3>
-		<div>
+		<p>
 			After having a look at the exedio console,
 			you may want to go back to exedio persistence itself.
 			<ul>
@@ -231,14 +238,18 @@ static final <a href="api/com/exedio/cope/Model.html">Model</a> model = new <a h
 					covers all the more specific possibilities to store data.
 				</li>
 			</ul>
-		</div>
-		<address>
-			<a href="http://validator.w3.org/check?uri=referer">
-				<img src="valid-html401.png" class="validhtml" alt="Valid HTML 4.01 Transitional" />
-			</a>
+		</p>
+	</section>
+</div>
+
+<!-- FOOTER  -->
+<div id="footer_wrap" class="outer">
+	<footer class="inner">
+			<a href="http://validator.w3.org/check?uri=referer" class="validhtml">Valid HTML5</a>
 			Copyright &copy; 2004-2014
 			<a href="http://www.exedio.com/" target="_top">exedio</a>
 			Gesellschaft f&uuml;r Softwareentwicklung mbH.
-		</address>
+	</footer>
+</div>
 	</body>
 </html>
