@@ -66,6 +66,7 @@
 	</target>
 	
 	<target name="testprotocol">
+		<mkdir dir="build" />
 		<java classname="com.exedio.cope.console.EnvironmentCop" taskname="testprotocol"
 				fork="yes" failonerror="yes">
 			<classpath>
