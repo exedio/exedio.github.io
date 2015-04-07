@@ -1,4 +1,4 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"  "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE html>
 <html>
 	<head>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8">
@@ -8,19 +8,26 @@
 		<link rel="stylesheet" href="cope.css">
 	</head>
 	<body>
-		<a href="http://www.exedio.com/">
-			<img src="exedio.png" class="exedio" alt="Exedio Logo" />
-		</a>
-		<h1><a href="index.html">exedio persistence</a></h1>
+<!-- HEADER -->
+<div id="header_wrap" class="outer">
+	<header class="inner">
+		<a id="forkme_banner" href="https://github.com/exedio">View on GitHub</a>
+		<h1 id="project_title">exedio persistence</h1>
+		<h2 id="project_tagline">Persistence Framework for Java.</h2>
+	</header>
+</div>
+<!-- MAIN CONTENT -->
+<div id="main_content_wrap" class="outer">
+	<section id="main_content" class="inner">
 		
 		<h2>Web Application Trail</h2>
-		<div>
+		<p>
 			exedio persistence itself doesn't care,
 			whether it runs in a web container or not.
 			However it provides some additional convenience,
 			when used within web applications.
-		</div>
-		<div>
+		</p>
+		<p>
 			If you already decided to use exedio persistence for a project,
 			you may want to use the demo application as a template.
 			This way you can skip the steps described here.
@@ -28,7 +35,7 @@
 			<a href="http://www.opensource.org/licenses/mit-license.php">The&nbsp;MIT&nbsp;License</a>.
 			<br>
 			<a href="http://sourceforge.net/projects/cope/files/copedemo/">Download</a>
-		</div>
+		</p>
 		<h3><a name="contents">Contents</a></h3>
 		<ul>
 			<li><a href="#connect">Connecting</a></li>
@@ -39,14 +46,14 @@
 			<li><a href="#further">Further Reading</a></li>
 		</ul>
 		<h3><a name="connect">Connecting</a></h3>
-		<div>
+		<p>
 			The framework must be told, where to connect to the database.
 			Within a servlet you probably
 			want to do this in the <tt>init()</tt> method.
 			The file <tt>cope.properties</tt> should be in the
 			<tt>WEB-INF</tt> subdirectory to protect it against client access.
 			So you will probably want to write something like this:
-		</div>
+		</p>
 <pre>
 public void init() throws ServletException
 {
@@ -56,17 +63,17 @@ public void init() throws ServletException
            getRealPath("WEB-INF/cope.properties"))));
 }
 </pre>
-		<div>
+		<p>
 			For your convenience, there is a helper method,
 			which does just that:
-		</div>
+		</p>
 <pre>
 public void init() throws ServletException
 {
    ServletUtil.<a href="api/com/exedio/cope/util/ServletUtil.html#connect(com.exedio.cope.Model, javax.servlet.ServletConfig, java.lang.String)">connect</a>(Main.model, getServletContext());
 }
 </pre>
-		<div>
+		<p>
 			Even this can be ommitted, if you use the <i>CopeFilter</i>
 			explained below.
 			Please note, that
@@ -74,13 +81,13 @@ public void init() throws ServletException
 			is idempotent,
 			it doesn't hurt to call it more than once,
 			for example if you have more than one servlet.
-		</div>
+		</p>
 		<h3><a name="transactions">Transactions</a></h3>
-		<div>
+		<p>
 			From the <a href="transactions.html">Transaction Trail</a> you
 			already know, how to use transactions with exedio persistence.
 			With a single servlet you may want to write something like this:
-		</div>
+		</p>
 <pre>
 protected void doGet(
       HttpServletRequest request,
@@ -98,22 +105,22 @@ protected void doGet(
    }
 }
 </pre>
-		<div>
+		<p>
 			However, this is not always feasible.
 			Sometimes you just don't have a single servlet
 			(or a small number of servlets)
 			in your application.
 			Even worse, the method <tt>doGet</tt> could be called reentrantly.
 			This is very common when using the struts framework.
-		</div>
-		<div>
+		</p>
+		<p>
 			A nice solution for both problems is delegating the transaction handling into a
 			<a href="http://java.sun.com/j2ee/sdk_1.3/techdocs/api/javax/servlet/Filter.html">filter</a>.
 			Class
 			<a href="api/com/exedio/cope/util/CopeFilter.html">CopeFilter</a>
 			provides such a filter.
 			It must be deployed in your <tt>web.xml</tt>:
-		</div>
+		</p>
 <pre>
 &lt;filter&gt;
    &lt;filter-name&gt;CopeFilter&lt;/filter-name&gt;
@@ -129,20 +136,20 @@ protected void doGet(
    &lt;dispatcher&gt;REQUEST&lt;/dispatcher&gt;
 &lt;/filter-mapping&gt;
 </pre>
-		<div>
+		<p>
 			The example above applies the filter for all request to <tt>*.do</tt>,
 			a typical setting for struts.
 			It assumes, that the main class resides in package <tt>com.exedio.copedemo</tt>,
 			please adapt this to your package.
-		</div>
-		<div>
+		</p>
+		<p>
 			As a side effect, the <i>CopeFilter</i> connects the
 			model in its own <tt>init()</tt>,
 			so you don't have to care about it anymore.
-		</div>
+		</p>
 		<h3><a name="console">exedio console</a></h3>
 		<img src="console.png" alt="Console Screenshot" width="406" height="241" border="0" align="right">
-		<div>
+		<p>
 			When you start up your web application,
 			you have to create the database schema at least once.
 			This is done by calling <tt>Main.model.createDatabase()</tt>.
@@ -150,18 +157,18 @@ protected void doGet(
 			you can use the <i>exedio console</i>,
 			which assists you in creating/dropping/revising the database schema
 			and more.
-		</div>
-		<div>
+		</p>
+		<p>
 			On the right you see the relevant part of the <i>exedio console</i>.
 			The button <i>create</i> creates the database schema,
 			the button <i>drop</i> drops it.
-		</div>
-		<div>
+		</p>
+		<p>
 			To deploy the <i>exedio console</i> in your application,
 			put the file <tt>exedio-cope-console.jar</tt> into your
 			<tt>WEB-INF/lib</tt> directory.
 			Then you just mount another servlet within your <tt>web.xml</tt>:
-		</div>
+		</p>
 		<br clear="right">
 <pre>
 &lt;servlet&gt;
@@ -177,11 +184,11 @@ protected void doGet(
    &lt;url-pattern&gt;/console/*&lt;/url-pattern&gt;
 &lt;/servlet-mapping&gt;
 </pre>
-		<div>
+		<p>
 			Note, that the trailing "/*" in the url-pattern is mandatory,
 			otherwise the servlet cannot deliver it's resources
 			(style sheet etc).
-		</div>
+		</p>
 		<h3><a name="copernica">Copernica</a></h3>
 		<a href="copernica1.png">
 			<img src="copernica1.w200.jpg" alt="Copernica Screenshot 1" width="200" height="163" border="0" align="right">
@@ -189,23 +196,23 @@ protected void doGet(
 		<a href="copernica2.png">
 			<img src="copernica2.w200.jpg" alt="Copernica Screenshot 2" width="200" height="113" border="0" align="right">
 		</a>
-		<div>
+		<p>
 			<i>Copernica</i> is an experimental generic backoffice for exedio persistence.
 			It allows the user to query and manipulate the data stored
 			in a model.
-		</div>
-		<div>
+		</p>
+		<p>
 			Although <i>Copernica</i> is still in a very early stage of development,
 			it already allows access to the persistent data
 			suitable for development and debugging.
-		</div>
-		<div>
+		</p>
+		<p>
 			Deploying <i>Copernica</i> in your application
 			is very similar to the <i>exedio console</i>.
 			Put the file <tt>exedio-copernica.jar</tt> into your
 			<tt>WEB-INF/lib</tt> directory
 			and the following snippet into your <tt>web.xml</tt>:
-		</div>
+		</p>
 		<br clear="right">
 <pre>
 &lt;servlet&gt;
@@ -222,33 +229,33 @@ protected void doGet(
 &lt;/servlet-mapping&gt;
 </pre>
 		<h3><a name="context">Context Parameter</a></h3>
-		<div>
+		<p>
 			If you followed all the steps above,
 			you have the following snippet three times in your <code>web.xml</code>:
-		</div>
+		</p>
 <pre>
    &lt;init-param&gt;
       &lt;param-name&gt;model&lt;/param-name&gt;
       &lt;param-value&gt;<i>com.exedio.copedemo.Main</i>#model&lt;/param-value&gt;
    &lt;/init-param&gt;
 </pre>
-		<div>
+		<p>
 			You may want to simplify this
 			by replacing all three init parameters
 			by a single context parameter,
 			that has the same effect:
-		</div>
+		</p>
 <pre>
 &lt;context-param&gt;
    &lt;param-name&gt;model&lt;/param-name&gt;
    &lt;param-value&gt;<i>com.exedio.copedemo.Main</i>#model&lt;/param-value&gt;
 &lt;/context-param&gt;
 </pre>
-		<div>
+		<p>
 			Note, that the context parameter has to be placed outside the servlet tag.
-		</div>
+		</p>
 		<h3><a name="further">Further Reading</a></h3>
-		<div>
+		<p>
 			This was the web application trail of the tour.
 			You may now proceed to trails:
 			<ul>
@@ -265,14 +272,18 @@ protected void doGet(
 					shows you the schema evolution support of the <i>exedio console</i>.
 				</li>
 			</ul>
-		</div>
-		<address>
-			<a href="http://validator.w3.org/check?uri=referer">
-				<img src="valid-html401.png" class="validhtml" alt="Valid HTML 4.01 Transitional" />
-			</a>
+		</p>
+	</section>
+</div>
+
+<!-- FOOTER  -->
+<div id="footer_wrap" class="outer">
+	<footer class="inner">
+			<a href="http://validator.w3.org/check?uri=referer" class="validhtml">Valid HTML5</a>
 			Copyright &copy; 2004-2014
 			<a href="http://www.exedio.com/" target="_top">exedio</a>
 			Gesellschaft f&uuml;r Softwareentwicklung mbH.
-		</address>
+	</footer>
+</div>
 	</body>
 </html>
