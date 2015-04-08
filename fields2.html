@@ -1,4 +1,4 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"  "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE html>
 <html>
 	<head>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8">
@@ -8,20 +8,28 @@
 		<link rel="stylesheet" href="cope.css">
 	</head>
 	<body>
-		<a href="http://www.exedio.com/">
-			<img src="exedio.png" class="exedio" alt="Exedio Logo" />
-		</a>
-		<h1><a href="index.html">exedio persistence</a></h1>
+<!-- HEADER -->
+<div id="header_wrap" class="outer">
+	<header class="inner">
+		<a id="forkme_banner" href="https://github.com/exedio">View on GitHub</a>
+		<h1 id="project_title">exedio persistence</h1>
+		<h2 id="project_tagline">Persistence Framework for Java.</h2>
+		<a id="toplink" href="index.html">Go to top</a>
+	</header>
+</div>
+<!-- MAIN CONTENT -->
+<div id="main_content_wrap" class="outer">
+	<section id="main_content" class="inner">
 		
 		<h2>Field Reloaded Trail</h2>
-		<div>
+		<p>
 			While the <a href="fields.html">Field Trail</a>
 			covered the most fundamental fields only,
 			this trails shows you some more special ways to store data.
 			Although most of the features below are not fields in a formal sense
 			(means subclasses of class <a href="api/com/exedio/cope/Field.html">Field</a>)
 			you don't have to care about this until you want to develop such features yourself.
-		</div>
+		</p>
 		<h3><a name="contents">Contents</a></h3>
 		<ul>
 			<li><a href="#hashes">Hashes</a></li>
@@ -32,68 +40,68 @@
 			<li><a href="#further">Further Reading</a></li>
 		</ul>
 		<h3><a name="hashes">Hashes</a></h3>
-		<div>
+		<p>
 			If you want to store a string encoded by a hash algorithm,
 			such as the password of the customer,
 			then put the following into class <tt>Customer</tt>:
-		</div>
+		</p>
 <pre>
 static final <a href="api/com/exedio/cope/pattern/MD5Hash.html">MD5Hash</a> password = new <a href="api/com/exedio/cope/pattern/MD5Hash.html#MD5Hash()">MD5Hash</a>();
 </pre>
-		<div>
+		<p>
 			The instrumentor will generate a method for checking the password
 			instead of a getter method:
-		</div>
+		</p>
 <pre>
 boolean checkPassword(String password)
 {
    return Customer.password.check(this, password);
 }
 </pre>
-		<div>
+		<p>
 			Using the super classes of <tt>MD5Hash</tt>
 			you can choose any hash algorithm provided by the java.security package
 			or even implement a custom algorithm.
-		</div>
+		</p>
 		<h3><a name="list">List Fields</a></h3>
-		<div>
+		<p>
 			Sometimes you may want to store multiple values for an field,
 			such as multiple email addresses for the customer.
 			This can be achieved with <i>list fields</i>:
-		</div>
+		</p>
 <pre>
 static final <a href="api/com/exedio/cope/pattern/ListField.html">ListField</a>&lt;String&gt; emails =
     <a href="api/com/exedio/cope/pattern/ListField.html">ListField</a>.<a href="api/com/exedio/cope/pattern/ListField.html#newList(com.exedio.cope.FunctionField)">newList</a>(new StringField());
 </pre>
-		<div>
+		<p>
 			Internally this is implemented by an extra table in the database,
 			so you can store lists of any size.
 			If you are sure, that the list cannot a exceed a certain size,
 			you may decide to use a <i>limited list field</i>:
-		</div>
+		</p>
 <pre>
 static final <a href="api/com/exedio/cope/pattern/LimitedListField.html">LimitedListField</a>&lt;String&gt; emails =
     <a href="api/com/exedio/cope/pattern/LimitedListField.html">LimitedListField</a>.<a href="api/com/exedio/cope/pattern/LimitedListField.html#newList(com.exedio.cope.FunctionField, int)">newList</a>(new StringField().<a href="api/com/exedio/cope/StringField.html#optional()">optional</a>(), 4);
 </pre>
-		<div>
+		<p>
 			Internally there are 4 string fields used for storing the elements of the list.
 			If someone tries to store a list of more than 4 elements,
 			an exception is thrown.
-		</div>
+		</p>
 		<h3><a name="map">Map Fields</a></h3>
-		<div>
+		<p>
 			Especially in international applications you may want to store multiple field values,
 			such as one price of a product for each country or one description for each language.
 			The following example specifies the latter:
-		</div>
+		</p>
 <pre>
 static final <a href="api/com/exedio/cope/pattern/MapField.html">MapField</a>&lt;Language,String&gt; description =
     <a href="api/com/exedio/cope/pattern/MapField.html">MapField</a>.<a href="api/com/exedio/cope/pattern/MapField.html#newMap(com.exedio.cope.FunctionField, com.exedio.cope.FunctionField)">newMap</a>(newItemField(Language.class),
                         new StringField());
 </pre>
-		<div>
+		<p>
 			The instrumentor will create appropriate methods for accessing the <i>field map</i>:
-		</div>
+		</p>
 <pre>
 String getDescription(Language k)
 {
@@ -105,11 +113,11 @@ void setDescription(Language k, String description)
     Product.description.set(this, k, description);
 }
 </pre>
-		<div>
+		<p>
 			This example assumes, that there is already a persistent item <tt>Language</tt>.
 			If you decide to use use a fixed set of languages in your application,
 			you may use an enum instead:
-		</div>
+		</p>
 <pre>
 static enum Language { DE, EN, PL; }
 
@@ -117,12 +125,12 @@ static final <a href="api/com/exedio/cope/pattern/MapField.html">MapField</a>&lt
     <a href="api/com/exedio/cope/pattern/MapField.html">MapField</a>.<a href="api/com/exedio/cope/pattern/MapField.html#newMap(com.exedio.cope.FunctionField, com.exedio.cope.FunctionField)">newMap</a>(newEnumField(Language.class),
                         new StringField());
 </pre>
-		<div>
+		<p>
 			As with <i>list fields</i> this is implemented by an extra table in the database,
 			so you can store maps of any size.
 			If the key space of the map is limited to an enum,
 			you may decide to use a <i>enum map field</i> instead:
-		</div>
+		</p>
 <pre>
 static enum Language { DE, EN, PL; }
 
@@ -130,13 +138,13 @@ static final <a href="api/com/exedio/cope/pattern/EnumMapField.html">EnumMapFiel
     <a href="api/com/exedio/cope/pattern/EnumMapField.html">EnumMapField</a>.<a href="api/com/exedio/cope/pattern/EnumMapField.html#newMap(java.lang.Class, com.exedio.cope.FunctionField)">newMap</a>(Language.class,
                         new StringField().<a href="api/com/exedio/cope/StringField.html#optional()">optional</a>());
 </pre>
-		<div>
+		<p>
 			Internally three string fields
 			<tt>nameDE</tt>, <tt>nameEN</tt>, <tt>namePL</tt>
 			are used for storing the values of the map.
-		</div>
+		</p>
 		<h3><a name="dayfields">Day Fields</a></h3>
-		<div>
+		<p>
 			Class <a href="api/com/exedio/cope/DateField.html">DateField</a>
 			already stores time stamps with millisecond precision.
 			However, sometimes you just want to store a day.
@@ -144,16 +152,16 @@ static final <a href="api/com/exedio/cope/pattern/EnumMapField.html">EnumMapFiel
 			Since the java runtime library does not provide a value class for this,
 			exedio persistence has to introduce it's own <a href="api/com/exedio/cope/util/Day.html">Day</a>.
 			To define a <i>day field</i> within a type write:
-		</div>
+		</p>
 <pre>
 static final <a href="api/com/exedio/cope/DayField.html">DayField</a> dateOfBirth = new <a href="api/com/exedio/cope/DayField.html#DayField()">DayField</a>();
 </pre>
 		<h3><a name="constraints">Check Constraints</a></h3>
-		<div>
+		<p>
 			exedio persistence makes it easy to define check constraints for persistent fields.
 			Here an example with a string field, that holds at most 40 characters
 			and an integer field that must not be negative:
-		</div>
+		</p>
 <pre>
 class Customer extends Item
 {
@@ -163,13 +171,13 @@ class Customer extends Item
        new <a href="api/com/exedio/cope/IntegerField.html#IntegerField()">IntegerField</a>().<b><a href="api/com/exedio/cope/IntegerField.html#min(int)">min</a>(0)</b>;
 }
 </pre>
-		<div>
+		<p>
 			Trying to violate such a constraint when modifying or creating a Customer causes a
 			<a href="api/com/exedio/cope/StringLengthViolationException.html">StringLengthViolationException</a> or
 			<a href="api/com/exedio/cope/IntegerRangeViolationException.html">IntegerRangeViolationException</a> to be thrown.
-		</div>
+		</p>
 		<h3><a name="further">Further Reading</a></h3>
-		<div>
+		<p>
 			This was the advanced field trail of the tour.
 			You may now proceed to trails:
 			<ul>
@@ -186,14 +194,24 @@ class Customer extends Item
 					shows you the little differences when using the framework within a web container.
 				</li>
 			</ul>
-		</div>
-		<address>
-			<a href="http://validator.w3.org/check?uri=referer">
-				<img src="valid-html401.png" class="validhtml" alt="Valid HTML 4.01 Transitional" />
-			</a>
-			Copyright &copy; 2004-2014
+		</p>
+	</section>
+</div>
+
+<!-- FOOTER  -->
+<div id="footer_wrap" class="outer">
+	<footer class="inner">
+		<p>
+			Maintained by
 			<a href="http://www.exedio.com/" target="_top">exedio</a>
 			Gesellschaft f&uuml;r Softwareentwicklung mbH.
-		</address>
+		</p>
+		<a href="http://validator.w3.org/check?uri=referer" class="validhtml">Valid HTML5</a>
+		<p>
+			Slate theme by <a href="https://github.com/jasoncostello">Jason Costello</a>.
+			Published with <a href="http://pages.github.com">GitHub Pages</a>.
+		</p>
+	</footer>
+</div>
 	</body>
 </html>

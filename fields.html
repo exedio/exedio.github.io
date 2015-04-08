@@ -1,4 +1,4 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"  "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE html>
 <html>
 	<head>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8">
@@ -8,18 +8,26 @@
 		<link rel="stylesheet" href="cope.css">
 	</head>
 	<body>
-		<a href="http://www.exedio.com/">
-			<img src="exedio.png" class="exedio" alt="Exedio Logo" />
-		</a>
-		<h1><a href="index.html">exedio persistence</a></h1>
+<!-- HEADER -->
+<div id="header_wrap" class="outer">
+	<header class="inner">
+		<a id="forkme_banner" href="https://github.com/exedio">View on GitHub</a>
+		<h1 id="project_title">exedio persistence</h1>
+		<h2 id="project_tagline">Persistence Framework for Java.</h2>
+		<a id="toplink" href="index.html">Go to top</a>
+	</header>
+</div>
+<!-- MAIN CONTENT -->
+<div id="main_content_wrap" class="outer">
+	<section id="main_content" class="inner">
 		
 		<h2>Field Trail</h2>
-		<div>
+		<p>
 			While the <a href="intro.html">Introduction Trail</a>
 			covered string fields only,
 			this trails visits all kinds of other fields
 			as well as the more special features of string fields.
-		</div>
+		</p>
 		<h3><a name="contents">Contents</a></h3>
 		<ul>
 			<li><a href="#common">Common Primitives</a></li>
@@ -31,11 +39,11 @@
 			<li><a href="#further">Further Reading</a></li>
 		</ul>
 		<h3><a name="common">Common Primitives</a></h3>
-		<div>
+		<p>
 			exedio persistence provides fields for all commonly used java primitives
 			as well as for <tt>String</tt> and <tt>java.util.Date</tt>.
 			This looks like this.
-		</div>
+		</p>
 <pre>
 class Customer extends Item
 {
@@ -51,24 +59,24 @@ class Customer extends Item
        new DoubleField();
 }
 </pre>
-		<div>
+		<p>
 			Run the instrumentor, and you get setters/getters for all
 			the new fields.
 			Also the <i>default creation constructor</i>
 			will have parameters for the initial values of these fields.
-		</div>
+		</p>
 		<h3><a name="null">Allowing Null</a></h3>
-		<div>
+		<p>
 			You may have noticed, that you cannot store null
 			into any of the fields.
 			This is because fields are <i>mandatory</i> by default.
 			You can easily change this to <i>optional</i>.
-		</div>
+		</p>
 <pre>
 static final LongField loginCounter =
     new LongField().<a href="api/com/exedio/cope/LongField.html#optional()"><b>optional</b></a>();
 </pre>
-		<div>
+		<p>
 			When you run the instrumentor, you may notice
 			a few changes in the generated code.
 			<ol>
@@ -104,63 +112,63 @@ void setLoginCounter(<b>Long</b> loginCounter) { ... }
 </pre>
 				</li>
 			</ol>
-		</div>
+		</p>
 		<h3><a name="defaults">Default Values</a></h3>
-		<div>
+		<p>
 			What we did above with the login counter is probably not,
 			what one would want in a real project.
 			One would probably rather want to make it <i>mandatory</i>
 			and initialize it to zero for any newly created customer.
 			This can be specified by:
-		</div>
+		</p>
 <pre>
 static final LongField loginCounter =
     new LongField()<b>.defaultTo(0l)</b>;
 </pre>
-		<div>
+		<p>
 			In the instrumented code the type for setter/getter
 			changes back to primitives again,
 			but the <i>default creation constructor</i> does also
 			not have a parameter for <tt>loginCounter</tt>.
-		</div>
-		<div>
+		</p>
+		<p>
 			If you want to make the current date the default value
 			of any date field,
 			then of course <tt>defaultTo(new Date())</tt> won't work.
 			Use instead:
-		</div>
+		</p>
 <pre>
 static final DateField registrationDate =
     new DateField()<b>.defaultToNow()</b>;
 </pre>
 		<h3><a name="unique">Unique Fields</a></h3>
-		<div>
+		<p>
 			Probably you wouldn't want to have more than one customer
 			for any given email address.
 			Peace of cake:
-		</div>
+		</p>
 <pre>
 static final StringField email =
     new StringField().<a href="api/com/exedio/cope/StringField.html#unique()"><b>unique</b></a>();
 </pre>
-		<div>
+		<p>
 			If you violate this unique constraint either via a
 			creation constructor or via <tt>setEmail</tt>
 			this will throw a <a href="api/com/exedio/cope/UniqueViolationException.html">UniqueViolationException</a>.
-		</div>
-		<div>
+		</p>
+		<p>
 			In the instrumented code you will find a new convenience method
-		</div>
+		</p>
 <pre>
 static final Customer findByEmail(String email);
 </pre>
-		<div>
+		<p>
 			which does, what it's name suggests.
-		</div>
-		<div>
+		</p>
+		<p>
 			For unique constraints across multiple fields
 			the notation is slightly different:
-		</div>
+		</p>
 <pre>
 class MatrixElement extends Item
 {
@@ -173,13 +181,13 @@ class MatrixElement extends Item
 }
 </pre>
 		<h3><a name="enum">Enum Fields</a></h3>
-		<div>
+		<p>
 			A common pattern in persistent models are fields,
 			the can have a value out of a predefined set of values.
 			For that purpose java provides enums since JDK 1.5.
 			exedio persistence allows you to store such enums in fields
 			just like any other primitive:
-		</div>
+		</p>
 <pre>
 class Customer extends Item
 {
@@ -195,14 +203,14 @@ class Customer extends Item
 }
 </pre>
 		<h3><a name="item">Item Fields</a></h3>
-		<div>
+		<p>
 			An item fields stores a reference to another persistent item.
 			It's the object oriented counter part of
 			a foreign key constraint in relational databases.
-		</div>
-		<div>
+		</p>
+		<p>
 			Here an example of a product referencing the product group it belongs to:
-		</div>
+		</p>
 <pre>
 class ProductGroup extends Item
 {
@@ -217,7 +225,7 @@ class Product extends Item
        newItemField(ProductGroup.class);
 }
 </pre>
-		<div>
+		<p>
 			As specified above, a product group cannot be deleted,
 			if there are still products referencing this product group.
 			This is because the default <i>delete policy</i>
@@ -225,26 +233,26 @@ class Product extends Item
 			Alternativly you may want to have all products of a product group to be deleted,
 			if that product group is deleted.
 			To achive this, change the <i>delete policy</i> to <i>cascade</i>.
-		</div>
+		</p>
 <pre>
 static final ItemField&lt;ProductGroup&gt; productGroup =
     newItemField(ProductGroup.class, <b>CASCADE</b>);
 </pre>
-		<div>
+		<p>
 			Yet another alternative is to set the item field to null
 			on all products referencing the product group to be deleted.
 			This is done by:
-		</div>
+		</p>
 <pre>
 static final ItemField&lt;ProductGroup&gt; productGroup =
     newItemField(ProductGroup.class, <b>NULLIFY</b>);
 </pre>
-		<div>
+		<p>
 			Of course <i>nullify</i> makes no sense for a <i>mandatory</i> field.
 			Therefore such item fields are <i>optional</i> by default.
-		</div>
+		</p>
 		<h3><a name="further">Further Reading</a></h3>
-		<div>
+		<p>
 			This was the field trail of the tour.
 			You may now proceed to trails:
 			<ul>
@@ -265,14 +273,24 @@ static final ItemField&lt;ProductGroup&gt; productGroup =
 					shows you the little differences when using the framework within a web container.
 				</li>
 			</ul>
-		</div>
-		<address>
-			<a href="http://validator.w3.org/check?uri=referer">
-				<img src="valid-html401.png" class="validhtml" alt="Valid HTML 4.01 Transitional" />
-			</a>
-			Copyright &copy; 2004-2014
+		</p>
+	</section>
+</div>
+
+<!-- FOOTER  -->
+<div id="footer_wrap" class="outer">
+	<footer class="inner">
+		<p>
+			Maintained by
 			<a href="http://www.exedio.com/" target="_top">exedio</a>
 			Gesellschaft f&uuml;r Softwareentwicklung mbH.
-		</address>
+		</p>
+		<a href="http://validator.w3.org/check?uri=referer" class="validhtml">Valid HTML5</a>
+		<p>
+			Slate theme by <a href="https://github.com/jasoncostello">Jason Costello</a>.
+			Published with <a href="http://pages.github.com">GitHub Pages</a>.
+		</p>
+	</footer>
+</div>
 	</body>
 </html>
