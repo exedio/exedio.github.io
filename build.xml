@@ -39,7 +39,7 @@
 			<doctitle><![CDATA[exedio persistence<br>API Specification]]></doctitle>
 			<header><![CDATA[exedio persistence]]></header>
 			<footer><![CDATA[exedio persistence]]></footer>
-			<bottom><![CDATA[Copyright &copy; 2004-2014 <a href="http://www.exedio.com/" target="_top">exedio</a> Gesellschaft f&uuml;r Softwareentwicklung mbH.]]></bottom>
+			<bottom><![CDATA[Maintained by <a href="http://www.exedio.com/" target="_top">exedio</a> Gesellschaft f&uuml;r Softwareentwicklung mbH.]]></bottom>
 			<link href="${api.link.jdk}"   packagelistLoc="package-list/jdk"   offline="true" />
 			<link href="${api.link.j2ee}"  packagelistLoc="package-list/j2ee"  offline="true" />
 			<link href="${api.link.ant}"   packagelistLoc="package-list/ant"   offline="true" />
