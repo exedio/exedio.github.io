@@ -1,0 +1,517 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- NewPage -->
+<html lang="de">
+<head>
+<title>TextUrlFilterDelegator (exedio persistence)</title>
+<link rel="stylesheet" type="text/css" href="../../../../stylesheet.css" title="Style">
+</head>
+<body>
+<script type="text/javascript"><!--
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="TextUrlFilterDelegator (exedio persistence)";
+    }
+//-->
+</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+<!-- ========= START OF TOP NAVBAR ======= -->
+<div class="topNav"><a name="navbar_top">
+<!--   -->
+</a><a href="#skip-navbar_top" title="Skip navigation links"></a><a name="navbar_top_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../help-doc.html">Help</a></li>
+</ul>
+<div class="aboutLanguage"><em>exedio persistence</em></div>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../../com/exedio/cope/pattern/TextUrlFilterCheckable.html" title="interface in com.exedio.cope.pattern"><span class="strong">Prev Class</span></a></li>
+<li><a href="../../../../com/exedio/cope/pattern/UniqueHashedMedia.html" title="class in com.exedio.cope.pattern"><span class="strong">Next Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../index.html?com/exedio/cope/pattern/TextUrlFilterDelegator.html" target="_top">Frames</a></li>
+<li><a href="TextUrlFilterDelegator.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_top">
+<li><a href="../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_top");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li><a href="#nested_classes_inherited_from_class_com.exedio.cope.pattern.MediaPath">Nested</a>&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#constructor_summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#constructor_detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_top">
+<!--   -->
+</a></div>
+<!-- ========= END OF TOP NAVBAR ========= -->
+<!-- ======== START OF CLASS DATA ======== -->
+<div class="header">
+<div class="subTitle">com.exedio.cope.pattern</div>
+<h2 title="Class TextUrlFilterDelegator" class="title">Class TextUrlFilterDelegator</h2>
+</div>
+<div class="contentContainer">
+<ul class="inheritance">
+<li><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</a></li>
+<li>
+<ul class="inheritance">
+<li><a href="../../../../com/exedio/cope/Feature.html" title="class in com.exedio.cope">com.exedio.cope.Feature</a></li>
+<li>
+<ul class="inheritance">
+<li><a href="../../../../com/exedio/cope/Pattern.html" title="class in com.exedio.cope">com.exedio.cope.Pattern</a></li>
+<li>
+<ul class="inheritance">
+<li><a href="../../../../com/exedio/cope/pattern/MediaPath.html" title="class in com.exedio.cope.pattern">com.exedio.cope.pattern.MediaPath</a></li>
+<li>
+<ul class="inheritance">
+<li><a href="../../../../com/exedio/cope/pattern/MediaFilter.html" title="class in com.exedio.cope.pattern">com.exedio.cope.pattern.MediaFilter</a></li>
+<li>
+<ul class="inheritance">
+<li>com.exedio.cope.pattern.TextUrlFilterDelegator</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<div class="description">
+<ul class="blockList">
+<li class="blockList">
+<dl>
+<dt>All Implemented Interfaces:</dt>
+<dd><a href="../../../../com/exedio/cope/pattern/TextUrlFilterCheckable.html" title="interface in com.exedio.cope.pattern">TextUrlFilterCheckable</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/io/Serializable.html?is-external=true" title="class or interface in java.io">Serializable</a></dd>
+</dl>
+<hr>
+<br>
+<pre>public class <span class="strong">TextUrlFilterDelegator</span>
+extends <a href="../../../../com/exedio/cope/pattern/MediaFilter.html" title="class in com.exedio.cope.pattern">MediaFilter</a>
+implements <a href="../../../../com/exedio/cope/pattern/TextUrlFilterCheckable.html" title="interface in com.exedio.cope.pattern">TextUrlFilterCheckable</a></pre>
+<dl><dt><span class="strong">See Also:</span></dt><dd><a href="../../../../serialized-form.html#com.exedio.cope.pattern.TextUrlFilterDelegator">Serialized Form</a></dd></dl>
+</li>
+</ul>
+</div>
+<div class="summary">
+<ul class="blockList">
+<li class="blockList">
+<!-- ======== NESTED CLASS SUMMARY ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="nested_class_summary">
+<!--   -->
+</a>
+<h3>Nested Class Summary</h3>
+<ul class="blockList">
+<li class="blockList"><a name="nested_classes_inherited_from_class_com.exedio.cope.pattern.MediaPath">
+<!--   -->
+</a>
+<h3>Nested classes/interfaces inherited from class&nbsp;com.exedio.cope.pattern.<a href="../../../../com/exedio/cope/pattern/MediaPath.html" title="class in com.exedio.cope.pattern">MediaPath</a></h3>
+<code><a href="../../../../com/exedio/cope/pattern/MediaPath.Locator.html" title="class in com.exedio.cope.pattern">MediaPath.Locator</a>, <a href="../../../../com/exedio/cope/pattern/MediaPath.Log.html" title="class in com.exedio.cope.pattern">MediaPath.Log</a>, <a href="../../../../com/exedio/cope/pattern/MediaPath.NotFound.html" title="class in com.exedio.cope.pattern">MediaPath.NotFound</a></code></li>
+</ul>
+</li>
+</ul>
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor_summary">
+<!--   -->
+</a>
+<h3>Constructor Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Constructor Summary table, listing constructors, and an explanation">
+<caption><span>Constructors</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colOne" scope="col">Constructor and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colOne"><code><strong><a href="../../../../com/exedio/cope/pattern/TextUrlFilterDelegator.html#TextUrlFilterDelegator(com.exedio.cope.pattern.Media,%20com.exedio.cope.pattern.TextUrlFilter,%20java.lang.String,%20java.nio.charset.Charset,%20java.lang.String,%20java.lang.String)">TextUrlFilterDelegator</a></strong>(<a href="../../../../com/exedio/cope/pattern/Media.html" title="class in com.exedio.cope.pattern">Media</a>&nbsp;raw,
+                      <a href="../../../../com/exedio/cope/pattern/TextUrlFilter.html" title="class in com.exedio.cope.pattern">TextUrlFilter</a>&nbsp;delegate,
+                      <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;supportedContentType,
+                      <a href="http://docs.oracle.com/javase/7/docs/api/java/nio/charset/Charset.html?is-external=true" title="class or interface in java.nio.charset">Charset</a>&nbsp;charset,
+                      <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;pasteStart,
+                      <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;pasteStop)</code>&nbsp;</td>
+</tr>
+</table>
+</li>
+</ul>
+<!-- ========== METHOD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_summary">
+<!--   -->
+</a>
+<h3>Method Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
+<caption><span>Methods</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected void</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/exedio/cope/pattern/TextUrlFilterDelegator.html#appendKey(java.lang.StringBuilder,%20com.exedio.cope.Item,%20java.lang.String,%20javax.servlet.http.HttpServletRequest)">appendKey</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/StringBuilder.html?is-external=true" title="class or interface in java.lang">StringBuilder</a>&nbsp;bf,
+         <a href="../../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&nbsp;item,
+         <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key,
+         <a href="http://java.sun.com/j2ee/1.4/docs/api/javax/servlet/http/HttpServletRequest.html?is-external=true" title="class or interface in javax.servlet.http">HttpServletRequest</a>&nbsp;request)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/exedio/cope/pattern/TextUrlFilterDelegator.html#check(com.exedio.cope.Item)">check</a></strong>(<a href="../../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&nbsp;item)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/exedio/cope/pattern/TextUrlFilterDelegator.html#doGetAndCommit(javax.servlet.http.HttpServletRequest,%20javax.servlet.http.HttpServletResponse,%20com.exedio.cope.Item)">doGetAndCommit</a></strong>(<a href="http://java.sun.com/j2ee/1.4/docs/api/javax/servlet/http/HttpServletRequest.html?is-external=true" title="class or interface in javax.servlet.http">HttpServletRequest</a>&nbsp;request,
+              <a href="http://java.sun.com/j2ee/1.4/docs/api/javax/servlet/http/HttpServletResponse.html?is-external=true" title="class or interface in javax.servlet.http">HttpServletResponse</a>&nbsp;response,
+              <a href="../../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&nbsp;item)</code>
+<div class="block">The implementor MUST <a href="../../../../com/exedio/cope/pattern/MediaPath.html#commit()"><code>commit</code></a> the transaction,
+ if the method completes normally (without exception).</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../com/exedio/cope/pattern/TextUrlFilterDelegator.html#getContent(com.exedio.cope.Item,%20javax.servlet.http.HttpServletRequest)">getContent</a></strong>(<a href="../../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&nbsp;item,
+          <a href="http://java.sun.com/j2ee/1.4/docs/api/javax/servlet/http/HttpServletRequest.html?is-external=true" title="class or interface in javax.servlet.http">HttpServletRequest</a>&nbsp;request)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../com/exedio/cope/pattern/TextUrlFilterDelegator.html#getContentType(com.exedio.cope.Item)">getContentType</a></strong>(<a href="../../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&nbsp;item)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/exedio/cope/pattern/TextUrlFilterDelegator.html#getPasteContentTypesAllowed()">getPasteContentTypesAllowed</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../com/exedio/cope/pattern/MediaPath.Locator.html" title="class in com.exedio.cope.pattern">MediaPath.Locator</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../com/exedio/cope/pattern/TextUrlFilterDelegator.html#getPasteLocator(com.exedio.cope.Item,%20java.lang.String)">getPasteLocator</a></strong>(<a href="../../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&nbsp;item,
+               <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../com/exedio/cope/pattern/TextUrlFilterDelegator.html#getPasteURL(com.exedio.cope.Item,%20java.lang.String)">getPasteURL</a></strong>(<a href="../../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&nbsp;item,
+           <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/exedio/cope/pattern/TextUrlFilterDelegator.html#getSupportedSourceContentTypes()">getSupportedSourceContentTypes</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/exedio/cope/pattern/TextUrlFilterDelegator.html#isContentTypeWrapped()">isContentTypeWrapped</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/exedio/cope/pattern/TextUrlFilterDelegator.html#setRaw(com.exedio.cope.Item,%20com.exedio.cope.pattern.Media.Value)">setRaw</a></strong>(<a href="../../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&nbsp;item,
+      <a href="../../../../com/exedio/cope/pattern/Media.Value.html" title="class in com.exedio.cope.pattern">Media.Value</a>&nbsp;raw)</code>&nbsp;</td>
+</tr>
+</table>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_com.exedio.cope.pattern.MediaFilter">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;com.exedio.cope.pattern.<a href="../../../../com/exedio/cope/pattern/MediaFilter.html" title="class in com.exedio.cope.pattern">MediaFilter</a></h3>
+<code><a href="../../../../com/exedio/cope/pattern/MediaFilter.html#getLastModified(com.exedio.cope.Item)">getLastModified</a>, <a href="../../../../com/exedio/cope/pattern/MediaFilter.html#getLocatorWithFallbackToSource(com.exedio.cope.Item)">getLocatorWithFallbackToSource</a>, <a href="../../../../com/exedio/cope/pattern/MediaFilter.html#getSource()">getSource</a>, <a href="../../../../com/exedio/cope/pattern/MediaFilter.html#getURLWithFallbackToSource(com.exedio.cope.Item)">getURLWithFallbackToSource</a>, <a href="../../../../com/exedio/cope/pattern/MediaFilter.html#isFinal()">isFinal</a>, <a href="../../../../com/exedio/cope/pattern/MediaFilter.html#isNotNull()">isNotNull</a>, <a href="../../../../com/exedio/cope/pattern/MediaFilter.html#isNotNull(com.exedio.cope.Join)">isNotNull</a>, <a href="../../../../com/exedio/cope/pattern/MediaFilter.html#isNull()">isNull</a>, <a href="../../../../com/exedio/cope/pattern/MediaFilter.html#isNull(com.exedio.cope.Join)">isNull</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_com.exedio.cope.pattern.MediaPath">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;com.exedio.cope.pattern.<a href="../../../../com/exedio/cope/pattern/MediaPath.html" title="class in com.exedio.cope.pattern">MediaPath</a></h3>
+<code><a href="../../../../com/exedio/cope/pattern/MediaPath.html#commit()">commit</a>, <a href="../../../../com/exedio/cope/pattern/MediaPath.html#getExceptionLogs()">getExceptionLogs</a>, <a href="../../../../com/exedio/cope/pattern/MediaPath.html#getGuessedUrlLogs()">getGuessedUrlLogs</a>, <a href="../../../../com/exedio/cope/pattern/MediaPath.html#getInfo()">getInfo</a>, <a href="../../../../com/exedio/cope/pattern/MediaPath.html#getInvalidSpecialLogs()">getInvalidSpecialLogs</a>, <a href="../../../../com/exedio/cope/pattern/MediaPath.html#getIsNullLogs()">getIsNullLogs</a>, <a href="../../../../com/exedio/cope/pattern/MediaPath.html#getLocator(com.exedio.cope.Item)">getLocator</a>, <a href="../../../../com/exedio/cope/pattern/MediaPath.html#getNamedURL(com.exedio.cope.Item,%20java.lang.String)">getNamedURL</a>, <a href="../../../../com/exedio/cope/pattern/MediaPath.html#getNoSuchItemLogs()">getNoSuchItemLogs</a>, <a href="../../../../com/exedio/cope/pattern/MediaPath.html#getNoSuchPath()">getNoSuchPath</a>, <a href="../../../../com/exedio/cope/pattern/MediaPath.html#getNoSuchPathLogs()">getNoSuchPathLogs</a>, <a href="../../../../com/exedio/cope/pattern/MediaPath.html#getNotAnItemLogs()">getNotAnItemLogs</a>, <a href="../../../../com/exedio/cope/pattern/MediaPath.html#getNotComputableLogs()">getNotComputableLogs</a>, <a href="../../../../com/exedio/cope/pattern/MediaPath.html#getURL(com.exedio.cope.Item)">getURL</a>, <a href="../../../../com/exedio/cope/pattern/MediaPath.html#incrementDelivered()">incrementDelivered</a>, <a href="../../../../com/exedio/cope/pattern/MediaPath.html#isUrlFingerPrinted()">isUrlFingerPrinted</a>, <a href="../../../../com/exedio/cope/pattern/MediaPath.html#isUrlGuessingPrevented()">isUrlGuessingPrevented</a>, <a href="../../../../com/exedio/cope/pattern/MediaPath.html#isUrlGuessingPreventedSecurely(com.exedio.cope.ConnectProperties)">isUrlGuessingPreventedSecurely</a>, <a href="../../../../com/exedio/cope/pattern/MediaPath.html#notFoundIsNull()">notFoundIsNull</a>, <a href="../../../../com/exedio/cope/pattern/MediaPath.html#notFoundNotComputable()">notFoundNotComputable</a>, <a href="../../../../com/exedio/cope/pattern/MediaPath.html#onMount()">onMount</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_com.exedio.cope.Pattern">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;com.exedio.cope.<a href="../../../../com/exedio/cope/Pattern.html" title="class in com.exedio.cope">Pattern</a></h3>
+<code><a href="../../../../com/exedio/cope/Pattern.html#addSource(com.exedio.cope.Feature,%20java.lang.String)">addSource</a>, <a href="../../../../com/exedio/cope/Pattern.html#addSource(com.exedio.cope.Feature,%20java.lang.String,%20java.lang.reflect.AnnotatedElement)">addSource</a>, <a href="../../../../com/exedio/cope/Pattern.html#addSource(com.exedio.cope.Feature,%20java.lang.String,%20java.lang.reflect.Field)">addSource</a>, <a href="../../../../com/exedio/cope/Pattern.html#annotationField(java.lang.String)">annotationField</a>, <a href="../../../../com/exedio/cope/Pattern.html#getGeneratedTypes()">getGeneratedTypes</a>, <a href="../../../../com/exedio/cope/Pattern.html#getSourceFeatures()">getSourceFeatures</a>, <a href="../../../../com/exedio/cope/Pattern.html#getSourceFields()">getSourceFields</a>, <a href="../../../../com/exedio/cope/Pattern.html#getSources()">getSources</a>, <a href="../../../../com/exedio/cope/Pattern.html#getSourceTypes()">getSourceTypes</a>, <a href="../../../../com/exedio/cope/Pattern.html#getType()">getType</a>, <a href="../../../../com/exedio/cope/Pattern.html#initialize()">initialize</a>, <a href="../../../../com/exedio/cope/Pattern.html#newSourceType(java.lang.Class,%20boolean,%20com.exedio.cope.Type,%20com.exedio.cope.Features,%20java.lang.String)">newSourceType</a>, <a href="../../../../com/exedio/cope/Pattern.html#newSourceType(java.lang.Class,%20boolean,%20com.exedio.cope.Type,%20java.util.LinkedHashMap,%20java.lang.String)">newSourceType</a>, <a href="../../../../com/exedio/cope/Pattern.html#newSourceType(java.lang.Class,%20com.exedio.cope.Features)">newSourceType</a>, <a href="../../../../com/exedio/cope/Pattern.html#newSourceType(java.lang.Class,%20com.exedio.cope.Features,%20java.lang.String)">newSourceType</a>, <a href="../../../../com/exedio/cope/Pattern.html#newSourceType(java.lang.Class,%20java.util.LinkedHashMap)">newSourceType</a>, <a href="../../../../com/exedio/cope/Pattern.html#newSourceType(java.lang.Class,%20java.util.LinkedHashMap,%20java.lang.String)">newSourceType</a>, <a href="../../../../com/exedio/cope/Pattern.html#newType(java.lang.Class,%20java.util.LinkedHashMap)">newType</a>, <a href="../../../../com/exedio/cope/Pattern.html#newType(java.lang.Class,%20java.util.LinkedHashMap,%20java.lang.String)">newType</a>, <a href="../../../../com/exedio/cope/Pattern.html#registerSource(com.exedio.cope.Field,%20java.lang.String)">registerSource</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_com.exedio.cope.Feature">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;com.exedio.cope.<a href="../../../../com/exedio/cope/Feature.html" title="class in com.exedio.cope">Feature</a></h3>
+<code><a href="../../../../com/exedio/cope/Feature.html#afterModelCreated()">afterModelCreated</a>, <a href="../../../../com/exedio/cope/Feature.html#getAnnotation(java.lang.Class)">getAnnotation</a>, <a href="../../../../com/exedio/cope/Feature.html#getID()">getID</a>, <a href="../../../../com/exedio/cope/Feature.html#getName()">getName</a>, <a href="../../../../com/exedio/cope/Feature.html#getPattern()">getPattern</a>, <a href="../../../../com/exedio/cope/Feature.html#getWrappers()">getWrappers</a>, <a href="../../../../com/exedio/cope/Feature.html#isAnnotationPresent(java.lang.Class)">isAnnotationPresent</a>, <a href="../../../../com/exedio/cope/Feature.html#isSourceAlready()">isSourceAlready</a>, <a href="../../../../com/exedio/cope/Feature.html#mount(java.lang.String,%20java.io.Serializable,%20java.lang.reflect.AnnotatedElement)">mount</a>, <a href="../../../../com/exedio/cope/Feature.html#readResolve()">readResolve</a>, <a href="../../../../com/exedio/cope/Feature.html#toString()">toString</a>, <a href="../../../../com/exedio/cope/Feature.html#toString(java.lang.StringBuilder,%20com.exedio.cope.Type)">toString</a>, <a href="../../../../com/exedio/cope/Feature.html#writeReplace()">writeReplace</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_java.lang.Object">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;java.lang.<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></h3>
+<code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#clone()" title="class or interface in java.lang">clone</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#equals(java.lang.Object)" title="class or interface in java.lang">equals</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#finalize()" title="class or interface in java.lang">finalize</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#getClass()" title="class or interface in java.lang">getClass</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#hashCode()" title="class or interface in java.lang">hashCode</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#notify()" title="class or interface in java.lang">notify</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#notifyAll()" title="class or interface in java.lang">notifyAll</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#wait()" title="class or interface in java.lang">wait</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#wait(long)" title="class or interface in java.lang">wait</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#wait(long,%20int)" title="class or interface in java.lang">wait</a></code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="details">
+<ul class="blockList">
+<li class="blockList">
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor_detail">
+<!--   -->
+</a>
+<h3>Constructor Detail</h3>
+<a name="TextUrlFilterDelegator(com.exedio.cope.pattern.Media, com.exedio.cope.pattern.TextUrlFilter, java.lang.String, java.nio.charset.Charset, java.lang.String, java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>TextUrlFilterDelegator</h4>
+<pre>public&nbsp;TextUrlFilterDelegator(<a href="../../../../com/exedio/cope/pattern/Media.html" title="class in com.exedio.cope.pattern">Media</a>&nbsp;raw,
+                      <a href="../../../../com/exedio/cope/pattern/TextUrlFilter.html" title="class in com.exedio.cope.pattern">TextUrlFilter</a>&nbsp;delegate,
+                      <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;supportedContentType,
+                      <a href="http://docs.oracle.com/javase/7/docs/api/java/nio/charset/Charset.html?is-external=true" title="class or interface in java.nio.charset">Charset</a>&nbsp;charset,
+                      <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;pasteStart,
+                      <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;pasteStop)</pre>
+</li>
+</ul>
+</li>
+</ul>
+<!-- ============ METHOD DETAIL ========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_detail">
+<!--   -->
+</a>
+<h3>Method Detail</h3>
+<a name="setRaw(com.exedio.cope.Item, com.exedio.cope.pattern.Media.Value)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setRaw</h4>
+<pre>public final&nbsp;void&nbsp;setRaw(<a href="../../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&nbsp;item,
+          <a href="../../../../com/exedio/cope/pattern/Media.Value.html" title="class in com.exedio.cope.pattern">Media.Value</a>&nbsp;raw)
+                  throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd></dl>
+</li>
+</ul>
+<a name="getPasteLocator(com.exedio.cope.Item, java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getPasteLocator</h4>
+<pre>public final&nbsp;<a href="../../../../com/exedio/cope/pattern/MediaPath.Locator.html" title="class in com.exedio.cope.pattern">MediaPath.Locator</a>&nbsp;getPasteLocator(<a href="../../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&nbsp;item,
+                                <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key)</pre>
+</li>
+</ul>
+<a name="getPasteURL(com.exedio.cope.Item, java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getPasteURL</h4>
+<pre>public final&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getPasteURL(<a href="../../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&nbsp;item,
+                 <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key)</pre>
+</li>
+</ul>
+<a name="getContentType(com.exedio.cope.Item)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getContentType</h4>
+<pre>public final&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getContentType(<a href="../../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&nbsp;item)</pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../com/exedio/cope/pattern/MediaPath.html#getContentType(com.exedio.cope.Item)">getContentType</a></code>&nbsp;in class&nbsp;<code><a href="../../../../com/exedio/cope/pattern/MediaPath.html" title="class in com.exedio.cope.pattern">MediaPath</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="isContentTypeWrapped()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>isContentTypeWrapped</h4>
+<pre>public final&nbsp;boolean&nbsp;isContentTypeWrapped()</pre>
+<dl>
+<dt><strong>Overrides:</strong></dt>
+<dd><code><a href="../../../../com/exedio/cope/pattern/MediaPath.html#isContentTypeWrapped()">isContentTypeWrapped</a></code>&nbsp;in class&nbsp;<code><a href="../../../../com/exedio/cope/pattern/MediaPath.html" title="class in com.exedio.cope.pattern">MediaPath</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="doGetAndCommit(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse, com.exedio.cope.Item)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>doGetAndCommit</h4>
+<pre>public final&nbsp;void&nbsp;doGetAndCommit(<a href="http://java.sun.com/j2ee/1.4/docs/api/javax/servlet/http/HttpServletRequest.html?is-external=true" title="class or interface in javax.servlet.http">HttpServletRequest</a>&nbsp;request,
+                  <a href="http://java.sun.com/j2ee/1.4/docs/api/javax/servlet/http/HttpServletResponse.html?is-external=true" title="class or interface in javax.servlet.http">HttpServletResponse</a>&nbsp;response,
+                  <a href="../../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&nbsp;item)
+                          throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a>,
+                                 <a href="../../../../com/exedio/cope/pattern/MediaPath.NotFound.html" title="class in com.exedio.cope.pattern">MediaPath.NotFound</a></pre>
+<div class="block"><strong>Description copied from class:&nbsp;<code><a href="../../../../com/exedio/cope/pattern/MediaPath.html#doGetAndCommit(javax.servlet.http.HttpServletRequest,%20javax.servlet.http.HttpServletResponse,%20com.exedio.cope.Item)">MediaPath</a></code></strong></div>
+<div class="block">The implementor MUST <a href="../../../../com/exedio/cope/pattern/MediaPath.html#commit()"><code>commit</code></a> the transaction,
+ if the method completes normally (without exception).
+ Otherwise the implementor may or may not commit the transaction.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../com/exedio/cope/pattern/MediaPath.html#doGetAndCommit(javax.servlet.http.HttpServletRequest,%20javax.servlet.http.HttpServletResponse,%20com.exedio.cope.Item)">doGetAndCommit</a></code>&nbsp;in class&nbsp;<code><a href="../../../../com/exedio/cope/pattern/MediaPath.html" title="class in com.exedio.cope.pattern">MediaPath</a></code></dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd>
+<dd><code><a href="../../../../com/exedio/cope/pattern/MediaPath.NotFound.html" title="class in com.exedio.cope.pattern">MediaPath.NotFound</a></code></dd></dl>
+</li>
+</ul>
+<a name="getContent(com.exedio.cope.Item, javax.servlet.http.HttpServletRequest)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getContent</h4>
+<pre>public final&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getContent(<a href="../../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&nbsp;item,
+                <a href="http://java.sun.com/j2ee/1.4/docs/api/javax/servlet/http/HttpServletRequest.html?is-external=true" title="class or interface in javax.servlet.http">HttpServletRequest</a>&nbsp;request)
+                        throws <a href="../../../../com/exedio/cope/pattern/MediaPath.NotFound.html" title="class in com.exedio.cope.pattern">MediaPath.NotFound</a></pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="../../../../com/exedio/cope/pattern/MediaPath.NotFound.html" title="class in com.exedio.cope.pattern">MediaPath.NotFound</a></code></dd></dl>
+</li>
+</ul>
+<a name="check(com.exedio.cope.Item)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>check</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;check(<a href="../../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&nbsp;item)
+                  throws <a href="../../../../com/exedio/cope/pattern/MediaPath.NotFound.html" title="class in com.exedio.cope.pattern">MediaPath.NotFound</a></pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../com/exedio/cope/pattern/TextUrlFilterCheckable.html#check(com.exedio.cope.Item)">check</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../com/exedio/cope/pattern/TextUrlFilterCheckable.html" title="interface in com.exedio.cope.pattern">TextUrlFilterCheckable</a></code></dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="../../../../com/exedio/cope/pattern/MediaPath.NotFound.html" title="class in com.exedio.cope.pattern">MediaPath.NotFound</a></code></dd></dl>
+</li>
+</ul>
+<a name="appendKey(java.lang.StringBuilder, com.exedio.cope.Item, java.lang.String, javax.servlet.http.HttpServletRequest)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>appendKey</h4>
+<pre>protected&nbsp;void&nbsp;appendKey(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/StringBuilder.html?is-external=true" title="class or interface in java.lang">StringBuilder</a>&nbsp;bf,
+             <a href="../../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&nbsp;item,
+             <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key,
+             <a href="http://java.sun.com/j2ee/1.4/docs/api/javax/servlet/http/HttpServletRequest.html?is-external=true" title="class or interface in javax.servlet.http">HttpServletRequest</a>&nbsp;request)</pre>
+</li>
+</ul>
+<a name="getSupportedSourceContentTypes()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getSupportedSourceContentTypes</h4>
+<pre>public final&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;getSupportedSourceContentTypes()</pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../com/exedio/cope/pattern/MediaFilter.html#getSupportedSourceContentTypes()">getSupportedSourceContentTypes</a></code>&nbsp;in class&nbsp;<code><a href="../../../../com/exedio/cope/pattern/MediaFilter.html" title="class in com.exedio.cope.pattern">MediaFilter</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="getPasteContentTypesAllowed()">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>getPasteContentTypesAllowed</h4>
+<pre>public final&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;getPasteContentTypesAllowed()</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<!-- ========= END OF CLASS DATA ========= -->
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<div class="bottomNav"><a name="navbar_bottom">
+<!--   -->
+</a><a href="#skip-navbar_bottom" title="Skip navigation links"></a><a name="navbar_bottom_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../help-doc.html">Help</a></li>
+</ul>
+<div class="aboutLanguage"><em>exedio persistence</em></div>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../../com/exedio/cope/pattern/TextUrlFilterCheckable.html" title="interface in com.exedio.cope.pattern"><span class="strong">Prev Class</span></a></li>
+<li><a href="../../../../com/exedio/cope/pattern/UniqueHashedMedia.html" title="class in com.exedio.cope.pattern"><span class="strong">Next Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../index.html?com/exedio/cope/pattern/TextUrlFilterDelegator.html" target="_top">Frames</a></li>
+<li><a href="TextUrlFilterDelegator.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_bottom">
+<li><a href="../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_bottom");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li><a href="#nested_classes_inherited_from_class_com.exedio.cope.pattern.MediaPath">Nested</a>&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#constructor_summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#constructor_detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_bottom">
+<!--   -->
+</a></div>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+<p class="legalCopy"><small>Maintained by <a href="http://www.exedio.com/" target="_top">exedio</a> Gesellschaft f&uuml;r Softwareentwicklung mbH.</small></p>
+</body>
+</html>

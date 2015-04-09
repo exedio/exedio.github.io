@@ -1,0 +1,4373 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- NewPage -->
+<html lang="de">
+<head>
+<title>Serialized Form (exedio persistence)</title>
+<link rel="stylesheet" type="text/css" href="stylesheet.css" title="Style">
+</head>
+<body>
+<script type="text/javascript"><!--
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="Serialized Form (exedio persistence)";
+    }
+//-->
+</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+<!-- ========= START OF TOP NAVBAR ======= -->
+<div class="topNav"><a name="navbar_top">
+<!--   -->
+</a><a href="#skip-navbar_top" title="Skip navigation links"></a><a name="navbar_top_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="overview-summary.html">Overview</a></li>
+<li>Package</li>
+<li>Class</li>
+<li><a href="overview-tree.html">Tree</a></li>
+<li><a href="help-doc.html">Help</a></li>
+</ul>
+<div class="aboutLanguage"><em>exedio persistence</em></div>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li>Prev</li>
+<li>Next</li>
+</ul>
+<ul class="navList">
+<li><a href="index.html?serialized-form.html" target="_top">Frames</a></li>
+<li><a href="serialized-form.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_top">
+<li><a href="allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_top");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<a name="skip-navbar_top">
+<!--   -->
+</a></div>
+<!-- ========= END OF TOP NAVBAR ========= -->
+<div class="header">
+<h1 title="Serialized Form" class="title">Serialized Form</h1>
+</div>
+<div class="serializedFormContainer">
+<ul class="blockList">
+<li class="blockList">
+<h2 title="Package">Package&nbsp;com.exedio.cope</h2>
+<ul class="blockList">
+<li class="blockList"><a name="com.exedio.cope.Aggregate">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/cope/Aggregate.html" title="class in com.exedio.cope">com.exedio.cope.Aggregate</a> extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList"><a name="serializedForm">
+<!--   -->
+</a>
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockList">
+<h4>source</h4>
+<pre><a href="com/exedio/cope/Function.html" title="interface in com.exedio.cope">Function</a>&lt;<a href="com/exedio/cope/Function.html" title="type parameter in Function">E</a>&gt; source</pre>
+<div class="block">I'm not yet sure, whether the type of the aggregate
+ always equals the type of the source, but it does for
+ SUM, MIN, MAX, AVG.</div>
+</li>
+<li class="blockList">
+<h4>name</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> name</pre>
+</li>
+<li class="blockListLast">
+<h4>sqlPrefix</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> sqlPrefix</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a name="com.exedio.cope.AsStringView">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/cope/AsStringView.html" title="class in com.exedio.cope">com.exedio.cope.AsStringView</a> extends <a href="com/exedio/cope/StringView.html" title="class in com.exedio.cope">StringView</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList"><a name="serializedForm">
+<!--   -->
+</a>
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockListLast">
+<h4>source</h4>
+<pre><a href="com/exedio/cope/NumberFunction.html" title="interface in com.exedio.cope">NumberFunction</a>&lt;<a href="com/exedio/cope/NumberFunction.html" title="type parameter in NumberFunction">E</a> extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Number.html?is-external=true" title="class or interface in java.lang">Number</a>&gt; source</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a name="com.exedio.cope.BindFunction">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/cope/BindFunction.html" title="class in com.exedio.cope">com.exedio.cope.BindFunction</a> extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList"><a name="serializedForm">
+<!--   -->
+</a>
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockList">
+<h4>function</h4>
+<pre><a href="com/exedio/cope/Function.html" title="interface in com.exedio.cope">Function</a>&lt;<a href="com/exedio/cope/Function.html" title="type parameter in Function">E</a>&gt; function</pre>
+</li>
+<li class="blockListLast">
+<h4>join</h4>
+<pre><a href="com/exedio/cope/Join.html" title="class in com.exedio.cope">Join</a> join</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a name="com.exedio.cope.BindItemFunction">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/cope/BindItemFunction.html" title="class in com.exedio.cope">com.exedio.cope.BindItemFunction</a> extends <a href="com/exedio/cope/BindFunction.html" title="class in com.exedio.cope">BindFunction</a>&lt;<a href="com/exedio/cope/BindItemFunction.html" title="type parameter in BindItemFunction">E</a> extends <a href="com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&gt; implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList"><a name="serializedForm">
+<!--   -->
+</a>
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockListLast">
+<h4>itemFunction</h4>
+<pre><a href="com/exedio/cope/ItemFunction.html" title="interface in com.exedio.cope">ItemFunction</a>&lt;<a href="com/exedio/cope/ItemFunction.html" title="type parameter in ItemFunction">E</a> extends <a href="com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&gt; itemFunction</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a name="com.exedio.cope.BindNumberFunction">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/cope/BindNumberFunction.html" title="class in com.exedio.cope">com.exedio.cope.BindNumberFunction</a> extends <a href="com/exedio/cope/BindFunction.html" title="class in com.exedio.cope">BindFunction</a>&lt;<a href="com/exedio/cope/BindNumberFunction.html" title="type parameter in BindNumberFunction">E</a> extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Number.html?is-external=true" title="class or interface in java.lang">Number</a>&gt; implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+</li>
+<li class="blockList"><a name="com.exedio.cope.BindStringFunction">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/cope/BindStringFunction.html" title="class in com.exedio.cope">com.exedio.cope.BindStringFunction</a> extends <a href="com/exedio/cope/BindFunction.html" title="class in com.exedio.cope">BindFunction</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt; implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+</li>
+<li class="blockList"><a name="com.exedio.cope.BooleanField">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/cope/BooleanField.html" title="class in com.exedio.cope">com.exedio.cope.BooleanField</a> extends <a href="com/exedio/cope/FunctionField.html" title="class in com.exedio.cope">FunctionField</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang">Boolean</a>&gt; implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+</li>
+<li class="blockList"><a name="com.exedio.cope.ChangeEvent.NotAvailableException">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/cope/ChangeEvent.NotAvailableException.html" title="class in com.exedio.cope">com.exedio.cope.ChangeEvent.NotAvailableException</a> extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Exception.html?is-external=true" title="class or interface in java.lang">Exception</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+</li>
+<li class="blockList"><a name="com.exedio.cope.CharSetCondition">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/cope/CharSetCondition.html" title="class in com.exedio.cope">com.exedio.cope.CharSetCondition</a> extends <a href="com/exedio/cope/Condition.html" title="class in com.exedio.cope">Condition</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList"><a name="serializedForm">
+<!--   -->
+</a>
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockList">
+<h4>function</h4>
+<pre><a href="com/exedio/cope/StringFunction.html" title="interface in com.exedio.cope">StringFunction</a> function</pre>
+</li>
+<li class="blockListLast">
+<h4>value</h4>
+<pre><a href="com/exedio/cope/util/CharSet.html" title="class in com.exedio.cope.util">CharSet</a> value</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a name="com.exedio.cope.CheckConstraint">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/cope/CheckConstraint.html" title="class in com.exedio.cope">com.exedio.cope.CheckConstraint</a> extends <a href="com/exedio/cope/Feature.html" title="class in com.exedio.cope">Feature</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList"><a name="serializedForm">
+<!--   -->
+</a>
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockListLast">
+<h4>condition</h4>
+<pre><a href="com/exedio/cope/Condition.html" title="class in com.exedio.cope">Condition</a> condition</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a name="com.exedio.cope.CheckViolationException">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/cope/CheckViolationException.html" title="class in com.exedio.cope">com.exedio.cope.CheckViolationException</a> extends <a href="com/exedio/cope/ConstraintViolationException.html" title="class in com.exedio.cope">ConstraintViolationException</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList"><a name="serializedForm">
+<!--   -->
+</a>
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockListLast">
+<h4>feature</h4>
+<pre><a href="com/exedio/cope/CheckConstraint.html" title="class in com.exedio.cope">CheckConstraint</a> feature</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a name="com.exedio.cope.CoalesceView">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/cope/CoalesceView.html" title="class in com.exedio.cope">com.exedio.cope.CoalesceView</a> extends <a href="com/exedio/cope/View.html" title="class in com.exedio.cope">View</a>&lt;<a href="com/exedio/cope/CoalesceView.html" title="type parameter in CoalesceView">E</a>&gt; implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList"><a name="serializedForm">
+<!--   -->
+</a>
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockList">
+<h4>parameters</h4>
+<pre><a href="com/exedio/cope/Function.html" title="interface in com.exedio.cope">Function</a>&lt;<a href="com/exedio/cope/Function.html" title="type parameter in Function">E</a>&gt;[] parameters</pre>
+</li>
+<li class="blockListLast">
+<h4>literal</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a> literal</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a name="com.exedio.cope.CompareCondition">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/cope/CompareCondition.html" title="class in com.exedio.cope">com.exedio.cope.CompareCondition</a> extends <a href="com/exedio/cope/Condition.html" title="class in com.exedio.cope">Condition</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList"><a name="serializedForm">
+<!--   -->
+</a>
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockList">
+<h4>operator</h4>
+<pre><a href="com/exedio/cope/CompareFunctionCondition.Operator.html" title="enum in com.exedio.cope">CompareFunctionCondition.Operator</a> operator</pre>
+</li>
+<li class="blockList">
+<h4>left</h4>
+<pre><a href="com/exedio/cope/Selectable.html" title="interface in com.exedio.cope">Selectable</a>&lt;<a href="com/exedio/cope/Selectable.html" title="type parameter in Selectable">E</a>&gt; left</pre>
+</li>
+<li class="blockListLast">
+<h4>right</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a> right</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a name="com.exedio.cope.CompareFunctionCondition">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/cope/CompareFunctionCondition.html" title="class in com.exedio.cope">com.exedio.cope.CompareFunctionCondition</a> extends <a href="com/exedio/cope/Condition.html" title="class in com.exedio.cope">Condition</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList"><a name="serializedForm">
+<!--   -->
+</a>
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockList">
+<h4>operator</h4>
+<pre><a href="com/exedio/cope/CompareFunctionCondition.Operator.html" title="enum in com.exedio.cope">CompareFunctionCondition.Operator</a> operator</pre>
+</li>
+<li class="blockList">
+<h4>left</h4>
+<pre><a href="com/exedio/cope/Function.html" title="interface in com.exedio.cope">Function</a>&lt;<a href="com/exedio/cope/Function.html" title="type parameter in Function">E</a>&gt; left</pre>
+</li>
+<li class="blockListLast">
+<h4>right</h4>
+<pre><a href="com/exedio/cope/Function.html" title="interface in com.exedio.cope">Function</a>&lt;<a href="com/exedio/cope/Function.html" title="type parameter in Function">E</a>&gt; right</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a name="com.exedio.cope.CompositeCondition">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/cope/CompositeCondition.html" title="class in com.exedio.cope">com.exedio.cope.CompositeCondition</a> extends <a href="com/exedio/cope/Condition.html" title="class in com.exedio.cope">Condition</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList"><a name="serializedForm">
+<!--   -->
+</a>
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockList">
+<h4>operator</h4>
+<pre><a href="com/exedio/cope/CompositeCondition.Operator.html" title="enum in com.exedio.cope">CompositeCondition.Operator</a> operator</pre>
+</li>
+<li class="blockListLast">
+<h4>conditions</h4>
+<pre><a href="com/exedio/cope/Condition.html" title="class in com.exedio.cope">Condition</a>[] conditions</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a name="com.exedio.cope.Condition">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/cope/Condition.html" title="class in com.exedio.cope">com.exedio.cope.Condition</a> extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+</li>
+<li class="blockList"><a name="com.exedio.cope.ConstraintViolationException">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/cope/ConstraintViolationException.html" title="class in com.exedio.cope">com.exedio.cope.ConstraintViolationException</a> extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/RuntimeException.html?is-external=true" title="class or interface in java.lang">RuntimeException</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList"><a name="serializedForm">
+<!--   -->
+</a>
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockListLast">
+<h4>item</h4>
+<pre><a href="com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a> item</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a name="com.exedio.cope.CopyConstraint">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/cope/CopyConstraint.html" title="class in com.exedio.cope">com.exedio.cope.CopyConstraint</a> extends <a href="com/exedio/cope/Feature.html" title="class in com.exedio.cope">Feature</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList"><a name="serializedForm">
+<!--   -->
+</a>
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockList">
+<h4>target</h4>
+<pre><a href="com/exedio/cope/ItemField.html" title="class in com.exedio.cope">ItemField</a>&lt;<a href="com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a> extends <a href="com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&gt; target</pre>
+</li>
+<li class="blockList">
+<h4>copy</h4>
+<pre><a href="com/exedio/cope/FunctionField.html" title="class in com.exedio.cope">FunctionField</a>&lt;<a href="com/exedio/cope/FunctionField.html" title="type parameter in FunctionField">E</a>&gt; copy</pre>
+</li>
+<li class="blockListLast">
+<h4>templateIfSet</h4>
+<pre><a href="com/exedio/cope/FunctionField.html" title="class in com.exedio.cope">FunctionField</a>&lt;<a href="com/exedio/cope/FunctionField.html" title="type parameter in FunctionField">E</a>&gt; templateIfSet</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a name="com.exedio.cope.CopyViolationException">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/cope/CopyViolationException.html" title="class in com.exedio.cope">com.exedio.cope.CopyViolationException</a> extends <a href="com/exedio/cope/ConstraintViolationException.html" title="class in com.exedio.cope">ConstraintViolationException</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList"><a name="serializedForm">
+<!--   -->
+</a>
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockList">
+<h4>feature</h4>
+<pre><a href="com/exedio/cope/CopyConstraint.html" title="class in com.exedio.cope">CopyConstraint</a> feature</pre>
+</li>
+<li class="blockList">
+<h4>expectedValue</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a> expectedValue</pre>
+</li>
+<li class="blockList">
+<h4>actualValue</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a> actualValue</pre>
+</li>
+<li class="blockListLast">
+<h4>targetItem</h4>
+<pre><a href="com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a> targetItem</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a name="com.exedio.cope.Count">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/cope/Count.html" title="class in com.exedio.cope">com.exedio.cope.Count</a> extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+</li>
+<li class="blockList"><a name="com.exedio.cope.DataField">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/cope/DataField.html" title="class in com.exedio.cope">com.exedio.cope.DataField</a> extends <a href="com/exedio/cope/Field.html" title="class in com.exedio.cope">Field</a>&lt;<a href="com/exedio/cope/DataField.Value.html" title="class in com.exedio.cope">DataField.Value</a>&gt; implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList"><a name="serializedForm">
+<!--   -->
+</a>
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockList">
+<h4>maximumLength</h4>
+<pre>long maximumLength</pre>
+</li>
+<li class="blockList">
+<h4>model</h4>
+<pre><a href="com/exedio/cope/Model.html" title="class in com.exedio.cope">Model</a> model</pre>
+</li>
+<li class="blockList">
+<h4>column</h4>
+<pre>com.exedio.cope.BlobColumn column</pre>
+</li>
+<li class="blockList">
+<h4>bufferSizeDefault</h4>
+<pre>int bufferSizeDefault</pre>
+</li>
+<li class="blockListLast">
+<h4>bufferSizeLimit</h4>
+<pre>int bufferSizeLimit</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a name="com.exedio.cope.DataLengthViolationException">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/cope/DataLengthViolationException.html" title="class in com.exedio.cope">com.exedio.cope.DataLengthViolationException</a> extends <a href="com/exedio/cope/ConstraintViolationException.html" title="class in com.exedio.cope">ConstraintViolationException</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList"><a name="serializedForm">
+<!--   -->
+</a>
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockList">
+<h4>feature</h4>
+<pre><a href="com/exedio/cope/DataField.html" title="class in com.exedio.cope">DataField</a> feature</pre>
+</li>
+<li class="blockList">
+<h4>length</h4>
+<pre>long length</pre>
+</li>
+<li class="blockListLast">
+<h4>lengthExact</h4>
+<pre>boolean lengthExact</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a name="com.exedio.cope.DateField">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/cope/DateField.html" title="class in com.exedio.cope">com.exedio.cope.DateField</a> extends <a href="com/exedio/cope/FunctionField.html" title="class in com.exedio.cope">FunctionField</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Date.html?is-external=true" title="class or interface in java.util">Date</a>&gt; implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+</li>
+<li class="blockList"><a name="com.exedio.cope.DayField">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/cope/DayField.html" title="class in com.exedio.cope">com.exedio.cope.DayField</a> extends <a href="com/exedio/cope/FunctionField.html" title="class in com.exedio.cope">FunctionField</a>&lt;<a href="com/exedio/cope/util/Day.html" title="class in com.exedio.cope.util">Day</a>&gt; implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+</li>
+<li class="blockList"><a name="com.exedio.cope.DivideView">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/cope/DivideView.html" title="class in com.exedio.cope">com.exedio.cope.DivideView</a> extends <a href="com/exedio/cope/NumberView.html" title="class in com.exedio.cope">NumberView</a>&lt;<a href="com/exedio/cope/DivideView.html" title="type parameter in DivideView">E</a> extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Number.html?is-external=true" title="class or interface in java.lang">Number</a>&gt; implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList"><a name="serializedForm">
+<!--   -->
+</a>
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockList">
+<h4>dividend</h4>
+<pre><a href="com/exedio/cope/Function.html" title="interface in com.exedio.cope">Function</a>&lt;<a href="com/exedio/cope/Function.html" title="type parameter in Function">E</a>&gt; dividend</pre>
+</li>
+<li class="blockListLast">
+<h4>divisor</h4>
+<pre><a href="com/exedio/cope/Function.html" title="interface in com.exedio.cope">Function</a>&lt;<a href="com/exedio/cope/Function.html" title="type parameter in Function">E</a>&gt; divisor</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a name="com.exedio.cope.DoubleField">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/cope/DoubleField.html" title="class in com.exedio.cope">com.exedio.cope.DoubleField</a> extends <a href="com/exedio/cope/NumberField.html" title="class in com.exedio.cope">NumberField</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a>&gt; implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList"><a name="serializedForm">
+<!--   -->
+</a>
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockList">
+<h4>minimum</h4>
+<pre>double minimum</pre>
+</li>
+<li class="blockListLast">
+<h4>maximum</h4>
+<pre>double maximum</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a name="com.exedio.cope.DoubleNaNException">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/cope/DoubleNaNException.html" title="class in com.exedio.cope">com.exedio.cope.DoubleNaNException</a> extends <a href="com/exedio/cope/ConstraintViolationException.html" title="class in com.exedio.cope">ConstraintViolationException</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList"><a name="serializedForm">
+<!--   -->
+</a>
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockListLast">
+<h4>feature</h4>
+<pre><a href="com/exedio/cope/DoubleField.html" title="class in com.exedio.cope">DoubleField</a> feature</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a name="com.exedio.cope.DoubleRangeViolationException">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/cope/DoubleRangeViolationException.html" title="class in com.exedio.cope">com.exedio.cope.DoubleRangeViolationException</a> extends <a href="com/exedio/cope/RangeViolationException.html" title="class in com.exedio.cope">RangeViolationException</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList"><a name="serializedForm">
+<!--   -->
+</a>
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockList">
+<h4>feature</h4>
+<pre><a href="com/exedio/cope/DoubleField.html" title="class in com.exedio.cope">DoubleField</a> feature</pre>
+</li>
+<li class="blockListLast">
+<h4>value</h4>
+<pre>double value</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a name="com.exedio.cope.EnumField">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/cope/EnumField.html" title="class in com.exedio.cope">com.exedio.cope.EnumField</a> extends <a href="com/exedio/cope/FunctionField.html" title="class in com.exedio.cope">FunctionField</a>&lt;<a href="com/exedio/cope/EnumField.html" title="type parameter in EnumField">E</a> extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Enum.html?is-external=true" title="class or interface in java.lang">Enum</a>&lt;<a href="com/exedio/cope/EnumField.html" title="type parameter in EnumField">E</a>&gt;&gt; implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList"><a name="serializedForm">
+<!--   -->
+</a>
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockListLast">
+<h4>valueType</h4>
+<pre>com.exedio.cope.EnumFieldType&lt;E extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Enum.html?is-external=true" title="class or interface in java.lang">Enum</a>&lt;E&gt;&gt; valueType</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a name="com.exedio.cope.Feature">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/cope/Feature.html" title="class in com.exedio.cope">com.exedio.cope.Feature</a> extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList"><a name="serialized_methods">
+<!--   -->
+</a>
+<h3>Serialization Methods</h3>
+<ul class="blockList">
+<li class="blockList"><a name="readObject(java.io.ObjectInputStream)">
+<!--   -->
+</a>
+<h4>readObject</h4>
+<pre>private&nbsp;void&nbsp;readObject(<a href="http://docs.oracle.com/javase/7/docs/api/java/io/ObjectInputStream.html?is-external=true" title="class or interface in java.io">ObjectInputStream</a>&nbsp;ois)
+                 throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/InvalidObjectException.html?is-external=true" title="class or interface in java.io">InvalidObjectException</a></pre>
+<div class="block">Block malicious data streams.</div>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/InvalidObjectException.html?is-external=true" title="class or interface in java.io">InvalidObjectException</a></code></dd><dt><span class="strong">See Also:</span></dt><dd><a href="com/exedio/cope/Feature.html#writeReplace()"><code>Feature.writeReplace()</code></a></dd></dl>
+</li>
+<li class="blockList"><a name="readResolve()">
+<!--   -->
+</a>
+<h4>readResolve</h4>
+<pre>protected final&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;readResolve()
+                            throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/InvalidObjectException.html?is-external=true" title="class or interface in java.io">InvalidObjectException</a></pre>
+<div class="block">Block malicious data streams.</div>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/InvalidObjectException.html?is-external=true" title="class or interface in java.io">InvalidObjectException</a></code></dd><dt><span class="strong">See Also:</span></dt><dd><a href="com/exedio/cope/Feature.html#writeReplace()"><code>Feature.writeReplace()</code></a></dd></dl>
+</li>
+<li class="blockListLast"><a name="writeReplace()">
+<!--   -->
+</a>
+<h4>writeReplace</h4>
+<pre>protected final&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;writeReplace()
+                             throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/ObjectStreamException.html?is-external=true" title="class or interface in java.io">ObjectStreamException</a></pre>
+<div class="block"><a href="http://java.sun.com/j2se/1.5.0/docs/guide/serialization/spec/output.html#5324">See Spec</a></div>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/ObjectStreamException.html?is-external=true" title="class or interface in java.io">ObjectStreamException</a></code></dd></dl>
+</li>
+</ul>
+</li>
+<li class="blockList"><a name="serializedForm">
+<!--   -->
+</a>
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockList">
+<h4>instantiationOrder</h4>
+<pre>int instantiationOrder</pre>
+</li>
+<li class="blockList">
+<h4>mountIfMounted</h4>
+<pre>com.exedio.cope.Feature.Mount mountIfMounted</pre>
+</li>
+<li class="blockListLast">
+<h4>patternUntilMount</h4>
+<pre><a href="com/exedio/cope/Pattern.html" title="class in com.exedio.cope">Pattern</a> patternUntilMount</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a name="com.exedio.cope.Field">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/cope/Field.html" title="class in com.exedio.cope">com.exedio.cope.Field</a> extends <a href="com/exedio/cope/Feature.html" title="class in com.exedio.cope">Feature</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList"><a name="serializedForm">
+<!--   -->
+</a>
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockList">
+<h4>isfinal</h4>
+<pre>boolean isfinal</pre>
+</li>
+<li class="blockList">
+<h4>optional</h4>
+<pre>boolean optional</pre>
+</li>
+<li class="blockList">
+<h4>valueClass</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">T</a>&gt; valueClass</pre>
+</li>
+<li class="blockListLast">
+<h4>column</h4>
+<pre>com.exedio.cope.Column column</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a name="com.exedio.cope.FinalViolationException">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/cope/FinalViolationException.html" title="class in com.exedio.cope">com.exedio.cope.FinalViolationException</a> extends <a href="com/exedio/cope/ConstraintViolationException.html" title="class in com.exedio.cope">ConstraintViolationException</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList"><a name="serializedForm">
+<!--   -->
+</a>
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockListLast">
+<h4>feature</h4>
+<pre><a href="com/exedio/cope/Feature.html" title="class in com.exedio.cope">Feature</a> feature</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a name="com.exedio.cope.FunctionField">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/cope/FunctionField.html" title="class in com.exedio.cope">com.exedio.cope.FunctionField</a> extends <a href="com/exedio/cope/Field.html" title="class in com.exedio.cope">Field</a>&lt;<a href="com/exedio/cope/FunctionField.html" title="type parameter in FunctionField">E</a>&gt; implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList"><a name="serializedForm">
+<!--   -->
+</a>
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockList">
+<h4>unique</h4>
+<pre>boolean unique</pre>
+</li>
+<li class="blockList">
+<h4>implicitUniqueConstraint</h4>
+<pre><a href="com/exedio/cope/UniqueConstraint.html" title="class in com.exedio.cope">UniqueConstraint</a> implicitUniqueConstraint</pre>
+</li>
+<li class="blockList">
+<h4>copyFrom</h4>
+<pre><a href="com/exedio/cope/ItemField.html" title="class in com.exedio.cope">ItemField</a>&lt;<a href="com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a> extends <a href="com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&gt;[] copyFrom</pre>
+</li>
+<li class="blockList">
+<h4>implicitCopyConstraintsFrom</h4>
+<pre><a href="com/exedio/cope/CopyConstraint.html" title="class in com.exedio.cope">CopyConstraint</a>[] implicitCopyConstraintsFrom</pre>
+</li>
+<li class="blockList">
+<h4>defaultSource</h4>
+<pre>com.exedio.cope.DefaultSource&lt;E&gt; defaultSource</pre>
+</li>
+<li class="blockListLast">
+<h4>uniqueConstraints</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/java/util/ArrayList.html?is-external=true" title="class or interface in java.util">ArrayList</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/util/ArrayList.html?is-external=true" title="class or interface in java.util">E</a>&gt; uniqueConstraints</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a name="com.exedio.cope.InstanceOfCondition">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/cope/InstanceOfCondition.html" title="class in com.exedio.cope">com.exedio.cope.InstanceOfCondition</a> extends <a href="com/exedio/cope/Condition.html" title="class in com.exedio.cope">Condition</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList"><a name="serializedForm">
+<!--   -->
+</a>
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockList">
+<h4>function</h4>
+<pre><a href="com/exedio/cope/ItemFunction.html" title="interface in com.exedio.cope">ItemFunction</a>&lt;<a href="com/exedio/cope/ItemFunction.html" title="type parameter in ItemFunction">E</a> extends <a href="com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&gt; function</pre>
+</li>
+<li class="blockList">
+<h4>not</h4>
+<pre>boolean not</pre>
+</li>
+<li class="blockListLast">
+<h4>types</h4>
+<pre><a href="com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;<a href="com/exedio/cope/Type.html" title="type parameter in Type">T</a> extends <a href="com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&gt;[] types</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a name="com.exedio.cope.IntegerField">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/cope/IntegerField.html" title="class in com.exedio.cope">com.exedio.cope.IntegerField</a> extends <a href="com/exedio/cope/NumberField.html" title="class in com.exedio.cope">NumberField</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&gt; implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList"><a name="serializedForm">
+<!--   -->
+</a>
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockList">
+<h4>defaultToNextSequence</h4>
+<pre><a href="com/exedio/cope/Sequence.html" title="class in com.exedio.cope">Sequence</a> defaultToNextSequence</pre>
+</li>
+<li class="blockList">
+<h4>minimum</h4>
+<pre>int minimum</pre>
+</li>
+<li class="blockListLast">
+<h4>maximum</h4>
+<pre>int maximum</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a name="com.exedio.cope.IntegerRangeViolationException">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/cope/IntegerRangeViolationException.html" title="class in com.exedio.cope">com.exedio.cope.IntegerRangeViolationException</a> extends <a href="com/exedio/cope/RangeViolationException.html" title="class in com.exedio.cope">RangeViolationException</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList"><a name="serializedForm">
+<!--   -->
+</a>
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockList">
+<h4>feature</h4>
+<pre><a href="com/exedio/cope/IntegerField.html" title="class in com.exedio.cope">IntegerField</a> feature</pre>
+</li>
+<li class="blockListLast">
+<h4>value</h4>
+<pre>int value</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a name="com.exedio.cope.IntegrityViolationException">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/cope/IntegrityViolationException.html" title="class in com.exedio.cope">com.exedio.cope.IntegrityViolationException</a> extends <a href="com/exedio/cope/ConstraintViolationException.html" title="class in com.exedio.cope">ConstraintViolationException</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList"><a name="serializedForm">
+<!--   -->
+</a>
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockList">
+<h4>feature</h4>
+<pre><a href="com/exedio/cope/ItemField.html" title="class in com.exedio.cope">ItemField</a>&lt;<a href="com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a> extends <a href="com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&gt; feature</pre>
+</li>
+<li class="blockListLast">
+<h4>referrers</h4>
+<pre>int referrers</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a name="com.exedio.cope.IsNullCondition">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/cope/IsNullCondition.html" title="class in com.exedio.cope">com.exedio.cope.IsNullCondition</a> extends <a href="com/exedio/cope/Condition.html" title="class in com.exedio.cope">Condition</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList"><a name="serializedForm">
+<!--   -->
+</a>
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockList">
+<h4>function</h4>
+<pre><a href="com/exedio/cope/Function.html" title="interface in com.exedio.cope">Function</a>&lt;<a href="com/exedio/cope/Function.html" title="type parameter in Function">E</a>&gt; function</pre>
+</li>
+<li class="blockListLast">
+<h4>not</h4>
+<pre>boolean not</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a name="com.exedio.cope.Item">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/cope/Item.html" title="class in com.exedio.cope">com.exedio.cope.Item</a> extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList"><a name="serialized_methods">
+<!--   -->
+</a>
+<h3>Serialization Methods</h3>
+<ul class="blockList">
+<li class="blockList"><a name="readObject(java.io.ObjectInputStream)">
+<!--   -->
+</a>
+<h4>readObject</h4>
+<pre>private&nbsp;void&nbsp;readObject(<a href="http://docs.oracle.com/javase/7/docs/api/java/io/ObjectInputStream.html?is-external=true" title="class or interface in java.io">ObjectInputStream</a>&nbsp;in)
+                 throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a>,
+                        <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/ClassNotFoundException.html?is-external=true" title="class or interface in java.lang">ClassNotFoundException</a></pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/ClassNotFoundException.html?is-external=true" title="class or interface in java.lang">ClassNotFoundException</a></code></dd></dl>
+</li>
+<li class="blockListLast"><a name="writeReplace()">
+<!--   -->
+</a>
+<h4>writeReplace</h4>
+<pre>protected final&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;writeReplace()</pre>
+<div class="block"><a href="http://java.sun.com/j2se/1.5.0/docs/guide/serialization/spec/output.html#5324">See Spec</a></div>
+</li>
+</ul>
+</li>
+<li class="blockList"><a name="serializedForm">
+<!--   -->
+</a>
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockListLast">
+<h4>pk</h4>
+<pre>int pk</pre>
+<div class="block">The primary key of the item,
+ that is unique within the <a href="com/exedio/cope/Item.html#type"><code>Item.type</code></a> of this item.</div>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a name="com.exedio.cope.ItemField">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/cope/ItemField.html" title="class in com.exedio.cope">com.exedio.cope.ItemField</a> extends <a href="com/exedio/cope/FunctionField.html" title="class in com.exedio.cope">FunctionField</a>&lt;<a href="com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a> extends <a href="com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&gt; implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList"><a name="serializedForm">
+<!--   -->
+</a>
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockList">
+<h4>valueTypeFuture</h4>
+<pre>com.exedio.cope.TypeFuture&lt;T extends <a href="com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&gt; valueTypeFuture</pre>
+</li>
+<li class="blockList">
+<h4>policy</h4>
+<pre><a href="com/exedio/cope/ItemField.DeletePolicy.html" title="enum in com.exedio.cope">ItemField.DeletePolicy</a> policy</pre>
+</li>
+<li class="blockList">
+<h4>copyTo</h4>
+<pre><a href="com/exedio/cope/FunctionField.html" title="class in com.exedio.cope">FunctionField</a>&lt;<a href="com/exedio/cope/FunctionField.html" title="type parameter in FunctionField">E</a>&gt;[] copyTo</pre>
+</li>
+<li class="blockList">
+<h4>implicitCopyConstraintsTo</h4>
+<pre><a href="com/exedio/cope/CopyConstraint.html" title="class in com.exedio.cope">CopyConstraint</a>[] implicitCopyConstraintsTo</pre>
+</li>
+<li class="blockList">
+<h4>valueType</h4>
+<pre><a href="com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;<a href="com/exedio/cope/Type.html" title="type parameter in Type">T</a> extends <a href="com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&gt; valueType</pre>
+</li>
+<li class="blockList">
+<h4>connected</h4>
+<pre>boolean connected</pre>
+</li>
+<li class="blockList">
+<h4>onlyPossibleValueType</h4>
+<pre><a href="com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;<a href="com/exedio/cope/Type.html" title="type parameter in Type">T</a> extends <a href="com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&gt; onlyPossibleValueType</pre>
+</li>
+<li class="blockListLast">
+<h4>typeColumn</h4>
+<pre>com.exedio.cope.StringColumn typeColumn</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a name="com.exedio.cope.Join">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/cope/Join.html" title="class in com.exedio.cope">com.exedio.cope.Join</a> extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList"><a name="serializedForm">
+<!--   -->
+</a>
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockList">
+<h4>index</h4>
+<pre>int index</pre>
+</li>
+<li class="blockList">
+<h4>kind</h4>
+<pre><a href="com/exedio/cope/Join.Kind.html" title="enum in com.exedio.cope">Join.Kind</a> kind</pre>
+</li>
+<li class="blockList">
+<h4>type</h4>
+<pre><a href="com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;<a href="com/exedio/cope/Type.html" title="type parameter in Type">T</a> extends <a href="com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&gt; type</pre>
+</li>
+<li class="blockListLast">
+<h4>condition</h4>
+<pre><a href="com/exedio/cope/Condition.html" title="class in com.exedio.cope">Condition</a> condition</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a name="com.exedio.cope.LengthView">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/cope/LengthView.html" title="class in com.exedio.cope">com.exedio.cope.LengthView</a> extends <a href="com/exedio/cope/NumberView.html" title="class in com.exedio.cope">NumberView</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&gt; implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList"><a name="serializedForm">
+<!--   -->
+</a>
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockListLast">
+<h4>source</h4>
+<pre><a href="com/exedio/cope/Function.html" title="interface in com.exedio.cope">Function</a>&lt;<a href="com/exedio/cope/Function.html" title="type parameter in Function">E</a>&gt; source</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a name="com.exedio.cope.LikeCondition">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/cope/LikeCondition.html" title="class in com.exedio.cope">com.exedio.cope.LikeCondition</a> extends <a href="com/exedio/cope/Condition.html" title="class in com.exedio.cope">Condition</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList"><a name="serializedForm">
+<!--   -->
+</a>
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockList">
+<h4>function</h4>
+<pre><a href="com/exedio/cope/StringFunction.html" title="interface in com.exedio.cope">StringFunction</a> function</pre>
+</li>
+<li class="blockListLast">
+<h4>value</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> value</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a name="com.exedio.cope.LongField">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/cope/LongField.html" title="class in com.exedio.cope">com.exedio.cope.LongField</a> extends <a href="com/exedio/cope/NumberField.html" title="class in com.exedio.cope">NumberField</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Long.html?is-external=true" title="class or interface in java.lang">Long</a>&gt; implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList"><a name="serializedForm">
+<!--   -->
+</a>
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockList">
+<h4>minimum</h4>
+<pre>long minimum</pre>
+</li>
+<li class="blockListLast">
+<h4>maximum</h4>
+<pre>long maximum</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a name="com.exedio.cope.LongRangeViolationException">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/cope/LongRangeViolationException.html" title="class in com.exedio.cope">com.exedio.cope.LongRangeViolationException</a> extends <a href="com/exedio/cope/RangeViolationException.html" title="class in com.exedio.cope">RangeViolationException</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList"><a name="serializedForm">
+<!--   -->
+</a>
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockList">
+<h4>feature</h4>
+<pre><a href="com/exedio/cope/LongField.html" title="class in com.exedio.cope">LongField</a> feature</pre>
+</li>
+<li class="blockListLast">
+<h4>value</h4>
+<pre>long value</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a name="com.exedio.cope.MandatoryViolationException">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/cope/MandatoryViolationException.html" title="class in com.exedio.cope">com.exedio.cope.MandatoryViolationException</a> extends <a href="com/exedio/cope/ConstraintViolationException.html" title="class in com.exedio.cope">ConstraintViolationException</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList"><a name="serializedForm">
+<!--   -->
+</a>
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockListLast">
+<h4>feature</h4>
+<pre><a href="com/exedio/cope/Feature.html" title="class in com.exedio.cope">Feature</a> feature</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a name="com.exedio.cope.MatchCondition">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/cope/MatchCondition.html" title="class in com.exedio.cope">com.exedio.cope.MatchCondition</a> extends <a href="com/exedio/cope/Condition.html" title="class in com.exedio.cope">Condition</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList"><a name="serializedForm">
+<!--   -->
+</a>
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockList">
+<h4>function</h4>
+<pre><a href="com/exedio/cope/StringFunction.html" title="interface in com.exedio.cope">StringFunction</a> function</pre>
+</li>
+<li class="blockListLast">
+<h4>value</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> value</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a name="com.exedio.cope.MinusView">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/cope/MinusView.html" title="class in com.exedio.cope">com.exedio.cope.MinusView</a> extends <a href="com/exedio/cope/NumberView.html" title="class in com.exedio.cope">NumberView</a>&lt;<a href="com/exedio/cope/MinusView.html" title="type parameter in MinusView">E</a> extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Number.html?is-external=true" title="class or interface in java.lang">Number</a>&gt; implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList"><a name="serializedForm">
+<!--   -->
+</a>
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockList">
+<h4>minuend</h4>
+<pre><a href="com/exedio/cope/Function.html" title="interface in com.exedio.cope">Function</a>&lt;<a href="com/exedio/cope/Function.html" title="type parameter in Function">E</a>&gt; minuend</pre>
+</li>
+<li class="blockListLast">
+<h4>subtrahend</h4>
+<pre><a href="com/exedio/cope/Function.html" title="interface in com.exedio.cope">Function</a>&lt;<a href="com/exedio/cope/Function.html" title="type parameter in Function">E</a>&gt; subtrahend</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a name="com.exedio.cope.Model">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/cope/Model.html" title="class in com.exedio.cope">com.exedio.cope.Model</a> extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList"><a name="serialized_methods">
+<!--   -->
+</a>
+<h3>Serialization Methods</h3>
+<ul class="blockList">
+<li class="blockList"><a name="readObject(java.io.ObjectInputStream)">
+<!--   -->
+</a>
+<h4>readObject</h4>
+<pre>private&nbsp;void&nbsp;readObject(<a href="http://docs.oracle.com/javase/7/docs/api/java/io/ObjectInputStream.html?is-external=true" title="class or interface in java.io">ObjectInputStream</a>&nbsp;ois)
+                 throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/InvalidObjectException.html?is-external=true" title="class or interface in java.io">InvalidObjectException</a></pre>
+<div class="block">Block malicious data streams.</div>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/InvalidObjectException.html?is-external=true" title="class or interface in java.io">InvalidObjectException</a></code></dd><dt><span class="strong">See Also:</span></dt><dd><a href="com/exedio/cope/Model.html#writeReplace()"><code>Model.writeReplace()</code></a></dd></dl>
+</li>
+<li class="blockList"><a name="readResolve()">
+<!--   -->
+</a>
+<h4>readResolve</h4>
+<pre>private&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;readResolve()
+                    throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/InvalidObjectException.html?is-external=true" title="class or interface in java.io">InvalidObjectException</a></pre>
+<div class="block">Block malicious data streams.</div>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/InvalidObjectException.html?is-external=true" title="class or interface in java.io">InvalidObjectException</a></code></dd><dt><span class="strong">See Also:</span></dt><dd><a href="com/exedio/cope/Model.html#writeReplace()"><code>Model.writeReplace()</code></a></dd></dl>
+</li>
+<li class="blockListLast"><a name="writeReplace()">
+<!--   -->
+</a>
+<h4>writeReplace</h4>
+<pre>private&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;writeReplace()
+                     throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/ObjectStreamException.html?is-external=true" title="class or interface in java.io">ObjectStreamException</a></pre>
+<div class="block"><a href="http://java.sun.com/j2se/1.5.0/docs/guide/serialization/spec/output.html#5324">See Spec</a></div>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/ObjectStreamException.html?is-external=true" title="class or interface in java.io">ObjectStreamException</a></code></dd></dl>
+</li>
+</ul>
+</li>
+<li class="blockList"><a name="serializedForm">
+<!--   -->
+</a>
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockList">
+<h4>revisions</h4>
+<pre><a href="com/exedio/cope/Revisions.Factory.html" title="interface in com.exedio.cope">Revisions.Factory</a> revisions</pre>
+</li>
+<li class="blockList">
+<h4>reviseLock</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a> reviseLock</pre>
+</li>
+<li class="blockList">
+<h4>types</h4>
+<pre>com.exedio.cope.Types types</pre>
+</li>
+<li class="blockList">
+<h4>initializeDate</h4>
+<pre>long initializeDate</pre>
+</li>
+<li class="blockList">
+<h4>changeListeners</h4>
+<pre>com.exedio.cope.ChangeListeners changeListeners</pre>
+</li>
+<li class="blockList">
+<h4>connectLock</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a> connectLock</pre>
+</li>
+<li class="blockList">
+<h4>connectIfConnected</h4>
+<pre>com.exedio.cope.Connect connectIfConnected</pre>
+</li>
+<li class="blockList">
+<h4>nextTransactionId</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/java/util/concurrent/atomic/AtomicLong.html?is-external=true" title="class or interface in java.util.concurrent.atomic">AtomicLong</a> nextTransactionId</pre>
+</li>
+<li class="blockList">
+<h4>lastTransactionStartDate</h4>
+<pre>long lastTransactionStartDate</pre>
+</li>
+<li class="blockList">
+<h4>transactions</h4>
+<pre>com.exedio.cope.Transactions transactions</pre>
+</li>
+<li class="blockList">
+<h4>tx</h4>
+<pre><a href="com/exedio/cope/TransactionTry.html" title="class in com.exedio.cope">TransactionTry</a> tx</pre>
+</li>
+<li class="blockList">
+<h4>transactionCounter</h4>
+<pre>com.exedio.cope.TransactionCounter transactionCounter</pre>
+</li>
+<li class="blockListLast">
+<h4>serialized</h4>
+<pre>com.exedio.cope.Model.Serialized serialized</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a name="com.exedio.cope.Model.NotConnectedException">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/cope/Model.NotConnectedException.html" title="class in com.exedio.cope">com.exedio.cope.Model.NotConnectedException</a> extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/IllegalStateException.html?is-external=true" title="class or interface in java.lang">IllegalStateException</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList"><a name="serializedForm">
+<!--   -->
+</a>
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockListLast">
+<h4>model</h4>
+<pre><a href="com/exedio/cope/Model.html" title="class in com.exedio.cope">Model</a> model</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a name="com.exedio.cope.MultiplyLiteralView">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/cope/MultiplyLiteralView.html" title="class in com.exedio.cope">com.exedio.cope.MultiplyLiteralView</a> extends <a href="com/exedio/cope/NumberView.html" title="class in com.exedio.cope">NumberView</a>&lt;<a href="com/exedio/cope/MultiplyLiteralView.html" title="type parameter in MultiplyLiteralView">E</a> extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Number.html?is-external=true" title="class or interface in java.lang">Number</a>&gt; implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList"><a name="serializedForm">
+<!--   -->
+</a>
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockList">
+<h4>left</h4>
+<pre><a href="com/exedio/cope/Function.html" title="interface in com.exedio.cope">Function</a>&lt;<a href="com/exedio/cope/Function.html" title="type parameter in Function">E</a>&gt; left</pre>
+</li>
+<li class="blockListLast">
+<h4>right</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Number.html?is-external=true" title="class or interface in java.lang">Number</a> right</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a name="com.exedio.cope.MultiplyView">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/cope/MultiplyView.html" title="class in com.exedio.cope">com.exedio.cope.MultiplyView</a> extends <a href="com/exedio/cope/NumberView.html" title="class in com.exedio.cope">NumberView</a>&lt;<a href="com/exedio/cope/MultiplyView.html" title="type parameter in MultiplyView">E</a> extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Number.html?is-external=true" title="class or interface in java.lang">Number</a>&gt; implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList"><a name="serializedForm">
+<!--   -->
+</a>
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockListLast">
+<h4>multipliers</h4>
+<pre><a href="com/exedio/cope/Function.html" title="interface in com.exedio.cope">Function</a>&lt;<a href="com/exedio/cope/Function.html" title="type parameter in Function">E</a>&gt;[] multipliers</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a name="com.exedio.cope.NoSuchIDException">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/cope/NoSuchIDException.html" title="class in com.exedio.cope">com.exedio.cope.NoSuchIDException</a> extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Exception.html?is-external=true" title="class or interface in java.lang">Exception</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList"><a name="serializedForm">
+<!--   -->
+</a>
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockList">
+<h4>id</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> id</pre>
+</li>
+<li class="blockList">
+<h4>notAnID</h4>
+<pre>boolean notAnID</pre>
+</li>
+<li class="blockListLast">
+<h4>detail</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> detail</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a name="com.exedio.cope.NoSuchItemException">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/cope/NoSuchItemException.html" title="class in com.exedio.cope">com.exedio.cope.NoSuchItemException</a> extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/RuntimeException.html?is-external=true" title="class or interface in java.lang">RuntimeException</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList"><a name="serializedForm">
+<!--   -->
+</a>
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockListLast">
+<h4>item</h4>
+<pre><a href="com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a> item</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a name="com.exedio.cope.NotCondition">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/cope/NotCondition.html" title="class in com.exedio.cope">com.exedio.cope.NotCondition</a> extends <a href="com/exedio/cope/Condition.html" title="class in com.exedio.cope">Condition</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList"><a name="serializedForm">
+<!--   -->
+</a>
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockListLast">
+<h4>argument</h4>
+<pre><a href="com/exedio/cope/Condition.html" title="class in com.exedio.cope">Condition</a> argument</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a name="com.exedio.cope.NumberField">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/cope/NumberField.html" title="class in com.exedio.cope">com.exedio.cope.NumberField</a> extends <a href="com/exedio/cope/FunctionField.html" title="class in com.exedio.cope">FunctionField</a>&lt;<a href="com/exedio/cope/NumberField.html" title="type parameter in NumberField">E</a> extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Number.html?is-external=true" title="class or interface in java.lang">Number</a>&gt; implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+</li>
+<li class="blockList"><a name="com.exedio.cope.NumberView">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/cope/NumberView.html" title="class in com.exedio.cope">com.exedio.cope.NumberView</a> extends <a href="com/exedio/cope/View.html" title="class in com.exedio.cope">View</a>&lt;<a href="com/exedio/cope/NumberView.html" title="type parameter in NumberView">E</a> extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Number.html?is-external=true" title="class or interface in java.lang">Number</a>&gt; implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+</li>
+<li class="blockList"><a name="com.exedio.cope.Pattern">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/cope/Pattern.html" title="class in com.exedio.cope">com.exedio.cope.Pattern</a> extends <a href="com/exedio/cope/Feature.html" title="class in com.exedio.cope">Feature</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList"><a name="serializedForm">
+<!--   -->
+</a>
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockList">
+<h4>sourceFeaturesGather</h4>
+<pre><a href="com/exedio/cope/Features.html" title="class in com.exedio.cope">Features</a> sourceFeaturesGather</pre>
+</li>
+<li class="blockList">
+<h4>sourceFeatureList</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">E</a>&gt; sourceFeatureList</pre>
+</li>
+<li class="blockList">
+<h4>sourceTypesWhileGather</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/java/util/ArrayList.html?is-external=true" title="class or interface in java.util">ArrayList</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/util/ArrayList.html?is-external=true" title="class or interface in java.util">E</a>&gt; sourceTypesWhileGather</pre>
+</li>
+<li class="blockList">
+<h4>sourceTypes</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">E</a>&gt; sourceTypes</pre>
+</li>
+<li class="blockListLast">
+<h4>calledOnMount</h4>
+<pre>boolean calledOnMount</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a name="com.exedio.cope.PlusLiteralView">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/cope/PlusLiteralView.html" title="class in com.exedio.cope">com.exedio.cope.PlusLiteralView</a> extends <a href="com/exedio/cope/NumberView.html" title="class in com.exedio.cope">NumberView</a>&lt;<a href="com/exedio/cope/PlusLiteralView.html" title="type parameter in PlusLiteralView">E</a> extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Number.html?is-external=true" title="class or interface in java.lang">Number</a>&gt; implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList"><a name="serializedForm">
+<!--   -->
+</a>
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockList">
+<h4>left</h4>
+<pre><a href="com/exedio/cope/Function.html" title="interface in com.exedio.cope">Function</a>&lt;<a href="com/exedio/cope/Function.html" title="type parameter in Function">E</a>&gt; left</pre>
+</li>
+<li class="blockListLast">
+<h4>right</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Number.html?is-external=true" title="class or interface in java.lang">Number</a> right</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a name="com.exedio.cope.PlusView">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/cope/PlusView.html" title="class in com.exedio.cope">com.exedio.cope.PlusView</a> extends <a href="com/exedio/cope/NumberView.html" title="class in com.exedio.cope">NumberView</a>&lt;<a href="com/exedio/cope/PlusView.html" title="type parameter in PlusView">E</a> extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Number.html?is-external=true" title="class or interface in java.lang">Number</a>&gt; implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList"><a name="serializedForm">
+<!--   -->
+</a>
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockListLast">
+<h4>addends</h4>
+<pre><a href="com/exedio/cope/Function.html" title="interface in com.exedio.cope">Function</a>&lt;<a href="com/exedio/cope/Function.html" title="type parameter in Function">E</a>&gt;[] addends</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a name="com.exedio.cope.Query">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/cope/Query.html" title="class in com.exedio.cope">com.exedio.cope.Query</a> extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList"><a name="serializedForm">
+<!--   -->
+</a>
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockList">
+<h4>model</h4>
+<pre><a href="com/exedio/cope/Model.html" title="class in com.exedio.cope">Model</a> model</pre>
+</li>
+<li class="blockList">
+<h4>selectSingle</h4>
+<pre><a href="com/exedio/cope/Selectable.html" title="interface in com.exedio.cope">Selectable</a>&lt;<a href="com/exedio/cope/Selectable.html" title="type parameter in Selectable">E</a>&gt; selectSingle</pre>
+</li>
+<li class="blockList">
+<h4>selectsMulti</h4>
+<pre><a href="com/exedio/cope/Selectable.html" title="interface in com.exedio.cope">Selectable</a>&lt;<a href="com/exedio/cope/Selectable.html" title="type parameter in Selectable">E</a>&gt;[] selectsMulti</pre>
+</li>
+<li class="blockList">
+<h4>distinct</h4>
+<pre>boolean distinct</pre>
+</li>
+<li class="blockList">
+<h4>type</h4>
+<pre><a href="com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;<a href="com/exedio/cope/Type.html" title="type parameter in Type">T</a> extends <a href="com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&gt; type</pre>
+</li>
+<li class="blockList">
+<h4>joinIndex</h4>
+<pre>int joinIndex</pre>
+</li>
+<li class="blockList">
+<h4>joins</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/java/util/ArrayList.html?is-external=true" title="class or interface in java.util">ArrayList</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/util/ArrayList.html?is-external=true" title="class or interface in java.util">E</a>&gt; joins</pre>
+</li>
+<li class="blockList">
+<h4>condition</h4>
+<pre><a href="com/exedio/cope/Condition.html" title="class in com.exedio.cope">Condition</a> condition</pre>
+</li>
+<li class="blockList">
+<h4>groupBy</h4>
+<pre><a href="com/exedio/cope/Selectable.html" title="interface in com.exedio.cope">Selectable</a>&lt;<a href="com/exedio/cope/Selectable.html" title="type parameter in Selectable">E</a>&gt;[] groupBy</pre>
+</li>
+<li class="blockList">
+<h4>having</h4>
+<pre><a href="com/exedio/cope/Condition.html" title="class in com.exedio.cope">Condition</a> having</pre>
+</li>
+<li class="blockList">
+<h4>orderBy</h4>
+<pre><a href="com/exedio/cope/Selectable.html" title="interface in com.exedio.cope">Selectable</a>&lt;<a href="com/exedio/cope/Selectable.html" title="type parameter in Selectable">E</a>&gt;[] orderBy</pre>
+</li>
+<li class="blockList">
+<h4>orderAscending</h4>
+<pre>boolean[] orderAscending</pre>
+</li>
+<li class="blockList">
+<h4>offset</h4>
+<pre>int offset</pre>
+</li>
+<li class="blockList">
+<h4>limit</h4>
+<pre>int limit</pre>
+</li>
+<li class="blockList">
+<h4>searchSizeLimit</h4>
+<pre>int searchSizeLimit</pre>
+</li>
+<li class="blockListLast">
+<h4>searchSizeCacheLimit</h4>
+<pre>int searchSizeCacheLimit</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a name="com.exedio.cope.Random">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/cope/Random.html" title="class in com.exedio.cope">com.exedio.cope.Random</a> extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList"><a name="serializedForm">
+<!--   -->
+</a>
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockList">
+<h4>type</h4>
+<pre><a href="com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;<a href="com/exedio/cope/Type.html" title="type parameter in Type">T</a> extends <a href="com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&gt; type</pre>
+</li>
+<li class="blockListLast">
+<h4>seed</h4>
+<pre>int seed</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a name="com.exedio.cope.RangeViolationException">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/cope/RangeViolationException.html" title="class in com.exedio.cope">com.exedio.cope.RangeViolationException</a> extends <a href="com/exedio/cope/ConstraintViolationException.html" title="class in com.exedio.cope">ConstraintViolationException</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList"><a name="serializedForm">
+<!--   -->
+</a>
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockList">
+<h4>feature</h4>
+<pre><a href="com/exedio/cope/FunctionField.html" title="class in com.exedio.cope">FunctionField</a>&lt;<a href="com/exedio/cope/FunctionField.html" title="type parameter in FunctionField">E</a>&gt; feature</pre>
+</li>
+<li class="blockList">
+<h4>value</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Number.html?is-external=true" title="class or interface in java.lang">Number</a> value</pre>
+</li>
+<li class="blockList">
+<h4>isTooSmall</h4>
+<pre>boolean isTooSmall</pre>
+</li>
+<li class="blockListLast">
+<h4>border</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Number.html?is-external=true" title="class or interface in java.lang">Number</a> border</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a name="com.exedio.cope.Sequence">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/cope/Sequence.html" title="class in com.exedio.cope">com.exedio.cope.Sequence</a> extends <a href="com/exedio/cope/Feature.html" title="class in com.exedio.cope">Feature</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList"><a name="serializedForm">
+<!--   -->
+</a>
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockList">
+<h4>start</h4>
+<pre>int start</pre>
+</li>
+<li class="blockList">
+<h4>end</h4>
+<pre>int end</pre>
+</li>
+<li class="blockListLast">
+<h4>sequenceX</h4>
+<pre>com.exedio.cope.SequenceX sequenceX</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a name="com.exedio.cope.StartsWithCondition">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/cope/StartsWithCondition.html" title="class in com.exedio.cope">com.exedio.cope.StartsWithCondition</a> extends <a href="com/exedio/cope/Condition.html" title="class in com.exedio.cope">Condition</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList"><a name="serializedForm">
+<!--   -->
+</a>
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockList">
+<h4>field</h4>
+<pre><a href="com/exedio/cope/DataField.html" title="class in com.exedio.cope">DataField</a> field</pre>
+</li>
+<li class="blockListLast">
+<h4>value</h4>
+<pre>byte[] value</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a name="com.exedio.cope.StringCharSetViolationException">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/cope/StringCharSetViolationException.html" title="class in com.exedio.cope">com.exedio.cope.StringCharSetViolationException</a> extends <a href="com/exedio/cope/ConstraintViolationException.html" title="class in com.exedio.cope">ConstraintViolationException</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList"><a name="serializedForm">
+<!--   -->
+</a>
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockList">
+<h4>feature</h4>
+<pre><a href="com/exedio/cope/StringField.html" title="class in com.exedio.cope">StringField</a> feature</pre>
+</li>
+<li class="blockList">
+<h4>value</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> value</pre>
+</li>
+<li class="blockList">
+<h4>character</h4>
+<pre>char character</pre>
+</li>
+<li class="blockListLast">
+<h4>position</h4>
+<pre>int position</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a name="com.exedio.cope.StringField">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/cope/StringField.html" title="class in com.exedio.cope">com.exedio.cope.StringField</a> extends <a href="com/exedio/cope/FunctionField.html" title="class in com.exedio.cope">FunctionField</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt; implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList"><a name="serializedForm">
+<!--   -->
+</a>
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockList">
+<h4>minimumLength</h4>
+<pre>int minimumLength</pre>
+</li>
+<li class="blockList">
+<h4>maximumLength</h4>
+<pre>int maximumLength</pre>
+</li>
+<li class="blockList">
+<h4>charSet</h4>
+<pre><a href="com/exedio/cope/util/CharSet.html" title="class in com.exedio.cope.util">CharSet</a> charSet</pre>
+</li>
+<li class="blockListLast">
+<h4>convertEmptyStrings</h4>
+<pre>boolean convertEmptyStrings</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a name="com.exedio.cope.StringLengthViolationException">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/cope/StringLengthViolationException.html" title="class in com.exedio.cope">com.exedio.cope.StringLengthViolationException</a> extends <a href="com/exedio/cope/ConstraintViolationException.html" title="class in com.exedio.cope">ConstraintViolationException</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList"><a name="serializedForm">
+<!--   -->
+</a>
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockList">
+<h4>feature</h4>
+<pre><a href="com/exedio/cope/StringField.html" title="class in com.exedio.cope">StringField</a> feature</pre>
+</li>
+<li class="blockListLast">
+<h4>value</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> value</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a name="com.exedio.cope.StringView">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/cope/StringView.html" title="class in com.exedio.cope">com.exedio.cope.StringView</a> extends <a href="com/exedio/cope/View.html" title="class in com.exedio.cope">View</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt; implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+</li>
+<li class="blockList"><a name="com.exedio.cope.TemporaryTransactionException">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/cope/TemporaryTransactionException.html" title="class in com.exedio.cope">com.exedio.cope.TemporaryTransactionException</a> extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/RuntimeException.html?is-external=true" title="class or interface in java.lang">RuntimeException</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList"><a name="serializedForm">
+<!--   -->
+</a>
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockListLast">
+<h4>rows</h4>
+<pre>int rows</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a name="com.exedio.cope.This">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/cope/This.html" title="class in com.exedio.cope">com.exedio.cope.This</a> extends <a href="com/exedio/cope/Feature.html" title="class in com.exedio.cope">Feature</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList"><a name="serializedForm">
+<!--   -->
+</a>
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockListLast">
+<h4>type</h4>
+<pre><a href="com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;<a href="com/exedio/cope/Type.html" title="type parameter in Type">T</a> extends <a href="com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&gt; type</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a name="com.exedio.cope.Type">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/cope/Type.html" title="class in com.exedio.cope">com.exedio.cope.Type</a> extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList"><a name="serialized_methods">
+<!--   -->
+</a>
+<h3>Serialization Methods</h3>
+<ul class="blockList">
+<li class="blockList"><a name="readObject(java.io.ObjectInputStream)">
+<!--   -->
+</a>
+<h4>readObject</h4>
+<pre>private&nbsp;void&nbsp;readObject(<a href="http://docs.oracle.com/javase/7/docs/api/java/io/ObjectInputStream.html?is-external=true" title="class or interface in java.io">ObjectInputStream</a>&nbsp;ois)
+                 throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/InvalidObjectException.html?is-external=true" title="class or interface in java.io">InvalidObjectException</a></pre>
+<div class="block">Block malicious data streams.</div>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/InvalidObjectException.html?is-external=true" title="class or interface in java.io">InvalidObjectException</a></code></dd><dt><span class="strong">See Also:</span></dt><dd><a href="com/exedio/cope/Type.html#writeReplace()"><code>Type.writeReplace()</code></a></dd></dl>
+</li>
+<li class="blockList"><a name="readResolve()">
+<!--   -->
+</a>
+<h4>readResolve</h4>
+<pre>private&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;readResolve()
+                    throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/InvalidObjectException.html?is-external=true" title="class or interface in java.io">InvalidObjectException</a></pre>
+<div class="block">Block malicious data streams.</div>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/InvalidObjectException.html?is-external=true" title="class or interface in java.io">InvalidObjectException</a></code></dd><dt><span class="strong">See Also:</span></dt><dd><a href="com/exedio/cope/Type.html#writeReplace()"><code>Type.writeReplace()</code></a></dd></dl>
+</li>
+<li class="blockListLast"><a name="writeReplace()">
+<!--   -->
+</a>
+<h4>writeReplace</h4>
+<pre>private&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;writeReplace()
+                     throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/ObjectStreamException.html?is-external=true" title="class or interface in java.io">ObjectStreamException</a></pre>
+<div class="block"><a href="http://java.sun.com/j2se/1.5.0/docs/guide/serialization/spec/output.html#5324">See Spec</a></div>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/ObjectStreamException.html?is-external=true" title="class or interface in java.io">ObjectStreamException</a></code></dd></dl>
+</li>
+</ul>
+</li>
+<li class="blockList"><a name="serializedForm">
+<!--   -->
+</a>
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockList">
+<h4>javaClass</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">T</a>&gt; javaClass</pre>
+</li>
+<li class="blockList">
+<h4>annotationSource</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/reflect/AnnotatedElement.html?is-external=true" title="class or interface in java.lang.reflect">AnnotatedElement</a> annotationSource</pre>
+</li>
+<li class="blockList">
+<h4>bound</h4>
+<pre>boolean bound</pre>
+</li>
+<li class="blockList">
+<h4>id</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> id</pre>
+</li>
+<li class="blockList">
+<h4>schemaId</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> schemaId</pre>
+</li>
+<li class="blockList">
+<h4>typeColumnMinLength</h4>
+<pre>int typeColumnMinLength</pre>
+</li>
+<li class="blockList">
+<h4>pattern</h4>
+<pre><a href="com/exedio/cope/Pattern.html" title="class in com.exedio.cope">Pattern</a> pattern</pre>
+</li>
+<li class="blockList">
+<h4>isAbstract</h4>
+<pre>boolean isAbstract</pre>
+</li>
+<li class="blockList">
+<h4>supertype</h4>
+<pre><a href="com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;<a href="com/exedio/cope/Type.html" title="type parameter in Type">T</a> extends <a href="com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&gt; supertype</pre>
+</li>
+<li class="blockList">
+<h4>toptype</h4>
+<pre><a href="com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;<a href="com/exedio/cope/Type.html" title="type parameter in Type">T</a> extends <a href="com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&gt; toptype</pre>
+</li>
+<li class="blockList">
+<h4>supertypes</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/java/util/HashSet.html?is-external=true" title="class or interface in java.util">HashSet</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/util/HashSet.html?is-external=true" title="class or interface in java.util">E</a>&gt; supertypes</pre>
+</li>
+<li class="blockList">
+<h4>thisFunction</h4>
+<pre><a href="com/exedio/cope/This.html" title="class in com.exedio.cope">This</a>&lt;<a href="com/exedio/cope/This.html" title="type parameter in This">E</a> extends <a href="com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&gt; thisFunction</pre>
+</li>
+<li class="blockList">
+<h4>featuresDeclared</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">E</a>&gt; featuresDeclared</pre>
+</li>
+<li class="blockList">
+<h4>features</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">E</a>&gt; features</pre>
+</li>
+<li class="blockList">
+<h4>featuresByNameDeclared</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/java/util/HashMap.html?is-external=true" title="class or interface in java.util">HashMap</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/util/HashMap.html?is-external=true" title="class or interface in java.util">K</a>,<a href="http://docs.oracle.com/javase/7/docs/api/java/util/HashMap.html?is-external=true" title="class or interface in java.util">V</a>&gt; featuresByNameDeclared</pre>
+</li>
+<li class="blockList">
+<h4>featuresByName</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/java/util/HashMap.html?is-external=true" title="class or interface in java.util">HashMap</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/util/HashMap.html?is-external=true" title="class or interface in java.util">K</a>,<a href="http://docs.oracle.com/javase/7/docs/api/java/util/HashMap.html?is-external=true" title="class or interface in java.util">V</a>&gt; featuresByName</pre>
+</li>
+<li class="blockList">
+<h4>fields</h4>
+<pre>com.exedio.cope.FeatureSubSet&lt;F extends <a href="com/exedio/cope/Feature.html" title="class in com.exedio.cope">Feature</a>&gt; fields</pre>
+</li>
+<li class="blockList">
+<h4>uniqueConstraints</h4>
+<pre>com.exedio.cope.FeatureSubSet&lt;F extends <a href="com/exedio/cope/Feature.html" title="class in com.exedio.cope">Feature</a>&gt; uniqueConstraints</pre>
+</li>
+<li class="blockList">
+<h4>checkConstraints</h4>
+<pre>com.exedio.cope.FeatureSubSet&lt;F extends <a href="com/exedio/cope/Feature.html" title="class in com.exedio.cope">Feature</a>&gt; checkConstraints</pre>
+</li>
+<li class="blockList">
+<h4>copyConstraints</h4>
+<pre>com.exedio.cope.FeatureSubSet&lt;F extends <a href="com/exedio/cope/Feature.html" title="class in com.exedio.cope">Feature</a>&gt; copyConstraints</pre>
+</li>
+<li class="blockList">
+<h4>activationConstructor</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/reflect/Constructor.html?is-external=true" title="class or interface in java.lang.reflect">Constructor</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/reflect/Constructor.html?is-external=true" title="class or interface in java.lang.reflect">T</a>&gt; activationConstructor</pre>
+</li>
+<li class="blockList">
+<h4>beforeNewItemMethods</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/reflect/Method.html?is-external=true" title="class or interface in java.lang.reflect">Method</a>[] beforeNewItemMethods</pre>
+</li>
+<li class="blockList">
+<h4>primaryKeySequence</h4>
+<pre>com.exedio.cope.SequenceX primaryKeySequence</pre>
+</li>
+<li class="blockList">
+<h4>uniqueConstraintsProblem</h4>
+<pre>boolean uniqueConstraintsProblem</pre>
+</li>
+<li class="blockList">
+<h4>mountIfMounted</h4>
+<pre>com.exedio.cope.Type.Mount&lt;C extends <a href="com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&gt; mountIfMounted</pre>
+</li>
+<li class="blockList">
+<h4>cacheIdTransiently</h4>
+<pre>int cacheIdTransiently</pre>
+<div class="block">This id uniquely identifies a type within its model.
+ However, this id is not stable across JVM restarts.
+ So never put this id into any persistent storage,
+ nor otherwise make this id accessible outside the library.
+ <p>
+ This id is negative for abstract types and positive
+ (including zero) for non-abstract types.</div>
+</li>
+<li class="blockList">
+<h4>table</h4>
+<pre>com.exedio.cope.Table table</pre>
+</li>
+<li class="blockListLast">
+<h4>featuresWhileConstruction</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/java/util/ArrayList.html?is-external=true" title="class or interface in java.util">ArrayList</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/util/ArrayList.html?is-external=true" title="class or interface in java.util">E</a>&gt; featuresWhileConstruction</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a name="com.exedio.cope.UniqueConstraint">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/cope/UniqueConstraint.html" title="class in com.exedio.cope">com.exedio.cope.UniqueConstraint</a> extends <a href="com/exedio/cope/Feature.html" title="class in com.exedio.cope">Feature</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList"><a name="serializedForm">
+<!--   -->
+</a>
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockList">
+<h4>fields</h4>
+<pre><a href="com/exedio/cope/FunctionField.html" title="class in com.exedio.cope">FunctionField</a>&lt;<a href="com/exedio/cope/FunctionField.html" title="type parameter in FunctionField">E</a>&gt;[] fields</pre>
+</li>
+<li class="blockList">
+<h4>fieldList</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">E</a>&gt; fieldList</pre>
+</li>
+<li class="blockListLast">
+<h4>databaseID</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> databaseID</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a name="com.exedio.cope.UniqueViolationException">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/cope/UniqueViolationException.html" title="class in com.exedio.cope">com.exedio.cope.UniqueViolationException</a> extends <a href="com/exedio/cope/ConstraintViolationException.html" title="class in com.exedio.cope">ConstraintViolationException</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList"><a name="serializedForm">
+<!--   -->
+</a>
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockListLast">
+<h4>feature</h4>
+<pre><a href="com/exedio/cope/UniqueConstraint.html" title="class in com.exedio.cope">UniqueConstraint</a> feature</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a name="com.exedio.cope.UppercaseView">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/cope/UppercaseView.html" title="class in com.exedio.cope">com.exedio.cope.UppercaseView</a> extends <a href="com/exedio/cope/StringView.html" title="class in com.exedio.cope">StringView</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList"><a name="serializedForm">
+<!--   -->
+</a>
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockListLast">
+<h4>source</h4>
+<pre><a href="com/exedio/cope/Function.html" title="interface in com.exedio.cope">Function</a>&lt;<a href="com/exedio/cope/Function.html" title="type parameter in Function">E</a>&gt; source</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a name="com.exedio.cope.View">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/cope/View.html" title="class in com.exedio.cope">com.exedio.cope.View</a> extends <a href="com/exedio/cope/Feature.html" title="class in com.exedio.cope">Feature</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList"><a name="serializedForm">
+<!--   -->
+</a>
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockList">
+<h4>sources</h4>
+<pre><a href="com/exedio/cope/Function.html" title="interface in com.exedio.cope">Function</a>&lt;<a href="com/exedio/cope/Function.html" title="type parameter in Function">E</a>&gt;[] sources</pre>
+</li>
+<li class="blockList">
+<h4>sourceList</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">E</a>&gt; sourceList</pre>
+</li>
+<li class="blockList">
+<h4>name</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> name</pre>
+</li>
+<li class="blockList">
+<h4>valueClass</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">T</a>&gt; valueClass</pre>
+</li>
+<li class="blockListLast">
+<h4>sourceType</h4>
+<pre><a href="com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;<a href="com/exedio/cope/Type.html" title="type parameter in Type">T</a> extends <a href="com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&gt; sourceType</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList">
+<h2 title="Package">Package&nbsp;com.exedio.cope.pattern</h2>
+<ul class="blockList">
+<li class="blockList"><a name="com.exedio.cope.pattern.AbstractListField">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/cope/pattern/AbstractListField.html" title="class in com.exedio.cope.pattern">com.exedio.cope.pattern.AbstractListField</a> extends <a href="com/exedio/cope/Pattern.html" title="class in com.exedio.cope">Pattern</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+</li>
+<li class="blockList"><a name="com.exedio.cope.pattern.Block">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/cope/pattern/Block.html" title="class in com.exedio.cope.pattern">com.exedio.cope.pattern.Block</a> extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList"><a name="serializedForm">
+<!--   -->
+</a>
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockList">
+<h4>field</h4>
+<pre><a href="com/exedio/cope/pattern/BlockField.html" title="class in com.exedio.cope.pattern">BlockField</a>&lt;<a href="com/exedio/cope/pattern/BlockField.html" title="type parameter in BlockField">E</a> extends <a href="com/exedio/cope/pattern/Block.html" title="class in com.exedio.cope.pattern">Block</a>&gt; field</pre>
+</li>
+<li class="blockListLast">
+<h4>item</h4>
+<pre><a href="com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a> item</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a name="com.exedio.cope.pattern.BlockField">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/cope/pattern/BlockField.html" title="class in com.exedio.cope.pattern">com.exedio.cope.pattern.BlockField</a> extends <a href="com/exedio/cope/Pattern.html" title="class in com.exedio.cope">Pattern</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList"><a name="serializedForm">
+<!--   -->
+</a>
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockList">
+<h4>valueClass</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">T</a>&gt; valueClass</pre>
+</li>
+<li class="blockList">
+<h4>valueType</h4>
+<pre><a href="com/exedio/cope/pattern/BlockType.html" title="class in com.exedio.cope.pattern">BlockType</a>&lt;<a href="com/exedio/cope/pattern/BlockType.html" title="type parameter in BlockType">E</a>&gt; valueType</pre>
+</li>
+<li class="blockList">
+<h4>templateToComponent</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/java/util/LinkedHashMap.html?is-external=true" title="class or interface in java.util">LinkedHashMap</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/util/LinkedHashMap.html?is-external=true" title="class or interface in java.util">K</a>,<a href="http://docs.oracle.com/javase/7/docs/api/java/util/LinkedHashMap.html?is-external=true" title="class or interface in java.util">V</a>&gt; templateToComponent</pre>
+</li>
+<li class="blockList">
+<h4>componentToTemplate</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/java/util/HashMap.html?is-external=true" title="class or interface in java.util">HashMap</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/util/HashMap.html?is-external=true" title="class or interface in java.util">K</a>,<a href="http://docs.oracle.com/javase/7/docs/api/java/util/HashMap.html?is-external=true" title="class or interface in java.util">V</a>&gt; componentToTemplate</pre>
+</li>
+<li class="blockListLast">
+<h4>componentList</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">E</a>&gt; componentList</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a name="com.exedio.cope.pattern.ColorAlphaViolationException">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/cope/pattern/ColorAlphaViolationException.html" title="class in com.exedio.cope.pattern">com.exedio.cope.pattern.ColorAlphaViolationException</a> extends <a href="com/exedio/cope/ConstraintViolationException.html" title="class in com.exedio.cope">ConstraintViolationException</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList"><a name="serializedForm">
+<!--   -->
+</a>
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockList">
+<h4>feature</h4>
+<pre><a href="com/exedio/cope/pattern/ColorField.html" title="class in com.exedio.cope.pattern">ColorField</a> feature</pre>
+</li>
+<li class="blockListLast">
+<h4>value</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/java/awt/Color.html?is-external=true" title="class or interface in java.awt">Color</a> value</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a name="com.exedio.cope.pattern.ColorField">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/cope/pattern/ColorField.html" title="class in com.exedio.cope.pattern">com.exedio.cope.pattern.ColorField</a> extends <a href="com/exedio/cope/Pattern.html" title="class in com.exedio.cope">Pattern</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList"><a name="serializedForm">
+<!--   -->
+</a>
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockList">
+<h4>rgb</h4>
+<pre><a href="com/exedio/cope/IntegerField.html" title="class in com.exedio.cope">IntegerField</a> rgb</pre>
+</li>
+<li class="blockList">
+<h4>mandatory</h4>
+<pre>boolean mandatory</pre>
+</li>
+<li class="blockListLast">
+<h4>alphaAllowed</h4>
+<pre>boolean alphaAllowed</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a name="com.exedio.cope.pattern.Composite">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/cope/pattern/Composite.html" title="class in com.exedio.cope.pattern">com.exedio.cope.pattern.Composite</a> extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList"><a name="serializedForm">
+<!--   -->
+</a>
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockListLast">
+<h4>values</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>[] values</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a name="com.exedio.cope.pattern.CompositeField">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/cope/pattern/CompositeField.html" title="class in com.exedio.cope.pattern">com.exedio.cope.pattern.CompositeField</a> extends <a href="com/exedio/cope/Pattern.html" title="class in com.exedio.cope">Pattern</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList"><a name="serializedForm">
+<!--   -->
+</a>
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockList">
+<h4>isfinal</h4>
+<pre>boolean isfinal</pre>
+</li>
+<li class="blockList">
+<h4>optional</h4>
+<pre>boolean optional</pre>
+</li>
+<li class="blockList">
+<h4>valueClass</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">T</a>&gt; valueClass</pre>
+</li>
+<li class="blockList">
+<h4>valueType</h4>
+<pre>com.exedio.cope.pattern.CompositeType&lt;E&gt; valueType</pre>
+</li>
+<li class="blockList">
+<h4>componentSize</h4>
+<pre>int componentSize</pre>
+</li>
+<li class="blockList">
+<h4>templateToComponent</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/java/util/LinkedHashMap.html?is-external=true" title="class or interface in java.util">LinkedHashMap</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/util/LinkedHashMap.html?is-external=true" title="class or interface in java.util">K</a>,<a href="http://docs.oracle.com/javase/7/docs/api/java/util/LinkedHashMap.html?is-external=true" title="class or interface in java.util">V</a>&gt; templateToComponent</pre>
+</li>
+<li class="blockList">
+<h4>componentToTemplate</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/java/util/HashMap.html?is-external=true" title="class or interface in java.util">HashMap</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/util/HashMap.html?is-external=true" title="class or interface in java.util">K</a>,<a href="http://docs.oracle.com/javase/7/docs/api/java/util/HashMap.html?is-external=true" title="class or interface in java.util">V</a>&gt; componentToTemplate</pre>
+</li>
+<li class="blockList">
+<h4>componentList</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">E</a>&gt; componentList</pre>
+</li>
+<li class="blockList">
+<h4>mandatoryComponent</h4>
+<pre><a href="com/exedio/cope/FunctionField.html" title="class in com.exedio.cope">FunctionField</a>&lt;<a href="com/exedio/cope/FunctionField.html" title="type parameter in FunctionField">E</a>&gt; mandatoryComponent</pre>
+</li>
+<li class="blockList">
+<h4>isNullComponent</h4>
+<pre><a href="com/exedio/cope/FunctionField.html" title="class in com.exedio.cope">FunctionField</a>&lt;<a href="com/exedio/cope/FunctionField.html" title="type parameter in FunctionField">E</a>&gt; isNullComponent</pre>
+</li>
+<li class="blockListLast">
+<h4>unison</h4>
+<pre><a href="com/exedio/cope/CheckConstraint.html" title="class in com.exedio.cope">CheckConstraint</a> unison</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a name="com.exedio.cope.pattern.Dispatcher">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/cope/pattern/Dispatcher.html" title="class in com.exedio.cope.pattern">com.exedio.cope.pattern.Dispatcher</a> extends <a href="com/exedio/cope/Pattern.html" title="class in com.exedio.cope">Pattern</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList"><a name="serializedForm">
+<!--   -->
+</a>
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockList">
+<h4>pending</h4>
+<pre><a href="com/exedio/cope/BooleanField.html" title="class in com.exedio.cope">BooleanField</a> pending</pre>
+</li>
+<li class="blockList">
+<h4>runDate</h4>
+<pre><a href="com/exedio/cope/DateField.html" title="class in com.exedio.cope">DateField</a> runDate</pre>
+</li>
+<li class="blockList">
+<h4>runElapsed</h4>
+<pre><a href="com/exedio/cope/LongField.html" title="class in com.exedio.cope">LongField</a> runElapsed</pre>
+</li>
+<li class="blockList">
+<h4>runSuccess</h4>
+<pre><a href="com/exedio/cope/BooleanField.html" title="class in com.exedio.cope">BooleanField</a> runSuccess</pre>
+</li>
+<li class="blockList">
+<h4>runFailure</h4>
+<pre><a href="com/exedio/cope/DataField.html" title="class in com.exedio.cope">DataField</a> runFailure</pre>
+</li>
+<li class="blockList">
+<h4>mountIfMounted</h4>
+<pre>com.exedio.cope.pattern.Dispatcher.Mount mountIfMounted</pre>
+</li>
+<li class="blockListLast">
+<h4>probeRequired</h4>
+<pre>boolean probeRequired</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a name="com.exedio.cope.pattern.Dispatcher.Run">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/cope/pattern/Dispatcher.Run.html" title="class in com.exedio.cope.pattern">com.exedio.cope.pattern.Dispatcher.Run</a> extends <a href="com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+</li>
+<li class="blockList"><a name="com.exedio.cope.pattern.DrivebyHashMigration">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/cope/pattern/DrivebyHashMigration.html" title="class in com.exedio.cope.pattern">com.exedio.cope.pattern.DrivebyHashMigration</a> extends <a href="com/exedio/cope/Pattern.html" title="class in com.exedio.cope">Pattern</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList"><a name="serializedForm">
+<!--   -->
+</a>
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockList">
+<h4>legacyHash</h4>
+<pre><a href="com/exedio/cope/pattern/Hash.html" title="class in com.exedio.cope.pattern">Hash</a> legacyHash</pre>
+</li>
+<li class="blockListLast">
+<h4>targetHash</h4>
+<pre><a href="com/exedio/cope/pattern/Hash.html" title="class in com.exedio.cope.pattern">Hash</a> targetHash</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a name="com.exedio.cope.pattern.DynamicModel">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/cope/pattern/DynamicModel.html" title="class in com.exedio.cope.pattern">com.exedio.cope.pattern.DynamicModel</a> extends <a href="com/exedio/cope/Pattern.html" title="class in com.exedio.cope">Pattern</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList"><a name="serializedForm">
+<!--   -->
+</a>
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockList">
+<h4>localeTemplate</h4>
+<pre><a href="com/exedio/cope/FunctionField.html" title="class in com.exedio.cope">FunctionField</a>&lt;<a href="com/exedio/cope/FunctionField.html" title="type parameter in FunctionField">E</a>&gt; localeTemplate</pre>
+</li>
+<li class="blockList">
+<h4>typeCode</h4>
+<pre><a href="com/exedio/cope/StringField.html" title="class in com.exedio.cope">StringField</a> typeCode</pre>
+</li>
+<li class="blockList">
+<h4>typeLocalization</h4>
+<pre><a href="com/exedio/cope/pattern/MapField.html" title="class in com.exedio.cope.pattern">MapField</a>&lt;<a href="com/exedio/cope/pattern/MapField.html" title="type parameter in MapField">K</a>,<a href="com/exedio/cope/pattern/MapField.html" title="type parameter in MapField">V</a>&gt; typeLocalization</pre>
+</li>
+<li class="blockList">
+<h4>fieldPosition</h4>
+<pre><a href="com/exedio/cope/IntegerField.html" title="class in com.exedio.cope">IntegerField</a> fieldPosition</pre>
+</li>
+<li class="blockList">
+<h4>fieldValueType</h4>
+<pre><a href="com/exedio/cope/EnumField.html" title="class in com.exedio.cope">EnumField</a>&lt;<a href="com/exedio/cope/EnumField.html" title="type parameter in EnumField">E</a> extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Enum.html?is-external=true" title="class or interface in java.lang">Enum</a>&lt;<a href="com/exedio/cope/EnumField.html" title="type parameter in EnumField">E</a>&gt;&gt; fieldValueType</pre>
+</li>
+<li class="blockList">
+<h4>fieldPositionPerValueType</h4>
+<pre><a href="com/exedio/cope/IntegerField.html" title="class in com.exedio.cope">IntegerField</a> fieldPositionPerValueType</pre>
+</li>
+<li class="blockList">
+<h4>fieldCode</h4>
+<pre><a href="com/exedio/cope/StringField.html" title="class in com.exedio.cope">StringField</a> fieldCode</pre>
+</li>
+<li class="blockList">
+<h4>fieldLocalization</h4>
+<pre><a href="com/exedio/cope/pattern/MapField.html" title="class in com.exedio.cope.pattern">MapField</a>&lt;<a href="com/exedio/cope/pattern/MapField.html" title="type parameter in MapField">K</a>,<a href="com/exedio/cope/pattern/MapField.html" title="type parameter in MapField">V</a>&gt; fieldLocalization</pre>
+</li>
+<li class="blockList">
+<h4>enumPosition</h4>
+<pre><a href="com/exedio/cope/IntegerField.html" title="class in com.exedio.cope">IntegerField</a> enumPosition</pre>
+</li>
+<li class="blockList">
+<h4>enumCode</h4>
+<pre><a href="com/exedio/cope/StringField.html" title="class in com.exedio.cope">StringField</a> enumCode</pre>
+</li>
+<li class="blockList">
+<h4>enumLocalization</h4>
+<pre><a href="com/exedio/cope/pattern/MapField.html" title="class in com.exedio.cope.pattern">MapField</a>&lt;<a href="com/exedio/cope/pattern/MapField.html" title="type parameter in MapField">K</a>,<a href="com/exedio/cope/pattern/MapField.html" title="type parameter in MapField">V</a>&gt; enumLocalization</pre>
+</li>
+<li class="blockList">
+<h4>fields</h4>
+<pre><a href="com/exedio/cope/FunctionField.html" title="class in com.exedio.cope">FunctionField</a>&lt;<a href="com/exedio/cope/FunctionField.html" title="type parameter in FunctionField">E</a>&gt;[] fields</pre>
+</li>
+<li class="blockList">
+<h4>strings</h4>
+<pre><a href="com/exedio/cope/StringField.html" title="class in com.exedio.cope">StringField</a>[] strings</pre>
+</li>
+<li class="blockList">
+<h4>booleans</h4>
+<pre><a href="com/exedio/cope/BooleanField.html" title="class in com.exedio.cope">BooleanField</a>[] booleans</pre>
+</li>
+<li class="blockList">
+<h4>integers</h4>
+<pre><a href="com/exedio/cope/IntegerField.html" title="class in com.exedio.cope">IntegerField</a>[] integers</pre>
+</li>
+<li class="blockList">
+<h4>doubles</h4>
+<pre><a href="com/exedio/cope/DoubleField.html" title="class in com.exedio.cope">DoubleField</a>[] doubles</pre>
+</li>
+<li class="blockList">
+<h4>enums</h4>
+<pre><a href="com/exedio/cope/ItemField.html" title="class in com.exedio.cope">ItemField</a>&lt;<a href="com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a> extends <a href="com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&gt;[] enums</pre>
+</li>
+<li class="blockListLast">
+<h4>mountIfMounted</h4>
+<pre>com.exedio.cope.pattern.DynamicModel.Mount&lt;L&gt; mountIfMounted</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a name="com.exedio.cope.pattern.DynamicModel.Enum">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/cope/pattern/DynamicModel.Enum.html" title="class in com.exedio.cope.pattern">com.exedio.cope.pattern.DynamicModel.Enum</a> extends <a href="com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+</li>
+<li class="blockList"><a name="com.exedio.cope.pattern.DynamicModel.Field">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/cope/pattern/DynamicModel.Field.html" title="class in com.exedio.cope.pattern">com.exedio.cope.pattern.DynamicModel.Field</a> extends <a href="com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+</li>
+<li class="blockList"><a name="com.exedio.cope.pattern.DynamicModel.Type">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/cope/pattern/DynamicModel.Type.html" title="class in com.exedio.cope.pattern">com.exedio.cope.pattern.DynamicModel.Type</a> extends <a href="com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+</li>
+<li class="blockList"><a name="com.exedio.cope.pattern.EnumMapField">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/cope/pattern/EnumMapField.html" title="class in com.exedio.cope.pattern">com.exedio.cope.pattern.EnumMapField</a> extends <a href="com/exedio/cope/Pattern.html" title="class in com.exedio.cope">Pattern</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList"><a name="serializedForm">
+<!--   -->
+</a>
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockList">
+<h4>keyClass</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">T</a>&gt; keyClass</pre>
+</li>
+<li class="blockList">
+<h4>valueTemplate</h4>
+<pre><a href="com/exedio/cope/FunctionField.html" title="class in com.exedio.cope">FunctionField</a>&lt;<a href="com/exedio/cope/FunctionField.html" title="type parameter in FunctionField">E</a>&gt; valueTemplate</pre>
+</li>
+<li class="blockList">
+<h4>fields</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/java/util/EnumMap.html?is-external=true" title="class or interface in java.util">EnumMap</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/util/EnumMap.html?is-external=true" title="class or interface in java.util">K</a> extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Enum.html?is-external=true" title="class or interface in java.lang">Enum</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/util/EnumMap.html?is-external=true" title="class or interface in java.util">K</a>&gt;,<a href="http://docs.oracle.com/javase/7/docs/api/java/util/EnumMap.html?is-external=true" title="class or interface in java.util">V</a>&gt; fields</pre>
+</li>
+<li class="blockListLast">
+<h4>defaultConstant</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/java/util/EnumMap.html?is-external=true" title="class or interface in java.util">EnumMap</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/util/EnumMap.html?is-external=true" title="class or interface in java.util">K</a> extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Enum.html?is-external=true" title="class or interface in java.lang">Enum</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/util/EnumMap.html?is-external=true" title="class or interface in java.util">K</a>&gt;,<a href="http://docs.oracle.com/javase/7/docs/api/java/util/EnumMap.html?is-external=true" title="class or interface in java.util">V</a>&gt; defaultConstant</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a name="com.exedio.cope.pattern.EnumSetField">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/cope/pattern/EnumSetField.html" title="class in com.exedio.cope.pattern">com.exedio.cope.pattern.EnumSetField</a> extends <a href="com/exedio/cope/Pattern.html" title="class in com.exedio.cope">Pattern</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList"><a name="serializedForm">
+<!--   -->
+</a>
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockList">
+<h4>elementClass</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">T</a>&gt; elementClass</pre>
+</li>
+<li class="blockList">
+<h4>fields</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/java/util/EnumMap.html?is-external=true" title="class or interface in java.util">EnumMap</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/util/EnumMap.html?is-external=true" title="class or interface in java.util">K</a> extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Enum.html?is-external=true" title="class or interface in java.lang">Enum</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/util/EnumMap.html?is-external=true" title="class or interface in java.util">K</a>&gt;,<a href="http://docs.oracle.com/javase/7/docs/api/java/util/EnumMap.html?is-external=true" title="class or interface in java.util">V</a>&gt; fields</pre>
+</li>
+<li class="blockListLast">
+<h4>isFinal</h4>
+<pre>boolean isFinal</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a name="com.exedio.cope.pattern.Hash">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/cope/pattern/Hash.html" title="class in com.exedio.cope.pattern">com.exedio.cope.pattern.Hash</a> extends <a href="com/exedio/cope/Pattern.html" title="class in com.exedio.cope">Pattern</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList"><a name="serializedForm">
+<!--   -->
+</a>
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockList">
+<h4>storage</h4>
+<pre><a href="com/exedio/cope/StringField.html" title="class in com.exedio.cope">StringField</a> storage</pre>
+</li>
+<li class="blockList">
+<h4>plainTextLimit</h4>
+<pre>int plainTextLimit</pre>
+</li>
+<li class="blockList">
+<h4>algorithm</h4>
+<pre><a href="com/exedio/cope/pattern/HashAlgorithm.html" title="interface in com.exedio.cope.pattern">HashAlgorithm</a> algorithm</pre>
+</li>
+<li class="blockListLast">
+<h4>validator</h4>
+<pre><a href="com/exedio/cope/pattern/Hash.PlainTextValidator.html" title="class in com.exedio.cope.pattern">Hash.PlainTextValidator</a> validator</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a name="com.exedio.cope.pattern.Hash.InvalidPlainTextException">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/cope/pattern/Hash.InvalidPlainTextException.html" title="class in com.exedio.cope.pattern">com.exedio.cope.pattern.Hash.InvalidPlainTextException</a> extends <a href="com/exedio/cope/ConstraintViolationException.html" title="class in com.exedio.cope">ConstraintViolationException</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList"><a name="serializedForm">
+<!--   -->
+</a>
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockList">
+<h4>plainText</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> plainText</pre>
+</li>
+<li class="blockList">
+<h4>message</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> message</pre>
+</li>
+<li class="blockListLast">
+<h4>feature</h4>
+<pre><a href="com/exedio/cope/pattern/Hash.html" title="class in com.exedio.cope.pattern">Hash</a> feature</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a name="com.exedio.cope.pattern.History">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/cope/pattern/History.html" title="class in com.exedio.cope.pattern">com.exedio.cope.pattern.History</a> extends <a href="com/exedio/cope/Pattern.html" title="class in com.exedio.cope">Pattern</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList"><a name="serializedForm">
+<!--   -->
+</a>
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockList">
+<h4>eventParent</h4>
+<pre><a href="com/exedio/cope/ItemField.html" title="class in com.exedio.cope">ItemField</a>&lt;<a href="com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a> extends <a href="com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&gt; eventParent</pre>
+</li>
+<li class="blockList">
+<h4>eventEvents</h4>
+<pre><a href="com/exedio/cope/pattern/PartOf.html" title="class in com.exedio.cope.pattern">PartOf</a>&lt;<a href="com/exedio/cope/pattern/PartOf.html" title="type parameter in PartOf">C</a> extends <a href="com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&gt; eventEvents</pre>
+</li>
+<li class="blockList">
+<h4>eventDate</h4>
+<pre><a href="com/exedio/cope/DateField.html" title="class in com.exedio.cope">DateField</a> eventDate</pre>
+</li>
+<li class="blockList">
+<h4>eventAuthor</h4>
+<pre><a href="com/exedio/cope/StringField.html" title="class in com.exedio.cope">StringField</a> eventAuthor</pre>
+</li>
+<li class="blockList">
+<h4>eventNew</h4>
+<pre><a href="com/exedio/cope/BooleanField.html" title="class in com.exedio.cope">BooleanField</a> eventNew</pre>
+</li>
+<li class="blockList">
+<h4>eventType</h4>
+<pre><a href="com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;<a href="com/exedio/cope/Type.html" title="type parameter in Type">T</a> extends <a href="com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&gt; eventType</pre>
+</li>
+<li class="blockList">
+<h4>featureEvent</h4>
+<pre><a href="com/exedio/cope/ItemField.html" title="class in com.exedio.cope">ItemField</a>&lt;<a href="com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a> extends <a href="com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&gt; featureEvent</pre>
+</li>
+<li class="blockList">
+<h4>featureFeatures</h4>
+<pre><a href="com/exedio/cope/pattern/PartOf.html" title="class in com.exedio.cope.pattern">PartOf</a>&lt;<a href="com/exedio/cope/pattern/PartOf.html" title="type parameter in PartOf">C</a> extends <a href="com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&gt; featureFeatures</pre>
+</li>
+<li class="blockList">
+<h4>featureId</h4>
+<pre><a href="com/exedio/cope/reflect/FeatureField.html" title="class in com.exedio.cope.reflect">FeatureField</a>&lt;<a href="com/exedio/cope/reflect/FeatureField.html" title="type parameter in FeatureField">E</a> extends <a href="com/exedio/cope/Feature.html" title="class in com.exedio.cope">Feature</a>&gt; featureId</pre>
+</li>
+<li class="blockList">
+<h4>featureUnique</h4>
+<pre><a href="com/exedio/cope/UniqueConstraint.html" title="class in com.exedio.cope">UniqueConstraint</a> featureUnique</pre>
+</li>
+<li class="blockList">
+<h4>featureName</h4>
+<pre><a href="com/exedio/cope/StringField.html" title="class in com.exedio.cope">StringField</a> featureName</pre>
+</li>
+<li class="blockList">
+<h4>featureOld</h4>
+<pre><a href="com/exedio/cope/StringField.html" title="class in com.exedio.cope">StringField</a> featureOld</pre>
+</li>
+<li class="blockList">
+<h4>featureNew</h4>
+<pre><a href="com/exedio/cope/StringField.html" title="class in com.exedio.cope">StringField</a> featureNew</pre>
+</li>
+<li class="blockListLast">
+<h4>featureType</h4>
+<pre><a href="com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;<a href="com/exedio/cope/Type.html" title="type parameter in Type">T</a> extends <a href="com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&gt; featureType</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a name="com.exedio.cope.pattern.History.Event">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/cope/pattern/History.Event.html" title="class in com.exedio.cope.pattern">com.exedio.cope.pattern.History.Event</a> extends <a href="com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+</li>
+<li class="blockList"><a name="com.exedio.cope.pattern.History.Feature">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/cope/pattern/History.Feature.html" title="class in com.exedio.cope.pattern">com.exedio.cope.pattern.History.Feature</a> extends <a href="com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+</li>
+<li class="blockList"><a name="com.exedio.cope.pattern.IllegalContentTypeException">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/cope/pattern/IllegalContentTypeException.html" title="class in com.exedio.cope.pattern">com.exedio.cope.pattern.IllegalContentTypeException</a> extends <a href="com/exedio/cope/ConstraintViolationException.html" title="class in com.exedio.cope">ConstraintViolationException</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList"><a name="serializedForm">
+<!--   -->
+</a>
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockList">
+<h4>feature</h4>
+<pre><a href="com/exedio/cope/pattern/Media.html" title="class in com.exedio.cope.pattern">Media</a> feature</pre>
+</li>
+<li class="blockListLast">
+<h4>contentType</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> contentType</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a name="com.exedio.cope.pattern.IllegalCurrencyException">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/cope/pattern/IllegalCurrencyException.html" title="class in com.exedio.cope.pattern">com.exedio.cope.pattern.IllegalCurrencyException</a> extends <a href="com/exedio/cope/ConstraintViolationException.html" title="class in com.exedio.cope">ConstraintViolationException</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList"><a name="serializedForm">
+<!--   -->
+</a>
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockList">
+<h4>feature</h4>
+<pre><a href="com/exedio/cope/pattern/MoneyField.html" title="class in com.exedio.cope.pattern">MoneyField</a>&lt;<a href="com/exedio/cope/pattern/MoneyField.html" title="type parameter in MoneyField">C</a> extends <a href="com/exedio/cope/pattern/Money.Currency.html" title="interface in com.exedio.cope.pattern">Money.Currency</a>&gt; feature</pre>
+</li>
+<li class="blockList">
+<h4>value</h4>
+<pre><a href="com/exedio/cope/pattern/Money.html" title="class in com.exedio.cope.pattern">Money</a>&lt;<a href="com/exedio/cope/pattern/Money.html" title="type parameter in Money">C</a> extends <a href="com/exedio/cope/pattern/Money.Currency.html" title="interface in com.exedio.cope.pattern">Money.Currency</a>&gt; value</pre>
+</li>
+<li class="blockListLast">
+<h4>allowed</h4>
+<pre><a href="com/exedio/cope/pattern/Money.Currency.html" title="interface in com.exedio.cope.pattern">Money.Currency</a> allowed</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a name="com.exedio.cope.pattern.Importer">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/cope/pattern/Importer.html" title="class in com.exedio.cope.pattern">com.exedio.cope.pattern.Importer</a> extends <a href="com/exedio/cope/Pattern.html" title="class in com.exedio.cope">Pattern</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList"><a name="serializedForm">
+<!--   -->
+</a>
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockList">
+<h4>key</h4>
+<pre><a href="com/exedio/cope/FunctionField.html" title="class in com.exedio.cope">FunctionField</a>&lt;<a href="com/exedio/cope/FunctionField.html" title="type parameter in FunctionField">E</a>&gt; key</pre>
+</li>
+<li class="blockListLast">
+<h4>hintInitial</h4>
+<pre>boolean hintInitial</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a name="com.exedio.cope.pattern.JavaView">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/cope/pattern/JavaView.html" title="class in com.exedio.cope.pattern">com.exedio.cope.pattern.JavaView</a> extends <a href="com/exedio/cope/Pattern.html" title="class in com.exedio.cope">Pattern</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList"><a name="serializedForm">
+<!--   -->
+</a>
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockListLast">
+<h4>mountIfMounted</h4>
+<pre>com.exedio.cope.pattern.JavaView.Mount mountIfMounted</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a name="com.exedio.cope.pattern.LimitedListField">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/cope/pattern/LimitedListField.html" title="class in com.exedio.cope.pattern">com.exedio.cope.pattern.LimitedListField</a> extends <a href="com/exedio/cope/pattern/AbstractListField.html" title="class in com.exedio.cope.pattern">AbstractListField</a>&lt;<a href="com/exedio/cope/pattern/LimitedListField.html" title="type parameter in LimitedListField">E</a>&gt; implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList"><a name="serializedForm">
+<!--   -->
+</a>
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockList">
+<h4>length</h4>
+<pre><a href="com/exedio/cope/IntegerField.html" title="class in com.exedio.cope">IntegerField</a> length</pre>
+</li>
+<li class="blockList">
+<h4>sources</h4>
+<pre><a href="com/exedio/cope/FunctionField.html" title="class in com.exedio.cope">FunctionField</a>&lt;<a href="com/exedio/cope/FunctionField.html" title="type parameter in FunctionField">E</a>&gt;[] sources</pre>
+</li>
+<li class="blockList">
+<h4>initial</h4>
+<pre>boolean initial</pre>
+</li>
+<li class="blockList">
+<h4>isFinal</h4>
+<pre>boolean isFinal</pre>
+</li>
+<li class="blockListLast">
+<h4>unison</h4>
+<pre><a href="com/exedio/cope/CheckConstraint.html" title="class in com.exedio.cope">CheckConstraint</a> unison</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a name="com.exedio.cope.pattern.ListField">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/cope/pattern/ListField.html" title="class in com.exedio.cope.pattern">com.exedio.cope.pattern.ListField</a> extends <a href="com/exedio/cope/pattern/AbstractListField.html" title="class in com.exedio.cope.pattern">AbstractListField</a>&lt;<a href="com/exedio/cope/pattern/ListField.html" title="type parameter in ListField">E</a>&gt; implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList"><a name="serializedForm">
+<!--   -->
+</a>
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockList">
+<h4>order</h4>
+<pre><a href="com/exedio/cope/IntegerField.html" title="class in com.exedio.cope">IntegerField</a> order</pre>
+</li>
+<li class="blockList">
+<h4>element</h4>
+<pre><a href="com/exedio/cope/FunctionField.html" title="class in com.exedio.cope">FunctionField</a>&lt;<a href="com/exedio/cope/FunctionField.html" title="type parameter in FunctionField">E</a>&gt; element</pre>
+</li>
+<li class="blockListLast">
+<h4>mountIfMounted</h4>
+<pre>com.exedio.cope.pattern.ListField.Mount mountIfMounted</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a name="com.exedio.cope.pattern.ListSizeViolationException">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/cope/pattern/ListSizeViolationException.html" title="class in com.exedio.cope.pattern">com.exedio.cope.pattern.ListSizeViolationException</a> extends <a href="com/exedio/cope/ConstraintViolationException.html" title="class in com.exedio.cope">ConstraintViolationException</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList"><a name="serializedForm">
+<!--   -->
+</a>
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockList">
+<h4>feature</h4>
+<pre><a href="com/exedio/cope/pattern/AbstractListField.html" title="class in com.exedio.cope.pattern">AbstractListField</a>&lt;<a href="com/exedio/cope/pattern/AbstractListField.html" title="type parameter in AbstractListField">E</a>&gt; feature</pre>
+</li>
+<li class="blockList">
+<h4>size</h4>
+<pre>int size</pre>
+</li>
+<li class="blockListLast">
+<h4>border</h4>
+<pre>int border</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a name="com.exedio.cope.pattern.MapField">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/cope/pattern/MapField.html" title="class in com.exedio.cope.pattern">com.exedio.cope.pattern.MapField</a> extends <a href="com/exedio/cope/Pattern.html" title="class in com.exedio.cope">Pattern</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList"><a name="serializedForm">
+<!--   -->
+</a>
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockList">
+<h4>key</h4>
+<pre><a href="com/exedio/cope/FunctionField.html" title="class in com.exedio.cope">FunctionField</a>&lt;<a href="com/exedio/cope/FunctionField.html" title="type parameter in FunctionField">E</a>&gt; key</pre>
+</li>
+<li class="blockList">
+<h4>value</h4>
+<pre><a href="com/exedio/cope/FunctionField.html" title="class in com.exedio.cope">FunctionField</a>&lt;<a href="com/exedio/cope/FunctionField.html" title="type parameter in FunctionField">E</a>&gt; value</pre>
+</li>
+<li class="blockListLast">
+<h4>mountIfMounted</h4>
+<pre>com.exedio.cope.pattern.MapField.Mount mountIfMounted</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a name="com.exedio.cope.pattern.MD5Hash">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/cope/pattern/MD5Hash.html" title="class in com.exedio.cope.pattern">com.exedio.cope.pattern.MD5Hash</a> extends <a href="com/exedio/cope/pattern/Hash.html" title="class in com.exedio.cope.pattern">Hash</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+</li>
+<li class="blockList"><a name="com.exedio.cope.pattern.Media">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/cope/pattern/Media.html" title="class in com.exedio.cope.pattern">com.exedio.cope.pattern.Media</a> extends <a href="com/exedio/cope/pattern/MediaPath.html" title="class in com.exedio.cope.pattern">MediaPath</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList"><a name="serializedForm">
+<!--   -->
+</a>
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockList">
+<h4>isfinal</h4>
+<pre>boolean isfinal</pre>
+</li>
+<li class="blockList">
+<h4>optional</h4>
+<pre>boolean optional</pre>
+</li>
+<li class="blockList">
+<h4>body</h4>
+<pre><a href="com/exedio/cope/DataField.html" title="class in com.exedio.cope">DataField</a> body</pre>
+</li>
+<li class="blockList">
+<h4>contentType</h4>
+<pre>com.exedio.cope.pattern.ContentType&lt;B&gt; contentType</pre>
+</li>
+<li class="blockList">
+<h4>lastModified</h4>
+<pre><a href="com/exedio/cope/DateField.html" title="class in com.exedio.cope">DateField</a> lastModified</pre>
+</li>
+<li class="blockListLast">
+<h4>unison</h4>
+<pre><a href="com/exedio/cope/CheckConstraint.html" title="class in com.exedio.cope">CheckConstraint</a> unison</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a name="com.exedio.cope.pattern.MediaFilter">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/cope/pattern/MediaFilter.html" title="class in com.exedio.cope.pattern">com.exedio.cope.pattern.MediaFilter</a> extends <a href="com/exedio/cope/pattern/MediaPath.html" title="class in com.exedio.cope.pattern">MediaPath</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList"><a name="serializedForm">
+<!--   -->
+</a>
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockListLast">
+<h4>source</h4>
+<pre><a href="com/exedio/cope/pattern/Media.html" title="class in com.exedio.cope.pattern">Media</a> source</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a name="com.exedio.cope.pattern.MediaImageioFilter">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/cope/pattern/MediaImageioFilter.html" title="class in com.exedio.cope.pattern">com.exedio.cope.pattern.MediaImageioFilter</a> extends <a href="com/exedio/cope/pattern/MediaFilter.html" title="class in com.exedio.cope.pattern">MediaFilter</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList"><a name="serializedForm">
+<!--   -->
+</a>
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockList">
+<h4>source</h4>
+<pre><a href="com/exedio/cope/pattern/Media.html" title="class in com.exedio.cope.pattern">Media</a> source</pre>
+</li>
+<li class="blockList">
+<h4>imageReaderSpi</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/java/util/HashMap.html?is-external=true" title="class or interface in java.util">HashMap</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/util/HashMap.html?is-external=true" title="class or interface in java.util">K</a>,<a href="http://docs.oracle.com/javase/7/docs/api/java/util/HashMap.html?is-external=true" title="class or interface in java.util">V</a>&gt; imageReaderSpi</pre>
+</li>
+<li class="blockListLast">
+<h4>imageWriterSpi</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/javax/imageio/spi/ImageWriterSpi.html?is-external=true" title="class or interface in javax.imageio.spi">ImageWriterSpi</a> imageWriterSpi</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a name="com.exedio.cope.pattern.MediaImageMagickFilter">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/cope/pattern/MediaImageMagickFilter.html" title="class in com.exedio.cope.pattern">com.exedio.cope.pattern.MediaImageMagickFilter</a> extends <a href="com/exedio/cope/pattern/MediaFilter.html" title="class in com.exedio.cope.pattern">MediaFilter</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList"><a name="serializedForm">
+<!--   -->
+</a>
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockList">
+<h4>source</h4>
+<pre><a href="com/exedio/cope/pattern/Media.html" title="class in com.exedio.cope.pattern">Media</a> source</pre>
+</li>
+<li class="blockList">
+<h4>fallback</h4>
+<pre><a href="com/exedio/cope/pattern/MediaImageioFilter.html" title="class in com.exedio.cope.pattern">MediaImageioFilter</a> fallback</pre>
+</li>
+<li class="blockList">
+<h4>constantOutputContentType</h4>
+<pre><a href="com/exedio/cope/pattern/MediaType.html" title="class in com.exedio.cope.pattern">MediaType</a> constantOutputContentType</pre>
+</li>
+<li class="blockListLast">
+<h4>options</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>[] options</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a name="com.exedio.cope.pattern.MediaImageMagickThumbnail">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/cope/pattern/MediaImageMagickThumbnail.html" title="class in com.exedio.cope.pattern">com.exedio.cope.pattern.MediaImageMagickThumbnail</a> extends <a href="com/exedio/cope/pattern/MediaImageMagickFilter.html" title="class in com.exedio.cope.pattern">MediaImageMagickFilter</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList"><a name="serializedForm">
+<!--   -->
+</a>
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockList">
+<h4>boundX</h4>
+<pre>int boundX</pre>
+</li>
+<li class="blockList">
+<h4>boundY</h4>
+<pre>int boundY</pre>
+</li>
+<li class="blockList">
+<h4>density</h4>
+<pre>int density</pre>
+</li>
+<li class="blockListLast">
+<h4>flattenColor</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> flattenColor</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a name="com.exedio.cope.pattern.MediaPath">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/cope/pattern/MediaPath.html" title="class in com.exedio.cope.pattern">com.exedio.cope.pattern.MediaPath</a> extends <a href="com/exedio/cope/Pattern.html" title="class in com.exedio.cope">Pattern</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList"><a name="serializedForm">
+<!--   -->
+</a>
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockList">
+<h4>mountIfMounted</h4>
+<pre>com.exedio.cope.pattern.MediaPath.Mount mountIfMounted</pre>
+</li>
+<li class="blockList">
+<h4>redirectFrom</h4>
+<pre>com.exedio.cope.pattern.VolatileInt redirectFrom</pre>
+</li>
+<li class="blockList">
+<h4>exception</h4>
+<pre>com.exedio.cope.pattern.ErrorLog exception</pre>
+</li>
+<li class="blockList">
+<h4>invalidSpecial</h4>
+<pre>com.exedio.cope.pattern.ErrorLog invalidSpecial</pre>
+</li>
+<li class="blockList">
+<h4>guessedUrl</h4>
+<pre>com.exedio.cope.pattern.ErrorLog guessedUrl</pre>
+</li>
+<li class="blockList">
+<h4>notAnItem</h4>
+<pre>com.exedio.cope.pattern.ErrorLog notAnItem</pre>
+</li>
+<li class="blockList">
+<h4>noSuchItem</h4>
+<pre>com.exedio.cope.pattern.ErrorLog noSuchItem</pre>
+</li>
+<li class="blockList">
+<h4>moved</h4>
+<pre>com.exedio.cope.pattern.VolatileInt moved</pre>
+</li>
+<li class="blockList">
+<h4>isNull</h4>
+<pre>com.exedio.cope.pattern.ErrorLog isNull</pre>
+</li>
+<li class="blockList">
+<h4>notComputable</h4>
+<pre>com.exedio.cope.pattern.ErrorLog notComputable</pre>
+</li>
+<li class="blockList">
+<h4>notModified</h4>
+<pre>com.exedio.cope.pattern.VolatileInt notModified</pre>
+</li>
+<li class="blockListLast">
+<h4>delivered</h4>
+<pre>com.exedio.cope.pattern.VolatileInt delivered</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a name="com.exedio.cope.pattern.MediaPath.NotFound">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/cope/pattern/MediaPath.NotFound.html" title="class in com.exedio.cope.pattern">com.exedio.cope.pattern.MediaPath.NotFound</a> extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Exception.html?is-external=true" title="class or interface in java.lang">Exception</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList"><a name="serializedForm">
+<!--   -->
+</a>
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockListLast">
+<h4>reason</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> reason</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a name="com.exedio.cope.pattern.MediaRedirect">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/cope/pattern/MediaRedirect.html" title="class in com.exedio.cope.pattern">com.exedio.cope.pattern.MediaRedirect</a> extends <a href="com/exedio/cope/pattern/MediaPath.html" title="class in com.exedio.cope.pattern">MediaPath</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList"><a name="serializedForm">
+<!--   -->
+</a>
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockListLast">
+<h4>target</h4>
+<pre><a href="com/exedio/cope/pattern/MediaPath.html" title="class in com.exedio.cope.pattern">MediaPath</a> target</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a name="com.exedio.cope.pattern.MediaServlet">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/cope/pattern/MediaServlet.html" title="class in com.exedio.cope.pattern">com.exedio.cope.pattern.MediaServlet</a> extends <a href="http://java.sun.com/j2ee/1.4/docs/api/javax/servlet/http/HttpServlet.html?is-external=true" title="class or interface in javax.servlet.http">HttpServlet</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList"><a name="serializedForm">
+<!--   -->
+</a>
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockList">
+<h4>connectToken</h4>
+<pre><a href="com/exedio/cope/misc/ConnectToken.html" title="class in com.exedio.cope.misc">ConnectToken</a> connectToken</pre>
+</li>
+<li class="blockList">
+<h4>pathes</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/java/util/HashMap.html?is-external=true" title="class or interface in java.util">HashMap</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/util/HashMap.html?is-external=true" title="class or interface in java.util">K</a>,<a href="http://docs.oracle.com/javase/7/docs/api/java/util/HashMap.html?is-external=true" title="class or interface in java.util">V</a>&gt; pathes</pre>
+</li>
+<li class="blockListLast">
+<h4>pathesRedirectFrom</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/java/util/HashMap.html?is-external=true" title="class or interface in java.util">HashMap</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/util/HashMap.html?is-external=true" title="class or interface in java.util">K</a>,<a href="http://docs.oracle.com/javase/7/docs/api/java/util/HashMap.html?is-external=true" title="class or interface in java.util">V</a>&gt; pathesRedirectFrom</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a name="com.exedio.cope.pattern.MediaThumbnail">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/cope/pattern/MediaThumbnail.html" title="class in com.exedio.cope.pattern">com.exedio.cope.pattern.MediaThumbnail</a> extends <a href="com/exedio/cope/pattern/MediaImageioFilter.html" title="class in com.exedio.cope.pattern">MediaImageioFilter</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList"><a name="serializedForm">
+<!--   -->
+</a>
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockList">
+<h4>boundX</h4>
+<pre>int boundX</pre>
+</li>
+<li class="blockListLast">
+<h4>boundY</h4>
+<pre>int boundY</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a name="com.exedio.cope.pattern.MessageDigestHash">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/cope/pattern/MessageDigestHash.html" title="class in com.exedio.cope.pattern">com.exedio.cope.pattern.MessageDigestHash</a> extends <a href="com/exedio/cope/pattern/Hash.html" title="class in com.exedio.cope.pattern">Hash</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+</li>
+<li class="blockList"><a name="com.exedio.cope.pattern.Money">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/cope/pattern/Money.html" title="class in com.exedio.cope.pattern">com.exedio.cope.pattern.Money</a> extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList"><a name="serializedForm">
+<!--   -->
+</a>
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockList">
+<h4>amount</h4>
+<pre><a href="com/exedio/cope/pattern/Price.html" title="class in com.exedio.cope.pattern">Price</a> amount</pre>
+</li>
+<li class="blockListLast">
+<h4>currency</h4>
+<pre><a href="com/exedio/cope/pattern/Money.Currency.html" title="interface in com.exedio.cope.pattern">Money.Currency</a> currency</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a name="com.exedio.cope.pattern.MoneyField">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/cope/pattern/MoneyField.html" title="class in com.exedio.cope.pattern">com.exedio.cope.pattern.MoneyField</a> extends <a href="com/exedio/cope/Pattern.html" title="class in com.exedio.cope">Pattern</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList"><a name="serializedForm">
+<!--   -->
+</a>
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockList">
+<h4>amount</h4>
+<pre><a href="com/exedio/cope/pattern/PriceField.html" title="class in com.exedio.cope.pattern">PriceField</a> amount</pre>
+</li>
+<li class="blockList">
+<h4>currency</h4>
+<pre>com.exedio.cope.pattern.CurrencySource&lt;C extends <a href="com/exedio/cope/pattern/Money.Currency.html" title="interface in com.exedio.cope.pattern">Money.Currency</a>&gt; currency</pre>
+</li>
+<li class="blockList">
+<h4>isfinal</h4>
+<pre>boolean isfinal</pre>
+</li>
+<li class="blockListLast">
+<h4>mandatory</h4>
+<pre>boolean mandatory</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a name="com.exedio.cope.pattern.NestedHashMigration">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/cope/pattern/NestedHashMigration.html" title="class in com.exedio.cope.pattern">com.exedio.cope.pattern.NestedHashMigration</a> extends <a href="com/exedio/cope/Pattern.html" title="class in com.exedio.cope">Pattern</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList"><a name="serializedForm">
+<!--   -->
+</a>
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockList">
+<h4>legacyHash</h4>
+<pre><a href="com/exedio/cope/pattern/Hash.html" title="class in com.exedio.cope.pattern">Hash</a> legacyHash</pre>
+</li>
+<li class="blockList">
+<h4>targetHash</h4>
+<pre><a href="com/exedio/cope/pattern/Hash.html" title="class in com.exedio.cope.pattern">Hash</a> targetHash</pre>
+</li>
+<li class="blockListLast">
+<h4>targetAlgorithm</h4>
+<pre><a href="com/exedio/cope/pattern/HashAlgorithm.html" title="interface in com.exedio.cope.pattern">HashAlgorithm</a> targetAlgorithm</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a name="com.exedio.cope.pattern.PartOf">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/cope/pattern/PartOf.html" title="class in com.exedio.cope.pattern">com.exedio.cope.pattern.PartOf</a> extends <a href="com/exedio/cope/Pattern.html" title="class in com.exedio.cope">Pattern</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList"><a name="serializedForm">
+<!--   -->
+</a>
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockList">
+<h4>container</h4>
+<pre><a href="com/exedio/cope/ItemField.html" title="class in com.exedio.cope">ItemField</a>&lt;<a href="com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a> extends <a href="com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&gt; container</pre>
+</li>
+<li class="blockListLast">
+<h4>order</h4>
+<pre><a href="com/exedio/cope/FunctionField.html" title="class in com.exedio.cope">FunctionField</a>&lt;<a href="com/exedio/cope/FunctionField.html" title="type parameter in FunctionField">E</a>&gt; order</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a name="com.exedio.cope.pattern.PasswordLimiter">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/cope/pattern/PasswordLimiter.html" title="class in com.exedio.cope.pattern">com.exedio.cope.pattern.PasswordLimiter</a> extends <a href="com/exedio/cope/Pattern.html" title="class in com.exedio.cope">Pattern</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList"><a name="serializedForm">
+<!--   -->
+</a>
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockList">
+<h4>password</h4>
+<pre><a href="com/exedio/cope/pattern/HashInterface.html" title="interface in com.exedio.cope.pattern">HashInterface</a> password</pre>
+</li>
+<li class="blockList">
+<h4>period</h4>
+<pre>long period</pre>
+</li>
+<li class="blockList">
+<h4>limit</h4>
+<pre>int limit</pre>
+</li>
+<li class="blockList">
+<h4>date</h4>
+<pre><a href="com/exedio/cope/DateField.html" title="class in com.exedio.cope">DateField</a> date</pre>
+</li>
+<li class="blockListLast">
+<h4>mountIfMounted</h4>
+<pre>com.exedio.cope.pattern.PasswordLimiter.Mount mountIfMounted</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a name="com.exedio.cope.pattern.PasswordLimiter.ExceededException">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/cope/pattern/PasswordLimiter.ExceededException.html" title="class in com.exedio.cope.pattern">com.exedio.cope.pattern.PasswordLimiter.ExceededException</a> extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Exception.html?is-external=true" title="class or interface in java.lang">Exception</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList"><a name="serializedForm">
+<!--   -->
+</a>
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockList">
+<h4>limiter</h4>
+<pre><a href="com/exedio/cope/pattern/PasswordLimiter.html" title="class in com.exedio.cope.pattern">PasswordLimiter</a> limiter</pre>
+</li>
+<li class="blockList">
+<h4>item</h4>
+<pre><a href="com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a> item</pre>
+</li>
+<li class="blockListLast">
+<h4>releaseDate</h4>
+<pre>long releaseDate</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a name="com.exedio.cope.pattern.PasswordLimiter.Refusal">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/cope/pattern/PasswordLimiter.Refusal.html" title="class in com.exedio.cope.pattern">com.exedio.cope.pattern.PasswordLimiter.Refusal</a> extends <a href="com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+</li>
+<li class="blockList"><a name="com.exedio.cope.pattern.PasswordRecovery">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/cope/pattern/PasswordRecovery.html" title="class in com.exedio.cope.pattern">com.exedio.cope.pattern.PasswordRecovery</a> extends <a href="com/exedio/cope/Pattern.html" title="class in com.exedio.cope">Pattern</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList"><a name="serializedForm">
+<!--   -->
+</a>
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockList">
+<h4>password</h4>
+<pre><a href="com/exedio/cope/pattern/HashInterface.html" title="interface in com.exedio.cope.pattern">HashInterface</a> password</pre>
+</li>
+<li class="blockList">
+<h4>parent</h4>
+<pre><a href="com/exedio/cope/ItemField.html" title="class in com.exedio.cope">ItemField</a>&lt;<a href="com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a> extends <a href="com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&gt; parent</pre>
+</li>
+<li class="blockList">
+<h4>tokens</h4>
+<pre><a href="com/exedio/cope/pattern/PartOf.html" title="class in com.exedio.cope.pattern">PartOf</a>&lt;<a href="com/exedio/cope/pattern/PartOf.html" title="type parameter in PartOf">C</a> extends <a href="com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&gt; tokens</pre>
+</li>
+<li class="blockList">
+<h4>secret</h4>
+<pre><a href="com/exedio/cope/LongField.html" title="class in com.exedio.cope">LongField</a> secret</pre>
+</li>
+<li class="blockList">
+<h4>expires</h4>
+<pre><a href="com/exedio/cope/DateField.html" title="class in com.exedio.cope">DateField</a> expires</pre>
+</li>
+<li class="blockList">
+<h4>tokenType</h4>
+<pre><a href="com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;<a href="com/exedio/cope/Type.html" title="type parameter in Type">T</a> extends <a href="com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&gt; tokenType</pre>
+</li>
+<li class="blockListLast">
+<h4>random</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/java/security/SecureRandom.html?is-external=true" title="class or interface in java.security">SecureRandom</a> random</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a name="com.exedio.cope.pattern.PasswordRecovery.Token">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/cope/pattern/PasswordRecovery.Token.html" title="class in com.exedio.cope.pattern">com.exedio.cope.pattern.PasswordRecovery.Token</a> extends <a href="com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+</li>
+<li class="blockList"><a name="com.exedio.cope.pattern.Price">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/cope/pattern/Price.html" title="class in com.exedio.cope.pattern">com.exedio.cope.pattern.Price</a> extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList"><a name="serializedForm">
+<!--   -->
+</a>
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockListLast">
+<h4>store</h4>
+<pre>int store</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a name="com.exedio.cope.pattern.PriceField">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/cope/pattern/PriceField.html" title="class in com.exedio.cope.pattern">com.exedio.cope.pattern.PriceField</a> extends <a href="com/exedio/cope/Pattern.html" title="class in com.exedio.cope">Pattern</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList"><a name="serializedForm">
+<!--   -->
+</a>
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockList">
+<h4>integer</h4>
+<pre><a href="com/exedio/cope/IntegerField.html" title="class in com.exedio.cope">IntegerField</a> integer</pre>
+</li>
+<li class="blockList">
+<h4>isfinal</h4>
+<pre>boolean isfinal</pre>
+</li>
+<li class="blockListLast">
+<h4>mandatory</h4>
+<pre>boolean mandatory</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a name="com.exedio.cope.pattern.RangeField">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/cope/pattern/RangeField.html" title="class in com.exedio.cope.pattern">com.exedio.cope.pattern.RangeField</a> extends <a href="com/exedio/cope/Pattern.html" title="class in com.exedio.cope">Pattern</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList"><a name="serializedForm">
+<!--   -->
+</a>
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockList">
+<h4>from</h4>
+<pre><a href="com/exedio/cope/FunctionField.html" title="class in com.exedio.cope">FunctionField</a>&lt;<a href="com/exedio/cope/FunctionField.html" title="type parameter in FunctionField">E</a>&gt; from</pre>
+</li>
+<li class="blockList">
+<h4>to</h4>
+<pre><a href="com/exedio/cope/FunctionField.html" title="class in com.exedio.cope">FunctionField</a>&lt;<a href="com/exedio/cope/FunctionField.html" title="type parameter in FunctionField">E</a>&gt; to</pre>
+</li>
+<li class="blockListLast">
+<h4>unison</h4>
+<pre><a href="com/exedio/cope/CheckConstraint.html" title="class in com.exedio.cope">CheckConstraint</a> unison</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a name="com.exedio.cope.pattern.Schedule">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/cope/pattern/Schedule.html" title="class in com.exedio.cope.pattern">com.exedio.cope.pattern.Schedule</a> extends <a href="com/exedio/cope/Pattern.html" title="class in com.exedio.cope">Pattern</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList"><a name="serializedForm">
+<!--   -->
+</a>
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockList">
+<h4>timeZone</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/java/util/TimeZone.html?is-external=true" title="class or interface in java.util">TimeZone</a> timeZone</pre>
+</li>
+<li class="blockList">
+<h4>locale</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/java/util/Locale.html?is-external=true" title="class or interface in java.util">Locale</a> locale</pre>
+</li>
+<li class="blockList">
+<h4>enabled</h4>
+<pre><a href="com/exedio/cope/BooleanField.html" title="class in com.exedio.cope">BooleanField</a> enabled</pre>
+</li>
+<li class="blockList">
+<h4>interval</h4>
+<pre><a href="com/exedio/cope/EnumField.html" title="class in com.exedio.cope">EnumField</a>&lt;<a href="com/exedio/cope/EnumField.html" title="type parameter in EnumField">E</a> extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Enum.html?is-external=true" title="class or interface in java.lang">Enum</a>&lt;<a href="com/exedio/cope/EnumField.html" title="type parameter in EnumField">E</a>&gt;&gt; interval</pre>
+</li>
+<li class="blockListLast">
+<h4>runs</h4>
+<pre>com.exedio.cope.pattern.Schedule.Runs runs</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a name="com.exedio.cope.pattern.Schedule.Run">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/cope/pattern/Schedule.Run.html" title="class in com.exedio.cope.pattern">com.exedio.cope.pattern.Schedule.Run</a> extends <a href="com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+</li>
+<li class="blockList"><a name="com.exedio.cope.pattern.Serializer">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/cope/pattern/Serializer.html" title="class in com.exedio.cope.pattern">com.exedio.cope.pattern.Serializer</a> extends <a href="com/exedio/cope/Pattern.html" title="class in com.exedio.cope">Pattern</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList"><a name="serializedForm">
+<!--   -->
+</a>
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockList">
+<h4>valueClass</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">T</a>&gt; valueClass</pre>
+</li>
+<li class="blockListLast">
+<h4>source</h4>
+<pre><a href="com/exedio/cope/DataField.html" title="class in com.exedio.cope">DataField</a> source</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a name="com.exedio.cope.pattern.SetField">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/cope/pattern/SetField.html" title="class in com.exedio.cope.pattern">com.exedio.cope.pattern.SetField</a> extends <a href="com/exedio/cope/Pattern.html" title="class in com.exedio.cope">Pattern</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList"><a name="serializedForm">
+<!--   -->
+</a>
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockList">
+<h4>element</h4>
+<pre><a href="com/exedio/cope/FunctionField.html" title="class in com.exedio.cope">FunctionField</a>&lt;<a href="com/exedio/cope/FunctionField.html" title="type parameter in FunctionField">E</a>&gt; element</pre>
+</li>
+<li class="blockListLast">
+<h4>mountIfMounted</h4>
+<pre>com.exedio.cope.pattern.SetField.Mount mountIfMounted</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a name="com.exedio.cope.pattern.SHAHash">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/cope/pattern/SHAHash.html" title="class in com.exedio.cope.pattern">com.exedio.cope.pattern.SHAHash</a> extends <a href="com/exedio/cope/pattern/Hash.html" title="class in com.exedio.cope.pattern">Hash</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+</li>
+<li class="blockList"><a name="com.exedio.cope.pattern.Singleton">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/cope/pattern/Singleton.html" title="class in com.exedio.cope.pattern">com.exedio.cope.pattern.Singleton</a> extends <a href="com/exedio/cope/Pattern.html" title="class in com.exedio.cope">Pattern</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList"><a name="serializedForm">
+<!--   -->
+</a>
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockListLast">
+<h4>source</h4>
+<pre><a href="com/exedio/cope/IntegerField.html" title="class in com.exedio.cope">IntegerField</a> source</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a name="com.exedio.cope.pattern.TextUrlFilter">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/cope/pattern/TextUrlFilter.html" title="class in com.exedio.cope.pattern">com.exedio.cope.pattern.TextUrlFilter</a> extends <a href="com/exedio/cope/pattern/MediaFilter.html" title="class in com.exedio.cope.pattern">MediaFilter</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList"><a name="serializedForm">
+<!--   -->
+</a>
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockList">
+<h4>raw</h4>
+<pre><a href="com/exedio/cope/pattern/Media.html" title="class in com.exedio.cope.pattern">Media</a> raw</pre>
+</li>
+<li class="blockList">
+<h4>supportedContentType</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> supportedContentType</pre>
+</li>
+<li class="blockList">
+<h4>charset</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/java/nio/charset/Charset.html?is-external=true" title="class or interface in java.nio.charset">Charset</a> charset</pre>
+</li>
+<li class="blockList">
+<h4>pasteStart</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> pasteStart</pre>
+</li>
+<li class="blockList">
+<h4>pasteStop</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> pasteStop</pre>
+</li>
+<li class="blockList">
+<h4>pasteKey</h4>
+<pre><a href="com/exedio/cope/StringField.html" title="class in com.exedio.cope">StringField</a> pasteKey</pre>
+</li>
+<li class="blockList">
+<h4>pasteValue</h4>
+<pre><a href="com/exedio/cope/pattern/Media.html" title="class in com.exedio.cope.pattern">Media</a> pasteValue</pre>
+</li>
+<li class="blockList">
+<h4>annotationProxy</h4>
+<pre>com.exedio.cope.pattern.TextUrlFilter.AnnotationProxy annotationProxy</pre>
+</li>
+<li class="blockListLast">
+<h4>mountIfMounted</h4>
+<pre>com.exedio.cope.pattern.TextUrlFilter.Mount mountIfMounted</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a name="com.exedio.cope.pattern.TextUrlFilter.Paste">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/cope/pattern/TextUrlFilter.Paste.html" title="class in com.exedio.cope.pattern">com.exedio.cope.pattern.TextUrlFilter.Paste</a> extends <a href="com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+</li>
+<li class="blockList"><a name="com.exedio.cope.pattern.TextUrlFilterDelegator">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/cope/pattern/TextUrlFilterDelegator.html" title="class in com.exedio.cope.pattern">com.exedio.cope.pattern.TextUrlFilterDelegator</a> extends <a href="com/exedio/cope/pattern/MediaFilter.html" title="class in com.exedio.cope.pattern">MediaFilter</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList"><a name="serializedForm">
+<!--   -->
+</a>
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockList">
+<h4>raw</h4>
+<pre><a href="com/exedio/cope/pattern/Media.html" title="class in com.exedio.cope.pattern">Media</a> raw</pre>
+</li>
+<li class="blockList">
+<h4>delegate</h4>
+<pre><a href="com/exedio/cope/pattern/TextUrlFilter.html" title="class in com.exedio.cope.pattern">TextUrlFilter</a> delegate</pre>
+</li>
+<li class="blockList">
+<h4>supportedContentType</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> supportedContentType</pre>
+</li>
+<li class="blockList">
+<h4>charset</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/java/nio/charset/Charset.html?is-external=true" title="class or interface in java.nio.charset">Charset</a> charset</pre>
+</li>
+<li class="blockList">
+<h4>pasteStart</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> pasteStart</pre>
+</li>
+<li class="blockList">
+<h4>pasteStop</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> pasteStop</pre>
+</li>
+<li class="blockListLast">
+<h4>annotationProxy</h4>
+<pre>com.exedio.cope.pattern.TextUrlFilterDelegator.AnnotationProxy annotationProxy</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a name="com.exedio.cope.pattern.UniqueHashedMedia">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/cope/pattern/UniqueHashedMedia.html" title="class in com.exedio.cope.pattern">com.exedio.cope.pattern.UniqueHashedMedia</a> extends <a href="com/exedio/cope/Pattern.html" title="class in com.exedio.cope">Pattern</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList"><a name="serializedForm">
+<!--   -->
+</a>
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockList">
+<h4>media</h4>
+<pre><a href="com/exedio/cope/pattern/Media.html" title="class in com.exedio.cope.pattern">Media</a> media</pre>
+</li>
+<li class="blockList">
+<h4>hash</h4>
+<pre><a href="com/exedio/cope/StringField.html" title="class in com.exedio.cope">StringField</a> hash</pre>
+</li>
+<li class="blockListLast">
+<h4>messageDigestAlgorithm</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> messageDigestAlgorithm</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList">
+<h2 title="Package">Package&nbsp;com.exedio.cope.reflect</h2>
+<ul class="blockList">
+<li class="blockList"><a name="com.exedio.cope.reflect.FeatureField">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/cope/reflect/FeatureField.html" title="class in com.exedio.cope.reflect">com.exedio.cope.reflect.FeatureField</a> extends <a href="com/exedio/cope/Pattern.html" title="class in com.exedio.cope">Pattern</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList"><a name="serializedForm">
+<!--   -->
+</a>
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockList">
+<h4>valueClass</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">T</a>&gt; valueClass</pre>
+</li>
+<li class="blockList">
+<h4>idField</h4>
+<pre><a href="com/exedio/cope/StringField.html" title="class in com.exedio.cope">StringField</a> idField</pre>
+</li>
+<li class="blockList">
+<h4>isfinal</h4>
+<pre>boolean isfinal</pre>
+</li>
+<li class="blockListLast">
+<h4>mandatory</h4>
+<pre>boolean mandatory</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList">
+<h2 title="Package">Package&nbsp;com.exedio.cope.search</h2>
+<ul class="blockList">
+<li class="blockList"><a name="com.exedio.cope.search.AverageAggregate">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/cope/search/AverageAggregate.html" title="class in com.exedio.cope.search">com.exedio.cope.search.AverageAggregate</a> extends <a href="com/exedio/cope/Aggregate.html" title="class in com.exedio.cope">Aggregate</a>&lt;<a href="com/exedio/cope/search/AverageAggregate.html" title="type parameter in AverageAggregate">E</a> extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Number.html?is-external=true" title="class or interface in java.lang">Number</a>&gt; implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+</li>
+<li class="blockList"><a name="com.exedio.cope.search.ExtremumAggregate">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/cope/search/ExtremumAggregate.html" title="class in com.exedio.cope.search">com.exedio.cope.search.ExtremumAggregate</a> extends <a href="com/exedio/cope/Aggregate.html" title="class in com.exedio.cope">Aggregate</a>&lt;<a href="com/exedio/cope/search/ExtremumAggregate.html" title="type parameter in ExtremumAggregate">E</a>&gt; implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList"><a name="serializedForm">
+<!--   -->
+</a>
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockListLast">
+<h4>minimum</h4>
+<pre>boolean minimum</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a name="com.exedio.cope.search.SumAggregate">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/cope/search/SumAggregate.html" title="class in com.exedio.cope.search">com.exedio.cope.search.SumAggregate</a> extends <a href="com/exedio/cope/Aggregate.html" title="class in com.exedio.cope">Aggregate</a>&lt;<a href="com/exedio/cope/search/SumAggregate.html" title="type parameter in SumAggregate">E</a> extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Number.html?is-external=true" title="class or interface in java.lang">Number</a>&gt; implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+</li>
+</ul>
+</li>
+<li class="blockList">
+<h2 title="Package">Package&nbsp;com.exedio.cope.util</h2>
+<ul class="blockList">
+<li class="blockList"><a name="com.exedio.cope.util.CharSet">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/cope/util/CharSet.html" title="class in com.exedio.cope.util">com.exedio.cope.util.CharSet</a> extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList"><a name="serializedForm">
+<!--   -->
+</a>
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockListLast">
+<h4>set</h4>
+<pre>char[] set</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a name="com.exedio.cope.util.ClassComparator">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/cope/util/ClassComparator.html" title="class in com.exedio.cope.util">com.exedio.cope.util.ClassComparator</a> extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+</li>
+<li class="blockList"><a name="com.exedio.cope.util.Day">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/cope/util/Day.html" title="class in com.exedio.cope.util">com.exedio.cope.util.Day</a> extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList"><a name="serializedForm">
+<!--   -->
+</a>
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockList">
+<h4>year</h4>
+<pre>int year</pre>
+</li>
+<li class="blockList">
+<h4>month</h4>
+<pre>int month</pre>
+</li>
+<li class="blockListLast">
+<h4>day</h4>
+<pre>int day</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a name="com.exedio.cope.util.JobStop">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/cope/util/JobStop.html" title="class in com.exedio.cope.util">com.exedio.cope.util.JobStop</a> extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/RuntimeException.html?is-external=true" title="class or interface in java.lang">RuntimeException</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+</li>
+</ul>
+</li>
+<li class="blockList">
+<h2 title="Package">Package&nbsp;com.exedio.cops</h2>
+<ul class="blockList">
+<li class="blockList"><a name="com.exedio.cops.CopsServlet">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/cops/CopsServlet.html" title="class in com.exedio.cops">com.exedio.cops.CopsServlet</a> extends <a href="http://java.sun.com/j2ee/1.4/docs/api/javax/servlet/http/HttpServlet.html?is-external=true" title="class or interface in javax.servlet.http">HttpServlet</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList"><a name="serializedForm">
+<!--   -->
+</a>
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockList">
+<h4>resources</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/java/util/LinkedHashMap.html?is-external=true" title="class or interface in java.util">LinkedHashMap</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/util/LinkedHashMap.html?is-external=true" title="class or interface in java.util">K</a>,<a href="http://docs.oracle.com/javase/7/docs/api/java/util/LinkedHashMap.html?is-external=true" title="class or interface in java.util">V</a>&gt; resources</pre>
+</li>
+<li class="blockListLast">
+<h4>random</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/java/util/Random.html?is-external=true" title="class or interface in java.util">Random</a> random</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a name="com.exedio.cops.PropertiesServlet">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/cops/PropertiesServlet.html" title="class in com.exedio.cops">com.exedio.cops.PropertiesServlet</a> extends <a href="com/exedio/cops/CopsServlet.html" title="class in com.exedio.cops">CopsServlet</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+</li>
+</ul>
+</li>
+<li class="blockList">
+<h2 title="Package">Package&nbsp;com.exedio.dsmf</h2>
+<ul class="blockList">
+<li class="blockList"><a name="com.exedio.dsmf.SQLRuntimeException">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/dsmf/SQLRuntimeException.html" title="class in com.exedio.dsmf">com.exedio.dsmf.SQLRuntimeException</a> extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/RuntimeException.html?is-external=true" title="class or interface in java.lang">RuntimeException</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<div class="bottomNav"><a name="navbar_bottom">
+<!--   -->
+</a><a href="#skip-navbar_bottom" title="Skip navigation links"></a><a name="navbar_bottom_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="overview-summary.html">Overview</a></li>
+<li>Package</li>
+<li>Class</li>
+<li><a href="overview-tree.html">Tree</a></li>
+<li><a href="help-doc.html">Help</a></li>
+</ul>
+<div class="aboutLanguage"><em>exedio persistence</em></div>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li>Prev</li>
+<li>Next</li>
+</ul>
+<ul class="navList">
+<li><a href="index.html?serialized-form.html" target="_top">Frames</a></li>
+<li><a href="serialized-form.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_bottom">
+<li><a href="allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_bottom");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<a name="skip-navbar_bottom">
+<!--   -->
+</a></div>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+<p class="legalCopy"><small>Maintained by <a href="http://www.exedio.com/" target="_top">exedio</a> Gesellschaft f&uuml;r Softwareentwicklung mbH.</small></p>
+</body>
+</html>

@@ -12,7 +12,6 @@
 		<delete dir="home/api" /><!-- not created anymore -->
 		<delete dir="home/lib" /><!-- not created anymore -->
 		<delete dir="home/testprotocol.html" /><!-- not created anymore -->
-		<delete dir="api" />
 		<delete dir="testprotocol.html" />
 	</target>
 	

@@ -1,0 +1,691 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- NewPage -->
+<html lang="de">
+<head>
+<title>SchemaInfo (exedio persistence)</title>
+<link rel="stylesheet" type="text/css" href="../../../stylesheet.css" title="Style">
+</head>
+<body>
+<script type="text/javascript"><!--
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="SchemaInfo (exedio persistence)";
+    }
+//-->
+</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+<!-- ========= START OF TOP NAVBAR ======= -->
+<div class="topNav"><a name="navbar_top">
+<!--   -->
+</a><a href="#skip-navbar_top" title="Skip navigation links"></a><a name="navbar_top_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../help-doc.html">Help</a></li>
+</ul>
+<div class="aboutLanguage"><em>exedio persistence</em></div>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../com/exedio/cope/RevisionsFuture.html" title="interface in com.exedio.cope"><span class="strong">Prev Class</span></a></li>
+<li><a href="../../../com/exedio/cope/Selectable.html" title="interface in com.exedio.cope"><span class="strong">Next Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../index.html?com/exedio/cope/SchemaInfo.html" target="_top">Frames</a></li>
+<li><a href="SchemaInfo.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_top">
+<li><a href="../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_top");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_top">
+<!--   -->
+</a></div>
+<!-- ========= END OF TOP NAVBAR ========= -->
+<!-- ======== START OF CLASS DATA ======== -->
+<div class="header">
+<div class="subTitle">com.exedio.cope</div>
+<h2 title="Class SchemaInfo" class="title">Class SchemaInfo</h2>
+</div>
+<div class="contentContainer">
+<ul class="inheritance">
+<li><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</a></li>
+<li>
+<ul class="inheritance">
+<li>com.exedio.cope.SchemaInfo</li>
+</ul>
+</li>
+</ul>
+<div class="description">
+<ul class="blockList">
+<li class="blockList">
+<hr>
+<br>
+<pre>public final class <span class="strong">SchemaInfo</span>
+extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></pre>
+<div class="block">Returns information about the database schema accessed by cope
+ - <b>use with care!</b>
+ <p>
+ This information is needed only, if you want to access
+ the database without cope.
+ In this case you should really know, what you are doing.
+ Any INSERT/UPDATE/DELETE on the database bypassing cope
+ may lead to <b>inconsistent caches</b>.
+ Please note, that the results of all methods may vary,
+ if a cope model is configured for different databases.
+ BEWARE:
+ This class is <b>not</b> part of the <b>stable API</b> of cope.
+ It may change its syntax and/or semantics in the future.</div>
+</li>
+</ul>
+</div>
+<div class="summary">
+<ul class="blockList">
+<li class="blockList">
+<!-- ========== METHOD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_summary">
+<!--   -->
+</a>
+<h3>Method Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
+<caption><span>Methods</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../com/exedio/cope/SchemaInfo.html#getColumnName(com.exedio.cope.Field)">getColumnName</a></strong>(<a href="../../../com/exedio/cope/Field.html" title="class in com.exedio.cope">Field</a>&lt;?&gt;&nbsp;field)</code>
+<div class="block">Returns the name of database column for the field.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static &lt;E extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Enum.html?is-external=true" title="class or interface in java.lang">Enum</a>&lt;E&gt;&gt;&nbsp;<br>int</code></td>
+<td class="colLast"><code><strong><a href="../../../com/exedio/cope/SchemaInfo.html#getColumnValue(E)">getColumnValue</a></strong>(E&nbsp;value)</code>
+<div class="block">Returns the value of database column for the field
+ and the given enum value.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static &lt;E extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Enum.html?is-external=true" title="class or interface in java.lang">Enum</a>&lt;E&gt;&gt;&nbsp;<br>int</code></td>
+<td class="colLast"><code><strong><a href="../../../com/exedio/cope/SchemaInfo.html#getColumnValue(com.exedio.cope.EnumField,%20E)">getColumnValue</a></strong>(<a href="../../../com/exedio/cope/EnumField.html" title="class in com.exedio.cope">EnumField</a>&lt;E&gt;&nbsp;field,
+              E&nbsp;value)</code>
+<div class="block"><strong>Deprecated.</strong>&nbsp;
+<div class="block"><i>Use <a href="../../../com/exedio/cope/SchemaInfo.html#getColumnValue(E)"><code>getColumnValue(Enum)</code></a> instead.</i></div>
+</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../com/exedio/cope/SchemaInfo.html#getDefaultToNextSequenceName(com.exedio.cope.IntegerField)">getDefaultToNextSequenceName</a></strong>(<a href="../../../com/exedio/cope/IntegerField.html" title="class in com.exedio.cope">IntegerField</a>&nbsp;field)</code>
+<div class="block">Returns the name of the sequence for generating values for the
+ <a href="../../../com/exedio/cope/IntegerField.html#defaultToNext(int)"><code>defaultToNext</code></a>
+ mechanism of the field.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../com/exedio/cope/SchemaInfo.html#getModificationCounterColumnName(com.exedio.cope.Type)">getModificationCounterColumnName</a></strong>(<a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;?&gt;&nbsp;type)</code>
+<div class="block"><strong>Deprecated.</strong>&nbsp;
+<div class="block"><i>Use <a href="../../../com/exedio/cope/SchemaInfo.html#getUpdateCounterColumnName(com.exedio.cope.Type)"><code>getUpdateCounterColumnName(Type)</code></a> instead</i></div>
+</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../com/exedio/cope/SchemaInfo.html#getPrimaryKeyColumnName(com.exedio.cope.Type)">getPrimaryKeyColumnName</a></strong>(<a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;?&gt;&nbsp;type)</code>
+<div class="block">Returns the name of primary key column in the database for the type.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><strong><a href="../../../com/exedio/cope/SchemaInfo.html#getPrimaryKeyColumnValue(com.exedio.cope.Item)">getPrimaryKeyColumnValue</a></strong>(<a href="../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&nbsp;item)</code>
+<div class="block">Returns the value of primary key column in the database for the item.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../com/exedio/cope/SchemaInfo.html#getPrimaryKeySequenceName(com.exedio.cope.Type)">getPrimaryKeySequenceName</a></strong>(<a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;?&gt;&nbsp;type)</code>
+<div class="block">Returns the name of the sequence for generating values for the
+ <a href="../../../com/exedio/cope/SchemaInfo.html#getPrimaryKeyColumnName(com.exedio.cope.Type)"><code>primary key column</code></a>
+ of the type.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../com/exedio/cope/SchemaInfo.html#getSequenceName(com.exedio.cope.Sequence)">getSequenceName</a></strong>(<a href="../../../com/exedio/cope/Sequence.html" title="class in com.exedio.cope">Sequence</a>&nbsp;sequence)</code>
+<div class="block">Returns the name of the sequence for generating values via
+ <a href="../../../com/exedio/cope/Sequence.html#next()"><code>Sequence.next()</code></a>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../com/exedio/cope/SchemaInfo.html#getTableName(com.exedio.cope.Type)">getTableName</a></strong>(<a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;?&gt;&nbsp;type)</code>
+<div class="block">Returns the name of database table for the type.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../com/exedio/cope/SchemaInfo.html#getTypeColumnName(com.exedio.cope.ItemField)">getTypeColumnName</a></strong>(<a href="../../../com/exedio/cope/ItemField.html" title="class in com.exedio.cope">ItemField</a>&lt;?&gt;&nbsp;field)</code>
+<div class="block">Returns the name of type column in the database for the field.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../com/exedio/cope/SchemaInfo.html#getTypeColumnName(com.exedio.cope.Type)">getTypeColumnName</a></strong>(<a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;?&gt;&nbsp;type)</code>
+<div class="block">Returns the name of type column in the database for the type.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../com/exedio/cope/SchemaInfo.html#getTypeColumnValue(com.exedio.cope.Type)">getTypeColumnValue</a></strong>(<a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;?&gt;&nbsp;type)</code>
+<div class="block">Returns the value to be put into a type column for the type.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../com/exedio/cope/SchemaInfo.html#getUpdateCounterColumnName(com.exedio.cope.Type)">getUpdateCounterColumnName</a></strong>(<a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;?&gt;&nbsp;type)</code>
+<div class="block">Returns the name of update counter column in the database for the type.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../com/exedio/cope/SchemaInfo.html#isConcurrentModificationDetectionEnabled(com.exedio.cope.Model)">isConcurrentModificationDetectionEnabled</a></strong>(<a href="../../../com/exedio/cope/Model.html" title="class in com.exedio.cope">Model</a>&nbsp;model)</code>
+<div class="block"><strong>Deprecated.</strong>&nbsp;
+<div class="block"><i>Use <a href="../../../com/exedio/cope/SchemaInfo.html#isUpdateCounterEnabled(com.exedio.cope.Model)"><code>isUpdateCounterEnabled(Model)</code></a> instead</i></div>
+</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../com/exedio/cope/SchemaInfo.html#isUpdateCounterEnabled(com.exedio.cope.Model)">isUpdateCounterEnabled</a></strong>(<a href="../../../com/exedio/cope/Model.html" title="class in com.exedio.cope">Model</a>&nbsp;model)</code>
+<div class="block"><strong>Deprecated.</strong>&nbsp;
+<div class="block"><i>always returns true</i></div>
+</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/7/docs/api/java/sql/Connection.html?is-external=true" title="class or interface in java.sql">Connection</a></code></td>
+<td class="colLast"><code><strong><a href="../../../com/exedio/cope/SchemaInfo.html#newConnection(com.exedio.cope.Model)">newConnection</a></strong>(<a href="../../../com/exedio/cope/Model.html" title="class in com.exedio.cope">Model</a>&nbsp;model)</code>
+<div class="block">Its your responsibility to close the returned connection.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../com/exedio/cope/SchemaInfo.html#quoteName(com.exedio.cope.Model,%20java.lang.String)">quoteName</a></strong>(<a href="../../../com/exedio/cope/Model.html" title="class in com.exedio.cope">Model</a>&nbsp;model,
+         <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name)</code>
+<div class="block">Quotes a database name.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../com/exedio/cope/SchemaInfo.html#search(com.exedio.cope.Query)">search</a></strong>(<a href="../../../com/exedio/cope/Query.html" title="class in com.exedio.cope">Query</a>&lt;?&gt;&nbsp;query)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../com/exedio/cope/SchemaInfo.html#supportsCheckConstraints(com.exedio.cope.Model)">supportsCheckConstraints</a></strong>(<a href="../../../com/exedio/cope/Model.html" title="class in com.exedio.cope">Model</a>&nbsp;model)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../com/exedio/cope/SchemaInfo.html#supportsNativeDate(com.exedio.cope.Model)">supportsNativeDate</a></strong>(<a href="../../../com/exedio/cope/Model.html" title="class in com.exedio.cope">Model</a>&nbsp;model)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../com/exedio/cope/SchemaInfo.html#supportsNotNull(com.exedio.cope.Model)">supportsNotNull</a></strong>(<a href="../../../com/exedio/cope/Model.html" title="class in com.exedio.cope">Model</a>&nbsp;model)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../com/exedio/cope/SchemaInfo.html#supportsSequences(com.exedio.cope.Model)">supportsSequences</a></strong>(<a href="../../../com/exedio/cope/Model.html" title="class in com.exedio.cope">Model</a>&nbsp;model)</code>
+<div class="block"><strong>Deprecated.</strong>&nbsp;
+<div class="block"><i>Always returns true, because all databases are required to support sequences.</i></div>
+</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../com/exedio/cope/SchemaInfo.html#supportsUniqueViolation(com.exedio.cope.Model)">supportsUniqueViolation</a></strong>(<a href="../../../com/exedio/cope/Model.html" title="class in com.exedio.cope">Model</a>&nbsp;model)</code>
+<div class="block">Returns whether detecting
+ <a href="../../../com/exedio/cope/UniqueViolationException.html" title="class in com.exedio.cope"><code>UniqueViolationException</code></a>s from
+ <a href="http://docs.oracle.com/javase/7/docs/api/java/sql/SQLException.html?is-external=true" title="class or interface in java.sql"><code>SQLException</code></a>s is supported.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../com/exedio/cope/SchemaInfo.html#total(com.exedio.cope.Query)">total</a></strong>(<a href="../../../com/exedio/cope/Query.html" title="class in com.exedio.cope">Query</a>&lt;?&gt;&nbsp;query)</code>&nbsp;</td>
+</tr>
+</table>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_java.lang.Object">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;java.lang.<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></h3>
+<code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#clone()" title="class or interface in java.lang">clone</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#equals(java.lang.Object)" title="class or interface in java.lang">equals</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#finalize()" title="class or interface in java.lang">finalize</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#getClass()" title="class or interface in java.lang">getClass</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#hashCode()" title="class or interface in java.lang">hashCode</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#notify()" title="class or interface in java.lang">notify</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#notifyAll()" title="class or interface in java.lang">notifyAll</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#toString()" title="class or interface in java.lang">toString</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#wait()" title="class or interface in java.lang">wait</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#wait(long)" title="class or interface in java.lang">wait</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#wait(long,%20int)" title="class or interface in java.lang">wait</a></code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="details">
+<ul class="blockList">
+<li class="blockList">
+<!-- ============ METHOD DETAIL ========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_detail">
+<!--   -->
+</a>
+<h3>Method Detail</h3>
+<a name="newConnection(com.exedio.cope.Model)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>newConnection</h4>
+<pre>public static&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/sql/Connection.html?is-external=true" title="class or interface in java.sql">Connection</a>&nbsp;newConnection(<a href="../../../com/exedio/cope/Model.html" title="class in com.exedio.cope">Model</a>&nbsp;model)
+                                throws <a href="http://docs.oracle.com/javase/7/docs/api/java/sql/SQLException.html?is-external=true" title="class or interface in java.sql">SQLException</a></pre>
+<div class="block">Its your responsibility to close the returned connection.</div>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/sql/SQLException.html?is-external=true" title="class or interface in java.sql">SQLException</a></code></dd><dt><span class="strong">See Also:</span></dt><dd><a href="http://docs.oracle.com/javase/7/docs/api/java/sql/Connection.html?is-external=true#close()" title="class or interface in java.sql"><code>Connection.close()</code></a></dd></dl>
+</li>
+</ul>
+<a name="quoteName(com.exedio.cope.Model, java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>quoteName</h4>
+<pre>public static&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;quoteName(<a href="../../../com/exedio/cope/Model.html" title="class in com.exedio.cope">Model</a>&nbsp;model,
+               <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name)</pre>
+<div class="block">Quotes a database name.
+ This prevents the name from being interpreted as a SQL keyword.</div>
+</li>
+</ul>
+<a name="supportsCheckConstraints(com.exedio.cope.Model)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>supportsCheckConstraints</h4>
+<pre>public static&nbsp;boolean&nbsp;supportsCheckConstraints(<a href="../../../com/exedio/cope/Model.html" title="class in com.exedio.cope">Model</a>&nbsp;model)</pre>
+</li>
+</ul>
+<a name="supportsNativeDate(com.exedio.cope.Model)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>supportsNativeDate</h4>
+<pre>public static&nbsp;boolean&nbsp;supportsNativeDate(<a href="../../../com/exedio/cope/Model.html" title="class in com.exedio.cope">Model</a>&nbsp;model)</pre>
+</li>
+</ul>
+<a name="supportsNotNull(com.exedio.cope.Model)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>supportsNotNull</h4>
+<pre>public static&nbsp;boolean&nbsp;supportsNotNull(<a href="../../../com/exedio/cope/Model.html" title="class in com.exedio.cope">Model</a>&nbsp;model)</pre>
+</li>
+</ul>
+<a name="supportsUniqueViolation(com.exedio.cope.Model)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>supportsUniqueViolation</h4>
+<pre>public static&nbsp;boolean&nbsp;supportsUniqueViolation(<a href="../../../com/exedio/cope/Model.html" title="class in com.exedio.cope">Model</a>&nbsp;model)</pre>
+<div class="block">Returns whether detecting
+ <a href="../../../com/exedio/cope/UniqueViolationException.html" title="class in com.exedio.cope"><code>UniqueViolationException</code></a>s from
+ <a href="http://docs.oracle.com/javase/7/docs/api/java/sql/SQLException.html?is-external=true" title="class or interface in java.sql"><code>SQLException</code></a>s is supported.
+ If not, then cope must issue explicit searches before
+ any insert/update covering a unique constraint.</div>
+</li>
+</ul>
+<a name="getTableName(com.exedio.cope.Type)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getTableName</h4>
+<pre>public static&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getTableName(<a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;?&gt;&nbsp;type)</pre>
+<div class="block">Returns the name of database table for the type.
+ If not configured otherwise
+ or trimmed to fit into name length restrictions,
+ the name equals the <a href="../../../com/exedio/cope/Type.html#getID()"><code>id</code></a> of the type.</div>
+</li>
+</ul>
+<a name="getPrimaryKeyColumnName(com.exedio.cope.Type)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getPrimaryKeyColumnName</h4>
+<pre>public static&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getPrimaryKeyColumnName(<a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;?&gt;&nbsp;type)</pre>
+<div class="block">Returns the name of primary key column in the database for the type.
+ If not configured otherwise
+ the name equals "this".</div>
+</li>
+</ul>
+<a name="getPrimaryKeyColumnValue(com.exedio.cope.Item)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getPrimaryKeyColumnValue</h4>
+<pre>public static&nbsp;int&nbsp;getPrimaryKeyColumnValue(<a href="../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&nbsp;item)</pre>
+<div class="block">Returns the value of primary key column in the database for the item.</div>
+</li>
+</ul>
+<a name="getPrimaryKeySequenceName(com.exedio.cope.Type)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getPrimaryKeySequenceName</h4>
+<pre>public static&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getPrimaryKeySequenceName(<a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;?&gt;&nbsp;type)</pre>
+<div class="block">Returns the name of the sequence for generating values for the
+ <a href="../../../com/exedio/cope/SchemaInfo.html#getPrimaryKeyColumnName(com.exedio.cope.Type)"><code>primary key column</code></a>
+ of the type.</div>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang">IllegalArgumentException</a></code> - if there is no such sequence for this type,
+         because primary keys are generated otherwise.</dd></dl>
+</li>
+</ul>
+<a name="getTypeColumnName(com.exedio.cope.Type)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getTypeColumnName</h4>
+<pre>public static&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getTypeColumnName(<a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;?&gt;&nbsp;type)</pre>
+<div class="block">Returns the name of type column in the database for the type.
+ If not configured otherwise
+ the name equals "class".
+ Values suitable for this column can be retrieved by <a href="../../../com/exedio/cope/SchemaInfo.html#getTypeColumnValue(com.exedio.cope.Type)"><code>getTypeColumnValue(Type)</code></a>.</div>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang">IllegalArgumentException</a></code> - if there is no type column for this type,
+         because <code><a href="../../../com/exedio/cope/Type.html#getTypesOfInstances()"><code>Type.getTypesOfInstances()</code></a></code>
+         contains one type only.</dd></dl>
+</li>
+</ul>
+<a name="getTypeColumnValue(com.exedio.cope.Type)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getTypeColumnValue</h4>
+<pre>public static&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getTypeColumnValue(<a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;?&gt;&nbsp;type)</pre>
+<div class="block">Returns the value to be put into a type column for the type.
+ Defaults to <a href="../../../com/exedio/cope/Type.html#getID()"><code>Type.getID()</code></a>,
+ but can be overridden by <a href="../../../com/exedio/cope/CopeSchemaName.html" title="annotation in com.exedio.cope"><code>CopeSchemaName</code></a>.</div>
+<dl><dt><span class="strong">See Also:</span></dt><dd><a href="../../../com/exedio/cope/SchemaInfo.html#getTypeColumnName(com.exedio.cope.Type)"><code>getTypeColumnName(Type)</code></a>, 
+<a href="../../../com/exedio/cope/SchemaInfo.html#getTypeColumnName(com.exedio.cope.ItemField)"><code>getTypeColumnName(ItemField)</code></a></dd></dl>
+</li>
+</ul>
+<a name="getUpdateCounterColumnName(com.exedio.cope.Type)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getUpdateCounterColumnName</h4>
+<pre>public static&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getUpdateCounterColumnName(<a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;?&gt;&nbsp;type)</pre>
+<div class="block">Returns the name of update counter column in the database for the type.
+ If not configured otherwise
+ the name equals "catch".</div>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang">IllegalArgumentException</a></code> - if there is no update counter column for this type,
+         because there are no modifiable (non-<a href="../../../com/exedio/cope/Field.html#isFinal()"><code>final</code></a>)
+         fields on the type or its subtypes.</dd></dl>
+</li>
+</ul>
+<a name="getColumnName(com.exedio.cope.Field)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getColumnName</h4>
+<pre>public static&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getColumnName(<a href="../../../com/exedio/cope/Field.html" title="class in com.exedio.cope">Field</a>&lt;?&gt;&nbsp;field)</pre>
+<div class="block">Returns the name of database column for the field.
+ If not configured otherwise
+ or trimmed to fit into name length restrictions,
+ the name equals the <a href="../../../com/exedio/cope/Feature.html#getName()"><code>name</code></a> of the field.</div>
+</li>
+</ul>
+<a name="getTypeColumnName(com.exedio.cope.ItemField)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getTypeColumnName</h4>
+<pre>public static&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getTypeColumnName(<a href="../../../com/exedio/cope/ItemField.html" title="class in com.exedio.cope">ItemField</a>&lt;?&gt;&nbsp;field)</pre>
+<div class="block">Returns the name of type column in the database for the field.
+ If not configured otherwise
+ or trimmed to fit into name length restrictions,
+ the name equals the <a href="../../../com/exedio/cope/Feature.html#getName()"><code>name</code></a> of the field
+ plus the appendix "Type".
+ Values suitable for this column can be retrieved by <a href="../../../com/exedio/cope/SchemaInfo.html#getTypeColumnValue(com.exedio.cope.Type)"><code>getTypeColumnValue(Type)</code></a>.</div>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang">IllegalArgumentException</a></code> - if there is no type column for this ItemField,
+         because <code><a href="../../../com/exedio/cope/ItemField.html#getValueType()"><code>getValueType()</code></a>.<a href="../../../com/exedio/cope/Type.html#getTypesOfInstances()"><code>getTypesOfInstances()</code></a></code>
+         contains one type only.</dd></dl>
+</li>
+</ul>
+<a name="getColumnValue(java.lang.Enum)">
+<!--   -->
+</a><a name="getColumnValue(E)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getColumnValue</h4>
+<pre>public static&nbsp;&lt;E extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Enum.html?is-external=true" title="class or interface in java.lang">Enum</a>&lt;E&gt;&gt;&nbsp;int&nbsp;getColumnValue(E&nbsp;value)</pre>
+<div class="block">Returns the value of database column for the field
+ and the given enum value.
+ Defaults to 10 * ( <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Enum.html?is-external=true#ordinal()" title="class or interface in java.lang"><code>Enum.ordinal()</code></a> + 1 ),
+ but can be overridden by <a href="../../../com/exedio/cope/CopeSchemaValue.html" title="annotation in com.exedio.cope"><code>CopeSchemaValue</code></a>.</div>
+</li>
+</ul>
+<a name="getDefaultToNextSequenceName(com.exedio.cope.IntegerField)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getDefaultToNextSequenceName</h4>
+<pre>public static&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getDefaultToNextSequenceName(<a href="../../../com/exedio/cope/IntegerField.html" title="class in com.exedio.cope">IntegerField</a>&nbsp;field)</pre>
+<div class="block">Returns the name of the sequence for generating values for the
+ <a href="../../../com/exedio/cope/IntegerField.html#defaultToNext(int)"><code>defaultToNext</code></a>
+ mechanism of the field.</div>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang">IllegalArgumentException</a></code> - if there is no such sequence for this field,
+         because values are generated otherwise.</dd></dl>
+</li>
+</ul>
+<a name="getSequenceName(com.exedio.cope.Sequence)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getSequenceName</h4>
+<pre>public static&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getSequenceName(<a href="../../../com/exedio/cope/Sequence.html" title="class in com.exedio.cope">Sequence</a>&nbsp;sequence)</pre>
+<div class="block">Returns the name of the sequence for generating values via
+ <a href="../../../com/exedio/cope/Sequence.html#next()"><code>Sequence.next()</code></a>.</div>
+</li>
+</ul>
+<a name="search(com.exedio.cope.Query)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>search</h4>
+<pre>public static&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;search(<a href="../../../com/exedio/cope/Query.html" title="class in com.exedio.cope">Query</a>&lt;?&gt;&nbsp;query)</pre>
+</li>
+</ul>
+<a name="total(com.exedio.cope.Query)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>total</h4>
+<pre>public static&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;total(<a href="../../../com/exedio/cope/Query.html" title="class in com.exedio.cope">Query</a>&lt;?&gt;&nbsp;query)</pre>
+</li>
+</ul>
+<a name="getColumnValue(com.exedio.cope.EnumField,java.lang.Enum)">
+<!--   -->
+</a><a name="getColumnValue(com.exedio.cope.EnumField, E)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getColumnValue</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</a>
+public static&nbsp;&lt;E extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Enum.html?is-external=true" title="class or interface in java.lang">Enum</a>&lt;E&gt;&gt;&nbsp;int&nbsp;getColumnValue(<a href="../../../com/exedio/cope/EnumField.html" title="class in com.exedio.cope">EnumField</a>&lt;E&gt;&nbsp;field,
+                                                E&nbsp;value)</pre>
+<div class="block"><span class="strong">Deprecated.</span>&nbsp;<i>Use <a href="../../../com/exedio/cope/SchemaInfo.html#getColumnValue(E)"><code>getColumnValue(Enum)</code></a> instead.</i></div>
+</li>
+</ul>
+<a name="isUpdateCounterEnabled(com.exedio.cope.Model)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>isUpdateCounterEnabled</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</a>
+public static&nbsp;boolean&nbsp;isUpdateCounterEnabled(<a href="../../../com/exedio/cope/Model.html" title="class in com.exedio.cope">Model</a>&nbsp;model)</pre>
+<div class="block"><span class="strong">Deprecated.</span>&nbsp;<i>always returns true</i></div>
+<dl><dt><span class="strong">See Also:</span></dt><dd><a href="../../../com/exedio/cope/SchemaInfo.html#getUpdateCounterColumnName(com.exedio.cope.Type)"><code>getUpdateCounterColumnName(Type)</code></a></dd></dl>
+</li>
+</ul>
+<a name="isConcurrentModificationDetectionEnabled(com.exedio.cope.Model)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>isConcurrentModificationDetectionEnabled</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</a>
+public static&nbsp;boolean&nbsp;isConcurrentModificationDetectionEnabled(<a href="../../../com/exedio/cope/Model.html" title="class in com.exedio.cope">Model</a>&nbsp;model)</pre>
+<div class="block"><span class="strong">Deprecated.</span>&nbsp;<i>Use <a href="../../../com/exedio/cope/SchemaInfo.html#isUpdateCounterEnabled(com.exedio.cope.Model)"><code>isUpdateCounterEnabled(Model)</code></a> instead</i></div>
+</li>
+</ul>
+<a name="getModificationCounterColumnName(com.exedio.cope.Type)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getModificationCounterColumnName</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</a>
+public static&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getModificationCounterColumnName(<a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;?&gt;&nbsp;type)</pre>
+<div class="block"><span class="strong">Deprecated.</span>&nbsp;<i>Use <a href="../../../com/exedio/cope/SchemaInfo.html#getUpdateCounterColumnName(com.exedio.cope.Type)"><code>getUpdateCounterColumnName(Type)</code></a> instead</i></div>
+</li>
+</ul>
+<a name="supportsSequences(com.exedio.cope.Model)">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>supportsSequences</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</a>
+public static&nbsp;boolean&nbsp;supportsSequences(<a href="../../../com/exedio/cope/Model.html" title="class in com.exedio.cope">Model</a>&nbsp;model)</pre>
+<div class="block"><span class="strong">Deprecated.</span>&nbsp;<i>Always returns true, because all databases are required to support sequences.</i></div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>model</code> - is ignored</dd></dl>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<!-- ========= END OF CLASS DATA ========= -->
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<div class="bottomNav"><a name="navbar_bottom">
+<!--   -->
+</a><a href="#skip-navbar_bottom" title="Skip navigation links"></a><a name="navbar_bottom_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../help-doc.html">Help</a></li>
+</ul>
+<div class="aboutLanguage"><em>exedio persistence</em></div>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../com/exedio/cope/RevisionsFuture.html" title="interface in com.exedio.cope"><span class="strong">Prev Class</span></a></li>
+<li><a href="../../../com/exedio/cope/Selectable.html" title="interface in com.exedio.cope"><span class="strong">Next Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../index.html?com/exedio/cope/SchemaInfo.html" target="_top">Frames</a></li>
+<li><a href="SchemaInfo.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_bottom">
+<li><a href="../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_bottom");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_bottom">
+<!--   -->
+</a></div>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+<p class="legalCopy"><small>Maintained by <a href="http://www.exedio.com/" target="_top">exedio</a> Gesellschaft f&uuml;r Softwareentwicklung mbH.</small></p>
+</body>
+</html>

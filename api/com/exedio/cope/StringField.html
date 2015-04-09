@@ -1,0 +1,1035 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- NewPage -->
+<html lang="de">
+<head>
+<title>StringField (exedio persistence)</title>
+<link rel="stylesheet" type="text/css" href="../../../stylesheet.css" title="Style">
+</head>
+<body>
+<script type="text/javascript"><!--
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="StringField (exedio persistence)";
+    }
+//-->
+</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+<!-- ========= START OF TOP NAVBAR ======= -->
+<div class="topNav"><a name="navbar_top">
+<!--   -->
+</a><a href="#skip-navbar_top" title="Skip navigation links"></a><a name="navbar_top_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../help-doc.html">Help</a></li>
+</ul>
+<div class="aboutLanguage"><em>exedio persistence</em></div>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../com/exedio/cope/StringCharSetViolationException.html" title="class in com.exedio.cope"><span class="strong">Prev Class</span></a></li>
+<li><a href="../../../com/exedio/cope/StringFieldMinimumLength.html" title="class in com.exedio.cope"><span class="strong">Next Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../index.html?com/exedio/cope/StringField.html" target="_top">Frames</a></li>
+<li><a href="StringField.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_top">
+<li><a href="../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_top");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li><a href="#field_summary">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor_summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li><a href="#field_detail">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor_detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_top">
+<!--   -->
+</a></div>
+<!-- ========= END OF TOP NAVBAR ========= -->
+<!-- ======== START OF CLASS DATA ======== -->
+<div class="header">
+<div class="subTitle">com.exedio.cope</div>
+<h2 title="Class StringField" class="title">Class StringField</h2>
+</div>
+<div class="contentContainer">
+<ul class="inheritance">
+<li><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</a></li>
+<li>
+<ul class="inheritance">
+<li><a href="../../../com/exedio/cope/Feature.html" title="class in com.exedio.cope">com.exedio.cope.Feature</a></li>
+<li>
+<ul class="inheritance">
+<li><a href="../../../com/exedio/cope/Field.html" title="class in com.exedio.cope">com.exedio.cope.Field</a>&lt;E&gt;</li>
+<li>
+<ul class="inheritance">
+<li><a href="../../../com/exedio/cope/FunctionField.html" title="class in com.exedio.cope">com.exedio.cope.FunctionField</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;</li>
+<li>
+<ul class="inheritance">
+<li>com.exedio.cope.StringField</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<div class="description">
+<ul class="blockList">
+<li class="blockList">
+<dl>
+<dt>All Implemented Interfaces:</dt>
+<dd><a href="../../../com/exedio/cope/Copyable.html" title="interface in com.exedio.cope">Copyable</a>, <a href="../../../com/exedio/cope/Function.html" title="interface in com.exedio.cope">Function</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;, <a href="../../../com/exedio/cope/Selectable.html" title="interface in com.exedio.cope">Selectable</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;, <a href="../../../com/exedio/cope/Settable.html" title="interface in com.exedio.cope">Settable</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;, <a href="../../../com/exedio/cope/StringFunction.html" title="interface in com.exedio.cope">StringFunction</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/io/Serializable.html?is-external=true" title="class or interface in java.io">Serializable</a></dd>
+</dl>
+<hr>
+<br>
+<pre>public final class <span class="strong">StringField</span>
+extends <a href="../../../com/exedio/cope/FunctionField.html" title="class in com.exedio.cope">FunctionField</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;
+implements <a href="../../../com/exedio/cope/StringFunction.html" title="interface in com.exedio.cope">StringFunction</a></pre>
+<div class="block">Represents a field within a <a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope"><code>type</code></a>,
+ that enables instances of that type to store a string.</div>
+<dl><dt><span class="strong">Author:</span></dt>
+  <dd>Ralf Wiebicke</dd>
+<dt><span class="strong">See Also:</span></dt><dd><a href="../../../serialized-form.html#com.exedio.cope.StringField">Serialized Form</a></dd></dl>
+</li>
+</ul>
+</div>
+<div class="summary">
+<ul class="blockList">
+<li class="blockList">
+<!-- =========== FIELD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="field_summary">
+<!--   -->
+</a>
+<h3>Field Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Field Summary table, listing fields, and an explanation">
+<caption><span>Fields</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Field and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><strong><a href="../../../com/exedio/cope/StringField.html#DEFAULT_LENGTH">DEFAULT_LENGTH</a></strong></code>
+<div class="block"><strong>Deprecated.</strong>&nbsp;
+<div class="block"><i>Use <a href="../../../com/exedio/cope/StringField.html#DEFAULT_MAXIMUM_LENGTH"><code>DEFAULT_MAXIMUM_LENGTH</code></a> instead</i></div>
+</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><strong><a href="../../../com/exedio/cope/StringField.html#DEFAULT_MAXIMUM_LENGTH">DEFAULT_MAXIMUM_LENGTH</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><strong><a href="../../../com/exedio/cope/StringField.html#DEFAULT_MINIMUM_LENGTH">DEFAULT_MINIMUM_LENGTH</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="../../../com/exedio/cope/StringFieldMinimumLength.html" title="class in com.exedio.cope">StringFieldMinimumLength</a></code></td>
+<td class="colLast"><code><strong><a href="../../../com/exedio/cope/StringField.html#EMPTY">EMPTY</a></strong></code>
+<div class="block"><strong>Deprecated.</strong>&nbsp;
+<div class="block"><i>Check carefully, if empty string should really be allowed.
+ If yes, use <a href="../../../com/exedio/cope/StringField.html#lengthMin(int)"><code>lengthMin(0)</code></a> instead.</i></div>
+</div>
+</td>
+</tr>
+</table>
+</li>
+</ul>
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor_summary">
+<!--   -->
+</a>
+<h3>Constructor Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Constructor Summary table, listing constructors, and an explanation">
+<caption><span>Constructors</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colOne" scope="col">Constructor and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colOne"><code><strong><a href="../../../com/exedio/cope/StringField.html#StringField()">StringField</a></strong>()</code>
+<div class="block">Creates a new mandatory <tt>StringField</tt>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colOne"><code><strong><a href="../../../com/exedio/cope/StringField.html#StringField(com.exedio.cope.StringFieldMinimumLength)">StringField</a></strong>(<a href="../../../com/exedio/cope/StringFieldMinimumLength.html" title="class in com.exedio.cope">StringFieldMinimumLength</a>&nbsp;minimumLength)</code>&nbsp;</td>
+</tr>
+</table>
+</li>
+</ul>
+<!-- ========== METHOD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_summary">
+<!--   -->
+</a>
+<h3>Method Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
+<caption><span>Methods</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../com/exedio/cope/BindStringFunction.html" title="class in com.exedio.cope">BindStringFunction</a></code></td>
+<td class="colLast"><code><strong><a href="../../../com/exedio/cope/StringField.html#bind(com.exedio.cope.Join)">bind</a></strong>(<a href="../../../com/exedio/cope/Join.html" title="class in com.exedio.cope">Join</a>&nbsp;join)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../com/exedio/cope/StringField.html" title="class in com.exedio.cope">StringField</a></code></td>
+<td class="colLast"><code><strong><a href="../../../com/exedio/cope/StringField.html#characterSet(com.exedio.cope.util.CharacterSet)">characterSet</a></strong>(<a href="../../../com/exedio/cope/util/CharacterSet.html" title="class in com.exedio.cope.util">CharacterSet</a>&nbsp;characterSet)</code>
+<div class="block"><strong>Deprecated.</strong>&nbsp;
+<div class="block"><i>Use <a href="../../../com/exedio/cope/StringField.html#charSet(com.exedio.cope.util.CharSet)"><code>charSet(CharSet)</code></a> instead</i></div>
+</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../com/exedio/cope/StringField.html" title="class in com.exedio.cope">StringField</a></code></td>
+<td class="colLast"><code><strong><a href="../../../com/exedio/cope/StringField.html#charSet(com.exedio.cope.util.CharSet)">charSet</a></strong>(<a href="../../../com/exedio/cope/util/CharSet.html" title="class in com.exedio.cope.util">CharSet</a>&nbsp;charSet)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../com/exedio/cope/LikeCondition.html" title="class in com.exedio.cope">LikeCondition</a></code></td>
+<td class="colLast"><code><strong><a href="../../../com/exedio/cope/StringField.html#contains(java.lang.String)">contains</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;value)</code>
+<div class="block">Returns a condition, that is true for all items,
+ if and only if the value of this function for that item
+ contains the given parameter.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../com/exedio/cope/LikeCondition.html" title="class in com.exedio.cope">LikeCondition</a></code></td>
+<td class="colLast"><code><strong><a href="../../../com/exedio/cope/StringField.html#containsIgnoreCase(java.lang.String)">containsIgnoreCase</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;value)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../com/exedio/cope/StringField.html" title="class in com.exedio.cope">StringField</a></code></td>
+<td class="colLast"><code><strong><a href="../../../com/exedio/cope/StringField.html#copy()">copy</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../com/exedio/cope/StringField.html" title="class in com.exedio.cope">StringField</a></code></td>
+<td class="colLast"><code><strong><a href="../../../com/exedio/cope/StringField.html#copyFrom(com.exedio.cope.ItemField)">copyFrom</a></strong>(<a href="../../../com/exedio/cope/ItemField.html" title="class in com.exedio.cope">ItemField</a>&lt;?&gt;&nbsp;copyFrom)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../com/exedio/cope/StringField.html" title="class in com.exedio.cope">StringField</a></code></td>
+<td class="colLast"><code><strong><a href="../../../com/exedio/cope/StringField.html#defaultTo(java.lang.String)">defaultTo</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;defaultConstant)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../com/exedio/cope/LikeCondition.html" title="class in com.exedio.cope">LikeCondition</a></code></td>
+<td class="colLast"><code><strong><a href="../../../com/exedio/cope/StringField.html#endsWith(java.lang.String)">endsWith</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;value)</code>
+<div class="block">Returns a condition, that is true for all items,
+ if and only if the value of this function for that item
+ ends with the given parameter.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../com/exedio/cope/LikeCondition.html" title="class in com.exedio.cope">LikeCondition</a></code></td>
+<td class="colLast"><code><strong><a href="../../../com/exedio/cope/StringField.html#endsWithIgnoreCase(java.lang.String)">endsWithIgnoreCase</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;value)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../com/exedio/cope/Condition.html" title="class in com.exedio.cope">Condition</a></code></td>
+<td class="colLast"><code><strong><a href="../../../com/exedio/cope/StringField.html#equalIgnoreCase(java.lang.String)">equalIgnoreCase</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;value)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../com/exedio/cope/util/CharacterSet.html" title="class in com.exedio.cope.util">CharacterSet</a></code></td>
+<td class="colLast"><code><strong><a href="../../../com/exedio/cope/StringField.html#getCharacterSet()">getCharacterSet</a></strong>()</code>
+<div class="block"><strong>Deprecated.</strong>&nbsp;
+<div class="block"><i>Use <a href="../../../com/exedio/cope/StringField.html#getCharSet()"><code>getCharSet()</code></a> instead</i></div>
+</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../com/exedio/cope/util/CharSet.html" title="class in com.exedio.cope.util">CharSet</a></code></td>
+<td class="colLast"><code><strong><a href="../../../com/exedio/cope/StringField.html#getCharSet()">getCharSet</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;? extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang">Throwable</a>&gt;&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../com/exedio/cope/StringField.html#getInitialExceptions()">getInitialExceptions</a></strong>()</code>
+<div class="block">Returns the exceptions possibly thrown,
+ when setting a value for this settable.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><strong><a href="../../../com/exedio/cope/StringField.html#getMaximumLength()">getMaximumLength</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><strong><a href="../../../com/exedio/cope/StringField.html#getMinimumLength()">getMinimumLength</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>com.exedio.cope.SelectType&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../com/exedio/cope/StringField.html#getValueType()">getValueType</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../com/exedio/cope/LengthView.html" title="class in com.exedio.cope">LengthView</a></code></td>
+<td class="colLast"><code><strong><a href="../../../com/exedio/cope/StringField.html#length()">length</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../com/exedio/cope/StringField.html" title="class in com.exedio.cope">StringField</a></code></td>
+<td class="colLast"><code><strong><a href="../../../com/exedio/cope/StringField.html#lengthExact(int)">lengthExact</a></strong>(int&nbsp;exactLength)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../com/exedio/cope/StringField.html" title="class in com.exedio.cope">StringField</a></code></td>
+<td class="colLast"><code><strong><a href="../../../com/exedio/cope/StringField.html#lengthMax(int)">lengthMax</a></strong>(int&nbsp;maximumLength)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../com/exedio/cope/StringField.html" title="class in com.exedio.cope">StringField</a></code></td>
+<td class="colLast"><code><strong><a href="../../../com/exedio/cope/StringField.html#lengthMaxUnchecked(int)">lengthMaxUnchecked</a></strong>(int&nbsp;maximumLength)</code>
+<div class="block"><strong>Deprecated.</strong>&nbsp;
+<div class="block"><i>use <a href="../../../com/exedio/cope/StringField.html#lengthMax(int)"><code>lengthMax(int)</code></a>.</i></div>
+</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../com/exedio/cope/StringField.html" title="class in com.exedio.cope">StringField</a></code></td>
+<td class="colLast"><code><strong><a href="../../../com/exedio/cope/StringField.html#lengthMin(int)">lengthMin</a></strong>(int&nbsp;minimumLength)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../com/exedio/cope/StringField.html" title="class in com.exedio.cope">StringField</a></code></td>
+<td class="colLast"><code><strong><a href="../../../com/exedio/cope/StringField.html#lengthRange(int,%20int)">lengthRange</a></strong>(int&nbsp;minimumLength,
+           int&nbsp;maximumLength)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../com/exedio/cope/LikeCondition.html" title="class in com.exedio.cope">LikeCondition</a></code></td>
+<td class="colLast"><code><strong><a href="../../../com/exedio/cope/StringField.html#like(java.lang.String)">like</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;value)</code>
+<div class="block">Returns a condition, that is true for all items,
+ if and only if the value of this function for that item
+ is matches the given parameter.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../com/exedio/cope/LikeCondition.html" title="class in com.exedio.cope">LikeCondition</a></code></td>
+<td class="colLast"><code><strong><a href="../../../com/exedio/cope/StringField.html#likeIgnoreCase(java.lang.String)">likeIgnoreCase</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;value)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../com/exedio/cope/StringField.html" title="class in com.exedio.cope">StringField</a></code></td>
+<td class="colLast"><code><strong><a href="../../../com/exedio/cope/StringField.html#noDefault()">noDefault</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../com/exedio/cope/StringField.html" title="class in com.exedio.cope">StringField</a></code></td>
+<td class="colLast"><code><strong><a href="../../../com/exedio/cope/StringField.html#nonUnique()">nonUnique</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../com/exedio/cope/StringField.html" title="class in com.exedio.cope">StringField</a></code></td>
+<td class="colLast"><code><strong><a href="../../../com/exedio/cope/StringField.html#optional()">optional</a></strong>()</code>
+<div class="block">Returns a new Field,
+ that differs from this Field
+ by being optional.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../com/exedio/cope/LikeCondition.html" title="class in com.exedio.cope">LikeCondition</a></code></td>
+<td class="colLast"><code><strong><a href="../../../com/exedio/cope/StringField.html#startsWith(java.lang.String)">startsWith</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;value)</code>
+<div class="block">Returns a condition, that is true for all items,
+ if and only if the value of this function for that item
+ starts with the given parameter.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../com/exedio/cope/LikeCondition.html" title="class in com.exedio.cope">LikeCondition</a></code></td>
+<td class="colLast"><code><strong><a href="../../../com/exedio/cope/StringField.html#startsWithIgnoreCase(java.lang.String)">startsWithIgnoreCase</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;value)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../com/exedio/cope/StringField.html" title="class in com.exedio.cope">StringField</a></code></td>
+<td class="colLast"><code><strong><a href="../../../com/exedio/cope/StringField.html#toFinal()">toFinal</a></strong>()</code>
+<div class="block">Returns a new Field,
+ that differs from this Field
+ by being final.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../com/exedio/cope/UppercaseView.html" title="class in com.exedio.cope">UppercaseView</a></code></td>
+<td class="colLast"><code><strong><a href="../../../com/exedio/cope/StringField.html#toUpperCase()">toUpperCase</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../com/exedio/cope/StringField.html" title="class in com.exedio.cope">StringField</a></code></td>
+<td class="colLast"><code><strong><a href="../../../com/exedio/cope/StringField.html#unique()">unique</a></strong>()</code>
+<div class="block">Returns a new FunctionField,
+ that differs from this FunctionField
+ by being unique.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../com/exedio/cope/UppercaseView.html" title="class in com.exedio.cope">UppercaseView</a></code></td>
+<td class="colLast"><code><strong><a href="../../../com/exedio/cope/StringField.html#uppercase()">uppercase</a></strong>()</code>
+<div class="block"><strong>Deprecated.</strong>&nbsp;
+<div class="block"><i>renamed to <a href="../../../com/exedio/cope/StringField.html#toUpperCase()"><code>toUpperCase()</code></a></i></div>
+</div>
+</td>
+</tr>
+</table>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_com.exedio.cope.FunctionField">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;com.exedio.cope.<a href="../../../com/exedio/cope/FunctionField.html" title="class in com.exedio.cope">FunctionField</a></h3>
+<code><a href="../../../com/exedio/cope/FunctionField.html#addCopyFrom(com.exedio.cope.ItemField)">addCopyFrom</a>, <a href="../../../com/exedio/cope/FunctionField.html#append(com.exedio.cope.Statement,%20com.exedio.cope.Join)">append</a>, <a href="../../../com/exedio/cope/FunctionField.html#appendSelect(com.exedio.cope.Statement,%20com.exedio.cope.Join)">appendSelect</a>, <a href="../../../com/exedio/cope/FunctionField.html#between(E,%20E)">between</a>, <a href="../../../com/exedio/cope/FunctionField.html#check(com.exedio.cope.TC,%20com.exedio.cope.Join)">check</a>, <a href="../../../com/exedio/cope/FunctionField.html#copy(com.exedio.cope.CopyMapper)">copy</a>, <a href="../../../com/exedio/cope/FunctionField.html#copyFunctionField()">copyFunctionField</a>, <a href="../../../com/exedio/cope/FunctionField.html#equal(E)">equal</a>, <a href="../../../com/exedio/cope/FunctionField.html#equal(com.exedio.cope.Function)">equal</a>, <a href="../../../com/exedio/cope/FunctionField.html#equal(com.exedio.cope.Join,%20E)">equal</a>, <a href="../../../com/exedio/cope/FunctionField.html#get(com.exedio.cope.Item)">get</a>, <a href="../../../com/exedio/cope/FunctionField.html#getDefaultConstant()">getDefaultConstant</a>, <a href="../../../com/exedio/cope/FunctionField.html#getImplicitCopyConstraint()">getImplicitCopyConstraint</a>, <a href="../../../com/exedio/cope/FunctionField.html#getImplicitCopyConstraints()">getImplicitCopyConstraints</a>, <a href="../../../com/exedio/cope/FunctionField.html#getImplicitUniqueConstraint()">getImplicitUniqueConstraint</a>, <a href="../../../com/exedio/cope/FunctionField.html#getUniqueConstraints()">getUniqueConstraints</a>, <a href="../../../com/exedio/cope/FunctionField.html#greater(E)">greater</a>, <a href="../../../com/exedio/cope/FunctionField.html#greater(com.exedio.cope.Function)">greater</a>, <a href="../../../com/exedio/cope/FunctionField.html#greaterOrEqual(E)">greaterOrEqual</a>, <a href="../../../com/exedio/cope/FunctionField.html#greaterOrEqual(com.exedio.cope.Function)">greaterOrEqual</a>, <a href="../../../com/exedio/cope/FunctionField.html#hasDefault()">hasDefault</a>, <a href="../../../com/exedio/cope/FunctionField.html#in(java.util.Collection)">in</a>, <a href="../../../com/exedio/cope/FunctionField.html#in(E...)">in</a>, <a href="../../../com/exedio/cope/FunctionField.html#isInitial()">isInitial</a>, <a href="../../../com/exedio/cope/FunctionField.html#isNotNull()">isNotNull</a>, <a href="../../../com/exedio/cope/FunctionField.html#isNull()">isNull</a>, <a href="../../../com/exedio/cope/FunctionField.html#less(E)">less</a>, <a href="../../../com/exedio/cope/FunctionField.html#less(com.exedio.cope.Function)">less</a>, <a href="../../../com/exedio/cope/FunctionField.html#lessOrEqual(E)">lessOrEqual</a>, <a href="../../../com/exedio/cope/FunctionField.html#lessOrEqual(com.exedio.cope.Function)">lessOrEqual</a>, <a href="../../../com/exedio/cope/FunctionField.html#max()">max</a>, <a href="../../../com/exedio/cope/FunctionField.html#min()">min</a>, <a href="../../../com/exedio/cope/FunctionField.html#notEqual(E)">notEqual</a>, <a href="../../../com/exedio/cope/FunctionField.html#notEqual(com.exedio.cope.Function)">notEqual</a>, <a href="../../../com/exedio/cope/FunctionField.html#searchUnique(java.lang.Class,%20E)">searchUnique</a>, <a href="../../../com/exedio/cope/FunctionField.html#searchUnique(E)">searchUnique</a>, <a href="../../../com/exedio/cope/FunctionField.html#set(com.exedio.cope.Item,%20E)">set</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_com.exedio.cope.Field">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;com.exedio.cope.<a href="../../../com/exedio/cope/Field.html" title="class in com.exedio.cope">Field</a></h3>
+<code><a href="../../../com/exedio/cope/Field.html#castCollection(java.util.Collection)">castCollection</a>, <a href="../../../com/exedio/cope/Field.html#check(E)">check</a>, <a href="../../../com/exedio/cope/Field.html#execute(E,%20com.exedio.cope.Item)">execute</a>, <a href="../../../com/exedio/cope/Field.html#getColumnName()">getColumnName</a>, <a href="../../../com/exedio/cope/Field.html#getInitialType()">getInitialType</a>, <a href="../../../com/exedio/cope/Field.html#getPatterns()">getPatterns</a>, <a href="../../../com/exedio/cope/Field.html#getValueClass()">getValueClass</a>, <a href="../../../com/exedio/cope/Field.html#isFinal()">isFinal</a>, <a href="../../../com/exedio/cope/Field.html#isMandatory()">isMandatory</a>, <a href="../../../com/exedio/cope/Field.html#map(E)">map</a>, <a href="../../../com/exedio/cope/Field.html#mapNull()">mapNull</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_com.exedio.cope.Feature">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;com.exedio.cope.<a href="../../../com/exedio/cope/Feature.html" title="class in com.exedio.cope">Feature</a></h3>
+<code><a href="../../../com/exedio/cope/Feature.html#afterModelCreated()">afterModelCreated</a>, <a href="../../../com/exedio/cope/Feature.html#getAnnotation(java.lang.Class)">getAnnotation</a>, <a href="../../../com/exedio/cope/Feature.html#getID()">getID</a>, <a href="../../../com/exedio/cope/Feature.html#getName()">getName</a>, <a href="../../../com/exedio/cope/Feature.html#getPattern()">getPattern</a>, <a href="../../../com/exedio/cope/Feature.html#getType()">getType</a>, <a href="../../../com/exedio/cope/Feature.html#getWrappers()">getWrappers</a>, <a href="../../../com/exedio/cope/Feature.html#isAnnotationPresent(java.lang.Class)">isAnnotationPresent</a>, <a href="../../../com/exedio/cope/Feature.html#isSourceAlready()">isSourceAlready</a>, <a href="../../../com/exedio/cope/Feature.html#mount(java.lang.String,%20java.io.Serializable,%20java.lang.reflect.AnnotatedElement)">mount</a>, <a href="../../../com/exedio/cope/Feature.html#readResolve()">readResolve</a>, <a href="../../../com/exedio/cope/Feature.html#toString()">toString</a>, <a href="../../../com/exedio/cope/Feature.html#toString(java.lang.StringBuilder,%20com.exedio.cope.Type)">toString</a>, <a href="../../../com/exedio/cope/Feature.html#writeReplace()">writeReplace</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_java.lang.Object">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;java.lang.<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></h3>
+<code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#clone()" title="class or interface in java.lang">clone</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#equals(java.lang.Object)" title="class or interface in java.lang">equals</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#finalize()" title="class or interface in java.lang">finalize</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#getClass()" title="class or interface in java.lang">getClass</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#hashCode()" title="class or interface in java.lang">hashCode</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#notify()" title="class or interface in java.lang">notify</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#notifyAll()" title="class or interface in java.lang">notifyAll</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#wait()" title="class or interface in java.lang">wait</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#wait(long)" title="class or interface in java.lang">wait</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#wait(long,%20int)" title="class or interface in java.lang">wait</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_com.exedio.cope.Function">
+<!--   -->
+</a>
+<h3>Methods inherited from interface&nbsp;com.exedio.cope.<a href="../../../com/exedio/cope/Function.html" title="interface in com.exedio.cope">Function</a></h3>
+<code><a href="../../../com/exedio/cope/Function.html#between(E,%20E)">between</a>, <a href="../../../com/exedio/cope/Function.html#equal(E)">equal</a>, <a href="../../../com/exedio/cope/Function.html#equal(com.exedio.cope.Function)">equal</a>, <a href="../../../com/exedio/cope/Function.html#equal(com.exedio.cope.Join,%20E)">equal</a>, <a href="../../../com/exedio/cope/Function.html#get(com.exedio.cope.Item)">get</a>, <a href="../../../com/exedio/cope/Function.html#greater(E)">greater</a>, <a href="../../../com/exedio/cope/Function.html#greater(com.exedio.cope.Function)">greater</a>, <a href="../../../com/exedio/cope/Function.html#greaterOrEqual(E)">greaterOrEqual</a>, <a href="../../../com/exedio/cope/Function.html#greaterOrEqual(com.exedio.cope.Function)">greaterOrEqual</a>, <a href="../../../com/exedio/cope/Function.html#in(java.util.Collection)">in</a>, <a href="../../../com/exedio/cope/Function.html#in(E...)">in</a>, <a href="../../../com/exedio/cope/Function.html#isNotNull()">isNotNull</a>, <a href="../../../com/exedio/cope/Function.html#isNull()">isNull</a>, <a href="../../../com/exedio/cope/Function.html#less(E)">less</a>, <a href="../../../com/exedio/cope/Function.html#less(com.exedio.cope.Function)">less</a>, <a href="../../../com/exedio/cope/Function.html#lessOrEqual(E)">lessOrEqual</a>, <a href="../../../com/exedio/cope/Function.html#lessOrEqual(com.exedio.cope.Function)">lessOrEqual</a>, <a href="../../../com/exedio/cope/Function.html#max()">max</a>, <a href="../../../com/exedio/cope/Function.html#min()">min</a>, <a href="../../../com/exedio/cope/Function.html#notEqual(E)">notEqual</a>, <a href="../../../com/exedio/cope/Function.html#notEqual(com.exedio.cope.Function)">notEqual</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_com.exedio.cope.Selectable">
+<!--   -->
+</a>
+<h3>Methods inherited from interface&nbsp;com.exedio.cope.<a href="../../../com/exedio/cope/Selectable.html" title="interface in com.exedio.cope">Selectable</a></h3>
+<code><a href="../../../com/exedio/cope/Selectable.html#append(com.exedio.cope.Statement,%20com.exedio.cope.Join)">append</a>, <a href="../../../com/exedio/cope/Selectable.html#appendSelect(com.exedio.cope.Statement,%20com.exedio.cope.Join)">appendSelect</a>, <a href="../../../com/exedio/cope/Selectable.html#check(com.exedio.cope.TC,%20com.exedio.cope.Join)">check</a>, <a href="../../../com/exedio/cope/Selectable.html#getType()">getType</a>, <a href="../../../com/exedio/cope/Selectable.html#getValueClass()">getValueClass</a>, <a href="../../../com/exedio/cope/Selectable.html#toString(java.lang.StringBuilder,%20com.exedio.cope.Type)">toString</a></code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="details">
+<ul class="blockList">
+<li class="blockList">
+<!-- ============ FIELD DETAIL =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="field_detail">
+<!--   -->
+</a>
+<h3>Field Detail</h3>
+<a name="DEFAULT_MINIMUM_LENGTH">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>DEFAULT_MINIMUM_LENGTH</h4>
+<pre>public static final&nbsp;int DEFAULT_MINIMUM_LENGTH</pre>
+<dl><dt><span class="strong">See Also:</span></dt><dd><a href="../../../constant-values.html#com.exedio.cope.StringField.DEFAULT_MINIMUM_LENGTH">Constant Field Values</a></dd></dl>
+</li>
+</ul>
+<a name="DEFAULT_MAXIMUM_LENGTH">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>DEFAULT_MAXIMUM_LENGTH</h4>
+<pre>public static final&nbsp;int DEFAULT_MAXIMUM_LENGTH</pre>
+<dl><dt><span class="strong">See Also:</span></dt><dd><a href="../../../constant-values.html#com.exedio.cope.StringField.DEFAULT_MAXIMUM_LENGTH">Constant Field Values</a></dd></dl>
+</li>
+</ul>
+<a name="EMPTY">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>EMPTY</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</a>
+public static final&nbsp;<a href="../../../com/exedio/cope/StringFieldMinimumLength.html" title="class in com.exedio.cope">StringFieldMinimumLength</a> EMPTY</pre>
+<div class="block"><span class="strong">Deprecated.</span>&nbsp;<i>Check carefully, if empty string should really be allowed.
+ If yes, use <a href="../../../com/exedio/cope/StringField.html#lengthMin(int)"><code>lengthMin(0)</code></a> instead.</i></div>
+</li>
+</ul>
+<a name="DEFAULT_LENGTH">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>DEFAULT_LENGTH</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</a>
+public static final&nbsp;int DEFAULT_LENGTH</pre>
+<div class="block"><span class="strong">Deprecated.</span>&nbsp;<i>Use <a href="../../../com/exedio/cope/StringField.html#DEFAULT_MAXIMUM_LENGTH"><code>DEFAULT_MAXIMUM_LENGTH</code></a> instead</i></div>
+<dl><dt><span class="strong">See Also:</span></dt><dd><a href="../../../constant-values.html#com.exedio.cope.StringField.DEFAULT_LENGTH">Constant Field Values</a></dd></dl>
+</li>
+</ul>
+</li>
+</ul>
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor_detail">
+<!--   -->
+</a>
+<h3>Constructor Detail</h3>
+<a name="StringField(com.exedio.cope.StringFieldMinimumLength)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>StringField</h4>
+<pre>public&nbsp;StringField(<a href="../../../com/exedio/cope/StringFieldMinimumLength.html" title="class in com.exedio.cope">StringFieldMinimumLength</a>&nbsp;minimumLength)</pre>
+</li>
+</ul>
+<a name="StringField()">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>StringField</h4>
+<pre>public&nbsp;StringField()</pre>
+<div class="block">Creates a new mandatory <tt>StringField</tt>.</div>
+</li>
+</ul>
+</li>
+</ul>
+<!-- ============ METHOD DETAIL ========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_detail">
+<!--   -->
+</a>
+<h3>Method Detail</h3>
+<a name="copy()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>copy</h4>
+<pre>public&nbsp;<a href="../../../com/exedio/cope/StringField.html" title="class in com.exedio.cope">StringField</a>&nbsp;copy()</pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../com/exedio/cope/FunctionField.html#copy()">copy</a></code>&nbsp;in class&nbsp;<code><a href="../../../com/exedio/cope/FunctionField.html" title="class in com.exedio.cope">FunctionField</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;</code></dd>
+</dl>
+</li>
+</ul>
+<a name="toFinal()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>toFinal</h4>
+<pre>public&nbsp;<a href="../../../com/exedio/cope/StringField.html" title="class in com.exedio.cope">StringField</a>&nbsp;toFinal()</pre>
+<div class="block"><strong>Description copied from class:&nbsp;<code><a href="../../../com/exedio/cope/Field.html#toFinal()">Field</a></code></strong></div>
+<div class="block">Returns a new Field,
+ that differs from this Field
+ by being final.
+ If this Field is already final,
+ the the result is equal to this Field.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../com/exedio/cope/Field.html#toFinal()">toFinal</a></code>&nbsp;in class&nbsp;<code><a href="../../../com/exedio/cope/Field.html" title="class in com.exedio.cope">Field</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;</code></dd>
+<dt><span class="strong">See Also:</span></dt><dd><a href="../../../com/exedio/cope/Field.html#isFinal()"><code>Field.isFinal()</code></a></dd></dl>
+</li>
+</ul>
+<a name="optional()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>optional</h4>
+<pre>public&nbsp;<a href="../../../com/exedio/cope/StringField.html" title="class in com.exedio.cope">StringField</a>&nbsp;optional()</pre>
+<div class="block"><strong>Description copied from class:&nbsp;<code><a href="../../../com/exedio/cope/Field.html#optional()">Field</a></code></strong></div>
+<div class="block">Returns a new Field,
+ that differs from this Field
+ by being optional.
+ If this Field is already optional,
+ the the result is equal to this Field.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../com/exedio/cope/Field.html#optional()">optional</a></code>&nbsp;in class&nbsp;<code><a href="../../../com/exedio/cope/Field.html" title="class in com.exedio.cope">Field</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;</code></dd>
+<dt><span class="strong">See Also:</span></dt><dd><a href="../../../com/exedio/cope/Field.html#isMandatory()"><code>Field.isMandatory()</code></a></dd></dl>
+</li>
+</ul>
+<a name="unique()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>unique</h4>
+<pre>public&nbsp;<a href="../../../com/exedio/cope/StringField.html" title="class in com.exedio.cope">StringField</a>&nbsp;unique()</pre>
+<div class="block"><strong>Description copied from class:&nbsp;<code><a href="../../../com/exedio/cope/FunctionField.html#unique()">FunctionField</a></code></strong></div>
+<div class="block">Returns a new FunctionField,
+ that differs from this FunctionField
+ by being unique.
+ If this FunctionField is already unique,
+ the the result is equal to this FunctionField.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../com/exedio/cope/FunctionField.html#unique()">unique</a></code>&nbsp;in class&nbsp;<code><a href="../../../com/exedio/cope/FunctionField.html" title="class in com.exedio.cope">FunctionField</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;</code></dd>
+<dt><span class="strong">See Also:</span></dt><dd><a href="../../../com/exedio/cope/FunctionField.html#getImplicitUniqueConstraint()"><code>FunctionField.getImplicitUniqueConstraint()</code></a></dd></dl>
+</li>
+</ul>
+<a name="nonUnique()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>nonUnique</h4>
+<pre>public&nbsp;<a href="../../../com/exedio/cope/StringField.html" title="class in com.exedio.cope">StringField</a>&nbsp;nonUnique()</pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../com/exedio/cope/FunctionField.html#nonUnique()">nonUnique</a></code>&nbsp;in class&nbsp;<code><a href="../../../com/exedio/cope/FunctionField.html" title="class in com.exedio.cope">FunctionField</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;</code></dd>
+</dl>
+</li>
+</ul>
+<a name="copyFrom(com.exedio.cope.ItemField)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>copyFrom</h4>
+<pre>public&nbsp;<a href="../../../com/exedio/cope/StringField.html" title="class in com.exedio.cope">StringField</a>&nbsp;copyFrom(<a href="../../../com/exedio/cope/ItemField.html" title="class in com.exedio.cope">ItemField</a>&lt;?&gt;&nbsp;copyFrom)</pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../com/exedio/cope/FunctionField.html#copyFrom(com.exedio.cope.ItemField)">copyFrom</a></code>&nbsp;in class&nbsp;<code><a href="../../../com/exedio/cope/FunctionField.html" title="class in com.exedio.cope">FunctionField</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;</code></dd>
+</dl>
+</li>
+</ul>
+<a name="noDefault()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>noDefault</h4>
+<pre>public&nbsp;<a href="../../../com/exedio/cope/StringField.html" title="class in com.exedio.cope">StringField</a>&nbsp;noDefault()</pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../com/exedio/cope/FunctionField.html#noDefault()">noDefault</a></code>&nbsp;in class&nbsp;<code><a href="../../../com/exedio/cope/FunctionField.html" title="class in com.exedio.cope">FunctionField</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;</code></dd>
+</dl>
+</li>
+</ul>
+<a name="defaultTo(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>defaultTo</h4>
+<pre>public&nbsp;<a href="../../../com/exedio/cope/StringField.html" title="class in com.exedio.cope">StringField</a>&nbsp;defaultTo(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;defaultConstant)</pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../com/exedio/cope/FunctionField.html#defaultTo(E)">defaultTo</a></code>&nbsp;in class&nbsp;<code><a href="../../../com/exedio/cope/FunctionField.html" title="class in com.exedio.cope">FunctionField</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;</code></dd>
+</dl>
+</li>
+</ul>
+<a name="lengthRange(int, int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>lengthRange</h4>
+<pre>public&nbsp;<a href="../../../com/exedio/cope/StringField.html" title="class in com.exedio.cope">StringField</a>&nbsp;lengthRange(int&nbsp;minimumLength,
+                      int&nbsp;maximumLength)</pre>
+</li>
+</ul>
+<a name="lengthMin(int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>lengthMin</h4>
+<pre>public&nbsp;<a href="../../../com/exedio/cope/StringField.html" title="class in com.exedio.cope">StringField</a>&nbsp;lengthMin(int&nbsp;minimumLength)</pre>
+</li>
+</ul>
+<a name="lengthMax(int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>lengthMax</h4>
+<pre>public&nbsp;<a href="../../../com/exedio/cope/StringField.html" title="class in com.exedio.cope">StringField</a>&nbsp;lengthMax(int&nbsp;maximumLength)</pre>
+</li>
+</ul>
+<a name="lengthExact(int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>lengthExact</h4>
+<pre>public&nbsp;<a href="../../../com/exedio/cope/StringField.html" title="class in com.exedio.cope">StringField</a>&nbsp;lengthExact(int&nbsp;exactLength)</pre>
+</li>
+</ul>
+<a name="charSet(com.exedio.cope.util.CharSet)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>charSet</h4>
+<pre>public&nbsp;<a href="../../../com/exedio/cope/StringField.html" title="class in com.exedio.cope">StringField</a>&nbsp;charSet(<a href="../../../com/exedio/cope/util/CharSet.html" title="class in com.exedio.cope.util">CharSet</a>&nbsp;charSet)</pre>
+</li>
+</ul>
+<a name="getMinimumLength()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getMinimumLength</h4>
+<pre>public final&nbsp;int&nbsp;getMinimumLength()</pre>
+</li>
+</ul>
+<a name="getMaximumLength()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getMaximumLength</h4>
+<pre>public final&nbsp;int&nbsp;getMaximumLength()</pre>
+</li>
+</ul>
+<a name="getCharSet()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getCharSet</h4>
+<pre>public final&nbsp;<a href="../../../com/exedio/cope/util/CharSet.html" title="class in com.exedio.cope.util">CharSet</a>&nbsp;getCharSet()</pre>
+</li>
+</ul>
+<a name="getInitialExceptions()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getInitialExceptions</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;? extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang">Throwable</a>&gt;&gt;&nbsp;getInitialExceptions()</pre>
+<div class="block"><strong>Description copied from interface:&nbsp;<code><a href="../../../com/exedio/cope/Settable.html#getInitialExceptions()">Settable</a></code></strong></div>
+<div class="block">Returns the exceptions possibly thrown,
+ when setting a value for this settable.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../com/exedio/cope/Settable.html#getInitialExceptions()">getInitialExceptions</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/exedio/cope/Settable.html" title="interface in com.exedio.cope">Settable</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;</code></dd>
+<dt><strong>Overrides:</strong></dt>
+<dd><code><a href="../../../com/exedio/cope/FunctionField.html#getInitialExceptions()">getInitialExceptions</a></code>&nbsp;in class&nbsp;<code><a href="../../../com/exedio/cope/FunctionField.html" title="class in com.exedio.cope">FunctionField</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;</code></dd>
+</dl>
+</li>
+</ul>
+<a name="getValueType()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getValueType</h4>
+<pre>public&nbsp;com.exedio.cope.SelectType&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;getValueType()</pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../com/exedio/cope/Selectable.html#getValueType()">getValueType</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/exedio/cope/Selectable.html" title="interface in com.exedio.cope">Selectable</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;</code></dd>
+</dl>
+</li>
+</ul>
+<a name="like(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>like</h4>
+<pre>public final&nbsp;<a href="../../../com/exedio/cope/LikeCondition.html" title="class in com.exedio.cope">LikeCondition</a>&nbsp;like(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;value)</pre>
+<div class="block"><strong>Description copied from interface:&nbsp;<code><a href="../../../com/exedio/cope/StringFunction.html#like(java.lang.String)">StringFunction</a></code></strong></div>
+<div class="block">Returns a condition, that is true for all items,
+ if and only if the value of this function for that item
+ is matches the given parameter.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../com/exedio/cope/StringFunction.html#like(java.lang.String)">like</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/exedio/cope/StringFunction.html" title="interface in com.exedio.cope">StringFunction</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="startsWith(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>startsWith</h4>
+<pre>public final&nbsp;<a href="../../../com/exedio/cope/LikeCondition.html" title="class in com.exedio.cope">LikeCondition</a>&nbsp;startsWith(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;value)</pre>
+<div class="block"><strong>Description copied from interface:&nbsp;<code><a href="../../../com/exedio/cope/StringFunction.html#startsWith(java.lang.String)">StringFunction</a></code></strong></div>
+<div class="block">Returns a condition, that is true for all items,
+ if and only if the value of this function for that item
+ starts with the given parameter.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../com/exedio/cope/StringFunction.html#startsWith(java.lang.String)">startsWith</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/exedio/cope/StringFunction.html" title="interface in com.exedio.cope">StringFunction</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="endsWith(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>endsWith</h4>
+<pre>public final&nbsp;<a href="../../../com/exedio/cope/LikeCondition.html" title="class in com.exedio.cope">LikeCondition</a>&nbsp;endsWith(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;value)</pre>
+<div class="block"><strong>Description copied from interface:&nbsp;<code><a href="../../../com/exedio/cope/StringFunction.html#endsWith(java.lang.String)">StringFunction</a></code></strong></div>
+<div class="block">Returns a condition, that is true for all items,
+ if and only if the value of this function for that item
+ ends with the given parameter.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../com/exedio/cope/StringFunction.html#endsWith(java.lang.String)">endsWith</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/exedio/cope/StringFunction.html" title="interface in com.exedio.cope">StringFunction</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="contains(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>contains</h4>
+<pre>public final&nbsp;<a href="../../../com/exedio/cope/LikeCondition.html" title="class in com.exedio.cope">LikeCondition</a>&nbsp;contains(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;value)</pre>
+<div class="block"><strong>Description copied from interface:&nbsp;<code><a href="../../../com/exedio/cope/StringFunction.html#contains(java.lang.String)">StringFunction</a></code></strong></div>
+<div class="block">Returns a condition, that is true for all items,
+ if and only if the value of this function for that item
+ contains the given parameter.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../com/exedio/cope/StringFunction.html#contains(java.lang.String)">contains</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/exedio/cope/StringFunction.html" title="interface in com.exedio.cope">StringFunction</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="length()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>length</h4>
+<pre>public final&nbsp;<a href="../../../com/exedio/cope/LengthView.html" title="class in com.exedio.cope">LengthView</a>&nbsp;length()</pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../com/exedio/cope/StringFunction.html#length()">length</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/exedio/cope/StringFunction.html" title="interface in com.exedio.cope">StringFunction</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="toUpperCase()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>toUpperCase</h4>
+<pre>public final&nbsp;<a href="../../../com/exedio/cope/UppercaseView.html" title="class in com.exedio.cope">UppercaseView</a>&nbsp;toUpperCase()</pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../com/exedio/cope/StringFunction.html#toUpperCase()">toUpperCase</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/exedio/cope/StringFunction.html" title="interface in com.exedio.cope">StringFunction</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="equalIgnoreCase(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>equalIgnoreCase</h4>
+<pre>public final&nbsp;<a href="../../../com/exedio/cope/Condition.html" title="class in com.exedio.cope">Condition</a>&nbsp;equalIgnoreCase(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;value)</pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../com/exedio/cope/StringFunction.html#equalIgnoreCase(java.lang.String)">equalIgnoreCase</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/exedio/cope/StringFunction.html" title="interface in com.exedio.cope">StringFunction</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="likeIgnoreCase(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>likeIgnoreCase</h4>
+<pre>public final&nbsp;<a href="../../../com/exedio/cope/LikeCondition.html" title="class in com.exedio.cope">LikeCondition</a>&nbsp;likeIgnoreCase(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;value)</pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../com/exedio/cope/StringFunction.html#likeIgnoreCase(java.lang.String)">likeIgnoreCase</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/exedio/cope/StringFunction.html" title="interface in com.exedio.cope">StringFunction</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="startsWithIgnoreCase(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>startsWithIgnoreCase</h4>
+<pre>public final&nbsp;<a href="../../../com/exedio/cope/LikeCondition.html" title="class in com.exedio.cope">LikeCondition</a>&nbsp;startsWithIgnoreCase(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;value)</pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../com/exedio/cope/StringFunction.html#startsWithIgnoreCase(java.lang.String)">startsWithIgnoreCase</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/exedio/cope/StringFunction.html" title="interface in com.exedio.cope">StringFunction</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="endsWithIgnoreCase(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>endsWithIgnoreCase</h4>
+<pre>public final&nbsp;<a href="../../../com/exedio/cope/LikeCondition.html" title="class in com.exedio.cope">LikeCondition</a>&nbsp;endsWithIgnoreCase(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;value)</pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../com/exedio/cope/StringFunction.html#endsWithIgnoreCase(java.lang.String)">endsWithIgnoreCase</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/exedio/cope/StringFunction.html" title="interface in com.exedio.cope">StringFunction</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="containsIgnoreCase(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>containsIgnoreCase</h4>
+<pre>public final&nbsp;<a href="../../../com/exedio/cope/LikeCondition.html" title="class in com.exedio.cope">LikeCondition</a>&nbsp;containsIgnoreCase(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;value)</pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../com/exedio/cope/StringFunction.html#containsIgnoreCase(java.lang.String)">containsIgnoreCase</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/exedio/cope/StringFunction.html" title="interface in com.exedio.cope">StringFunction</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="bind(com.exedio.cope.Join)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>bind</h4>
+<pre>public&nbsp;<a href="../../../com/exedio/cope/BindStringFunction.html" title="class in com.exedio.cope">BindStringFunction</a>&nbsp;bind(<a href="../../../com/exedio/cope/Join.html" title="class in com.exedio.cope">Join</a>&nbsp;join)</pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../com/exedio/cope/Function.html#bind(com.exedio.cope.Join)">bind</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/exedio/cope/Function.html" title="interface in com.exedio.cope">Function</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;</code></dd>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../com/exedio/cope/StringFunction.html#bind(com.exedio.cope.Join)">bind</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/exedio/cope/StringFunction.html" title="interface in com.exedio.cope">StringFunction</a></code></dd>
+<dt><strong>Overrides:</strong></dt>
+<dd><code><a href="../../../com/exedio/cope/FunctionField.html#bind(com.exedio.cope.Join)">bind</a></code>&nbsp;in class&nbsp;<code><a href="../../../com/exedio/cope/FunctionField.html" title="class in com.exedio.cope">FunctionField</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;</code></dd>
+</dl>
+</li>
+</ul>
+<a name="lengthMaxUnchecked(int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>lengthMaxUnchecked</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</a>
+public&nbsp;<a href="../../../com/exedio/cope/StringField.html" title="class in com.exedio.cope">StringField</a>&nbsp;lengthMaxUnchecked(int&nbsp;maximumLength)</pre>
+<div class="block"><span class="strong">Deprecated.</span>&nbsp;<i>use <a href="../../../com/exedio/cope/StringField.html#lengthMax(int)"><code>lengthMax(int)</code></a>.</i></div>
+</li>
+</ul>
+<a name="uppercase()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>uppercase</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</a>
+public final&nbsp;<a href="../../../com/exedio/cope/UppercaseView.html" title="class in com.exedio.cope">UppercaseView</a>&nbsp;uppercase()</pre>
+<div class="block"><span class="strong">Deprecated.</span>&nbsp;<i>renamed to <a href="../../../com/exedio/cope/StringField.html#toUpperCase()"><code>toUpperCase()</code></a></i></div>
+</li>
+</ul>
+<a name="characterSet(com.exedio.cope.util.CharacterSet)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>characterSet</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</a>
+public&nbsp;<a href="../../../com/exedio/cope/StringField.html" title="class in com.exedio.cope">StringField</a>&nbsp;characterSet(<a href="../../../com/exedio/cope/util/CharacterSet.html" title="class in com.exedio.cope.util">CharacterSet</a>&nbsp;characterSet)</pre>
+<div class="block"><span class="strong">Deprecated.</span>&nbsp;<i>Use <a href="../../../com/exedio/cope/StringField.html#charSet(com.exedio.cope.util.CharSet)"><code>charSet(CharSet)</code></a> instead</i></div>
+</li>
+</ul>
+<a name="getCharacterSet()">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>getCharacterSet</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</a>
+public&nbsp;<a href="../../../com/exedio/cope/util/CharacterSet.html" title="class in com.exedio.cope.util">CharacterSet</a>&nbsp;getCharacterSet()</pre>
+<div class="block"><span class="strong">Deprecated.</span>&nbsp;<i>Use <a href="../../../com/exedio/cope/StringField.html#getCharSet()"><code>getCharSet()</code></a> instead</i></div>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<!-- ========= END OF CLASS DATA ========= -->
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<div class="bottomNav"><a name="navbar_bottom">
+<!--   -->
+</a><a href="#skip-navbar_bottom" title="Skip navigation links"></a><a name="navbar_bottom_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../help-doc.html">Help</a></li>
+</ul>
+<div class="aboutLanguage"><em>exedio persistence</em></div>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../com/exedio/cope/StringCharSetViolationException.html" title="class in com.exedio.cope"><span class="strong">Prev Class</span></a></li>
+<li><a href="../../../com/exedio/cope/StringFieldMinimumLength.html" title="class in com.exedio.cope"><span class="strong">Next Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../index.html?com/exedio/cope/StringField.html" target="_top">Frames</a></li>
+<li><a href="StringField.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_bottom">
+<li><a href="../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_bottom");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li><a href="#field_summary">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor_summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li><a href="#field_detail">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor_detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_bottom">
+<!--   -->
+</a></div>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+<p class="legalCopy"><small>Maintained by <a href="http://www.exedio.com/" target="_top">exedio</a> Gesellschaft f&uuml;r Softwareentwicklung mbH.</small></p>
+</body>
+</html>

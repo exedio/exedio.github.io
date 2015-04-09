@@ -1,0 +1,846 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- NewPage -->
+<html lang="de">
+<head>
+<title>BindItemFunction (exedio persistence)</title>
+<link rel="stylesheet" type="text/css" href="../../../stylesheet.css" title="Style">
+</head>
+<body>
+<script type="text/javascript"><!--
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="BindItemFunction (exedio persistence)";
+    }
+//-->
+</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+<!-- ========= START OF TOP NAVBAR ======= -->
+<div class="topNav"><a name="navbar_top">
+<!--   -->
+</a><a href="#skip-navbar_top" title="Skip navigation links"></a><a name="navbar_top_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../help-doc.html">Help</a></li>
+</ul>
+<div class="aboutLanguage"><em>exedio persistence</em></div>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../com/exedio/cope/BindFunction.html" title="class in com.exedio.cope"><span class="strong">Prev Class</span></a></li>
+<li><a href="../../../com/exedio/cope/BindNumberFunction.html" title="class in com.exedio.cope"><span class="strong">Next Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../index.html?com/exedio/cope/BindItemFunction.html" target="_top">Frames</a></li>
+<li><a href="BindItemFunction.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_top">
+<li><a href="../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_top");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#constructor_summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#constructor_detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_top">
+<!--   -->
+</a></div>
+<!-- ========= END OF TOP NAVBAR ========= -->
+<!-- ======== START OF CLASS DATA ======== -->
+<div class="header">
+<div class="subTitle">com.exedio.cope</div>
+<h2 title="Class BindItemFunction" class="title">Class BindItemFunction&lt;E extends <a href="../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&gt;</h2>
+</div>
+<div class="contentContainer">
+<ul class="inheritance">
+<li><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</a></li>
+<li>
+<ul class="inheritance">
+<li><a href="../../../com/exedio/cope/BindFunction.html" title="class in com.exedio.cope">com.exedio.cope.BindFunction</a>&lt;E&gt;</li>
+<li>
+<ul class="inheritance">
+<li>com.exedio.cope.BindItemFunction&lt;E&gt;</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<div class="description">
+<ul class="blockList">
+<li class="blockList">
+<dl>
+<dt>All Implemented Interfaces:</dt>
+<dd><a href="../../../com/exedio/cope/Function.html" title="interface in com.exedio.cope">Function</a>&lt;E&gt;, <a href="../../../com/exedio/cope/ItemFunction.html" title="interface in com.exedio.cope">ItemFunction</a>&lt;E&gt;, <a href="../../../com/exedio/cope/Selectable.html" title="interface in com.exedio.cope">Selectable</a>&lt;E&gt;, <a href="http://docs.oracle.com/javase/7/docs/api/java/io/Serializable.html?is-external=true" title="class or interface in java.io">Serializable</a></dd>
+</dl>
+<hr>
+<br>
+<pre>public final class <span class="strong">BindItemFunction&lt;E extends <a href="../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&gt;</span>
+extends <a href="../../../com/exedio/cope/BindFunction.html" title="class in com.exedio.cope">BindFunction</a>&lt;E&gt;
+implements <a href="../../../com/exedio/cope/ItemFunction.html" title="interface in com.exedio.cope">ItemFunction</a>&lt;E&gt;</pre>
+<dl><dt><span class="strong">See Also:</span></dt><dd><a href="../../../serialized-form.html#com.exedio.cope.BindItemFunction">Serialized Form</a></dd></dl>
+</li>
+</ul>
+</div>
+<div class="summary">
+<ul class="blockList">
+<li class="blockList">
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor_summary">
+<!--   -->
+</a>
+<h3>Constructor Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Constructor Summary table, listing constructors, and an explanation">
+<caption><span>Constructors</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colOne" scope="col">Constructor and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colOne"><code><strong><a href="../../../com/exedio/cope/BindItemFunction.html#BindItemFunction(com.exedio.cope.ItemFunction,%20com.exedio.cope.Join)">BindItemFunction</a></strong>(<a href="../../../com/exedio/cope/ItemFunction.html" title="interface in com.exedio.cope">ItemFunction</a>&lt;<a href="../../../com/exedio/cope/BindItemFunction.html" title="type parameter in BindItemFunction">E</a>&gt;&nbsp;function,
+                <a href="../../../com/exedio/cope/Join.html" title="class in com.exedio.cope">Join</a>&nbsp;join)</code>
+<div class="block">Instead of using this constructor directly,
+ you may want to use the convenience methods.</div>
+</td>
+</tr>
+</table>
+</li>
+</ul>
+<!-- ========== METHOD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_summary">
+<!--   -->
+</a>
+<h3>Method Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
+<caption><span>Methods</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../com/exedio/cope/BindItemFunction.html#appendType(com.exedio.cope.Statement,%20com.exedio.cope.Join)">appendType</a></strong>(com.exedio.cope.Statement&nbsp;bf,
+          <a href="../../../com/exedio/cope/Join.html" title="class in com.exedio.cope">Join</a>&nbsp;join)</code>
+<div class="block"><strong>Deprecated.</strong>&nbsp;
+<div class="block"><i>For internal use within COPE only.</i></div>
+</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../com/exedio/cope/BindItemFunction.html" title="class in com.exedio.cope">BindItemFunction</a>&lt;<a href="../../../com/exedio/cope/BindItemFunction.html" title="type parameter in BindItemFunction">E</a>&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../com/exedio/cope/BindItemFunction.html#bind(com.exedio.cope.Join)">bind</a></strong>(<a href="../../../com/exedio/cope/Join.html" title="class in com.exedio.cope">Join</a>&nbsp;join)</code>
+<div class="block">Return this.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><strong><a href="../../../com/exedio/cope/BindItemFunction.html#checkTypeColumn()">checkTypeColumn</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../com/exedio/cope/CompareFunctionCondition.html" title="class in com.exedio.cope">CompareFunctionCondition</a>&lt;?&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../com/exedio/cope/BindItemFunction.html#equalTarget()">equalTarget</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../com/exedio/cope/CompareFunctionCondition.html" title="class in com.exedio.cope">CompareFunctionCondition</a>&lt;?&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../com/exedio/cope/BindItemFunction.html#equalTarget(com.exedio.cope.Join)">equalTarget</a></strong>(<a href="../../../com/exedio/cope/Join.html" title="class in com.exedio.cope">Join</a>&nbsp;targetJoin)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;<a href="../../../com/exedio/cope/BindItemFunction.html" title="type parameter in BindItemFunction">E</a>&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../com/exedio/cope/BindItemFunction.html#getValueType()">getValueType</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../com/exedio/cope/InstanceOfCondition.html" title="class in com.exedio.cope">InstanceOfCondition</a>&lt;<a href="../../../com/exedio/cope/BindItemFunction.html" title="type parameter in BindItemFunction">E</a>&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../com/exedio/cope/BindItemFunction.html#instanceOf(com.exedio.cope.Type[])">instanceOf</a></strong>(<a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>[]&nbsp;types)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../com/exedio/cope/InstanceOfCondition.html" title="class in com.exedio.cope">InstanceOfCondition</a>&lt;<a href="../../../com/exedio/cope/BindItemFunction.html" title="type parameter in BindItemFunction">E</a>&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../com/exedio/cope/BindItemFunction.html#instanceOf(com.exedio.cope.Type)">instanceOf</a></strong>(<a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;? extends <a href="../../../com/exedio/cope/BindItemFunction.html" title="type parameter in BindItemFunction">E</a>&gt;&nbsp;type1)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../com/exedio/cope/InstanceOfCondition.html" title="class in com.exedio.cope">InstanceOfCondition</a>&lt;<a href="../../../com/exedio/cope/BindItemFunction.html" title="type parameter in BindItemFunction">E</a>&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../com/exedio/cope/BindItemFunction.html#instanceOf(com.exedio.cope.Type,%20com.exedio.cope.Type)">instanceOf</a></strong>(<a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;? extends <a href="../../../com/exedio/cope/BindItemFunction.html" title="type parameter in BindItemFunction">E</a>&gt;&nbsp;type1,
+          <a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;? extends <a href="../../../com/exedio/cope/BindItemFunction.html" title="type parameter in BindItemFunction">E</a>&gt;&nbsp;type2)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../com/exedio/cope/InstanceOfCondition.html" title="class in com.exedio.cope">InstanceOfCondition</a>&lt;<a href="../../../com/exedio/cope/BindItemFunction.html" title="type parameter in BindItemFunction">E</a>&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../com/exedio/cope/BindItemFunction.html#instanceOf(com.exedio.cope.Type,%20com.exedio.cope.Type,%20com.exedio.cope.Type)">instanceOf</a></strong>(<a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;? extends <a href="../../../com/exedio/cope/BindItemFunction.html" title="type parameter in BindItemFunction">E</a>&gt;&nbsp;type1,
+          <a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;? extends <a href="../../../com/exedio/cope/BindItemFunction.html" title="type parameter in BindItemFunction">E</a>&gt;&nbsp;type2,
+          <a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;? extends <a href="../../../com/exedio/cope/BindItemFunction.html" title="type parameter in BindItemFunction">E</a>&gt;&nbsp;type3)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../com/exedio/cope/InstanceOfCondition.html" title="class in com.exedio.cope">InstanceOfCondition</a>&lt;<a href="../../../com/exedio/cope/BindItemFunction.html" title="type parameter in BindItemFunction">E</a>&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../com/exedio/cope/BindItemFunction.html#instanceOf(com.exedio.cope.Type,%20com.exedio.cope.Type,%20com.exedio.cope.Type,%20com.exedio.cope.Type)">instanceOf</a></strong>(<a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;? extends <a href="../../../com/exedio/cope/BindItemFunction.html" title="type parameter in BindItemFunction">E</a>&gt;&nbsp;type1,
+          <a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;? extends <a href="../../../com/exedio/cope/BindItemFunction.html" title="type parameter in BindItemFunction">E</a>&gt;&nbsp;type2,
+          <a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;? extends <a href="../../../com/exedio/cope/BindItemFunction.html" title="type parameter in BindItemFunction">E</a>&gt;&nbsp;type3,
+          <a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;<a href="../../../com/exedio/cope/BindItemFunction.html" title="type parameter in BindItemFunction">E</a>&gt;&nbsp;type4)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../com/exedio/cope/BindItemFunction.html#needsCheckTypeColumn()">needsCheckTypeColumn</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../com/exedio/cope/InstanceOfCondition.html" title="class in com.exedio.cope">InstanceOfCondition</a>&lt;<a href="../../../com/exedio/cope/BindItemFunction.html" title="type parameter in BindItemFunction">E</a>&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../com/exedio/cope/BindItemFunction.html#notInstanceOf(com.exedio.cope.Type[])">notInstanceOf</a></strong>(<a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>[]&nbsp;types)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../com/exedio/cope/InstanceOfCondition.html" title="class in com.exedio.cope">InstanceOfCondition</a>&lt;<a href="../../../com/exedio/cope/BindItemFunction.html" title="type parameter in BindItemFunction">E</a>&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../com/exedio/cope/BindItemFunction.html#notInstanceOf(com.exedio.cope.Type)">notInstanceOf</a></strong>(<a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;? extends <a href="../../../com/exedio/cope/BindItemFunction.html" title="type parameter in BindItemFunction">E</a>&gt;&nbsp;type1)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../com/exedio/cope/InstanceOfCondition.html" title="class in com.exedio.cope">InstanceOfCondition</a>&lt;<a href="../../../com/exedio/cope/BindItemFunction.html" title="type parameter in BindItemFunction">E</a>&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../com/exedio/cope/BindItemFunction.html#notInstanceOf(com.exedio.cope.Type,%20com.exedio.cope.Type)">notInstanceOf</a></strong>(<a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;? extends <a href="../../../com/exedio/cope/BindItemFunction.html" title="type parameter in BindItemFunction">E</a>&gt;&nbsp;type1,
+             <a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;? extends <a href="../../../com/exedio/cope/BindItemFunction.html" title="type parameter in BindItemFunction">E</a>&gt;&nbsp;type2)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../com/exedio/cope/InstanceOfCondition.html" title="class in com.exedio.cope">InstanceOfCondition</a>&lt;<a href="../../../com/exedio/cope/BindItemFunction.html" title="type parameter in BindItemFunction">E</a>&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../com/exedio/cope/BindItemFunction.html#notInstanceOf(com.exedio.cope.Type,%20com.exedio.cope.Type,%20com.exedio.cope.Type)">notInstanceOf</a></strong>(<a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;? extends <a href="../../../com/exedio/cope/BindItemFunction.html" title="type parameter in BindItemFunction">E</a>&gt;&nbsp;type1,
+             <a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;? extends <a href="../../../com/exedio/cope/BindItemFunction.html" title="type parameter in BindItemFunction">E</a>&gt;&nbsp;type2,
+             <a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;? extends <a href="../../../com/exedio/cope/BindItemFunction.html" title="type parameter in BindItemFunction">E</a>&gt;&nbsp;type3)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../com/exedio/cope/InstanceOfCondition.html" title="class in com.exedio.cope">InstanceOfCondition</a>&lt;<a href="../../../com/exedio/cope/BindItemFunction.html" title="type parameter in BindItemFunction">E</a>&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../com/exedio/cope/BindItemFunction.html#notInstanceOf(com.exedio.cope.Type,%20com.exedio.cope.Type,%20com.exedio.cope.Type,%20com.exedio.cope.Type)">notInstanceOf</a></strong>(<a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;? extends <a href="../../../com/exedio/cope/BindItemFunction.html" title="type parameter in BindItemFunction">E</a>&gt;&nbsp;type1,
+             <a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;? extends <a href="../../../com/exedio/cope/BindItemFunction.html" title="type parameter in BindItemFunction">E</a>&gt;&nbsp;type2,
+             <a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;? extends <a href="../../../com/exedio/cope/BindItemFunction.html" title="type parameter in BindItemFunction">E</a>&gt;&nbsp;type3,
+             <a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;<a href="../../../com/exedio/cope/BindItemFunction.html" title="type parameter in BindItemFunction">E</a>&gt;&nbsp;type4)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../com/exedio/cope/InstanceOfCondition.html" title="class in com.exedio.cope">InstanceOfCondition</a>&lt;<a href="../../../com/exedio/cope/BindItemFunction.html" title="type parameter in BindItemFunction">E</a>&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../com/exedio/cope/BindItemFunction.html#typeIn(com.exedio.cope.Type[])">typeIn</a></strong>(<a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>[]&nbsp;types)</code>
+<div class="block"><strong>Deprecated.</strong>&nbsp;</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../com/exedio/cope/InstanceOfCondition.html" title="class in com.exedio.cope">InstanceOfCondition</a>&lt;<a href="../../../com/exedio/cope/BindItemFunction.html" title="type parameter in BindItemFunction">E</a>&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../com/exedio/cope/BindItemFunction.html#typeIn(com.exedio.cope.Type)">typeIn</a></strong>(<a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;? extends <a href="../../../com/exedio/cope/BindItemFunction.html" title="type parameter in BindItemFunction">E</a>&gt;&nbsp;type1)</code>
+<div class="block"><strong>Deprecated.</strong>&nbsp;</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../com/exedio/cope/InstanceOfCondition.html" title="class in com.exedio.cope">InstanceOfCondition</a>&lt;<a href="../../../com/exedio/cope/BindItemFunction.html" title="type parameter in BindItemFunction">E</a>&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../com/exedio/cope/BindItemFunction.html#typeIn(com.exedio.cope.Type,%20com.exedio.cope.Type)">typeIn</a></strong>(<a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;? extends <a href="../../../com/exedio/cope/BindItemFunction.html" title="type parameter in BindItemFunction">E</a>&gt;&nbsp;type1,
+      <a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;? extends <a href="../../../com/exedio/cope/BindItemFunction.html" title="type parameter in BindItemFunction">E</a>&gt;&nbsp;type2)</code>
+<div class="block"><strong>Deprecated.</strong>&nbsp;</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../com/exedio/cope/InstanceOfCondition.html" title="class in com.exedio.cope">InstanceOfCondition</a>&lt;<a href="../../../com/exedio/cope/BindItemFunction.html" title="type parameter in BindItemFunction">E</a>&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../com/exedio/cope/BindItemFunction.html#typeIn(com.exedio.cope.Type,%20com.exedio.cope.Type,%20com.exedio.cope.Type)">typeIn</a></strong>(<a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;? extends <a href="../../../com/exedio/cope/BindItemFunction.html" title="type parameter in BindItemFunction">E</a>&gt;&nbsp;type1,
+      <a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;? extends <a href="../../../com/exedio/cope/BindItemFunction.html" title="type parameter in BindItemFunction">E</a>&gt;&nbsp;type2,
+      <a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;? extends <a href="../../../com/exedio/cope/BindItemFunction.html" title="type parameter in BindItemFunction">E</a>&gt;&nbsp;type3)</code>
+<div class="block"><strong>Deprecated.</strong>&nbsp;</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../com/exedio/cope/InstanceOfCondition.html" title="class in com.exedio.cope">InstanceOfCondition</a>&lt;<a href="../../../com/exedio/cope/BindItemFunction.html" title="type parameter in BindItemFunction">E</a>&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../com/exedio/cope/BindItemFunction.html#typeIn(com.exedio.cope.Type,%20com.exedio.cope.Type,%20com.exedio.cope.Type,%20com.exedio.cope.Type)">typeIn</a></strong>(<a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;? extends <a href="../../../com/exedio/cope/BindItemFunction.html" title="type parameter in BindItemFunction">E</a>&gt;&nbsp;type1,
+      <a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;? extends <a href="../../../com/exedio/cope/BindItemFunction.html" title="type parameter in BindItemFunction">E</a>&gt;&nbsp;type2,
+      <a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;? extends <a href="../../../com/exedio/cope/BindItemFunction.html" title="type parameter in BindItemFunction">E</a>&gt;&nbsp;type3,
+      <a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;<a href="../../../com/exedio/cope/BindItemFunction.html" title="type parameter in BindItemFunction">E</a>&gt;&nbsp;type4)</code>
+<div class="block"><strong>Deprecated.</strong>&nbsp;</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../com/exedio/cope/InstanceOfCondition.html" title="class in com.exedio.cope">InstanceOfCondition</a>&lt;<a href="../../../com/exedio/cope/BindItemFunction.html" title="type parameter in BindItemFunction">E</a>&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../com/exedio/cope/BindItemFunction.html#typeNotIn(com.exedio.cope.Type[])">typeNotIn</a></strong>(<a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>[]&nbsp;types)</code>
+<div class="block"><strong>Deprecated.</strong>&nbsp;</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../com/exedio/cope/InstanceOfCondition.html" title="class in com.exedio.cope">InstanceOfCondition</a>&lt;<a href="../../../com/exedio/cope/BindItemFunction.html" title="type parameter in BindItemFunction">E</a>&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../com/exedio/cope/BindItemFunction.html#typeNotIn(com.exedio.cope.Type)">typeNotIn</a></strong>(<a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;? extends <a href="../../../com/exedio/cope/BindItemFunction.html" title="type parameter in BindItemFunction">E</a>&gt;&nbsp;type1)</code>
+<div class="block"><strong>Deprecated.</strong>&nbsp;</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../com/exedio/cope/InstanceOfCondition.html" title="class in com.exedio.cope">InstanceOfCondition</a>&lt;<a href="../../../com/exedio/cope/BindItemFunction.html" title="type parameter in BindItemFunction">E</a>&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../com/exedio/cope/BindItemFunction.html#typeNotIn(com.exedio.cope.Type,%20com.exedio.cope.Type)">typeNotIn</a></strong>(<a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;? extends <a href="../../../com/exedio/cope/BindItemFunction.html" title="type parameter in BindItemFunction">E</a>&gt;&nbsp;type1,
+         <a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;? extends <a href="../../../com/exedio/cope/BindItemFunction.html" title="type parameter in BindItemFunction">E</a>&gt;&nbsp;type2)</code>
+<div class="block"><strong>Deprecated.</strong>&nbsp;</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../com/exedio/cope/InstanceOfCondition.html" title="class in com.exedio.cope">InstanceOfCondition</a>&lt;<a href="../../../com/exedio/cope/BindItemFunction.html" title="type parameter in BindItemFunction">E</a>&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../com/exedio/cope/BindItemFunction.html#typeNotIn(com.exedio.cope.Type,%20com.exedio.cope.Type,%20com.exedio.cope.Type)">typeNotIn</a></strong>(<a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;? extends <a href="../../../com/exedio/cope/BindItemFunction.html" title="type parameter in BindItemFunction">E</a>&gt;&nbsp;type1,
+         <a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;? extends <a href="../../../com/exedio/cope/BindItemFunction.html" title="type parameter in BindItemFunction">E</a>&gt;&nbsp;type2,
+         <a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;? extends <a href="../../../com/exedio/cope/BindItemFunction.html" title="type parameter in BindItemFunction">E</a>&gt;&nbsp;type3)</code>
+<div class="block"><strong>Deprecated.</strong>&nbsp;</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../com/exedio/cope/InstanceOfCondition.html" title="class in com.exedio.cope">InstanceOfCondition</a>&lt;<a href="../../../com/exedio/cope/BindItemFunction.html" title="type parameter in BindItemFunction">E</a>&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../com/exedio/cope/BindItemFunction.html#typeNotIn(com.exedio.cope.Type,%20com.exedio.cope.Type,%20com.exedio.cope.Type,%20com.exedio.cope.Type)">typeNotIn</a></strong>(<a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;? extends <a href="../../../com/exedio/cope/BindItemFunction.html" title="type parameter in BindItemFunction">E</a>&gt;&nbsp;type1,
+         <a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;? extends <a href="../../../com/exedio/cope/BindItemFunction.html" title="type parameter in BindItemFunction">E</a>&gt;&nbsp;type2,
+         <a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;? extends <a href="../../../com/exedio/cope/BindItemFunction.html" title="type parameter in BindItemFunction">E</a>&gt;&nbsp;type3,
+         <a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;<a href="../../../com/exedio/cope/BindItemFunction.html" title="type parameter in BindItemFunction">E</a>&gt;&nbsp;type4)</code>
+<div class="block"><strong>Deprecated.</strong>&nbsp;</div>
+</td>
+</tr>
+</table>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_com.exedio.cope.BindFunction">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;com.exedio.cope.<a href="../../../com/exedio/cope/BindFunction.html" title="class in com.exedio.cope">BindFunction</a></h3>
+<code><a href="../../../com/exedio/cope/BindFunction.html#append(com.exedio.cope.Statement,%20com.exedio.cope.Join)">append</a>, <a href="../../../com/exedio/cope/BindFunction.html#appendSelect(com.exedio.cope.Statement,%20com.exedio.cope.Join)">appendSelect</a>, <a href="../../../com/exedio/cope/BindFunction.html#between(E,%20E)">between</a>, <a href="../../../com/exedio/cope/BindFunction.html#check(com.exedio.cope.TC,%20com.exedio.cope.Join)">check</a>, <a href="../../../com/exedio/cope/BindFunction.html#equal(E)">equal</a>, <a href="../../../com/exedio/cope/BindFunction.html#equal(com.exedio.cope.Function)">equal</a>, <a href="../../../com/exedio/cope/BindFunction.html#equal(com.exedio.cope.Join,%20E)">equal</a>, <a href="../../../com/exedio/cope/BindFunction.html#equals(java.lang.Object)">equals</a>, <a href="../../../com/exedio/cope/BindFunction.html#get(com.exedio.cope.Item)">get</a>, <a href="../../../com/exedio/cope/BindFunction.html#getType()">getType</a>, <a href="../../../com/exedio/cope/BindFunction.html#getValueClass()">getValueClass</a>, <a href="../../../com/exedio/cope/BindFunction.html#greater(E)">greater</a>, <a href="../../../com/exedio/cope/BindFunction.html#greater(com.exedio.cope.Function)">greater</a>, <a href="../../../com/exedio/cope/BindFunction.html#greaterOrEqual(E)">greaterOrEqual</a>, <a href="../../../com/exedio/cope/BindFunction.html#greaterOrEqual(com.exedio.cope.Function)">greaterOrEqual</a>, <a href="../../../com/exedio/cope/BindFunction.html#hashCode()">hashCode</a>, <a href="../../../com/exedio/cope/BindFunction.html#in(java.util.Collection)">in</a>, <a href="../../../com/exedio/cope/BindFunction.html#in(E...)">in</a>, <a href="../../../com/exedio/cope/BindFunction.html#isNotNull()">isNotNull</a>, <a href="../../../com/exedio/cope/BindFunction.html#isNull()">isNull</a>, <a href="../../../com/exedio/cope/BindFunction.html#less(E)">less</a>, <a href="../../../com/exedio/cope/BindFunction.html#less(com.exedio.cope.Function)">less</a>, <a href="../../../com/exedio/cope/BindFunction.html#lessOrEqual(E)">lessOrEqual</a>, <a href="../../../com/exedio/cope/BindFunction.html#lessOrEqual(com.exedio.cope.Function)">lessOrEqual</a>, <a href="../../../com/exedio/cope/BindFunction.html#max()">max</a>, <a href="../../../com/exedio/cope/BindFunction.html#min()">min</a>, <a href="../../../com/exedio/cope/BindFunction.html#notEqual(E)">notEqual</a>, <a href="../../../com/exedio/cope/BindFunction.html#notEqual(com.exedio.cope.Function)">notEqual</a>, <a href="../../../com/exedio/cope/BindFunction.html#toString()">toString</a>, <a href="../../../com/exedio/cope/BindFunction.html#toString(java.lang.StringBuilder,%20com.exedio.cope.Type)">toString</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_java.lang.Object">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;java.lang.<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></h3>
+<code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#clone()" title="class or interface in java.lang">clone</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#finalize()" title="class or interface in java.lang">finalize</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#getClass()" title="class or interface in java.lang">getClass</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#notify()" title="class or interface in java.lang">notify</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#notifyAll()" title="class or interface in java.lang">notifyAll</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#wait()" title="class or interface in java.lang">wait</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#wait(long)" title="class or interface in java.lang">wait</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#wait(long,%20int)" title="class or interface in java.lang">wait</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_com.exedio.cope.Function">
+<!--   -->
+</a>
+<h3>Methods inherited from interface&nbsp;com.exedio.cope.<a href="../../../com/exedio/cope/Function.html" title="interface in com.exedio.cope">Function</a></h3>
+<code><a href="../../../com/exedio/cope/Function.html#between(E,%20E)">between</a>, <a href="../../../com/exedio/cope/Function.html#equal(E)">equal</a>, <a href="../../../com/exedio/cope/Function.html#equal(com.exedio.cope.Function)">equal</a>, <a href="../../../com/exedio/cope/Function.html#equal(com.exedio.cope.Join,%20E)">equal</a>, <a href="../../../com/exedio/cope/Function.html#get(com.exedio.cope.Item)">get</a>, <a href="../../../com/exedio/cope/Function.html#greater(E)">greater</a>, <a href="../../../com/exedio/cope/Function.html#greater(com.exedio.cope.Function)">greater</a>, <a href="../../../com/exedio/cope/Function.html#greaterOrEqual(E)">greaterOrEqual</a>, <a href="../../../com/exedio/cope/Function.html#greaterOrEqual(com.exedio.cope.Function)">greaterOrEqual</a>, <a href="../../../com/exedio/cope/Function.html#in(java.util.Collection)">in</a>, <a href="../../../com/exedio/cope/Function.html#in(E...)">in</a>, <a href="../../../com/exedio/cope/Function.html#isNotNull()">isNotNull</a>, <a href="../../../com/exedio/cope/Function.html#isNull()">isNull</a>, <a href="../../../com/exedio/cope/Function.html#less(E)">less</a>, <a href="../../../com/exedio/cope/Function.html#less(com.exedio.cope.Function)">less</a>, <a href="../../../com/exedio/cope/Function.html#lessOrEqual(E)">lessOrEqual</a>, <a href="../../../com/exedio/cope/Function.html#lessOrEqual(com.exedio.cope.Function)">lessOrEqual</a>, <a href="../../../com/exedio/cope/Function.html#max()">max</a>, <a href="../../../com/exedio/cope/Function.html#min()">min</a>, <a href="../../../com/exedio/cope/Function.html#notEqual(E)">notEqual</a>, <a href="../../../com/exedio/cope/Function.html#notEqual(com.exedio.cope.Function)">notEqual</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_com.exedio.cope.Selectable">
+<!--   -->
+</a>
+<h3>Methods inherited from interface&nbsp;com.exedio.cope.<a href="../../../com/exedio/cope/Selectable.html" title="interface in com.exedio.cope">Selectable</a></h3>
+<code><a href="../../../com/exedio/cope/Selectable.html#append(com.exedio.cope.Statement,%20com.exedio.cope.Join)">append</a>, <a href="../../../com/exedio/cope/Selectable.html#appendSelect(com.exedio.cope.Statement,%20com.exedio.cope.Join)">appendSelect</a>, <a href="../../../com/exedio/cope/Selectable.html#check(com.exedio.cope.TC,%20com.exedio.cope.Join)">check</a>, <a href="../../../com/exedio/cope/Selectable.html#getType()">getType</a>, <a href="../../../com/exedio/cope/Selectable.html#getValueClass()">getValueClass</a>, <a href="../../../com/exedio/cope/Selectable.html#toString(java.lang.StringBuilder,%20com.exedio.cope.Type)">toString</a></code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="details">
+<ul class="blockList">
+<li class="blockList">
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor_detail">
+<!--   -->
+</a>
+<h3>Constructor Detail</h3>
+<a name="BindItemFunction(com.exedio.cope.ItemFunction, com.exedio.cope.Join)">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>BindItemFunction</h4>
+<pre>public&nbsp;BindItemFunction(<a href="../../../com/exedio/cope/ItemFunction.html" title="interface in com.exedio.cope">ItemFunction</a>&lt;<a href="../../../com/exedio/cope/BindItemFunction.html" title="type parameter in BindItemFunction">E</a>&gt;&nbsp;function,
+                <a href="../../../com/exedio/cope/Join.html" title="class in com.exedio.cope">Join</a>&nbsp;join)</pre>
+<div class="block">Instead of using this constructor directly,
+ you may want to use the convenience methods.</div>
+<dl><dt><span class="strong">See Also:</span></dt><dd><a href="../../../com/exedio/cope/ItemFunction.html#bind(com.exedio.cope.Join)"><code>ItemFunction.bind(Join)</code></a></dd></dl>
+</li>
+</ul>
+</li>
+</ul>
+<!-- ============ METHOD DETAIL ========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_detail">
+<!--   -->
+</a>
+<h3>Method Detail</h3>
+<a name="getValueType()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getValueType</h4>
+<pre>public&nbsp;<a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;<a href="../../../com/exedio/cope/BindItemFunction.html" title="type parameter in BindItemFunction">E</a>&gt;&nbsp;getValueType()</pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../com/exedio/cope/ItemFunction.html#getValueType()">getValueType</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/exedio/cope/ItemFunction.html" title="interface in com.exedio.cope">ItemFunction</a>&lt;<a href="../../../com/exedio/cope/BindItemFunction.html" title="type parameter in BindItemFunction">E</a> extends <a href="../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&gt;</code></dd>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../com/exedio/cope/Selectable.html#getValueType()">getValueType</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/exedio/cope/Selectable.html" title="interface in com.exedio.cope">Selectable</a>&lt;<a href="../../../com/exedio/cope/BindItemFunction.html" title="type parameter in BindItemFunction">E</a> extends <a href="../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&gt;</code></dd>
+<dt><strong>Overrides:</strong></dt>
+<dd><code><a href="../../../com/exedio/cope/BindFunction.html#getValueType()">getValueType</a></code>&nbsp;in class&nbsp;<code><a href="../../../com/exedio/cope/BindFunction.html" title="class in com.exedio.cope">BindFunction</a>&lt;<a href="../../../com/exedio/cope/BindItemFunction.html" title="type parameter in BindItemFunction">E</a> extends <a href="../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&gt;</code></dd>
+</dl>
+</li>
+</ul>
+<a name="appendType(com.exedio.cope.Statement, com.exedio.cope.Join)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>appendType</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</a>
+public&nbsp;void&nbsp;appendType(com.exedio.cope.Statement&nbsp;bf,
+                         <a href="../../../com/exedio/cope/Join.html" title="class in com.exedio.cope">Join</a>&nbsp;join)</pre>
+<div class="block"><span class="strong">Deprecated.</span>&nbsp;<i>For internal use within COPE only.</i></div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../com/exedio/cope/ItemFunction.html#appendType(com.exedio.cope.Statement,%20com.exedio.cope.Join)">appendType</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/exedio/cope/ItemFunction.html" title="interface in com.exedio.cope">ItemFunction</a>&lt;<a href="../../../com/exedio/cope/BindItemFunction.html" title="type parameter in BindItemFunction">E</a> extends <a href="../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&gt;</code></dd>
+</dl>
+</li>
+</ul>
+<a name="needsCheckTypeColumn()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>needsCheckTypeColumn</h4>
+<pre>public&nbsp;boolean&nbsp;needsCheckTypeColumn()</pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../com/exedio/cope/ItemFunction.html#needsCheckTypeColumn()">needsCheckTypeColumn</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/exedio/cope/ItemFunction.html" title="interface in com.exedio.cope">ItemFunction</a>&lt;<a href="../../../com/exedio/cope/BindItemFunction.html" title="type parameter in BindItemFunction">E</a> extends <a href="../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&gt;</code></dd>
+<dt><span class="strong">See Also:</span></dt><dd><a href="../../../com/exedio/cope/ItemFunction.html#checkTypeColumn()"><code>ItemFunction.checkTypeColumn()</code></a></dd></dl>
+</li>
+</ul>
+<a name="checkTypeColumn()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>checkTypeColumn</h4>
+<pre>public&nbsp;int&nbsp;checkTypeColumn()</pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../com/exedio/cope/ItemFunction.html#checkTypeColumn()">checkTypeColumn</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/exedio/cope/ItemFunction.html" title="interface in com.exedio.cope">ItemFunction</a>&lt;<a href="../../../com/exedio/cope/BindItemFunction.html" title="type parameter in BindItemFunction">E</a> extends <a href="../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&gt;</code></dd>
+<dt><span class="strong">See Also:</span></dt><dd><a href="../../../com/exedio/cope/ItemFunction.html#needsCheckTypeColumn()"><code>ItemFunction.needsCheckTypeColumn()</code></a></dd></dl>
+</li>
+</ul>
+<a name="equalTarget()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>equalTarget</h4>
+<pre>public&nbsp;<a href="../../../com/exedio/cope/CompareFunctionCondition.html" title="class in com.exedio.cope">CompareFunctionCondition</a>&lt;?&gt;&nbsp;equalTarget()</pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../com/exedio/cope/ItemFunction.html#equalTarget()">equalTarget</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/exedio/cope/ItemFunction.html" title="interface in com.exedio.cope">ItemFunction</a>&lt;<a href="../../../com/exedio/cope/BindItemFunction.html" title="type parameter in BindItemFunction">E</a> extends <a href="../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&gt;</code></dd>
+</dl>
+</li>
+</ul>
+<a name="equalTarget(com.exedio.cope.Join)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>equalTarget</h4>
+<pre>public&nbsp;<a href="../../../com/exedio/cope/CompareFunctionCondition.html" title="class in com.exedio.cope">CompareFunctionCondition</a>&lt;?&gt;&nbsp;equalTarget(<a href="../../../com/exedio/cope/Join.html" title="class in com.exedio.cope">Join</a>&nbsp;targetJoin)</pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../com/exedio/cope/ItemFunction.html#equalTarget(com.exedio.cope.Join)">equalTarget</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/exedio/cope/ItemFunction.html" title="interface in com.exedio.cope">ItemFunction</a>&lt;<a href="../../../com/exedio/cope/BindItemFunction.html" title="type parameter in BindItemFunction">E</a> extends <a href="../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&gt;</code></dd>
+</dl>
+</li>
+</ul>
+<a name="bind(com.exedio.cope.Join)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>bind</h4>
+<pre>public&nbsp;<a href="../../../com/exedio/cope/BindItemFunction.html" title="class in com.exedio.cope">BindItemFunction</a>&lt;<a href="../../../com/exedio/cope/BindItemFunction.html" title="type parameter in BindItemFunction">E</a>&gt;&nbsp;bind(<a href="../../../com/exedio/cope/Join.html" title="class in com.exedio.cope">Join</a>&nbsp;join)</pre>
+<div class="block">Return this.
+ It makes no sense wrapping a BindFunction into another BindFunction,
+ because the inner BindFunction &quot;wins&quot;.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../com/exedio/cope/Function.html#bind(com.exedio.cope.Join)">bind</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/exedio/cope/Function.html" title="interface in com.exedio.cope">Function</a>&lt;<a href="../../../com/exedio/cope/BindItemFunction.html" title="type parameter in BindItemFunction">E</a> extends <a href="../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&gt;</code></dd>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../com/exedio/cope/ItemFunction.html#bind(com.exedio.cope.Join)">bind</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/exedio/cope/ItemFunction.html" title="interface in com.exedio.cope">ItemFunction</a>&lt;<a href="../../../com/exedio/cope/BindItemFunction.html" title="type parameter in BindItemFunction">E</a> extends <a href="../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&gt;</code></dd>
+<dt><strong>Overrides:</strong></dt>
+<dd><code><a href="../../../com/exedio/cope/BindFunction.html#bind(com.exedio.cope.Join)">bind</a></code>&nbsp;in class&nbsp;<code><a href="../../../com/exedio/cope/BindFunction.html" title="class in com.exedio.cope">BindFunction</a>&lt;<a href="../../../com/exedio/cope/BindItemFunction.html" title="type parameter in BindItemFunction">E</a> extends <a href="../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&gt;</code></dd>
+</dl>
+</li>
+</ul>
+<a name="instanceOf(com.exedio.cope.Type)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>instanceOf</h4>
+<pre>public&nbsp;<a href="../../../com/exedio/cope/InstanceOfCondition.html" title="class in com.exedio.cope">InstanceOfCondition</a>&lt;<a href="../../../com/exedio/cope/BindItemFunction.html" title="type parameter in BindItemFunction">E</a>&gt;&nbsp;instanceOf(<a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;? extends <a href="../../../com/exedio/cope/BindItemFunction.html" title="type parameter in BindItemFunction">E</a>&gt;&nbsp;type1)</pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../com/exedio/cope/ItemFunction.html#instanceOf(com.exedio.cope.Type)">instanceOf</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/exedio/cope/ItemFunction.html" title="interface in com.exedio.cope">ItemFunction</a>&lt;<a href="../../../com/exedio/cope/BindItemFunction.html" title="type parameter in BindItemFunction">E</a> extends <a href="../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&gt;</code></dd>
+</dl>
+</li>
+</ul>
+<a name="instanceOf(com.exedio.cope.Type, com.exedio.cope.Type)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>instanceOf</h4>
+<pre>public&nbsp;<a href="../../../com/exedio/cope/InstanceOfCondition.html" title="class in com.exedio.cope">InstanceOfCondition</a>&lt;<a href="../../../com/exedio/cope/BindItemFunction.html" title="type parameter in BindItemFunction">E</a>&gt;&nbsp;instanceOf(<a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;? extends <a href="../../../com/exedio/cope/BindItemFunction.html" title="type parameter in BindItemFunction">E</a>&gt;&nbsp;type1,
+                                <a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;? extends <a href="../../../com/exedio/cope/BindItemFunction.html" title="type parameter in BindItemFunction">E</a>&gt;&nbsp;type2)</pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../com/exedio/cope/ItemFunction.html#instanceOf(com.exedio.cope.Type,%20com.exedio.cope.Type)">instanceOf</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/exedio/cope/ItemFunction.html" title="interface in com.exedio.cope">ItemFunction</a>&lt;<a href="../../../com/exedio/cope/BindItemFunction.html" title="type parameter in BindItemFunction">E</a> extends <a href="../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&gt;</code></dd>
+</dl>
+</li>
+</ul>
+<a name="instanceOf(com.exedio.cope.Type, com.exedio.cope.Type, com.exedio.cope.Type)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>instanceOf</h4>
+<pre>public&nbsp;<a href="../../../com/exedio/cope/InstanceOfCondition.html" title="class in com.exedio.cope">InstanceOfCondition</a>&lt;<a href="../../../com/exedio/cope/BindItemFunction.html" title="type parameter in BindItemFunction">E</a>&gt;&nbsp;instanceOf(<a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;? extends <a href="../../../com/exedio/cope/BindItemFunction.html" title="type parameter in BindItemFunction">E</a>&gt;&nbsp;type1,
+                                <a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;? extends <a href="../../../com/exedio/cope/BindItemFunction.html" title="type parameter in BindItemFunction">E</a>&gt;&nbsp;type2,
+                                <a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;? extends <a href="../../../com/exedio/cope/BindItemFunction.html" title="type parameter in BindItemFunction">E</a>&gt;&nbsp;type3)</pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../com/exedio/cope/ItemFunction.html#instanceOf(com.exedio.cope.Type,%20com.exedio.cope.Type,%20com.exedio.cope.Type)">instanceOf</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/exedio/cope/ItemFunction.html" title="interface in com.exedio.cope">ItemFunction</a>&lt;<a href="../../../com/exedio/cope/BindItemFunction.html" title="type parameter in BindItemFunction">E</a> extends <a href="../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&gt;</code></dd>
+</dl>
+</li>
+</ul>
+<a name="instanceOf(com.exedio.cope.Type, com.exedio.cope.Type, com.exedio.cope.Type, com.exedio.cope.Type)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>instanceOf</h4>
+<pre>public&nbsp;<a href="../../../com/exedio/cope/InstanceOfCondition.html" title="class in com.exedio.cope">InstanceOfCondition</a>&lt;<a href="../../../com/exedio/cope/BindItemFunction.html" title="type parameter in BindItemFunction">E</a>&gt;&nbsp;instanceOf(<a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;? extends <a href="../../../com/exedio/cope/BindItemFunction.html" title="type parameter in BindItemFunction">E</a>&gt;&nbsp;type1,
+                                <a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;? extends <a href="../../../com/exedio/cope/BindItemFunction.html" title="type parameter in BindItemFunction">E</a>&gt;&nbsp;type2,
+                                <a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;? extends <a href="../../../com/exedio/cope/BindItemFunction.html" title="type parameter in BindItemFunction">E</a>&gt;&nbsp;type3,
+                                <a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;<a href="../../../com/exedio/cope/BindItemFunction.html" title="type parameter in BindItemFunction">E</a>&gt;&nbsp;type4)</pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../com/exedio/cope/ItemFunction.html#instanceOf(com.exedio.cope.Type,%20com.exedio.cope.Type,%20com.exedio.cope.Type,%20com.exedio.cope.Type)">instanceOf</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/exedio/cope/ItemFunction.html" title="interface in com.exedio.cope">ItemFunction</a>&lt;<a href="../../../com/exedio/cope/BindItemFunction.html" title="type parameter in BindItemFunction">E</a> extends <a href="../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&gt;</code></dd>
+</dl>
+</li>
+</ul>
+<a name="instanceOf(com.exedio.cope.Type[])">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>instanceOf</h4>
+<pre>public&nbsp;<a href="../../../com/exedio/cope/InstanceOfCondition.html" title="class in com.exedio.cope">InstanceOfCondition</a>&lt;<a href="../../../com/exedio/cope/BindItemFunction.html" title="type parameter in BindItemFunction">E</a>&gt;&nbsp;instanceOf(<a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>[]&nbsp;types)</pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../com/exedio/cope/ItemFunction.html#instanceOf(com.exedio.cope.Type[])">instanceOf</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/exedio/cope/ItemFunction.html" title="interface in com.exedio.cope">ItemFunction</a>&lt;<a href="../../../com/exedio/cope/BindItemFunction.html" title="type parameter in BindItemFunction">E</a> extends <a href="../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&gt;</code></dd>
+</dl>
+</li>
+</ul>
+<a name="notInstanceOf(com.exedio.cope.Type)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>notInstanceOf</h4>
+<pre>public&nbsp;<a href="../../../com/exedio/cope/InstanceOfCondition.html" title="class in com.exedio.cope">InstanceOfCondition</a>&lt;<a href="../../../com/exedio/cope/BindItemFunction.html" title="type parameter in BindItemFunction">E</a>&gt;&nbsp;notInstanceOf(<a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;? extends <a href="../../../com/exedio/cope/BindItemFunction.html" title="type parameter in BindItemFunction">E</a>&gt;&nbsp;type1)</pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../com/exedio/cope/ItemFunction.html#notInstanceOf(com.exedio.cope.Type)">notInstanceOf</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/exedio/cope/ItemFunction.html" title="interface in com.exedio.cope">ItemFunction</a>&lt;<a href="../../../com/exedio/cope/BindItemFunction.html" title="type parameter in BindItemFunction">E</a> extends <a href="../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&gt;</code></dd>
+</dl>
+</li>
+</ul>
+<a name="notInstanceOf(com.exedio.cope.Type, com.exedio.cope.Type)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>notInstanceOf</h4>
+<pre>public&nbsp;<a href="../../../com/exedio/cope/InstanceOfCondition.html" title="class in com.exedio.cope">InstanceOfCondition</a>&lt;<a href="../../../com/exedio/cope/BindItemFunction.html" title="type parameter in BindItemFunction">E</a>&gt;&nbsp;notInstanceOf(<a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;? extends <a href="../../../com/exedio/cope/BindItemFunction.html" title="type parameter in BindItemFunction">E</a>&gt;&nbsp;type1,
+                                   <a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;? extends <a href="../../../com/exedio/cope/BindItemFunction.html" title="type parameter in BindItemFunction">E</a>&gt;&nbsp;type2)</pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../com/exedio/cope/ItemFunction.html#notInstanceOf(com.exedio.cope.Type,%20com.exedio.cope.Type)">notInstanceOf</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/exedio/cope/ItemFunction.html" title="interface in com.exedio.cope">ItemFunction</a>&lt;<a href="../../../com/exedio/cope/BindItemFunction.html" title="type parameter in BindItemFunction">E</a> extends <a href="../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&gt;</code></dd>
+</dl>
+</li>
+</ul>
+<a name="notInstanceOf(com.exedio.cope.Type, com.exedio.cope.Type, com.exedio.cope.Type)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>notInstanceOf</h4>
+<pre>public&nbsp;<a href="../../../com/exedio/cope/InstanceOfCondition.html" title="class in com.exedio.cope">InstanceOfCondition</a>&lt;<a href="../../../com/exedio/cope/BindItemFunction.html" title="type parameter in BindItemFunction">E</a>&gt;&nbsp;notInstanceOf(<a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;? extends <a href="../../../com/exedio/cope/BindItemFunction.html" title="type parameter in BindItemFunction">E</a>&gt;&nbsp;type1,
+                                   <a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;? extends <a href="../../../com/exedio/cope/BindItemFunction.html" title="type parameter in BindItemFunction">E</a>&gt;&nbsp;type2,
+                                   <a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;? extends <a href="../../../com/exedio/cope/BindItemFunction.html" title="type parameter in BindItemFunction">E</a>&gt;&nbsp;type3)</pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../com/exedio/cope/ItemFunction.html#notInstanceOf(com.exedio.cope.Type,%20com.exedio.cope.Type,%20com.exedio.cope.Type)">notInstanceOf</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/exedio/cope/ItemFunction.html" title="interface in com.exedio.cope">ItemFunction</a>&lt;<a href="../../../com/exedio/cope/BindItemFunction.html" title="type parameter in BindItemFunction">E</a> extends <a href="../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&gt;</code></dd>
+</dl>
+</li>
+</ul>
+<a name="notInstanceOf(com.exedio.cope.Type, com.exedio.cope.Type, com.exedio.cope.Type, com.exedio.cope.Type)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>notInstanceOf</h4>
+<pre>public&nbsp;<a href="../../../com/exedio/cope/InstanceOfCondition.html" title="class in com.exedio.cope">InstanceOfCondition</a>&lt;<a href="../../../com/exedio/cope/BindItemFunction.html" title="type parameter in BindItemFunction">E</a>&gt;&nbsp;notInstanceOf(<a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;? extends <a href="../../../com/exedio/cope/BindItemFunction.html" title="type parameter in BindItemFunction">E</a>&gt;&nbsp;type1,
+                                   <a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;? extends <a href="../../../com/exedio/cope/BindItemFunction.html" title="type parameter in BindItemFunction">E</a>&gt;&nbsp;type2,
+                                   <a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;? extends <a href="../../../com/exedio/cope/BindItemFunction.html" title="type parameter in BindItemFunction">E</a>&gt;&nbsp;type3,
+                                   <a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;<a href="../../../com/exedio/cope/BindItemFunction.html" title="type parameter in BindItemFunction">E</a>&gt;&nbsp;type4)</pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../com/exedio/cope/ItemFunction.html#notInstanceOf(com.exedio.cope.Type,%20com.exedio.cope.Type,%20com.exedio.cope.Type,%20com.exedio.cope.Type)">notInstanceOf</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/exedio/cope/ItemFunction.html" title="interface in com.exedio.cope">ItemFunction</a>&lt;<a href="../../../com/exedio/cope/BindItemFunction.html" title="type parameter in BindItemFunction">E</a> extends <a href="../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&gt;</code></dd>
+</dl>
+</li>
+</ul>
+<a name="notInstanceOf(com.exedio.cope.Type[])">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>notInstanceOf</h4>
+<pre>public&nbsp;<a href="../../../com/exedio/cope/InstanceOfCondition.html" title="class in com.exedio.cope">InstanceOfCondition</a>&lt;<a href="../../../com/exedio/cope/BindItemFunction.html" title="type parameter in BindItemFunction">E</a>&gt;&nbsp;notInstanceOf(<a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>[]&nbsp;types)</pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../com/exedio/cope/ItemFunction.html#notInstanceOf(com.exedio.cope.Type[])">notInstanceOf</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/exedio/cope/ItemFunction.html" title="interface in com.exedio.cope">ItemFunction</a>&lt;<a href="../../../com/exedio/cope/BindItemFunction.html" title="type parameter in BindItemFunction">E</a> extends <a href="../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&gt;</code></dd>
+</dl>
+</li>
+</ul>
+<a name="typeIn(com.exedio.cope.Type)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>typeIn</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</a>
+public&nbsp;<a href="../../../com/exedio/cope/InstanceOfCondition.html" title="class in com.exedio.cope">InstanceOfCondition</a>&lt;<a href="../../../com/exedio/cope/BindItemFunction.html" title="type parameter in BindItemFunction">E</a>&gt;&nbsp;typeIn(<a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;? extends <a href="../../../com/exedio/cope/BindItemFunction.html" title="type parameter in BindItemFunction">E</a>&gt;&nbsp;type1)</pre>
+<div class="block"><span class="strong">Deprecated.</span>&nbsp;</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../com/exedio/cope/ItemFunction.html#typeIn(com.exedio.cope.Type)">typeIn</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/exedio/cope/ItemFunction.html" title="interface in com.exedio.cope">ItemFunction</a>&lt;<a href="../../../com/exedio/cope/BindItemFunction.html" title="type parameter in BindItemFunction">E</a> extends <a href="../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&gt;</code></dd>
+</dl>
+</li>
+</ul>
+<a name="typeIn(com.exedio.cope.Type, com.exedio.cope.Type)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>typeIn</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</a>
+public&nbsp;<a href="../../../com/exedio/cope/InstanceOfCondition.html" title="class in com.exedio.cope">InstanceOfCondition</a>&lt;<a href="../../../com/exedio/cope/BindItemFunction.html" title="type parameter in BindItemFunction">E</a>&gt;&nbsp;typeIn(<a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;? extends <a href="../../../com/exedio/cope/BindItemFunction.html" title="type parameter in BindItemFunction">E</a>&gt;&nbsp;type1,
+                                       <a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;? extends <a href="../../../com/exedio/cope/BindItemFunction.html" title="type parameter in BindItemFunction">E</a>&gt;&nbsp;type2)</pre>
+<div class="block"><span class="strong">Deprecated.</span>&nbsp;</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../com/exedio/cope/ItemFunction.html#typeIn(com.exedio.cope.Type,%20com.exedio.cope.Type)">typeIn</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/exedio/cope/ItemFunction.html" title="interface in com.exedio.cope">ItemFunction</a>&lt;<a href="../../../com/exedio/cope/BindItemFunction.html" title="type parameter in BindItemFunction">E</a> extends <a href="../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&gt;</code></dd>
+</dl>
+</li>
+</ul>
+<a name="typeIn(com.exedio.cope.Type, com.exedio.cope.Type, com.exedio.cope.Type)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>typeIn</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</a>
+public&nbsp;<a href="../../../com/exedio/cope/InstanceOfCondition.html" title="class in com.exedio.cope">InstanceOfCondition</a>&lt;<a href="../../../com/exedio/cope/BindItemFunction.html" title="type parameter in BindItemFunction">E</a>&gt;&nbsp;typeIn(<a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;? extends <a href="../../../com/exedio/cope/BindItemFunction.html" title="type parameter in BindItemFunction">E</a>&gt;&nbsp;type1,
+                                       <a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;? extends <a href="../../../com/exedio/cope/BindItemFunction.html" title="type parameter in BindItemFunction">E</a>&gt;&nbsp;type2,
+                                       <a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;? extends <a href="../../../com/exedio/cope/BindItemFunction.html" title="type parameter in BindItemFunction">E</a>&gt;&nbsp;type3)</pre>
+<div class="block"><span class="strong">Deprecated.</span>&nbsp;</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../com/exedio/cope/ItemFunction.html#typeIn(com.exedio.cope.Type,%20com.exedio.cope.Type,%20com.exedio.cope.Type)">typeIn</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/exedio/cope/ItemFunction.html" title="interface in com.exedio.cope">ItemFunction</a>&lt;<a href="../../../com/exedio/cope/BindItemFunction.html" title="type parameter in BindItemFunction">E</a> extends <a href="../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&gt;</code></dd>
+</dl>
+</li>
+</ul>
+<a name="typeIn(com.exedio.cope.Type, com.exedio.cope.Type, com.exedio.cope.Type, com.exedio.cope.Type)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>typeIn</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</a>
+public&nbsp;<a href="../../../com/exedio/cope/InstanceOfCondition.html" title="class in com.exedio.cope">InstanceOfCondition</a>&lt;<a href="../../../com/exedio/cope/BindItemFunction.html" title="type parameter in BindItemFunction">E</a>&gt;&nbsp;typeIn(<a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;? extends <a href="../../../com/exedio/cope/BindItemFunction.html" title="type parameter in BindItemFunction">E</a>&gt;&nbsp;type1,
+                                       <a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;? extends <a href="../../../com/exedio/cope/BindItemFunction.html" title="type parameter in BindItemFunction">E</a>&gt;&nbsp;type2,
+                                       <a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;? extends <a href="../../../com/exedio/cope/BindItemFunction.html" title="type parameter in BindItemFunction">E</a>&gt;&nbsp;type3,
+                                       <a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;<a href="../../../com/exedio/cope/BindItemFunction.html" title="type parameter in BindItemFunction">E</a>&gt;&nbsp;type4)</pre>
+<div class="block"><span class="strong">Deprecated.</span>&nbsp;</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../com/exedio/cope/ItemFunction.html#typeIn(com.exedio.cope.Type,%20com.exedio.cope.Type,%20com.exedio.cope.Type,%20com.exedio.cope.Type)">typeIn</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/exedio/cope/ItemFunction.html" title="interface in com.exedio.cope">ItemFunction</a>&lt;<a href="../../../com/exedio/cope/BindItemFunction.html" title="type parameter in BindItemFunction">E</a> extends <a href="../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&gt;</code></dd>
+</dl>
+</li>
+</ul>
+<a name="typeIn(com.exedio.cope.Type[])">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>typeIn</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</a>
+public&nbsp;<a href="../../../com/exedio/cope/InstanceOfCondition.html" title="class in com.exedio.cope">InstanceOfCondition</a>&lt;<a href="../../../com/exedio/cope/BindItemFunction.html" title="type parameter in BindItemFunction">E</a>&gt;&nbsp;typeIn(<a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>[]&nbsp;types)</pre>
+<div class="block"><span class="strong">Deprecated.</span>&nbsp;</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../com/exedio/cope/ItemFunction.html#typeIn(com.exedio.cope.Type[])">typeIn</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/exedio/cope/ItemFunction.html" title="interface in com.exedio.cope">ItemFunction</a>&lt;<a href="../../../com/exedio/cope/BindItemFunction.html" title="type parameter in BindItemFunction">E</a> extends <a href="../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&gt;</code></dd>
+</dl>
+</li>
+</ul>
+<a name="typeNotIn(com.exedio.cope.Type)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>typeNotIn</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</a>
+public&nbsp;<a href="../../../com/exedio/cope/InstanceOfCondition.html" title="class in com.exedio.cope">InstanceOfCondition</a>&lt;<a href="../../../com/exedio/cope/BindItemFunction.html" title="type parameter in BindItemFunction">E</a>&gt;&nbsp;typeNotIn(<a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;? extends <a href="../../../com/exedio/cope/BindItemFunction.html" title="type parameter in BindItemFunction">E</a>&gt;&nbsp;type1)</pre>
+<div class="block"><span class="strong">Deprecated.</span>&nbsp;</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../com/exedio/cope/ItemFunction.html#typeNotIn(com.exedio.cope.Type)">typeNotIn</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/exedio/cope/ItemFunction.html" title="interface in com.exedio.cope">ItemFunction</a>&lt;<a href="../../../com/exedio/cope/BindItemFunction.html" title="type parameter in BindItemFunction">E</a> extends <a href="../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&gt;</code></dd>
+</dl>
+</li>
+</ul>
+<a name="typeNotIn(com.exedio.cope.Type, com.exedio.cope.Type)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>typeNotIn</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</a>
+public&nbsp;<a href="../../../com/exedio/cope/InstanceOfCondition.html" title="class in com.exedio.cope">InstanceOfCondition</a>&lt;<a href="../../../com/exedio/cope/BindItemFunction.html" title="type parameter in BindItemFunction">E</a>&gt;&nbsp;typeNotIn(<a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;? extends <a href="../../../com/exedio/cope/BindItemFunction.html" title="type parameter in BindItemFunction">E</a>&gt;&nbsp;type1,
+                                          <a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;? extends <a href="../../../com/exedio/cope/BindItemFunction.html" title="type parameter in BindItemFunction">E</a>&gt;&nbsp;type2)</pre>
+<div class="block"><span class="strong">Deprecated.</span>&nbsp;</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../com/exedio/cope/ItemFunction.html#typeNotIn(com.exedio.cope.Type,%20com.exedio.cope.Type)">typeNotIn</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/exedio/cope/ItemFunction.html" title="interface in com.exedio.cope">ItemFunction</a>&lt;<a href="../../../com/exedio/cope/BindItemFunction.html" title="type parameter in BindItemFunction">E</a> extends <a href="../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&gt;</code></dd>
+</dl>
+</li>
+</ul>
+<a name="typeNotIn(com.exedio.cope.Type, com.exedio.cope.Type, com.exedio.cope.Type)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>typeNotIn</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</a>
+public&nbsp;<a href="../../../com/exedio/cope/InstanceOfCondition.html" title="class in com.exedio.cope">InstanceOfCondition</a>&lt;<a href="../../../com/exedio/cope/BindItemFunction.html" title="type parameter in BindItemFunction">E</a>&gt;&nbsp;typeNotIn(<a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;? extends <a href="../../../com/exedio/cope/BindItemFunction.html" title="type parameter in BindItemFunction">E</a>&gt;&nbsp;type1,
+                                          <a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;? extends <a href="../../../com/exedio/cope/BindItemFunction.html" title="type parameter in BindItemFunction">E</a>&gt;&nbsp;type2,
+                                          <a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;? extends <a href="../../../com/exedio/cope/BindItemFunction.html" title="type parameter in BindItemFunction">E</a>&gt;&nbsp;type3)</pre>
+<div class="block"><span class="strong">Deprecated.</span>&nbsp;</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../com/exedio/cope/ItemFunction.html#typeNotIn(com.exedio.cope.Type,%20com.exedio.cope.Type,%20com.exedio.cope.Type)">typeNotIn</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/exedio/cope/ItemFunction.html" title="interface in com.exedio.cope">ItemFunction</a>&lt;<a href="../../../com/exedio/cope/BindItemFunction.html" title="type parameter in BindItemFunction">E</a> extends <a href="../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&gt;</code></dd>
+</dl>
+</li>
+</ul>
+<a name="typeNotIn(com.exedio.cope.Type, com.exedio.cope.Type, com.exedio.cope.Type, com.exedio.cope.Type)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>typeNotIn</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</a>
+public&nbsp;<a href="../../../com/exedio/cope/InstanceOfCondition.html" title="class in com.exedio.cope">InstanceOfCondition</a>&lt;<a href="../../../com/exedio/cope/BindItemFunction.html" title="type parameter in BindItemFunction">E</a>&gt;&nbsp;typeNotIn(<a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;? extends <a href="../../../com/exedio/cope/BindItemFunction.html" title="type parameter in BindItemFunction">E</a>&gt;&nbsp;type1,
+                                          <a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;? extends <a href="../../../com/exedio/cope/BindItemFunction.html" title="type parameter in BindItemFunction">E</a>&gt;&nbsp;type2,
+                                          <a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;? extends <a href="../../../com/exedio/cope/BindItemFunction.html" title="type parameter in BindItemFunction">E</a>&gt;&nbsp;type3,
+                                          <a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;<a href="../../../com/exedio/cope/BindItemFunction.html" title="type parameter in BindItemFunction">E</a>&gt;&nbsp;type4)</pre>
+<div class="block"><span class="strong">Deprecated.</span>&nbsp;</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../com/exedio/cope/ItemFunction.html#typeNotIn(com.exedio.cope.Type,%20com.exedio.cope.Type,%20com.exedio.cope.Type,%20com.exedio.cope.Type)">typeNotIn</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/exedio/cope/ItemFunction.html" title="interface in com.exedio.cope">ItemFunction</a>&lt;<a href="../../../com/exedio/cope/BindItemFunction.html" title="type parameter in BindItemFunction">E</a> extends <a href="../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&gt;</code></dd>
+</dl>
+</li>
+</ul>
+<a name="typeNotIn(com.exedio.cope.Type[])">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>typeNotIn</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</a>
+public&nbsp;<a href="../../../com/exedio/cope/InstanceOfCondition.html" title="class in com.exedio.cope">InstanceOfCondition</a>&lt;<a href="../../../com/exedio/cope/BindItemFunction.html" title="type parameter in BindItemFunction">E</a>&gt;&nbsp;typeNotIn(<a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>[]&nbsp;types)</pre>
+<div class="block"><span class="strong">Deprecated.</span>&nbsp;</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../com/exedio/cope/ItemFunction.html#typeNotIn(com.exedio.cope.Type[])">typeNotIn</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/exedio/cope/ItemFunction.html" title="interface in com.exedio.cope">ItemFunction</a>&lt;<a href="../../../com/exedio/cope/BindItemFunction.html" title="type parameter in BindItemFunction">E</a> extends <a href="../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&gt;</code></dd>
+</dl>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<!-- ========= END OF CLASS DATA ========= -->
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<div class="bottomNav"><a name="navbar_bottom">
+<!--   -->
+</a><a href="#skip-navbar_bottom" title="Skip navigation links"></a><a name="navbar_bottom_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../help-doc.html">Help</a></li>
+</ul>
+<div class="aboutLanguage"><em>exedio persistence</em></div>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../com/exedio/cope/BindFunction.html" title="class in com.exedio.cope"><span class="strong">Prev Class</span></a></li>
+<li><a href="../../../com/exedio/cope/BindNumberFunction.html" title="class in com.exedio.cope"><span class="strong">Next Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../index.html?com/exedio/cope/BindItemFunction.html" target="_top">Frames</a></li>
+<li><a href="BindItemFunction.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_bottom">
+<li><a href="../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_bottom");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#constructor_summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#constructor_detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_bottom">
+<!--   -->
+</a></div>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+<p class="legalCopy"><small>Maintained by <a href="http://www.exedio.com/" target="_top">exedio</a> Gesellschaft f&uuml;r Softwareentwicklung mbH.</small></p>
+</body>
+</html>
