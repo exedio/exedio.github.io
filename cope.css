@@ -15,6 +15,20 @@
 	background: url('top.png') no-repeat 0% 90%;
 }
 
+#buildstatus
+{
+	position: absolute;
+	display: block;
+	bottom: -40px;
+	right: 0;
+	width: 100px;
+	height:30px;
+	z-index: 10;
+	text-indent: -5000px;
+	overflow: hidden;
+	background: url('https://travis-ci.org/exedio/persistence.svg?branch=master') no-repeat 0% 90%;
+}
+
 a.validhtml
 {
 	display:block;

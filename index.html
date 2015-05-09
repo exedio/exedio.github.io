@@ -14,6 +14,7 @@
 		<a id="forkme_banner" href="https://github.com/exedio">View on GitHub</a>
 		<h1 id="project_title">exedio persistence</h1>
 		<h2 id="project_tagline">Persistence Framework for Java.</h2>
+		<a id="buildstatus" href="https://travis-ci.org/exedio/persistence">Build Status</a>
 	</header>
 </div>
 <!-- MAIN CONTENT -->
@@ -25,6 +26,13 @@
 			exedio persistence provides an easy database access layer for java applications.
 			It makes development faster compared to other persistence frameworks.
 			<ul>
+				<li>
+					Supports
+					<a href="http://www.mysql.com/">MySQL</a>,
+					<a href="http://www.postgresql.org/">PostgreSQL</a>,
+					Oracle, and
+					<a href="http://www.hsqldb.org/">HSQLDB</a>.
+				</li>
 				<li>No XML files need to be written, anything is easily specified within your java source code.</li>
 				<li>No setting up of database tables - the framework does that for you.</li>
 				<li>Transparent loading and writing of persistent objects.</li>
@@ -87,12 +95,13 @@
 				</li>
 				<li>
 					<a href="testprotocol.html">Test Environments</a>
-					lists the enviroments exedio persistence is tested on.
-					It currently supports
-					<a href="http://www.hsqldb.org/">HSQLDB</a>,
-					<a href="http://www.mysql.com/">MySQL</a>,
-					Oracle and
-					<a href="http://www.postgresql.org/">PostgreSQL</a>.
+					lists the enviroments exedio persistence is tested on
+					by exedio's own
+					<a href="http://en.wikipedia.org/wiki/Continuous_integration">Continuous Integration</a>
+					server.
+					Additionally, a few enviroments are tested on
+					<a href="https://travis-ci.org/exedio">Travis CI</a>
+					as well.
 				</li>
 			</ul>
 		</div>
@@ -102,22 +111,6 @@
 			<a href="https://github.com/exedio">github</a>.
 			The demo application is available at
 			<a href="http://sourceforge.net/projects/cope/files/copedemo/">sourceforge</a>.
-		</div>
-		<div>
-			The development process of exedio persistence is strongly influenced by the ideas of
-			<a href="http://en.wikipedia.org/wiki/Extreme_Programming">Extreme&nbsp;Programming</a>.
-			It heavily relies on
-			<a href="http://en.wikipedia.org/wiki/Continuous_integration">Automated Continuous Integration</a>.
-		</div>
-		<div>
-			Therefore, releases do not
-			carry any explicit version number.
-			Instead each release is named after the build number assigned by the
-			<a href="http://jenkins-ci.org/">Jenkins</a>
-			server that built this release.
-			Each build is subject to extensive automated unit
-			testing on all supported databases
-			(see <a href="testprotocol.html">Test&nbsp;Environments</a>).
 		</div>
 	</section>
 </div>
