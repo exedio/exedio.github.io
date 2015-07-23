@@ -26,7 +26,7 @@
 	z-index: 10;
 	text-indent: -5000px;
 	overflow: hidden;
-	background: url('https://travis-ci.org/exedio/persistence.svg?branch=master') no-repeat 0% 90%;
+	background: url('https://api.travis-ci.org/exedio/persistence.svg?branch=master') no-repeat 0% 90%;
 }
 
 a.validhtml
