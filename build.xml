@@ -57,6 +57,8 @@
 			<group title="Database Schema Management Facility" packages="com.exedio.dsmf:com.exedio.dsmf.*" />
 			<group title="Web Framework" packages="com.exedio.cops" />
 			<group title="Utilities" packages="com.exedio.cope.util" />
+			<arg value="-Xmaxerrs"  /><arg value="10000" />
+			<arg value="-Xmaxwarns" /><arg value="10000" />
 		</javadoc>
 	</target>
 	
