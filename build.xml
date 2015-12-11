@@ -21,6 +21,11 @@
 		<unzip src="lib/exedio-cope-util-src.zip" dest="build/src" />
 		<delete file="build/src/com/exedio/cops/FileServlet.java" />
 
+		<condition property="api.doclint" value="-Xdoclint:all,-missing" else="-nosince"> <!-- nosince is just a dummy -->
+			<available classname="java.util.Optional" /> <!-- available since JDK 1.8 -->
+		</condition>
+		<echo message="doclint //${api.doclint}//" />
+
 		<delete dir="api" />
 		<javadoc
 				destdir="api"
@@ -57,6 +62,7 @@
 			<group title="Database Schema Management Facility" packages="com.exedio.dsmf:com.exedio.dsmf.*" />
 			<group title="Web Framework" packages="com.exedio.cops" />
 			<group title="Utilities" packages="com.exedio.cope.util" />
+			<arg value="${api.doclint}" />
 			<arg value="-Xmaxerrs"  /><arg value="10000" />
 			<arg value="-Xmaxwarns" /><arg value="10000" />
 		</javadoc>
