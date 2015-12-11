@@ -88,19 +88,19 @@ List&lt;Customer&gt; allCustomers = TYPE.<a href="api/com/exedio/cope/Type.html#
 			Lets search for the customer with a certain email address:
 		</p>
 <pre>
-TYPE.<a href="api/com/exedio/cope/Type.html#search(com.exedio.cope.Condition)">search</a>(email.<a href="api/com/exedio/cope/Function.html#equal-E-">equal</a>("search@exedio.com"));
+TYPE.<a href="api/com/exedio/cope/Type.html#search-com.exedio.cope.Condition-">search</a>(email.<a href="api/com/exedio/cope/Function.html#equal-E-">equal</a>("search@exedio.com"));
 </pre>
 		<p>
 			For a "like condition" write:
 		</p>
 <pre>
-TYPE.<a href="api/com/exedio/cope/Type.html#search(com.exedio.cope.Condition)">search</a>(email.<a href="api/com/exedio/cope/StringFunction.html#like-java.lang.String-"><b>like</b></a>("search@exedio.<b>%</b>"));
+TYPE.<a href="api/com/exedio/cope/Type.html#search-com.exedio.cope.Condition-">search</a>(email.<a href="api/com/exedio/cope/StringFunction.html#like-java.lang.String-"><b>like</b></a>("search@exedio.<b>%</b>"));
 </pre>
 		<p>
 			There is a convenience method, that lets you write equivalently but shorter:
 		</p>
 <pre>
-TYPE.<a href="api/com/exedio/cope/Type.html#search(com.exedio.cope.Condition)">search</a>(email.<a href="api/com/exedio/cope/StringFunction.html#startsWith-java.lang.String-"><b>startsWith</b></a>("search@exedio."));
+TYPE.<a href="api/com/exedio/cope/Type.html#search-com.exedio.cope.Condition-">search</a>(email.<a href="api/com/exedio/cope/StringFunction.html#startsWith-java.lang.String-"><b>startsWith</b></a>("search@exedio."));
 </pre>
 		<p>
 			Of course searching works for integer fields as well.
@@ -108,7 +108,7 @@ TYPE.<a href="api/com/exedio/cope/Type.html#search(com.exedio.cope.Condition)">s
 			that have logged in at least 8 times:
 		</p>
 <pre>
-TYPE.<a href="api/com/exedio/cope/Type.html#search(com.exedio.cope.Condition)">search</a>(loginCounter.<a href="api/com/exedio/cope/Function.html#greaterOrEqual-E-">greaterOrEqual</a>(8));
+TYPE.<a href="api/com/exedio/cope/Type.html#search-com.exedio.cope.Condition-">search</a>(loginCounter.<a href="api/com/exedio/cope/Function.html#greaterOrEqual-E-">greaterOrEqual</a>(8));
 </pre>
 		<p>
 			To demonstrate composite conditions,
@@ -116,25 +116,25 @@ TYPE.<a href="api/com/exedio/cope/Type.html#search(com.exedio.cope.Condition)">s
 			that have logged in at least 8 times, but at most 12 times:
 		</p>
 <pre>
-TYPE.<a href="api/com/exedio/cope/Type.html#search(com.exedio.cope.Condition)">search</a>(loginCounter.<a href="api/com/exedio/cope/Function.html#greaterOrEqual(E)">greaterOrEqual</a>(8).<a href="api/com/exedio/cope/Condition.html#and(com.exedio.cope.Condition)"><b>and</b></a>(loginCounter.<a href="api/com/exedio/cope/Function.html#lessOrEqual-E-">lessOrEqual</a>(12)));
+TYPE.<a href="api/com/exedio/cope/Type.html#search-com.exedio.cope.Condition-">search</a>(loginCounter.<a href="api/com/exedio/cope/Function.html#greaterOrEqual-E-">greaterOrEqual</a>(8).<a href="api/com/exedio/cope/Condition.html#and-com.exedio.cope.Condition-"><b>and</b></a>(loginCounter.<a href="api/com/exedio/cope/Function.html#lessOrEqual-E-">lessOrEqual</a>(12)));
 </pre>
 		<p>
 			which is equivalent to:
 		</p>
 <pre>
-TYPE.<a href="api/com/exedio/cope/Type.html#search(com.exedio.cope.Condition)">search</a>(loginCounter.<a href="api/com/exedio/cope/Function.html#between-E, E-">between</a>(8, 12));
+TYPE.<a href="api/com/exedio/cope/Type.html#search-com.exedio.cope.Condition-">search</a>(loginCounter.<a href="api/com/exedio/cope/Function.html#between-E-E-">between</a>(8, 12));
 </pre>
 		<p>
 			Of course there is an OR-condition as well:
 		</p>
 <pre>
-TYPE.<a href="api/com/exedio/cope/Type.html#search(com.exedio.cope.Condition)">search</a>(email.<a href="api/com/exedio/cope/Function.html#equal(E)">equal</a>("search@exedio.com").<a href="api/com/exedio/cope/Condition.html#or(com.exedio.cope.Condition)"><b>or</b></a>(email.<a href="api/com/exedio/cope/Function.html#equal-E-">equal</a>("search@exedio.de")));
+TYPE.<a href="api/com/exedio/cope/Type.html#search-com.exedio.cope.Condition-">search</a>(email.<a href="api/com/exedio/cope/Function.html#equal-E-">equal</a>("search@exedio.com").<a href="api/com/exedio/cope/Condition.html#or-com.exedio.cope.Condition-"><b>or</b></a>(email.<a href="api/com/exedio/cope/Function.html#equal-E-">equal</a>("search@exedio.de")));
 </pre>
 		<p>
 			which is equivalent to:
 		</p>
 <pre>
-TYPE.<a href="api/com/exedio/cope/Type.html#search(com.exedio.cope.Condition)">search</a>(email.<a href="api/com/exedio/cope/Function.html#in-E...-">in</a>("search@exedio.com", "search@exedio.de"));
+TYPE.<a href="api/com/exedio/cope/Type.html#search-com.exedio.cope.Condition-">search</a>(email.<a href="api/com/exedio/cope/Function.html#in-E...-">in</a>("search@exedio.com", "search@exedio.de"));
 </pre>
 		<p>
 			In contrast to the queries above,
@@ -157,7 +157,7 @@ TYPE.<a href="api/com/exedio/cope/Type.html#search-com.exedio.cope.Condition-">s
 			but now sorted by their email adresses:
 		</p>
 <pre>
-TYPE.<a href="api/com/exedio/cope/Type.html#search(com.exedio.cope.Condition, com.exedio.cope.Function, boolean)">search</a>(loginCounter.<a href="api/com/exedio/cope/Function.html#greaterOrEqual-E-">greaterOrEqual</a>(8), <b>email, true</b>);
+TYPE.<a href="api/com/exedio/cope/Type.html#search-com.exedio.cope.Condition-com.exedio.cope.Function-boolean-">search</a>(loginCounter.<a href="api/com/exedio/cope/Function.html#greaterOrEqual-E-">greaterOrEqual</a>(8), <b>email, true</b>);
 </pre>
 		<p>
 			The third parameter specifies accending order.
