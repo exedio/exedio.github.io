@@ -46,7 +46,7 @@
 			then put the following into class <tt>Customer</tt>:
 		</p>
 <pre>
-static final <a href="api/com/exedio/cope/pattern/MD5Hash.html">MD5Hash</a> password = new <a href="api/com/exedio/cope/pattern/MD5Hash.html#MD5Hash()">MD5Hash</a>();
+static final <a href="api/com/exedio/cope/pattern/MD5Hash.html">MD5Hash</a> password = new <a href="api/com/exedio/cope/pattern/MD5Hash.html#MD5Hash--">MD5Hash</a>();
 </pre>
 		<p>
 			The instrumentor will generate a method for checking the password
@@ -71,7 +71,7 @@ boolean checkPassword(String password)
 		</p>
 <pre>
 static final <a href="api/com/exedio/cope/pattern/ListField.html">ListField</a>&lt;String&gt; emails =
-    <a href="api/com/exedio/cope/pattern/ListField.html">ListField</a>.<a href="api/com/exedio/cope/pattern/ListField.html#newList(com.exedio.cope.FunctionField)">newList</a>(new StringField());
+    <a href="api/com/exedio/cope/pattern/ListField.html">ListField</a>.<a href="api/com/exedio/cope/pattern/ListField.html#newList-com.exedio.cope.FunctionField-">newList</a>(new StringField());
 </pre>
 		<p>
 			Internally this is implemented by an extra table in the database,
@@ -81,7 +81,7 @@ static final <a href="api/com/exedio/cope/pattern/ListField.html">ListField</a>&
 		</p>
 <pre>
 static final <a href="api/com/exedio/cope/pattern/LimitedListField.html">LimitedListField</a>&lt;String&gt; emails =
-    <a href="api/com/exedio/cope/pattern/LimitedListField.html">LimitedListField</a>.<a href="api/com/exedio/cope/pattern/LimitedListField.html#newList(com.exedio.cope.FunctionField, int)">newList</a>(new StringField().<a href="api/com/exedio/cope/StringField.html#optional()">optional</a>(), 4);
+    <a href="api/com/exedio/cope/pattern/LimitedListField.html">LimitedListField</a>.<a href="api/com/exedio/cope/pattern/LimitedListField.html#newList-com.exedio.cope.FunctionField-int-">newList</a>(new StringField().<a href="api/com/exedio/cope/StringField.html#optional--">optional</a>(), 4);
 </pre>
 		<p>
 			Internally there are 4 string fields used for storing the elements of the list.
@@ -96,7 +96,7 @@ static final <a href="api/com/exedio/cope/pattern/LimitedListField.html">Limited
 		</p>
 <pre>
 static final <a href="api/com/exedio/cope/pattern/MapField.html">MapField</a>&lt;Language,String&gt; description =
-    <a href="api/com/exedio/cope/pattern/MapField.html">MapField</a>.<a href="api/com/exedio/cope/pattern/MapField.html#newMap(com.exedio.cope.FunctionField, com.exedio.cope.FunctionField)">newMap</a>(newItemField(Language.class),
+    <a href="api/com/exedio/cope/pattern/MapField.html">MapField</a>.<a href="api/com/exedio/cope/pattern/MapField.html#newMap-com.exedio.cope.FunctionField-com.exedio.cope.FunctionField-">newMap</a>(newItemField(Language.class),
                         new StringField());
 </pre>
 		<p>
@@ -122,7 +122,7 @@ void setDescription(Language k, String description)
 static enum Language { DE, EN, PL; }
 
 static final <a href="api/com/exedio/cope/pattern/MapField.html">MapField</a>&lt;Language,String&gt; description =
-    <a href="api/com/exedio/cope/pattern/MapField.html">MapField</a>.<a href="api/com/exedio/cope/pattern/MapField.html#newMap(com.exedio.cope.FunctionField, com.exedio.cope.FunctionField)">newMap</a>(newEnumField(Language.class),
+    <a href="api/com/exedio/cope/pattern/MapField.html">MapField</a>.<a href="api/com/exedio/cope/pattern/MapField.html#newMap-com.exedio.cope.FunctionField-com.exedio.cope.FunctionField-">newMap</a>(newEnumField(Language.class),
                         new StringField());
 </pre>
 		<p>
@@ -135,8 +135,8 @@ static final <a href="api/com/exedio/cope/pattern/MapField.html">MapField</a>&lt
 static enum Language { DE, EN, PL; }
 
 static final <a href="api/com/exedio/cope/pattern/EnumMapField.html">EnumMapField</a>&lt;Language,String&gt; description =
-    <a href="api/com/exedio/cope/pattern/EnumMapField.html">EnumMapField</a>.<a href="api/com/exedio/cope/pattern/EnumMapField.html#newMap(java.lang.Class, com.exedio.cope.FunctionField)">newMap</a>(Language.class,
-                        new StringField().<a href="api/com/exedio/cope/StringField.html#optional()">optional</a>());
+    <a href="api/com/exedio/cope/pattern/EnumMapField.html">EnumMapField</a>.<a href="api/com/exedio/cope/pattern/EnumMapField.html#newMap-java.lang.Class-com.exedio.cope.FunctionField-">newMap</a>(Language.class,
+                        new StringField().<a href="api/com/exedio/cope/StringField.html#optional--">optional</a>());
 </pre>
 		<p>
 			Internally three string fields
@@ -154,7 +154,7 @@ static final <a href="api/com/exedio/cope/pattern/EnumMapField.html">EnumMapFiel
 			To define a <i>day field</i> within a type write:
 		</p>
 <pre>
-static final <a href="api/com/exedio/cope/DayField.html">DayField</a> dateOfBirth = new <a href="api/com/exedio/cope/DayField.html#DayField()">DayField</a>();
+static final <a href="api/com/exedio/cope/DayField.html">DayField</a> dateOfBirth = new <a href="api/com/exedio/cope/DayField.html#DayField--">DayField</a>();
 </pre>
 		<h3><a name="constraints">Check Constraints</a></h3>
 		<p>
@@ -166,9 +166,9 @@ static final <a href="api/com/exedio/cope/DayField.html">DayField</a> dateOfBirt
 class Customer extends Item
 {
    static final <a href="api/com/exedio/cope/StringField.html">StringField</a> email =
-       new <a href="api/com/exedio/cope/StringField.html#StringField()">StringField</a>().<b><a href="api/com/exedio/cope/StringField.html#lengthMax(int)">lengthMax</a>(40)</b>;
+       new <a href="api/com/exedio/cope/StringField.html#StringField--">StringField</a>().<b><a href="api/com/exedio/cope/StringField.html#lengthMax-int-">lengthMax</a>(40)</b>;
    static final <a href="api/com/exedio/cope/IntegerField.html">IntegerField</a> loginCounter =
-       new <a href="api/com/exedio/cope/IntegerField.html#IntegerField()">IntegerField</a>().<b><a href="api/com/exedio/cope/IntegerField.html#min(int)">min</a>(0)</b>;
+       new <a href="api/com/exedio/cope/IntegerField.html#IntegerField--">IntegerField</a>().<b><a href="api/com/exedio/cope/IntegerField.html#min-int-">min</a>(0)</b>;
 }
 </pre>
 		<p>
