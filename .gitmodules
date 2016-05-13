@@ -1,0 +1,12 @@
+[submodule "submodules/persistence"]
+	path = submodules/persistence
+	url = https://github.com/exedio/persistence.git
+[submodule "submodules/cops"]
+	path = submodules/cops
+	url = https://github.com/exedio/cops.git
+[submodule "submodules/util"]
+	path = submodules/util
+	url = https://github.com/exedio/util.git
+[submodule "submodules/servletutil"]
+	path = submodules/servletutil
+	url = https://github.com/exedio/servletutil.git

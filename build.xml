@@ -16,11 +16,6 @@
 
 	<target name="api">
 
-		<unzip src="lib/exedio-cope-src.zip" dest="build/src" />
-		<unzip src="lib/exedio-cops-src.zip" dest="build/src" />
-		<unzip src="lib/exedio-cope-util-src.zip" dest="build/src" />
-		<delete file="build/src/com/exedio/cops/FileServlet.java" />
-
 		<condition property="api.doclint" value="-Xdoclint:all,-missing" else="-nosince"> <!-- nosince is just a dummy -->
 			<available classname="java.util.Optional" /> <!-- available since JDK 1.8 -->
 		</condition>
@@ -45,23 +40,30 @@
 			<bottom><![CDATA[Maintained by <a href="https://www.exedio.com/" target="_top">exedio</a> Gesellschaft f&uuml;r Softwareentwicklung mbH.]]></bottom>
 			<link href="${api.link.jdk}"   packagelistLoc="package-list/jdk"   offline="true" />
 			<link href="${api.link.j2ee}"  packagelistLoc="package-list/j2ee"  offline="true" />
-			<fileset file="build/src" includes="**/*.java" />
+			<fileset dir="submodules">
+				<include name="servletutil/src/**/*.java" />
+				<include name="persistence/dsmf/src/**/*.java" />
+				<include name="persistence/runtime/src/**/*.java" />
+				<include name="persistence/runtime/patternsrc/**/*.java" />
+				<include name="persistence/runtime/servletsrc/**/*.java" />
+				<include name="persistence/runtime/junitsrc/**/*.java" />
+				<include name="persistence/instrument/annosrc/**/*.java" />
+				<include name="cops/src/**/*.java" />
+				<include name="util/src/**/*.java" />
+			</fileset>
 			<classpath>
-				<pathelement location="lib/trove.jar" />
-				<pathelement location="lib/junit.jar" />
-				<pathelement location="lib/slf4j-api.jar" />
-				<pathelement location="lib/servlet-api.jar" />
-				<pathelement location="lib/junit.jar" />
-				<pathelement location="lib/exedio-cope-instrument-annotations.jar" />
-				<pathelement location="lib/exedio-cope-servletutil.jar" />
-				<pathelement location="lib/findbugs-annotations.jar" />
-				<pathelement location="${ant.core.lib}" />
+				<pathelement location="submodules/persistence/lib/trove.jar" />
+				<pathelement location="submodules/persistence/lib/junit.jar" />
+				<pathelement location="submodules/persistence/lib/slf4j-api.jar" />
+				<pathelement location="submodules/persistence/lib/servlet-api.jar" />
+				<pathelement location="submodules/persistence/lib/junit.jar" />
+				<pathelement location="submodules/persistence/lib/findbugs-annotations.jar" />
 			</classpath>
 			<group title="Persistence" packages="com.exedio.cope:com.exedio.cope.*" />
 			<group title="Instrumentor" packages="com.exedio.cope.instrument:com.exedio.cope.misc.instrument" />
 			<group title="Database Schema Management Facility" packages="com.exedio.dsmf:com.exedio.dsmf.*" />
 			<group title="Web Framework" packages="com.exedio.cops" />
-			<group title="Utilities" packages="com.exedio.cope.util" />
+			<group title="Utilities" packages="com.exedio.cope.util,com.exedio.cope.servletutil" />
 			<arg value="${api.doclint}" />
 			<arg value="-Xmaxerrs"  /><arg value="10000" />
 			<arg value="-Xmaxwarns" /><arg value="10000" />

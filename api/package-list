@@ -9,6 +9,7 @@ com.exedio.cope.reflect
 com.exedio.cope.revstat
 com.exedio.cope.sampler
 com.exedio.cope.search
+com.exedio.cope.servletutil
 com.exedio.cope.util
 com.exedio.cops
 com.exedio.dsmf
