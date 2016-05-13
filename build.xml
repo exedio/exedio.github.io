@@ -68,32 +68,7 @@
 		</javadoc>
 	</target>
 
-	<target name="testprotocol">
-		<mkdir dir="build" />
-		<java classname="com.exedio.cope.console.EnvironmentCop" taskname="testprotocol"
-				fork="yes" failonerror="yes">
-			<classpath>
-				<pathelement location="lib/exedio-cope.jar" />
-				<pathelement location="lib/exedio-cope-console.jar" />
-				<pathelement location="lib/trove.jar" />
-				<pathelement location="lib/exedio-cops.jar" />
-				<pathelement location="lib/servlet-api.jar" />
-				<pathelement location="lib/slf4j-api.jar" />
-			</classpath>
-			<arg value="build/testprotocol.html"/>
-			<assertions><enable/></assertions>
-		</java>
-		<LoadFile srcFile="build/testprotocol.html" property="testprotocol.html" />
-		<copy file="testprotocol-template.html"
-				tofile="testprotocol.html"
-				overwrite="true">
-			<filterset>
-				<filter token="TABLE" value="${testprotocol.html}" />
-			</filterset>
-		</copy>
-	</target>
-
-	<target name="build" depends="api, testprotocol" />
+	<target name="build" depends="api" />
 	<target name="all" depends="build" />
 
 	<target name="jenkins" depends="all" />

@@ -18,8 +18,10 @@
 				<exclude name="bsh-core.jar" />
 				<exclude name="trove-src.jar" />
 				<exclude name="exedio-cope-servletutil-src.zip" />
+				<exclude name="exedio-cope-jar.jar" />
 				<exclude name="exedio-cope-instrument-jar.jar" />
 				<exclude name="exedio-cope-junit-jar.jar" />
+				<exclude name="exedio-cops-jar.jar" />
 				<exclude name="servlet-api-source.jar" />
 				<exclude name="cojen-jar.jar" />
 				<exclude name="findbugs-dist.tar.gz" />
