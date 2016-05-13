@@ -4,16 +4,16 @@
 
 	<property file="local.properties" />
 	<property file="project.properties" />
-	
+
 	<taskdef name="LoadFile" classname="org.apache.tools.ant.taskdefs.LoadFile" />
-	
+
 	<target name="clean">
 		<delete dir="build" />
 		<delete dir="home/api" /><!-- not created anymore -->
 		<delete dir="home/lib" /><!-- not created anymore -->
 		<delete dir="home/testprotocol.html" /><!-- not created anymore -->
 	</target>
-	
+
 	<target name="api">
 
 		<unzip src="lib/exedio-cope-src.zip" dest="build/src" />
@@ -67,7 +67,7 @@
 			<arg value="-Xmaxwarns" /><arg value="10000" />
 		</javadoc>
 	</target>
-	
+
 	<target name="testprotocol">
 		<mkdir dir="build" />
 		<java classname="com.exedio.cope.console.EnvironmentCop" taskname="testprotocol"
@@ -92,10 +92,10 @@
 			</filterset>
 		</copy>
 	</target>
-	
+
 	<target name="build" depends="api, testprotocol" />
 	<target name="all" depends="build" />
-	
+
 	<target name="jenkins" depends="all" />
 
 </project>

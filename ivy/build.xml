@@ -2,7 +2,7 @@
 <project name="ivy" default="copy">
 	<import file="common.xml" />
 	<target name="copy" depends="resolve">
-		
+
 		<delete dir="../lib">
 			<include name="*" />
 		</delete>
@@ -25,6 +25,6 @@
 				<exclude name="findbugs-dist.tar.gz" />
 			</fileset>
 		</copy>
-		
+
 	</target>
 </project>
