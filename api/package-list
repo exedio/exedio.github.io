@@ -3,7 +3,6 @@ com.exedio.cope.instrument
 com.exedio.cope.junit
 com.exedio.cope.misc
 com.exedio.cope.misc.instrument
-com.exedio.cope.mxsampler
 com.exedio.cope.pattern
 com.exedio.cope.reflect
 com.exedio.cope.revstat

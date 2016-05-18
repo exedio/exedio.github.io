@@ -45,6 +45,7 @@
 				<include name="persistence/dsmf/src/**/*.java" />
 				<include name="persistence/runtime/src/**/*.java" />
 				<include name="persistence/runtime/patternsrc/**/*.java" />
+				<exclude name="persistence/runtime/patternsrc/com/exedio/cope/mxsampler/**/*.java" />
 				<include name="persistence/runtime/servletsrc/**/*.java" />
 				<include name="persistence/runtime/junitsrc/**/*.java" />
 				<include name="persistence/instrument/annosrc/**/*.java" />
