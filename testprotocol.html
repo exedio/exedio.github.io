@@ -101,7 +101,7 @@
 			</tr>
 			<tr>
 				<td class="text">mysql55</td>
-				<td class="text" rowspan="20">MySQL <small>(20x)</small></td>
+				<td class="text" rowspan="27">MySQL <small>(27x)</small></td>
 				<td class="text" rowspan="9">5.5.47-0+deb8u1 <small>(9x)</small></td>
 				<td class="text" rowspan="18">MySQL-AB JDBC Driver <small>(18x)</small></td>
 				<td class="text" rowspan="18">mysql-connector-java-5.1.15 ( Revision: ${bzr.revision-id} )</td>
@@ -185,6 +185,37 @@
 			<tr>
 				<td class="text">mysql56maria-seq</td>
 				<td class="text">schema.primaryKeyGenerator=sequence<br></td>
+			</tr>
+			<tr>
+				<td class="text">mysql57</td>
+				<td class="text" rowspan="7">5.7.12-0ubuntu1.1 <small>(7x)</small></td>
+				<td class="text" rowspan="7">MySQL-AB JDBC Driver</td>
+				<td class="text" rowspan="7">mysql-connector-java-5.1.15 ( Revision: ${bzr.revision-id} )</td>
+				<td class="text"></td>
+			</tr>
+			<tr>
+				<td class="text">mysql57-batchSeq</td>
+				<td class="text">schema.primaryKeyGenerator=batchedSequence<br></td>
+			</tr>
+			<tr>
+				<td class="text">mysql57-noPrep</td>
+				<td class="text">disableSupport.preparedStatements=true<br></td>
+			</tr>
+			<tr>
+				<td class="text">mysql57-noStamp</td>
+				<td class="text">cache.stamps=false<br></td>
+			</tr>
+			<tr>
+				<td class="text">mysql57-noStamp-seq</td>
+				<td class="text">cache.stamps=false<br>schema.primaryKeyGenerator=sequence<br></td>
+			</tr>
+			<tr>
+				<td class="text">mysql57-seq</td>
+				<td class="text">schema.primaryKeyGenerator=sequence<br></td>
+			</tr>
+			<tr>
+				<td class="text">mysql57-unique</td>
+				<td class="text">disableSupport.uniqueViolation=true<br></td>
 			</tr>
 			<tr>
 				<td class="text">oracle</td>
