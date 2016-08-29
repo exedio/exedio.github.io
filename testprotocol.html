@@ -52,9 +52,9 @@
 		</p>
 		<table>
 			<tr>
-				<th rowspan="2">Environment</th>
 				<th colspan="2">DBMS</th>
 				<th colspan="2">JDBC driver</th>
+				<th rowspan="2">Environment</th>
 				<th rowspan="2"><a href="api/com/exedio/cope/ConnectProperties.html">Connect Properties</a></th>
 			</tr>
 			<tr>
@@ -64,190 +64,211 @@
 				<th><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/DatabaseMetaData.html#getDriverVersion--">Version</a> (<a href="https://docs.oracle.com/javase/8/docs/api/java/sql/DatabaseMetaData.html#getDriverMajorVersion--">i</a>.<a href="https://docs.oracle.com/javase/8/docs/api/java/sql/DatabaseMetaData.html#getDriverMinorVersion--">j</a>)</th>
 			</tr>
 			<tr>
-				<td class="text">hsqldb</td>
 				<td class="text" rowspan="8">HSQL Database Engine <small>(8x)</small></td>
 				<td class="text" rowspan="8">2.2.9</td>
 				<td class="text" rowspan="8">HSQL Database Engine Driver</td>
 				<td class="text" rowspan="8">2.2.9</td>
+				<td class="text">hy</td>
 				<td class="text">connectionPool.idleInitial=2<br>dataField.bufferSizeDefault=1000<br>dataField.bufferSizeLimit=2000<br></td>
 			</tr>
 			<tr>
-				<td class="text">hsqldb-batchSeq</td>
-				<td class="text">schema.primaryKeyGenerator=batchedSequence<br>schema.tableInNames=true<br></td>
-			</tr>
-			<tr>
-				<td class="text">hsqldb-extra</td>
+				<td class="text">hy-extra</td>
 				<td class="text">cache.item.limit=200<br>cache.query.limit=200<br>changeListeners.priority=1<br>changeListeners.prioritySet=true<br>changeListeners.queueCapacity=10<br>changeListeners.threads=2<br>changeListeners.threadsMax=3<br>connectionPool.idleLimit=200<br>dataField.bufferSizeDefault=1000<br>dataField.bufferSizeLimit=2000<br>dialect=hsqldb<br>disableSupport.emptyStrings=true<br>disableSupport.nativeDate=true<br>disableSupport.semicolon=true<br>disableSupport.uniqueViolation=true<br>media.rooturl=mediaroot<br>query.searchSizeLimit=160<br>revise.savepoint=true<br>schema.revision.table=whilex<br>schema.revision.unique=protectedx<br></td>
 			</tr>
 			<tr>
-				<td class="text">hsqldb-lower</td>
+				<td class="text">hy-low</td>
 				<td class="text">schema.mysql.lower_case_table_names=true<br></td>
 			</tr>
 			<tr>
-				<td class="text">hsqldb-lower-seq</td>
+				<td class="text">hy-low-sq</td>
 				<td class="text">schema.mysql.lower_case_table_names=true<br>schema.primaryKeyGenerator=sequence<br></td>
 			</tr>
 			<tr>
-				<td class="text">hsqldb-noPrep</td>
+				<td class="text">hy-nprep</td>
 				<td class="text">disableSupport.preparedStatements=true<br></td>
 			</tr>
 			<tr>
-				<td class="text">hsqldb-seq</td>
+				<td class="text">hy-sq</td>
 				<td class="text">schema.primaryKeyGenerator=sequence<br>schema.tableInNames=true<br></td>
 			</tr>
 			<tr>
-				<td class="text">hsqldb-zero</td>
+				<td class="text">hy-sqb</td>
+				<td class="text">schema.primaryKeyGenerator=batchedSequence<br>schema.tableInNames=true<br></td>
+			</tr>
+			<tr>
+				<td class="text">hy-zero</td>
 				<td class="text">cache.item.limit=0<br>cache.query.limit=0<br>connectionPool.idleLimit=0<br>dataField.bufferSizeDefault=1<br>dataField.bufferSizeLimit=2<br>media.offsetExpires=0<br></td>
 			</tr>
 			<tr>
-				<td class="text">mysql55</td>
-				<td class="text" rowspan="27">MySQL <small>(27x)</small></td>
+				<td class="text" rowspan="28">MySQL <small>(28x)</small></td>
 				<td class="text" rowspan="9">5.5.47-0+deb8u1 <small>(9x)</small></td>
 				<td class="text" rowspan="18">MySQL-AB JDBC Driver <small>(18x)</small></td>
 				<td class="text" rowspan="18">mysql-connector-java-5.1.15 ( Revision: ${bzr.revision-id} )</td>
+				<td class="text">my55</td>
 				<td class="text"></td>
 			</tr>
 			<tr>
-				<td class="text">mysql55-batchSeq</td>
-				<td class="text">schema.primaryKeyGenerator=batchedSequence<br></td>
-			</tr>
-			<tr>
-				<td class="text">mysql55-noPrep</td>
+				<td class="text">my55-nprep</td>
 				<td class="text">disableSupport.preparedStatements=true<br></td>
 			</tr>
 			<tr>
-				<td class="text">mysql55-noPrep-utf8mb3</td>
+				<td class="text">my55-nprep-utf8mb3</td>
 				<td class="text">disableSupport.preparedStatements=true<br>schema.mysql.utf8mb4=false<br></td>
 			</tr>
 			<tr>
-				<td class="text">mysql55-noStamp</td>
+				<td class="text">my55-nstmp</td>
 				<td class="text">cache.stamps=false<br></td>
 			</tr>
 			<tr>
-				<td class="text">mysql55-noStamp-seq</td>
+				<td class="text">my55-nstmp-sq</td>
 				<td class="text">cache.stamps=false<br>schema.primaryKeyGenerator=sequence<br></td>
 			</tr>
 			<tr>
-				<td class="text">mysql55-seq</td>
+				<td class="text">my55-sq</td>
 				<td class="text">schema.primaryKeyGenerator=sequence<br></td>
 			</tr>
 			<tr>
-				<td class="text">mysql55-unique</td>
+				<td class="text">my55-sqb</td>
+				<td class="text">schema.primaryKeyGenerator=batchedSequence<br></td>
+			</tr>
+			<tr>
+				<td class="text">my55-unique</td>
 				<td class="text">disableSupport.uniqueViolation=true<br></td>
 			</tr>
 			<tr>
-				<td class="text">mysql55-utf8mb3</td>
+				<td class="text">my55-utf8mb3</td>
 				<td class="text">schema.mysql.utf8mb4=false<br></td>
 			</tr>
 			<tr>
-				<td class="text">mysql56</td>
-				<td class="text" rowspan="11">5.6.30-0ubuntu0.14.04.1-log <small>(11x)</small></td>
+				<td class="text" rowspan="11">5.6.31-0ubuntu0.14.04.2-log <small>(11x)</small></td>
+				<td class="text">my56</td>
 				<td class="text"></td>
 			</tr>
 			<tr>
-				<td class="text">mysql56-batchSeq</td>
-				<td class="text">schema.primaryKeyGenerator=batchedSequence<br></td>
-			</tr>
-			<tr>
-				<td class="text">mysql56-noPrep</td>
+				<td class="text">my56-nprep</td>
 				<td class="text">disableSupport.preparedStatements=true<br></td>
 			</tr>
 			<tr>
-				<td class="text">mysql56-noPrep-utf8mb3</td>
+				<td class="text">my56-nprep-utf8mb3</td>
 				<td class="text">disableSupport.preparedStatements=true<br>schema.mysql.utf8mb4=false<br></td>
 			</tr>
 			<tr>
-				<td class="text">mysql56-noStamp</td>
+				<td class="text">my56-nstmp</td>
 				<td class="text">cache.stamps=false<br></td>
 			</tr>
 			<tr>
-				<td class="text">mysql56-noStamp-seq</td>
+				<td class="text">my56-nstmp-sq</td>
 				<td class="text">cache.stamps=false<br>schema.primaryKeyGenerator=sequence<br></td>
 			</tr>
 			<tr>
-				<td class="text">mysql56-seq</td>
+				<td class="text">my56-sq</td>
 				<td class="text">schema.primaryKeyGenerator=sequence<br></td>
 			</tr>
 			<tr>
-				<td class="text">mysql56-unique</td>
-				<td class="text">disableSupport.uniqueViolation=true<br></td>
+				<td class="text">my56-sqb</td>
+				<td class="text">schema.primaryKeyGenerator=batchedSequence<br></td>
 			</tr>
 			<tr>
-				<td class="text">mysql56-utf8mb3</td>
+				<td class="text">my56-unique</td>
+				<td class="text">disableSupport.uniqueViolation=true<br>schema.mysql.longConstraintNames=false<br></td>
+			</tr>
+			<tr>
+				<td class="text">my56-utf8mb3</td>
 				<td class="text">schema.mysql.utf8mb4=false<br></td>
 			</tr>
 			<tr>
-				<td class="text">mysql56maria-noPrep</td>
 				<td class="text" rowspan="2">MariaDB connector/J <small>(2x)</small></td>
 				<td class="text" rowspan="2">1.4.2</td>
+				<td class="text">my56m-nprep</td>
 				<td class="text">disableSupport.preparedStatements=true<br></td>
 			</tr>
 			<tr>
-				<td class="text">mysql56maria-seq</td>
+				<td class="text">my56m-sq</td>
 				<td class="text">schema.primaryKeyGenerator=sequence<br></td>
 			</tr>
 			<tr>
-				<td class="text">mysql57</td>
-				<td class="text" rowspan="7">5.7.12-0ubuntu1.1 <small>(7x)</small></td>
-				<td class="text" rowspan="7">MySQL-AB JDBC Driver</td>
-				<td class="text" rowspan="7">mysql-connector-java-5.1.15 ( Revision: ${bzr.revision-id} )</td>
+				<td class="text" rowspan="8">5.7.13-0ubuntu0.16.04.2 <small>(8x)</small></td>
+				<td class="text" rowspan="8">MySQL-AB JDBC Driver</td>
+				<td class="text" rowspan="8">mysql-connector-java-5.1.15 ( Revision: ${bzr.revision-id} )</td>
+				<td class="text">my57</td>
 				<td class="text"></td>
 			</tr>
 			<tr>
-				<td class="text">mysql57-batchSeq</td>
-				<td class="text">schema.primaryKeyGenerator=batchedSequence<br></td>
+				<td class="text">my57-compress</td>
+				<td class="text">schema.mysql.rowFormat=COMPRESSED<br></td>
 			</tr>
 			<tr>
-				<td class="text">mysql57-noPrep</td>
+				<td class="text">my57-nprep</td>
 				<td class="text">disableSupport.preparedStatements=true<br></td>
 			</tr>
 			<tr>
-				<td class="text">mysql57-noStamp</td>
+				<td class="text">my57-nstmp</td>
 				<td class="text">cache.stamps=false<br></td>
 			</tr>
 			<tr>
-				<td class="text">mysql57-noStamp-seq</td>
+				<td class="text">my57-nstmp-sq</td>
 				<td class="text">cache.stamps=false<br>schema.primaryKeyGenerator=sequence<br></td>
 			</tr>
 			<tr>
-				<td class="text">mysql57-seq</td>
+				<td class="text">my57-sq</td>
 				<td class="text">schema.primaryKeyGenerator=sequence<br></td>
 			</tr>
 			<tr>
-				<td class="text">mysql57-unique</td>
+				<td class="text">my57-sqb</td>
+				<td class="text">schema.primaryKeyGenerator=batchedSequence<br></td>
+			</tr>
+			<tr>
+				<td class="text">my57-unique</td>
 				<td class="text">disableSupport.uniqueViolation=true<br></td>
 			</tr>
 			<tr>
-				<td class="text">oracle</td>
 				<td class="text" rowspan="2">Oracle <small>(2x)</small></td>
 				<td class="text" rowspan="2">Oracle Database 11g Enterprise Edition Release 11.1.0.7.0 - 64bit Production
 With the Partitioning, OLAP, Data Mining and Real Application Testing options (11.1)</td>
 				<td class="text" rowspan="2">Oracle JDBC driver</td>
 				<td class="text" rowspan="2">11.1.0.7.0-Production</td>
+				<td class="text">ora</td>
 				<td class="text"></td>
 			</tr>
 			<tr>
-				<td class="text">oracle-seq</td>
+				<td class="text">ora-sq</td>
 				<td class="text">schema.primaryKeyGenerator=sequence<br></td>
 			</tr>
 			<tr>
-				<td class="text">postgresql</td>
-				<td class="text" rowspan="4">PostgreSQL <small>(4x)</small></td>
-				<td class="text" rowspan="4">9.3.11</td>
-				<td class="text" rowspan="4">PostgreSQL Native Driver</td>
-				<td class="text" rowspan="4">PostgreSQL 9.3 JDBC4.1 (build 1102)</td>
+				<td class="text" rowspan="8">PostgreSQL <small>(8x)</small></td>
+				<td class="text" rowspan="4">9.3.14 <small>(4x)</small></td>
+				<td class="text" rowspan="8">PostgreSQL Native Driver <small>(8x)</small></td>
+				<td class="text" rowspan="8">PostgreSQL 9.3 JDBC4.1 (build 1102)</td>
+				<td class="text">pg93</td>
 				<td class="text"></td>
 			</tr>
 			<tr>
-				<td class="text">postgresql-mysql</td>
+				<td class="text">pg93-mysql</td>
 				<td class="text">disableSupport.nativeDate=true<br></td>
 			</tr>
 			<tr>
-				<td class="text">postgresql-noPrep</td>
+				<td class="text">pg93-nprep</td>
 				<td class="text">disableSupport.preparedStatements=true<br></td>
 			</tr>
 			<tr>
-				<td class="text">postgresql-seq</td>
+				<td class="text">pg93-sq</td>
+				<td class="text">schema.primaryKeyGenerator=sequence<br></td>
+			</tr>
+			<tr>
+				<td class="text" rowspan="4">9.5.4 <small>(4x)</small></td>
+				<td class="text">pg95</td>
+				<td class="text"></td>
+			</tr>
+			<tr>
+				<td class="text">pg95-mysql</td>
+				<td class="text">disableSupport.nativeDate=true<br></td>
+			</tr>
+			<tr>
+				<td class="text">pg95-nprep</td>
+				<td class="text">disableSupport.preparedStatements=true<br></td>
+			</tr>
+			<tr>
+				<td class="text">pg95-sq</td>
 				<td class="text">schema.primaryKeyGenerator=sequence<br></td>
 			</tr>
 		</table>
