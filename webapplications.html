@@ -118,14 +118,14 @@ protected void doGet(
 			A nice solution for both problems is delegating the transaction handling into a
 			<a href="https://docs.oracle.com/javaee/1.3/api/javax/servlet/Filter.html">filter</a>.
 			Class
-			<a href="api/com/exedio/cope/util/CopeFilter.html">CopeFilter</a>
+			<a href="api/com/exedio/cope/misc/CopeFilter.html">CopeFilter</a>
 			provides such a filter.
 			It must be deployed in your <tt>web.xml</tt>:
 		</p>
 <pre>
 &lt;filter&gt;
    &lt;filter-name&gt;CopeFilter&lt;/filter-name&gt;
-   &lt;filter-class&gt;<a href="api/com/exedio/cope/util/CopeFilter.html">com.exedio.cope.util.CopeFilter</a>&lt;/filter-class&gt;
+   &lt;filter-class&gt;<a href="api/com/exedio/cope/misc/CopeFilter.html">com.exedio.cope.misc.CopeFilter</a>&lt;/filter-class&gt;
    &lt;init-param&gt;
       &lt;param-name&gt;model&lt;/param-name&gt;
       &lt;param-value&gt;<i>com.exedio.copedemo.Main</i>#model&lt;/param-value&gt;
