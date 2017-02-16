@@ -64,16 +64,16 @@
 				<th><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/DatabaseMetaData.html#getDriverVersion--">Version</a> (<a href="https://docs.oracle.com/javase/8/docs/api/java/sql/DatabaseMetaData.html#getDriverMajorVersion--">i</a>.<a href="https://docs.oracle.com/javase/8/docs/api/java/sql/DatabaseMetaData.html#getDriverMinorVersion--">j</a>)</th>
 			</tr>
 			<tr>
-				<td class="text" rowspan="8">HSQL Database Engine <small>(8x)</small></td>
-				<td class="text" rowspan="8">2.2.9</td>
-				<td class="text" rowspan="8">HSQL Database Engine Driver</td>
-				<td class="text" rowspan="8">2.2.9</td>
+				<td class="text" rowspan="9">HSQL Database Engine <small>(9x)</small></td>
+				<td class="text" rowspan="9">2.2.9</td>
+				<td class="text" rowspan="9">HSQL Database Engine Driver</td>
+				<td class="text" rowspan="9">2.2.9</td>
 				<td class="text">hy</td>
 				<td class="text">connectionPool.idleInitial=2<br>dataField.bufferSizeDefault=1000<br>dataField.bufferSizeLimit=2000<br></td>
 			</tr>
 			<tr>
 				<td class="text">hy-extra</td>
-				<td class="text">cache.item.limit=200<br>cache.query.limit=200<br>changeListeners.priority=1<br>changeListeners.prioritySet=true<br>changeListeners.queueCapacity=10<br>changeListeners.threads=2<br>changeListeners.threadsMax=3<br>connectionPool.idleLimit=200<br>dataField.bufferSizeDefault=1000<br>dataField.bufferSizeLimit=2000<br>dialect=hsqldb<br>disableSupport.emptyStrings=true<br>disableSupport.nativeDate=true<br>disableSupport.semicolon=true<br>disableSupport.uniqueViolation=true<br>media.rooturl=mediaroot<br>query.searchSizeLimit=160<br>revise.savepoint=true<br>schema.revision.table=whilex<br>schema.revision.unique=protectedx<br></td>
+				<td class="text">cache.item.limit=200<br>cache.query.limit=200<br>changeListeners.queueCapacity=10<br>changeListeners.threads.initial=2<br>changeListeners.threads.max=3<br>changeListeners.threads.priority.set=true<br>changeListeners.threads.priority.value=1<br>connectionPool.idleLimit=200<br>dataField.bufferSizeDefault=1000<br>dataField.bufferSizeLimit=2000<br>dialect=com.exedio.cope.HsqldbDialect<br>disableSupport.emptyStrings=true<br>disableSupport.nativeDate=true<br>disableSupport.semicolon=true<br>disableSupport.uniqueViolation=true<br>media.rooturl=mediaroot<br>query.searchSizeLimit=160<br>revise.savepoint=true<br>schema.revision.table=whilex<br>schema.revision.unique=protectedx<br></td>
 			</tr>
 			<tr>
 				<td class="text">hy-low</td>
@@ -86,6 +86,10 @@
 			<tr>
 				<td class="text">hy-nprep</td>
 				<td class="text">disableSupport.preparedStatements=true<br></td>
+			</tr>
+			<tr>
+				<td class="text">hy-nstmp</td>
+				<td class="text">cache.stamps=false<br></td>
 			</tr>
 			<tr>
 				<td class="text">hy-sq</td>
@@ -101,7 +105,7 @@
 			</tr>
 			<tr>
 				<td class="text" rowspan="28">MySQL <small>(28x)</small></td>
-				<td class="text" rowspan="9">5.5.47-0+deb8u1 <small>(9x)</small></td>
+				<td class="text" rowspan="9">5.5.54-0+deb8u1 <small>(9x)</small></td>
 				<td class="text" rowspan="18">MySQL-AB JDBC Driver <small>(18x)</small></td>
 				<td class="text" rowspan="18">mysql-connector-java-5.1.15 ( Revision: ${bzr.revision-id} )</td>
 				<td class="text">my55</td>
@@ -140,7 +144,7 @@
 				<td class="text">schema.mysql.utf8mb4=false<br></td>
 			</tr>
 			<tr>
-				<td class="text" rowspan="11">5.6.31-0ubuntu0.14.04.2-log <small>(11x)</small></td>
+				<td class="text" rowspan="11">5.6.33-0ubuntu0.14.04.1-log <small>(11x)</small></td>
 				<td class="text">my56</td>
 				<td class="text"></td>
 			</tr>
@@ -223,8 +227,7 @@
 			</tr>
 			<tr>
 				<td class="text" rowspan="2">Oracle <small>(2x)</small></td>
-				<td class="text" rowspan="2">Oracle Database 11g Enterprise Edition Release 11.1.0.7.0 - 64bit Production
-With the Partitioning, OLAP, Data Mining and Real Application Testing options (11.1)</td>
+				<td class="text" rowspan="2">Oracle Database 11g Release 11.2.0.1.0 - 64bit Production</td>
 				<td class="text" rowspan="2">Oracle JDBC driver</td>
 				<td class="text" rowspan="2">11.1.0.7.0-Production</td>
 				<td class="text">ora</td>
