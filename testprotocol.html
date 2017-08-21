@@ -64,10 +64,10 @@
 				<th><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/DatabaseMetaData.html#getDriverVersion--">Version</a> (<a href="https://docs.oracle.com/javase/8/docs/api/java/sql/DatabaseMetaData.html#getDriverMajorVersion--">i</a>.<a href="https://docs.oracle.com/javase/8/docs/api/java/sql/DatabaseMetaData.html#getDriverMinorVersion--">j</a>)</th>
 			</tr>
 			<tr>
-				<td class="text" rowspan="9">HSQL Database Engine <small>(9x)</small></td>
-				<td class="text" rowspan="9">2.2.9</td>
-				<td class="text" rowspan="9">HSQL Database Engine Driver</td>
-				<td class="text" rowspan="9">2.2.9</td>
+				<td class="text" rowspan="10">HSQL Database Engine <small>(10x)</small></td>
+				<td class="text" rowspan="10">2.2.9</td>
+				<td class="text" rowspan="10">HSQL Database Engine Driver</td>
+				<td class="text" rowspan="10">2.2.9</td>
 				<td class="text">hy</td>
 				<td class="text">connectionPool.idleInitial=2<br>dataField.bufferSizeDefault=1000<br>dataField.bufferSizeLimit=2000<br></td>
 			</tr>
@@ -100,6 +100,10 @@
 				<td class="text">schema.primaryKeyGenerator=batchedSequence<br>schema.tableInNames=true<br></td>
 			</tr>
 			<tr>
+				<td class="text">hy-vault</td>
+				<td class="text">dataField.bufferSizeDefault=1000<br>dataField.bufferSizeLimit=2000<br>dataField.vault=true<br>dataField.vault.isAppliedToAllFields=true<br></td>
+			</tr>
+			<tr>
 				<td class="text">hy-zero</td>
 				<td class="text">cache.item.limit=0<br>cache.query.limit=0<br>connectionPool.idleLimit=0<br>dataField.bufferSizeDefault=1<br>dataField.bufferSizeLimit=2<br>media.offsetExpires=0<br></td>
 			</tr>
@@ -112,12 +116,16 @@
 				<td class="text"></td>
 			</tr>
 			<tr>
+				<td class="text">my55-legacy</td>
+				<td class="text">schema.mysql.fullSequenceColumnName=false<br>schema.mysql.longConstraintNames=false<br>schema.mysql.smallIntegerTypes=false<br>schema.mysql.utf8mb4=false<br></td>
+			</tr>
+			<tr>
 				<td class="text">my55-nprep</td>
 				<td class="text">disableSupport.preparedStatements=true<br></td>
 			</tr>
 			<tr>
-				<td class="text">my55-nprep-utf8mb3</td>
-				<td class="text">disableSupport.preparedStatements=true<br>schema.mysql.utf8mb4=false<br></td>
+				<td class="text">my55-nprep-legacy</td>
+				<td class="text">disableSupport.preparedStatements=true<br>schema.mysql.fullSequenceColumnName=false<br>schema.mysql.longConstraintNames=false<br>schema.mysql.smallIntegerTypes=false<br>schema.mysql.utf8mb4=false<br></td>
 			</tr>
 			<tr>
 				<td class="text">my55-nstmp</td>
@@ -140,21 +148,21 @@
 				<td class="text">disableSupport.uniqueViolation=true<br></td>
 			</tr>
 			<tr>
-				<td class="text">my55-utf8mb3</td>
-				<td class="text">schema.mysql.utf8mb4=false<br></td>
-			</tr>
-			<tr>
 				<td class="text" rowspan="11">5.6.33-0ubuntu0.14.04.1-log <small>(11x)</small></td>
 				<td class="text">my56</td>
 				<td class="text"></td>
+			</tr>
+			<tr>
+				<td class="text">my56-legacy</td>
+				<td class="text">schema.mysql.fullSequenceColumnName=false<br>schema.mysql.longConstraintNames=false<br>schema.mysql.smallIntegerTypes=false<br>schema.mysql.utf8mb4=false<br></td>
 			</tr>
 			<tr>
 				<td class="text">my56-nprep</td>
 				<td class="text">disableSupport.preparedStatements=true<br></td>
 			</tr>
 			<tr>
-				<td class="text">my56-nprep-utf8mb3</td>
-				<td class="text">disableSupport.preparedStatements=true<br>schema.mysql.utf8mb4=false<br></td>
+				<td class="text">my56-nprep-legacy</td>
+				<td class="text">disableSupport.preparedStatements=true<br>schema.mysql.fullSequenceColumnName=false<br>schema.mysql.longConstraintNames=false<br>schema.mysql.smallIntegerTypes=false<br>schema.mysql.utf8mb4=false<br></td>
 			</tr>
 			<tr>
 				<td class="text">my56-nstmp</td>
@@ -174,11 +182,7 @@
 			</tr>
 			<tr>
 				<td class="text">my56-unique</td>
-				<td class="text">disableSupport.uniqueViolation=true<br>schema.mysql.longConstraintNames=false<br></td>
-			</tr>
-			<tr>
-				<td class="text">my56-utf8mb3</td>
-				<td class="text">schema.mysql.utf8mb4=false<br></td>
+				<td class="text">disableSupport.uniqueViolation=true<br></td>
 			</tr>
 			<tr>
 				<td class="text" rowspan="2">MariaDB connector/J <small>(2x)</small></td>
@@ -191,7 +195,7 @@
 				<td class="text">schema.primaryKeyGenerator=sequence<br></td>
 			</tr>
 			<tr>
-				<td class="text" rowspan="8">5.7.13-0ubuntu0.16.04.2 <small>(8x)</small></td>
+				<td class="text" rowspan="8">5.7.19-0ubuntu0.16.04.1 <small>(8x)</small></td>
 				<td class="text" rowspan="8">MySQL-AB JDBC Driver</td>
 				<td class="text" rowspan="8">mysql-connector-java-5.1.15 ( Revision: ${bzr.revision-id} )</td>
 				<td class="text">my57</td>
@@ -211,7 +215,7 @@
 			</tr>
 			<tr>
 				<td class="text">my57-nstmp-sq</td>
-				<td class="text">cache.stamps=false<br>schema.primaryKeyGenerator=sequence<br></td>
+				<td class="text">cache.stamps=false<br>schema.mysql.fullSequenceColumnName=false<br>schema.primaryKeyGenerator=sequence<br></td>
 			</tr>
 			<tr>
 				<td class="text">my57-sq</td>
@@ -239,7 +243,7 @@
 			</tr>
 			<tr>
 				<td class="text" rowspan="8">PostgreSQL <small>(8x)</small></td>
-				<td class="text" rowspan="4">9.3.14 <small>(4x)</small></td>
+				<td class="text" rowspan="4">9.3.18 <small>(4x)</small></td>
 				<td class="text" rowspan="8">PostgreSQL Native Driver <small>(8x)</small></td>
 				<td class="text" rowspan="8">PostgreSQL 9.3 JDBC4.1 (build 1102)</td>
 				<td class="text">pg93</td>
@@ -258,7 +262,7 @@
 				<td class="text">schema.primaryKeyGenerator=sequence<br></td>
 			</tr>
 			<tr>
-				<td class="text" rowspan="4">9.5.4 <small>(4x)</small></td>
+				<td class="text" rowspan="4">9.5.8 <small>(4x)</small></td>
 				<td class="text">pg95</td>
 				<td class="text"></td>
 			</tr>
