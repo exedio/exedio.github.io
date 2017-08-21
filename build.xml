@@ -15,12 +15,6 @@
 	</target>
 
 	<target name="api">
-
-		<condition property="api.doclint" value="-Xdoclint:all,-missing" else="-nosince"> <!-- nosince is just a dummy -->
-			<available classname="java.util.Optional" /> <!-- available since JDK 1.8 -->
-		</condition>
-		<echo message="doclint //${api.doclint}//" />
-
 		<delete dir="api" />
 		<javadoc
 				destdir="api"
@@ -65,7 +59,7 @@
 			<group title="Database Schema Management Facility" packages="com.exedio.dsmf:com.exedio.dsmf.*" />
 			<group title="Web Framework" packages="com.exedio.cops" />
 			<group title="Utilities" packages="com.exedio.cope.util,com.exedio.cope.servletutil" />
-			<arg value="${api.doclint}" />
+			<arg value="-Xdoclint:all,-missing" />
 			<arg value="-Xmaxerrs"  /><arg value="10000" />
 			<arg value="-Xmaxwarns" /><arg value="10000" />
 		</javadoc>
