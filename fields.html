@@ -88,11 +88,9 @@ static final LongField loginCounter =
 				for constructing an instance of Customer anymore.
 				If you still want to have <code>loginCounter</code> included into
 				the <i>default creation constructor</i> add a
-				<code>@cope.initial</code> tag to the field:
+				<code>@WrapperInitial</code> annotation to the field:
 <pre>
-/**
- * <b>@cope.initial</b>
- */
+@<a href="api/com/exedio/cope/instrument/WrapperInitial.html">WrapperInitial</a>
 static final LongField loginCounter =
     new LongField().<a href="api/com/exedio/cope/LongField.html#optional--">optional</a>();
 </pre>
