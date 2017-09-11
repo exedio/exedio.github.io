@@ -93,10 +93,28 @@
 <pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/annotation/Target.html?is-external=true" title="class or interface in java.lang.annotation">@Target</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/annotation/Target.html?is-external=true#value--" title="class or interface in java.lang.annotation">value</a>=<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/annotation/ElementType.html?is-external=true#FIELD" title="class or interface in java.lang.annotation">FIELD</a>)
  <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/annotation/Retention.html?is-external=true" title="class or interface in java.lang.annotation">@Retention</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/annotation/Retention.html?is-external=true#value--" title="class or interface in java.lang.annotation">value</a>=<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/annotation/RetentionPolicy.html?is-external=true#RUNTIME" title="class or interface in java.lang.annotation">RUNTIME</a>)
 public @interface <span class="memberNameLabel">CopeSchemaValue</span></pre>
-<div class="block">This annotation specifies the integer used for an enum
- value in the database schema.
+<div class="block">Specifies the schema value (an integer) of an enum facet
+ stored in the column of an <a href="../../../com/exedio/cope/EnumField.html" title="class in com.exedio.cope"><code>EnumField</code></a>.
  This may be useful to maintain schema compatibility to
- former versions of the application or to a legacy application.</div>
+ former versions of the application or to a legacy application.
+ <p>
+ Schema values of enum facets are assigned by the following rules:
+ <ul>
+ <li>An annotated facet (by <a href="../../../com/exedio/cope/CopeSchemaValue.html" title="annotation in com.exedio.cope"><code>CopeSchemaValue</code></a>) gets the schema value
+     specified by the annotation.</li>
+ <li>A non-annotated facet, that is the first facet of its Enum,
+     gets a schema value of 10.</li>
+ <li>Otherwise, a non-annotated facet gets the schema value
+     of the previous facet, plus one, rounded to full multiples of 10 towards
+     <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true#MAX_VALUE" title="class or interface in java.lang"><code>Integer.MAX_VALUE</code></a>.
+     This holds regardless whether the previous facet is annotated or not.</li>
+ </ul>
+ If, by the rules above, a facet is assigned a schema value,
+ that is not greater than the schema value of its previous facet,
+ <a href="../../../com/exedio/cope/EnumField.html#create-java.lang.Class-"><code>EnumField.create</code></a> throws an
+ <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang"><code>IllegalArgumentException</code></a>.
+ This means you can't change the <a href="../../../com/exedio/cope/Query.html#setOrderBy-com.exedio.cope.Function-boolean-"><code>order</code></a>
+ of enums with this annotation.</div>
 </li>
 </ul>
 </div>

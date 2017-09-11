@@ -93,6 +93,17 @@
 <pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/annotation/Target.html?is-external=true" title="class or interface in java.lang.annotation">@Target</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/annotation/Target.html?is-external=true#value--" title="class or interface in java.lang.annotation">value</a>=<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/annotation/ElementType.html?is-external=true#FIELD" title="class or interface in java.lang.annotation">FIELD</a>)
  <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/annotation/Retention.html?is-external=true" title="class or interface in java.lang.annotation">@Retention</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/annotation/Retention.html?is-external=true#value--" title="class or interface in java.lang.annotation">value</a>=<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/annotation/RetentionPolicy.html?is-external=true#RUNTIME" title="class or interface in java.lang.annotation">RUNTIME</a>)
 public @interface <span class="memberNameLabel">MysqlExtendedVarchar</span></pre>
+<div class="block">Enables <code>varchar</code> on MySQL for longer <a href="../../../com/exedio/cope/StringField.html" title="class in com.exedio.cope"><code>string fields</code></a>.
+ <p>
+ In general database columns for string fields with a
+ <a href="../../../com/exedio/cope/StringField.html#getMaximumLength--"><code>maximum length</code></a> of up to 85 characters
+ do get type <code>varchar</code>, longer string fields do get <code>text</code>, <code>mediumtext</code> etc.
+ This annotation increases the limit from 85 characters to 16382 characters.
+ <p>
+ This annotation is applicable to string fields only.
+ When applying it to other features or
+ when connecting to databases other than MySQL,
+ there is no effect at all.</div>
 </li>
 </ul>
 </div>

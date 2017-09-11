@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":42,"i2":10,"i3":10,"i4":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":42,"i4":10,"i5":42,"i6":10,"i7":42};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"],32:["t6","Deprecated Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -47,7 +47,7 @@ var activeTableTab = "activeTableTab";
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../../com/exedio/cope/util/Properties.IntField.html" title="class in com.exedio.cope.util"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../../com/exedio/cope/util/Properties.PropertiesField.html" title="class in com.exedio.cope.util"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../com/exedio/cope/util/Properties.Probe.html" title="annotation in com.exedio.cope.util"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../index.html?com/exedio/cope/util/Properties.MapField.html" target="_top">Frames</a></li>
@@ -157,10 +157,20 @@ extends <a href="../../../../com/exedio/cope/util/Properties.Field.html" title="
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/util/Properties.MapField.html#get--">get</a></span>()</code>
+<div class="block">Never returns null.</div>
+</td>
+</tr>
+<tr id="i1" class="rowColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/util/Properties.MapField.html#get-java.lang.String-">get</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key)</code>&nbsp;</td>
+</tr>
+<tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/util/Properties.MapField.html#getDefaultValue--">getDefaultValue</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i1" class="rowColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Properties.html?is-external=true" title="class or interface in java.util">Properties</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/util/Properties.MapField.html#getMapValue--">getMapValue</a></span>()</code>
 <div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
@@ -168,20 +178,30 @@ extends <a href="../../../../com/exedio/cope/util/Properties.Field.html" title="
 </div>
 </td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/util/Properties.MapField.html#getValue--">getValue</a></span>()</code>
 <div class="block">Never returns null.</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/util/Properties.MapField.html#getValue-java.lang.String-">getValue</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/util/Properties.MapField.html#getValue-java.lang.String-">getValue</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key)</code>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
+<div class="block"><span class="deprecationComment">Use <a href="../../../../com/exedio/cope/util/Properties.MapField.html#get-java.lang.String-"><code>get(String)</code></a> instead</span></div>
+</div>
+</td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i6" class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/util/Properties.MapField.html#isSpecified--">isSpecified</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Properties.html?is-external=true" title="class or interface in java.util">Properties</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/util/Properties.MapField.html#mapValue--">mapValue</a></span>()</code>
-<div class="block">Never returns null.</div>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
+<div class="block"><span class="deprecationComment">Use <a href="../../../../com/exedio/cope/util/Properties.MapField.html#get--"><code>get()</code></a> instead</span></div>
+</div>
 </td>
 </tr>
 </table>
@@ -190,7 +210,7 @@ extends <a href="../../../../com/exedio/cope/util/Properties.Field.html" title="
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;com.exedio.cope.util.<a href="../../../../com/exedio/cope/util/Properties.Field.html" title="class in com.exedio.cope.util">Properties.Field</a></h3>
-<code><a href="../../../../com/exedio/cope/util/Properties.Field.html#getKey--">getKey</a>, <a href="../../../../com/exedio/cope/util/Properties.Field.html#hasHiddenValue--">hasHiddenValue</a>, <a href="../../../../com/exedio/cope/util/Properties.Field.html#isSpecified--">isSpecified</a></code></li>
+<code><a href="../../../../com/exedio/cope/util/Properties.Field.html#getKey--">getKey</a>, <a href="../../../../com/exedio/cope/util/Properties.Field.html#hasHiddenValue--">hasHiddenValue</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
@@ -245,6 +265,19 @@ public&nbsp;MapField(<a href="https://docs.oracle.com/javase/8/docs/api/java/lan
 </dl>
 </li>
 </ul>
+<a name="isSpecified--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>isSpecified</h4>
+<pre>public&nbsp;boolean&nbsp;isSpecified()</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../com/exedio/cope/util/Properties.Field.html#isSpecified--">isSpecified</a></code>&nbsp;in class&nbsp;<code><a href="../../../../com/exedio/cope/util/Properties.Field.html" title="class in com.exedio.cope.util">Properties.Field</a></code></dd>
+</dl>
+</li>
+</ul>
 <a name="getValue--">
 <!--   -->
 </a>
@@ -260,13 +293,34 @@ public&nbsp;MapField(<a href="https://docs.oracle.com/javase/8/docs/api/java/lan
 </dl>
 </li>
 </ul>
+<a name="get--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>get</h4>
+<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;get()</pre>
+<div class="block">Never returns null.</div>
+</li>
+</ul>
+<a name="get-java.lang.String-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>get</h4>
+<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;get(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key)</pre>
+</li>
+</ul>
 <a name="mapValue--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>mapValue</h4>
-<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Properties.html?is-external=true" title="class or interface in java.util">Properties</a>&nbsp;mapValue()</pre>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</a>
+public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Properties.html?is-external=true" title="class or interface in java.util">Properties</a>&nbsp;mapValue()</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment">Use <a href="../../../../com/exedio/cope/util/Properties.MapField.html#get--"><code>get()</code></a> instead</span></div>
 <div class="block">Never returns null.</div>
 </li>
 </ul>
@@ -276,7 +330,9 @@ public&nbsp;MapField(<a href="https://docs.oracle.com/javase/8/docs/api/java/lan
 <ul class="blockList">
 <li class="blockList">
 <h4>getValue</h4>
-<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getValue(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key)</pre>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</a>
+public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getValue(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key)</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment">Use <a href="../../../../com/exedio/cope/util/Properties.MapField.html#get-java.lang.String-"><code>get(String)</code></a> instead</span></div>
 </li>
 </ul>
 <a name="getMapValue--">
@@ -317,7 +373,7 @@ public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Propert
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../../com/exedio/cope/util/Properties.IntField.html" title="class in com.exedio.cope.util"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../../com/exedio/cope/util/Properties.PropertiesField.html" title="class in com.exedio.cope.util"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../com/exedio/cope/util/Properties.Probe.html" title="annotation in com.exedio.cope.util"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../index.html?com/exedio/cope/util/Properties.MapField.html" target="_top">Frames</a></li>

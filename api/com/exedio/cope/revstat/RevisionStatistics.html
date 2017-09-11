@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9};
+var methods = {"i0":9,"i1":9,"i2":9};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -146,6 +146,14 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
+<td class="colFirst"><code>static <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;?&gt;&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/revstat/RevisionStatistics.html#getExplicitTypes-com.exedio.cope.Model-">getExplicitTypes</a></span>(<a href="../../../../com/exedio/cope/Model.html" title="class in com.exedio.cope">Model</a>&nbsp;model)</code>&nbsp;</td>
+</tr>
+<tr id="i1" class="rowColor">
+<td class="colFirst"><code>static boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/revstat/RevisionStatistics.html#isContainedIn-com.exedio.cope.Model-">isContainedIn</a></span>(<a href="../../../../com/exedio/cope/Model.html" title="class in com.exedio.cope">Model</a>&nbsp;model)</code>&nbsp;</td>
+</tr>
+<tr id="i2" class="altColor">
 <td class="colFirst"><code>static void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/revstat/RevisionStatistics.html#write-com.exedio.cope.Model-com.exedio.cope.util.JobContext-">write</a></span>(<a href="../../../../com/exedio/cope/Model.html" title="class in com.exedio.cope">Model</a>&nbsp;model,
      <a href="../../../../com/exedio/cope/util/JobContext.html" title="interface in com.exedio.cope.util">JobContext</a>&nbsp;ctx)</code>&nbsp;</td>
@@ -192,11 +200,35 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <a name="write-com.exedio.cope.Model-com.exedio.cope.util.JobContext-">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>write</h4>
 <pre>public static&nbsp;void&nbsp;write(<a href="../../../../com/exedio/cope/Model.html" title="class in com.exedio.cope">Model</a>&nbsp;model,
                          <a href="../../../../com/exedio/cope/util/JobContext.html" title="interface in com.exedio.cope.util">JobContext</a>&nbsp;ctx)</pre>
+</li>
+</ul>
+<a name="getExplicitTypes-com.exedio.cope.Model-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getExplicitTypes</h4>
+<pre>public static&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;?&gt;&gt;&nbsp;getExplicitTypes(<a href="../../../../com/exedio/cope/Model.html" title="class in com.exedio.cope">Model</a>&nbsp;model)</pre>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the result of <a href="../../../../com/exedio/cope/TypeSet.html#getExplicitTypes--"><code>TypeSet.getExplicitTypes()</code></a> for <a href="../../../../com/exedio/cope/revstat/RevisionStatistics.html#types"><code>types</code></a>.</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang">IllegalArgumentException</a></code> - if model does not <a href="../../../../com/exedio/cope/revstat/RevisionStatistics.html#isContainedIn-com.exedio.cope.Model-"><code>contain</code></a> RevisionStatistics.</dd>
+</dl>
+</li>
+</ul>
+<a name="isContainedIn-com.exedio.cope.Model-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>isContainedIn</h4>
+<pre>public static&nbsp;boolean&nbsp;isContainedIn(<a href="../../../../com/exedio/cope/Model.html" title="class in com.exedio.cope">Model</a>&nbsp;model)</pre>
 </li>
 </ul>
 </li>

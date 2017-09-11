@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":41,"i14":41,"i15":41,"i16":41,"i17":41,"i18":41,"i19":41,"i20":10,"i21":10,"i22":10,"i23":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":41,"i15":41,"i16":41,"i17":41,"i18":41,"i19":41,"i20":41,"i21":10,"i22":10,"i23":10,"i24":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"],32:["t6","Deprecated Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -231,12 +231,18 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializab
 </td>
 </tr>
 <tr id="i3" class="rowColor">
+<td class="colFirst"><code>protected void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Item.html#beforeDeleteCopeItem--">beforeDeleteCopeItem</a></span>()</code>
+<div class="block">Is called before every item deletion.</div>
+</td>
+</tr>
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>protected <a href="../../../com/exedio/cope/SetValue.html" title="class in com.exedio.cope">SetValue</a>&lt;?&gt;[]</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Item.html#beforeSetCopeItem-com.exedio.cope.SetValue:A-">beforeSetCopeItem</a></span>(<a href="../../../com/exedio/cope/SetValue.html" title="class in com.exedio.cope">SetValue</a>&lt;?&gt;[]&nbsp;setValues)</code>
 <div class="block">Is called before every item modification.</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Item.html#compareTo-com.exedio.cope.Item-">compareTo</a></span>(<a href="../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&nbsp;o)</code>
 <div class="block">Defines an order consistent to the query result order when using
@@ -244,51 +250,51 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializab
  methods with any <a href="../../../com/exedio/cope/ItemFunction.html" title="interface in com.exedio.cope"><code>ItemFunction</code></a>.</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Item.html#deleteCopeItem--">deleteCopeItem</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Item.html#equals-java.lang.Object-">equals</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;o)</code>
 <div class="block">Returns true, if <tt>o</tt> represents the same item as this item.</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Item.html#existsCopeItem--">existsCopeItem</a></span>()</code>
 <div class="block">Returns, whether the item does exist.</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>&lt;E&gt;&nbsp;E</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Item.html#get-com.exedio.cope.Function-">get</a></span>(<a href="../../../com/exedio/cope/Function.html" title="interface in com.exedio.cope">Function</a>&lt;E&gt;&nbsp;function)</code>&nbsp;</td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Item.html#getCopeID--">getCopeID</a></span>()</code>
 <div class="block">Returns a string unique for this item in all other items of the model.</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
-<td class="colFirst"><code><a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;? extends <a href="../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&gt;</code></td>
+<tr id="i11" class="rowColor">
+<td class="colFirst"><code><a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;?&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Item.html#getCopeType--">getCopeType</a></span>()</code>
 <div class="block">Returns the type of this item.</div>
 </td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Item.html#hashCode--">hashCode</a></span>()</code>
 <div class="block">Returns a hash code, that is consistent with <a href="../../../com/exedio/cope/Item.html#equals-java.lang.Object-"><code>equals(Object)</code></a>.</div>
 </td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Item.html#isActiveCopeItem--">isActiveCopeItem</a></span>()</code>
 <div class="block">Returns, whether this item is active.</div>
 </td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>static &lt;E extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Enum.html?is-external=true" title="class or interface in java.lang">Enum</a>&lt;E&gt;&gt;<br><a href="../../../com/exedio/cope/EnumField.html" title="class in com.exedio.cope">EnumField</a>&lt;E&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Item.html#newEnumAttribute-java.lang.Class-">newEnumAttribute</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;E&gt;&nbsp;valueClass)</code>
 <div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
@@ -296,7 +302,7 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializab
 </div>
 </td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>static &lt;E extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Enum.html?is-external=true" title="class or interface in java.lang">Enum</a>&lt;E&gt;&gt;<br><a href="../../../com/exedio/cope/EnumField.html" title="class in com.exedio.cope">EnumField</a>&lt;E&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Item.html#newEnumField-java.lang.Class-">newEnumField</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;E&gt;&nbsp;valueClass)</code>
 <div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
@@ -304,7 +310,7 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializab
 </div>
 </td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code>static &lt;E extends <a href="../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&gt;<br><a href="../../../com/exedio/cope/ItemField.html" title="class in com.exedio.cope">ItemField</a>&lt;E&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Item.html#newItemAttribute-java.lang.Class-">newItemAttribute</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;E&gt;&nbsp;valueClass)</code>
 <div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
@@ -312,7 +318,7 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializab
 </div>
 </td>
 </tr>
-<tr id="i16" class="altColor">
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code>static &lt;E extends <a href="../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&gt;<br><a href="../../../com/exedio/cope/ItemField.html" title="class in com.exedio.cope">ItemField</a>&lt;E&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Item.html#newItemAttribute-java.lang.Class-com.exedio.cope.ItemField.DeletePolicy-">newItemAttribute</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;E&gt;&nbsp;valueClass,
                 <a href="../../../com/exedio/cope/ItemField.DeletePolicy.html" title="enum in com.exedio.cope">ItemField.DeletePolicy</a>&nbsp;policy)</code>
@@ -321,7 +327,7 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializab
 </div>
 </td>
 </tr>
-<tr id="i17" class="rowColor">
+<tr id="i18" class="altColor">
 <td class="colFirst"><code>static &lt;E extends <a href="../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&gt;<br><a href="../../../com/exedio/cope/ItemField.html" title="class in com.exedio.cope">ItemField</a>&lt;E&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Item.html#newItemField-java.lang.Class-">newItemField</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;E&gt;&nbsp;valueClass)</code>
 <div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
@@ -329,7 +335,7 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializab
 </div>
 </td>
 </tr>
-<tr id="i18" class="altColor">
+<tr id="i19" class="rowColor">
 <td class="colFirst"><code>static &lt;E extends <a href="../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&gt;<br><a href="../../../com/exedio/cope/ItemField.html" title="class in com.exedio.cope">ItemField</a>&lt;E&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Item.html#newItemField-java.lang.Class-com.exedio.cope.ItemField.DeletePolicy-">newItemField</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;E&gt;&nbsp;valueClass,
             <a href="../../../com/exedio/cope/ItemField.DeletePolicy.html" title="enum in com.exedio.cope">ItemField.DeletePolicy</a>&nbsp;policy)</code>
@@ -338,7 +344,7 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializab
 </div>
 </td>
 </tr>
-<tr id="i19" class="rowColor">
+<tr id="i20" class="altColor">
 <td class="colFirst"><code>protected static &lt;C extends <a href="../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&gt;<br><a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;C&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Item.html#newType-java.lang.Class-">newType</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;C&gt;&nbsp;javaClass)</code>
 <div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
@@ -346,23 +352,23 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializab
 </div>
 </td>
 </tr>
-<tr id="i20" class="altColor">
+<tr id="i21" class="rowColor">
 <td class="colFirst"><code>&lt;E&gt;&nbsp;void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Item.html#set-com.exedio.cope.FunctionField-E-">set</a></span>(<a href="../../../com/exedio/cope/FunctionField.html" title="class in com.exedio.cope">FunctionField</a>&lt;E&gt;&nbsp;field,
    E&nbsp;value)</code>&nbsp;</td>
 </tr>
-<tr id="i21" class="rowColor">
+<tr id="i22" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Item.html#set-com.exedio.cope.SetValue...-">set</a></span>(<a href="../../../com/exedio/cope/SetValue.html" title="class in com.exedio.cope">SetValue</a>&lt;?&gt;...&nbsp;setValues)</code>&nbsp;</td>
 </tr>
-<tr id="i22" class="altColor">
+<tr id="i23" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Item.html#toString--">toString</a></span>()</code>
 <div class="block">Returns <a href="../../../com/exedio/cope/Item.html#getCopeID--"><code>getCopeID()</code></a> as a default implementation
  for all persistent classes.</div>
 </td>
 </tr>
-<tr id="i23" class="rowColor">
+<tr id="i24" class="altColor">
 <td class="colFirst"><code>protected <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Item.html#writeReplace--">writeReplace</a></span>()</code>
 <div class="block"><a href="http://java.sun.com/j2se/1.5.0/docs/guide/serialization/spec/output.html#5324">See Spec</a></div>
@@ -496,7 +502,7 @@ public static final&nbsp;<a href="../../../com/exedio/cope/ItemField.DeletePolic
 <ul class="blockList">
 <li class="blockList">
 <h4>getCopeType</h4>
-<pre>public final&nbsp;<a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;? extends <a href="../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&gt;&nbsp;getCopeType()</pre>
+<pre>public final&nbsp;<a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;?&gt;&nbsp;getCopeType()</pre>
 <div class="block">Returns the type of this item.
  Never returns null.</div>
 </li>
@@ -603,7 +609,17 @@ public static final&nbsp;<a href="../../../com/exedio/cope/ItemField.DeletePolic
 <pre>protected&nbsp;void&nbsp;afterNewCopeItem()</pre>
 <div class="block">Is called after every item creation.
  Override this method when needed.
- The default implementation does nothing.</div>
+ The default implementation does nothing.
+ <p>
+ If you want to affect field values <b>before</b> creating the item
+ write a method:
+ <p>
+ <code>static SetValue[] beforeNewCopeItem(SetValue[])</code>
+ <p>
+ If you want to postpone your action until the current transaction commits,
+ use either
+ <a href="../../../com/exedio/cope/Model.html#addPreCommitHookIfAbsent-R-"><code>pre</code></a>- or
+ <a href="../../../com/exedio/cope/Model.html#addPreCommitHookIfAbsent-R-"><code>post</code></a>-commit hooks.</div>
 </li>
 </ul>
 <a name="beforeSetCopeItem-com.exedio.cope.SetValue:A-">
@@ -615,7 +631,17 @@ public static final&nbsp;<a href="../../../com/exedio/cope/ItemField.DeletePolic
 <pre>protected&nbsp;<a href="../../../com/exedio/cope/SetValue.html" title="class in com.exedio.cope">SetValue</a>&lt;?&gt;[]&nbsp;beforeSetCopeItem(<a href="../../../com/exedio/cope/SetValue.html" title="class in com.exedio.cope">SetValue</a>&lt;?&gt;[]&nbsp;setValues)</pre>
 <div class="block">Is called before every item modification.
  Override this method when needed.
- The default implementation does nothing.</div>
+ The default implementation does nothing.
+ <p>
+ If you want to affect field values before <b>creating</b> the item
+ write a method:
+ <p>
+ <code>static SetValue[] beforeNewCopeItem(SetValue[])</code>
+ <p>
+ If you want to postpone your action until the current transaction commits,
+ use either
+ <a href="../../../com/exedio/cope/Model.html#addPreCommitHookIfAbsent-R-"><code>pre</code></a>- or
+ <a href="../../../com/exedio/cope/Model.html#addPreCommitHookIfAbsent-R-"><code>post</code></a>-commit hooks.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>setValues</code> - is never null and never empty</dd>
@@ -683,6 +709,23 @@ public static final&nbsp;<a href="../../../com/exedio/cope/ItemField.DeletePolic
 <dd><code><a href="../../../com/exedio/cope/IntegrityViolationException.html" title="class in com.exedio.cope">IntegrityViolationException</a></code> - if this item cannot be deleted due a <a href="../../../com/exedio/cope/ItemField.html" title="class in com.exedio.cope"><code>reference</code></a> with
  <a href="../../../com/exedio/cope/ItemField.DeletePolicy.html#FORBID"><code>ItemField.DeletePolicy.FORBID</code></a> pointing to this item.</dd>
 </dl>
+</li>
+</ul>
+<a name="beforeDeleteCopeItem--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>beforeDeleteCopeItem</h4>
+<pre>protected&nbsp;void&nbsp;beforeDeleteCopeItem()</pre>
+<div class="block">Is called before every item deletion.
+ Override this method when needed.
+ The default implementation does nothing.
+ <p>
+ If you want to postpone your action until the current transaction commits,
+ use either
+ <a href="../../../com/exedio/cope/Model.html#addPreCommitHookIfAbsent-R-"><code>pre</code></a>- or
+ <a href="../../../com/exedio/cope/Model.html#addPreCommitHookIfAbsent-R-"><code>post</code></a>-commit hooks.</div>
 </li>
 </ul>
 <a name="existsCopeItem--">

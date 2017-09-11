@@ -47,7 +47,7 @@ var activeTableTab = "activeTableTab";
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../../com/exedio/cope/pattern/Price.html" title="class in com.exedio.cope.pattern"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../../com/exedio/cope/pattern/Range.html" title="class in com.exedio.cope.pattern"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../com/exedio/cope/pattern/PriceFunction.html" title="interface in com.exedio.cope.pattern"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../index.html?com/exedio/cope/pattern/PriceField.html" target="_top">Frames</a></li>
@@ -116,13 +116,13 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><a href="../../../../com/exedio/cope/Copyable.html" title="interface in com.exedio.cope">Copyable</a>, <a href="../../../../com/exedio/cope/Settable.html" title="interface in com.exedio.cope">Settable</a>&lt;<a href="../../../../com/exedio/cope/pattern/Price.html" title="class in com.exedio.cope.pattern">Price</a>&gt;, <a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializable.html?is-external=true" title="class or interface in java.io">Serializable</a></dd>
+<dd><a href="../../../../com/exedio/cope/Copyable.html" title="interface in com.exedio.cope">Copyable</a>, <a href="../../../../com/exedio/cope/pattern/PriceFunction.html" title="interface in com.exedio.cope.pattern">PriceFunction</a>, <a href="../../../../com/exedio/cope/Settable.html" title="interface in com.exedio.cope">Settable</a>&lt;<a href="../../../../com/exedio/cope/pattern/Price.html" title="class in com.exedio.cope.pattern">Price</a>&gt;, <a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializable.html?is-external=true" title="class or interface in java.io">Serializable</a></dd>
 </dl>
 <hr>
 <br>
 <pre>public final class <span class="typeNameLabel">PriceField</span>
 extends <a href="../../../../com/exedio/cope/Pattern.html" title="class in com.exedio.cope">Pattern</a>
-implements <a href="../../../../com/exedio/cope/Settable.html" title="interface in com.exedio.cope">Settable</a>&lt;<a href="../../../../com/exedio/cope/pattern/Price.html" title="class in com.exedio.cope.pattern">Price</a>&gt;, <a href="../../../../com/exedio/cope/Copyable.html" title="interface in com.exedio.cope">Copyable</a></pre>
+implements <a href="../../../../com/exedio/cope/Settable.html" title="interface in com.exedio.cope">Settable</a>&lt;<a href="../../../../com/exedio/cope/pattern/Price.html" title="class in com.exedio.cope.pattern">Price</a>&gt;, <a href="../../../../com/exedio/cope/Copyable.html" title="interface in com.exedio.cope">Copyable</a>, <a href="../../../../com/exedio/cope/pattern/PriceFunction.html" title="interface in com.exedio.cope.pattern">PriceFunction</a></pre>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../../serialized-form.html#com.exedio.cope.pattern.PriceField">Serialized Form</a></dd>
@@ -168,121 +168,118 @@ implements <a href="../../../../com/exedio/cope/Settable.html" title="interface 
        <a href="../../../../com/exedio/cope/pattern/Price.html" title="class in com.exedio.cope.pattern">Price</a>&nbsp;upperBound)</code>&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code><a href="../../../../com/exedio/cope/pattern/PriceField.html" title="class in com.exedio.cope.pattern">PriceField</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/PriceField.html#copy-com.exedio.cope.CopyMapper-">copy</a></span>(<a href="../../../../com/exedio/cope/CopyMapper.html" title="class in com.exedio.cope">CopyMapper</a>&nbsp;mapper)</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../../../com/exedio/cope/pattern/PriceFunction.html" title="interface in com.exedio.cope.pattern">PriceFunction</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/PriceField.html#bind-com.exedio.cope.Join-">bind</a></span>(<a href="../../../../com/exedio/cope/Join.html" title="class in com.exedio.cope">Join</a>&nbsp;join)</code>&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="../../../../com/exedio/cope/pattern/PriceField.html" title="class in com.exedio.cope.pattern">PriceField</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/PriceField.html#defaultTo-com.exedio.cope.pattern.Price-">defaultTo</a></span>(<a href="../../../../com/exedio/cope/pattern/Price.html" title="class in com.exedio.cope.pattern">Price</a>&nbsp;defaultConstant)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/PriceField.html#copy-com.exedio.cope.CopyMapper-">copy</a></span>(<a href="../../../../com/exedio/cope/CopyMapper.html" title="class in com.exedio.cope">CopyMapper</a>&nbsp;mapper)</code>&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
+<td class="colFirst"><code><a href="../../../../com/exedio/cope/pattern/PriceField.html" title="class in com.exedio.cope.pattern">PriceField</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/PriceField.html#defaultTo-com.exedio.cope.pattern.Price-">defaultTo</a></span>(<a href="../../../../com/exedio/cope/pattern/Price.html" title="class in com.exedio.cope.pattern">Price</a>&nbsp;defaultConstant)</code>&nbsp;</td>
+</tr>
+<tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="../../../../com/exedio/cope/Condition.html" title="class in com.exedio.cope">Condition</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/PriceField.html#equal-com.exedio.cope.pattern.Price-">equal</a></span>(<a href="../../../../com/exedio/cope/pattern/Price.html" title="class in com.exedio.cope.pattern">Price</a>&nbsp;value)</code>&nbsp;</td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code><a href="../../../../com/exedio/cope/CompareFunctionCondition.html" title="class in com.exedio.cope">CompareFunctionCondition</a>&lt;?&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/PriceField.html#equal-com.exedio.cope.pattern.PriceField-">equal</a></span>(<a href="../../../../com/exedio/cope/pattern/PriceField.html" title="class in com.exedio.cope.pattern">PriceField</a>&nbsp;right)</code>&nbsp;</td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="../../../../com/exedio/cope/SetValue.html" title="class in com.exedio.cope">SetValue</a>&lt;?&gt;[]</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/PriceField.html#execute-com.exedio.cope.pattern.Price-com.exedio.cope.Item-">execute</a></span>(<a href="../../../../com/exedio/cope/pattern/Price.html" title="class in com.exedio.cope.pattern">Price</a>&nbsp;value,
        <a href="../../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&nbsp;exceptionItem)</code>&nbsp;</td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="../../../../com/exedio/cope/pattern/Price.html" title="class in com.exedio.cope.pattern">Price</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/PriceField.html#get-com.exedio.cope.Item-">get</a></span>(<a href="../../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&nbsp;item)</code>&nbsp;</td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code><a href="../../../../com/exedio/cope/pattern/Price.html" title="class in com.exedio.cope.pattern">Price</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/PriceField.html#getDefaultConstant--">getDefaultConstant</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;? extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang">Throwable</a>&gt;&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/PriceField.html#getInitialExceptions--">getInitialExceptions</a></span>()</code>
 <div class="block">Returns the exceptions possibly thrown,
  when setting a value for this settable.</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;?&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/PriceField.html#getInitialType--">getInitialType</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i10" class="altColor">
-<td class="colFirst"><code><a href="../../../../com/exedio/cope/IntegerField.html" title="class in com.exedio.cope">IntegerField</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/PriceField.html#getInt--">getInt</a></span>()</code>&nbsp;</td>
-</tr>
 <tr id="i11" class="rowColor">
-<td class="colFirst"><code><a href="../../../../com/exedio/cope/pattern/Price.html" title="class in com.exedio.cope.pattern">Price</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/PriceField.html#getMaximum--">getMaximum</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../../../com/exedio/cope/LongField.html" title="class in com.exedio.cope">LongField</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/PriceField.html#getInt--">getInt</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i12" class="altColor">
 <td class="colFirst"><code><a href="../../../../com/exedio/cope/pattern/Price.html" title="class in com.exedio.cope.pattern">Price</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/PriceField.html#getMinimum--">getMinimum</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/PriceField.html#getMaximum--">getMaximum</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i13" class="rowColor">
+<td class="colFirst"><code><a href="../../../../com/exedio/cope/pattern/Price.html" title="class in com.exedio.cope.pattern">Price</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/PriceField.html#getMinimum--">getMinimum</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i14" class="altColor">
 <td class="colFirst"><code><a href="../../../../com/exedio/cope/CompareCondition.html" title="class in com.exedio.cope">CompareCondition</a>&lt;?&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/PriceField.html#greater-com.exedio.cope.pattern.Price-">greater</a></span>(<a href="../../../../com/exedio/cope/pattern/Price.html" title="class in com.exedio.cope.pattern">Price</a>&nbsp;value)</code>&nbsp;</td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code><a href="../../../../com/exedio/cope/CompareFunctionCondition.html" title="class in com.exedio.cope">CompareFunctionCondition</a>&lt;?&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/PriceField.html#greater-com.exedio.cope.pattern.PriceField-">greater</a></span>(<a href="../../../../com/exedio/cope/pattern/PriceField.html" title="class in com.exedio.cope.pattern">PriceField</a>&nbsp;right)</code>&nbsp;</td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code><a href="../../../../com/exedio/cope/CompareCondition.html" title="class in com.exedio.cope">CompareCondition</a>&lt;?&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/PriceField.html#greaterOrEqual-com.exedio.cope.pattern.Price-">greaterOrEqual</a></span>(<a href="../../../../com/exedio/cope/pattern/Price.html" title="class in com.exedio.cope.pattern">Price</a>&nbsp;value)</code>&nbsp;</td>
 </tr>
-<tr id="i16" class="altColor">
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code><a href="../../../../com/exedio/cope/CompareFunctionCondition.html" title="class in com.exedio.cope">CompareFunctionCondition</a>&lt;?&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/PriceField.html#greaterOrEqual-com.exedio.cope.pattern.PriceField-">greaterOrEqual</a></span>(<a href="../../../../com/exedio/cope/pattern/PriceField.html" title="class in com.exedio.cope.pattern">PriceField</a>&nbsp;right)</code>&nbsp;</td>
 </tr>
-<tr id="i17" class="rowColor">
+<tr id="i18" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/PriceField.html#isFinal--">isFinal</a></span>()</code>
 <div class="block">Returns true, if a value for the settable can be specified
  on the creation of an item only, thus cannot be modified later.</div>
 </td>
 </tr>
-<tr id="i18" class="altColor">
+<tr id="i19" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/PriceField.html#isInitial--">isInitial</a></span>()</code>
 <div class="block">Returns true, if a value for the settable should be specified
  on the creation of an item.</div>
 </td>
 </tr>
-<tr id="i19" class="rowColor">
+<tr id="i20" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/PriceField.html#isMandatory--">isMandatory</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i20" class="altColor">
+<tr id="i21" class="rowColor">
 <td class="colFirst"><code><a href="../../../../com/exedio/cope/IsNullCondition.html" title="class in com.exedio.cope">IsNullCondition</a>&lt;?&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/PriceField.html#isNotNull--">isNotNull</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i21" class="rowColor">
+<tr id="i22" class="altColor">
 <td class="colFirst"><code><a href="../../../../com/exedio/cope/IsNullCondition.html" title="class in com.exedio.cope">IsNullCondition</a>&lt;?&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/PriceField.html#isNull--">isNull</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i22" class="altColor">
+<tr id="i23" class="rowColor">
 <td class="colFirst"><code><a href="../../../../com/exedio/cope/CompareCondition.html" title="class in com.exedio.cope">CompareCondition</a>&lt;?&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/PriceField.html#less-com.exedio.cope.pattern.Price-">less</a></span>(<a href="../../../../com/exedio/cope/pattern/Price.html" title="class in com.exedio.cope.pattern">Price</a>&nbsp;value)</code>&nbsp;</td>
 </tr>
-<tr id="i23" class="rowColor">
+<tr id="i24" class="altColor">
 <td class="colFirst"><code><a href="../../../../com/exedio/cope/CompareFunctionCondition.html" title="class in com.exedio.cope">CompareFunctionCondition</a>&lt;?&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/PriceField.html#less-com.exedio.cope.pattern.PriceField-">less</a></span>(<a href="../../../../com/exedio/cope/pattern/PriceField.html" title="class in com.exedio.cope.pattern">PriceField</a>&nbsp;right)</code>&nbsp;</td>
 </tr>
-<tr id="i24" class="altColor">
+<tr id="i25" class="rowColor">
 <td class="colFirst"><code><a href="../../../../com/exedio/cope/CompareCondition.html" title="class in com.exedio.cope">CompareCondition</a>&lt;?&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/PriceField.html#lessOrEqual-com.exedio.cope.pattern.Price-">lessOrEqual</a></span>(<a href="../../../../com/exedio/cope/pattern/Price.html" title="class in com.exedio.cope.pattern">Price</a>&nbsp;value)</code>&nbsp;</td>
 </tr>
-<tr id="i25" class="rowColor">
+<tr id="i26" class="altColor">
 <td class="colFirst"><code><a href="../../../../com/exedio/cope/CompareFunctionCondition.html" title="class in com.exedio.cope">CompareFunctionCondition</a>&lt;?&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/PriceField.html#lessOrEqual-com.exedio.cope.pattern.PriceField-">lessOrEqual</a></span>(<a href="../../../../com/exedio/cope/pattern/PriceField.html" title="class in com.exedio.cope.pattern">PriceField</a>&nbsp;right)</code>&nbsp;</td>
-</tr>
-<tr id="i26" class="altColor">
-<td class="colFirst"><code><a href="../../../../com/exedio/cope/SetValue.html" title="class in com.exedio.cope">SetValue</a>&lt;<a href="../../../../com/exedio/cope/pattern/Price.html" title="class in com.exedio.cope.pattern">Price</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/PriceField.html#map-com.exedio.cope.pattern.Price-">map</a></span>(<a href="../../../../com/exedio/cope/pattern/Price.html" title="class in com.exedio.cope.pattern">Price</a>&nbsp;value)</code>
-<div class="block">All implementations of this method should return
- <tt><a href="../../../../com/exedio/cope/SetValue.html#map-F-E-"><code>SetValue.map(this,value)</code></a></tt>.</div>
-</td>
 </tr>
 <tr id="i27" class="rowColor">
 <td class="colFirst"><code><a href="../../../../com/exedio/cope/pattern/PriceField.html" title="class in com.exedio.cope.pattern">PriceField</a></code></td>
@@ -336,14 +333,14 @@ implements <a href="../../../../com/exedio/cope/Settable.html" title="interface 
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;com.exedio.cope.<a href="../../../../com/exedio/cope/Pattern.html" title="class in com.exedio.cope">Pattern</a></h3>
-<code><a href="../../../../com/exedio/cope/Pattern.html#addSource-com.exedio.cope.Feature-java.lang.String-">addSource</a>, <a href="../../../../com/exedio/cope/Pattern.html#addSource-com.exedio.cope.Feature-java.lang.String-java.lang.reflect.AnnotatedElement-">addSource</a>, <a href="../../../../com/exedio/cope/Pattern.html#addSource-com.exedio.cope.Feature-java.lang.String-java.lang.reflect.Field-">addSource</a>, <a href="../../../../com/exedio/cope/Pattern.html#annotationField-java.lang.String-">annotationField</a>, <a href="../../../../com/exedio/cope/Pattern.html#getGeneratedTypes--">getGeneratedTypes</a>, <a href="../../../../com/exedio/cope/Pattern.html#getSourceFeatures--">getSourceFeatures</a>, <a href="../../../../com/exedio/cope/Pattern.html#getSourceFields--">getSourceFields</a>, <a href="../../../../com/exedio/cope/Pattern.html#getSources--">getSources</a>, <a href="../../../../com/exedio/cope/Pattern.html#getSourceTypes--">getSourceTypes</a>, <a href="../../../../com/exedio/cope/Pattern.html#getType--">getType</a>, <a href="../../../../com/exedio/cope/Pattern.html#initialize--">initialize</a>, <a href="../../../../com/exedio/cope/Pattern.html#newSourceType-java.lang.Class-boolean-com.exedio.cope.Type-com.exedio.cope.Features-java.lang.String-">newSourceType</a>, <a href="../../../../com/exedio/cope/Pattern.html#newSourceType-java.lang.Class-boolean-com.exedio.cope.Type-java.util.LinkedHashMap-java.lang.String-">newSourceType</a>, <a href="../../../../com/exedio/cope/Pattern.html#newSourceType-java.lang.Class-com.exedio.cope.Features-">newSourceType</a>, <a href="../../../../com/exedio/cope/Pattern.html#newSourceType-java.lang.Class-com.exedio.cope.Features-java.lang.String-">newSourceType</a>, <a href="../../../../com/exedio/cope/Pattern.html#newSourceType-java.lang.Class-java.util.LinkedHashMap-">newSourceType</a>, <a href="../../../../com/exedio/cope/Pattern.html#newSourceType-java.lang.Class-java.util.LinkedHashMap-java.lang.String-">newSourceType</a>, <a href="../../../../com/exedio/cope/Pattern.html#newType-java.lang.Class-java.util.LinkedHashMap-">newType</a>, <a href="../../../../com/exedio/cope/Pattern.html#newType-java.lang.Class-java.util.LinkedHashMap-java.lang.String-">newType</a>, <a href="../../../../com/exedio/cope/Pattern.html#onMount--">onMount</a>, <a href="../../../../com/exedio/cope/Pattern.html#registerSource-com.exedio.cope.Field-java.lang.String-">registerSource</a></code></li>
+<code><a href="../../../../com/exedio/cope/Pattern.html#addSource-com.exedio.cope.Feature-java.lang.String-">addSource</a>, <a href="../../../../com/exedio/cope/Pattern.html#addSource-com.exedio.cope.Feature-java.lang.String-java.lang.reflect.AnnotatedElement-">addSource</a>, <a href="../../../../com/exedio/cope/Pattern.html#addSource-com.exedio.cope.Feature-java.lang.String-java.lang.reflect.AnnotatedElement-java.lang.Class-">addSource</a>, <a href="../../../../com/exedio/cope/Pattern.html#addSource-com.exedio.cope.Feature-java.lang.String-java.lang.reflect.Field-">addSource</a>, <a href="../../../../com/exedio/cope/Pattern.html#annotationField-java.lang.String-">annotationField</a>, <a href="../../../../com/exedio/cope/Pattern.html#getGeneratedTypes--">getGeneratedTypes</a>, <a href="../../../../com/exedio/cope/Pattern.html#getSourceFeatures--">getSourceFeatures</a>, <a href="../../../../com/exedio/cope/Pattern.html#getSourceFeaturesGather--">getSourceFeaturesGather</a>, <a href="../../../../com/exedio/cope/Pattern.html#getSourceFields--">getSourceFields</a>, <a href="../../../../com/exedio/cope/Pattern.html#getSources--">getSources</a>, <a href="../../../../com/exedio/cope/Pattern.html#getSourceTypes--">getSourceTypes</a>, <a href="../../../../com/exedio/cope/Pattern.html#getType--">getType</a>, <a href="../../../../com/exedio/cope/Pattern.html#initialize--">initialize</a>, <a href="../../../../com/exedio/cope/Pattern.html#newSourceType-java.lang.Class-boolean-com.exedio.cope.Type-com.exedio.cope.Features-java.lang.String-">newSourceType</a>, <a href="../../../../com/exedio/cope/Pattern.html#newSourceType-java.lang.Class-boolean-com.exedio.cope.Type-java.util.LinkedHashMap-java.lang.String-">newSourceType</a>, <a href="../../../../com/exedio/cope/Pattern.html#newSourceType-java.lang.Class-com.exedio.cope.Features-">newSourceType</a>, <a href="../../../../com/exedio/cope/Pattern.html#newSourceType-java.lang.Class-com.exedio.cope.Features-java.lang.String-">newSourceType</a>, <a href="../../../../com/exedio/cope/Pattern.html#newSourceType-java.lang.Class-java.util.LinkedHashMap-">newSourceType</a>, <a href="../../../../com/exedio/cope/Pattern.html#newSourceType-java.lang.Class-java.util.LinkedHashMap-java.lang.String-">newSourceType</a>, <a href="../../../../com/exedio/cope/Pattern.html#newType-java.lang.Class-java.util.LinkedHashMap-">newType</a>, <a href="../../../../com/exedio/cope/Pattern.html#newType-java.lang.Class-java.util.LinkedHashMap-java.lang.String-">newType</a>, <a href="../../../../com/exedio/cope/Pattern.html#onMount--">onMount</a>, <a href="../../../../com/exedio/cope/Pattern.html#registerSource-com.exedio.cope.Field-java.lang.String-">registerSource</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.com.exedio.cope.Feature">
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;com.exedio.cope.<a href="../../../../com/exedio/cope/Feature.html" title="class in com.exedio.cope">Feature</a></h3>
-<code><a href="../../../../com/exedio/cope/Feature.html#afterModelCreated--">afterModelCreated</a>, <a href="../../../../com/exedio/cope/Feature.html#getAnnotation-java.lang.Class-">getAnnotation</a>, <a href="../../../../com/exedio/cope/Feature.html#getID--">getID</a>, <a href="../../../../com/exedio/cope/Feature.html#getName--">getName</a>, <a href="../../../../com/exedio/cope/Feature.html#getPattern--">getPattern</a>, <a href="../../../../com/exedio/cope/Feature.html#getWrappers--">getWrappers</a>, <a href="../../../../com/exedio/cope/Feature.html#isAnnotationPresent-java.lang.Class-">isAnnotationPresent</a>, <a href="../../../../com/exedio/cope/Feature.html#isSourceAlready--">isSourceAlready</a>, <a href="../../../../com/exedio/cope/Feature.html#mount-java.lang.String-java.io.Serializable-java.lang.reflect.AnnotatedElement-">mount</a>, <a href="../../../../com/exedio/cope/Feature.html#readResolve--">readResolve</a>, <a href="../../../../com/exedio/cope/Feature.html#toString--">toString</a>, <a href="../../../../com/exedio/cope/Feature.html#toString-java.lang.StringBuilder-com.exedio.cope.Type-">toString</a>, <a href="../../../../com/exedio/cope/Feature.html#writeReplace--">writeReplace</a></code></li>
+<code><a href="../../../../com/exedio/cope/Feature.html#afterModelCreated--">afterModelCreated</a>, <a href="../../../../com/exedio/cope/Feature.html#getAbstractType--">getAbstractType</a>, <a href="../../../../com/exedio/cope/Feature.html#getAnnotation-java.lang.Class-">getAnnotation</a>, <a href="../../../../com/exedio/cope/Feature.html#getID--">getID</a>, <a href="../../../../com/exedio/cope/Feature.html#getLocalizationKeys--">getLocalizationKeys</a>, <a href="../../../../com/exedio/cope/Feature.html#getName--">getName</a>, <a href="../../../../com/exedio/cope/Feature.html#getPattern--">getPattern</a>, <a href="../../../../com/exedio/cope/Feature.html#isAnnotationPresent-java.lang.Class-">isAnnotationPresent</a>, <a href="../../../../com/exedio/cope/Feature.html#isSourceAlready--">isSourceAlready</a>, <a href="../../../../com/exedio/cope/Feature.html#mount-com.exedio.cope.AbstractType-java.lang.String-java.lang.String-java.io.Serializable-java.lang.reflect.AnnotatedElement-">mount</a>, <a href="../../../../com/exedio/cope/Feature.html#readResolve--">readResolve</a>, <a href="../../../../com/exedio/cope/Feature.html#requireMounted-T-">requireMounted</a>, <a href="../../../../com/exedio/cope/Feature.html#toString--">toString</a>, <a href="../../../../com/exedio/cope/Feature.html#toString-java.lang.StringBuilder-com.exedio.cope.Type-">toString</a>, <a href="../../../../com/exedio/cope/Feature.html#writeReplace--">writeReplace</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
@@ -351,6 +348,13 @@ implements <a href="../../../../com/exedio/cope/Settable.html" title="interface 
 </a>
 <h3>Methods inherited from class&nbsp;java.lang.<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></h3>
 <code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#clone--" title="class or interface in java.lang">clone</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#equals-java.lang.Object-" title="class or interface in java.lang">equals</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#finalize--" title="class or interface in java.lang">finalize</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#getClass--" title="class or interface in java.lang">getClass</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#hashCode--" title="class or interface in java.lang">hashCode</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notify--" title="class or interface in java.lang">notify</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notifyAll--" title="class or interface in java.lang">notifyAll</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait--" title="class or interface in java.lang">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait-long-" title="class or interface in java.lang">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait-long-int-" title="class or interface in java.lang">wait</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods.inherited.from.class.com.exedio.cope.Settable">
+<!--   -->
+</a>
+<h3>Methods inherited from interface&nbsp;com.exedio.cope.<a href="../../../../com/exedio/cope/Settable.html" title="interface in com.exedio.cope">Settable</a></h3>
+<code><a href="../../../../com/exedio/cope/Settable.html#map-E-">map</a></code></li>
 </ul>
 </li>
 </ul>
@@ -466,7 +470,7 @@ implements <a href="../../../../com/exedio/cope/Settable.html" title="interface 
 <ul class="blockList">
 <li class="blockList">
 <h4>getInt</h4>
-<pre>public&nbsp;<a href="../../../../com/exedio/cope/IntegerField.html" title="class in com.exedio.cope">IntegerField</a>&nbsp;getInt()</pre>
+<pre>public&nbsp;<a href="../../../../com/exedio/cope/LongField.html" title="class in com.exedio.cope">LongField</a>&nbsp;getInt()</pre>
 </li>
 </ul>
 <a name="isInitial--">
@@ -576,7 +580,8 @@ implements <a href="../../../../com/exedio/cope/Settable.html" title="interface 
 <ul class="blockList">
 <li class="blockList">
 <h4>get</h4>
-<pre>public&nbsp;<a href="../../../../com/exedio/cope/pattern/Price.html" title="class in com.exedio.cope.pattern">Price</a>&nbsp;get(<a href="../../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&nbsp;item)</pre>
+<pre>public&nbsp;<a href="../../../../com/exedio/cope/pattern/Price.html" title="class in com.exedio.cope.pattern">Price</a>&nbsp;get(<a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+                 <a href="../../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&nbsp;item)</pre>
 </li>
 </ul>
 <a name="set-com.exedio.cope.Item-com.exedio.cope.pattern.Price-">
@@ -585,24 +590,9 @@ implements <a href="../../../../com/exedio/cope/Settable.html" title="interface 
 <ul class="blockList">
 <li class="blockList">
 <h4>set</h4>
-<pre>public&nbsp;void&nbsp;set(<a href="../../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&nbsp;item,
+<pre>public&nbsp;void&nbsp;set(<a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+                <a href="../../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&nbsp;item,
                 <a href="../../../../com/exedio/cope/pattern/Price.html" title="class in com.exedio.cope.pattern">Price</a>&nbsp;value)</pre>
-</li>
-</ul>
-<a name="map-com.exedio.cope.pattern.Price-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>map</h4>
-<pre>public&nbsp;<a href="../../../../com/exedio/cope/SetValue.html" title="class in com.exedio.cope">SetValue</a>&lt;<a href="../../../../com/exedio/cope/pattern/Price.html" title="class in com.exedio.cope.pattern">Price</a>&gt;&nbsp;map(<a href="../../../../com/exedio/cope/pattern/Price.html" title="class in com.exedio.cope.pattern">Price</a>&nbsp;value)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../com/exedio/cope/Settable.html#map-E-">Settable</a></code></span></div>
-<div class="block">All implementations of this method should return
- <tt><a href="../../../../com/exedio/cope/SetValue.html#map-F-E-"><code>SetValue.map(this,value)</code></a></tt>.</div>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../com/exedio/cope/Settable.html#map-E-">map</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../com/exedio/cope/Settable.html" title="interface in com.exedio.cope">Settable</a>&lt;<a href="../../../../com/exedio/cope/pattern/Price.html" title="class in com.exedio.cope.pattern">Price</a>&gt;</code></dd>
-</dl>
 </li>
 </ul>
 <a name="execute-com.exedio.cope.pattern.Price-com.exedio.cope.Item-">
@@ -619,13 +609,26 @@ implements <a href="../../../../com/exedio/cope/Settable.html" title="interface 
 </dl>
 </li>
 </ul>
+<a name="bind-com.exedio.cope.Join-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>bind</h4>
+<pre>public&nbsp;<a href="../../../../com/exedio/cope/pattern/PriceFunction.html" title="interface in com.exedio.cope.pattern">PriceFunction</a>&nbsp;bind(<a href="../../../../com/exedio/cope/Join.html" title="class in com.exedio.cope">Join</a>&nbsp;join)</pre>
+</li>
+</ul>
 <a name="isNull--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>isNull</h4>
-<pre>public final&nbsp;<a href="../../../../com/exedio/cope/IsNullCondition.html" title="class in com.exedio.cope">IsNullCondition</a>&lt;?&gt;&nbsp;isNull()</pre>
+<pre>public&nbsp;<a href="../../../../com/exedio/cope/IsNullCondition.html" title="class in com.exedio.cope">IsNullCondition</a>&lt;?&gt;&nbsp;isNull()</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../com/exedio/cope/pattern/PriceFunction.html#isNull--">isNull</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../com/exedio/cope/pattern/PriceFunction.html" title="interface in com.exedio.cope.pattern">PriceFunction</a></code></dd>
+</dl>
 </li>
 </ul>
 <a name="isNotNull--">
@@ -634,7 +637,11 @@ implements <a href="../../../../com/exedio/cope/Settable.html" title="interface 
 <ul class="blockList">
 <li class="blockList">
 <h4>isNotNull</h4>
-<pre>public final&nbsp;<a href="../../../../com/exedio/cope/IsNullCondition.html" title="class in com.exedio.cope">IsNullCondition</a>&lt;?&gt;&nbsp;isNotNull()</pre>
+<pre>public&nbsp;<a href="../../../../com/exedio/cope/IsNullCondition.html" title="class in com.exedio.cope">IsNullCondition</a>&lt;?&gt;&nbsp;isNotNull()</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../com/exedio/cope/pattern/PriceFunction.html#isNotNull--">isNotNull</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../com/exedio/cope/pattern/PriceFunction.html" title="interface in com.exedio.cope.pattern">PriceFunction</a></code></dd>
+</dl>
 </li>
 </ul>
 <a name="equal-com.exedio.cope.pattern.Price-">
@@ -644,6 +651,10 @@ implements <a href="../../../../com/exedio/cope/Settable.html" title="interface 
 <li class="blockList">
 <h4>equal</h4>
 <pre>public&nbsp;<a href="../../../../com/exedio/cope/Condition.html" title="class in com.exedio.cope">Condition</a>&nbsp;equal(<a href="../../../../com/exedio/cope/pattern/Price.html" title="class in com.exedio.cope.pattern">Price</a>&nbsp;value)</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../com/exedio/cope/pattern/PriceFunction.html#equal-com.exedio.cope.pattern.Price-">equal</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../com/exedio/cope/pattern/PriceFunction.html" title="interface in com.exedio.cope.pattern">PriceFunction</a></code></dd>
+</dl>
 </li>
 </ul>
 <a name="notEqual-com.exedio.cope.pattern.Price-">
@@ -653,6 +664,10 @@ implements <a href="../../../../com/exedio/cope/Settable.html" title="interface 
 <li class="blockList">
 <h4>notEqual</h4>
 <pre>public&nbsp;<a href="../../../../com/exedio/cope/Condition.html" title="class in com.exedio.cope">Condition</a>&nbsp;notEqual(<a href="../../../../com/exedio/cope/pattern/Price.html" title="class in com.exedio.cope.pattern">Price</a>&nbsp;value)</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../com/exedio/cope/pattern/PriceFunction.html#notEqual-com.exedio.cope.pattern.Price-">notEqual</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../com/exedio/cope/pattern/PriceFunction.html" title="interface in com.exedio.cope.pattern">PriceFunction</a></code></dd>
+</dl>
 </li>
 </ul>
 <a name="less-com.exedio.cope.pattern.Price-">
@@ -661,7 +676,11 @@ implements <a href="../../../../com/exedio/cope/Settable.html" title="interface 
 <ul class="blockList">
 <li class="blockList">
 <h4>less</h4>
-<pre>public final&nbsp;<a href="../../../../com/exedio/cope/CompareCondition.html" title="class in com.exedio.cope">CompareCondition</a>&lt;?&gt;&nbsp;less(<a href="../../../../com/exedio/cope/pattern/Price.html" title="class in com.exedio.cope.pattern">Price</a>&nbsp;value)</pre>
+<pre>public&nbsp;<a href="../../../../com/exedio/cope/CompareCondition.html" title="class in com.exedio.cope">CompareCondition</a>&lt;?&gt;&nbsp;less(<a href="../../../../com/exedio/cope/pattern/Price.html" title="class in com.exedio.cope.pattern">Price</a>&nbsp;value)</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../com/exedio/cope/pattern/PriceFunction.html#less-com.exedio.cope.pattern.Price-">less</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../com/exedio/cope/pattern/PriceFunction.html" title="interface in com.exedio.cope.pattern">PriceFunction</a></code></dd>
+</dl>
 </li>
 </ul>
 <a name="lessOrEqual-com.exedio.cope.pattern.Price-">
@@ -670,7 +689,11 @@ implements <a href="../../../../com/exedio/cope/Settable.html" title="interface 
 <ul class="blockList">
 <li class="blockList">
 <h4>lessOrEqual</h4>
-<pre>public final&nbsp;<a href="../../../../com/exedio/cope/CompareCondition.html" title="class in com.exedio.cope">CompareCondition</a>&lt;?&gt;&nbsp;lessOrEqual(<a href="../../../../com/exedio/cope/pattern/Price.html" title="class in com.exedio.cope.pattern">Price</a>&nbsp;value)</pre>
+<pre>public&nbsp;<a href="../../../../com/exedio/cope/CompareCondition.html" title="class in com.exedio.cope">CompareCondition</a>&lt;?&gt;&nbsp;lessOrEqual(<a href="../../../../com/exedio/cope/pattern/Price.html" title="class in com.exedio.cope.pattern">Price</a>&nbsp;value)</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../com/exedio/cope/pattern/PriceFunction.html#lessOrEqual-com.exedio.cope.pattern.Price-">lessOrEqual</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../com/exedio/cope/pattern/PriceFunction.html" title="interface in com.exedio.cope.pattern">PriceFunction</a></code></dd>
+</dl>
 </li>
 </ul>
 <a name="greater-com.exedio.cope.pattern.Price-">
@@ -679,7 +702,11 @@ implements <a href="../../../../com/exedio/cope/Settable.html" title="interface 
 <ul class="blockList">
 <li class="blockList">
 <h4>greater</h4>
-<pre>public final&nbsp;<a href="../../../../com/exedio/cope/CompareCondition.html" title="class in com.exedio.cope">CompareCondition</a>&lt;?&gt;&nbsp;greater(<a href="../../../../com/exedio/cope/pattern/Price.html" title="class in com.exedio.cope.pattern">Price</a>&nbsp;value)</pre>
+<pre>public&nbsp;<a href="../../../../com/exedio/cope/CompareCondition.html" title="class in com.exedio.cope">CompareCondition</a>&lt;?&gt;&nbsp;greater(<a href="../../../../com/exedio/cope/pattern/Price.html" title="class in com.exedio.cope.pattern">Price</a>&nbsp;value)</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../com/exedio/cope/pattern/PriceFunction.html#greater-com.exedio.cope.pattern.Price-">greater</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../com/exedio/cope/pattern/PriceFunction.html" title="interface in com.exedio.cope.pattern">PriceFunction</a></code></dd>
+</dl>
 </li>
 </ul>
 <a name="greaterOrEqual-com.exedio.cope.pattern.Price-">
@@ -688,7 +715,11 @@ implements <a href="../../../../com/exedio/cope/Settable.html" title="interface 
 <ul class="blockList">
 <li class="blockList">
 <h4>greaterOrEqual</h4>
-<pre>public final&nbsp;<a href="../../../../com/exedio/cope/CompareCondition.html" title="class in com.exedio.cope">CompareCondition</a>&lt;?&gt;&nbsp;greaterOrEqual(<a href="../../../../com/exedio/cope/pattern/Price.html" title="class in com.exedio.cope.pattern">Price</a>&nbsp;value)</pre>
+<pre>public&nbsp;<a href="../../../../com/exedio/cope/CompareCondition.html" title="class in com.exedio.cope">CompareCondition</a>&lt;?&gt;&nbsp;greaterOrEqual(<a href="../../../../com/exedio/cope/pattern/Price.html" title="class in com.exedio.cope.pattern">Price</a>&nbsp;value)</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../com/exedio/cope/pattern/PriceFunction.html#greaterOrEqual-com.exedio.cope.pattern.Price-">greaterOrEqual</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../com/exedio/cope/pattern/PriceFunction.html" title="interface in com.exedio.cope.pattern">PriceFunction</a></code></dd>
+</dl>
 </li>
 </ul>
 <a name="between-com.exedio.cope.pattern.Price-com.exedio.cope.pattern.Price-">
@@ -699,6 +730,10 @@ implements <a href="../../../../com/exedio/cope/Settable.html" title="interface 
 <h4>between</h4>
 <pre>public&nbsp;<a href="../../../../com/exedio/cope/Condition.html" title="class in com.exedio.cope">Condition</a>&nbsp;between(<a href="../../../../com/exedio/cope/pattern/Price.html" title="class in com.exedio.cope.pattern">Price</a>&nbsp;lowerBound,
                          <a href="../../../../com/exedio/cope/pattern/Price.html" title="class in com.exedio.cope.pattern">Price</a>&nbsp;upperBound)</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../com/exedio/cope/pattern/PriceFunction.html#between-com.exedio.cope.pattern.Price-com.exedio.cope.pattern.Price-">between</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../com/exedio/cope/pattern/PriceFunction.html" title="interface in com.exedio.cope.pattern">PriceFunction</a></code></dd>
+</dl>
 </li>
 </ul>
 <a name="equal-com.exedio.cope.pattern.PriceField-">
@@ -707,7 +742,7 @@ implements <a href="../../../../com/exedio/cope/Settable.html" title="interface 
 <ul class="blockList">
 <li class="blockList">
 <h4>equal</h4>
-<pre>public final&nbsp;<a href="../../../../com/exedio/cope/CompareFunctionCondition.html" title="class in com.exedio.cope">CompareFunctionCondition</a>&lt;?&gt;&nbsp;equal(<a href="../../../../com/exedio/cope/pattern/PriceField.html" title="class in com.exedio.cope.pattern">PriceField</a>&nbsp;right)</pre>
+<pre>public&nbsp;<a href="../../../../com/exedio/cope/CompareFunctionCondition.html" title="class in com.exedio.cope">CompareFunctionCondition</a>&lt;?&gt;&nbsp;equal(<a href="../../../../com/exedio/cope/pattern/PriceField.html" title="class in com.exedio.cope.pattern">PriceField</a>&nbsp;right)</pre>
 </li>
 </ul>
 <a name="notEqual-com.exedio.cope.pattern.PriceField-">
@@ -716,7 +751,7 @@ implements <a href="../../../../com/exedio/cope/Settable.html" title="interface 
 <ul class="blockList">
 <li class="blockList">
 <h4>notEqual</h4>
-<pre>public final&nbsp;<a href="../../../../com/exedio/cope/CompareFunctionCondition.html" title="class in com.exedio.cope">CompareFunctionCondition</a>&lt;?&gt;&nbsp;notEqual(<a href="../../../../com/exedio/cope/pattern/PriceField.html" title="class in com.exedio.cope.pattern">PriceField</a>&nbsp;right)</pre>
+<pre>public&nbsp;<a href="../../../../com/exedio/cope/CompareFunctionCondition.html" title="class in com.exedio.cope">CompareFunctionCondition</a>&lt;?&gt;&nbsp;notEqual(<a href="../../../../com/exedio/cope/pattern/PriceField.html" title="class in com.exedio.cope.pattern">PriceField</a>&nbsp;right)</pre>
 </li>
 </ul>
 <a name="less-com.exedio.cope.pattern.PriceField-">
@@ -725,7 +760,7 @@ implements <a href="../../../../com/exedio/cope/Settable.html" title="interface 
 <ul class="blockList">
 <li class="blockList">
 <h4>less</h4>
-<pre>public final&nbsp;<a href="../../../../com/exedio/cope/CompareFunctionCondition.html" title="class in com.exedio.cope">CompareFunctionCondition</a>&lt;?&gt;&nbsp;less(<a href="../../../../com/exedio/cope/pattern/PriceField.html" title="class in com.exedio.cope.pattern">PriceField</a>&nbsp;right)</pre>
+<pre>public&nbsp;<a href="../../../../com/exedio/cope/CompareFunctionCondition.html" title="class in com.exedio.cope">CompareFunctionCondition</a>&lt;?&gt;&nbsp;less(<a href="../../../../com/exedio/cope/pattern/PriceField.html" title="class in com.exedio.cope.pattern">PriceField</a>&nbsp;right)</pre>
 </li>
 </ul>
 <a name="lessOrEqual-com.exedio.cope.pattern.PriceField-">
@@ -734,7 +769,7 @@ implements <a href="../../../../com/exedio/cope/Settable.html" title="interface 
 <ul class="blockList">
 <li class="blockList">
 <h4>lessOrEqual</h4>
-<pre>public final&nbsp;<a href="../../../../com/exedio/cope/CompareFunctionCondition.html" title="class in com.exedio.cope">CompareFunctionCondition</a>&lt;?&gt;&nbsp;lessOrEqual(<a href="../../../../com/exedio/cope/pattern/PriceField.html" title="class in com.exedio.cope.pattern">PriceField</a>&nbsp;right)</pre>
+<pre>public&nbsp;<a href="../../../../com/exedio/cope/CompareFunctionCondition.html" title="class in com.exedio.cope">CompareFunctionCondition</a>&lt;?&gt;&nbsp;lessOrEqual(<a href="../../../../com/exedio/cope/pattern/PriceField.html" title="class in com.exedio.cope.pattern">PriceField</a>&nbsp;right)</pre>
 </li>
 </ul>
 <a name="greater-com.exedio.cope.pattern.PriceField-">
@@ -743,7 +778,7 @@ implements <a href="../../../../com/exedio/cope/Settable.html" title="interface 
 <ul class="blockList">
 <li class="blockList">
 <h4>greater</h4>
-<pre>public final&nbsp;<a href="../../../../com/exedio/cope/CompareFunctionCondition.html" title="class in com.exedio.cope">CompareFunctionCondition</a>&lt;?&gt;&nbsp;greater(<a href="../../../../com/exedio/cope/pattern/PriceField.html" title="class in com.exedio.cope.pattern">PriceField</a>&nbsp;right)</pre>
+<pre>public&nbsp;<a href="../../../../com/exedio/cope/CompareFunctionCondition.html" title="class in com.exedio.cope">CompareFunctionCondition</a>&lt;?&gt;&nbsp;greater(<a href="../../../../com/exedio/cope/pattern/PriceField.html" title="class in com.exedio.cope.pattern">PriceField</a>&nbsp;right)</pre>
 </li>
 </ul>
 <a name="greaterOrEqual-com.exedio.cope.pattern.PriceField-">
@@ -752,7 +787,7 @@ implements <a href="../../../../com/exedio/cope/Settable.html" title="interface 
 <ul class="blockList">
 <li class="blockList">
 <h4>greaterOrEqual</h4>
-<pre>public final&nbsp;<a href="../../../../com/exedio/cope/CompareFunctionCondition.html" title="class in com.exedio.cope">CompareFunctionCondition</a>&lt;?&gt;&nbsp;greaterOrEqual(<a href="../../../../com/exedio/cope/pattern/PriceField.html" title="class in com.exedio.cope.pattern">PriceField</a>&nbsp;right)</pre>
+<pre>public&nbsp;<a href="../../../../com/exedio/cope/CompareFunctionCondition.html" title="class in com.exedio.cope">CompareFunctionCondition</a>&lt;?&gt;&nbsp;greaterOrEqual(<a href="../../../../com/exedio/cope/pattern/PriceField.html" title="class in com.exedio.cope.pattern">PriceField</a>&nbsp;right)</pre>
 </li>
 </ul>
 <a name="min-int-">
@@ -793,7 +828,7 @@ public&nbsp;<a href="../../../../com/exedio/cope/pattern/PriceField.html" title=
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../../com/exedio/cope/pattern/Price.html" title="class in com.exedio.cope.pattern"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../../com/exedio/cope/pattern/Range.html" title="class in com.exedio.cope.pattern"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../com/exedio/cope/pattern/PriceFunction.html" title="interface in com.exedio.cope.pattern"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../index.html?com/exedio/cope/pattern/PriceField.html" target="_top">Frames</a></li>

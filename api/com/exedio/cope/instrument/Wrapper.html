@@ -17,12 +17,6 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":42,"i1":42,"i2":42,"i3":42,"i4":42,"i5":42,"i6":42,"i7":42,"i8":42,"i9":41,"i10":41,"i11":41,"i12":42,"i13":42,"i14":42,"i15":42,"i16":42,"i17":42,"i18":42,"i19":42,"i20":42,"i21":42,"i22":42,"i23":42,"i24":42,"i25":42,"i26":42,"i27":42,"i28":42,"i29":42};
-var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"],32:["t6","Deprecated Methods"]};
-var altColor = "altColor";
-var rowColor = "rowColor";
-var tableTab = "tableTab";
-var activeTableTab = "activeTableTab";
 </script>
 <noscript>
 <div>JavaScript is disabled on your browser.</div>
@@ -47,7 +41,7 @@ var activeTableTab = "activeTableTab";
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../../com/exedio/cope/instrument/WrapFeature.html" title="annotation in com.exedio.cope.instrument"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../../com/exedio/cope/instrument/Wrapper.ClassVariable.html" title="class in com.exedio.cope.instrument"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../com/exedio/cope/instrument/WrapperIgnore.html" title="annotation in com.exedio.cope.instrument"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../index.html?com/exedio/cope/instrument/Wrapper.html" target="_top">Frames</a></li>
@@ -71,16 +65,14 @@ var activeTableTab = "activeTableTab";
 <div>
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
-<li><a href="#nested.class.summary">Nested</a>&nbsp;|&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
-<li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
-<li><a href="#method.summary">Method</a></li>
+<li><a href="#annotation.type.field.summary">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#annotation.type.required.element.summary">Required</a>&nbsp;|&nbsp;</li>
+<li><a href="#annotation.type.optional.element.summary">Optional</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
-<li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
-<li><a href="#method.detail">Method</a></li>
+<li><a href="#annotation.type.field.detail">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#annotation.type.element.detail">Element</a></li>
 </ul>
 </div>
 <a name="skip.navbar.top">
@@ -90,309 +82,113 @@ var activeTableTab = "activeTableTab";
 <!-- ======== START OF CLASS DATA ======== -->
 <div class="header">
 <div class="subTitle">com.exedio.cope.instrument</div>
-<h2 title="Class Wrapper" class="title">Class Wrapper</h2>
+<h2 title="Annotation Type Wrapper" class="title">Annotation Type Wrapper</h2>
 </div>
 <div class="contentContainer">
-<ul class="inheritance">
-<li><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</a></li>
-<li>
-<ul class="inheritance">
-<li>com.exedio.cope.instrument.Wrapper</li>
-</ul>
-</li>
-</ul>
 <div class="description">
 <ul class="blockList">
 <li class="blockList">
 <hr>
-<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
-<div class="block"><span class="deprecationComment">Use <a href="../../../../com/exedio/cope/instrument/Wrap.html" title="annotation in com.exedio.cope.instrument"><code>Wrap</code></a> annotations instead.</span></div>
-</div>
 <br>
-<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</a>
-public final class <span class="typeNameLabel">Wrapper</span>
-extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></pre>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/annotation/Repeatable.html?is-external=true" title="class or interface in java.lang.annotation">@Repeatable</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/annotation/Repeatable.html?is-external=true#value--" title="class or interface in java.lang.annotation">value</a>=<a href="../../../../com/exedio/cope/instrument/WrapperRepeated.html" title="annotation in com.exedio.cope.instrument">WrapperRepeated.class</a>)
+ <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/annotation/Target.html?is-external=true" title="class or interface in java.lang.annotation">@Target</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/annotation/Target.html?is-external=true#value--" title="class or interface in java.lang.annotation">value</a>=<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/annotation/ElementType.html?is-external=true#FIELD" title="class or interface in java.lang.annotation">FIELD</a>)
+ <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/annotation/Retention.html?is-external=true" title="class or interface in java.lang.annotation">@Retention</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/annotation/Retention.html?is-external=true#value--" title="class or interface in java.lang.annotation">value</a>=<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/annotation/RetentionPolicy.html?is-external=true#SOURCE" title="class or interface in java.lang.annotation">SOURCE</a>)
+public @interface <span class="memberNameLabel">Wrapper</span></pre>
 </li>
 </ul>
 </div>
 <div class="summary">
 <ul class="blockList">
 <li class="blockList">
-<!-- ======== NESTED CLASS SUMMARY ======== -->
+<!-- =========== ANNOTATION TYPE FIELD SUMMARY =========== -->
 <ul class="blockList">
-<li class="blockList"><a name="nested.class.summary">
+<li class="blockList"><a name="annotation.type.field.summary">
 <!--   -->
 </a>
-<h3>Nested Class Summary</h3>
-<table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Nested Class Summary table, listing nested classes, and an explanation">
-<caption><span>Nested Classes</span><span class="tabEnd">&nbsp;</span></caption>
+<h3>Field Summary</h3>
+<table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Field Summary table, listing fields, and an explanation">
+<caption><span>Fields</span><span class="tabEnd">&nbsp;</span></caption>
 <tr>
 <th class="colFirst" scope="col">Modifier and Type</th>
-<th class="colLast" scope="col">Class and Description</th>
+<th class="colLast" scope="col">Fields and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>class&nbsp;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/instrument/Wrapper.ClassVariable.html" title="class in com.exedio.cope.instrument">Wrapper.ClassVariable</a></span></code>
-<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
-&nbsp;</td>
+<td class="colFirst"><code>static <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/instrument/Wrapper.html#ALL_WRAPS">ALL_WRAPS</a></span></code>&nbsp;</td>
+</tr>
+</table>
+</li>
+</ul>
+<!-- =========== ANNOTATION TYPE REQUIRED MEMBER SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="annotation.type.required.element.summary">
+<!--   -->
+</a>
+<h3>Required Element Summary</h3>
+<table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Required Element Summary table, listing required elements, and an explanation">
+<caption><span>Required Elements</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Required Element and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/instrument/Wrapper.html#wrap--">wrap</a></span></code>
+<div class="block">The <a href="../../../../com/exedio/cope/instrument/Wrap.html#name--"><code>name</code></a> of the 'wrap' that is being configured.</div>
+</td>
+</tr>
+</table>
+</li>
+</ul>
+<!-- =========== ANNOTATION TYPE OPTIONAL MEMBER SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="annotation.type.optional.element.summary">
+<!--   -->
+</a>
+<h3>Optional Element Summary</h3>
+<table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Optional Element Summary table, listing optional elements, and an explanation">
+<caption><span>Optional Elements</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Optional Element and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/instrument/Wrapper.html#asFinal--">asFinal</a></span></code>
+<div class="block">Makes the generated wrapper method <code>final</code>.</div>
+</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>class&nbsp;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/instrument/Wrapper.TypeVariable0.html" title="class in com.exedio.cope.instrument">Wrapper.TypeVariable0</a></span></code>
-<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
-&nbsp;</td>
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/instrument/Wrapper.html#booleanAsIs--">booleanAsIs</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>class&nbsp;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/instrument/Wrapper.TypeVariable1.html" title="class in com.exedio.cope.instrument">Wrapper.TypeVariable1</a></span></code>
-<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
-&nbsp;</td>
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/instrument/Wrapper.html#internal--">internal</a></span></code>
+<div class="block">Appends "Internal" to the name of the generated wrapper method.</div>
+</td>
 </tr>
-</table>
-</li>
-</ul>
-<!-- ======== CONSTRUCTOR SUMMARY ======== -->
-<ul class="blockList">
-<li class="blockList"><a name="constructor.summary">
-<!--   -->
-</a>
-<h3>Constructor Summary</h3>
-<table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Constructor Summary table, listing constructors, and an explanation">
-<caption><span>Constructors</span><span class="tabEnd">&nbsp;</span></caption>
-<tr>
-<th class="colOne" scope="col">Constructor and Description</th>
+<tr class="rowColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/instrument/Wrapper.html#override--">override</a></span></code>
+<div class="block">Annotates the generated wrapper method with @<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Override.html?is-external=true" title="class or interface in java.lang"><code>Override</code></a>.</div>
+</td>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/instrument/Wrapper.html#Wrapper-java.lang.String-">Wrapper</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name)</code>
-<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
-&nbsp;</td>
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;?&gt;[]</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/instrument/Wrapper.html#parameters--">parameters</a></span></code>
+<div class="block">If several wrapper methods with the same <a href="../../../../com/exedio/cope/instrument/Wrapper.html#wrap--"><code>wrap()</code></a> get generated, but your
+ <a href="../../../../com/exedio/cope/instrument/Wrapper.html" title="annotation in com.exedio.cope.instrument"><code>Wrapper</code></a> annotation should only affect one of them, it can be restricted by setting
+ this field to the parameter list of the method.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../com/exedio/cope/instrument/Visibility.html" title="enum in com.exedio.cope.instrument">Visibility</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/instrument/Wrapper.html#visibility--">visibility</a></span></code>
+<div class="block">Overrides the visibility of the generated wrapper method.</div>
+</td>
 </tr>
 </table>
-</li>
-</ul>
-<!-- ========== METHOD SUMMARY =========== -->
-<ul class="blockList">
-<li class="blockList"><a name="method.summary">
-<!--   -->
-</a>
-<h3>Method Summary</h3>
-<table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
-<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t1" class="tableTab"><span><a href="javascript:show(1);">Static Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t6" class="tableTab"><span><a href="javascript:show(32);">Deprecated Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
-<tr>
-<th class="colFirst" scope="col">Modifier and Type</th>
-<th class="colLast" scope="col">Method and Description</th>
-</tr>
-<tr id="i0" class="altColor">
-<td class="colFirst"><code><a href="../../../../com/exedio/cope/instrument/Wrapper.html" title="class in com.exedio.cope.instrument">Wrapper</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/instrument/Wrapper.html#addComment-java.lang.String-">addComment</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;comment)</code>
-<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
-&nbsp;</td>
-</tr>
-<tr id="i1" class="rowColor">
-<td class="colFirst"><code><a href="../../../../com/exedio/cope/instrument/Wrapper.html" title="class in com.exedio.cope.instrument">Wrapper</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/instrument/Wrapper.html#addParameter-java.lang.reflect.Type-">addParameter</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/reflect/Type.html?is-external=true" title="class or interface in java.lang.reflect">Type</a>&nbsp;type)</code>
-<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
-&nbsp;</td>
-</tr>
-<tr id="i2" class="altColor">
-<td class="colFirst"><code><a href="../../../../com/exedio/cope/instrument/Wrapper.html" title="class in com.exedio.cope.instrument">Wrapper</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/instrument/Wrapper.html#addParameter-java.lang.reflect.Type-java.lang.String-">addParameter</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/reflect/Type.html?is-external=true" title="class or interface in java.lang.reflect">Type</a>&nbsp;type,
-            <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name)</code>
-<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
-&nbsp;</td>
-</tr>
-<tr id="i3" class="rowColor">
-<td class="colFirst"><code><a href="../../../../com/exedio/cope/instrument/Wrapper.html" title="class in com.exedio.cope.instrument">Wrapper</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/instrument/Wrapper.html#addParameter-java.lang.reflect.Type-java.lang.String-java.lang.String-">addParameter</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/reflect/Type.html?is-external=true" title="class or interface in java.lang.reflect">Type</a>&nbsp;type,
-            <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name,
-            <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;comment)</code>
-<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
-&nbsp;</td>
-</tr>
-<tr id="i4" class="altColor">
-<td class="colFirst"><code><a href="../../../../com/exedio/cope/instrument/Wrapper.html" title="class in com.exedio.cope.instrument">Wrapper</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/instrument/Wrapper.html#addParameterVararg-java.lang.Class-java.lang.String-">addParameterVararg</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;?&gt;&nbsp;type,
-                  <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name)</code>
-<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
-&nbsp;</td>
-</tr>
-<tr id="i5" class="rowColor">
-<td class="colFirst"><code><a href="../../../../com/exedio/cope/instrument/Wrapper.html" title="class in com.exedio.cope.instrument">Wrapper</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/instrument/Wrapper.html#addThrows-java.lang.Class-">addThrows</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;? extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang">Throwable</a>&gt;&nbsp;throwable)</code>
-<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
-&nbsp;</td>
-</tr>
-<tr id="i6" class="altColor">
-<td class="colFirst"><code><a href="../../../../com/exedio/cope/instrument/Wrapper.html" title="class in com.exedio.cope.instrument">Wrapper</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/instrument/Wrapper.html#addThrows-java.lang.Class-java.lang.String-">addThrows</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;? extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang">Throwable</a>&gt;&nbsp;throwable,
-         <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;comment)</code>
-<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
-&nbsp;</td>
-</tr>
-<tr id="i7" class="rowColor">
-<td class="colFirst"><code><a href="../../../../com/exedio/cope/instrument/Wrapper.html" title="class in com.exedio.cope.instrument">Wrapper</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/instrument/Wrapper.html#addThrows-java.util.Collection-">addThrows</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;? extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang">Throwable</a>&gt;&gt;&nbsp;throwables)</code>
-<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
-&nbsp;</td>
-</tr>
-<tr id="i8" class="altColor">
-<td class="colFirst"><code><a href="../../../../com/exedio/cope/instrument/Wrapper.html" title="class in com.exedio.cope.instrument">Wrapper</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/instrument/Wrapper.html#deprecate-java.lang.String-">deprecate</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;comment)</code>
-<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
-<div class="block"><span class="deprecationComment">not supported anymore, does nothing</span></div>
-</div>
-</td>
-</tr>
-<tr id="i9" class="rowColor">
-<td class="colFirst"><code>static <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/reflect/Type.html?is-external=true" title="class or interface in java.lang.reflect">Type</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/instrument/Wrapper.html#generic-java.lang.Class-java.lang.Class...-">generic</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;?&gt;&nbsp;rawType,
-       <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;?&gt;...&nbsp;actualTypeArguments)</code>
-<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
-<div class="block"><span class="deprecationComment">Not supported anymore, throws <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/NoSuchMethodError.html?is-external=true" title="class or interface in java.lang"><code>NoSuchMethodError</code></a>.</span></div>
-</div>
-</td>
-</tr>
-<tr id="i10" class="altColor">
-<td class="colFirst"><code>static <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/reflect/Type.html?is-external=true" title="class or interface in java.lang.reflect">Type</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/instrument/Wrapper.html#genericExtends-java.lang.Class-java.lang.Class...-">genericExtends</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;?&gt;&nbsp;rawType,
-              <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;?&gt;...&nbsp;actualTypeArguments)</code>
-<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
-&nbsp;</td>
-</tr>
-<tr id="i11" class="rowColor">
-<td class="colFirst"><code>static &lt;F extends <a href="../../../../com/exedio/cope/Feature.html" title="class in com.exedio.cope">Feature</a>&gt;<br><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../com/exedio/cope/instrument/Wrapper.html" title="class in com.exedio.cope.instrument">Wrapper</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/instrument/Wrapper.html#getByAnnotations-java.lang.Class-F-java.util.List-">getByAnnotations</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;F&gt;&nbsp;clazz,
-                F&nbsp;feature,
-                <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../com/exedio/cope/instrument/Wrapper.html" title="class in com.exedio.cope.instrument">Wrapper</a>&gt;&nbsp;superResult)</code>
-<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
-<div class="block"><span class="deprecationComment">Not supported anymore, throws <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/NoSuchMethodError.html?is-external=true" title="class or interface in java.lang"><code>NoSuchMethodError</code></a>.</span></div>
-</div>
-</td>
-</tr>
-<tr id="i12" class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/instrument/Wrapper.html#getComments--">getComments</a></span>()</code>
-<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
-&nbsp;</td>
-</tr>
-<tr id="i13" class="rowColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/instrument/Wrapper.html#getDeprecationComment--">getDeprecationComment</a></span>()</code>
-<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
-<div class="block"><span class="deprecationComment">not supported anymore, always returns null</span></div>
-</div>
-</td>
-</tr>
-<tr id="i14" class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/instrument/Wrapper.html#getMethodWrapperPattern--">getMethodWrapperPattern</a></span>()</code>
-<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
-&nbsp;</td>
-</tr>
-<tr id="i15" class="rowColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/instrument/Wrapper.html#getName--">getName</a></span>()</code>
-<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
-&nbsp;</td>
-</tr>
-<tr id="i16" class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;com.exedio.cope.instrument.Wrapper.Parameter&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/instrument/Wrapper.html#getParameters--">getParameters</a></span>()</code>
-<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
-&nbsp;</td>
-</tr>
-<tr id="i17" class="rowColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>[]</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/instrument/Wrapper.html#getReturnComment--">getReturnComment</a></span>()</code>
-<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
-&nbsp;</td>
-</tr>
-<tr id="i18" class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/reflect/Type.html?is-external=true" title="class or interface in java.lang.reflect">Type</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/instrument/Wrapper.html#getReturnType--">getReturnType</a></span>()</code>
-<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
-&nbsp;</td>
-</tr>
-<tr id="i19" class="rowColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;? extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang">Throwable</a>&gt;,<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>[]&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/instrument/Wrapper.html#getThrowsClause--">getThrowsClause</a></span>()</code>
-<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
-&nbsp;</td>
-</tr>
-<tr id="i20" class="altColor">
-<td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/instrument/Wrapper.html#hasStaticClassToken--">hasStaticClassToken</a></span>()</code>
-<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
-&nbsp;</td>
-</tr>
-<tr id="i21" class="rowColor">
-<td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/instrument/Wrapper.html#isDeprecated--">isDeprecated</a></span>()</code>
-<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
-<div class="block"><span class="deprecationComment">not supported anymore, always returns false</span></div>
-</div>
-</td>
-</tr>
-<tr id="i22" class="altColor">
-<td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/instrument/Wrapper.html#isStatic--">isStatic</a></span>()</code>
-<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
-&nbsp;</td>
-</tr>
-<tr id="i23" class="rowColor">
-<td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/instrument/Wrapper.html#matchesMethod-java.lang.String-java.lang.Class...-">matchesMethod</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name,
-             <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;?&gt;...&nbsp;parameterTypes)</code>
-<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
-<div class="block"><span class="deprecationComment">Not needed anymore by framework.</span></div>
-</div>
-</td>
-</tr>
-<tr id="i24" class="altColor">
-<td class="colFirst"><code><a href="../../../../com/exedio/cope/instrument/Wrapper.html" title="class in com.exedio.cope.instrument">Wrapper</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/instrument/Wrapper.html#setMethodWrapperPattern-java.lang.String-">setMethodWrapperPattern</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;pattern)</code>
-<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
-&nbsp;</td>
-</tr>
-<tr id="i25" class="rowColor">
-<td class="colFirst"><code><a href="../../../../com/exedio/cope/instrument/Wrapper.html" title="class in com.exedio.cope.instrument">Wrapper</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/instrument/Wrapper.html#setReturn-java.lang.reflect.Type-">setReturn</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/reflect/Type.html?is-external=true" title="class or interface in java.lang.reflect">Type</a>&nbsp;type)</code>
-<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
-&nbsp;</td>
-</tr>
-<tr id="i26" class="altColor">
-<td class="colFirst"><code><a href="../../../../com/exedio/cope/instrument/Wrapper.html" title="class in com.exedio.cope.instrument">Wrapper</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/instrument/Wrapper.html#setReturn-java.lang.reflect.Type-java.lang.String-">setReturn</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/reflect/Type.html?is-external=true" title="class or interface in java.lang.reflect">Type</a>&nbsp;type,
-         <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;comment)</code>
-<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
-&nbsp;</td>
-</tr>
-<tr id="i27" class="rowColor">
-<td class="colFirst"><code><a href="../../../../com/exedio/cope/instrument/Wrapper.html" title="class in com.exedio.cope.instrument">Wrapper</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/instrument/Wrapper.html#setStatic--">setStatic</a></span>()</code>
-<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
-&nbsp;</td>
-</tr>
-<tr id="i28" class="altColor">
-<td class="colFirst"><code><a href="../../../../com/exedio/cope/instrument/Wrapper.html" title="class in com.exedio.cope.instrument">Wrapper</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/instrument/Wrapper.html#setStatic-boolean-">setStatic</a></span>(boolean&nbsp;classToken)</code>
-<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
-&nbsp;</td>
-</tr>
-<tr id="i29" class="rowColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/instrument/Wrapper.html#toString--">toString</a></span>()</code>
-<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
-&nbsp;</td>
-</tr>
-</table>
-<ul class="blockList">
-<li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
-<!--   -->
-</a>
-<h3>Methods inherited from class&nbsp;java.lang.<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></h3>
-<code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#clone--" title="class or interface in java.lang">clone</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#equals-java.lang.Object-" title="class or interface in java.lang">equals</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#finalize--" title="class or interface in java.lang">finalize</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#getClass--" title="class or interface in java.lang">getClass</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#hashCode--" title="class or interface in java.lang">hashCode</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notify--" title="class or interface in java.lang">notify</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notifyAll--" title="class or interface in java.lang">notifyAll</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait--" title="class or interface in java.lang">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait-long-" title="class or interface in java.lang">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait-long-int-" title="class or interface in java.lang">wait</a></code></li>
-</ul>
 </li>
 </ul>
 </li>
@@ -401,351 +197,156 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <div class="details">
 <ul class="blockList">
 <li class="blockList">
-<!-- ========= CONSTRUCTOR DETAIL ======== -->
+<!-- ============ ANNOTATION TYPE FIELD DETAIL =========== -->
 <ul class="blockList">
-<li class="blockList"><a name="constructor.detail">
+<li class="blockList"><a name="annotation.type.field.detail">
 <!--   -->
 </a>
-<h3>Constructor Detail</h3>
-<a name="Wrapper-java.lang.String-">
+<h3>Field Detail</h3>
+<a name="ALL_WRAPS">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>Wrapper</h4>
-<pre>public&nbsp;Wrapper(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name)</pre>
-<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
+<h4>ALL_WRAPS</h4>
+<pre>public static final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;ALL_WRAPS</pre>
 </li>
 </ul>
 </li>
 </ul>
-<!-- ============ METHOD DETAIL ========== -->
+<!-- ============ ANNOTATION TYPE MEMBER DETAIL =========== -->
 <ul class="blockList">
-<li class="blockList"><a name="method.detail">
+<li class="blockList"><a name="annotation.type.element.detail">
 <!--   -->
 </a>
-<h3>Method Detail</h3>
-<a name="getName--">
+<h3>Element Detail</h3>
+<a name="wrap--">
 <!--   -->
 </a>
-<ul class="blockList">
+<ul class="blockListLast">
 <li class="blockList">
-<h4>getName</h4>
-<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getName()</pre>
-<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
-</li>
-</ul>
-<a name="setStatic--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>setStatic</h4>
-<pre>public&nbsp;<a href="../../../../com/exedio/cope/instrument/Wrapper.html" title="class in com.exedio.cope.instrument">Wrapper</a>&nbsp;setStatic()</pre>
-<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
-</li>
-</ul>
-<a name="setStatic-boolean-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>setStatic</h4>
-<pre>public&nbsp;<a href="../../../../com/exedio/cope/instrument/Wrapper.html" title="class in com.exedio.cope.instrument">Wrapper</a>&nbsp;setStatic(boolean&nbsp;classToken)</pre>
-<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
-</li>
-</ul>
-<a name="isStatic--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>isStatic</h4>
-<pre>public&nbsp;boolean&nbsp;isStatic()</pre>
-<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
-</li>
-</ul>
-<a name="hasStaticClassToken--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>hasStaticClassToken</h4>
-<pre>public&nbsp;boolean&nbsp;hasStaticClassToken()</pre>
-<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
-</li>
-</ul>
-<a name="setReturn-java.lang.reflect.Type-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>setReturn</h4>
-<pre>public&nbsp;<a href="../../../../com/exedio/cope/instrument/Wrapper.html" title="class in com.exedio.cope.instrument">Wrapper</a>&nbsp;setReturn(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/reflect/Type.html?is-external=true" title="class or interface in java.lang.reflect">Type</a>&nbsp;type)</pre>
-<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
-</li>
-</ul>
-<a name="setReturn-java.lang.reflect.Type-java.lang.String-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>setReturn</h4>
-<pre>public&nbsp;<a href="../../../../com/exedio/cope/instrument/Wrapper.html" title="class in com.exedio.cope.instrument">Wrapper</a>&nbsp;setReturn(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/reflect/Type.html?is-external=true" title="class or interface in java.lang.reflect">Type</a>&nbsp;type,
-                         <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;comment)</pre>
-<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
-</li>
-</ul>
-<a name="getReturnType--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getReturnType</h4>
-<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/reflect/Type.html?is-external=true" title="class or interface in java.lang.reflect">Type</a>&nbsp;getReturnType()</pre>
-<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
-</li>
-</ul>
-<a name="getReturnComment--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getReturnComment</h4>
-<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>[]&nbsp;getReturnComment()</pre>
-<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
-</li>
-</ul>
-<a name="addParameter-java.lang.reflect.Type-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>addParameter</h4>
-<pre>public&nbsp;<a href="../../../../com/exedio/cope/instrument/Wrapper.html" title="class in com.exedio.cope.instrument">Wrapper</a>&nbsp;addParameter(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/reflect/Type.html?is-external=true" title="class or interface in java.lang.reflect">Type</a>&nbsp;type)</pre>
-<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
-</li>
-</ul>
-<a name="addParameter-java.lang.reflect.Type-java.lang.String-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>addParameter</h4>
-<pre>public&nbsp;<a href="../../../../com/exedio/cope/instrument/Wrapper.html" title="class in com.exedio.cope.instrument">Wrapper</a>&nbsp;addParameter(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/reflect/Type.html?is-external=true" title="class or interface in java.lang.reflect">Type</a>&nbsp;type,
-                            <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name)</pre>
-<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
-</li>
-</ul>
-<a name="addParameter-java.lang.reflect.Type-java.lang.String-java.lang.String-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>addParameter</h4>
-<pre>public&nbsp;<a href="../../../../com/exedio/cope/instrument/Wrapper.html" title="class in com.exedio.cope.instrument">Wrapper</a>&nbsp;addParameter(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/reflect/Type.html?is-external=true" title="class or interface in java.lang.reflect">Type</a>&nbsp;type,
-                            <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name,
-                            <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;comment)</pre>
-<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
-</li>
-</ul>
-<a name="addParameterVararg-java.lang.Class-java.lang.String-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>addParameterVararg</h4>
-<pre>public&nbsp;<a href="../../../../com/exedio/cope/instrument/Wrapper.html" title="class in com.exedio.cope.instrument">Wrapper</a>&nbsp;addParameterVararg(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;?&gt;&nbsp;type,
-                                  <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name)</pre>
-<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
-</li>
-</ul>
-<a name="getParameters--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getParameters</h4>
-<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;com.exedio.cope.instrument.Wrapper.Parameter&gt;&nbsp;getParameters()</pre>
-<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
-</li>
-</ul>
-<a name="addThrows-java.util.Collection-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>addThrows</h4>
-<pre>public&nbsp;<a href="../../../../com/exedio/cope/instrument/Wrapper.html" title="class in com.exedio.cope.instrument">Wrapper</a>&nbsp;addThrows(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;? extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang">Throwable</a>&gt;&gt;&nbsp;throwables)</pre>
-<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
-</li>
-</ul>
-<a name="addThrows-java.lang.Class-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>addThrows</h4>
-<pre>public&nbsp;<a href="../../../../com/exedio/cope/instrument/Wrapper.html" title="class in com.exedio.cope.instrument">Wrapper</a>&nbsp;addThrows(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;? extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang">Throwable</a>&gt;&nbsp;throwable)</pre>
-<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
-</li>
-</ul>
-<a name="addThrows-java.lang.Class-java.lang.String-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>addThrows</h4>
-<pre>public&nbsp;<a href="../../../../com/exedio/cope/instrument/Wrapper.html" title="class in com.exedio.cope.instrument">Wrapper</a>&nbsp;addThrows(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;? extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang">Throwable</a>&gt;&nbsp;throwable,
-                         <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;comment)</pre>
-<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
-</li>
-</ul>
-<a name="getThrowsClause--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getThrowsClause</h4>
-<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;? extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang">Throwable</a>&gt;,<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>[]&gt;&nbsp;getThrowsClause()</pre>
-<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
-</li>
-</ul>
-<a name="setMethodWrapperPattern-java.lang.String-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>setMethodWrapperPattern</h4>
-<pre>public&nbsp;<a href="../../../../com/exedio/cope/instrument/Wrapper.html" title="class in com.exedio.cope.instrument">Wrapper</a>&nbsp;setMethodWrapperPattern(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;pattern)</pre>
-<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
-</li>
-</ul>
-<a name="getMethodWrapperPattern--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getMethodWrapperPattern</h4>
-<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getMethodWrapperPattern()</pre>
-<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
-</li>
-</ul>
-<a name="addComment-java.lang.String-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>addComment</h4>
-<pre>public&nbsp;<a href="../../../../com/exedio/cope/instrument/Wrapper.html" title="class in com.exedio.cope.instrument">Wrapper</a>&nbsp;addComment(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;comment)</pre>
-<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
-</li>
-</ul>
-<a name="getComments--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getComments</h4>
-<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;getComments()</pre>
-<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
-</li>
-</ul>
-<a name="deprecate-java.lang.String-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>deprecate</h4>
-<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</a>
-public&nbsp;<a href="../../../../com/exedio/cope/instrument/Wrapper.html" title="class in com.exedio.cope.instrument">Wrapper</a>&nbsp;deprecate(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;comment)</pre>
-<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment">not supported anymore, does nothing</span></div>
-</li>
-</ul>
-<a name="isDeprecated--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>isDeprecated</h4>
-<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</a>
-public&nbsp;boolean&nbsp;isDeprecated()</pre>
-<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment">not supported anymore, always returns false</span></div>
-</li>
-</ul>
-<a name="getDeprecationComment--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getDeprecationComment</h4>
-<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</a>
-public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getDeprecationComment()</pre>
-<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment">not supported anymore, always returns null</span></div>
-</li>
-</ul>
-<a name="matchesMethod-java.lang.String-java.lang.Class...-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>matchesMethod</h4>
-<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</a>
-public&nbsp;boolean&nbsp;matchesMethod(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name,
-                                         <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;?&gt;...&nbsp;parameterTypes)</pre>
-<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment">Not needed anymore by framework.</span></div>
-</li>
-</ul>
-<a name="toString--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>toString</h4>
-<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;toString()</pre>
-<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
+<h4>wrap</h4>
+<pre>public abstract&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;wrap</pre>
+<div class="block">The <a href="../../../../com/exedio/cope/instrument/Wrap.html#name--"><code>name</code></a> of the 'wrap' that is being configured.
+ Use wrap="*" to influence all wraps of the field.</div>
 <dl>
-<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#toString--" title="class or interface in java.lang">toString</a></code>&nbsp;in class&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../com/exedio/cope/instrument/Wrapper.html#ALL_WRAPS"><code>ALL_WRAPS</code></a></dd>
 </dl>
 </li>
 </ul>
-<a name="generic-java.lang.Class-java.lang.Class...-">
+</li>
+</ul>
+<!-- ============ ANNOTATION TYPE MEMBER DETAIL =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="parameters--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>generic</h4>
-<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</a>
-public static final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/reflect/Type.html?is-external=true" title="class or interface in java.lang.reflect">Type</a>&nbsp;generic(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;?&gt;&nbsp;rawType,
-                                             <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;?&gt;...&nbsp;actualTypeArguments)</pre>
-<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment">Not supported anymore, throws <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/NoSuchMethodError.html?is-external=true" title="class or interface in java.lang"><code>NoSuchMethodError</code></a>.</span></div>
+<h4>parameters</h4>
+<pre>public abstract&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;?&gt;[]&nbsp;parameters</pre>
+<div class="block">If several wrapper methods with the same <a href="../../../../com/exedio/cope/instrument/Wrapper.html#wrap--"><code>wrap()</code></a> get generated, but your
+ <a href="../../../../com/exedio/cope/instrument/Wrapper.html" title="annotation in com.exedio.cope.instrument"><code>Wrapper</code></a> annotation should only affect one of them, it can be restricted by setting
+ this field to the parameter list of the method.</div>
+<dl>
+<dt>Default:</dt>
+<dd>com.exedio.cope.instrument.WrapperParametersDefault.class</dd>
+</dl>
 </li>
 </ul>
-<a name="genericExtends-java.lang.Class-java.lang.Class...-">
+</li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="visibility--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>genericExtends</h4>
-<pre>public static final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/reflect/Type.html?is-external=true" title="class or interface in java.lang.reflect">Type</a>&nbsp;genericExtends(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;?&gt;&nbsp;rawType,
-                                        <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;?&gt;...&nbsp;actualTypeArguments)</pre>
-<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
+<h4>visibility</h4>
+<pre>public abstract&nbsp;<a href="../../../../com/exedio/cope/instrument/Visibility.html" title="enum in com.exedio.cope.instrument">Visibility</a>&nbsp;visibility</pre>
+<div class="block">Overrides the visibility of the generated wrapper method.
+ The visibility <a href="../../../../com/exedio/cope/instrument/Visibility.html#DEFAULT"><code>defaults</code></a> to
+ the visibility of the feature,
+ unless <a href="../../../../com/exedio/cope/instrument/Wrapper.html#internal--"><code>internal</code></a> is set.</div>
+<dl>
+<dt>Default:</dt>
+<dd>com.exedio.cope.instrument.Visibility.DEFAULT</dd>
+</dl>
 </li>
 </ul>
-<a name="getByAnnotations-java.lang.Class-com.exedio.cope.Feature-java.util.List-">
+</li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="internal--">
 <!--   -->
-</a><a name="getByAnnotations-java.lang.Class-F-java.util.List-">
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>internal</h4>
+<pre>public abstract&nbsp;boolean&nbsp;internal</pre>
+<div class="block">Appends "Internal" to the name of the generated wrapper method.
+ So for instance <code>getName</code> becomes <code>getNameInternal</code>.
+ Additionally changes the visibility to <code>private</code>,
+ if <a href="../../../../com/exedio/cope/instrument/Wrapper.html#visibility--"><code>visibility</code></a> is set
+ to <a href="../../../../com/exedio/cope/instrument/Visibility.html#DEFAULT"><code>DEFAULT</code></a>.
+ <p>
+ This is typically needed if you want to provide your own implementation
+ of the generated method, but you still want to call the generated code.</div>
+<dl>
+<dt>Default:</dt>
+<dd>false</dd>
+</dl>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="booleanAsIs--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>booleanAsIs</h4>
+<pre>public abstract&nbsp;boolean&nbsp;booleanAsIs</pre>
+<dl>
+<dt>Default:</dt>
+<dd>false</dd>
+</dl>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="asFinal--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>asFinal</h4>
+<pre>public abstract&nbsp;boolean&nbsp;asFinal</pre>
+<div class="block">Makes the generated wrapper method <code>final</code>.</div>
+<dl>
+<dt>Default:</dt>
+<dd>true</dd>
+</dl>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="override--">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>getByAnnotations</h4>
-<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</a>
-public static&nbsp;&lt;F extends <a href="../../../../com/exedio/cope/Feature.html" title="class in com.exedio.cope">Feature</a>&gt;&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../com/exedio/cope/instrument/Wrapper.html" title="class in com.exedio.cope.instrument">Wrapper</a>&gt;&nbsp;getByAnnotations(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;F&gt;&nbsp;clazz,
-                                                                             F&nbsp;feature,
-                                                                             <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../com/exedio/cope/instrument/Wrapper.html" title="class in com.exedio.cope.instrument">Wrapper</a>&gt;&nbsp;superResult)</pre>
-<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment">Not supported anymore, throws <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/NoSuchMethodError.html?is-external=true" title="class or interface in java.lang"><code>NoSuchMethodError</code></a>.</span></div>
+<h4>override</h4>
+<pre>public abstract&nbsp;boolean&nbsp;override</pre>
+<div class="block">Annotates the generated wrapper method with @<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Override.html?is-external=true" title="class or interface in java.lang"><code>Override</code></a>.</div>
+<dl>
+<dt>Default:</dt>
+<dd>false</dd>
+</dl>
 </li>
 </ul>
 </li>
@@ -775,7 +376,7 @@ public static&nbsp;&lt;F extends <a href="../../../../com/exedio/cope/Feature.ht
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../../com/exedio/cope/instrument/WrapFeature.html" title="annotation in com.exedio.cope.instrument"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../../com/exedio/cope/instrument/Wrapper.ClassVariable.html" title="class in com.exedio.cope.instrument"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../com/exedio/cope/instrument/WrapperIgnore.html" title="annotation in com.exedio.cope.instrument"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../index.html?com/exedio/cope/instrument/Wrapper.html" target="_top">Frames</a></li>
@@ -799,16 +400,14 @@ public static&nbsp;&lt;F extends <a href="../../../../com/exedio/cope/Feature.ht
 <div>
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
-<li><a href="#nested.class.summary">Nested</a>&nbsp;|&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
-<li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
-<li><a href="#method.summary">Method</a></li>
+<li><a href="#annotation.type.field.summary">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#annotation.type.required.element.summary">Required</a>&nbsp;|&nbsp;</li>
+<li><a href="#annotation.type.optional.element.summary">Optional</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
-<li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
-<li><a href="#method.detail">Method</a></li>
+<li><a href="#annotation.type.field.detail">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#annotation.type.element.detail">Element</a></li>
 </ul>
 </div>
 <a name="skip.navbar.bottom">

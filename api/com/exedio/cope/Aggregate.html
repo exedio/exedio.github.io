@@ -110,7 +110,7 @@ var activeTableTab = "activeTableTab";
 </dl>
 <dl>
 <dt>Direct Known Subclasses:</dt>
-<dd><a href="../../../com/exedio/cope/search/AverageAggregate.html" title="class in com.exedio.cope.search">AverageAggregate</a>, <a href="../../../com/exedio/cope/search/ExtremumAggregate.html" title="class in com.exedio.cope.search">ExtremumAggregate</a>, <a href="../../../com/exedio/cope/search/SumAggregate.html" title="class in com.exedio.cope.search">SumAggregate</a></dd>
+<dd><a href="../../../com/exedio/cope/AverageAggregate.html" title="class in com.exedio.cope">AverageAggregate</a>, <a href="../../../com/exedio/cope/ExtremumAggregate.html" title="class in com.exedio.cope">ExtremumAggregate</a>, <a href="../../../com/exedio/cope/SumAggregate.html" title="class in com.exedio.cope">SumAggregate</a></dd>
 </dl>
 <hr>
 <br>
@@ -136,12 +136,15 @@ implements <a href="../../../com/exedio/cope/Selectable.html" title="interface i
 <table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Constructor Summary table, listing constructors, and an explanation">
 <caption><span>Constructors</span><span class="tabEnd">&nbsp;</span></caption>
 <tr>
-<th class="colOne" scope="col">Constructor and Description</th>
+<th class="colFirst" scope="col">Modifier</th>
+<th class="colLast" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Aggregate.html#Aggregate-com.exedio.cope.Function-java.lang.String-java.lang.String-">Aggregate</a></span>(<a href="../../../com/exedio/cope/Function.html" title="interface in com.exedio.cope">Function</a>&lt;<a href="../../../com/exedio/cope/Aggregate.html" title="type parameter in Aggregate">E</a>&gt;&nbsp;source,
+<td class="colFirst"><code>protected </code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Aggregate.html#Aggregate-com.exedio.cope.Function-java.lang.String-java.lang.String-com.exedio.cope.SelectType-">Aggregate</a></span>(<a href="../../../com/exedio/cope/Function.html" title="interface in com.exedio.cope">Function</a>&lt;?&gt;&nbsp;source,
          <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name,
-         <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;sqlName)</code>&nbsp;</td>
+         <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;sqlName,
+         com.exedio.cope.SelectType&lt;<a href="../../../com/exedio/cope/Aggregate.html" title="type parameter in Aggregate">E</a>&gt;&nbsp;valueType)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -199,11 +202,11 @@ implements <a href="../../../com/exedio/cope/Selectable.html" title="interface i
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Aggregate.html#getName--">getName</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i6" class="altColor">
-<td class="colFirst"><code><a href="../../../com/exedio/cope/Function.html" title="interface in com.exedio.cope">Function</a>&lt;<a href="../../../com/exedio/cope/Aggregate.html" title="type parameter in Aggregate">E</a>&gt;</code></td>
+<td class="colFirst"><code><a href="../../../com/exedio/cope/Function.html" title="interface in com.exedio.cope">Function</a>&lt;?&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Aggregate.html#getSource--">getSource</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i7" class="rowColor">
-<td class="colFirst"><code><a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;? extends <a href="../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&gt;</code></td>
+<td class="colFirst"><code><a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;?&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Aggregate.html#getType--">getType</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i8" class="altColor">
@@ -267,15 +270,16 @@ implements <a href="../../../com/exedio/cope/Selectable.html" title="interface i
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="Aggregate-com.exedio.cope.Function-java.lang.String-java.lang.String-">
+<a name="Aggregate-com.exedio.cope.Function-java.lang.String-java.lang.String-com.exedio.cope.SelectType-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>Aggregate</h4>
-<pre>public&nbsp;Aggregate(<a href="../../../com/exedio/cope/Function.html" title="interface in com.exedio.cope">Function</a>&lt;<a href="../../../com/exedio/cope/Aggregate.html" title="type parameter in Aggregate">E</a>&gt;&nbsp;source,
-                 <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name,
-                 <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;sqlName)</pre>
+<pre>protected&nbsp;Aggregate(<a href="../../../com/exedio/cope/Function.html" title="interface in com.exedio.cope">Function</a>&lt;?&gt;&nbsp;source,
+                    <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name,
+                    <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;sqlName,
+                    com.exedio.cope.SelectType&lt;<a href="../../../com/exedio/cope/Aggregate.html" title="type parameter in Aggregate">E</a>&gt;&nbsp;valueType)</pre>
 </li>
 </ul>
 </li>
@@ -292,7 +296,7 @@ implements <a href="../../../com/exedio/cope/Selectable.html" title="interface i
 <ul class="blockList">
 <li class="blockList">
 <h4>getSource</h4>
-<pre>public final&nbsp;<a href="../../../com/exedio/cope/Function.html" title="interface in com.exedio.cope">Function</a>&lt;<a href="../../../com/exedio/cope/Aggregate.html" title="type parameter in Aggregate">E</a>&gt;&nbsp;getSource()</pre>
+<pre>public final&nbsp;<a href="../../../com/exedio/cope/Function.html" title="interface in com.exedio.cope">Function</a>&lt;?&gt;&nbsp;getSource()</pre>
 </li>
 </ul>
 <a name="getName--">
@@ -338,7 +342,7 @@ implements <a href="../../../com/exedio/cope/Selectable.html" title="interface i
 <ul class="blockList">
 <li class="blockList">
 <h4>getType</h4>
-<pre>public final&nbsp;<a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;? extends <a href="../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&gt;&nbsp;getType()</pre>
+<pre>public final&nbsp;<a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;?&gt;&nbsp;getType()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../com/exedio/cope/Selectable.html#getType--">getType</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/exedio/cope/Selectable.html" title="interface in com.exedio.cope">Selectable</a>&lt;<a href="../../../com/exedio/cope/Aggregate.html" title="type parameter in Aggregate">E</a>&gt;</code></dd>
@@ -368,8 +372,8 @@ public final&nbsp;void&nbsp;check(com.exedio.cope.TC&nbsp;tc,
 <li class="blockList">
 <h4>append</h4>
 <pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</a>
-public final&nbsp;void&nbsp;append(com.exedio.cope.Statement&nbsp;bf,
-                                     <a href="../../../com/exedio/cope/Join.html" title="class in com.exedio.cope">Join</a>&nbsp;join)</pre>
+public&nbsp;void&nbsp;append(com.exedio.cope.Statement&nbsp;bf,
+                               <a href="../../../com/exedio/cope/Join.html" title="class in com.exedio.cope">Join</a>&nbsp;join)</pre>
 <div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment">For internal use within COPE only.</span></div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
@@ -384,8 +388,8 @@ public final&nbsp;void&nbsp;append(com.exedio.cope.Statement&nbsp;bf,
 <li class="blockList">
 <h4>appendSelect</h4>
 <pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</a>
-public final&nbsp;void&nbsp;appendSelect(com.exedio.cope.Statement&nbsp;bf,
-                                           <a href="../../../com/exedio/cope/Join.html" title="class in com.exedio.cope">Join</a>&nbsp;join)</pre>
+public&nbsp;void&nbsp;appendSelect(com.exedio.cope.Statement&nbsp;bf,
+                                     <a href="../../../com/exedio/cope/Join.html" title="class in com.exedio.cope">Join</a>&nbsp;join)</pre>
 <div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment">For internal use within COPE only.</span></div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>

@@ -17,8 +17,8 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10};
-var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
+var methods = {"i0":10,"i1":42,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10};
+var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"],32:["t6","Deprecated Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
 var tableTab = "tableTab";
@@ -121,7 +121,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 </a>
 <h3>Method Summary</h3>
 <table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
-<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
+<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t6" class="tableTab"><span><a href="javascript:show(32);">Deprecated Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
 <tr>
 <th class="colFirst" scope="col">Modifier and Type</th>
 <th class="colLast" scope="col">Method and Description</th>
@@ -131,30 +131,54 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Transaction.html#getBoundThread--">getBoundThread</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Transaction.html#getCommitHookCount--">getCommitHookCount</a></span>()</code>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
+<div class="block"><span class="deprecationComment">Use <a href="../../../com/exedio/cope/Transaction.html#getPostCommitHookCount--"><code>getPostCommitHookCount()</code></a> instead</span></div>
+</div>
+</td>
+</tr>
+<tr id="i2" class="altColor">
 <td class="colFirst"><code>long</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Transaction.html#getID--">getID</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Transaction.html#getName--">getName</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Transaction.html#getPostCommitHookCount--">getPostCommitHookCount</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i5" class="rowColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Transaction.html#getPostCommitHookDuplicates--">getPostCommitHookDuplicates</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i6" class="altColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Transaction.html#getPreCommitHookCount--">getPreCommitHookCount</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i7" class="rowColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Transaction.html#getPreCommitHookDuplicates--">getPreCommitHookDuplicates</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i8" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../com/exedio/cope/QueryInfo.html" title="class in com.exedio.cope">QueryInfo</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Transaction.html#getQueryInfos--">getQueryInfos</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Date.html?is-external=true" title="class or interface in java.util">Date</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Transaction.html#getStartDate--">getStartDate</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Transaction.html#isClosed--">isClosed</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Transaction.html#setQueryInfoEnabled-boolean-">setQueryInfoEnabled</a></span>(boolean&nbsp;enabled)</code>&nbsp;</td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Transaction.html#toString--">toString</a></span>()</code>&nbsp;</td>
 </tr>
@@ -187,6 +211,62 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <li class="blockList">
 <h4>isClosed</h4>
 <pre>public&nbsp;boolean&nbsp;isClosed()</pre>
+</li>
+</ul>
+<a name="getPreCommitHookCount--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getPreCommitHookCount</h4>
+<pre>public&nbsp;int&nbsp;getPreCommitHookCount()</pre>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../com/exedio/cope/Model.html#addPreCommitHookIfAbsent-R-"><code>Model.addPreCommitHookIfAbsent(Runnable)</code></a>, 
+<a href="../../../com/exedio/cope/Transaction.html#getPreCommitHookDuplicates--"><code>getPreCommitHookDuplicates()</code></a></dd>
+</dl>
+</li>
+</ul>
+<a name="getPreCommitHookDuplicates--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getPreCommitHookDuplicates</h4>
+<pre>public&nbsp;int&nbsp;getPreCommitHookDuplicates()</pre>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../com/exedio/cope/Model.html#addPreCommitHookIfAbsent-R-"><code>Model.addPreCommitHookIfAbsent(Runnable)</code></a>, 
+<a href="../../../com/exedio/cope/Transaction.html#getPreCommitHookCount--"><code>getPreCommitHookCount()</code></a></dd>
+</dl>
+</li>
+</ul>
+<a name="getPostCommitHookCount--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getPostCommitHookCount</h4>
+<pre>public&nbsp;int&nbsp;getPostCommitHookCount()</pre>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../com/exedio/cope/Model.html#addPostCommitHookIfAbsent-R-"><code>Model.addPostCommitHookIfAbsent(Runnable)</code></a>, 
+<a href="../../../com/exedio/cope/Transaction.html#getPostCommitHookDuplicates--"><code>getPostCommitHookDuplicates()</code></a></dd>
+</dl>
+</li>
+</ul>
+<a name="getPostCommitHookDuplicates--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getPostCommitHookDuplicates</h4>
+<pre>public&nbsp;int&nbsp;getPostCommitHookDuplicates()</pre>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../com/exedio/cope/Model.html#addPostCommitHookIfAbsent-R-"><code>Model.addPostCommitHookIfAbsent(Runnable)</code></a>, 
+<a href="../../../com/exedio/cope/Transaction.html#getPostCommitHookCount--"><code>getPostCommitHookCount()</code></a></dd>
+</dl>
 </li>
 </ul>
 <a name="getID--">
@@ -246,7 +326,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <a name="toString--">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>toString</h4>
 <pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;toString()</pre>
@@ -254,6 +334,17 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#toString--" title="class or interface in java.lang">toString</a></code>&nbsp;in class&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></dd>
 </dl>
+</li>
+</ul>
+<a name="getCommitHookCount--">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>getCommitHookCount</h4>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</a>
+public&nbsp;int&nbsp;getCommitHookCount()</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment">Use <a href="../../../com/exedio/cope/Transaction.html#getPostCommitHookCount--"><code>getPostCommitHookCount()</code></a> instead</span></div>
 </li>
 </ul>
 </li>

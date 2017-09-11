@@ -79,9 +79,9 @@
 <li><a href="com/exedio/cope/reflect/package-tree.html">com.exedio.cope.reflect</a>, </li>
 <li><a href="com/exedio/cope/revstat/package-tree.html">com.exedio.cope.revstat</a>, </li>
 <li><a href="com/exedio/cope/sampler/package-tree.html">com.exedio.cope.sampler</a>, </li>
-<li><a href="com/exedio/cope/search/package-tree.html">com.exedio.cope.search</a>, </li>
 <li><a href="com/exedio/cope/servletutil/package-tree.html">com.exedio.cope.servletutil</a>, </li>
 <li><a href="com/exedio/cope/util/package-tree.html">com.exedio.cope.util</a>, </li>
+<li><a href="com/exedio/cope/vault/package-tree.html">com.exedio.cope.vault</a>, </li>
 <li><a href="com/exedio/cops/package-tree.html">com.exedio.cops</a>, </li>
 <li><a href="com/exedio/dsmf/package-tree.html">com.exedio.dsmf</a>, </li>
 <li><a href="com/exedio/dsmf/misc/package-tree.html">com.exedio.dsmf.misc</a></li>
@@ -96,9 +96,9 @@
 <li type="circle">com.exedio.cope.<a href="com/exedio/cope/ActivationParameters.html" title="class in com.exedio.cope"><span class="typeNameLink">ActivationParameters</span></a></li>
 <li type="circle">com.exedio.cope.<a href="com/exedio/cope/Aggregate.html" title="class in com.exedio.cope"><span class="typeNameLink">Aggregate</span></a>&lt;E&gt; (implements com.exedio.cope.<a href="com/exedio/cope/Selectable.html" title="interface in com.exedio.cope">Selectable</a>&lt;E&gt;)
 <ul>
-<li type="circle">com.exedio.cope.search.<a href="com/exedio/cope/search/AverageAggregate.html" title="class in com.exedio.cope.search"><span class="typeNameLink">AverageAggregate</span></a>&lt;E&gt;</li>
-<li type="circle">com.exedio.cope.search.<a href="com/exedio/cope/search/ExtremumAggregate.html" title="class in com.exedio.cope.search"><span class="typeNameLink">ExtremumAggregate</span></a>&lt;E&gt;</li>
-<li type="circle">com.exedio.cope.search.<a href="com/exedio/cope/search/SumAggregate.html" title="class in com.exedio.cope.search"><span class="typeNameLink">SumAggregate</span></a>&lt;E&gt;</li>
+<li type="circle">com.exedio.cope.<a href="com/exedio/cope/AverageAggregate.html" title="class in com.exedio.cope"><span class="typeNameLink">AverageAggregate</span></a></li>
+<li type="circle">com.exedio.cope.<a href="com/exedio/cope/ExtremumAggregate.html" title="class in com.exedio.cope"><span class="typeNameLink">ExtremumAggregate</span></a>&lt;E&gt;</li>
+<li type="circle">com.exedio.cope.<a href="com/exedio/cope/SumAggregate.html" title="class in com.exedio.cope"><span class="typeNameLink">SumAggregate</span></a>&lt;E&gt;</li>
 </ul>
 </li>
 <li type="circle">com.exedio.cope.misc.<a href="com/exedio/cope/misc/Arrays.html" title="class in com.exedio.cope.misc"><span class="typeNameLink">Arrays</span></a></li>
@@ -117,6 +117,7 @@
 </ul>
 </li>
 <li type="circle">com.exedio.cope.util.<a href="com/exedio/cope/util/AssertionErrorJobContext.html" title="class in com.exedio.cope.util"><span class="typeNameLink">AssertionErrorJobContext</span></a> (implements com.exedio.cope.util.<a href="com/exedio/cope/util/JobContext.html" title="interface in com.exedio.cope.util">JobContext</a>)</li>
+<li type="circle">com.exedio.cope.junit.<a href="com/exedio/cope/junit/AssertionErrorVaultService.html" title="class in com.exedio.cope.junit"><span class="typeNameLink">AssertionErrorVaultService</span></a> (implements com.exedio.cope.vault.<a href="com/exedio/cope/vault/VaultService.html" title="interface in com.exedio.cope.vault">VaultService</a>)</li>
 <li type="circle">com.exedio.cops.<a href="com/exedio/cops/BasicAuthorization.html" title="class in com.exedio.cops"><span class="typeNameLink">BasicAuthorization</span></a></li>
 <li type="circle">com.exedio.cope.<a href="com/exedio/cope/BindFunction.html" title="class in com.exedio.cope"><span class="typeNameLink">BindFunction</span></a>&lt;E&gt; (implements com.exedio.cope.<a href="com/exedio/cope/Function.html" title="interface in com.exedio.cope">Function</a>&lt;E&gt;)
 <ul>
@@ -125,9 +126,13 @@
 <li type="circle">com.exedio.cope.<a href="com/exedio/cope/BindStringFunction.html" title="class in com.exedio.cope"><span class="typeNameLink">BindStringFunction</span></a> (implements com.exedio.cope.<a href="com/exedio/cope/StringFunction.html" title="interface in com.exedio.cope">StringFunction</a>)</li>
 </ul>
 </li>
-<li type="circle">com.exedio.cope.pattern.<a href="com/exedio/cope/pattern/Block.html" title="class in com.exedio.cope.pattern"><span class="typeNameLink">Block</span></a> (implements java.io.<a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializable.html?is-external=true" title="class or interface in java.io">Serializable</a>)</li>
+<li type="circle">com.exedio.cope.pattern.<a href="com/exedio/cope/pattern/Block.html" title="class in com.exedio.cope.pattern"><span class="typeNameLink">Block</span></a> (implements java.io.<a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializable.html?is-external=true" title="class or interface in java.io">Serializable</a>, com.exedio.cope.pattern.<a href="com/exedio/cope/pattern/TemplatedValue.html" title="interface in com.exedio.cope.pattern">TemplatedValue</a>)
+<ul>
+<li type="circle">com.exedio.cope.pattern.<a href="com/exedio/cope/pattern/DummyBlock.html" title="class in com.exedio.cope.pattern"><span class="typeNameLink">DummyBlock</span></a></li>
+</ul>
+</li>
 <li type="circle">com.exedio.cope.pattern.<a href="com/exedio/cope/pattern/BlockActivationParameters.html" title="class in com.exedio.cope.pattern"><span class="typeNameLink">BlockActivationParameters</span></a></li>
-<li type="circle">com.exedio.cope.pattern.<a href="com/exedio/cope/pattern/BlockType.html" title="class in com.exedio.cope.pattern"><span class="typeNameLink">BlockType</span></a>&lt;E&gt;</li>
+<li type="circle">com.exedio.cope.pattern.<a href="com/exedio/cope/pattern/BlockType.html" title="class in com.exedio.cope.pattern"><span class="typeNameLink">BlockType</span></a>&lt;T&gt; (implements com.exedio.cope.pattern.<a href="com/exedio/cope/pattern/TemplatedType.html" title="interface in com.exedio.cope.pattern">TemplatedType</a>&lt;E&gt;)</li>
 <li type="circle">com.exedio.cops.<a href="com/exedio/cops/BodySender.html" title="class in com.exedio.cops"><span class="typeNameLink">BodySender</span></a></li>
 <li type="circle">com.exedio.cope.util.<a href="com/exedio/cope/util/Cast.html" title="class in com.exedio.cope.util"><span class="typeNameLink">Cast</span></a></li>
 <li type="circle">com.exedio.cope.<a href="com/exedio/cope/ChangeEvent.html" title="class in com.exedio.cope"><span class="typeNameLink">ChangeEvent</span></a></li>
@@ -141,10 +146,12 @@
 <li type="circle">com.exedio.cope.util.<a href="com/exedio/cope/util/Clock.html" title="class in com.exedio.cope.util"><span class="typeNameLink">Clock</span></a></li>
 <li type="circle">com.exedio.cope.<a href="com/exedio/cope/ClusterListenerInfo.html" title="class in com.exedio.cope"><span class="typeNameLink">ClusterListenerInfo</span></a></li>
 <li type="circle">com.exedio.cope.<a href="com/exedio/cope/ClusterListenerInfo.Node.html" title="class in com.exedio.cope"><span class="typeNameLink">ClusterListenerInfo.Node</span></a></li>
+<li type="circle">com.exedio.cope.<a href="com/exedio/cope/ClusterListenerInfo.RoundTrip.html" title="class in com.exedio.cope"><span class="typeNameLink">ClusterListenerInfo.RoundTrip</span></a></li>
 <li type="circle">com.exedio.cope.<a href="com/exedio/cope/ClusterSenderInfo.html" title="class in com.exedio.cope"><span class="typeNameLink">ClusterSenderInfo</span></a></li>
 <li type="circle">com.exedio.cops.<a href="com/exedio/cops/ColoredTable.html" title="class in com.exedio.cops"><span class="typeNameLink">ColoredTable</span></a></li>
 <li type="circle">com.exedio.cope.misc.<a href="com/exedio/cope/misc/Compare.html" title="class in com.exedio.cope.misc"><span class="typeNameLink">Compare</span></a></li>
-<li type="circle">com.exedio.cope.pattern.<a href="com/exedio/cope/pattern/Composite.html" title="class in com.exedio.cope.pattern"><span class="typeNameLink">Composite</span></a> (implements java.io.<a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializable.html?is-external=true" title="class or interface in java.io">Serializable</a>)</li>
+<li type="circle">com.exedio.cope.pattern.<a href="com/exedio/cope/pattern/Composite.html" title="class in com.exedio.cope.pattern"><span class="typeNameLink">Composite</span></a> (implements java.io.<a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializable.html?is-external=true" title="class or interface in java.io">Serializable</a>, com.exedio.cope.pattern.<a href="com/exedio/cope/pattern/TemplatedValue.html" title="interface in com.exedio.cope.pattern">TemplatedValue</a>)</li>
+<li type="circle">com.exedio.cope.pattern.<a href="com/exedio/cope/pattern/CompositeType.html" title="class in com.exedio.cope.pattern"><span class="typeNameLink">CompositeType</span></a>&lt;T&gt; (implements com.exedio.cope.pattern.<a href="com/exedio/cope/pattern/TemplatedType.html" title="interface in com.exedio.cope.pattern">TemplatedType</a>&lt;E&gt;)</li>
 <li type="circle">com.exedio.cope.misc.<a href="com/exedio/cope/misc/ComputedElement.html" title="class in com.exedio.cope.misc"><span class="typeNameLink">ComputedElement</span></a></li>
 <li type="circle">com.exedio.cope.misc.<a href="com/exedio/cope/misc/ComputedInstance.html" title="class in com.exedio.cope.misc"><span class="typeNameLink">ComputedInstance</span></a></li>
 <li type="circle">com.exedio.cope.<a href="com/exedio/cope/Condition.html" title="class in com.exedio.cope"><span class="typeNameLink">Condition</span></a> (implements java.io.<a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializable.html?is-external=true" title="class or interface in java.io">Serializable</a>)
@@ -162,18 +169,20 @@
 </ul>
 </li>
 <li type="circle">com.exedio.cope.misc.<a href="com/exedio/cope/misc/Conditions.html" title="class in com.exedio.cope.misc"><span class="typeNameLink">Conditions</span></a></li>
-<li type="circle">com.exedio.cope.misc.<a href="com/exedio/cope/misc/ConnectToken.html" title="class in com.exedio.cope.misc"><span class="typeNameLink">ConnectToken</span></a></li>
-<li type="circle">com.exedio.cope.util.<a href="com/exedio/cope/util/ConnectToken.html" title="class in com.exedio.cope.util"><span class="typeNameLink">ConnectToken</span></a></li>
+<li type="circle">com.exedio.cope.<a href="com/exedio/cope/ConnectProperties.Factory.html" title="class in com.exedio.cope"><span class="typeNameLink">ConnectProperties.Factory</span></a> (implements com.exedio.cope.util.<a href="com/exedio/cope/util/Properties.Factory.html" title="interface in com.exedio.cope.util">Properties.Factory</a>&lt;T&gt;)</li>
+<li type="circle">com.exedio.cope.misc.<a href="com/exedio/cope/misc/ConnectToken.html" title="class in com.exedio.cope.misc"><span class="typeNameLink">ConnectToken</span></a> (implements java.lang.<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/AutoCloseable.html?is-external=true" title="class or interface in java.lang">AutoCloseable</a>)</li>
 <li type="circle">com.exedio.cops.<a href="com/exedio/cops/Cop.html" title="class in com.exedio.cops"><span class="typeNameLink">Cop</span></a></li>
 <li type="circle">com.exedio.cope.<a href="com/exedio/cope/Cope.html" title="class in com.exedio.cope"><span class="typeNameLink">Cope</span></a></li>
 <li type="circle">com.exedio.cope.misc.<a href="com/exedio/cope/misc/CopeFilter.html" title="class in com.exedio.cope.misc"><span class="typeNameLink">CopeFilter</span></a> (implements javax.servlet.<a href="https://docs.oracle.com/javaee/1.4/api/javax/servlet/Filter.html?is-external=true" title="class or interface in javax.servlet">Filter</a>)</li>
-<li type="circle">com.exedio.cope.util.<a href="com/exedio/cope/util/CopeFilter.html" title="class in com.exedio.cope.util"><span class="typeNameLink">CopeFilter</span></a> (implements javax.servlet.<a href="https://docs.oracle.com/javaee/1.4/api/javax/servlet/Filter.html?is-external=true" title="class or interface in javax.servlet">Filter</a>)</li>
 <li type="circle">com.exedio.cope.misc.<a href="com/exedio/cope/misc/CopeNameUtil.html" title="class in com.exedio.cope.misc"><span class="typeNameLink">CopeNameUtil</span></a></li>
 <li type="circle">com.exedio.cope.misc.<a href="com/exedio/cope/misc/CopeSchemaNameElement.html" title="class in com.exedio.cope.misc"><span class="typeNameLink">CopeSchemaNameElement</span></a></li>
 <li type="circle">com.exedio.cope.<a href="com/exedio/cope/CopyMapper.html" title="class in com.exedio.cope"><span class="typeNameLink">CopyMapper</span></a></li>
 <li type="circle">com.exedio.cope.<a href="com/exedio/cope/Count.html" title="class in com.exedio.cope"><span class="typeNameLink">Count</span></a> (implements com.exedio.cope.<a href="com/exedio/cope/Selectable.html" title="interface in com.exedio.cope">Selectable</a>&lt;E&gt;)</li>
 <li type="circle">com.exedio.cope.misc.<a href="com/exedio/cope/misc/DatabaseLogListener.html" title="class in com.exedio.cope.misc"><span class="typeNameLink">DatabaseLogListener</span></a> (implements com.exedio.cope.misc.<a href="com/exedio/cope/misc/DatabaseListener.html" title="interface in com.exedio.cope.misc">DatabaseListener</a>)</li>
 <li type="circle">com.exedio.cope.<a href="com/exedio/cope/DataField.Value.html" title="class in com.exedio.cope"><span class="typeNameLink">DataField.Value</span></a></li>
+<li type="circle">com.exedio.cope.<a href="com/exedio/cope/DataFieldVaultInfo.html" title="class in com.exedio.cope"><span class="typeNameLink">DataFieldVaultInfo</span></a></li>
+<li type="circle">com.exedio.cope.misc.<a href="com/exedio/cope/misc/DataFieldVaultSummary.html" title="class in com.exedio.cope.misc"><span class="typeNameLink">DataFieldVaultSummary</span></a></li>
+<li type="circle">com.exedio.cope.util.<a href="com/exedio/cope/util/DateInstant.html" title="class in com.exedio.cope.util"><span class="typeNameLink">DateInstant</span></a></li>
 <li type="circle">com.exedio.cope.util.<a href="com/exedio/cope/util/Day.html" title="class in com.exedio.cope.util"><span class="typeNameLink">Day</span></a> (implements java.lang.<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang">Comparable</a>&lt;T&gt;, java.io.<a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializable.html?is-external=true" title="class or interface in java.io">Serializable</a>)</li>
 <li type="circle">com.exedio.dsmf.misc.<a href="com/exedio/dsmf/misc/DefaultStatementListener.html" title="class in com.exedio.dsmf.misc"><span class="typeNameLink">DefaultStatementListener</span></a> (implements com.exedio.dsmf.<a href="com/exedio/dsmf/StatementListener.html" title="interface in com.exedio.dsmf">StatementListener</a>)</li>
 <li type="circle">com.exedio.cope.misc.<a href="com/exedio/cope/misc/Delete.html" title="class in com.exedio.cope.misc"><span class="typeNameLink">Delete</span></a></li>
@@ -188,6 +197,7 @@
 <li type="circle">com.exedio.cope.misc.<a href="com/exedio/cope/misc/DirectRevisionsFactory.html" title="class in com.exedio.cope.misc"><span class="typeNameLink">DirectRevisionsFactory</span></a> (implements com.exedio.cope.<a href="com/exedio/cope/Revisions.Factory.html" title="interface in com.exedio.cope">Revisions.Factory</a>)</li>
 <li type="circle">com.exedio.cope.misc.<a href="com/exedio/cope/misc/DirectRevisionsFuture.html" title="class in com.exedio.cope.misc"><span class="typeNameLink">DirectRevisionsFuture</span></a> (implements com.exedio.cope.<a href="com/exedio/cope/RevisionsFuture.html" title="interface in com.exedio.cope">RevisionsFuture</a>)</li>
 <li type="circle">com.exedio.cope.pattern.<a href="com/exedio/cope/pattern/Dispatcher.Config.html" title="class in com.exedio.cope.pattern"><span class="typeNameLink">Dispatcher.Config</span></a></li>
+<li type="circle">com.exedio.cope.pattern.<a href="com/exedio/cope/pattern/DispatcherPurgeProperties.Factory.html" title="class in com.exedio.cope.pattern"><span class="typeNameLink">DispatcherPurgeProperties.Factory</span></a> (implements com.exedio.cope.util.<a href="com/exedio/cope/util/Properties.Factory.html" title="interface in com.exedio.cope.util">Properties.Factory</a>&lt;T&gt;)</li>
 <li type="circle">com.exedio.cope.<a href="com/exedio/cope/Dumper.html" title="class in com.exedio.cope"><span class="typeNameLink">Dumper</span></a></li>
 <li type="circle">com.exedio.cope.util.<a href="com/exedio/cope/util/EmptyJobContext.html" title="class in com.exedio.cope.util"><span class="typeNameLink">EmptyJobContext</span></a> (implements com.exedio.cope.util.<a href="com/exedio/cope/util/JobContext.html" title="interface in com.exedio.cope.util">JobContext</a>)</li>
 <li type="circle">com.exedio.cope.misc.<a href="com/exedio/cope/misc/EncodingToCharset.html" title="class in com.exedio.cope.misc"><span class="typeNameLink">EncodingToCharset</span></a></li>
@@ -195,7 +205,7 @@
 <li type="circle">com.exedio.cope.<a href="com/exedio/cope/EnvironmentInfo.html" title="class in com.exedio.cope"><span class="typeNameLink">EnvironmentInfo</span></a></li>
 <li type="circle">com.exedio.cope.<a href="com/exedio/cope/Feature.html" title="class in com.exedio.cope"><span class="typeNameLink">Feature</span></a> (implements java.io.<a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializable.html?is-external=true" title="class or interface in java.io">Serializable</a>)
 <ul>
-<li type="circle">com.exedio.cope.<a href="com/exedio/cope/CheckConstraint.html" title="class in com.exedio.cope"><span class="typeNameLink">CheckConstraint</span></a></li>
+<li type="circle">com.exedio.cope.<a href="com/exedio/cope/CheckConstraint.html" title="class in com.exedio.cope"><span class="typeNameLink">CheckConstraint</span></a> (implements com.exedio.cope.<a href="com/exedio/cope/Copyable.html" title="interface in com.exedio.cope">Copyable</a>)</li>
 <li type="circle">com.exedio.cope.<a href="com/exedio/cope/CopyConstraint.html" title="class in com.exedio.cope"><span class="typeNameLink">CopyConstraint</span></a></li>
 <li type="circle">com.exedio.cope.<a href="com/exedio/cope/Field.html" title="class in com.exedio.cope"><span class="typeNameLink">Field</span></a>&lt;E&gt; (implements com.exedio.cope.<a href="com/exedio/cope/Settable.html" title="interface in com.exedio.cope">Settable</a>&lt;E&gt;)
 <ul>
@@ -227,13 +237,13 @@
 <li type="circle">com.exedio.cope.pattern.<a href="com/exedio/cope/pattern/ListField.html" title="class in com.exedio.cope.pattern"><span class="typeNameLink">ListField</span></a>&lt;E&gt; (implements com.exedio.cope.<a href="com/exedio/cope/Copyable.html" title="interface in com.exedio.cope">Copyable</a>)</li>
 </ul>
 </li>
-<li type="circle">com.exedio.cope.pattern.<a href="com/exedio/cope/pattern/BlockField.html" title="class in com.exedio.cope.pattern"><span class="typeNameLink">BlockField</span></a>&lt;E&gt; (implements com.exedio.cope.<a href="com/exedio/cope/Copyable.html" title="interface in com.exedio.cope">Copyable</a>)</li>
+<li type="circle">com.exedio.cope.pattern.<a href="com/exedio/cope/pattern/BlockField.html" title="class in com.exedio.cope.pattern"><span class="typeNameLink">BlockField</span></a>&lt;E&gt; (implements com.exedio.cope.<a href="com/exedio/cope/Copyable.html" title="interface in com.exedio.cope">Copyable</a>, com.exedio.cope.pattern.<a href="com/exedio/cope/pattern/TemplatedField.html" title="interface in com.exedio.cope.pattern">TemplatedField</a>&lt;E&gt;)</li>
 <li type="circle">com.exedio.cope.pattern.<a href="com/exedio/cope/pattern/ColorField.html" title="class in com.exedio.cope.pattern"><span class="typeNameLink">ColorField</span></a> (implements com.exedio.cope.<a href="com/exedio/cope/Copyable.html" title="interface in com.exedio.cope">Copyable</a>, com.exedio.cope.<a href="com/exedio/cope/Settable.html" title="interface in com.exedio.cope">Settable</a>&lt;E&gt;)</li>
-<li type="circle">com.exedio.cope.pattern.<a href="com/exedio/cope/pattern/CompositeField.html" title="class in com.exedio.cope.pattern"><span class="typeNameLink">CompositeField</span></a>&lt;E&gt; (implements com.exedio.cope.<a href="com/exedio/cope/Settable.html" title="interface in com.exedio.cope">Settable</a>&lt;E&gt;)</li>
+<li type="circle">com.exedio.cope.pattern.<a href="com/exedio/cope/pattern/CompositeField.html" title="class in com.exedio.cope.pattern"><span class="typeNameLink">CompositeField</span></a>&lt;E&gt; (implements com.exedio.cope.<a href="com/exedio/cope/Settable.html" title="interface in com.exedio.cope">Settable</a>&lt;E&gt;, com.exedio.cope.pattern.<a href="com/exedio/cope/pattern/TemplatedField.html" title="interface in com.exedio.cope.pattern">TemplatedField</a>&lt;E&gt;)</li>
 <li type="circle">com.exedio.cope.pattern.<a href="com/exedio/cope/pattern/Dispatcher.html" title="class in com.exedio.cope.pattern"><span class="typeNameLink">Dispatcher</span></a></li>
 <li type="circle">com.exedio.cope.pattern.<a href="com/exedio/cope/pattern/DrivebyHashMigration.html" title="class in com.exedio.cope.pattern"><span class="typeNameLink">DrivebyHashMigration</span></a> (implements com.exedio.cope.pattern.<a href="com/exedio/cope/pattern/HashInterface.html" title="interface in com.exedio.cope.pattern">HashInterface</a>)</li>
 <li type="circle">com.exedio.cope.pattern.<a href="com/exedio/cope/pattern/DynamicModel.html" title="class in com.exedio.cope.pattern"><span class="typeNameLink">DynamicModel</span></a>&lt;L&gt;</li>
-<li type="circle">com.exedio.cope.pattern.<a href="com/exedio/cope/pattern/EnumMapField.html" title="class in com.exedio.cope.pattern"><span class="typeNameLink">EnumMapField</span></a>&lt;K,V&gt; (implements com.exedio.cope.<a href="com/exedio/cope/Settable.html" title="interface in com.exedio.cope">Settable</a>&lt;E&gt;)</li>
+<li type="circle">com.exedio.cope.pattern.<a href="com/exedio/cope/pattern/EnumMapField.html" title="class in com.exedio.cope.pattern"><span class="typeNameLink">EnumMapField</span></a>&lt;K,V&gt; (implements com.exedio.cope.pattern.<a href="com/exedio/cope/pattern/MapFieldInterface.html" title="interface in com.exedio.cope.pattern">MapFieldInterface</a>&lt;K,V&gt;, com.exedio.cope.<a href="com/exedio/cope/Settable.html" title="interface in com.exedio.cope">Settable</a>&lt;E&gt;)</li>
 <li type="circle">com.exedio.cope.pattern.<a href="com/exedio/cope/pattern/EnumSetField.html" title="class in com.exedio.cope.pattern"><span class="typeNameLink">EnumSetField</span></a>&lt;E&gt; (implements com.exedio.cope.<a href="com/exedio/cope/Settable.html" title="interface in com.exedio.cope">Settable</a>&lt;E&gt;)</li>
 <li type="circle">com.exedio.cope.reflect.<a href="com/exedio/cope/reflect/FeatureField.html" title="class in com.exedio.cope.reflect"><span class="typeNameLink">FeatureField</span></a>&lt;E&gt; (implements com.exedio.cope.<a href="com/exedio/cope/Settable.html" title="interface in com.exedio.cope">Settable</a>&lt;E&gt;)</li>
 <li type="circle">com.exedio.cope.pattern.<a href="com/exedio/cope/pattern/Hash.html" title="class in com.exedio.cope.pattern"><span class="typeNameLink">Hash</span></a> (implements com.exedio.cope.pattern.<a href="com/exedio/cope/pattern/HashInterface.html" title="interface in com.exedio.cope.pattern">HashInterface</a>)
@@ -243,10 +253,11 @@
 <li type="circle">com.exedio.cope.pattern.<a href="com/exedio/cope/pattern/SHAHash.html" title="class in com.exedio.cope.pattern"><span class="typeNameLink">SHAHash</span></a></li>
 </ul>
 </li>
+<li type="circle">com.exedio.cope.pattern.<a href="com/exedio/cope/pattern/HashConstraint.html" title="class in com.exedio.cope.pattern"><span class="typeNameLink">HashConstraint</span></a></li>
 <li type="circle">com.exedio.cope.pattern.<a href="com/exedio/cope/pattern/History.html" title="class in com.exedio.cope.pattern"><span class="typeNameLink">History</span></a></li>
 <li type="circle">com.exedio.cope.pattern.<a href="com/exedio/cope/pattern/Importer.html" title="class in com.exedio.cope.pattern"><span class="typeNameLink">Importer</span></a>&lt;K&gt;</li>
 <li type="circle">com.exedio.cope.pattern.<a href="com/exedio/cope/pattern/JavaView.html" title="class in com.exedio.cope.pattern"><span class="typeNameLink">JavaView</span></a></li>
-<li type="circle">com.exedio.cope.pattern.<a href="com/exedio/cope/pattern/MapField.html" title="class in com.exedio.cope.pattern"><span class="typeNameLink">MapField</span></a>&lt;K,V&gt;</li>
+<li type="circle">com.exedio.cope.pattern.<a href="com/exedio/cope/pattern/MapField.html" title="class in com.exedio.cope.pattern"><span class="typeNameLink">MapField</span></a>&lt;K,V&gt; (implements com.exedio.cope.pattern.<a href="com/exedio/cope/pattern/MapFieldInterface.html" title="interface in com.exedio.cope.pattern">MapFieldInterface</a>&lt;K,V&gt;)</li>
 <li type="circle">com.exedio.cope.pattern.<a href="com/exedio/cope/pattern/MediaPath.html" title="class in com.exedio.cope.pattern"><span class="typeNameLink">MediaPath</span></a>
 <ul>
 <li type="circle">com.exedio.cope.pattern.<a href="com/exedio/cope/pattern/Media.html" title="class in com.exedio.cope.pattern"><span class="typeNameLink">Media</span></a> (implements com.exedio.cope.<a href="com/exedio/cope/Copyable.html" title="interface in com.exedio.cope">Copyable</a>, com.exedio.cope.<a href="com/exedio/cope/Settable.html" title="interface in com.exedio.cope">Settable</a>&lt;E&gt;)</li>
@@ -257,11 +268,6 @@
 <li type="circle">com.exedio.cope.pattern.<a href="com/exedio/cope/pattern/MediaThumbnail.html" title="class in com.exedio.cope.pattern"><span class="typeNameLink">MediaThumbnail</span></a> (implements com.exedio.cope.<a href="com/exedio/cope/Copyable.html" title="interface in com.exedio.cope">Copyable</a>)</li>
 </ul>
 </li>
-<li type="circle">com.exedio.cope.pattern.<a href="com/exedio/cope/pattern/MediaImageMagickFilter.html" title="class in com.exedio.cope.pattern"><span class="typeNameLink">MediaImageMagickFilter</span></a> (implements com.exedio.cope.pattern.<a href="com/exedio/cope/pattern/MediaTestable.html" title="interface in com.exedio.cope.pattern">MediaTestable</a>)
-<ul>
-<li type="circle">com.exedio.cope.pattern.<a href="com/exedio/cope/pattern/MediaImageMagickThumbnail.html" title="class in com.exedio.cope.pattern"><span class="typeNameLink">MediaImageMagickThumbnail</span></a> (implements com.exedio.cope.<a href="com/exedio/cope/Copyable.html" title="interface in com.exedio.cope">Copyable</a>)</li>
-</ul>
-</li>
 <li type="circle">com.exedio.cope.pattern.<a href="com/exedio/cope/pattern/TextUrlFilter.html" title="class in com.exedio.cope.pattern"><span class="typeNameLink">TextUrlFilter</span></a> (implements com.exedio.cope.pattern.<a href="com/exedio/cope/pattern/TextUrlFilterCheckable.html" title="interface in com.exedio.cope.pattern">TextUrlFilterCheckable</a>)</li>
 <li type="circle">com.exedio.cope.pattern.<a href="com/exedio/cope/pattern/TextUrlFilterDelegator.html" title="class in com.exedio.cope.pattern"><span class="typeNameLink">TextUrlFilterDelegator</span></a> (implements com.exedio.cope.pattern.<a href="com/exedio/cope/pattern/TextUrlFilterCheckable.html" title="interface in com.exedio.cope.pattern">TextUrlFilterCheckable</a>)</li>
 </ul>
@@ -270,16 +276,18 @@
 </ul>
 </li>
 <li type="circle">com.exedio.cope.pattern.<a href="com/exedio/cope/pattern/MoneyField.html" title="class in com.exedio.cope.pattern"><span class="typeNameLink">MoneyField</span></a>&lt;C&gt; (implements com.exedio.cope.<a href="com/exedio/cope/CheckingSettable.html" title="interface in com.exedio.cope">CheckingSettable</a>&lt;E&gt;, com.exedio.cope.<a href="com/exedio/cope/Settable.html" title="interface in com.exedio.cope">Settable</a>&lt;E&gt;)</li>
+<li type="circle">com.exedio.cope.pattern.<a href="com/exedio/cope/pattern/MultiItemField.html" title="class in com.exedio.cope.pattern"><span class="typeNameLink">MultiItemField</span></a>&lt;E&gt; (implements com.exedio.cope.<a href="com/exedio/cope/Settable.html" title="interface in com.exedio.cope">Settable</a>&lt;E&gt;)</li>
 <li type="circle">com.exedio.cope.pattern.<a href="com/exedio/cope/pattern/NestedHashMigration.html" title="class in com.exedio.cope.pattern"><span class="typeNameLink">NestedHashMigration</span></a> (implements com.exedio.cope.pattern.<a href="com/exedio/cope/pattern/HashInterface.html" title="interface in com.exedio.cope.pattern">HashInterface</a>)</li>
 <li type="circle">com.exedio.cope.pattern.<a href="com/exedio/cope/pattern/PartOf.html" title="class in com.exedio.cope.pattern"><span class="typeNameLink">PartOf</span></a>&lt;C&gt;</li>
 <li type="circle">com.exedio.cope.pattern.<a href="com/exedio/cope/pattern/PasswordLimiter.html" title="class in com.exedio.cope.pattern"><span class="typeNameLink">PasswordLimiter</span></a></li>
 <li type="circle">com.exedio.cope.pattern.<a href="com/exedio/cope/pattern/PasswordRecovery.html" title="class in com.exedio.cope.pattern"><span class="typeNameLink">PasswordRecovery</span></a></li>
-<li type="circle">com.exedio.cope.pattern.<a href="com/exedio/cope/pattern/PriceField.html" title="class in com.exedio.cope.pattern"><span class="typeNameLink">PriceField</span></a> (implements com.exedio.cope.<a href="com/exedio/cope/Copyable.html" title="interface in com.exedio.cope">Copyable</a>, com.exedio.cope.<a href="com/exedio/cope/Settable.html" title="interface in com.exedio.cope">Settable</a>&lt;E&gt;)</li>
+<li type="circle">com.exedio.cope.pattern.<a href="com/exedio/cope/pattern/PriceField.html" title="class in com.exedio.cope.pattern"><span class="typeNameLink">PriceField</span></a> (implements com.exedio.cope.<a href="com/exedio/cope/Copyable.html" title="interface in com.exedio.cope">Copyable</a>, com.exedio.cope.pattern.<a href="com/exedio/cope/pattern/PriceFunction.html" title="interface in com.exedio.cope.pattern">PriceFunction</a>, com.exedio.cope.<a href="com/exedio/cope/Settable.html" title="interface in com.exedio.cope">Settable</a>&lt;E&gt;)</li>
 <li type="circle">com.exedio.cope.pattern.<a href="com/exedio/cope/pattern/RangeField.html" title="class in com.exedio.cope.pattern"><span class="typeNameLink">RangeField</span></a>&lt;E&gt; (implements com.exedio.cope.<a href="com/exedio/cope/Settable.html" title="interface in com.exedio.cope">Settable</a>&lt;E&gt;)</li>
 <li type="circle">com.exedio.cope.pattern.<a href="com/exedio/cope/pattern/Schedule.html" title="class in com.exedio.cope.pattern"><span class="typeNameLink">Schedule</span></a></li>
 <li type="circle">com.exedio.cope.pattern.<a href="com/exedio/cope/pattern/Serializer.html" title="class in com.exedio.cope.pattern"><span class="typeNameLink">Serializer</span></a>&lt;E&gt; (implements com.exedio.cope.<a href="com/exedio/cope/Settable.html" title="interface in com.exedio.cope">Settable</a>&lt;E&gt;)</li>
-<li type="circle">com.exedio.cope.pattern.<a href="com/exedio/cope/pattern/SetField.html" title="class in com.exedio.cope.pattern"><span class="typeNameLink">SetField</span></a>&lt;E&gt;</li>
+<li type="circle">com.exedio.cope.pattern.<a href="com/exedio/cope/pattern/SetField.html" title="class in com.exedio.cope.pattern"><span class="typeNameLink">SetField</span></a>&lt;E&gt; (implements com.exedio.cope.<a href="com/exedio/cope/Copyable.html" title="interface in com.exedio.cope">Copyable</a>)</li>
 <li type="circle">com.exedio.cope.pattern.<a href="com/exedio/cope/pattern/Singleton.html" title="class in com.exedio.cope.pattern"><span class="typeNameLink">Singleton</span></a></li>
+<li type="circle">com.exedio.cope.reflect.<a href="com/exedio/cope/reflect/TypeField.html" title="class in com.exedio.cope.reflect"><span class="typeNameLink">TypeField</span></a>&lt;E&gt; (implements com.exedio.cope.<a href="com/exedio/cope/Settable.html" title="interface in com.exedio.cope">Settable</a>&lt;E&gt;)</li>
 <li type="circle">com.exedio.cope.pattern.<a href="com/exedio/cope/pattern/UniqueHashedMedia.html" title="class in com.exedio.cope.pattern"><span class="typeNameLink">UniqueHashedMedia</span></a> (implements com.exedio.cope.<a href="com/exedio/cope/Copyable.html" title="interface in com.exedio.cope">Copyable</a>, com.exedio.cope.<a href="com/exedio/cope/Settable.html" title="interface in com.exedio.cope">Settable</a>&lt;E&gt;)</li>
 </ul>
 </li>
@@ -291,6 +299,7 @@
 <li type="circle">com.exedio.cope.<a href="com/exedio/cope/CoalesceView.html" title="class in com.exedio.cope"><span class="typeNameLink">CoalesceView</span></a>&lt;E&gt;</li>
 <li type="circle">com.exedio.cope.<a href="com/exedio/cope/NumberView.html" title="class in com.exedio.cope"><span class="typeNameLink">NumberView</span></a>&lt;E&gt; (implements com.exedio.cope.<a href="com/exedio/cope/NumberFunction.html" title="interface in com.exedio.cope">NumberFunction</a>&lt;E&gt;)
 <ul>
+<li type="circle">com.exedio.cope.<a href="com/exedio/cope/DayPartView.html" title="class in com.exedio.cope"><span class="typeNameLink">DayPartView</span></a></li>
 <li type="circle">com.exedio.cope.<a href="com/exedio/cope/DivideView.html" title="class in com.exedio.cope"><span class="typeNameLink">DivideView</span></a>&lt;E&gt;</li>
 <li type="circle">com.exedio.cope.<a href="com/exedio/cope/LengthView.html" title="class in com.exedio.cope"><span class="typeNameLink">LengthView</span></a></li>
 <li type="circle">com.exedio.cope.<a href="com/exedio/cope/MinusView.html" title="class in com.exedio.cope"><span class="typeNameLink">MinusView</span></a>&lt;E&gt;</li>
@@ -311,10 +320,11 @@
 </ul>
 </li>
 <li type="circle">com.exedio.cope.<a href="com/exedio/cope/Features.html" title="class in com.exedio.cope"><span class="typeNameLink">Features</span></a></li>
+<li type="circle">com.exedio.cope.<a href="com/exedio/cope/FieldValues.html" title="class in com.exedio.cope"><span class="typeNameLink">FieldValues</span></a></li>
 <li type="circle">com.exedio.cope.misc.instrument.<a href="com/exedio/cope/misc/instrument/FinalSettableGetter.html" title="class in com.exedio.cope.misc.instrument"><span class="typeNameLink">FinalSettableGetter</span></a> (implements com.exedio.cope.instrument.<a href="com/exedio/cope/instrument/BooleanGetter.html" title="interface in com.exedio.cope.instrument">BooleanGetter</a>&lt;F&gt;)</li>
 <li type="circle">javax.servlet.<a href="https://docs.oracle.com/javaee/1.4/api/javax/servlet/GenericServlet.html?is-external=true" title="class or interface in javax.servlet"><span class="typeNameLink">GenericServlet</span></a> (implements java.io.<a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializable.html?is-external=true" title="class or interface in java.io">Serializable</a>, javax.servlet.<a href="https://docs.oracle.com/javaee/1.4/api/javax/servlet/Servlet.html?is-external=true" title="class or interface in javax.servlet">Servlet</a>, javax.servlet.<a href="https://docs.oracle.com/javaee/1.4/api/javax/servlet/ServletConfig.html?is-external=true" title="class or interface in javax.servlet">ServletConfig</a>)
 <ul>
-<li type="circle">javax.servlet.http.<a href="https://docs.oracle.com/javaee/1.4/api/javax/servlet/http/HttpServlet.html?is-external=true" title="class or interface in javax.servlet.http"><span class="typeNameLink">HttpServlet</span></a> (implements java.io.<a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializable.html?is-external=true" title="class or interface in java.io">Serializable</a>)
+<li type="circle">javax.servlet.http.<a href="https://docs.oracle.com/javaee/1.4/api/javax/servlet/http/HttpServlet.html?is-external=true" title="class or interface in javax.servlet.http"><span class="typeNameLink">HttpServlet</span></a>
 <ul>
 <li type="circle">com.exedio.cops.<a href="com/exedio/cops/CopsServlet.html" title="class in com.exedio.cops"><span class="typeNameLink">CopsServlet</span></a>
 <ul>
@@ -352,24 +362,28 @@
 </ul>
 </li>
 <li type="circle">com.exedio.cope.<a href="com/exedio/cope/ItemCacheInfo.html" title="class in com.exedio.cope"><span class="typeNameLink">ItemCacheInfo</span></a></li>
+<li type="circle">com.exedio.cope.<a href="com/exedio/cope/ItemCacheStatistics.html" title="class in com.exedio.cope"><span class="typeNameLink">ItemCacheStatistics</span></a></li>
 <li type="circle">com.exedio.cope.misc.<a href="com/exedio/cope/misc/ItemCacheSummary.html" title="class in com.exedio.cope.misc"><span class="typeNameLink">ItemCacheSummary</span></a></li>
 <li type="circle">com.exedio.cope.misc.<a href="com/exedio/cope/misc/Iterables.html" title="class in com.exedio.cope.misc"><span class="typeNameLink">Iterables</span></a></li>
 <li type="circle">com.exedio.cope.util.<a href="com/exedio/cope/util/JobContexts.html" title="class in com.exedio.cope.util"><span class="typeNameLink">JobContexts</span></a></li>
 <li type="circle">com.exedio.cope.<a href="com/exedio/cope/Join.html" title="class in com.exedio.cope"><span class="typeNameLink">Join</span></a> (implements java.io.<a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializable.html?is-external=true" title="class or interface in java.io">Serializable</a>)</li>
 <li type="circle">com.exedio.cope.misc.<a href="com/exedio/cope/misc/ListUtil.html" title="class in com.exedio.cope.misc"><span class="typeNameLink">ListUtil</span></a></li>
+<li type="circle">com.exedio.cope.misc.<a href="com/exedio/cope/misc/LocalizationKeys.html" title="class in com.exedio.cope.misc"><span class="typeNameLink">LocalizationKeys</span></a></li>
 <li type="circle">com.exedio.cope.pattern.<a href="com/exedio/cope/pattern/Media.Value.html" title="class in com.exedio.cope.pattern"><span class="typeNameLink">Media.Value</span></a></li>
 <li type="circle">com.exedio.cope.pattern.<a href="com/exedio/cope/pattern/MediaFingerprintOffset.html" title="class in com.exedio.cope.pattern"><span class="typeNameLink">MediaFingerprintOffset</span></a></li>
 <li type="circle">com.exedio.cope.pattern.<a href="com/exedio/cope/pattern/MediaInfo.html" title="class in com.exedio.cope.pattern"><span class="typeNameLink">MediaInfo</span></a></li>
-<li type="circle">com.exedio.cope.pattern.<a href="com/exedio/cope/pattern/MediaPath.Locator.html" title="class in com.exedio.cope.pattern"><span class="typeNameLink">MediaPath.Locator</span></a></li>
+<li type="circle">com.exedio.cope.pattern.<a href="com/exedio/cope/pattern/MediaPath.Locator.html" title="class in com.exedio.cope.pattern"><span class="typeNameLink">MediaPath.Locator</span></a> (implements java.io.<a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializable.html?is-external=true" title="class or interface in java.io">Serializable</a>)</li>
 <li type="circle">com.exedio.cope.pattern.<a href="com/exedio/cope/pattern/MediaPath.Log.html" title="class in com.exedio.cope.pattern"><span class="typeNameLink">MediaPath.Log</span></a></li>
 <li type="circle">com.exedio.cope.pattern.<a href="com/exedio/cope/pattern/MediaRequestLog.html" title="class in com.exedio.cope.pattern"><span class="typeNameLink">MediaRequestLog</span></a></li>
 <li type="circle">com.exedio.cope.misc.<a href="com/exedio/cope/misc/MediaSummary.html" title="class in com.exedio.cope.misc"><span class="typeNameLink">MediaSummary</span></a></li>
 <li type="circle">com.exedio.cope.pattern.<a href="com/exedio/cope/pattern/MediaType.html" title="class in com.exedio.cope.pattern"><span class="typeNameLink">MediaType</span></a></li>
 <li type="circle">com.exedio.cope.pattern.<a href="com/exedio/cope/pattern/MediaUtil.html" title="class in com.exedio.cope.pattern"><span class="typeNameLink">MediaUtil</span></a></li>
 <li type="circle">com.exedio.cope.pattern.<a href="com/exedio/cope/pattern/MessageDigestAlgorithm.html" title="class in com.exedio.cope.pattern"><span class="typeNameLink">MessageDigestAlgorithm</span></a> (implements com.exedio.cope.pattern.<a href="com/exedio/cope/pattern/Hash.Algorithm.html" title="interface in com.exedio.cope.pattern">Hash.Algorithm</a>)</li>
+<li type="circle">com.exedio.cope.util.<a href="com/exedio/cope/util/MessageDigestFactory.html" title="class in com.exedio.cope.util"><span class="typeNameLink">MessageDigestFactory</span></a> (implements java.io.<a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializable.html?is-external=true" title="class or interface in java.io">Serializable</a>)</li>
 <li type="circle">com.exedio.cope.pattern.<a href="com/exedio/cope/pattern/MessageDigestHashAlgorithm.html" title="class in com.exedio.cope.pattern"><span class="typeNameLink">MessageDigestHashAlgorithm</span></a></li>
 <li type="circle">com.exedio.cope.util.<a href="com/exedio/cope/util/MessageDigestUtil.html" title="class in com.exedio.cope.util"><span class="typeNameLink">MessageDigestUtil</span></a></li>
 <li type="circle">com.exedio.cope.<a href="com/exedio/cope/Model.html" title="class in com.exedio.cope"><span class="typeNameLink">Model</span></a> (implements java.io.<a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializable.html?is-external=true" title="class or interface in java.io">Serializable</a>)</li>
+<li type="circle">com.exedio.cope.<a href="com/exedio/cope/ModelBuilder.html" title="class in com.exedio.cope"><span class="typeNameLink">ModelBuilder</span></a></li>
 <li type="circle">com.exedio.cope.misc.<a href="com/exedio/cope/misc/ModelByString.html" title="class in com.exedio.cope.misc"><span class="typeNameLink">ModelByString</span></a></li>
 <li type="circle">com.exedio.cope.misc.<a href="com/exedio/cope/misc/ModelMain.html" title="class in com.exedio.cope.misc"><span class="typeNameLink">ModelMain</span></a></li>
 <li type="circle">com.exedio.cope.pattern.<a href="com/exedio/cope/pattern/Money.html" title="class in com.exedio.cope.pattern"><span class="typeNameLink">Money</span></a>&lt;C&gt; (implements java.lang.<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang">Comparable</a>&lt;T&gt;, java.io.<a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializable.html?is-external=true" title="class or interface in java.io">Serializable</a>)</li>
@@ -391,6 +405,7 @@
 </ul>
 </li>
 <li type="circle">com.exedio.cope.misc.<a href="com/exedio/cope/misc/NonNegativeRandom.html" title="class in com.exedio.cope.misc"><span class="typeNameLink">NonNegativeRandom</span></a></li>
+<li type="circle">com.exedio.cope.misc.instrument.<a href="com/exedio/cope/misc/instrument/NullableIfOptional.html" title="class in com.exedio.cope.misc.instrument"><span class="typeNameLink">NullableIfOptional</span></a> (implements com.exedio.cope.instrument.<a href="com/exedio/cope/instrument/NullabilityGetter.html" title="interface in com.exedio.cope.instrument">NullabilityGetter</a>&lt;F&gt;)</li>
 <li type="circle">com.exedio.cops.<a href="com/exedio/cops/Pager.html" title="class in com.exedio.cops"><span class="typeNameLink">Pager</span></a></li>
 <li type="circle">com.exedio.cops.<a href="com/exedio/cops/Pager.Config.html" title="class in com.exedio.cops"><span class="typeNameLink">Pager.Config</span></a></li>
 <li type="circle">com.exedio.cope.pattern.<a href="com/exedio/cope/pattern/PasswordRecovery.Config.html" title="class in com.exedio.cope.pattern"><span class="typeNameLink">PasswordRecovery.Config</span></a></li>
@@ -405,8 +420,10 @@
 <ul>
 <li type="circle">com.exedio.cope.<a href="com/exedio/cope/ConnectProperties.html" title="class in com.exedio.cope"><span class="typeNameLink">ConnectProperties</span></a></li>
 <li type="circle">com.exedio.cope.pattern.<a href="com/exedio/cope/pattern/DispatcherProperties.html" title="class in com.exedio.cope.pattern"><span class="typeNameLink">DispatcherProperties</span></a></li>
+<li type="circle">com.exedio.cope.pattern.<a href="com/exedio/cope/pattern/DispatcherPurgeProperties.html" title="class in com.exedio.cope.pattern"><span class="typeNameLink">DispatcherPurgeProperties</span></a></li>
 <li type="circle">com.exedio.cope.util.<a href="com/exedio/cope/util/PoolProperties.html" title="class in com.exedio.cope.util"><span class="typeNameLink">PoolProperties</span></a></li>
 <li type="circle">com.exedio.cope.sampler.<a href="com/exedio/cope/sampler/SamplerProperties.html" title="class in com.exedio.cope.sampler"><span class="typeNameLink">SamplerProperties</span></a></li>
+<li type="circle">com.exedio.cope.vault.<a href="com/exedio/cope/vault/VaultProperties.html" title="class in com.exedio.cope.vault"><span class="typeNameLink">VaultProperties</span></a></li>
 </ul>
 </li>
 <li type="circle">com.exedio.cope.util.<a href="com/exedio/cope/util/Properties.Field.html" title="class in com.exedio.cope.util"><span class="typeNameLink">Properties.Field</span></a>
@@ -449,14 +466,16 @@
 <li type="circle">com.exedio.cope.util.<a href="com/exedio/cope/util/SafeFile.html" title="class in com.exedio.cope.util"><span class="typeNameLink">SafeFile</span></a></li>
 <li type="circle">com.exedio.cope.sampler.<a href="com/exedio/cope/sampler/Sampler.html" title="class in com.exedio.cope.sampler"><span class="typeNameLink">Sampler</span></a></li>
 <li type="circle">com.exedio.cope.<a href="com/exedio/cope/SchemaInfo.html" title="class in com.exedio.cope"><span class="typeNameLink">SchemaInfo</span></a></li>
+<li type="circle">com.exedio.cope.<a href="com/exedio/cope/SequenceBehindInfo.html" title="class in com.exedio.cope"><span class="typeNameLink">SequenceBehindInfo</span></a></li>
 <li type="circle">com.exedio.cope.util.<a href="com/exedio/cope/util/SequenceChecker.html" title="class in com.exedio.cope.util"><span class="typeNameLink">SequenceChecker</span></a></li>
 <li type="circle">com.exedio.cope.util.<a href="com/exedio/cope/util/SequenceChecker.Counter.html" title="class in com.exedio.cope.util"><span class="typeNameLink">SequenceChecker.Counter</span></a></li>
 <li type="circle">com.exedio.cope.util.<a href="com/exedio/cope/util/SequenceChecker.Info.html" title="class in com.exedio.cope.util"><span class="typeNameLink">SequenceChecker.Info</span></a></li>
 <li type="circle">com.exedio.cope.<a href="com/exedio/cope/SequenceInfo.html" title="class in com.exedio.cope"><span class="typeNameLink">SequenceInfo</span></a></li>
 <li type="circle">com.exedio.cope.misc.<a href="com/exedio/cope/misc/SerializationCheck.html" title="class in com.exedio.cope.misc"><span class="typeNameLink">SerializationCheck</span></a></li>
+<li type="circle">com.exedio.cope.util.<a href="com/exedio/cope/util/ServiceFactory.html" title="class in com.exedio.cope.util"><span class="typeNameLink">ServiceFactory</span></a>&lt;T,P&gt;</li>
 <li type="circle">com.exedio.cope.servletutil.<a href="com/exedio/cope/servletutil/ServletProperties.html" title="class in com.exedio.cope.servletutil"><span class="typeNameLink">ServletProperties</span></a></li>
+<li type="circle">com.exedio.cope.servletutil.<a href="com/exedio/cope/servletutil/ServletSource.html" title="class in com.exedio.cope.servletutil"><span class="typeNameLink">ServletSource</span></a></li>
 <li type="circle">com.exedio.cope.misc.<a href="com/exedio/cope/misc/ServletUtil.html" title="class in com.exedio.cope.misc"><span class="typeNameLink">ServletUtil</span></a></li>
-<li type="circle">com.exedio.cope.util.<a href="com/exedio/cope/util/ServletUtil.html" title="class in com.exedio.cope.util"><span class="typeNameLink">ServletUtil</span></a></li>
 <li type="circle">com.exedio.cope.<a href="com/exedio/cope/SetValue.html" title="class in com.exedio.cope"><span class="typeNameLink">SetValue</span></a>&lt;E&gt;</li>
 <li type="circle">com.exedio.cope.misc.<a href="com/exedio/cope/misc/SetValueUtil.html" title="class in com.exedio.cope.misc"><span class="typeNameLink">SetValueUtil</span></a></li>
 <li type="circle">com.exedio.cope.util.<a href="com/exedio/cope/util/Sources.html" title="class in com.exedio.cope.util"><span class="typeNameLink">Sources</span></a></li>
@@ -480,6 +499,7 @@
 <li type="circle">com.exedio.cope.pattern.<a href="com/exedio/cope/pattern/ColorAlphaViolationException.html" title="class in com.exedio.cope.pattern"><span class="typeNameLink">ColorAlphaViolationException</span></a></li>
 <li type="circle">com.exedio.cope.<a href="com/exedio/cope/CopyViolationException.html" title="class in com.exedio.cope"><span class="typeNameLink">CopyViolationException</span></a></li>
 <li type="circle">com.exedio.cope.<a href="com/exedio/cope/DataLengthViolationException.html" title="class in com.exedio.cope"><span class="typeNameLink">DataLengthViolationException</span></a></li>
+<li type="circle">com.exedio.cope.<a href="com/exedio/cope/DatePrecisionViolationException.html" title="class in com.exedio.cope"><span class="typeNameLink">DatePrecisionViolationException</span></a></li>
 <li type="circle">com.exedio.cope.<a href="com/exedio/cope/DoubleNaNException.html" title="class in com.exedio.cope"><span class="typeNameLink">DoubleNaNException</span></a></li>
 <li type="circle">com.exedio.cope.<a href="com/exedio/cope/FinalViolationException.html" title="class in com.exedio.cope"><span class="typeNameLink">FinalViolationException</span></a></li>
 <li type="circle">com.exedio.cope.pattern.<a href="com/exedio/cope/pattern/Hash.InvalidPlainTextException.html" title="class in com.exedio.cope.pattern"><span class="typeNameLink">Hash.InvalidPlainTextException</span></a></li>
@@ -502,12 +522,16 @@
 </li>
 <li type="circle">java.lang.<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang"><span class="typeNameLink">IllegalArgumentException</span></a>
 <ul>
+<li type="circle">com.exedio.cope.util.<a href="com/exedio/cope/util/IllegalAlgorithmException.html" title="class in com.exedio.cope.util"><span class="typeNameLink">IllegalAlgorithmException</span></a></li>
 <li type="circle">com.exedio.cope.util.<a href="com/exedio/cope/util/IllegalPropertiesException.html" title="class in com.exedio.cope.util"><span class="typeNameLink">IllegalPropertiesException</span></a></li>
+<li type="circle">com.exedio.cope.<a href="com/exedio/cope/UnsupportedQueryException.html" title="class in com.exedio.cope"><span class="typeNameLink">UnsupportedQueryException</span></a></li>
 </ul>
 </li>
 <li type="circle">java.lang.<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalStateException.html?is-external=true" title="class or interface in java.lang"><span class="typeNameLink">IllegalStateException</span></a>
 <ul>
+<li type="circle">com.exedio.cope.reflect.<a href="com/exedio/cope/reflect/FeatureField.NotFound.html" title="class in com.exedio.cope.reflect"><span class="typeNameLink">FeatureField.NotFound</span></a></li>
 <li type="circle">com.exedio.cope.<a href="com/exedio/cope/Model.NotConnectedException.html" title="class in com.exedio.cope"><span class="typeNameLink">Model.NotConnectedException</span></a></li>
+<li type="circle">com.exedio.cope.reflect.<a href="com/exedio/cope/reflect/TypeField.NotFound.html" title="class in com.exedio.cope.reflect"><span class="typeNameLink">TypeField.NotFound</span></a></li>
 </ul>
 </li>
 <li type="circle">com.exedio.cope.util.<a href="com/exedio/cope/util/JobStop.html" title="class in com.exedio.cope.util"><span class="typeNameLink">JobStop</span></a></li>
@@ -516,6 +540,7 @@
 <li type="circle">com.exedio.cope.<a href="com/exedio/cope/TemporaryTransactionException.html" title="class in com.exedio.cope"><span class="typeNameLink">TemporaryTransactionException</span></a></li>
 </ul>
 </li>
+<li type="circle">com.exedio.cope.vault.<a href="com/exedio/cope/vault/VaultNotFoundException.html" title="class in com.exedio.cope.vault"><span class="typeNameLink">VaultNotFoundException</span></a></li>
 </ul>
 </li>
 </ul>
@@ -526,16 +551,15 @@
 <li type="circle">com.exedio.cope.<a href="com/exedio/cope/TransactionCounters.html" title="class in com.exedio.cope"><span class="typeNameLink">TransactionCounters</span></a></li>
 <li type="circle">com.exedio.cope.misc.<a href="com/exedio/cope/misc/TransactionRunnable.html" title="class in com.exedio.cope.misc"><span class="typeNameLink">TransactionRunnable</span></a> (implements java.lang.<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Runnable.html?is-external=true" title="class or interface in java.lang">Runnable</a>)</li>
 <li type="circle">com.exedio.cope.misc.<a href="com/exedio/cope/misc/TransactionSlicer.html" title="class in com.exedio.cope.misc"><span class="typeNameLink">TransactionSlicer</span></a></li>
-<li type="circle">com.exedio.cope.util.<a href="com/exedio/cope/util/TransactionSlicer.html" title="class in com.exedio.cope.util"><span class="typeNameLink">TransactionSlicer</span></a></li>
 <li type="circle">com.exedio.cope.<a href="com/exedio/cope/TransactionTry.html" title="class in com.exedio.cope"><span class="typeNameLink">TransactionTry</span></a> (implements java.lang.<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/AutoCloseable.html?is-external=true" title="class or interface in java.lang">AutoCloseable</a>)</li>
-<li type="circle">com.exedio.cope.<a href="com/exedio/cope/Type.html" title="class in com.exedio.cope"><span class="typeNameLink">Type</span></a>&lt;T&gt; (implements java.lang.<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang">Comparable</a>&lt;T&gt;, java.io.<a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializable.html?is-external=true" title="class or interface in java.io">Serializable</a>)</li>
+<li type="circle">com.exedio.cope.<a href="com/exedio/cope/Type.html" title="class in com.exedio.cope"><span class="typeNameLink">Type</span></a>&lt;T&gt; (implements com.exedio.cope.<a href="com/exedio/cope/AbstractType.html" title="interface in com.exedio.cope">AbstractType</a>&lt;T&gt;, java.lang.<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang">Comparable</a>&lt;T&gt;)</li>
 <li type="circle">com.exedio.cope.misc.<a href="com/exedio/cope/misc/TypeIterator.html" title="class in com.exedio.cope.misc"><span class="typeNameLink">TypeIterator</span></a></li>
 <li type="circle">com.exedio.cope.<a href="com/exedio/cope/TypesBound.html" title="class in com.exedio.cope"><span class="typeNameLink">TypesBound</span></a></li>
 <li type="circle">com.exedio.cope.<a href="com/exedio/cope/TypeSet.html" title="class in com.exedio.cope"><span class="typeNameLink">TypeSet</span></a></li>
-<li type="circle">com.exedio.cope.instrument.<a href="com/exedio/cope/instrument/Wrapper.html" title="class in com.exedio.cope.instrument"><span class="typeNameLink">Wrapper</span></a></li>
-<li type="circle">com.exedio.cope.instrument.<a href="com/exedio/cope/instrument/Wrapper.ClassVariable.html" title="class in com.exedio.cope.instrument"><span class="typeNameLink">Wrapper.ClassVariable</span></a></li>
-<li type="circle">com.exedio.cope.instrument.<a href="com/exedio/cope/instrument/Wrapper.TypeVariable0.html" title="class in com.exedio.cope.instrument"><span class="typeNameLink">Wrapper.TypeVariable0</span></a></li>
-<li type="circle">com.exedio.cope.instrument.<a href="com/exedio/cope/instrument/Wrapper.TypeVariable1.html" title="class in com.exedio.cope.instrument"><span class="typeNameLink">Wrapper.TypeVariable1</span></a></li>
+<li type="circle">com.exedio.cope.vault.<a href="com/exedio/cope/vault/VaultFileService.html" title="class in com.exedio.cope.vault"><span class="typeNameLink">VaultFileService</span></a> (implements com.exedio.cope.vault.<a href="com/exedio/cope/vault/VaultService.html" title="interface in com.exedio.cope.vault">VaultService</a>)</li>
+<li type="circle">com.exedio.cope.vault.<a href="com/exedio/cope/vault/VaultReferenceService.html" title="class in com.exedio.cope.vault"><span class="typeNameLink">VaultReferenceService</span></a> (implements com.exedio.cope.vault.<a href="com/exedio/cope/vault/VaultService.html" title="interface in com.exedio.cope.vault">VaultService</a>)</li>
+<li type="circle">com.exedio.cope.vault.<a href="com/exedio/cope/vault/VaultServiceParameters.html" title="class in com.exedio.cope.vault"><span class="typeNameLink">VaultServiceParameters</span></a></li>
+<li type="circle">com.exedio.cope.junit.<a href="com/exedio/cope/junit/VaultTestService.html" title="class in com.exedio.cope.junit"><span class="typeNameLink">VaultTestService</span></a> (implements com.exedio.cope.vault.<a href="com/exedio/cope/vault/VaultService.html" title="interface in com.exedio.cope.vault">VaultService</a>)</li>
 <li type="circle">com.exedio.cops.<a href="com/exedio/cops/XMLEncoder.html" title="class in com.exedio.cops"><span class="typeNameLink">XMLEncoder</span></a></li>
 <li type="circle">com.exedio.cope.util.<a href="com/exedio/cope/util/XMLEncoder.html" title="class in com.exedio.cope.util"><span class="typeNameLink">XMLEncoder</span></a></li>
 </ul>
@@ -543,6 +567,11 @@
 </ul>
 <h2 title="Interface Hierarchy">Interface Hierarchy</h2>
 <ul>
+<li type="circle">java.lang.<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/AutoCloseable.html?is-external=true" title="class or interface in java.lang"><span class="typeNameLink">AutoCloseable</span></a>
+<ul>
+<li type="circle">com.exedio.cope.vault.<a href="com/exedio/cope/vault/VaultService.html" title="interface in com.exedio.cope.vault"><span class="typeNameLink">VaultService</span></a></li>
+</ul>
+</li>
 <li type="circle">com.exedio.cope.instrument.<a href="com/exedio/cope/instrument/BooleanGetter.html" title="interface in com.exedio.cope.instrument"><span class="typeNameLink">BooleanGetter</span></a>&lt;F&gt;</li>
 <li type="circle">com.exedio.cope.<a href="com/exedio/cope/ChangeListener.html" title="interface in com.exedio.cope"><span class="typeNameLink">ChangeListener</span></a></li>
 <li type="circle">com.exedio.cope.util.<a href="com/exedio/cope/util/Clock.Strategy.html" title="interface in com.exedio.cope.util"><span class="typeNameLink">Clock.Strategy</span></a></li>
@@ -560,12 +589,15 @@
 <li type="circle">com.exedio.cope.util.<a href="com/exedio/cope/util/Interrupter.html" title="interface in com.exedio.cope.util"><span class="typeNameLink">Interrupter</span></a></li>
 <li type="circle">com.exedio.cope.util.<a href="com/exedio/cope/util/InterrupterJobContextAdapter.Body.html" title="interface in com.exedio.cope.util"><span class="typeNameLink">InterrupterJobContextAdapter.Body</span></a></li>
 <li type="circle">com.exedio.cope.util.<a href="com/exedio/cope/util/JobContext.html" title="interface in com.exedio.cope.util"><span class="typeNameLink">JobContext</span></a></li>
+<li type="circle">com.exedio.cope.pattern.<a href="com/exedio/cope/pattern/MapFieldInterface.html" title="interface in com.exedio.cope.pattern"><span class="typeNameLink">MapFieldInterface</span></a>&lt;K,V&gt;</li>
 <li type="circle">com.exedio.cope.pattern.<a href="com/exedio/cope/pattern/MediaTestable.html" title="interface in com.exedio.cope.pattern"><span class="typeNameLink">MediaTestable</span></a></li>
 <li type="circle">com.exedio.cope.pattern.<a href="com/exedio/cope/pattern/MediaUrlCatchphraseProvider.html" title="interface in com.exedio.cope.pattern"><span class="typeNameLink">MediaUrlCatchphraseProvider</span></a></li>
 <li type="circle">com.exedio.cope.util.<a href="com/exedio/cope/util/ModificationListener.html" title="interface in com.exedio.cope.util"><span class="typeNameLink">ModificationListener</span></a></li>
 <li type="circle">com.exedio.cope.pattern.<a href="com/exedio/cope/pattern/Money.Currency.html" title="interface in com.exedio.cope.pattern"><span class="typeNameLink">Money.Currency</span></a></li>
+<li type="circle">com.exedio.cope.instrument.<a href="com/exedio/cope/instrument/NullabilityGetter.html" title="interface in com.exedio.cope.instrument"><span class="typeNameLink">NullabilityGetter</span></a>&lt;F&gt;</li>
 <li type="circle">com.exedio.cops.<a href="com/exedio/cops/Pageable.html" title="interface in com.exedio.cops"><span class="typeNameLink">Pageable</span></a></li>
 <li type="circle">com.exedio.cope.util.<a href="com/exedio/cope/util/Pool.Factory.html" title="interface in com.exedio.cope.util"><span class="typeNameLink">Pool.Factory</span></a>&lt;E&gt;</li>
+<li type="circle">com.exedio.cope.pattern.<a href="com/exedio/cope/pattern/PriceFunction.html" title="interface in com.exedio.cope.pattern"><span class="typeNameLink">PriceFunction</span></a></li>
 <li type="circle">com.exedio.cope.util.<a href="com/exedio/cope/util/Properties.Factory.html" title="interface in com.exedio.cope.util"><span class="typeNameLink">Properties.Factory</span></a>&lt;T&gt;</li>
 <li type="circle">com.exedio.cope.util.<a href="com/exedio/cope/util/Properties.Source.html" title="interface in com.exedio.cope.util"><span class="typeNameLink">Properties.Source</span></a></li>
 <li type="circle">com.exedio.cops.<a href="com/exedio/cops/PropertiesServlet.Overridable.html" title="interface in com.exedio.cops"><span class="typeNameLink">PropertiesServlet.Overridable</span></a>&lt;P&gt;</li>
@@ -574,6 +606,11 @@
 <li type="circle">com.exedio.cope.pattern.<a href="com/exedio/cope/pattern/Scheduleable.html" title="interface in com.exedio.cope.pattern"><span class="typeNameLink">Scheduleable</span></a></li>
 <li type="circle">java.io.<a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializable.html?is-external=true" title="class or interface in java.io"><span class="typeNameLink">Serializable</span></a>
 <ul>
+<li type="circle">com.exedio.cope.<a href="com/exedio/cope/AbstractType.html" title="interface in com.exedio.cope"><span class="typeNameLink">AbstractType</span></a>&lt;T&gt;
+<ul>
+<li type="circle">com.exedio.cope.pattern.<a href="com/exedio/cope/pattern/TemplatedType.html" title="interface in com.exedio.cope.pattern"><span class="typeNameLink">TemplatedType</span></a>&lt;E&gt;</li>
+</ul>
+</li>
 <li type="circle">com.exedio.cope.<a href="com/exedio/cope/Selectable.html" title="interface in com.exedio.cope"><span class="typeNameLink">Selectable</span></a>&lt;E&gt;
 <ul>
 <li type="circle">com.exedio.cope.<a href="com/exedio/cope/Function.html" title="interface in com.exedio.cope"><span class="typeNameLink">Function</span></a>&lt;E&gt;
@@ -598,14 +635,20 @@
 </li>
 <li type="circle">com.exedio.dsmf.<a href="com/exedio/dsmf/StatementListener.html" title="interface in com.exedio.dsmf"><span class="typeNameLink">StatementListener</span></a></li>
 <li type="circle">com.exedio.cope.instrument.<a href="com/exedio/cope/instrument/StringGetter.html" title="interface in com.exedio.cope.instrument"><span class="typeNameLink">StringGetter</span></a>&lt;F&gt;</li>
+<li type="circle">com.exedio.cope.pattern.<a href="com/exedio/cope/pattern/TemplatedField.html" title="interface in com.exedio.cope.pattern"><span class="typeNameLink">TemplatedField</span></a>&lt;E&gt;</li>
+<li type="circle">com.exedio.cope.pattern.<a href="com/exedio/cope/pattern/TemplatedValue.html" title="interface in com.exedio.cope.pattern"><span class="typeNameLink">TemplatedValue</span></a></li>
 <li type="circle">com.exedio.cope.pattern.<a href="com/exedio/cope/pattern/TextUrlFilterCheckable.html" title="interface in com.exedio.cope.pattern"><span class="typeNameLink">TextUrlFilterCheckable</span></a></li>
 <li type="circle">com.exedio.cope.instrument.<a href="com/exedio/cope/instrument/ThrownGetter.html" title="interface in com.exedio.cope.instrument"><span class="typeNameLink">ThrownGetter</span></a>&lt;F&gt;</li>
+<li type="circle">com.exedio.cope.<a href="com/exedio/cope/TypeFuture.html" title="interface in com.exedio.cope"><span class="typeNameLink">TypeFuture</span></a>&lt;T&gt;</li>
 </ul>
 <h2 title="Annotation Type Hierarchy">Annotation Type Hierarchy</h2>
 <ul>
 <li type="circle">com.exedio.cope.misc.<a href="com/exedio/cope/misc/Computed.html" title="annotation in com.exedio.cope.misc"><span class="typeNameLink">Computed</span></a> (implements java.lang.annotation.<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/annotation/Annotation.html?is-external=true" title="class or interface in java.lang.annotation">Annotation</a>)</li>
 <li type="circle">com.exedio.cope.instrument.<a href="com/exedio/cope/instrument/ConstructorComment.html" title="annotation in com.exedio.cope.instrument"><span class="typeNameLink">ConstructorComment</span></a> (implements java.lang.annotation.<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/annotation/Annotation.html?is-external=true" title="class or interface in java.lang.annotation">Annotation</a>)</li>
 <li type="circle">com.exedio.cope.<a href="com/exedio/cope/CopeCacheWeight.html" title="annotation in com.exedio.cope"><span class="typeNameLink">CopeCacheWeight</span></a> (implements java.lang.annotation.<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/annotation/Annotation.html?is-external=true" title="class or interface in java.lang.annotation">Annotation</a>)</li>
+<li type="circle">com.exedio.cope.<a href="com/exedio/cope/CopeCreateLimit.html" title="annotation in com.exedio.cope"><span class="typeNameLink">CopeCreateLimit</span></a> (implements java.lang.annotation.<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/annotation/Annotation.html?is-external=true" title="class or interface in java.lang.annotation">Annotation</a>)</li>
+<li type="circle">com.exedio.cope.pattern.<a href="com/exedio/cope/pattern/CopeEnumFallback.html" title="annotation in com.exedio.cope.pattern"><span class="typeNameLink">CopeEnumFallback</span></a> (implements java.lang.annotation.<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/annotation/Annotation.html?is-external=true" title="class or interface in java.lang.annotation">Annotation</a>)</li>
+<li type="circle">com.exedio.cope.<a href="com/exedio/cope/CopeExternal.html" title="annotation in com.exedio.cope"><span class="typeNameLink">CopeExternal</span></a> (implements java.lang.annotation.<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/annotation/Annotation.html?is-external=true" title="class or interface in java.lang.annotation">Annotation</a>)</li>
 <li type="circle">com.exedio.cope.<a href="com/exedio/cope/CopeID.html" title="annotation in com.exedio.cope"><span class="typeNameLink">CopeID</span></a> (implements java.lang.annotation.<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/annotation/Annotation.html?is-external=true" title="class or interface in java.lang.annotation">Annotation</a>)</li>
 <li type="circle">com.exedio.cope.<a href="com/exedio/cope/CopeName.html" title="annotation in com.exedio.cope"><span class="typeNameLink">CopeName</span></a> (implements java.lang.annotation.<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/annotation/Annotation.html?is-external=true" title="class or interface in java.lang.annotation">Annotation</a>)</li>
 <li type="circle">com.exedio.cope.<a href="com/exedio/cope/CopeSchemaName.html" title="annotation in com.exedio.cope"><span class="typeNameLink">CopeSchemaName</span></a> (implements java.lang.annotation.<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/annotation/Annotation.html?is-external=true" title="class or interface in java.lang.annotation">Annotation</a>)</li>
@@ -615,11 +658,21 @@
 <li type="circle">com.exedio.cope.<a href="com/exedio/cope/MysqlExtendedVarchar.html" title="annotation in com.exedio.cope"><span class="typeNameLink">MysqlExtendedVarchar</span></a> (implements java.lang.annotation.<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/annotation/Annotation.html?is-external=true" title="class or interface in java.lang.annotation">Annotation</a>)</li>
 <li type="circle">com.exedio.cope.instrument.<a href="com/exedio/cope/instrument/Parameter.html" title="annotation in com.exedio.cope.instrument"><span class="typeNameLink">Parameter</span></a> (implements java.lang.annotation.<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/annotation/Annotation.html?is-external=true" title="class or interface in java.lang.annotation">Annotation</a>)</li>
 <li type="circle">com.exedio.cope.pattern.<a href="com/exedio/cope/pattern/PreventUrlGuessing.html" title="annotation in com.exedio.cope.pattern"><span class="typeNameLink">PreventUrlGuessing</span></a> (implements java.lang.annotation.<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/annotation/Annotation.html?is-external=true" title="class or interface in java.lang.annotation">Annotation</a>)</li>
+<li type="circle">com.exedio.cope.util.<a href="com/exedio/cope/util/Properties.Probe.html" title="annotation in com.exedio.cope.util"><span class="typeNameLink">Properties.Probe</span></a> (implements java.lang.annotation.<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/annotation/Annotation.html?is-external=true" title="class or interface in java.lang.annotation">Annotation</a>)</li>
 <li type="circle">com.exedio.cope.pattern.<a href="com/exedio/cope/pattern/RedirectFrom.html" title="annotation in com.exedio.cope.pattern"><span class="typeNameLink">RedirectFrom</span></a> (implements java.lang.annotation.<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/annotation/Annotation.html?is-external=true" title="class or interface in java.lang.annotation">Annotation</a>)</li>
+<li type="circle">com.exedio.cope.util.<a href="com/exedio/cope/util/ServiceProperties.html" title="annotation in com.exedio.cope.util"><span class="typeNameLink">ServiceProperties</span></a> (implements java.lang.annotation.<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/annotation/Annotation.html?is-external=true" title="class or interface in java.lang.annotation">Annotation</a>)</li>
 <li type="circle">com.exedio.cope.pattern.<a href="com/exedio/cope/pattern/UrlFingerPrinting.html" title="annotation in com.exedio.cope.pattern"><span class="typeNameLink">UrlFingerPrinting</span></a> (implements java.lang.annotation.<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/annotation/Annotation.html?is-external=true" title="class or interface in java.lang.annotation">Annotation</a>)</li>
+<li type="circle">com.exedio.cope.<a href="com/exedio/cope/Vault.html" title="annotation in com.exedio.cope"><span class="typeNameLink">Vault</span></a> (implements java.lang.annotation.<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/annotation/Annotation.html?is-external=true" title="class or interface in java.lang.annotation">Annotation</a>)</li>
 <li type="circle">com.exedio.cope.instrument.<a href="com/exedio/cope/instrument/Wrap.html" title="annotation in com.exedio.cope.instrument"><span class="typeNameLink">Wrap</span></a> (implements java.lang.annotation.<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/annotation/Annotation.html?is-external=true" title="class or interface in java.lang.annotation">Annotation</a>)</li>
 <li type="circle">com.exedio.cope.instrument.<a href="com/exedio/cope/instrument/Wrap.Thrown.html" title="annotation in com.exedio.cope.instrument"><span class="typeNameLink">Wrap.Thrown</span></a> (implements java.lang.annotation.<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/annotation/Annotation.html?is-external=true" title="class or interface in java.lang.annotation">Annotation</a>)</li>
 <li type="circle">com.exedio.cope.instrument.<a href="com/exedio/cope/instrument/WrapFeature.html" title="annotation in com.exedio.cope.instrument"><span class="typeNameLink">WrapFeature</span></a> (implements java.lang.annotation.<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/annotation/Annotation.html?is-external=true" title="class or interface in java.lang.annotation">Annotation</a>)</li>
+<li type="circle">com.exedio.cope.instrument.<a href="com/exedio/cope/instrument/Wrapper.html" title="annotation in com.exedio.cope.instrument"><span class="typeNameLink">Wrapper</span></a> (implements java.lang.annotation.<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/annotation/Annotation.html?is-external=true" title="class or interface in java.lang.annotation">Annotation</a>)</li>
+<li type="circle">com.exedio.cope.instrument.<a href="com/exedio/cope/instrument/WrapperIgnore.html" title="annotation in com.exedio.cope.instrument"><span class="typeNameLink">WrapperIgnore</span></a> (implements java.lang.annotation.<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/annotation/Annotation.html?is-external=true" title="class or interface in java.lang.annotation">Annotation</a>)</li>
+<li type="circle">com.exedio.cope.instrument.<a href="com/exedio/cope/instrument/WrapperInitial.html" title="annotation in com.exedio.cope.instrument"><span class="typeNameLink">WrapperInitial</span></a> (implements java.lang.annotation.<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/annotation/Annotation.html?is-external=true" title="class or interface in java.lang.annotation">Annotation</a>)</li>
+<li type="circle">com.exedio.cope.instrument.<a href="com/exedio/cope/instrument/WrapperRepeated.html" title="annotation in com.exedio.cope.instrument"><span class="typeNameLink">WrapperRepeated</span></a> (implements java.lang.annotation.<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/annotation/Annotation.html?is-external=true" title="class or interface in java.lang.annotation">Annotation</a>)</li>
+<li type="circle">com.exedio.cope.instrument.<a href="com/exedio/cope/instrument/WrapperType.html" title="annotation in com.exedio.cope.instrument"><span class="typeNameLink">WrapperType</span></a> (implements java.lang.annotation.<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/annotation/Annotation.html?is-external=true" title="class or interface in java.lang.annotation">Annotation</a>)</li>
+<li type="circle">com.exedio.cope.instrument.<a href="com/exedio/cope/instrument/WrapType.html" title="annotation in com.exedio.cope.instrument"><span class="typeNameLink">WrapType</span></a> (implements java.lang.annotation.<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/annotation/Annotation.html?is-external=true" title="class or interface in java.lang.annotation">Annotation</a>)</li>
+<li type="circle">com.exedio.cope.instrument.<a href="com/exedio/cope/instrument/WrapType.Type.html" title="annotation in com.exedio.cope.instrument"><span class="typeNameLink">WrapType.Type</span></a> (implements java.lang.annotation.<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/annotation/Annotation.html?is-external=true" title="class or interface in java.lang.annotation">Annotation</a>)</li>
 </ul>
 <h2 title="Enum Hierarchy">Enum Hierarchy</h2>
 <ul>
@@ -630,11 +683,17 @@
 <li type="circle">com.exedio.cope.<a href="com/exedio/cope/CompareFunctionCondition.Operator.html" title="enum in com.exedio.cope"><span class="typeNameLink">CompareFunctionCondition.Operator</span></a></li>
 <li type="circle">com.exedio.cope.<a href="com/exedio/cope/CompositeCondition.Operator.html" title="enum in com.exedio.cope"><span class="typeNameLink">CompositeCondition.Operator</span></a></li>
 <li type="circle">com.exedio.dsmf.<a href="com/exedio/dsmf/Constraint.Type.html" title="enum in com.exedio.dsmf"><span class="typeNameLink">Constraint.Type</span></a></li>
+<li type="circle">com.exedio.cope.<a href="com/exedio/cope/DateField.Precision.html" title="enum in com.exedio.cope"><span class="typeNameLink">DateField.Precision</span></a></li>
+<li type="circle">com.exedio.cope.<a href="com/exedio/cope/DateField.RoundingMode.html" title="enum in com.exedio.cope"><span class="typeNameLink">DateField.RoundingMode</span></a></li>
+<li type="circle">com.exedio.cope.pattern.<a href="com/exedio/cope/pattern/Dispatcher.Result.html" title="enum in com.exedio.cope.pattern"><span class="typeNameLink">Dispatcher.Result</span></a></li>
 <li type="circle">com.exedio.cope.pattern.<a href="com/exedio/cope/pattern/DynamicModel.ValueType.html" title="enum in com.exedio.cope.pattern"><span class="typeNameLink">DynamicModel.ValueType</span></a></li>
 <li type="circle">com.exedio.cope.<a href="com/exedio/cope/ItemField.DeletePolicy.html" title="enum in com.exedio.cope"><span class="typeNameLink">ItemField.DeletePolicy</span></a></li>
 <li type="circle">com.exedio.cope.<a href="com/exedio/cope/Join.Kind.html" title="enum in com.exedio.cope"><span class="typeNameLink">Join.Kind</span></a></li>
 <li type="circle">com.exedio.dsmf.<a href="com/exedio/dsmf/Node.Color.html" title="enum in com.exedio.dsmf"><span class="typeNameLink">Node.Color</span></a></li>
+<li type="circle">com.exedio.cope.instrument.<a href="com/exedio/cope/instrument/Nullability.html" title="enum in com.exedio.cope.instrument"><span class="typeNameLink">Nullability</span></a></li>
 <li type="circle">com.exedio.cope.pattern.<a href="com/exedio/cope/pattern/Schedule.Interval.html" title="enum in com.exedio.cope.pattern"><span class="typeNameLink">Schedule.Interval</span></a></li>
+<li type="circle">com.exedio.dsmf.<a href="com/exedio/dsmf/Sequence.Type.html" title="enum in com.exedio.dsmf"><span class="typeNameLink">Sequence.Type</span></a></li>
+<li type="circle">com.exedio.cope.instrument.<a href="com/exedio/cope/instrument/Visibility.html" title="enum in com.exedio.cope.instrument"><span class="typeNameLink">Visibility</span></a></li>
 </ul>
 </li>
 </ul>

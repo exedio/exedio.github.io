@@ -17,12 +17,6 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":6};
-var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
-var altColor = "altColor";
-var rowColor = "rowColor";
-var tableTab = "tableTab";
-var activeTableTab = "activeTableTab";
 </script>
 <noscript>
 <div>JavaScript is disabled on your browser.</div>
@@ -74,13 +68,13 @@ var activeTableTab = "activeTableTab";
 <li>Nested&nbsp;|&nbsp;</li>
 <li>Field&nbsp;|&nbsp;</li>
 <li>Constr&nbsp;|&nbsp;</li>
-<li><a href="#method.summary">Method</a></li>
+<li>Method</li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
 <li>Field&nbsp;|&nbsp;</li>
 <li>Constr&nbsp;|&nbsp;</li>
-<li><a href="#method.detail">Method</a></li>
+<li>Method</li>
 </ul>
 </div>
 <a name="skip.navbar.top">
@@ -101,8 +95,13 @@ var activeTableTab = "activeTableTab";
 <dd><a href="../../../../com/exedio/cope/pattern/Dispatchable.html" title="interface in com.exedio.cope.pattern">Dispatchable</a></dd>
 </dl>
 <hr>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
+<div class="block"><span class="deprecationComment">implement <a href="../../../../com/exedio/cope/pattern/Dispatchable.html" title="interface in com.exedio.cope.pattern"><code>Dispatchable</code></a> instead and
+             override <a href="../../../../com/exedio/cope/pattern/Dispatchable.html#isDeferred-com.exedio.cope.pattern.Dispatcher-"><code>Dispatchable.isDeferred(Dispatcher)</code></a></span></div>
+</div>
 <br>
-<pre>public interface <span class="typeNameLabel">DispatchDeferrable</span>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</a>
+public interface <span class="typeNameLabel">DispatchDeferrable</span>
 extends <a href="../../../../com/exedio/cope/pattern/Dispatchable.html" title="interface in com.exedio.cope.pattern">Dispatchable</a></pre>
 </li>
 </ul>
@@ -116,56 +115,12 @@ extends <a href="../../../../com/exedio/cope/pattern/Dispatchable.html" title="i
 <!--   -->
 </a>
 <h3>Method Summary</h3>
-<table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
-<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t3" class="tableTab"><span><a href="javascript:show(4);">Abstract Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
-<tr>
-<th class="colFirst" scope="col">Modifier and Type</th>
-<th class="colLast" scope="col">Method and Description</th>
-</tr>
-<tr id="i0" class="altColor">
-<td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/DispatchDeferrable.html#isDeferred-com.exedio.cope.pattern.Dispatcher-">isDeferred</a></span>(<a href="../../../../com/exedio/cope/pattern/Dispatcher.html" title="class in com.exedio.cope.pattern">Dispatcher</a>&nbsp;dispatcher)</code>
-<div class="block">Allows to defer
- <a href="../../../../com/exedio/cope/pattern/Dispatchable.html#dispatch-com.exedio.cope.pattern.Dispatcher-"><code>dispatching</code></a>
- an item even if it is pending.</div>
-</td>
-</tr>
-</table>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.com.exedio.cope.pattern.Dispatchable">
 <!--   -->
 </a>
 <h3>Methods inherited from interface&nbsp;com.exedio.cope.pattern.<a href="../../../../com/exedio/cope/pattern/Dispatchable.html" title="interface in com.exedio.cope.pattern">Dispatchable</a></h3>
-<code><a href="../../../../com/exedio/cope/pattern/Dispatchable.html#dispatch-com.exedio.cope.pattern.Dispatcher-">dispatch</a>, <a href="../../../../com/exedio/cope/pattern/Dispatchable.html#notifyFinalFailure-com.exedio.cope.pattern.Dispatcher-java.lang.Exception-">notifyFinalFailure</a></code></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</div>
-<div class="details">
-<ul class="blockList">
-<li class="blockList">
-<!-- ============ METHOD DETAIL ========== -->
-<ul class="blockList">
-<li class="blockList"><a name="method.detail">
-<!--   -->
-</a>
-<h3>Method Detail</h3>
-<a name="isDeferred-com.exedio.cope.pattern.Dispatcher-">
-<!--   -->
-</a>
-<ul class="blockListLast">
-<li class="blockList">
-<h4>isDeferred</h4>
-<pre>boolean&nbsp;isDeferred(<a href="../../../../com/exedio/cope/pattern/Dispatcher.html" title="class in com.exedio.cope.pattern">Dispatcher</a>&nbsp;dispatcher)</pre>
-<div class="block">Allows to defer
- <a href="../../../../com/exedio/cope/pattern/Dispatchable.html#dispatch-com.exedio.cope.pattern.Dispatcher-"><code>dispatching</code></a>
- an item even if it is pending.
- <p>
- Returning false is equivalent to not implementing
- this interface at all.</div>
-</li>
+<code><a href="../../../../com/exedio/cope/pattern/Dispatchable.html#dispatch-com.exedio.cope.pattern.Dispatcher-">dispatch</a>, <a href="../../../../com/exedio/cope/pattern/Dispatchable.html#isDeferred-com.exedio.cope.pattern.Dispatcher-">isDeferred</a>, <a href="../../../../com/exedio/cope/pattern/Dispatchable.html#notifyFinalFailure-com.exedio.cope.pattern.Dispatcher-java.lang.Exception-">notifyFinalFailure</a></code></li>
 </ul>
 </li>
 </ul>
@@ -221,13 +176,13 @@ extends <a href="../../../../com/exedio/cope/pattern/Dispatchable.html" title="i
 <li>Nested&nbsp;|&nbsp;</li>
 <li>Field&nbsp;|&nbsp;</li>
 <li>Constr&nbsp;|&nbsp;</li>
-<li><a href="#method.summary">Method</a></li>
+<li>Method</li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
 <li>Field&nbsp;|&nbsp;</li>
 <li>Constr&nbsp;|&nbsp;</li>
-<li><a href="#method.detail">Method</a></li>
+<li>Method</li>
 </ul>
 </div>
 <a name="skip.navbar.bottom">

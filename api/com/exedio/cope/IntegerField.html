@@ -17,8 +17,8 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":10,"i27":10};
-var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
+var methods = {"i0":42,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":10,"i27":10,"i28":10};
+var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"],32:["t6","Deprecated Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
 var tableTab = "tableTab";
@@ -172,32 +172,40 @@ extends <a href="../../../com/exedio/cope/NumberField.html" title="class in com.
 </a>
 <h3>Method Summary</h3>
 <table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
-<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
+<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t6" class="tableTab"><span><a href="javascript:show(32);">Deprecated Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
 <tr>
 <th class="colFirst" scope="col">Modifier and Type</th>
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/IntegerField.html#checkDefaultToNext--">checkDefaultToNext</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/IntegerField.html#checkDefaultToNext--">checkDefaultToNext</a></span>()</code>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
+<div class="block"><span class="deprecationComment">Use <a href="../../../com/exedio/cope/IntegerField.html#checkSequenceBehindDefaultToNext--"><code>checkSequenceBehindDefaultToNext()</code></a>.<a href="../../../com/exedio/cope/SequenceBehindInfo.html#isBehindBy--"><code>isBehindBy</code></a>() instead</span></div>
+</div>
+</td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code><a href="../../../com/exedio/cope/IntegerField.html" title="class in com.exedio.cope">IntegerField</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/IntegerField.html#copy--">copy</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../../com/exedio/cope/SequenceBehindInfo.html" title="class in com.exedio.cope">SequenceBehindInfo</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/IntegerField.html#checkSequenceBehindDefaultToNext--">checkSequenceBehindDefaultToNext</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="../../../com/exedio/cope/IntegerField.html" title="class in com.exedio.cope">IntegerField</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/IntegerField.html#copyFrom-com.exedio.cope.ItemField-">copyFrom</a></span>(<a href="../../../com/exedio/cope/ItemField.html" title="class in com.exedio.cope">ItemField</a>&lt;?&gt;&nbsp;copyFrom)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/IntegerField.html#copy--">copy</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="../../../com/exedio/cope/IntegerField.html" title="class in com.exedio.cope">IntegerField</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/IntegerField.html#defaultTo-java.lang.Integer-">defaultTo</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&nbsp;defaultConstant)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/IntegerField.html#copyFrom-com.exedio.cope.ItemField-">copyFrom</a></span>(<a href="../../../com/exedio/cope/ItemField.html" title="class in com.exedio.cope">ItemField</a>&lt;?&gt;&nbsp;copyFrom)</code>&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="../../../com/exedio/cope/IntegerField.html" title="class in com.exedio.cope">IntegerField</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/IntegerField.html#defaultToNext-int-">defaultToNext</a></span>(int&nbsp;start)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/IntegerField.html#defaultTo-java.lang.Integer-">defaultTo</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&nbsp;defaultConstant)</code>&nbsp;</td>
 </tr>
 <tr id="i5" class="rowColor">
+<td class="colFirst"><code><a href="../../../com/exedio/cope/IntegerField.html" title="class in com.exedio.cope">IntegerField</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/IntegerField.html#defaultToNext-int-">defaultToNext</a></span>(int&nbsp;start)</code>&nbsp;</td>
+</tr>
+<tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="../../../com/exedio/cope/Condition.html" title="class in com.exedio.cope">Condition</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/IntegerField.html#equal-java.lang.Integer-">equal</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&nbsp;value)</code>
 <div class="block">Returns a condition, that is true for all items,
@@ -205,66 +213,66 @@ extends <a href="../../../com/exedio/cope/NumberField.html" title="class in com.
  is equal to the given parameter.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="../../../com/exedio/cope/Sequence.html" title="class in com.exedio.cope">Sequence</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/IntegerField.html#getDefaultNext--">getDefaultNext</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/IntegerField.html#getDefaultNextStart--">getDefaultNextStart</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code><a href="../../../com/exedio/cope/SequenceInfo.html" title="class in com.exedio.cope">SequenceInfo</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/IntegerField.html#getDefaultToNextInfo--">getDefaultToNextInfo</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;? extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang">Throwable</a>&gt;&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/IntegerField.html#getInitialExceptions--">getInitialExceptions</a></span>()</code>
 <div class="block">Returns the exceptions possibly thrown,
  when setting a value for this settable.</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/IntegerField.html#getMandatory-com.exedio.cope.Item-">getMandatory</a></span>(<a href="../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&nbsp;item)</code>&nbsp;</td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/IntegerField.html#getMaximum--">getMaximum</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/IntegerField.html#getMinimum--">getMinimum</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>com.exedio.cope.SelectType&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/IntegerField.html#getValueType--">getValueType</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/IntegerField.html#isDefaultNext--">isDefaultNext</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code><a href="../../../com/exedio/cope/IntegerField.html" title="class in com.exedio.cope">IntegerField</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/IntegerField.html#max-int-">max</a></span>(int&nbsp;maximum)</code>&nbsp;</td>
 </tr>
-<tr id="i16" class="altColor">
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code><a href="../../../com/exedio/cope/IntegerField.html" title="class in com.exedio.cope">IntegerField</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/IntegerField.html#min-int-">min</a></span>(int&nbsp;minimum)</code>&nbsp;</td>
 </tr>
-<tr id="i17" class="rowColor">
+<tr id="i18" class="altColor">
 <td class="colFirst"><code><a href="../../../com/exedio/cope/IntegerField.html" title="class in com.exedio.cope">IntegerField</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/IntegerField.html#noDefault--">noDefault</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i18" class="altColor">
+<tr id="i19" class="rowColor">
 <td class="colFirst"><code><a href="../../../com/exedio/cope/IntegerField.html" title="class in com.exedio.cope">IntegerField</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/IntegerField.html#nonUnique--">nonUnique</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i19" class="rowColor">
+<tr id="i20" class="altColor">
 <td class="colFirst"><code><a href="../../../com/exedio/cope/Condition.html" title="class in com.exedio.cope">Condition</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/IntegerField.html#notEqual-java.lang.Integer-">notEqual</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&nbsp;value)</code>&nbsp;</td>
 </tr>
-<tr id="i20" class="altColor">
+<tr id="i21" class="rowColor">
 <td class="colFirst"><code><a href="../../../com/exedio/cope/IntegerField.html" title="class in com.exedio.cope">IntegerField</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/IntegerField.html#optional--">optional</a></span>()</code>
 <div class="block">Returns a new Field,
@@ -272,33 +280,33 @@ extends <a href="../../../com/exedio/cope/NumberField.html" title="class in com.
  by being optional.</div>
 </td>
 </tr>
-<tr id="i21" class="rowColor">
+<tr id="i22" class="altColor">
 <td class="colFirst"><code><a href="../../../com/exedio/cope/IntegerField.html" title="class in com.exedio.cope">IntegerField</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/IntegerField.html#range-int-int-">range</a></span>(int&nbsp;minimum,
      int&nbsp;maximum)</code>&nbsp;</td>
 </tr>
-<tr id="i22" class="altColor">
+<tr id="i23" class="rowColor">
 <td class="colFirst"><code><a href="../../../com/exedio/cope/IntegerField.html" title="class in com.exedio.cope">IntegerField</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/IntegerField.html#rangeDigits-int-">rangeDigits</a></span>(int&nbsp;digits)</code>&nbsp;</td>
 </tr>
-<tr id="i23" class="rowColor">
+<tr id="i24" class="altColor">
 <td class="colFirst"><code><a href="../../../com/exedio/cope/IntegerField.html" title="class in com.exedio.cope">IntegerField</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/IntegerField.html#rangeDigits-int-int-">rangeDigits</a></span>(int&nbsp;minimumDigits,
            int&nbsp;maximumDigits)</code>&nbsp;</td>
 </tr>
-<tr id="i24" class="altColor">
+<tr id="i25" class="rowColor">
 <td class="colFirst"><code>&lt;P extends <a href="../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&gt;<br>P</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/IntegerField.html#searchUnique-java.lang.Class-int-">searchUnique</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;P&gt;&nbsp;typeClass,
             int&nbsp;value)</code>
 <div class="block">Finds an item by it's unique fields.</div>
 </td>
 </tr>
-<tr id="i25" class="rowColor">
+<tr id="i26" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/IntegerField.html#set-com.exedio.cope.Item-int-">set</a></span>(<a href="../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&nbsp;item,
    int&nbsp;value)</code>&nbsp;</td>
 </tr>
-<tr id="i26" class="altColor">
+<tr id="i27" class="rowColor">
 <td class="colFirst"><code><a href="../../../com/exedio/cope/IntegerField.html" title="class in com.exedio.cope">IntegerField</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/IntegerField.html#toFinal--">toFinal</a></span>()</code>
 <div class="block">Returns a new Field,
@@ -306,7 +314,7 @@ extends <a href="../../../com/exedio/cope/NumberField.html" title="class in com.
  by being final.</div>
 </td>
 </tr>
-<tr id="i27" class="rowColor">
+<tr id="i28" class="altColor">
 <td class="colFirst"><code><a href="../../../com/exedio/cope/IntegerField.html" title="class in com.exedio.cope">IntegerField</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/IntegerField.html#unique--">unique</a></span>()</code>
 <div class="block">Returns a new FunctionField,
@@ -320,28 +328,28 @@ extends <a href="../../../com/exedio/cope/NumberField.html" title="class in com.
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;com.exedio.cope.<a href="../../../com/exedio/cope/NumberField.html" title="class in com.exedio.cope">NumberField</a></h3>
-<code><a href="../../../com/exedio/cope/NumberField.html#asString--">asString</a>, <a href="../../../com/exedio/cope/NumberField.html#average--">average</a>, <a href="../../../com/exedio/cope/NumberField.html#avg--">avg</a>, <a href="../../../com/exedio/cope/NumberField.html#bind-com.exedio.cope.Join-">bind</a>, <a href="../../../com/exedio/cope/NumberField.html#divide-com.exedio.cope.NumberFunction-">divide</a>, <a href="../../../com/exedio/cope/NumberField.html#minus-com.exedio.cope.NumberFunction-">minus</a>, <a href="../../../com/exedio/cope/NumberField.html#multiply-E-">multiply</a>, <a href="../../../com/exedio/cope/NumberField.html#multiply-com.exedio.cope.NumberFunction-">multiply</a>, <a href="../../../com/exedio/cope/NumberField.html#plus-E-">plus</a>, <a href="../../../com/exedio/cope/NumberField.html#plus-com.exedio.cope.NumberFunction-">plus</a>, <a href="../../../com/exedio/cope/NumberField.html#sum--">sum</a>, <a href="../../../com/exedio/cope/NumberField.html#sum-com.exedio.cope.NumberFunction-">sum</a></code></li>
+<code><a href="../../../com/exedio/cope/NumberField.html#avg--">avg</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.com.exedio.cope.FunctionField">
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;com.exedio.cope.<a href="../../../com/exedio/cope/FunctionField.html" title="class in com.exedio.cope">FunctionField</a></h3>
-<code><a href="../../../com/exedio/cope/FunctionField.html#addCopyFrom-com.exedio.cope.ItemField-">addCopyFrom</a>, <a href="../../../com/exedio/cope/FunctionField.html#append-com.exedio.cope.Statement-com.exedio.cope.Join-">append</a>, <a href="../../../com/exedio/cope/FunctionField.html#appendSelect-com.exedio.cope.Statement-com.exedio.cope.Join-">appendSelect</a>, <a href="../../../com/exedio/cope/FunctionField.html#between-E-E-">between</a>, <a href="../../../com/exedio/cope/FunctionField.html#check-com.exedio.cope.TC-com.exedio.cope.Join-">check</a>, <a href="../../../com/exedio/cope/FunctionField.html#copy-com.exedio.cope.CopyMapper-">copy</a>, <a href="../../../com/exedio/cope/FunctionField.html#copyFunctionField--">copyFunctionField</a>, <a href="../../../com/exedio/cope/FunctionField.html#equal-com.exedio.cope.Function-">equal</a>, <a href="../../../com/exedio/cope/FunctionField.html#equal-com.exedio.cope.Join-E-">equal</a>, <a href="../../../com/exedio/cope/FunctionField.html#get-com.exedio.cope.Item-">get</a>, <a href="../../../com/exedio/cope/FunctionField.html#getDefaultConstant--">getDefaultConstant</a>, <a href="../../../com/exedio/cope/FunctionField.html#getImplicitCopyConstraint--">getImplicitCopyConstraint</a>, <a href="../../../com/exedio/cope/FunctionField.html#getImplicitCopyConstraints--">getImplicitCopyConstraints</a>, <a href="../../../com/exedio/cope/FunctionField.html#getImplicitUniqueConstraint--">getImplicitUniqueConstraint</a>, <a href="../../../com/exedio/cope/FunctionField.html#getUniqueConstraints--">getUniqueConstraints</a>, <a href="../../../com/exedio/cope/FunctionField.html#greater-E-">greater</a>, <a href="../../../com/exedio/cope/FunctionField.html#greater-com.exedio.cope.Function-">greater</a>, <a href="../../../com/exedio/cope/FunctionField.html#greaterOrEqual-E-">greaterOrEqual</a>, <a href="../../../com/exedio/cope/FunctionField.html#greaterOrEqual-com.exedio.cope.Function-">greaterOrEqual</a>, <a href="../../../com/exedio/cope/FunctionField.html#hasDefault--">hasDefault</a>, <a href="../../../com/exedio/cope/FunctionField.html#in-java.util.Collection-">in</a>, <a href="../../../com/exedio/cope/FunctionField.html#in-E...-">in</a>, <a href="../../../com/exedio/cope/FunctionField.html#isInitial--">isInitial</a>, <a href="../../../com/exedio/cope/FunctionField.html#isNotNull--">isNotNull</a>, <a href="../../../com/exedio/cope/FunctionField.html#isNull--">isNull</a>, <a href="../../../com/exedio/cope/FunctionField.html#less-E-">less</a>, <a href="../../../com/exedio/cope/FunctionField.html#less-com.exedio.cope.Function-">less</a>, <a href="../../../com/exedio/cope/FunctionField.html#lessOrEqual-E-">lessOrEqual</a>, <a href="../../../com/exedio/cope/FunctionField.html#lessOrEqual-com.exedio.cope.Function-">lessOrEqual</a>, <a href="../../../com/exedio/cope/FunctionField.html#max--">max</a>, <a href="../../../com/exedio/cope/FunctionField.html#min--">min</a>, <a href="../../../com/exedio/cope/FunctionField.html#notEqual-com.exedio.cope.Function-">notEqual</a>, <a href="../../../com/exedio/cope/FunctionField.html#searchUnique-java.lang.Class-E-">searchUnique</a>, <a href="../../../com/exedio/cope/FunctionField.html#searchUnique-E-">searchUnique</a>, <a href="../../../com/exedio/cope/FunctionField.html#set-com.exedio.cope.Item-E-">set</a></code></li>
+<code><a href="../../../com/exedio/cope/FunctionField.html#addCopyFrom-com.exedio.cope.ItemField-">addCopyFrom</a>, <a href="../../../com/exedio/cope/FunctionField.html#append-com.exedio.cope.Statement-com.exedio.cope.Join-">append</a>, <a href="../../../com/exedio/cope/FunctionField.html#appendSelect-com.exedio.cope.Statement-com.exedio.cope.Join-">appendSelect</a>, <a href="../../../com/exedio/cope/FunctionField.html#check-com.exedio.cope.TC-com.exedio.cope.Join-">check</a>, <a href="../../../com/exedio/cope/FunctionField.html#copy-com.exedio.cope.CopyMapper-">copy</a>, <a href="../../../com/exedio/cope/FunctionField.html#copyFunctionField--">copyFunctionField</a>, <a href="../../../com/exedio/cope/FunctionField.html#get-com.exedio.cope.Item-">get</a>, <a href="../../../com/exedio/cope/FunctionField.html#getDefaultConstant--">getDefaultConstant</a>, <a href="../../../com/exedio/cope/FunctionField.html#getImplicitCopyConstraint--">getImplicitCopyConstraint</a>, <a href="../../../com/exedio/cope/FunctionField.html#getImplicitCopyConstraints--">getImplicitCopyConstraints</a>, <a href="../../../com/exedio/cope/FunctionField.html#getImplicitUniqueConstraint--">getImplicitUniqueConstraint</a>, <a href="../../../com/exedio/cope/FunctionField.html#getUniqueConstraints--">getUniqueConstraints</a>, <a href="../../../com/exedio/cope/FunctionField.html#hasDefault--">hasDefault</a>, <a href="../../../com/exedio/cope/FunctionField.html#isInitial--">isInitial</a>, <a href="../../../com/exedio/cope/FunctionField.html#isRedundantByCopyConstraint--">isRedundantByCopyConstraint</a>, <a href="../../../com/exedio/cope/FunctionField.html#searchUnique-java.lang.Class-E-">searchUnique</a>, <a href="../../../com/exedio/cope/FunctionField.html#searchUnique-E-">searchUnique</a>, <a href="../../../com/exedio/cope/FunctionField.html#searchUniqueStrict-java.lang.Class-E-">searchUniqueStrict</a>, <a href="../../../com/exedio/cope/FunctionField.html#set-com.exedio.cope.Item-E-">set</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.com.exedio.cope.Field">
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;com.exedio.cope.<a href="../../../com/exedio/cope/Field.html" title="class in com.exedio.cope">Field</a></h3>
-<code><a href="../../../com/exedio/cope/Field.html#castCollection-java.util.Collection-">castCollection</a>, <a href="../../../com/exedio/cope/Field.html#check-E-">check</a>, <a href="../../../com/exedio/cope/Field.html#execute-E-com.exedio.cope.Item-">execute</a>, <a href="../../../com/exedio/cope/Field.html#getColumnName--">getColumnName</a>, <a href="../../../com/exedio/cope/Field.html#getInitialType--">getInitialType</a>, <a href="../../../com/exedio/cope/Field.html#getPatterns--">getPatterns</a>, <a href="../../../com/exedio/cope/Field.html#getValueClass--">getValueClass</a>, <a href="../../../com/exedio/cope/Field.html#isFinal--">isFinal</a>, <a href="../../../com/exedio/cope/Field.html#isMandatory--">isMandatory</a>, <a href="../../../com/exedio/cope/Field.html#map-E-">map</a>, <a href="../../../com/exedio/cope/Field.html#mapNull--">mapNull</a></code></li>
+<code><a href="../../../com/exedio/cope/Field.html#castCollection-java.util.Collection-">castCollection</a>, <a href="../../../com/exedio/cope/Field.html#check-E-">check</a>, <a href="../../../com/exedio/cope/Field.html#execute-E-com.exedio.cope.Item-">execute</a>, <a href="../../../com/exedio/cope/Field.html#getColumnName--">getColumnName</a>, <a href="../../../com/exedio/cope/Field.html#getInitialType--">getInitialType</a>, <a href="../../../com/exedio/cope/Field.html#getPatterns--">getPatterns</a>, <a href="../../../com/exedio/cope/Field.html#getValueClass--">getValueClass</a>, <a href="../../../com/exedio/cope/Field.html#isFinal--">isFinal</a>, <a href="../../../com/exedio/cope/Field.html#isMandatory--">isMandatory</a>, <a href="../../../com/exedio/cope/Field.html#mapNull--">mapNull</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.com.exedio.cope.Feature">
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;com.exedio.cope.<a href="../../../com/exedio/cope/Feature.html" title="class in com.exedio.cope">Feature</a></h3>
-<code><a href="../../../com/exedio/cope/Feature.html#afterModelCreated--">afterModelCreated</a>, <a href="../../../com/exedio/cope/Feature.html#getAnnotation-java.lang.Class-">getAnnotation</a>, <a href="../../../com/exedio/cope/Feature.html#getID--">getID</a>, <a href="../../../com/exedio/cope/Feature.html#getName--">getName</a>, <a href="../../../com/exedio/cope/Feature.html#getPattern--">getPattern</a>, <a href="../../../com/exedio/cope/Feature.html#getType--">getType</a>, <a href="../../../com/exedio/cope/Feature.html#getWrappers--">getWrappers</a>, <a href="../../../com/exedio/cope/Feature.html#isAnnotationPresent-java.lang.Class-">isAnnotationPresent</a>, <a href="../../../com/exedio/cope/Feature.html#isSourceAlready--">isSourceAlready</a>, <a href="../../../com/exedio/cope/Feature.html#mount-java.lang.String-java.io.Serializable-java.lang.reflect.AnnotatedElement-">mount</a>, <a href="../../../com/exedio/cope/Feature.html#readResolve--">readResolve</a>, <a href="../../../com/exedio/cope/Feature.html#toString--">toString</a>, <a href="../../../com/exedio/cope/Feature.html#toString-java.lang.StringBuilder-com.exedio.cope.Type-">toString</a>, <a href="../../../com/exedio/cope/Feature.html#writeReplace--">writeReplace</a></code></li>
+<code><a href="../../../com/exedio/cope/Feature.html#afterModelCreated--">afterModelCreated</a>, <a href="../../../com/exedio/cope/Feature.html#getAbstractType--">getAbstractType</a>, <a href="../../../com/exedio/cope/Feature.html#getAnnotation-java.lang.Class-">getAnnotation</a>, <a href="../../../com/exedio/cope/Feature.html#getID--">getID</a>, <a href="../../../com/exedio/cope/Feature.html#getLocalizationKeys--">getLocalizationKeys</a>, <a href="../../../com/exedio/cope/Feature.html#getName--">getName</a>, <a href="../../../com/exedio/cope/Feature.html#getPattern--">getPattern</a>, <a href="../../../com/exedio/cope/Feature.html#getType--">getType</a>, <a href="../../../com/exedio/cope/Feature.html#isAnnotationPresent-java.lang.Class-">isAnnotationPresent</a>, <a href="../../../com/exedio/cope/Feature.html#isSourceAlready--">isSourceAlready</a>, <a href="../../../com/exedio/cope/Feature.html#mount-com.exedio.cope.AbstractType-java.lang.String-java.lang.String-java.io.Serializable-java.lang.reflect.AnnotatedElement-">mount</a>, <a href="../../../com/exedio/cope/Feature.html#readResolve--">readResolve</a>, <a href="../../../com/exedio/cope/Feature.html#requireMounted-T-">requireMounted</a>, <a href="../../../com/exedio/cope/Feature.html#toString--">toString</a>, <a href="../../../com/exedio/cope/Feature.html#toString-java.lang.StringBuilder-com.exedio.cope.Type-">toString</a>, <a href="../../../com/exedio/cope/Feature.html#writeReplace--">writeReplace</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
@@ -351,11 +359,18 @@ extends <a href="../../../com/exedio/cope/NumberField.html" title="class in com.
 <code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#clone--" title="class or interface in java.lang">clone</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#equals-java.lang.Object-" title="class or interface in java.lang">equals</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#finalize--" title="class or interface in java.lang">finalize</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#getClass--" title="class or interface in java.lang">getClass</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#hashCode--" title="class or interface in java.lang">hashCode</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notify--" title="class or interface in java.lang">notify</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notifyAll--" title="class or interface in java.lang">notifyAll</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait--" title="class or interface in java.lang">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait-long-" title="class or interface in java.lang">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait-long-int-" title="class or interface in java.lang">wait</a></code></li>
 </ul>
 <ul class="blockList">
+<li class="blockList"><a name="methods.inherited.from.class.com.exedio.cope.NumberFunction">
+<!--   -->
+</a>
+<h3>Methods inherited from interface&nbsp;com.exedio.cope.<a href="../../../com/exedio/cope/NumberFunction.html" title="interface in com.exedio.cope">NumberFunction</a></h3>
+<code><a href="../../../com/exedio/cope/NumberFunction.html#asString--">asString</a>, <a href="../../../com/exedio/cope/NumberFunction.html#average--">average</a>, <a href="../../../com/exedio/cope/NumberFunction.html#bind-com.exedio.cope.Join-">bind</a>, <a href="../../../com/exedio/cope/NumberFunction.html#divide-com.exedio.cope.NumberFunction-">divide</a>, <a href="../../../com/exedio/cope/NumberFunction.html#minus-com.exedio.cope.NumberFunction-">minus</a>, <a href="../../../com/exedio/cope/NumberFunction.html#multiply-E-">multiply</a>, <a href="../../../com/exedio/cope/NumberFunction.html#multiply-com.exedio.cope.NumberFunction-">multiply</a>, <a href="../../../com/exedio/cope/NumberFunction.html#plus-E-">plus</a>, <a href="../../../com/exedio/cope/NumberFunction.html#plus-com.exedio.cope.NumberFunction-">plus</a>, <a href="../../../com/exedio/cope/NumberFunction.html#sum--">sum</a>, <a href="../../../com/exedio/cope/NumberFunction.html#sum-com.exedio.cope.NumberFunction-">sum</a></code></li>
+</ul>
+<ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.com.exedio.cope.Function">
 <!--   -->
 </a>
 <h3>Methods inherited from interface&nbsp;com.exedio.cope.<a href="../../../com/exedio/cope/Function.html" title="interface in com.exedio.cope">Function</a></h3>
-<code><a href="../../../com/exedio/cope/Function.html#between-E-E-">between</a>, <a href="../../../com/exedio/cope/Function.html#equal-com.exedio.cope.Function-">equal</a>, <a href="../../../com/exedio/cope/Function.html#equal-com.exedio.cope.Join-E-">equal</a>, <a href="../../../com/exedio/cope/Function.html#get-com.exedio.cope.Item-">get</a>, <a href="../../../com/exedio/cope/Function.html#greater-E-">greater</a>, <a href="../../../com/exedio/cope/Function.html#greater-com.exedio.cope.Function-">greater</a>, <a href="../../../com/exedio/cope/Function.html#greaterOrEqual-E-">greaterOrEqual</a>, <a href="../../../com/exedio/cope/Function.html#greaterOrEqual-com.exedio.cope.Function-">greaterOrEqual</a>, <a href="../../../com/exedio/cope/Function.html#in-java.util.Collection-">in</a>, <a href="../../../com/exedio/cope/Function.html#in-E...-">in</a>, <a href="../../../com/exedio/cope/Function.html#isNotNull--">isNotNull</a>, <a href="../../../com/exedio/cope/Function.html#isNull--">isNull</a>, <a href="../../../com/exedio/cope/Function.html#less-E-">less</a>, <a href="../../../com/exedio/cope/Function.html#less-com.exedio.cope.Function-">less</a>, <a href="../../../com/exedio/cope/Function.html#lessOrEqual-E-">lessOrEqual</a>, <a href="../../../com/exedio/cope/Function.html#lessOrEqual-com.exedio.cope.Function-">lessOrEqual</a>, <a href="../../../com/exedio/cope/Function.html#max--">max</a>, <a href="../../../com/exedio/cope/Function.html#min--">min</a>, <a href="../../../com/exedio/cope/Function.html#notEqual-com.exedio.cope.Function-">notEqual</a></code></li>
+<code><a href="../../../com/exedio/cope/Function.html#any--">any</a>, <a href="../../../com/exedio/cope/Function.html#between-E-E-">between</a>, <a href="../../../com/exedio/cope/Function.html#equal-com.exedio.cope.Function-">equal</a>, <a href="../../../com/exedio/cope/Function.html#equal-com.exedio.cope.Join-E-">equal</a>, <a href="../../../com/exedio/cope/Function.html#get-com.exedio.cope.Item-">get</a>, <a href="../../../com/exedio/cope/Function.html#greater-E-">greater</a>, <a href="../../../com/exedio/cope/Function.html#greater-com.exedio.cope.Function-">greater</a>, <a href="../../../com/exedio/cope/Function.html#greaterOrEqual-E-">greaterOrEqual</a>, <a href="../../../com/exedio/cope/Function.html#greaterOrEqual-com.exedio.cope.Function-">greaterOrEqual</a>, <a href="../../../com/exedio/cope/Function.html#in-java.util.Collection-">in</a>, <a href="../../../com/exedio/cope/Function.html#in-E...-">in</a>, <a href="../../../com/exedio/cope/Function.html#isNotNull--">isNotNull</a>, <a href="../../../com/exedio/cope/Function.html#isNull--">isNull</a>, <a href="../../../com/exedio/cope/Function.html#less-E-">less</a>, <a href="../../../com/exedio/cope/Function.html#less-com.exedio.cope.Function-">less</a>, <a href="../../../com/exedio/cope/Function.html#lessOrEqual-E-">lessOrEqual</a>, <a href="../../../com/exedio/cope/Function.html#lessOrEqual-com.exedio.cope.Function-">lessOrEqual</a>, <a href="../../../com/exedio/cope/Function.html#max--">max</a>, <a href="../../../com/exedio/cope/Function.html#min--">min</a>, <a href="../../../com/exedio/cope/Function.html#notEqual-com.exedio.cope.Function-">notEqual</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.com.exedio.cope.Selectable">
@@ -363,6 +378,13 @@ extends <a href="../../../com/exedio/cope/NumberField.html" title="class in com.
 </a>
 <h3>Methods inherited from interface&nbsp;com.exedio.cope.<a href="../../../com/exedio/cope/Selectable.html" title="interface in com.exedio.cope">Selectable</a></h3>
 <code><a href="../../../com/exedio/cope/Selectable.html#append-com.exedio.cope.Statement-com.exedio.cope.Join-">append</a>, <a href="../../../com/exedio/cope/Selectable.html#appendSelect-com.exedio.cope.Statement-com.exedio.cope.Join-">appendSelect</a>, <a href="../../../com/exedio/cope/Selectable.html#check-com.exedio.cope.TC-com.exedio.cope.Join-">check</a>, <a href="../../../com/exedio/cope/Selectable.html#getType--">getType</a>, <a href="../../../com/exedio/cope/Selectable.html#getValueClass--">getValueClass</a>, <a href="../../../com/exedio/cope/Selectable.html#toString-java.lang.StringBuilder-com.exedio.cope.Type-">toString</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods.inherited.from.class.com.exedio.cope.Settable">
+<!--   -->
+</a>
+<h3>Methods inherited from interface&nbsp;com.exedio.cope.<a href="../../../com/exedio/cope/Settable.html" title="interface in com.exedio.cope">Settable</a></h3>
+<code><a href="../../../com/exedio/cope/Settable.html#map-E-">map</a></code></li>
 </ul>
 </li>
 </ul>
@@ -424,7 +446,7 @@ extends <a href="../../../com/exedio/cope/NumberField.html" title="class in com.
  the the result is equal to this Field.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../com/exedio/cope/Field.html#toFinal--">toFinal</a></code>&nbsp;in class&nbsp;<code><a href="../../../com/exedio/cope/Field.html" title="class in com.exedio.cope">Field</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&gt;</code></dd>
+<dd><code><a href="../../../com/exedio/cope/FunctionField.html#toFinal--">toFinal</a></code>&nbsp;in class&nbsp;<code><a href="../../../com/exedio/cope/FunctionField.html" title="class in com.exedio.cope">FunctionField</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&gt;</code></dd>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../com/exedio/cope/Field.html#isFinal--"><code>Field.isFinal()</code></a></dd>
 </dl>
@@ -445,7 +467,7 @@ extends <a href="../../../com/exedio/cope/NumberField.html" title="class in com.
  the the result is equal to this Field.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../com/exedio/cope/Field.html#optional--">optional</a></code>&nbsp;in class&nbsp;<code><a href="../../../com/exedio/cope/Field.html" title="class in com.exedio.cope">Field</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&gt;</code></dd>
+<dd><code><a href="../../../com/exedio/cope/FunctionField.html#optional--">optional</a></code>&nbsp;in class&nbsp;<code><a href="../../../com/exedio/cope/FunctionField.html" title="class in com.exedio.cope">FunctionField</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&gt;</code></dd>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../com/exedio/cope/Field.html#isMandatory--"><code>Field.isMandatory()</code></a></dd>
 </dl>
@@ -495,6 +517,8 @@ extends <a href="../../../com/exedio/cope/NumberField.html" title="class in com.
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../com/exedio/cope/FunctionField.html#copyFrom-com.exedio.cope.ItemField-">copyFrom</a></code>&nbsp;in class&nbsp;<code><a href="../../../com/exedio/cope/FunctionField.html" title="class in com.exedio.cope">FunctionField</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&gt;</code></dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../com/exedio/cope/ItemField.html#copyTo-com.exedio.cope.FunctionField-"><code>ItemField.copyTo(FunctionField)</code></a></dd>
 </dl>
 </li>
 </ul>
@@ -639,7 +663,8 @@ extends <a href="../../../com/exedio/cope/NumberField.html" title="class in com.
 <ul class="blockList">
 <li class="blockList">
 <h4>getMandatory</h4>
-<pre>public&nbsp;int&nbsp;getMandatory(<a href="../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&nbsp;item)</pre>
+<pre>public&nbsp;int&nbsp;getMandatory(<a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+                        <a href="../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&nbsp;item)</pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang">IllegalArgumentException</a></code> - if this field is not <a href="../../../com/exedio/cope/Field.html#isMandatory--"><code>mandatory</code></a>.</dd>
@@ -652,7 +677,8 @@ extends <a href="../../../com/exedio/cope/NumberField.html" title="class in com.
 <ul class="blockList">
 <li class="blockList">
 <h4>set</h4>
-<pre>public&nbsp;void&nbsp;set(<a href="../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&nbsp;item,
+<pre>public&nbsp;void&nbsp;set(<a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+                <a href="../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&nbsp;item,
                 int&nbsp;value)</pre>
 </li>
 </ul>
@@ -662,8 +688,9 @@ extends <a href="../../../com/exedio/cope/NumberField.html" title="class in com.
 <ul class="blockList">
 <li class="blockList">
 <h4>searchUnique</h4>
-<pre>public final&nbsp;&lt;P extends <a href="../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&gt;&nbsp;P&nbsp;searchUnique(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;P&gt;&nbsp;typeClass,
-                                             int&nbsp;value)</pre>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
+public&nbsp;&lt;P extends <a href="../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&gt;&nbsp;P&nbsp;searchUnique(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;P&gt;&nbsp;typeClass,
+                                                 int&nbsp;value)</pre>
 <div class="block">Finds an item by it's unique fields.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -688,7 +715,22 @@ extends <a href="../../../com/exedio/cope/NumberField.html" title="class in com.
 <ul class="blockList">
 <li class="blockList">
 <h4>checkDefaultToNext</h4>
-<pre>public&nbsp;int&nbsp;checkDefaultToNext()</pre>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</a>
+public&nbsp;int&nbsp;checkDefaultToNext()</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment">Use <a href="../../../com/exedio/cope/IntegerField.html#checkSequenceBehindDefaultToNext--"><code>checkSequenceBehindDefaultToNext()</code></a>.<a href="../../../com/exedio/cope/SequenceBehindInfo.html#isBehindBy--"><code>isBehindBy</code></a>() instead</span></div>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalStateException.html?is-external=true" title="class or interface in java.lang">IllegalStateException</a></code> - is a transaction is bound to the current thread</dd>
+</dl>
+</li>
+</ul>
+<a name="checkSequenceBehindDefaultToNext--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>checkSequenceBehindDefaultToNext</h4>
+<pre>public&nbsp;<a href="../../../com/exedio/cope/SequenceBehindInfo.html" title="class in com.exedio.cope">SequenceBehindInfo</a>&nbsp;checkSequenceBehindDefaultToNext()</pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalStateException.html?is-external=true" title="class or interface in java.lang">IllegalStateException</a></code> - is a transaction is bound to the current thread</dd>
@@ -725,12 +767,6 @@ extends <a href="../../../com/exedio/cope/NumberField.html" title="class in com.
 <div class="block">Returns a condition, that is true for all items,
  if and only if the value of this function for that item
  is equal to the given parameter.</div>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../com/exedio/cope/Function.html#equal-E-">equal</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/exedio/cope/Function.html" title="interface in com.exedio.cope">Function</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&gt;</code></dd>
-<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../com/exedio/cope/FunctionField.html#equal-E-">equal</a></code>&nbsp;in class&nbsp;<code><a href="../../../com/exedio/cope/FunctionField.html" title="class in com.exedio.cope">FunctionField</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&gt;</code></dd>
-</dl>
 </li>
 </ul>
 <a name="notEqual-java.lang.Integer-">
@@ -740,12 +776,6 @@ extends <a href="../../../com/exedio/cope/NumberField.html" title="class in com.
 <li class="blockList">
 <h4>notEqual</h4>
 <pre>public&nbsp;<a href="../../../com/exedio/cope/Condition.html" title="class in com.exedio.cope">Condition</a>&nbsp;notEqual(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&nbsp;value)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../com/exedio/cope/Function.html#notEqual-E-">notEqual</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/exedio/cope/Function.html" title="interface in com.exedio.cope">Function</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&gt;</code></dd>
-<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../com/exedio/cope/FunctionField.html#notEqual-E-">notEqual</a></code>&nbsp;in class&nbsp;<code><a href="../../../com/exedio/cope/FunctionField.html" title="class in com.exedio.cope">FunctionField</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&gt;</code></dd>
-</dl>
 </li>
 </ul>
 </li>

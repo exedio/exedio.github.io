@@ -17,8 +17,8 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":9,"i18":10};
-var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
+var methods = {"i0":10,"i1":9,"i2":10,"i3":9,"i4":10,"i5":10,"i6":42,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":9,"i22":10};
+var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"],32:["t6","Deprecated Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
 var tableTab = "tableTab";
@@ -47,7 +47,7 @@ var activeTableTab = "activeTableTab";
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../../com/exedio/cope/pattern/Money.Currency.html" title="interface in com.exedio.cope.pattern"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../../com/exedio/cope/pattern/NestedHashAlgorithm.html" title="class in com.exedio.cope.pattern"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../com/exedio/cope/pattern/MultiItemField.html" title="class in com.exedio.cope.pattern"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../index.html?com/exedio/cope/pattern/MoneyField.html" target="_top">Frames</a></li>
@@ -140,100 +140,124 @@ implements <a href="../../../../com/exedio/cope/Settable.html" title="interface 
 </a>
 <h3>Method Summary</h3>
 <table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
-<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t1" class="tableTab"><span><a href="javascript:show(1);">Static Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
+<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t1" class="tableTab"><span><a href="javascript:show(1);">Static Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t6" class="tableTab"><span><a href="javascript:show(32);">Deprecated Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
 <tr>
 <th class="colFirst" scope="col">Modifier and Type</th>
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/MoneyField.html#check-com.exedio.cope.pattern.Money-com.exedio.cope.FieldValues-">check</a></span>(<a href="../../../../com/exedio/cope/pattern/Money.html" title="class in com.exedio.cope.pattern">Money</a>&lt;<a href="../../../../com/exedio/cope/pattern/MoneyField.html" title="type parameter in MoneyField">C</a>&gt;&nbsp;value,
+     <a href="../../../../com/exedio/cope/FieldValues.html" title="class in com.exedio.cope">FieldValues</a>&nbsp;fieldValues)</code>&nbsp;</td>
+</tr>
+<tr id="i1" class="rowColor">
 <td class="colFirst"><code>static &lt;C extends <a href="../../../../com/exedio/cope/pattern/Money.Currency.html" title="interface in com.exedio.cope.pattern">Money.Currency</a>&gt;<br><a href="../../../../com/exedio/cope/pattern/MoneyField.html" title="class in com.exedio.cope.pattern">MoneyField</a>&lt;C&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/MoneyField.html#exclusive-com.exedio.cope.FunctionField-">exclusive</a></span>(<a href="../../../../com/exedio/cope/FunctionField.html" title="class in com.exedio.cope">FunctionField</a>&lt;C&gt;&nbsp;currency)</code>&nbsp;</td>
 </tr>
-<tr id="i1" class="rowColor">
+<tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="../../../../com/exedio/cope/SetValue.html" title="class in com.exedio.cope">SetValue</a>&lt;?&gt;[]</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/MoneyField.html#execute-com.exedio.cope.pattern.Money-com.exedio.cope.Item-">execute</a></span>(<a href="../../../../com/exedio/cope/pattern/Money.html" title="class in com.exedio.cope.pattern">Money</a>&lt;<a href="../../../../com/exedio/cope/pattern/MoneyField.html" title="type parameter in MoneyField">C</a>&gt;&nbsp;value,
        <a href="../../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&nbsp;exceptionItem)</code>&nbsp;</td>
 </tr>
-<tr id="i2" class="altColor">
-<td class="colFirst"><code><a href="../../../../com/exedio/cope/SetValue.html" title="class in com.exedio.cope">SetValue</a>&lt;?&gt;[]</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/MoneyField.html#execute-com.exedio.cope.pattern.Money-com.exedio.cope.Item-com.exedio.cope.SetValue:A-">execute</a></span>(<a href="../../../../com/exedio/cope/pattern/Money.html" title="class in com.exedio.cope.pattern">Money</a>&lt;<a href="../../../../com/exedio/cope/pattern/MoneyField.html" title="type parameter in MoneyField">C</a>&gt;&nbsp;value,
-       <a href="../../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&nbsp;exceptionItem,
-       <a href="../../../../com/exedio/cope/SetValue.html" title="class in com.exedio.cope">SetValue</a>&lt;?&gt;[]&nbsp;sources)</code>&nbsp;</td>
-</tr>
 <tr id="i3" class="rowColor">
+<td class="colFirst"><code>static &lt;C extends <a href="../../../../com/exedio/cope/pattern/Money.Currency.html" title="interface in com.exedio.cope.pattern">Money.Currency</a>&gt;<br><a href="../../../../com/exedio/cope/pattern/MoneyField.html" title="class in com.exedio.cope.pattern">MoneyField</a>&lt;C&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/MoneyField.html#fixed-C-">fixed</a></span>(C&nbsp;currency)</code>&nbsp;</td>
+</tr>
+<tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="../../../../com/exedio/cope/pattern/Money.html" title="class in com.exedio.cope.pattern">Money</a>&lt;<a href="../../../../com/exedio/cope/pattern/MoneyField.html" title="type parameter in MoneyField">C</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/MoneyField.html#get-com.exedio.cope.Item-">get</a></span>(<a href="../../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&nbsp;item)</code>&nbsp;</td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code><a href="../../../../com/exedio/cope/pattern/PriceField.html" title="class in com.exedio.cope.pattern">PriceField</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/MoneyField.html#getAmount--">getAmount</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i5" class="rowColor">
-<td class="colFirst"><code><a href="../../../../com/exedio/cope/FunctionField.html" title="class in com.exedio.cope">FunctionField</a>&lt;<a href="../../../../com/exedio/cope/pattern/MoneyField.html" title="type parameter in MoneyField">C</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/MoneyField.html#getCurrency--">getCurrency</a></span>()</code>&nbsp;</td>
-</tr>
 <tr id="i6" class="altColor">
+<td class="colFirst"><code><a href="../../../../com/exedio/cope/FunctionField.html" title="class in com.exedio.cope">FunctionField</a>&lt;<a href="../../../../com/exedio/cope/pattern/MoneyField.html" title="type parameter in MoneyField">C</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/MoneyField.html#getCurrency--">getCurrency</a></span>()</code>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
+<div class="block"><span class="deprecationComment">Use <a href="../../../../com/exedio/cope/pattern/MoneyField.html#getCurrencyField--"><code>getCurrencyField()</code></a> instead</span></div>
+</div>
+</td>
+</tr>
+<tr id="i7" class="rowColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;<a href="../../../../com/exedio/cope/pattern/MoneyField.html" title="type parameter in MoneyField">C</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/MoneyField.html#getCurrencyClass--">getCurrencyClass</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i8" class="altColor">
+<td class="colFirst"><code><a href="../../../../com/exedio/cope/FunctionField.html" title="class in com.exedio.cope">FunctionField</a>&lt;<a href="../../../../com/exedio/cope/pattern/MoneyField.html" title="type parameter in MoneyField">C</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/MoneyField.html#getCurrencyField--">getCurrencyField</a></span>()</code>
+<div class="block">BEWARE:
+ This method returns null, if the currency is not stored
+ in a field.</div>
+</td>
+</tr>
+<tr id="i9" class="rowColor">
+<td class="colFirst"><code><a href="../../../../com/exedio/cope/pattern/MoneyField.html" title="type parameter in MoneyField">C</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/MoneyField.html#getCurrencyValue--">getCurrencyValue</a></span>()</code>
+<div class="block">BEWARE:
+ This method returns null, if the currency is stored
+ in a field.</div>
+</td>
+</tr>
+<tr id="i10" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;? extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang">Throwable</a>&gt;&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/MoneyField.html#getInitialExceptions--">getInitialExceptions</a></span>()</code>
 <div class="block">Returns the exceptions possibly thrown,
  when setting a value for this settable.</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/reflect/Type.html?is-external=true" title="class or interface in java.lang.reflect">Type</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/MoneyField.html#getInitialType--">getInitialType</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i12" class="altColor">
+<td class="colFirst"><code><a href="../../../../com/exedio/cope/CheckConstraint.html" title="class in com.exedio.cope">CheckConstraint</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/MoneyField.html#getUnison--">getUnison</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/MoneyField.html#isFinal--">isFinal</a></span>()</code>
 <div class="block">Returns true, if a value for the settable can be specified
  on the creation of an item only, thus cannot be modified later.</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/MoneyField.html#isInitial--">isInitial</a></span>()</code>
 <div class="block">Returns true, if a value for the settable should be specified
  on the creation of an item.</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/MoneyField.html#isMandatory--">isMandatory</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code><a href="../../../../com/exedio/cope/IsNullCondition.html" title="class in com.exedio.cope">IsNullCondition</a>&lt;?&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/MoneyField.html#isNotNull--">isNotNull</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code><a href="../../../../com/exedio/cope/IsNullCondition.html" title="class in com.exedio.cope">IsNullCondition</a>&lt;?&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/MoneyField.html#isNull--">isNull</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i13" class="rowColor">
-<td class="colFirst"><code><a href="../../../../com/exedio/cope/SetValue.html" title="class in com.exedio.cope">SetValue</a>&lt;<a href="../../../../com/exedio/cope/pattern/Money.html" title="class in com.exedio.cope.pattern">Money</a>&lt;<a href="../../../../com/exedio/cope/pattern/MoneyField.html" title="type parameter in MoneyField">C</a>&gt;&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/MoneyField.html#map-com.exedio.cope.pattern.Money-">map</a></span>(<a href="../../../../com/exedio/cope/pattern/Money.html" title="class in com.exedio.cope.pattern">Money</a>&lt;<a href="../../../../com/exedio/cope/pattern/MoneyField.html" title="type parameter in MoneyField">C</a>&gt;&nbsp;value)</code>
-<div class="block">All implementations of this method should return
- <tt><a href="../../../../com/exedio/cope/SetValue.html#map-F-E-"><code>SetValue.map(this,value)</code></a></tt>.</div>
-</td>
-</tr>
-<tr id="i14" class="altColor">
+<tr id="i18" class="altColor">
 <td class="colFirst"><code><a href="../../../../com/exedio/cope/pattern/MoneyField.html" title="class in com.exedio.cope.pattern">MoneyField</a>&lt;<a href="../../../../com/exedio/cope/pattern/MoneyField.html" title="type parameter in MoneyField">C</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/MoneyField.html#minZero--">minZero</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i19" class="rowColor">
 <td class="colFirst"><code><a href="../../../../com/exedio/cope/pattern/MoneyField.html" title="class in com.exedio.cope.pattern">MoneyField</a>&lt;<a href="../../../../com/exedio/cope/pattern/MoneyField.html" title="type parameter in MoneyField">C</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/MoneyField.html#optional--">optional</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i16" class="altColor">
+<tr id="i20" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/MoneyField.html#set-com.exedio.cope.Item-com.exedio.cope.pattern.Money-">set</a></span>(<a href="../../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&nbsp;item,
    <a href="../../../../com/exedio/cope/pattern/Money.html" title="class in com.exedio.cope.pattern">Money</a>&lt;<a href="../../../../com/exedio/cope/pattern/MoneyField.html" title="type parameter in MoneyField">C</a>&gt;&nbsp;value)</code>&nbsp;</td>
 </tr>
-<tr id="i17" class="rowColor">
+<tr id="i21" class="rowColor">
 <td class="colFirst"><code>static &lt;C extends <a href="../../../../com/exedio/cope/pattern/Money.Currency.html" title="interface in com.exedio.cope.pattern">Money.Currency</a>&gt;<br><a href="../../../../com/exedio/cope/pattern/MoneyField.html" title="class in com.exedio.cope.pattern">MoneyField</a>&lt;C&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/MoneyField.html#shared-com.exedio.cope.FunctionField-">shared</a></span>(<a href="../../../../com/exedio/cope/FunctionField.html" title="class in com.exedio.cope">FunctionField</a>&lt;C&gt;&nbsp;currency)</code>&nbsp;</td>
 </tr>
-<tr id="i18" class="altColor">
+<tr id="i22" class="altColor">
 <td class="colFirst"><code><a href="../../../../com/exedio/cope/pattern/MoneyField.html" title="class in com.exedio.cope.pattern">MoneyField</a>&lt;<a href="../../../../com/exedio/cope/pattern/MoneyField.html" title="type parameter in MoneyField">C</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/MoneyField.html#toFinal--">toFinal</a></span>()</code>&nbsp;</td>
 </tr>
@@ -243,14 +267,14 @@ implements <a href="../../../../com/exedio/cope/Settable.html" title="interface 
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;com.exedio.cope.<a href="../../../../com/exedio/cope/Pattern.html" title="class in com.exedio.cope">Pattern</a></h3>
-<code><a href="../../../../com/exedio/cope/Pattern.html#addSource-com.exedio.cope.Feature-java.lang.String-">addSource</a>, <a href="../../../../com/exedio/cope/Pattern.html#addSource-com.exedio.cope.Feature-java.lang.String-java.lang.reflect.AnnotatedElement-">addSource</a>, <a href="../../../../com/exedio/cope/Pattern.html#addSource-com.exedio.cope.Feature-java.lang.String-java.lang.reflect.Field-">addSource</a>, <a href="../../../../com/exedio/cope/Pattern.html#annotationField-java.lang.String-">annotationField</a>, <a href="../../../../com/exedio/cope/Pattern.html#getGeneratedTypes--">getGeneratedTypes</a>, <a href="../../../../com/exedio/cope/Pattern.html#getSourceFeatures--">getSourceFeatures</a>, <a href="../../../../com/exedio/cope/Pattern.html#getSourceFields--">getSourceFields</a>, <a href="../../../../com/exedio/cope/Pattern.html#getSources--">getSources</a>, <a href="../../../../com/exedio/cope/Pattern.html#getSourceTypes--">getSourceTypes</a>, <a href="../../../../com/exedio/cope/Pattern.html#getType--">getType</a>, <a href="../../../../com/exedio/cope/Pattern.html#initialize--">initialize</a>, <a href="../../../../com/exedio/cope/Pattern.html#newSourceType-java.lang.Class-boolean-com.exedio.cope.Type-com.exedio.cope.Features-java.lang.String-">newSourceType</a>, <a href="../../../../com/exedio/cope/Pattern.html#newSourceType-java.lang.Class-boolean-com.exedio.cope.Type-java.util.LinkedHashMap-java.lang.String-">newSourceType</a>, <a href="../../../../com/exedio/cope/Pattern.html#newSourceType-java.lang.Class-com.exedio.cope.Features-">newSourceType</a>, <a href="../../../../com/exedio/cope/Pattern.html#newSourceType-java.lang.Class-com.exedio.cope.Features-java.lang.String-">newSourceType</a>, <a href="../../../../com/exedio/cope/Pattern.html#newSourceType-java.lang.Class-java.util.LinkedHashMap-">newSourceType</a>, <a href="../../../../com/exedio/cope/Pattern.html#newSourceType-java.lang.Class-java.util.LinkedHashMap-java.lang.String-">newSourceType</a>, <a href="../../../../com/exedio/cope/Pattern.html#newType-java.lang.Class-java.util.LinkedHashMap-">newType</a>, <a href="../../../../com/exedio/cope/Pattern.html#newType-java.lang.Class-java.util.LinkedHashMap-java.lang.String-">newType</a>, <a href="../../../../com/exedio/cope/Pattern.html#onMount--">onMount</a>, <a href="../../../../com/exedio/cope/Pattern.html#registerSource-com.exedio.cope.Field-java.lang.String-">registerSource</a></code></li>
+<code><a href="../../../../com/exedio/cope/Pattern.html#addSource-com.exedio.cope.Feature-java.lang.String-">addSource</a>, <a href="../../../../com/exedio/cope/Pattern.html#addSource-com.exedio.cope.Feature-java.lang.String-java.lang.reflect.AnnotatedElement-">addSource</a>, <a href="../../../../com/exedio/cope/Pattern.html#addSource-com.exedio.cope.Feature-java.lang.String-java.lang.reflect.AnnotatedElement-java.lang.Class-">addSource</a>, <a href="../../../../com/exedio/cope/Pattern.html#addSource-com.exedio.cope.Feature-java.lang.String-java.lang.reflect.Field-">addSource</a>, <a href="../../../../com/exedio/cope/Pattern.html#annotationField-java.lang.String-">annotationField</a>, <a href="../../../../com/exedio/cope/Pattern.html#getGeneratedTypes--">getGeneratedTypes</a>, <a href="../../../../com/exedio/cope/Pattern.html#getSourceFeatures--">getSourceFeatures</a>, <a href="../../../../com/exedio/cope/Pattern.html#getSourceFeaturesGather--">getSourceFeaturesGather</a>, <a href="../../../../com/exedio/cope/Pattern.html#getSourceFields--">getSourceFields</a>, <a href="../../../../com/exedio/cope/Pattern.html#getSources--">getSources</a>, <a href="../../../../com/exedio/cope/Pattern.html#getSourceTypes--">getSourceTypes</a>, <a href="../../../../com/exedio/cope/Pattern.html#getType--">getType</a>, <a href="../../../../com/exedio/cope/Pattern.html#initialize--">initialize</a>, <a href="../../../../com/exedio/cope/Pattern.html#newSourceType-java.lang.Class-boolean-com.exedio.cope.Type-com.exedio.cope.Features-java.lang.String-">newSourceType</a>, <a href="../../../../com/exedio/cope/Pattern.html#newSourceType-java.lang.Class-boolean-com.exedio.cope.Type-java.util.LinkedHashMap-java.lang.String-">newSourceType</a>, <a href="../../../../com/exedio/cope/Pattern.html#newSourceType-java.lang.Class-com.exedio.cope.Features-">newSourceType</a>, <a href="../../../../com/exedio/cope/Pattern.html#newSourceType-java.lang.Class-com.exedio.cope.Features-java.lang.String-">newSourceType</a>, <a href="../../../../com/exedio/cope/Pattern.html#newSourceType-java.lang.Class-java.util.LinkedHashMap-">newSourceType</a>, <a href="../../../../com/exedio/cope/Pattern.html#newSourceType-java.lang.Class-java.util.LinkedHashMap-java.lang.String-">newSourceType</a>, <a href="../../../../com/exedio/cope/Pattern.html#newType-java.lang.Class-java.util.LinkedHashMap-">newType</a>, <a href="../../../../com/exedio/cope/Pattern.html#newType-java.lang.Class-java.util.LinkedHashMap-java.lang.String-">newType</a>, <a href="../../../../com/exedio/cope/Pattern.html#onMount--">onMount</a>, <a href="../../../../com/exedio/cope/Pattern.html#registerSource-com.exedio.cope.Field-java.lang.String-">registerSource</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.com.exedio.cope.Feature">
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;com.exedio.cope.<a href="../../../../com/exedio/cope/Feature.html" title="class in com.exedio.cope">Feature</a></h3>
-<code><a href="../../../../com/exedio/cope/Feature.html#afterModelCreated--">afterModelCreated</a>, <a href="../../../../com/exedio/cope/Feature.html#getAnnotation-java.lang.Class-">getAnnotation</a>, <a href="../../../../com/exedio/cope/Feature.html#getID--">getID</a>, <a href="../../../../com/exedio/cope/Feature.html#getName--">getName</a>, <a href="../../../../com/exedio/cope/Feature.html#getPattern--">getPattern</a>, <a href="../../../../com/exedio/cope/Feature.html#getWrappers--">getWrappers</a>, <a href="../../../../com/exedio/cope/Feature.html#isAnnotationPresent-java.lang.Class-">isAnnotationPresent</a>, <a href="../../../../com/exedio/cope/Feature.html#isSourceAlready--">isSourceAlready</a>, <a href="../../../../com/exedio/cope/Feature.html#mount-java.lang.String-java.io.Serializable-java.lang.reflect.AnnotatedElement-">mount</a>, <a href="../../../../com/exedio/cope/Feature.html#readResolve--">readResolve</a>, <a href="../../../../com/exedio/cope/Feature.html#toString--">toString</a>, <a href="../../../../com/exedio/cope/Feature.html#toString-java.lang.StringBuilder-com.exedio.cope.Type-">toString</a>, <a href="../../../../com/exedio/cope/Feature.html#writeReplace--">writeReplace</a></code></li>
+<code><a href="../../../../com/exedio/cope/Feature.html#afterModelCreated--">afterModelCreated</a>, <a href="../../../../com/exedio/cope/Feature.html#getAbstractType--">getAbstractType</a>, <a href="../../../../com/exedio/cope/Feature.html#getAnnotation-java.lang.Class-">getAnnotation</a>, <a href="../../../../com/exedio/cope/Feature.html#getID--">getID</a>, <a href="../../../../com/exedio/cope/Feature.html#getLocalizationKeys--">getLocalizationKeys</a>, <a href="../../../../com/exedio/cope/Feature.html#getName--">getName</a>, <a href="../../../../com/exedio/cope/Feature.html#getPattern--">getPattern</a>, <a href="../../../../com/exedio/cope/Feature.html#isAnnotationPresent-java.lang.Class-">isAnnotationPresent</a>, <a href="../../../../com/exedio/cope/Feature.html#isSourceAlready--">isSourceAlready</a>, <a href="../../../../com/exedio/cope/Feature.html#mount-com.exedio.cope.AbstractType-java.lang.String-java.lang.String-java.io.Serializable-java.lang.reflect.AnnotatedElement-">mount</a>, <a href="../../../../com/exedio/cope/Feature.html#readResolve--">readResolve</a>, <a href="../../../../com/exedio/cope/Feature.html#requireMounted-T-">requireMounted</a>, <a href="../../../../com/exedio/cope/Feature.html#toString--">toString</a>, <a href="../../../../com/exedio/cope/Feature.html#toString-java.lang.StringBuilder-com.exedio.cope.Type-">toString</a>, <a href="../../../../com/exedio/cope/Feature.html#writeReplace--">writeReplace</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
@@ -258,6 +282,13 @@ implements <a href="../../../../com/exedio/cope/Settable.html" title="interface 
 </a>
 <h3>Methods inherited from class&nbsp;java.lang.<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></h3>
 <code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#clone--" title="class or interface in java.lang">clone</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#equals-java.lang.Object-" title="class or interface in java.lang">equals</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#finalize--" title="class or interface in java.lang">finalize</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#getClass--" title="class or interface in java.lang">getClass</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#hashCode--" title="class or interface in java.lang">hashCode</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notify--" title="class or interface in java.lang">notify</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notifyAll--" title="class or interface in java.lang">notifyAll</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait--" title="class or interface in java.lang">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait-long-" title="class or interface in java.lang">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait-long-int-" title="class or interface in java.lang">wait</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods.inherited.from.class.com.exedio.cope.Settable">
+<!--   -->
+</a>
+<h3>Methods inherited from interface&nbsp;com.exedio.cope.<a href="../../../../com/exedio/cope/Settable.html" title="interface in com.exedio.cope">Settable</a></h3>
+<code><a href="../../../../com/exedio/cope/Settable.html#map-E-">map</a></code></li>
 </ul>
 </li>
 </ul>
@@ -273,6 +304,17 @@ implements <a href="../../../../com/exedio/cope/Settable.html" title="interface 
 <!--   -->
 </a>
 <h3>Method Detail</h3>
+<a name="fixed-com.exedio.cope.pattern.Money.Currency-">
+<!--   -->
+</a><a name="fixed-C-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>fixed</h4>
+<pre>public static&nbsp;&lt;C extends <a href="../../../../com/exedio/cope/pattern/Money.Currency.html" title="interface in com.exedio.cope.pattern">Money.Currency</a>&gt;&nbsp;<a href="../../../../com/exedio/cope/pattern/MoneyField.html" title="class in com.exedio.cope.pattern">MoneyField</a>&lt;C&gt;&nbsp;fixed(C&nbsp;currency)</pre>
+</li>
+</ul>
 <a name="shared-com.exedio.cope.FunctionField-">
 <!--   -->
 </a>
@@ -327,13 +369,54 @@ implements <a href="../../../../com/exedio/cope/Settable.html" title="interface 
 <pre>public&nbsp;<a href="../../../../com/exedio/cope/pattern/PriceField.html" title="class in com.exedio.cope.pattern">PriceField</a>&nbsp;getAmount()</pre>
 </li>
 </ul>
-<a name="getCurrency--">
+<a name="getCurrencyField--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>getCurrency</h4>
-<pre>public&nbsp;<a href="../../../../com/exedio/cope/FunctionField.html" title="class in com.exedio.cope">FunctionField</a>&lt;<a href="../../../../com/exedio/cope/pattern/MoneyField.html" title="type parameter in MoneyField">C</a>&gt;&nbsp;getCurrency()</pre>
+<h4>getCurrencyField</h4>
+<pre>public&nbsp;<a href="../../../../com/exedio/cope/FunctionField.html" title="class in com.exedio.cope">FunctionField</a>&lt;<a href="../../../../com/exedio/cope/pattern/MoneyField.html" title="type parameter in MoneyField">C</a>&gt;&nbsp;getCurrencyField()</pre>
+<div class="block">BEWARE:
+ This method returns null, if the currency is not stored
+ in a field.</div>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../com/exedio/cope/pattern/MoneyField.html#getCurrencyValue--"><code>getCurrencyValue()</code></a></dd>
+</dl>
+</li>
+</ul>
+<a name="getCurrencyValue--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getCurrencyValue</h4>
+<pre>public&nbsp;<a href="../../../../com/exedio/cope/pattern/MoneyField.html" title="type parameter in MoneyField">C</a>&nbsp;getCurrencyValue()</pre>
+<div class="block">BEWARE:
+ This method returns null, if the currency is stored
+ in a field.</div>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../com/exedio/cope/pattern/MoneyField.html#getCurrencyField--"><code>getCurrencyField()</code></a></dd>
+</dl>
+</li>
+</ul>
+<a name="getCurrencyClass--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getCurrencyClass</h4>
+<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;<a href="../../../../com/exedio/cope/pattern/MoneyField.html" title="type parameter in MoneyField">C</a>&gt;&nbsp;getCurrencyClass()</pre>
+</li>
+</ul>
+<a name="getUnison--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getUnison</h4>
+<pre>public&nbsp;<a href="../../../../com/exedio/cope/CheckConstraint.html" title="class in com.exedio.cope">CheckConstraint</a>&nbsp;getUnison()</pre>
 </li>
 </ul>
 <a name="isInitial--">
@@ -416,7 +499,8 @@ implements <a href="../../../../com/exedio/cope/Settable.html" title="interface 
 <ul class="blockList">
 <li class="blockList">
 <h4>get</h4>
-<pre>public&nbsp;<a href="../../../../com/exedio/cope/pattern/Money.html" title="class in com.exedio.cope.pattern">Money</a>&lt;<a href="../../../../com/exedio/cope/pattern/MoneyField.html" title="type parameter in MoneyField">C</a>&gt;&nbsp;get(<a href="../../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&nbsp;item)</pre>
+<pre>public&nbsp;<a href="../../../../com/exedio/cope/pattern/Money.html" title="class in com.exedio.cope.pattern">Money</a>&lt;<a href="../../../../com/exedio/cope/pattern/MoneyField.html" title="type parameter in MoneyField">C</a>&gt;&nbsp;get(<a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+                    <a href="../../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&nbsp;item)</pre>
 </li>
 </ul>
 <a name="set-com.exedio.cope.Item-com.exedio.cope.pattern.Money-">
@@ -425,24 +509,9 @@ implements <a href="../../../../com/exedio/cope/Settable.html" title="interface 
 <ul class="blockList">
 <li class="blockList">
 <h4>set</h4>
-<pre>public&nbsp;void&nbsp;set(<a href="../../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&nbsp;item,
+<pre>public&nbsp;void&nbsp;set(<a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+                <a href="../../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&nbsp;item,
                 <a href="../../../../com/exedio/cope/pattern/Money.html" title="class in com.exedio.cope.pattern">Money</a>&lt;<a href="../../../../com/exedio/cope/pattern/MoneyField.html" title="type parameter in MoneyField">C</a>&gt;&nbsp;value)</pre>
-</li>
-</ul>
-<a name="map-com.exedio.cope.pattern.Money-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>map</h4>
-<pre>public&nbsp;<a href="../../../../com/exedio/cope/SetValue.html" title="class in com.exedio.cope">SetValue</a>&lt;<a href="../../../../com/exedio/cope/pattern/Money.html" title="class in com.exedio.cope.pattern">Money</a>&lt;<a href="../../../../com/exedio/cope/pattern/MoneyField.html" title="type parameter in MoneyField">C</a>&gt;&gt;&nbsp;map(<a href="../../../../com/exedio/cope/pattern/Money.html" title="class in com.exedio.cope.pattern">Money</a>&lt;<a href="../../../../com/exedio/cope/pattern/MoneyField.html" title="type parameter in MoneyField">C</a>&gt;&nbsp;value)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../com/exedio/cope/Settable.html#map-E-">Settable</a></code></span></div>
-<div class="block">All implementations of this method should return
- <tt><a href="../../../../com/exedio/cope/SetValue.html#map-F-E-"><code>SetValue.map(this,value)</code></a></tt>.</div>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../com/exedio/cope/Settable.html#map-E-">map</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../com/exedio/cope/Settable.html" title="interface in com.exedio.cope">Settable</a>&lt;<a href="../../../../com/exedio/cope/pattern/Money.html" title="class in com.exedio.cope.pattern">Money</a>&lt;<a href="../../../../com/exedio/cope/pattern/MoneyField.html" title="type parameter in MoneyField">C</a> extends <a href="../../../../com/exedio/cope/pattern/Money.Currency.html" title="interface in com.exedio.cope.pattern">Money.Currency</a>&gt;&gt;</code></dd>
-</dl>
 </li>
 </ul>
 <a name="execute-com.exedio.cope.pattern.Money-com.exedio.cope.Item-">
@@ -459,18 +528,17 @@ implements <a href="../../../../com/exedio/cope/Settable.html" title="interface 
 </dl>
 </li>
 </ul>
-<a name="execute-com.exedio.cope.pattern.Money-com.exedio.cope.Item-com.exedio.cope.SetValue:A-">
+<a name="check-com.exedio.cope.pattern.Money-com.exedio.cope.FieldValues-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>execute</h4>
-<pre>public&nbsp;<a href="../../../../com/exedio/cope/SetValue.html" title="class in com.exedio.cope">SetValue</a>&lt;?&gt;[]&nbsp;execute(<a href="../../../../com/exedio/cope/pattern/Money.html" title="class in com.exedio.cope.pattern">Money</a>&lt;<a href="../../../../com/exedio/cope/pattern/MoneyField.html" title="type parameter in MoneyField">C</a>&gt;&nbsp;value,
-                             <a href="../../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&nbsp;exceptionItem,
-                             <a href="../../../../com/exedio/cope/SetValue.html" title="class in com.exedio.cope">SetValue</a>&lt;?&gt;[]&nbsp;sources)</pre>
+<h4>check</h4>
+<pre>public&nbsp;void&nbsp;check(<a href="../../../../com/exedio/cope/pattern/Money.html" title="class in com.exedio.cope.pattern">Money</a>&lt;<a href="../../../../com/exedio/cope/pattern/MoneyField.html" title="type parameter in MoneyField">C</a>&gt;&nbsp;value,
+                  <a href="../../../../com/exedio/cope/FieldValues.html" title="class in com.exedio.cope">FieldValues</a>&nbsp;fieldValues)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../com/exedio/cope/CheckingSettable.html#execute-E-com.exedio.cope.Item-com.exedio.cope.SetValue:A-">execute</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../com/exedio/cope/CheckingSettable.html" title="interface in com.exedio.cope">CheckingSettable</a>&lt;<a href="../../../../com/exedio/cope/pattern/Money.html" title="class in com.exedio.cope.pattern">Money</a>&lt;<a href="../../../../com/exedio/cope/pattern/MoneyField.html" title="type parameter in MoneyField">C</a> extends <a href="../../../../com/exedio/cope/pattern/Money.Currency.html" title="interface in com.exedio.cope.pattern">Money.Currency</a>&gt;&gt;</code></dd>
+<dd><code><a href="../../../../com/exedio/cope/CheckingSettable.html#check-E-com.exedio.cope.FieldValues-">check</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../com/exedio/cope/CheckingSettable.html" title="interface in com.exedio.cope">CheckingSettable</a>&lt;<a href="../../../../com/exedio/cope/pattern/Money.html" title="class in com.exedio.cope.pattern">Money</a>&lt;<a href="../../../../com/exedio/cope/pattern/MoneyField.html" title="type parameter in MoneyField">C</a> extends <a href="../../../../com/exedio/cope/pattern/Money.Currency.html" title="interface in com.exedio.cope.pattern">Money.Currency</a>&gt;&gt;</code></dd>
 </dl>
 </li>
 </ul>
@@ -480,16 +548,27 @@ implements <a href="../../../../com/exedio/cope/Settable.html" title="interface 
 <ul class="blockList">
 <li class="blockList">
 <h4>isNull</h4>
-<pre>public final&nbsp;<a href="../../../../com/exedio/cope/IsNullCondition.html" title="class in com.exedio.cope">IsNullCondition</a>&lt;?&gt;&nbsp;isNull()</pre>
+<pre>public&nbsp;<a href="../../../../com/exedio/cope/IsNullCondition.html" title="class in com.exedio.cope">IsNullCondition</a>&lt;?&gt;&nbsp;isNull()</pre>
 </li>
 </ul>
 <a name="isNotNull--">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>isNotNull</h4>
-<pre>public final&nbsp;<a href="../../../../com/exedio/cope/IsNullCondition.html" title="class in com.exedio.cope">IsNullCondition</a>&lt;?&gt;&nbsp;isNotNull()</pre>
+<pre>public&nbsp;<a href="../../../../com/exedio/cope/IsNullCondition.html" title="class in com.exedio.cope">IsNullCondition</a>&lt;?&gt;&nbsp;isNotNull()</pre>
+</li>
+</ul>
+<a name="getCurrency--">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>getCurrency</h4>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</a>
+public&nbsp;<a href="../../../../com/exedio/cope/FunctionField.html" title="class in com.exedio.cope">FunctionField</a>&lt;<a href="../../../../com/exedio/cope/pattern/MoneyField.html" title="type parameter in MoneyField">C</a>&gt;&nbsp;getCurrency()</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment">Use <a href="../../../../com/exedio/cope/pattern/MoneyField.html#getCurrencyField--"><code>getCurrencyField()</code></a> instead</span></div>
 </li>
 </ul>
 </li>
@@ -519,7 +598,7 @@ implements <a href="../../../../com/exedio/cope/Settable.html" title="interface 
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../../com/exedio/cope/pattern/Money.Currency.html" title="interface in com.exedio.cope.pattern"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../../com/exedio/cope/pattern/NestedHashAlgorithm.html" title="class in com.exedio.cope.pattern"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../com/exedio/cope/pattern/MultiItemField.html" title="class in com.exedio.cope.pattern"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../index.html?com/exedio/cope/pattern/MoneyField.html" target="_top">Frames</a></li>

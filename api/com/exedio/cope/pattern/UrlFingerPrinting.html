@@ -90,11 +90,18 @@
 <li class="blockList">
 <hr>
 <br>
-<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/annotation/Target.html?is-external=true" title="class or interface in java.lang.annotation">@Target</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/annotation/Target.html?is-external=true#value--" title="class or interface in java.lang.annotation">value</a>=<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/annotation/ElementType.html?is-external=true#FIELD" title="class or interface in java.lang.annotation">FIELD</a>)
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/annotation/Target.html?is-external=true" title="class or interface in java.lang.annotation">@Target</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/annotation/Target.html?is-external=true#value--" title="class or interface in java.lang.annotation">value</a>={<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/annotation/ElementType.html?is-external=true#FIELD" title="class or interface in java.lang.annotation">FIELD</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/annotation/ElementType.html?is-external=true#TYPE" title="class or interface in java.lang.annotation">TYPE</a>})
+ <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/annotation/Inherited.html?is-external=true" title="class or interface in java.lang.annotation">@Inherited</a>
  <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/annotation/Retention.html?is-external=true" title="class or interface in java.lang.annotation">@Retention</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/annotation/Retention.html?is-external=true#value--" title="class or interface in java.lang.annotation">value</a>=<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/annotation/RetentionPolicy.html?is-external=true#RUNTIME" title="class or interface in java.lang.annotation">RUNTIME</a>)
 public @interface <span class="memberNameLabel">UrlFingerPrinting</span></pre>
 <div class="block">Enables url finger printing for any
- <a href="../../../../com/exedio/cope/pattern/MediaPath.html" title="class in com.exedio.cope.pattern"><code>MediaPath</code></a>.</div>
+ <a href="../../../../com/exedio/cope/pattern/MediaPath.html" title="class in com.exedio.cope.pattern"><code>MediaPath</code></a>.
+ <p>
+ This annotation is essentially applicable to <a href="../../../../com/exedio/cope/Feature.html" title="class in com.exedio.cope"><code>features</code></a> (@Target(FIELD))
+ that are <a href="../../../../com/exedio/cope/pattern/MediaPath.html" title="class in com.exedio.cope.pattern"><code>media pathes</code></a> only.
+ When applying it to other features, there is no effect at all.
+ When applying it to types (@Target(TYPE),
+ it is automatically applied to all features of that type.</div>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../../com/exedio/cope/pattern/MediaPath.html#isUrlFingerPrinted--"><code>MediaPath.isUrlFingerPrinted()</code></a>, 

@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":6,"i2":6,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":42,"i11":10,"i12":9,"i13":9,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":6,"i21":6,"i22":6,"i23":6,"i24":10,"i25":10,"i26":9,"i27":10,"i28":10,"i29":10};
+var methods = {"i0":10,"i1":6,"i2":6,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":42,"i11":10,"i12":9,"i13":9,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":6,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":10,"i27":9,"i28":10,"i29":10,"i30":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],8:["t4","Concrete Methods"],32:["t6","Deprecated Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -241,7 +241,10 @@ extends <a href="../../../../com/exedio/cope/Pattern.html" title="class in com.e
 </tr>
 <tr id="i9" class="rowColor">
 <td class="colFirst"><code><a href="../../../../com/exedio/cope/pattern/MediaPath.Locator.html" title="class in com.exedio.cope.pattern">MediaPath.Locator</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/MediaPath.html#getLocator-com.exedio.cope.Item-">getLocator</a></span>(<a href="../../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&nbsp;item)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/MediaPath.html#getLocator-com.exedio.cope.Item-">getLocator</a></span>(<a href="../../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&nbsp;item)</code>
+<div class="block">Returns a locator the content of this media path is available under,
+ if a <a href="../../../../com/exedio/cope/pattern/MediaServlet.html" title="class in com.exedio.cope.pattern"><code>MediaServlet</code></a> is properly installed.</div>
+</td>
 </tr>
 <tr id="i10" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
@@ -296,50 +299,57 @@ extends <a href="../../../../com/exedio/cope/Pattern.html" title="class in com.e
 </td>
 </tr>
 <tr id="i20" class="altColor">
-<td class="colFirst"><code>abstract <a href="../../../../com/exedio/cope/Condition.html" title="class in com.exedio.cope">Condition</a></code></td>
+<td class="colFirst"><code>abstract boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/MediaPath.html#isMandatory--">isMandatory</a></span>()</code>
+<div class="block">A MediaPath is "mandatory" if <a href="../../../../com/exedio/cope/pattern/MediaPath.html#getContentType-com.exedio.cope.Item-"><code>getContentType(Item)</code></a> and <a href="../../../../com/exedio/cope/pattern/MediaPath.html#getLocator-com.exedio.cope.Item-"><code>getLocator(Item)</code></a> will
+ not return <code>null</code> for any item.</div>
+</td>
+</tr>
+<tr id="i21" class="rowColor">
+<td class="colFirst"><code><a href="../../../../com/exedio/cope/Condition.html" title="class in com.exedio.cope">Condition</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/MediaPath.html#isNotNull--">isNotNull</a></span>()</code>
 <div class="block">Returns a condition matching all items, for which <a href="../../../../com/exedio/cope/pattern/MediaPath.html#getLocator-com.exedio.cope.Item-"><code>getLocator(Item)</code></a> does not return null.</div>
 </td>
 </tr>
-<tr id="i21" class="rowColor">
-<td class="colFirst"><code>abstract <a href="../../../../com/exedio/cope/Condition.html" title="class in com.exedio.cope">Condition</a></code></td>
+<tr id="i22" class="altColor">
+<td class="colFirst"><code><a href="../../../../com/exedio/cope/Condition.html" title="class in com.exedio.cope">Condition</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/MediaPath.html#isNotNull-com.exedio.cope.Join-">isNotNull</a></span>(<a href="../../../../com/exedio/cope/Join.html" title="class in com.exedio.cope">Join</a>&nbsp;join)</code>
 <div class="block">Returns a condition matching all items, for which <a href="../../../../com/exedio/cope/pattern/MediaPath.html#getLocator-com.exedio.cope.Item-"><code>getLocator(Item)</code></a> does not return null.</div>
 </td>
 </tr>
-<tr id="i22" class="altColor">
-<td class="colFirst"><code>abstract <a href="../../../../com/exedio/cope/Condition.html" title="class in com.exedio.cope">Condition</a></code></td>
+<tr id="i23" class="rowColor">
+<td class="colFirst"><code><a href="../../../../com/exedio/cope/Condition.html" title="class in com.exedio.cope">Condition</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/MediaPath.html#isNull--">isNull</a></span>()</code>
 <div class="block">Returns a condition matching all items, for which <a href="../../../../com/exedio/cope/pattern/MediaPath.html#getLocator-com.exedio.cope.Item-"><code>getLocator(Item)</code></a> returns null.</div>
 </td>
 </tr>
-<tr id="i23" class="rowColor">
-<td class="colFirst"><code>abstract <a href="../../../../com/exedio/cope/Condition.html" title="class in com.exedio.cope">Condition</a></code></td>
+<tr id="i24" class="altColor">
+<td class="colFirst"><code><a href="../../../../com/exedio/cope/Condition.html" title="class in com.exedio.cope">Condition</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/MediaPath.html#isNull-com.exedio.cope.Join-">isNull</a></span>(<a href="../../../../com/exedio/cope/Join.html" title="class in com.exedio.cope">Join</a>&nbsp;join)</code>
 <div class="block">Returns a condition matching all items, for which <a href="../../../../com/exedio/cope/pattern/MediaPath.html#getLocator-com.exedio.cope.Item-"><code>getLocator(Item)</code></a> returns null.</div>
 </td>
 </tr>
-<tr id="i24" class="altColor">
+<tr id="i25" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/MediaPath.html#isUrlFingerPrinted--">isUrlFingerPrinted</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i25" class="rowColor">
+<tr id="i26" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/MediaPath.html#isUrlGuessingPrevented--">isUrlGuessingPrevented</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i26" class="altColor">
+<tr id="i27" class="rowColor">
 <td class="colFirst"><code>static boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/MediaPath.html#isUrlGuessingPreventedSecurely-com.exedio.cope.ConnectProperties-">isUrlGuessingPreventedSecurely</a></span>(<a href="../../../../com/exedio/cope/ConnectProperties.html" title="class in com.exedio.cope">ConnectProperties</a>&nbsp;properties)</code>&nbsp;</td>
 </tr>
-<tr id="i27" class="rowColor">
+<tr id="i28" class="altColor">
 <td class="colFirst"><code>protected <a href="../../../../com/exedio/cope/pattern/MediaPath.NotFound.html" title="class in com.exedio.cope.pattern">MediaPath.NotFound</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/MediaPath.html#notFoundIsNull--">notFoundIsNull</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i28" class="altColor">
+<tr id="i29" class="rowColor">
 <td class="colFirst"><code>protected <a href="../../../../com/exedio/cope/pattern/MediaPath.NotFound.html" title="class in com.exedio.cope.pattern">MediaPath.NotFound</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/MediaPath.html#notFoundNotComputable--">notFoundNotComputable</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i29" class="rowColor">
+<tr id="i30" class="altColor">
 <td class="colFirst"><code>protected void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/MediaPath.html#onMount--">onMount</a></span>()</code>
 <div class="block">Here you can do additional initialization not yet done in the constructor.</div>
@@ -351,14 +361,14 @@ extends <a href="../../../../com/exedio/cope/Pattern.html" title="class in com.e
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;com.exedio.cope.<a href="../../../../com/exedio/cope/Pattern.html" title="class in com.exedio.cope">Pattern</a></h3>
-<code><a href="../../../../com/exedio/cope/Pattern.html#addSource-com.exedio.cope.Feature-java.lang.String-">addSource</a>, <a href="../../../../com/exedio/cope/Pattern.html#addSource-com.exedio.cope.Feature-java.lang.String-java.lang.reflect.AnnotatedElement-">addSource</a>, <a href="../../../../com/exedio/cope/Pattern.html#addSource-com.exedio.cope.Feature-java.lang.String-java.lang.reflect.Field-">addSource</a>, <a href="../../../../com/exedio/cope/Pattern.html#annotationField-java.lang.String-">annotationField</a>, <a href="../../../../com/exedio/cope/Pattern.html#getGeneratedTypes--">getGeneratedTypes</a>, <a href="../../../../com/exedio/cope/Pattern.html#getSourceFeatures--">getSourceFeatures</a>, <a href="../../../../com/exedio/cope/Pattern.html#getSourceFields--">getSourceFields</a>, <a href="../../../../com/exedio/cope/Pattern.html#getSources--">getSources</a>, <a href="../../../../com/exedio/cope/Pattern.html#getSourceTypes--">getSourceTypes</a>, <a href="../../../../com/exedio/cope/Pattern.html#getType--">getType</a>, <a href="../../../../com/exedio/cope/Pattern.html#initialize--">initialize</a>, <a href="../../../../com/exedio/cope/Pattern.html#newSourceType-java.lang.Class-boolean-com.exedio.cope.Type-com.exedio.cope.Features-java.lang.String-">newSourceType</a>, <a href="../../../../com/exedio/cope/Pattern.html#newSourceType-java.lang.Class-boolean-com.exedio.cope.Type-java.util.LinkedHashMap-java.lang.String-">newSourceType</a>, <a href="../../../../com/exedio/cope/Pattern.html#newSourceType-java.lang.Class-com.exedio.cope.Features-">newSourceType</a>, <a href="../../../../com/exedio/cope/Pattern.html#newSourceType-java.lang.Class-com.exedio.cope.Features-java.lang.String-">newSourceType</a>, <a href="../../../../com/exedio/cope/Pattern.html#newSourceType-java.lang.Class-java.util.LinkedHashMap-">newSourceType</a>, <a href="../../../../com/exedio/cope/Pattern.html#newSourceType-java.lang.Class-java.util.LinkedHashMap-java.lang.String-">newSourceType</a>, <a href="../../../../com/exedio/cope/Pattern.html#newType-java.lang.Class-java.util.LinkedHashMap-">newType</a>, <a href="../../../../com/exedio/cope/Pattern.html#newType-java.lang.Class-java.util.LinkedHashMap-java.lang.String-">newType</a>, <a href="../../../../com/exedio/cope/Pattern.html#registerSource-com.exedio.cope.Field-java.lang.String-">registerSource</a></code></li>
+<code><a href="../../../../com/exedio/cope/Pattern.html#addSource-com.exedio.cope.Feature-java.lang.String-">addSource</a>, <a href="../../../../com/exedio/cope/Pattern.html#addSource-com.exedio.cope.Feature-java.lang.String-java.lang.reflect.AnnotatedElement-">addSource</a>, <a href="../../../../com/exedio/cope/Pattern.html#addSource-com.exedio.cope.Feature-java.lang.String-java.lang.reflect.AnnotatedElement-java.lang.Class-">addSource</a>, <a href="../../../../com/exedio/cope/Pattern.html#addSource-com.exedio.cope.Feature-java.lang.String-java.lang.reflect.Field-">addSource</a>, <a href="../../../../com/exedio/cope/Pattern.html#annotationField-java.lang.String-">annotationField</a>, <a href="../../../../com/exedio/cope/Pattern.html#getGeneratedTypes--">getGeneratedTypes</a>, <a href="../../../../com/exedio/cope/Pattern.html#getSourceFeatures--">getSourceFeatures</a>, <a href="../../../../com/exedio/cope/Pattern.html#getSourceFeaturesGather--">getSourceFeaturesGather</a>, <a href="../../../../com/exedio/cope/Pattern.html#getSourceFields--">getSourceFields</a>, <a href="../../../../com/exedio/cope/Pattern.html#getSources--">getSources</a>, <a href="../../../../com/exedio/cope/Pattern.html#getSourceTypes--">getSourceTypes</a>, <a href="../../../../com/exedio/cope/Pattern.html#getType--">getType</a>, <a href="../../../../com/exedio/cope/Pattern.html#initialize--">initialize</a>, <a href="../../../../com/exedio/cope/Pattern.html#newSourceType-java.lang.Class-boolean-com.exedio.cope.Type-com.exedio.cope.Features-java.lang.String-">newSourceType</a>, <a href="../../../../com/exedio/cope/Pattern.html#newSourceType-java.lang.Class-boolean-com.exedio.cope.Type-java.util.LinkedHashMap-java.lang.String-">newSourceType</a>, <a href="../../../../com/exedio/cope/Pattern.html#newSourceType-java.lang.Class-com.exedio.cope.Features-">newSourceType</a>, <a href="../../../../com/exedio/cope/Pattern.html#newSourceType-java.lang.Class-com.exedio.cope.Features-java.lang.String-">newSourceType</a>, <a href="../../../../com/exedio/cope/Pattern.html#newSourceType-java.lang.Class-java.util.LinkedHashMap-">newSourceType</a>, <a href="../../../../com/exedio/cope/Pattern.html#newSourceType-java.lang.Class-java.util.LinkedHashMap-java.lang.String-">newSourceType</a>, <a href="../../../../com/exedio/cope/Pattern.html#newType-java.lang.Class-java.util.LinkedHashMap-">newType</a>, <a href="../../../../com/exedio/cope/Pattern.html#newType-java.lang.Class-java.util.LinkedHashMap-java.lang.String-">newType</a>, <a href="../../../../com/exedio/cope/Pattern.html#registerSource-com.exedio.cope.Field-java.lang.String-">registerSource</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.com.exedio.cope.Feature">
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;com.exedio.cope.<a href="../../../../com/exedio/cope/Feature.html" title="class in com.exedio.cope">Feature</a></h3>
-<code><a href="../../../../com/exedio/cope/Feature.html#afterModelCreated--">afterModelCreated</a>, <a href="../../../../com/exedio/cope/Feature.html#getAnnotation-java.lang.Class-">getAnnotation</a>, <a href="../../../../com/exedio/cope/Feature.html#getID--">getID</a>, <a href="../../../../com/exedio/cope/Feature.html#getName--">getName</a>, <a href="../../../../com/exedio/cope/Feature.html#getPattern--">getPattern</a>, <a href="../../../../com/exedio/cope/Feature.html#getWrappers--">getWrappers</a>, <a href="../../../../com/exedio/cope/Feature.html#isAnnotationPresent-java.lang.Class-">isAnnotationPresent</a>, <a href="../../../../com/exedio/cope/Feature.html#isSourceAlready--">isSourceAlready</a>, <a href="../../../../com/exedio/cope/Feature.html#mount-java.lang.String-java.io.Serializable-java.lang.reflect.AnnotatedElement-">mount</a>, <a href="../../../../com/exedio/cope/Feature.html#readResolve--">readResolve</a>, <a href="../../../../com/exedio/cope/Feature.html#toString--">toString</a>, <a href="../../../../com/exedio/cope/Feature.html#toString-java.lang.StringBuilder-com.exedio.cope.Type-">toString</a>, <a href="../../../../com/exedio/cope/Feature.html#writeReplace--">writeReplace</a></code></li>
+<code><a href="../../../../com/exedio/cope/Feature.html#afterModelCreated--">afterModelCreated</a>, <a href="../../../../com/exedio/cope/Feature.html#getAbstractType--">getAbstractType</a>, <a href="../../../../com/exedio/cope/Feature.html#getAnnotation-java.lang.Class-">getAnnotation</a>, <a href="../../../../com/exedio/cope/Feature.html#getID--">getID</a>, <a href="../../../../com/exedio/cope/Feature.html#getLocalizationKeys--">getLocalizationKeys</a>, <a href="../../../../com/exedio/cope/Feature.html#getName--">getName</a>, <a href="../../../../com/exedio/cope/Feature.html#getPattern--">getPattern</a>, <a href="../../../../com/exedio/cope/Feature.html#isAnnotationPresent-java.lang.Class-">isAnnotationPresent</a>, <a href="../../../../com/exedio/cope/Feature.html#isSourceAlready--">isSourceAlready</a>, <a href="../../../../com/exedio/cope/Feature.html#mount-com.exedio.cope.AbstractType-java.lang.String-java.lang.String-java.io.Serializable-java.lang.reflect.AnnotatedElement-">mount</a>, <a href="../../../../com/exedio/cope/Feature.html#readResolve--">readResolve</a>, <a href="../../../../com/exedio/cope/Feature.html#requireMounted-T-">requireMounted</a>, <a href="../../../../com/exedio/cope/Feature.html#toString--">toString</a>, <a href="../../../../com/exedio/cope/Feature.html#toString-java.lang.StringBuilder-com.exedio.cope.Type-">toString</a>, <a href="../../../../com/exedio/cope/Feature.html#writeReplace--">writeReplace</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
@@ -448,7 +458,11 @@ extends <a href="../../../../com/exedio/cope/Pattern.html" title="class in com.e
 <ul class="blockList">
 <li class="blockList">
 <h4>getLocator</h4>
-<pre>public final&nbsp;<a href="../../../../com/exedio/cope/pattern/MediaPath.Locator.html" title="class in com.exedio.cope.pattern">MediaPath.Locator</a>&nbsp;getLocator(<a href="../../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&nbsp;item)</pre>
+<pre>public final&nbsp;<a href="../../../../com/exedio/cope/pattern/MediaPath.Locator.html" title="class in com.exedio.cope.pattern">MediaPath.Locator</a>&nbsp;getLocator(<a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+                                          <a href="../../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&nbsp;item)</pre>
+<div class="block">Returns a locator the content of this media path is available under,
+ if a <a href="../../../../com/exedio/cope/pattern/MediaServlet.html" title="class in com.exedio.cope.pattern"><code>MediaServlet</code></a> is properly installed.
+ Returns null, if there is no such content.</div>
 </li>
 </ul>
 <a name="getURL-com.exedio.cope.Item-">
@@ -457,7 +471,8 @@ extends <a href="../../../../com/exedio/cope/Pattern.html" title="class in com.e
 <ul class="blockList">
 <li class="blockList">
 <h4>getURL</h4>
-<pre>public final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getURL(<a href="../../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&nbsp;item)</pre>
+<pre>public final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getURL(<a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+                           <a href="../../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&nbsp;item)</pre>
 <div class="block">Returns a URL the content of this media path is available under,
  if a <a href="../../../../com/exedio/cope/pattern/MediaServlet.html" title="class in com.exedio.cope.pattern"><code>MediaServlet</code></a> is properly installed.
  Returns null, if there is no such content.</div>
@@ -603,13 +618,25 @@ extends <a href="../../../../com/exedio/cope/Pattern.html" title="class in com.e
 <pre>protected final&nbsp;void&nbsp;commit()</pre>
 </li>
 </ul>
+<a name="isMandatory--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>isMandatory</h4>
+<pre>public abstract&nbsp;boolean&nbsp;isMandatory()</pre>
+<div class="block">A MediaPath is "mandatory" if <a href="../../../../com/exedio/cope/pattern/MediaPath.html#getContentType-com.exedio.cope.Item-"><code>getContentType(Item)</code></a> and <a href="../../../../com/exedio/cope/pattern/MediaPath.html#getLocator-com.exedio.cope.Item-"><code>getLocator(Item)</code></a> will
+ not return <code>null</code> for any item.</div>
+</li>
+</ul>
 <a name="getContentType-com.exedio.cope.Item-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>getContentType</h4>
-<pre>public abstract&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getContentType(<a href="../../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&nbsp;item)</pre>
+<pre>public abstract&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getContentType(<a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+                                      <a href="../../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&nbsp;item)</pre>
 </li>
 </ul>
 <a name="isFinal--">
@@ -664,8 +691,12 @@ extends <a href="../../../../com/exedio/cope/Pattern.html" title="class in com.e
 <ul class="blockList">
 <li class="blockList">
 <h4>isNull</h4>
-<pre>public abstract&nbsp;<a href="../../../../com/exedio/cope/Condition.html" title="class in com.exedio.cope">Condition</a>&nbsp;isNull()</pre>
+<pre>public&nbsp;<a href="../../../../com/exedio/cope/Condition.html" title="class in com.exedio.cope">Condition</a>&nbsp;isNull()</pre>
 <div class="block">Returns a condition matching all items, for which <a href="../../../../com/exedio/cope/pattern/MediaPath.html#getLocator-com.exedio.cope.Item-"><code>getLocator(Item)</code></a> returns null.</div>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/UnsupportedOperationException.html?is-external=true" title="class or interface in java.lang">UnsupportedOperationException</a></code> - if the condition is not supported by this path</dd>
+</dl>
 </li>
 </ul>
 <a name="isNull-com.exedio.cope.Join-">
@@ -674,8 +705,14 @@ extends <a href="../../../../com/exedio/cope/Pattern.html" title="class in com.e
 <ul class="blockList">
 <li class="blockList">
 <h4>isNull</h4>
-<pre>public abstract&nbsp;<a href="../../../../com/exedio/cope/Condition.html" title="class in com.exedio.cope">Condition</a>&nbsp;isNull(<a href="../../../../com/exedio/cope/Join.html" title="class in com.exedio.cope">Join</a>&nbsp;join)</pre>
+<pre>public&nbsp;<a href="../../../../com/exedio/cope/Condition.html" title="class in com.exedio.cope">Condition</a>&nbsp;isNull(<a href="../../../../com/exedio/cope/Join.html" title="class in com.exedio.cope">Join</a>&nbsp;join)</pre>
 <div class="block">Returns a condition matching all items, for which <a href="../../../../com/exedio/cope/pattern/MediaPath.html#getLocator-com.exedio.cope.Item-"><code>getLocator(Item)</code></a> returns null.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>join</code> - the join the returned condition should be bound to</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/UnsupportedOperationException.html?is-external=true" title="class or interface in java.lang">UnsupportedOperationException</a></code> - if the condition is not supported by this path</dd>
+</dl>
 </li>
 </ul>
 <a name="isNotNull--">
@@ -684,8 +721,12 @@ extends <a href="../../../../com/exedio/cope/Pattern.html" title="class in com.e
 <ul class="blockList">
 <li class="blockList">
 <h4>isNotNull</h4>
-<pre>public abstract&nbsp;<a href="../../../../com/exedio/cope/Condition.html" title="class in com.exedio.cope">Condition</a>&nbsp;isNotNull()</pre>
+<pre>public&nbsp;<a href="../../../../com/exedio/cope/Condition.html" title="class in com.exedio.cope">Condition</a>&nbsp;isNotNull()</pre>
 <div class="block">Returns a condition matching all items, for which <a href="../../../../com/exedio/cope/pattern/MediaPath.html#getLocator-com.exedio.cope.Item-"><code>getLocator(Item)</code></a> does not return null.</div>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/UnsupportedOperationException.html?is-external=true" title="class or interface in java.lang">UnsupportedOperationException</a></code> - if the condition is not supported by this path</dd>
+</dl>
 </li>
 </ul>
 <a name="isNotNull-com.exedio.cope.Join-">
@@ -694,8 +735,14 @@ extends <a href="../../../../com/exedio/cope/Pattern.html" title="class in com.e
 <ul class="blockList">
 <li class="blockList">
 <h4>isNotNull</h4>
-<pre>public abstract&nbsp;<a href="../../../../com/exedio/cope/Condition.html" title="class in com.exedio.cope">Condition</a>&nbsp;isNotNull(<a href="../../../../com/exedio/cope/Join.html" title="class in com.exedio.cope">Join</a>&nbsp;join)</pre>
+<pre>public&nbsp;<a href="../../../../com/exedio/cope/Condition.html" title="class in com.exedio.cope">Condition</a>&nbsp;isNotNull(<a href="../../../../com/exedio/cope/Join.html" title="class in com.exedio.cope">Join</a>&nbsp;join)</pre>
 <div class="block">Returns a condition matching all items, for which <a href="../../../../com/exedio/cope/pattern/MediaPath.html#getLocator-com.exedio.cope.Item-"><code>getLocator(Item)</code></a> does not return null.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>join</code> - the join the returned condition should be bound to</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/UnsupportedOperationException.html?is-external=true" title="class or interface in java.lang">UnsupportedOperationException</a></code> - if the condition is not supported by this path</dd>
+</dl>
 </li>
 </ul>
 <a name="getNamedURL-com.exedio.cope.Item-java.lang.String-">

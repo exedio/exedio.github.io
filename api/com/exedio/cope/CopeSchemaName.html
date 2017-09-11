@@ -93,7 +93,7 @@
 <pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/annotation/Target.html?is-external=true" title="class or interface in java.lang.annotation">@Target</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/annotation/Target.html?is-external=true#value--" title="class or interface in java.lang.annotation">value</a>={<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/annotation/ElementType.html?is-external=true#TYPE" title="class or interface in java.lang.annotation">TYPE</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/annotation/ElementType.html?is-external=true#FIELD" title="class or interface in java.lang.annotation">FIELD</a>})
  <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/annotation/Retention.html?is-external=true" title="class or interface in java.lang.annotation">@Retention</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/annotation/Retention.html?is-external=true#value--" title="class or interface in java.lang.annotation">value</a>=<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/annotation/RetentionPolicy.html?is-external=true#RUNTIME" title="class or interface in java.lang.annotation">RUNTIME</a>)
 public @interface <span class="memberNameLabel">CopeSchemaName</span></pre>
-<div class="block">This annotation specifies database table/column names
+<div class="block">Specifies database table/column names
  for types/fields different from the default names.
  This may be useful to
  <ul>
@@ -103,7 +103,18 @@ public @interface <span class="memberNameLabel">CopeSchemaName</span></pre>
         <li>specify names in traditional uppercase plural.
     <li>resolve name conflicts caused by trimming names
         to the maximum length allowed by the database.
- </ul></div>
+ </ul>
+ In particular it does the following:
+ <ul>
+ <li>Wherever a <a href="../../../com/exedio/cope/Type.html#getID--"><code>type id</code></a> is used to determine names
+     in the database schema (tables, constraints, sequences},
+     a @CopeSchemaName at that type (@Target(TYPE)) overrides the type id.
+ <li>Wherever a <a href="../../../com/exedio/cope/Feature.html#getName--"><code>feature name</code></a> is used to determine names
+     in the database schema (tables, columns, constraints, sequences},
+     a @CopeSchemaName at that feature (@Target(FIELD)) overrides the feature name.
+ </ul>
+ Apart from affecting names in the database schema, this annotation does nothing else.
+ In particular it does not affect the type id or the feature name itself.</div>
 </li>
 </ul>
 </div>

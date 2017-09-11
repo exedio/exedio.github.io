@@ -133,7 +133,14 @@ extends <a href="../../../com/exedio/dsmf/Dialect.html" title="class in com.exed
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>static <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/dsmf/MysqlDialect.html#SEQUENCE_COLUMN">SEQUENCE_COLUMN</a></span></code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/dsmf/MysqlDialect.html#SEQUENCE_COLUMN">SEQUENCE_COLUMN</a></span></code>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
+<div class="block"><span class="deprecationComment">not used anymore.
+ BEWARE:
+ The actual name of the column may be different.
+ Internally use <a href="../../../com/exedio/dsmf/MysqlDialect.html#sequenceColumnName"><code>sequenceColumnName</code></a> instead.</span></div>
+</div>
+</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -157,7 +164,8 @@ extends <a href="../../../com/exedio/dsmf/Dialect.html" title="class in com.exed
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../com/exedio/dsmf/MysqlDialect.html#MysqlDialect-java.lang.String-">MysqlDialect</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;rowFormat)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../com/exedio/dsmf/MysqlDialect.html#MysqlDialect-java.lang.String-java.lang.String-">MysqlDialect</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;sequenceColumnName,
+            <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;rowFormat)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -182,9 +190,9 @@ extends <a href="../../../com/exedio/dsmf/Dialect.html" title="class in com.exed
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>static void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/dsmf/MysqlDialect.html#initializeSequence-java.lang.StringBuilder-java.lang.String-int-">initializeSequence</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/StringBuilder.html?is-external=true" title="class or interface in java.lang">StringBuilder</a>&nbsp;bf,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/dsmf/MysqlDialect.html#initializeSequence-java.lang.StringBuilder-java.lang.String-long-">initializeSequence</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/StringBuilder.html?is-external=true" title="class or interface in java.lang">StringBuilder</a>&nbsp;bf,
                   <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;sequenceName,
-                  int&nbsp;startWith)</code>&nbsp;</td>
+                  long&nbsp;start)</code>&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
@@ -244,7 +252,12 @@ extends <a href="../../../com/exedio/dsmf/Dialect.html" title="class in com.exed
 <ul class="blockListLast">
 <li class="blockList">
 <h4>SEQUENCE_COLUMN</h4>
-<pre>public static final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> SEQUENCE_COLUMN</pre>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</a>
+public static final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> SEQUENCE_COLUMN</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment">not used anymore.
+ BEWARE:
+ The actual name of the column may be different.
+ Internally use <a href="../../../com/exedio/dsmf/MysqlDialect.html#sequenceColumnName"><code>sequenceColumnName</code></a> instead.</span></div>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../constant-values.html#com.exedio.dsmf.MysqlDialect.SEQUENCE_COLUMN">Constant Field Values</a></dd>
@@ -259,13 +272,14 @@ extends <a href="../../../com/exedio/dsmf/Dialect.html" title="class in com.exed
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="MysqlDialect-java.lang.String-">
+<a name="MysqlDialect-java.lang.String-java.lang.String-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>MysqlDialect</h4>
-<pre>public&nbsp;MysqlDialect(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;rowFormat)</pre>
+<pre>public&nbsp;MysqlDialect(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;sequenceColumnName,
+                    <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;rowFormat)</pre>
 </li>
 </ul>
 </li>
@@ -349,7 +363,7 @@ extends <a href="../../../com/exedio/dsmf/Dialect.html" title="class in com.exed
 </dl>
 </li>
 </ul>
-<a name="initializeSequence-java.lang.StringBuilder-java.lang.String-int-">
+<a name="initializeSequence-java.lang.StringBuilder-java.lang.String-long-">
 <!--   -->
 </a>
 <ul class="blockListLast">
@@ -357,7 +371,7 @@ extends <a href="../../../com/exedio/dsmf/Dialect.html" title="class in com.exed
 <h4>initializeSequence</h4>
 <pre>public static&nbsp;void&nbsp;initializeSequence(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/StringBuilder.html?is-external=true" title="class or interface in java.lang">StringBuilder</a>&nbsp;bf,
                                       <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;sequenceName,
-                                      int&nbsp;startWith)</pre>
+                                      long&nbsp;start)</pre>
 </li>
 </ul>
 </li>

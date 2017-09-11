@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":9,"i3":10,"i4":42,"i5":10,"i6":10,"i7":10,"i8":42,"i9":10,"i10":10,"i11":42,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":10,"i27":10,"i28":10,"i29":10,"i30":9,"i31":9,"i32":42,"i33":9,"i34":9,"i35":10,"i36":10,"i37":10,"i38":9,"i39":9,"i40":9,"i41":9};
+var methods = {"i0":10,"i1":10,"i2":9,"i3":10,"i4":42,"i5":10,"i6":10,"i7":10,"i8":42,"i9":10,"i10":10,"i11":42,"i12":10,"i13":10,"i14":42,"i15":42,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":10,"i27":10,"i28":10,"i29":10,"i30":10,"i31":10,"i32":42,"i33":9,"i34":9,"i35":42,"i36":9,"i37":9,"i38":9,"i39":10,"i40":10,"i41":10,"i42":9,"i43":9,"i44":9,"i45":9};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"],32:["t6","Deprecated Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -161,7 +161,7 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializab
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/Money.html#add-com.exedio.cope.pattern.Money-">add</a></span>(<a href="../../../../com/exedio/cope/pattern/Money.html" title="class in com.exedio.cope.pattern">Money</a>&lt;<a href="../../../../com/exedio/cope/pattern/Money.html" title="type parameter in Money">C</a>&gt;&nbsp;other)</code>&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code>int</code></td>
+<td class="colFirst"><code>long</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/Money.html#amountStore-C-">amountStore</a></span>(<a href="../../../../com/exedio/cope/pattern/Money.html" title="type parameter in Money">C</a>&nbsp;currency)</code>&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
@@ -224,11 +224,19 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializab
 </tr>
 <tr id="i14" class="altColor">
 <td class="colFirst"><code><a href="../../../../com/exedio/cope/pattern/Money.html" title="class in com.exedio.cope.pattern">Money</a>&lt;<a href="../../../../com/exedio/cope/pattern/Money.html" title="type parameter in Money">C</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/Money.html#getGreater-com.exedio.cope.pattern.Money-">getGreater</a></span>(<a href="../../../../com/exedio/cope/pattern/Money.html" title="class in com.exedio.cope.pattern">Money</a>&lt;<a href="../../../../com/exedio/cope/pattern/Money.html" title="type parameter in Money">C</a>&gt;&nbsp;other)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/Money.html#getGreater-com.exedio.cope.pattern.Money-">getGreater</a></span>(<a href="../../../../com/exedio/cope/pattern/Money.html" title="class in com.exedio.cope.pattern">Money</a>&lt;<a href="../../../../com/exedio/cope/pattern/Money.html" title="type parameter in Money">C</a>&gt;&nbsp;other)</code>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
+<div class="block"><span class="deprecationComment">Use <a href="../../../../com/exedio/cope/pattern/Money.html#max-com.exedio.cope.pattern.Money-"><code>max(Money)</code></a> instead</span></div>
+</div>
+</td>
 </tr>
 <tr id="i15" class="rowColor">
 <td class="colFirst"><code><a href="../../../../com/exedio/cope/pattern/Money.html" title="class in com.exedio.cope.pattern">Money</a>&lt;<a href="../../../../com/exedio/cope/pattern/Money.html" title="type parameter in Money">C</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/Money.html#getLower-com.exedio.cope.pattern.Money-">getLower</a></span>(<a href="../../../../com/exedio/cope/pattern/Money.html" title="class in com.exedio.cope.pattern">Money</a>&lt;<a href="../../../../com/exedio/cope/pattern/Money.html" title="type parameter in Money">C</a>&gt;&nbsp;other)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/Money.html#getLower-com.exedio.cope.pattern.Money-">getLower</a></span>(<a href="../../../../com/exedio/cope/pattern/Money.html" title="class in com.exedio.cope.pattern">Money</a>&lt;<a href="../../../../com/exedio/cope/pattern/Money.html" title="type parameter in Money">C</a>&gt;&nbsp;other)</code>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
+<div class="block"><span class="deprecationComment">Use <a href="../../../../com/exedio/cope/pattern/Money.html#min-com.exedio.cope.pattern.Money-"><code>min(Money)</code></a> instead</span></div>
+</div>
+</td>
 </tr>
 <tr id="i16" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
@@ -276,72 +284,93 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializab
 </tr>
 <tr id="i27" class="rowColor">
 <td class="colFirst"><code><a href="../../../../com/exedio/cope/pattern/Money.html" title="class in com.exedio.cope.pattern">Money</a>&lt;<a href="../../../../com/exedio/cope/pattern/Money.html" title="type parameter in Money">C</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/Money.html#multiply-double-">multiply</a></span>(double&nbsp;other)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/Money.html#max-com.exedio.cope.pattern.Money-">max</a></span>(<a href="../../../../com/exedio/cope/pattern/Money.html" title="class in com.exedio.cope.pattern">Money</a>&lt;<a href="../../../../com/exedio/cope/pattern/Money.html" title="type parameter in Money">C</a>&gt;&nbsp;other)</code>&nbsp;</td>
 </tr>
 <tr id="i28" class="altColor">
 <td class="colFirst"><code><a href="../../../../com/exedio/cope/pattern/Money.html" title="class in com.exedio.cope.pattern">Money</a>&lt;<a href="../../../../com/exedio/cope/pattern/Money.html" title="type parameter in Money">C</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/Money.html#multiply-int-">multiply</a></span>(int&nbsp;other)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/Money.html#min-com.exedio.cope.pattern.Money-">min</a></span>(<a href="../../../../com/exedio/cope/pattern/Money.html" title="class in com.exedio.cope.pattern">Money</a>&lt;<a href="../../../../com/exedio/cope/pattern/Money.html" title="type parameter in Money">C</a>&gt;&nbsp;other)</code>&nbsp;</td>
 </tr>
 <tr id="i29" class="rowColor">
 <td class="colFirst"><code><a href="../../../../com/exedio/cope/pattern/Money.html" title="class in com.exedio.cope.pattern">Money</a>&lt;<a href="../../../../com/exedio/cope/pattern/Money.html" title="type parameter in Money">C</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/Money.html#negative--">negative</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/Money.html#multiply-double-">multiply</a></span>(double&nbsp;other)</code>&nbsp;</td>
 </tr>
 <tr id="i30" class="altColor">
+<td class="colFirst"><code><a href="../../../../com/exedio/cope/pattern/Money.html" title="class in com.exedio.cope.pattern">Money</a>&lt;<a href="../../../../com/exedio/cope/pattern/Money.html" title="type parameter in Money">C</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/Money.html#multiply-int-">multiply</a></span>(int&nbsp;other)</code>&nbsp;</td>
+</tr>
+<tr id="i31" class="rowColor">
+<td class="colFirst"><code><a href="../../../../com/exedio/cope/pattern/Money.html" title="class in com.exedio.cope.pattern">Money</a>&lt;<a href="../../../../com/exedio/cope/pattern/Money.html" title="type parameter in Money">C</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/Money.html#negate--">negate</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i32" class="altColor">
+<td class="colFirst"><code><a href="../../../../com/exedio/cope/pattern/Money.html" title="class in com.exedio.cope.pattern">Money</a>&lt;<a href="../../../../com/exedio/cope/pattern/Money.html" title="type parameter in Money">C</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/Money.html#negative--">negative</a></span>()</code>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
+<div class="block"><span class="deprecationComment">Use <a href="../../../../com/exedio/cope/pattern/Money.html#negate--"><code>negate()</code></a> instead</span></div>
+</div>
+</td>
+</tr>
+<tr id="i33" class="rowColor">
 <td class="colFirst"><code>static &lt;C extends <a href="../../../../com/exedio/cope/pattern/Money.Currency.html" title="interface in com.exedio.cope.pattern">Money.Currency</a>&gt;<br><a href="../../../../com/exedio/cope/pattern/Money.html" title="class in com.exedio.cope.pattern">Money</a>&lt;C&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/Money.html#nullToZero-com.exedio.cope.pattern.Money-C-">nullToZero</a></span>(<a href="../../../../com/exedio/cope/pattern/Money.html" title="class in com.exedio.cope.pattern">Money</a>&lt;C&gt;&nbsp;value,
           C&nbsp;currency)</code>&nbsp;</td>
 </tr>
-<tr id="i31" class="rowColor">
+<tr id="i34" class="altColor">
 <td class="colFirst"><code>static &lt;C extends <a href="../../../../com/exedio/cope/pattern/Money.Currency.html" title="interface in com.exedio.cope.pattern">Money.Currency</a>&gt;<br><a href="../../../../com/exedio/cope/pattern/Money.html" title="class in com.exedio.cope.pattern">Money</a>&lt;C&gt;[]</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/Money.html#splitProportionately-com.exedio.cope.pattern.Money-com.exedio.cope.pattern.Money:A-">splitProportionately</a></span>(<a href="../../../../com/exedio/cope/pattern/Money.html" title="class in com.exedio.cope.pattern">Money</a>&lt;C&gt;&nbsp;total,
                     <a href="../../../../com/exedio/cope/pattern/Money.html" title="class in com.exedio.cope.pattern">Money</a>&lt;C&gt;[]&nbsp;weights)</code>&nbsp;</td>
 </tr>
-<tr id="i32" class="altColor">
-<td class="colFirst"><code>int</code></td>
+<tr id="i35" class="rowColor">
+<td class="colFirst"><code>long</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/Money.html#store-C-">store</a></span>(<a href="../../../../com/exedio/cope/pattern/Money.html" title="type parameter in Money">C</a>&nbsp;currency)</code>
 <div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
 <div class="block"><span class="deprecationComment">Use <a href="../../../../com/exedio/cope/pattern/Money.html#amountStore-C-"><code>amountStore(Currency)</code></a> instead</span></div>
 </div>
 </td>
 </tr>
-<tr id="i33" class="rowColor">
-<td class="colFirst"><code>static &lt;C extends <a href="../../../../com/exedio/cope/pattern/Money.Currency.html" title="interface in com.exedio.cope.pattern">Money.Currency</a>&gt;<br><a href="../../../../com/exedio/cope/pattern/Money.html" title="class in com.exedio.cope.pattern">Money</a>&lt;C&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/Money.html#storeOf-int-C-">storeOf</a></span>(int&nbsp;amountStore,
-       C&nbsp;currency)</code>&nbsp;</td>
-</tr>
-<tr id="i34" class="altColor">
+<tr id="i36" class="altColor">
 <td class="colFirst"><code>static &lt;C extends <a href="../../../../com/exedio/cope/pattern/Money.Currency.html" title="interface in com.exedio.cope.pattern">Money.Currency</a>&gt;<br><a href="../../../../com/exedio/cope/pattern/Money.html" title="class in com.exedio.cope.pattern">Money</a>&lt;C&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/Money.html#storeOf-java.lang.Integer-C-">storeOf</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&nbsp;amountStore,
        C&nbsp;currency)</code>&nbsp;</td>
 </tr>
-<tr id="i35" class="rowColor">
+<tr id="i37" class="rowColor">
+<td class="colFirst"><code>static &lt;C extends <a href="../../../../com/exedio/cope/pattern/Money.Currency.html" title="interface in com.exedio.cope.pattern">Money.Currency</a>&gt;<br><a href="../../../../com/exedio/cope/pattern/Money.html" title="class in com.exedio.cope.pattern">Money</a>&lt;C&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/Money.html#storeOf-long-C-">storeOf</a></span>(long&nbsp;amountStore,
+       C&nbsp;currency)</code>&nbsp;</td>
+</tr>
+<tr id="i38" class="altColor">
+<td class="colFirst"><code>static &lt;C extends <a href="../../../../com/exedio/cope/pattern/Money.Currency.html" title="interface in com.exedio.cope.pattern">Money.Currency</a>&gt;<br><a href="../../../../com/exedio/cope/pattern/Money.html" title="class in com.exedio.cope.pattern">Money</a>&lt;C&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/Money.html#storeOf-java.lang.Long-C-">storeOf</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Long.html?is-external=true" title="class or interface in java.lang">Long</a>&nbsp;amountStore,
+       C&nbsp;currency)</code>&nbsp;</td>
+</tr>
+<tr id="i39" class="rowColor">
 <td class="colFirst"><code><a href="../../../../com/exedio/cope/pattern/Money.html" title="class in com.exedio.cope.pattern">Money</a>&lt;<a href="../../../../com/exedio/cope/pattern/Money.html" title="type parameter in Money">C</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/Money.html#subtract-com.exedio.cope.pattern.Money-">subtract</a></span>(<a href="../../../../com/exedio/cope/pattern/Money.html" title="class in com.exedio.cope.pattern">Money</a>&lt;<a href="../../../../com/exedio/cope/pattern/Money.html" title="type parameter in Money">C</a>&gt;&nbsp;other)</code>&nbsp;</td>
 </tr>
-<tr id="i36" class="altColor">
+<tr id="i40" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/Money.html#toString--">toString</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i37" class="rowColor">
+<tr id="i41" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/Money.html#toStringShort--">toStringShort</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i38" class="altColor">
+<tr id="i42" class="altColor">
 <td class="colFirst"><code>static &lt;C extends <a href="../../../../com/exedio/cope/pattern/Money.Currency.html" title="interface in com.exedio.cope.pattern">Money.Currency</a>&gt;<br><a href="../../../../com/exedio/cope/pattern/Money.html" title="class in com.exedio.cope.pattern">Money</a>&lt;C&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/Money.html#valueOf-java.math.BigDecimal-C-">valueOf</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/math/BigDecimal.html?is-external=true" title="class or interface in java.math">BigDecimal</a>&nbsp;value,
        C&nbsp;currency)</code>&nbsp;</td>
 </tr>
-<tr id="i39" class="rowColor">
+<tr id="i43" class="rowColor">
 <td class="colFirst"><code>static &lt;C extends <a href="../../../../com/exedio/cope/pattern/Money.Currency.html" title="interface in com.exedio.cope.pattern">Money.Currency</a>&gt;<br><a href="../../../../com/exedio/cope/pattern/Money.html" title="class in com.exedio.cope.pattern">Money</a>&lt;C&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/Money.html#valueOf-double-C-">valueOf</a></span>(double&nbsp;amount,
        C&nbsp;currency)</code>&nbsp;</td>
 </tr>
-<tr id="i40" class="altColor">
+<tr id="i44" class="altColor">
 <td class="colFirst"><code>static &lt;C extends <a href="../../../../com/exedio/cope/pattern/Money.Currency.html" title="interface in com.exedio.cope.pattern">Money.Currency</a>&gt;<br><a href="../../../../com/exedio/cope/pattern/Money.html" title="class in com.exedio.cope.pattern">Money</a>&lt;C&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/Money.html#valueOf-com.exedio.cope.pattern.Price-C-">valueOf</a></span>(<a href="../../../../com/exedio/cope/pattern/Price.html" title="class in com.exedio.cope.pattern">Price</a>&nbsp;amount,
        C&nbsp;currency)</code>&nbsp;</td>
 </tr>
-<tr id="i41" class="rowColor">
+<tr id="i45" class="rowColor">
 <td class="colFirst"><code>static &lt;C extends <a href="../../../../com/exedio/cope/pattern/Money.Currency.html" title="interface in com.exedio.cope.pattern">Money.Currency</a>&gt;<br><a href="../../../../com/exedio/cope/pattern/Money.html" title="class in com.exedio.cope.pattern">Money</a>&lt;C&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/Money.html#zero-C-">zero</a></span>(C&nbsp;currency)</code>&nbsp;</td>
 </tr>
@@ -367,15 +396,27 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializab
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="storeOf-int-com.exedio.cope.pattern.Money.Currency-">
+<a name="storeOf-long-com.exedio.cope.pattern.Money.Currency-">
 <!--   -->
-</a><a name="storeOf-int-C-">
+</a><a name="storeOf-long-C-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>storeOf</h4>
-<pre>public static&nbsp;&lt;C extends <a href="../../../../com/exedio/cope/pattern/Money.Currency.html" title="interface in com.exedio.cope.pattern">Money.Currency</a>&gt;&nbsp;<a href="../../../../com/exedio/cope/pattern/Money.html" title="class in com.exedio.cope.pattern">Money</a>&lt;C&gt;&nbsp;storeOf(int&nbsp;amountStore,
+<pre>public static&nbsp;&lt;C extends <a href="../../../../com/exedio/cope/pattern/Money.Currency.html" title="interface in com.exedio.cope.pattern">Money.Currency</a>&gt;&nbsp;<a href="../../../../com/exedio/cope/pattern/Money.html" title="class in com.exedio.cope.pattern">Money</a>&lt;C&gt;&nbsp;storeOf(long&nbsp;amountStore,
+                                                          C&nbsp;currency)</pre>
+</li>
+</ul>
+<a name="storeOf-java.lang.Long-com.exedio.cope.pattern.Money.Currency-">
+<!--   -->
+</a><a name="storeOf-java.lang.Long-C-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>storeOf</h4>
+<pre>public static&nbsp;&lt;C extends <a href="../../../../com/exedio/cope/pattern/Money.Currency.html" title="interface in com.exedio.cope.pattern">Money.Currency</a>&gt;&nbsp;<a href="../../../../com/exedio/cope/pattern/Money.html" title="class in com.exedio.cope.pattern">Money</a>&lt;C&gt;&nbsp;storeOf(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Long.html?is-external=true" title="class or interface in java.lang">Long</a>&nbsp;amountStore,
                                                           C&nbsp;currency)</pre>
 </li>
 </ul>
@@ -399,7 +440,7 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializab
 <ul class="blockList">
 <li class="blockList">
 <h4>amountStore</h4>
-<pre>public&nbsp;int&nbsp;amountStore(<a href="../../../../com/exedio/cope/pattern/Money.html" title="type parameter in Money">C</a>&nbsp;currency)</pre>
+<pre>public&nbsp;long&nbsp;amountStore(<a href="../../../../com/exedio/cope/pattern/Money.html" title="type parameter in Money">C</a>&nbsp;currency)</pre>
 </li>
 </ul>
 <a name="getCurrency--">
@@ -576,31 +617,31 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializab
 <pre>public&nbsp;boolean&nbsp;greaterThanOrEqual(<a href="../../../../com/exedio/cope/pattern/Money.html" title="class in com.exedio.cope.pattern">Money</a>&lt;<a href="../../../../com/exedio/cope/pattern/Money.html" title="type parameter in Money">C</a>&gt;&nbsp;other)</pre>
 </li>
 </ul>
-<a name="getLower-com.exedio.cope.pattern.Money-">
+<a name="min-com.exedio.cope.pattern.Money-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>getLower</h4>
-<pre>public&nbsp;<a href="../../../../com/exedio/cope/pattern/Money.html" title="class in com.exedio.cope.pattern">Money</a>&lt;<a href="../../../../com/exedio/cope/pattern/Money.html" title="type parameter in Money">C</a>&gt;&nbsp;getLower(<a href="../../../../com/exedio/cope/pattern/Money.html" title="class in com.exedio.cope.pattern">Money</a>&lt;<a href="../../../../com/exedio/cope/pattern/Money.html" title="type parameter in Money">C</a>&gt;&nbsp;other)</pre>
+<h4>min</h4>
+<pre>public&nbsp;<a href="../../../../com/exedio/cope/pattern/Money.html" title="class in com.exedio.cope.pattern">Money</a>&lt;<a href="../../../../com/exedio/cope/pattern/Money.html" title="type parameter in Money">C</a>&gt;&nbsp;min(<a href="../../../../com/exedio/cope/pattern/Money.html" title="class in com.exedio.cope.pattern">Money</a>&lt;<a href="../../../../com/exedio/cope/pattern/Money.html" title="type parameter in Money">C</a>&gt;&nbsp;other)</pre>
 </li>
 </ul>
-<a name="getGreater-com.exedio.cope.pattern.Money-">
+<a name="max-com.exedio.cope.pattern.Money-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>getGreater</h4>
-<pre>public&nbsp;<a href="../../../../com/exedio/cope/pattern/Money.html" title="class in com.exedio.cope.pattern">Money</a>&lt;<a href="../../../../com/exedio/cope/pattern/Money.html" title="type parameter in Money">C</a>&gt;&nbsp;getGreater(<a href="../../../../com/exedio/cope/pattern/Money.html" title="class in com.exedio.cope.pattern">Money</a>&lt;<a href="../../../../com/exedio/cope/pattern/Money.html" title="type parameter in Money">C</a>&gt;&nbsp;other)</pre>
+<h4>max</h4>
+<pre>public&nbsp;<a href="../../../../com/exedio/cope/pattern/Money.html" title="class in com.exedio.cope.pattern">Money</a>&lt;<a href="../../../../com/exedio/cope/pattern/Money.html" title="type parameter in Money">C</a>&gt;&nbsp;max(<a href="../../../../com/exedio/cope/pattern/Money.html" title="class in com.exedio.cope.pattern">Money</a>&lt;<a href="../../../../com/exedio/cope/pattern/Money.html" title="type parameter in Money">C</a>&gt;&nbsp;other)</pre>
 </li>
 </ul>
-<a name="negative--">
+<a name="negate--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>negative</h4>
-<pre>public&nbsp;<a href="../../../../com/exedio/cope/pattern/Money.html" title="class in com.exedio.cope.pattern">Money</a>&lt;<a href="../../../../com/exedio/cope/pattern/Money.html" title="type parameter in Money">C</a>&gt;&nbsp;negative()</pre>
+<h4>negate</h4>
+<pre>public&nbsp;<a href="../../../../com/exedio/cope/pattern/Money.html" title="class in com.exedio.cope.pattern">Money</a>&lt;<a href="../../../../com/exedio/cope/pattern/Money.html" title="type parameter in Money">C</a>&gt;&nbsp;negate()</pre>
 </li>
 </ul>
 <a name="add-com.exedio.cope.pattern.Money-">
@@ -682,7 +723,7 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializab
 <ul class="blockList">
 <li class="blockList">
 <h4>array</h4>
-<pre>public static final&nbsp;&lt;CURRENCY extends <a href="../../../../com/exedio/cope/pattern/Money.Currency.html" title="interface in com.exedio.cope.pattern">Money.Currency</a>&gt;&nbsp;<a href="../../../../com/exedio/cope/pattern/Money.html" title="class in com.exedio.cope.pattern">Money</a>&lt;CURRENCY&gt;[]&nbsp;array(int&nbsp;size)</pre>
+<pre>public static&nbsp;&lt;CURRENCY extends <a href="../../../../com/exedio/cope/pattern/Money.Currency.html" title="interface in com.exedio.cope.pattern">Money.Currency</a>&gt;&nbsp;<a href="../../../../com/exedio/cope/pattern/Money.html" title="class in com.exedio.cope.pattern">Money</a>&lt;CURRENCY&gt;[]&nbsp;array(int&nbsp;size)</pre>
 </li>
 </ul>
 <a name="valueOf-double-com.exedio.cope.pattern.Money.Currency-">
@@ -772,7 +813,7 @@ public&nbsp;<a href="../../../../com/exedio/cope/pattern/Price.html" title="clas
 <li class="blockList">
 <h4>store</h4>
 <pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</a>
-public&nbsp;int&nbsp;store(<a href="../../../../com/exedio/cope/pattern/Money.html" title="type parameter in Money">C</a>&nbsp;currency)</pre>
+public&nbsp;long&nbsp;store(<a href="../../../../com/exedio/cope/pattern/Money.html" title="type parameter in Money">C</a>&nbsp;currency)</pre>
 <div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment">Use <a href="../../../../com/exedio/cope/pattern/Money.html#amountStore-C-"><code>amountStore(Currency)</code></a> instead</span></div>
 </li>
 </ul>
@@ -792,12 +833,45 @@ public&nbsp;double&nbsp;doubleValue(<a href="../../../../com/exedio/cope/pattern
 </a><a name="bigValue-C-">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>bigValue</h4>
 <pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</a>
 public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/math/BigDecimal.html?is-external=true" title="class or interface in java.math">BigDecimal</a>&nbsp;bigValue(<a href="../../../../com/exedio/cope/pattern/Money.html" title="type parameter in Money">C</a>&nbsp;currency)</pre>
 <div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment">Use <a href="../../../../com/exedio/cope/pattern/Money.html#bigAmount-C-"><code>bigAmount(Currency)</code></a> instead</span></div>
+</li>
+</ul>
+<a name="getLower-com.exedio.cope.pattern.Money-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getLower</h4>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</a>
+public&nbsp;<a href="../../../../com/exedio/cope/pattern/Money.html" title="class in com.exedio.cope.pattern">Money</a>&lt;<a href="../../../../com/exedio/cope/pattern/Money.html" title="type parameter in Money">C</a>&gt;&nbsp;getLower(<a href="../../../../com/exedio/cope/pattern/Money.html" title="class in com.exedio.cope.pattern">Money</a>&lt;<a href="../../../../com/exedio/cope/pattern/Money.html" title="type parameter in Money">C</a>&gt;&nbsp;other)</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment">Use <a href="../../../../com/exedio/cope/pattern/Money.html#min-com.exedio.cope.pattern.Money-"><code>min(Money)</code></a> instead</span></div>
+</li>
+</ul>
+<a name="getGreater-com.exedio.cope.pattern.Money-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getGreater</h4>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</a>
+public&nbsp;<a href="../../../../com/exedio/cope/pattern/Money.html" title="class in com.exedio.cope.pattern">Money</a>&lt;<a href="../../../../com/exedio/cope/pattern/Money.html" title="type parameter in Money">C</a>&gt;&nbsp;getGreater(<a href="../../../../com/exedio/cope/pattern/Money.html" title="class in com.exedio.cope.pattern">Money</a>&lt;<a href="../../../../com/exedio/cope/pattern/Money.html" title="type parameter in Money">C</a>&gt;&nbsp;other)</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment">Use <a href="../../../../com/exedio/cope/pattern/Money.html#max-com.exedio.cope.pattern.Money-"><code>max(Money)</code></a> instead</span></div>
+</li>
+</ul>
+<a name="negative--">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>negative</h4>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</a>
+public&nbsp;<a href="../../../../com/exedio/cope/pattern/Money.html" title="class in com.exedio.cope.pattern">Money</a>&lt;<a href="../../../../com/exedio/cope/pattern/Money.html" title="type parameter in Money">C</a>&gt;&nbsp;negative()</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment">Use <a href="../../../../com/exedio/cope/pattern/Money.html#negate--"><code>negate()</code></a> instead</span></div>
 </li>
 </ul>
 </li>

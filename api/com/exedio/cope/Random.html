@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":42,"i1":42,"i2":10,"i3":10,"i4":10,"i5":10,"i6":42,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":10,"i27":10,"i28":10,"i29":10,"i30":10,"i31":10,"i32":10,"i33":10,"i34":10,"i35":10,"i36":10,"i37":10,"i38":10,"i39":42,"i40":10,"i41":10};
+var methods = {"i0":42,"i1":42,"i2":42,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"],32:["t6","Deprecated Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -150,240 +150,43 @@ implements <a href="../../../com/exedio/cope/NumberFunction.html" title="interfa
 </td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code><a href="../../../com/exedio/cope/AsStringView.html" title="class in com.exedio.cope">AsStringView</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Random.html#asString--">asString</a></span>()</code>&nbsp;</td>
-</tr>
-<tr id="i3" class="rowColor">
-<td class="colFirst"><code><a href="../../../com/exedio/cope/search/AverageAggregate.html" title="class in com.exedio.cope.search">AverageAggregate</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Random.html#average--">average</a></span>()</code>&nbsp;</td>
-</tr>
-<tr id="i4" class="altColor">
-<td class="colFirst"><code><a href="../../../com/exedio/cope/Condition.html" title="class in com.exedio.cope">Condition</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Random.html#between-java.lang.Double-java.lang.Double-">between</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a>&nbsp;lowerBound,
-       <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a>&nbsp;upperBound)</code>
-<div class="block">Returns a condition, that is equivalent to
- <code><a href="../../../com/exedio/cope/Function.html#greaterOrEqual-E-"><code>greaterOrEqual</code></a>(lowerBound).</div>
-</td>
-</tr>
-<tr id="i5" class="rowColor">
-<td class="colFirst"><code><a href="../../../com/exedio/cope/BindNumberFunction.html" title="class in com.exedio.cope">BindNumberFunction</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Random.html#bind-com.exedio.cope.Join-">bind</a></span>(<a href="../../../com/exedio/cope/Join.html" title="class in com.exedio.cope">Join</a>&nbsp;join)</code>&nbsp;</td>
-</tr>
-<tr id="i6" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Random.html#check-com.exedio.cope.TC-com.exedio.cope.Join-">check</a></span>(com.exedio.cope.TC&nbsp;tc,
      <a href="../../../com/exedio/cope/Join.html" title="class in com.exedio.cope">Join</a>&nbsp;join)</code>
 <div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
-<td class="colFirst"><code><a href="../../../com/exedio/cope/DivideView.html" title="class in com.exedio.cope">DivideView</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Random.html#divide-com.exedio.cope.NumberFunction-">divide</a></span>(<a href="../../../com/exedio/cope/NumberFunction.html" title="interface in com.exedio.cope">NumberFunction</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a>&gt;&nbsp;other)</code>
-<div class="block">You may want to use <a href="../../../com/exedio/cope/DivideView.html#divide-com.exedio.cope.Function-com.exedio.cope.Function-"><code>DivideView.divide(Function, Function)</code></a> instead, if you do not have <a href="../../../com/exedio/cope/NumberFunction.html" title="interface in com.exedio.cope"><code>NumberFunction</code></a>s available.</div>
-</td>
-</tr>
-<tr id="i8" class="altColor">
-<td class="colFirst"><code><a href="../../../com/exedio/cope/Condition.html" title="class in com.exedio.cope">Condition</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Random.html#equal-java.lang.Double-">equal</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a>&nbsp;value)</code>
-<div class="block">Returns a condition, that is true for all items,
- if and only if the value of this function for that item
- is equal to the given parameter.</div>
-</td>
-</tr>
-<tr id="i9" class="rowColor">
-<td class="colFirst"><code><a href="../../../com/exedio/cope/CompareFunctionCondition.html" title="class in com.exedio.cope">CompareFunctionCondition</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Random.html#equal-com.exedio.cope.Function-">equal</a></span>(<a href="../../../com/exedio/cope/Function.html" title="interface in com.exedio.cope">Function</a>&lt;? extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a>&gt;&nbsp;right)</code>
-<div class="block">Returns a condition, that is true for all items,
- if and only if the value of this function for that item
- is equal to the value of the <tt>right</tt> function.</div>
-</td>
-</tr>
-<tr id="i10" class="altColor">
-<td class="colFirst"><code><a href="../../../com/exedio/cope/Condition.html" title="class in com.exedio.cope">Condition</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Random.html#equal-com.exedio.cope.Join-java.lang.Double-">equal</a></span>(<a href="../../../com/exedio/cope/Join.html" title="class in com.exedio.cope">Join</a>&nbsp;join,
-     <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a>&nbsp;value)</code>&nbsp;</td>
-</tr>
-<tr id="i11" class="rowColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Random.html#equals-java.lang.Object-">equals</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;other)</code>&nbsp;</td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Random.html#get-com.exedio.cope.Item-">get</a></span>(<a href="../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&nbsp;item)</code>&nbsp;</td>
 </tr>
-<tr id="i13" class="rowColor">
-<td class="colFirst"><code><a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;? extends <a href="../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&gt;</code></td>
+<tr id="i5" class="rowColor">
+<td class="colFirst"><code><a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;?&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Random.html#getType--">getType</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Random.html#getValueClass--">getValueClass</a></span>()</code>
 <div class="block">Returns <a href="../../../com/exedio/cope/Selectable.html#getValueType--"><code>Selectable.getValueType()</code></a>.</div>
 </td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>com.exedio.cope.SelectType&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Random.html#getValueType--">getValueType</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i16" class="altColor">
-<td class="colFirst"><code><a href="../../../com/exedio/cope/CompareCondition.html" title="class in com.exedio.cope">CompareCondition</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Random.html#greater-java.lang.Double-">greater</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a>&nbsp;value)</code>
-<div class="block">Returns a condition, that is true for all items,
- if and only if the value of this function for that item
- is greater than the given parameter.</div>
-</td>
-</tr>
-<tr id="i17" class="rowColor">
-<td class="colFirst"><code><a href="../../../com/exedio/cope/CompareFunctionCondition.html" title="class in com.exedio.cope">CompareFunctionCondition</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Random.html#greater-com.exedio.cope.Function-">greater</a></span>(<a href="../../../com/exedio/cope/Function.html" title="interface in com.exedio.cope">Function</a>&lt;? extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a>&gt;&nbsp;right)</code>
-<div class="block">Returns a condition, that is true for all items,
- if and only if the value of this function for that item
- is greater than the value of the <tt>right</tt> function.</div>
-</td>
-</tr>
-<tr id="i18" class="altColor">
-<td class="colFirst"><code><a href="../../../com/exedio/cope/CompareCondition.html" title="class in com.exedio.cope">CompareCondition</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Random.html#greaterOrEqual-java.lang.Double-">greaterOrEqual</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a>&nbsp;value)</code>
-<div class="block">Returns a condition, that is true for all items,
- if and only if the value of this function for that item
- is not less than the given parameter.</div>
-</td>
-</tr>
-<tr id="i19" class="rowColor">
-<td class="colFirst"><code><a href="../../../com/exedio/cope/CompareFunctionCondition.html" title="class in com.exedio.cope">CompareFunctionCondition</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Random.html#greaterOrEqual-com.exedio.cope.Function-">greaterOrEqual</a></span>(<a href="../../../com/exedio/cope/Function.html" title="interface in com.exedio.cope">Function</a>&lt;? extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a>&gt;&nbsp;right)</code>
-<div class="block">Returns a condition, that is true for all items,
- if and only if the value of this function for that item
- is not less than the value of the <tt>right</tt> function.</div>
-</td>
-</tr>
-<tr id="i20" class="altColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Random.html#hashCode--">hashCode</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i21" class="rowColor">
-<td class="colFirst"><code><a href="../../../com/exedio/cope/Condition.html" title="class in com.exedio.cope">Condition</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Random.html#in-java.util.Collection-">in</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&lt;? extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a>&gt;&nbsp;values)</code>&nbsp;</td>
-</tr>
-<tr id="i22" class="altColor">
-<td class="colFirst"><code><a href="../../../com/exedio/cope/Condition.html" title="class in com.exedio.cope">Condition</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Random.html#in-java.lang.Double...-">in</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a>...&nbsp;values)</code>&nbsp;</td>
-</tr>
-<tr id="i23" class="rowColor">
-<td class="colFirst"><code><a href="../../../com/exedio/cope/IsNullCondition.html" title="class in com.exedio.cope">IsNullCondition</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Random.html#isNotNull--">isNotNull</a></span>()</code>
-<div class="block">Returns a condition, that is true for all items,
- if and only if the value of this function for that item
- is not null.</div>
-</td>
-</tr>
-<tr id="i24" class="altColor">
-<td class="colFirst"><code><a href="../../../com/exedio/cope/IsNullCondition.html" title="class in com.exedio.cope">IsNullCondition</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Random.html#isNull--">isNull</a></span>()</code>
-<div class="block">Returns a condition, that is true for all items,
- if and only if the value of this function for that item
- is null.</div>
-</td>
-</tr>
-<tr id="i25" class="rowColor">
-<td class="colFirst"><code><a href="../../../com/exedio/cope/CompareCondition.html" title="class in com.exedio.cope">CompareCondition</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Random.html#less-java.lang.Double-">less</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a>&nbsp;value)</code>
-<div class="block">Returns a condition, that is true for all items,
- if and only if the value of this function for that item
- is less than the given parameter.</div>
-</td>
-</tr>
-<tr id="i26" class="altColor">
-<td class="colFirst"><code><a href="../../../com/exedio/cope/CompareFunctionCondition.html" title="class in com.exedio.cope">CompareFunctionCondition</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Random.html#less-com.exedio.cope.Function-">less</a></span>(<a href="../../../com/exedio/cope/Function.html" title="interface in com.exedio.cope">Function</a>&lt;? extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a>&gt;&nbsp;right)</code>
-<div class="block">Returns a condition, that is true for all items,
- if and only if the value of this function for that item
- is less than the value of the <tt>right</tt> function.</div>
-</td>
-</tr>
-<tr id="i27" class="rowColor">
-<td class="colFirst"><code><a href="../../../com/exedio/cope/CompareCondition.html" title="class in com.exedio.cope">CompareCondition</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Random.html#lessOrEqual-java.lang.Double-">lessOrEqual</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a>&nbsp;value)</code>
-<div class="block">Returns a condition, that is true for all items,
- if and only if the value of this function for that item
- is not greater than the given parameter.</div>
-</td>
-</tr>
-<tr id="i28" class="altColor">
-<td class="colFirst"><code><a href="../../../com/exedio/cope/CompareFunctionCondition.html" title="class in com.exedio.cope">CompareFunctionCondition</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Random.html#lessOrEqual-com.exedio.cope.Function-">lessOrEqual</a></span>(<a href="../../../com/exedio/cope/Function.html" title="interface in com.exedio.cope">Function</a>&lt;? extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a>&gt;&nbsp;right)</code>
-<div class="block">Returns a condition, that is true for all items,
- if and only if the value of this function for that item
- is not greater than the value of the <tt>right</tt> function.</div>
-</td>
-</tr>
-<tr id="i29" class="rowColor">
-<td class="colFirst"><code><a href="../../../com/exedio/cope/search/ExtremumAggregate.html" title="class in com.exedio.cope.search">ExtremumAggregate</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Random.html#max--">max</a></span>()</code>&nbsp;</td>
-</tr>
-<tr id="i30" class="altColor">
-<td class="colFirst"><code><a href="../../../com/exedio/cope/search/ExtremumAggregate.html" title="class in com.exedio.cope.search">ExtremumAggregate</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Random.html#min--">min</a></span>()</code>&nbsp;</td>
-</tr>
-<tr id="i31" class="rowColor">
-<td class="colFirst"><code><a href="../../../com/exedio/cope/MinusView.html" title="class in com.exedio.cope">MinusView</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Random.html#minus-com.exedio.cope.NumberFunction-">minus</a></span>(<a href="../../../com/exedio/cope/NumberFunction.html" title="interface in com.exedio.cope">NumberFunction</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a>&gt;&nbsp;other)</code>
-<div class="block">You may want to use <a href="../../../com/exedio/cope/MinusView.html#minus-com.exedio.cope.Function-com.exedio.cope.Function-"><code>MinusView.minus(Function, Function)</code></a> instead, if you do not have <a href="../../../com/exedio/cope/NumberFunction.html" title="interface in com.exedio.cope"><code>NumberFunction</code></a>s available.</div>
-</td>
-</tr>
-<tr id="i32" class="altColor">
-<td class="colFirst"><code><a href="../../../com/exedio/cope/MultiplyLiteralView.html" title="class in com.exedio.cope">MultiplyLiteralView</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Random.html#multiply-java.lang.Double-">multiply</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a>&nbsp;value)</code>
-<div class="block">You may want to use <a href="../../../com/exedio/cope/MultiplyLiteralView.html#multiply-com.exedio.cope.Function-E-"><code>MultiplyLiteralView.multiply(Function, Number)</code></a> instead, if you do not have <a href="../../../com/exedio/cope/NumberFunction.html" title="interface in com.exedio.cope"><code>NumberFunction</code></a>s available.</div>
-</td>
-</tr>
-<tr id="i33" class="rowColor">
-<td class="colFirst"><code><a href="../../../com/exedio/cope/MultiplyView.html" title="class in com.exedio.cope">MultiplyView</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Random.html#multiply-com.exedio.cope.NumberFunction-">multiply</a></span>(<a href="../../../com/exedio/cope/NumberFunction.html" title="interface in com.exedio.cope">NumberFunction</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a>&gt;&nbsp;other)</code>
-<div class="block">You may want to use <a href="../../../com/exedio/cope/MultiplyView.html#multiply-com.exedio.cope.Function-com.exedio.cope.Function-"><code>MultiplyView.multiply(Function, Function)</code></a> instead, if you do not have <a href="../../../com/exedio/cope/NumberFunction.html" title="interface in com.exedio.cope"><code>NumberFunction</code></a>s available.</div>
-</td>
-</tr>
-<tr id="i34" class="altColor">
-<td class="colFirst"><code><a href="../../../com/exedio/cope/Condition.html" title="class in com.exedio.cope">Condition</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Random.html#notEqual-java.lang.Double-">notEqual</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a>&nbsp;value)</code>&nbsp;</td>
-</tr>
-<tr id="i35" class="rowColor">
-<td class="colFirst"><code><a href="../../../com/exedio/cope/CompareFunctionCondition.html" title="class in com.exedio.cope">CompareFunctionCondition</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Random.html#notEqual-com.exedio.cope.Function-">notEqual</a></span>(<a href="../../../com/exedio/cope/Function.html" title="interface in com.exedio.cope">Function</a>&lt;? extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a>&gt;&nbsp;right)</code>
-<div class="block">Returns a condition, that is true for all items,
- if and only if the value of this function for that item
- is not equal to the value of the <tt>right</tt> function.</div>
-</td>
-</tr>
-<tr id="i36" class="altColor">
-<td class="colFirst"><code><a href="../../../com/exedio/cope/PlusLiteralView.html" title="class in com.exedio.cope">PlusLiteralView</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Random.html#plus-java.lang.Double-">plus</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a>&nbsp;value)</code>
-<div class="block">You may want to use <a href="../../../com/exedio/cope/PlusLiteralView.html#plus-com.exedio.cope.Function-E-"><code>PlusLiteralView.plus(Function, Number)</code></a> instead, if you do not have <a href="../../../com/exedio/cope/NumberFunction.html" title="interface in com.exedio.cope"><code>NumberFunction</code></a>s available.</div>
-</td>
-</tr>
-<tr id="i37" class="rowColor">
-<td class="colFirst"><code><a href="../../../com/exedio/cope/PlusView.html" title="class in com.exedio.cope">PlusView</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Random.html#plus-com.exedio.cope.NumberFunction-">plus</a></span>(<a href="../../../com/exedio/cope/NumberFunction.html" title="interface in com.exedio.cope">NumberFunction</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a>&gt;&nbsp;other)</code>
-<div class="block">You may want to use <a href="../../../com/exedio/cope/PlusView.html#plus-com.exedio.cope.Function-com.exedio.cope.Function-"><code>PlusView.plus(Function, Function)</code></a> instead, if you do not have <a href="../../../com/exedio/cope/NumberFunction.html" title="interface in com.exedio.cope"><code>NumberFunction</code></a>s available.</div>
-</td>
-</tr>
-<tr id="i38" class="altColor">
-<td class="colFirst"><code><a href="../../../com/exedio/cope/search/SumAggregate.html" title="class in com.exedio.cope.search">SumAggregate</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Random.html#sum--">sum</a></span>()</code>&nbsp;</td>
-</tr>
-<tr id="i39" class="rowColor">
-<td class="colFirst"><code><a href="../../../com/exedio/cope/PlusView.html" title="class in com.exedio.cope">PlusView</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Random.html#sum-com.exedio.cope.NumberFunction-">sum</a></span>(<a href="../../../com/exedio/cope/NumberFunction.html" title="interface in com.exedio.cope">NumberFunction</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a>&gt;&nbsp;other)</code>
-<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
-<div class="block"><span class="deprecationComment">renamed to <a href="../../../com/exedio/cope/Random.html#plus-com.exedio.cope.NumberFunction-"><code>plus(NumberFunction)</code></a>.</span></div>
-</div>
-</td>
-</tr>
-<tr id="i40" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Random.html#toString--">toString</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i41" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Random.html#toString-java.lang.StringBuilder-com.exedio.cope.Type-">toString</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/StringBuilder.html?is-external=true" title="class or interface in java.lang">StringBuilder</a>&nbsp;bf,
         <a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;?&gt;&nbsp;defaultType)</code>&nbsp;</td>
@@ -395,6 +198,20 @@ implements <a href="../../../com/exedio/cope/NumberFunction.html" title="interfa
 </a>
 <h3>Methods inherited from class&nbsp;java.lang.<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></h3>
 <code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#clone--" title="class or interface in java.lang">clone</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#finalize--" title="class or interface in java.lang">finalize</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#getClass--" title="class or interface in java.lang">getClass</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notify--" title="class or interface in java.lang">notify</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notifyAll--" title="class or interface in java.lang">notifyAll</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait--" title="class or interface in java.lang">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait-long-" title="class or interface in java.lang">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait-long-int-" title="class or interface in java.lang">wait</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods.inherited.from.class.com.exedio.cope.NumberFunction">
+<!--   -->
+</a>
+<h3>Methods inherited from interface&nbsp;com.exedio.cope.<a href="../../../com/exedio/cope/NumberFunction.html" title="interface in com.exedio.cope">NumberFunction</a></h3>
+<code><a href="../../../com/exedio/cope/NumberFunction.html#asString--">asString</a>, <a href="../../../com/exedio/cope/NumberFunction.html#average--">average</a>, <a href="../../../com/exedio/cope/NumberFunction.html#bind-com.exedio.cope.Join-">bind</a>, <a href="../../../com/exedio/cope/NumberFunction.html#divide-com.exedio.cope.NumberFunction-">divide</a>, <a href="../../../com/exedio/cope/NumberFunction.html#minus-com.exedio.cope.NumberFunction-">minus</a>, <a href="../../../com/exedio/cope/NumberFunction.html#multiply-E-">multiply</a>, <a href="../../../com/exedio/cope/NumberFunction.html#multiply-com.exedio.cope.NumberFunction-">multiply</a>, <a href="../../../com/exedio/cope/NumberFunction.html#plus-E-">plus</a>, <a href="../../../com/exedio/cope/NumberFunction.html#plus-com.exedio.cope.NumberFunction-">plus</a>, <a href="../../../com/exedio/cope/NumberFunction.html#sum--">sum</a>, <a href="../../../com/exedio/cope/NumberFunction.html#sum-com.exedio.cope.NumberFunction-">sum</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods.inherited.from.class.com.exedio.cope.Function">
+<!--   -->
+</a>
+<h3>Methods inherited from interface&nbsp;com.exedio.cope.<a href="../../../com/exedio/cope/Function.html" title="interface in com.exedio.cope">Function</a></h3>
+<code><a href="../../../com/exedio/cope/Function.html#any--">any</a>, <a href="../../../com/exedio/cope/Function.html#between-E-E-">between</a>, <a href="../../../com/exedio/cope/Function.html#equal-E-">equal</a>, <a href="../../../com/exedio/cope/Function.html#equal-com.exedio.cope.Function-">equal</a>, <a href="../../../com/exedio/cope/Function.html#equal-com.exedio.cope.Join-E-">equal</a>, <a href="../../../com/exedio/cope/Function.html#greater-E-">greater</a>, <a href="../../../com/exedio/cope/Function.html#greater-com.exedio.cope.Function-">greater</a>, <a href="../../../com/exedio/cope/Function.html#greaterOrEqual-E-">greaterOrEqual</a>, <a href="../../../com/exedio/cope/Function.html#greaterOrEqual-com.exedio.cope.Function-">greaterOrEqual</a>, <a href="../../../com/exedio/cope/Function.html#in-java.util.Collection-">in</a>, <a href="../../../com/exedio/cope/Function.html#in-E...-">in</a>, <a href="../../../com/exedio/cope/Function.html#isNotNull--">isNotNull</a>, <a href="../../../com/exedio/cope/Function.html#isNull--">isNull</a>, <a href="../../../com/exedio/cope/Function.html#less-E-">less</a>, <a href="../../../com/exedio/cope/Function.html#less-com.exedio.cope.Function-">less</a>, <a href="../../../com/exedio/cope/Function.html#lessOrEqual-E-">lessOrEqual</a>, <a href="../../../com/exedio/cope/Function.html#lessOrEqual-com.exedio.cope.Function-">lessOrEqual</a>, <a href="../../../com/exedio/cope/Function.html#max--">max</a>, <a href="../../../com/exedio/cope/Function.html#min--">min</a>, <a href="../../../com/exedio/cope/Function.html#notEqual-E-">notEqual</a>, <a href="../../../com/exedio/cope/Function.html#notEqual-com.exedio.cope.Function-">notEqual</a></code></li>
 </ul>
 </li>
 </ul>
@@ -457,7 +274,7 @@ implements <a href="../../../com/exedio/cope/NumberFunction.html" title="interfa
 <ul class="blockList">
 <li class="blockList">
 <h4>getType</h4>
-<pre>public&nbsp;<a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;? extends <a href="../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&gt;&nbsp;getType()</pre>
+<pre>public&nbsp;<a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;?&gt;&nbsp;getType()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../com/exedio/cope/Selectable.html#getType--">getType</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/exedio/cope/Selectable.html" title="interface in com.exedio.cope">Selectable</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a>&gt;</code></dd>
@@ -552,7 +369,7 @@ public&nbsp;void&nbsp;appendSelect(com.exedio.cope.Statement&nbsp;bf,
 <a name="check-com.exedio.cope.TC-com.exedio.cope.Join-">
 <!--   -->
 </a>
-<ul class="blockList">
+<ul class="blockListLast">
 <li class="blockList">
 <h4>check</h4>
 <pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</a>
@@ -562,476 +379,6 @@ public&nbsp;void&nbsp;check(com.exedio.cope.TC&nbsp;tc,
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../com/exedio/cope/Selectable.html#check-com.exedio.cope.TC-com.exedio.cope.Join-">check</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/exedio/cope/Selectable.html" title="interface in com.exedio.cope">Selectable</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a>&gt;</code></dd>
-</dl>
-</li>
-</ul>
-<a name="bind-com.exedio.cope.Join-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>bind</h4>
-<pre>public final&nbsp;<a href="../../../com/exedio/cope/BindNumberFunction.html" title="class in com.exedio.cope">BindNumberFunction</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a>&gt;&nbsp;bind(<a href="../../../com/exedio/cope/Join.html" title="class in com.exedio.cope">Join</a>&nbsp;join)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../com/exedio/cope/Function.html#bind-com.exedio.cope.Join-">bind</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/exedio/cope/Function.html" title="interface in com.exedio.cope">Function</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a>&gt;</code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../com/exedio/cope/NumberFunction.html#bind-com.exedio.cope.Join-">bind</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/exedio/cope/NumberFunction.html" title="interface in com.exedio.cope">NumberFunction</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a>&gt;</code></dd>
-</dl>
-</li>
-</ul>
-<a name="isNull--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>isNull</h4>
-<pre>public final&nbsp;<a href="../../../com/exedio/cope/IsNullCondition.html" title="class in com.exedio.cope">IsNullCondition</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a>&gt;&nbsp;isNull()</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../com/exedio/cope/Function.html#isNull--">Function</a></code></span></div>
-<div class="block">Returns a condition, that is true for all items,
- if and only if the value of this function for that item
- is null.</div>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../com/exedio/cope/Function.html#isNull--">isNull</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/exedio/cope/Function.html" title="interface in com.exedio.cope">Function</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a>&gt;</code></dd>
-</dl>
-</li>
-</ul>
-<a name="isNotNull--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>isNotNull</h4>
-<pre>public final&nbsp;<a href="../../../com/exedio/cope/IsNullCondition.html" title="class in com.exedio.cope">IsNullCondition</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a>&gt;&nbsp;isNotNull()</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../com/exedio/cope/Function.html#isNotNull--">Function</a></code></span></div>
-<div class="block">Returns a condition, that is true for all items,
- if and only if the value of this function for that item
- is not null.</div>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../com/exedio/cope/Function.html#isNotNull--">isNotNull</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/exedio/cope/Function.html" title="interface in com.exedio.cope">Function</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a>&gt;</code></dd>
-</dl>
-</li>
-</ul>
-<a name="equal-java.lang.Double-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>equal</h4>
-<pre>public final&nbsp;<a href="../../../com/exedio/cope/Condition.html" title="class in com.exedio.cope">Condition</a>&nbsp;equal(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a>&nbsp;value)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../com/exedio/cope/Function.html#equal-E-">Function</a></code></span></div>
-<div class="block">Returns a condition, that is true for all items,
- if and only if the value of this function for that item
- is equal to the given parameter.</div>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../com/exedio/cope/Function.html#equal-E-">equal</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/exedio/cope/Function.html" title="interface in com.exedio.cope">Function</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a>&gt;</code></dd>
-</dl>
-</li>
-</ul>
-<a name="equal-com.exedio.cope.Join-java.lang.Double-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>equal</h4>
-<pre>public final&nbsp;<a href="../../../com/exedio/cope/Condition.html" title="class in com.exedio.cope">Condition</a>&nbsp;equal(<a href="../../../com/exedio/cope/Join.html" title="class in com.exedio.cope">Join</a>&nbsp;join,
-                             <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a>&nbsp;value)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../com/exedio/cope/Function.html#equal-com.exedio.cope.Join-E-">equal</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/exedio/cope/Function.html" title="interface in com.exedio.cope">Function</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a>&gt;</code></dd>
-</dl>
-</li>
-</ul>
-<a name="in-java.lang.Double...-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>in</h4>
-<pre>public final&nbsp;<a href="../../../com/exedio/cope/Condition.html" title="class in com.exedio.cope">Condition</a>&nbsp;in(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a>...&nbsp;values)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../com/exedio/cope/Function.html#in-E...-">in</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/exedio/cope/Function.html" title="interface in com.exedio.cope">Function</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a>&gt;</code></dd>
-</dl>
-</li>
-</ul>
-<a name="in-java.util.Collection-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>in</h4>
-<pre>public final&nbsp;<a href="../../../com/exedio/cope/Condition.html" title="class in com.exedio.cope">Condition</a>&nbsp;in(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&lt;? extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a>&gt;&nbsp;values)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../com/exedio/cope/Function.html#in-java.util.Collection-">in</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/exedio/cope/Function.html" title="interface in com.exedio.cope">Function</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a>&gt;</code></dd>
-</dl>
-</li>
-</ul>
-<a name="notEqual-java.lang.Double-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>notEqual</h4>
-<pre>public final&nbsp;<a href="../../../com/exedio/cope/Condition.html" title="class in com.exedio.cope">Condition</a>&nbsp;notEqual(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a>&nbsp;value)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../com/exedio/cope/Function.html#notEqual-E-">notEqual</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/exedio/cope/Function.html" title="interface in com.exedio.cope">Function</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a>&gt;</code></dd>
-</dl>
-</li>
-</ul>
-<a name="less-java.lang.Double-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>less</h4>
-<pre>public final&nbsp;<a href="../../../com/exedio/cope/CompareCondition.html" title="class in com.exedio.cope">CompareCondition</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a>&gt;&nbsp;less(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a>&nbsp;value)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../com/exedio/cope/Function.html#less-E-">Function</a></code></span></div>
-<div class="block">Returns a condition, that is true for all items,
- if and only if the value of this function for that item
- is less than the given parameter.</div>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../com/exedio/cope/Function.html#less-E-">less</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/exedio/cope/Function.html" title="interface in com.exedio.cope">Function</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a>&gt;</code></dd>
-</dl>
-</li>
-</ul>
-<a name="lessOrEqual-java.lang.Double-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>lessOrEqual</h4>
-<pre>public final&nbsp;<a href="../../../com/exedio/cope/CompareCondition.html" title="class in com.exedio.cope">CompareCondition</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a>&gt;&nbsp;lessOrEqual(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a>&nbsp;value)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../com/exedio/cope/Function.html#lessOrEqual-E-">Function</a></code></span></div>
-<div class="block">Returns a condition, that is true for all items,
- if and only if the value of this function for that item
- is not greater than the given parameter.</div>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../com/exedio/cope/Function.html#lessOrEqual-E-">lessOrEqual</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/exedio/cope/Function.html" title="interface in com.exedio.cope">Function</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a>&gt;</code></dd>
-</dl>
-</li>
-</ul>
-<a name="greater-java.lang.Double-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>greater</h4>
-<pre>public final&nbsp;<a href="../../../com/exedio/cope/CompareCondition.html" title="class in com.exedio.cope">CompareCondition</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a>&gt;&nbsp;greater(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a>&nbsp;value)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../com/exedio/cope/Function.html#greater-E-">Function</a></code></span></div>
-<div class="block">Returns a condition, that is true for all items,
- if and only if the value of this function for that item
- is greater than the given parameter.</div>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../com/exedio/cope/Function.html#greater-E-">greater</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/exedio/cope/Function.html" title="interface in com.exedio.cope">Function</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a>&gt;</code></dd>
-</dl>
-</li>
-</ul>
-<a name="greaterOrEqual-java.lang.Double-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>greaterOrEqual</h4>
-<pre>public final&nbsp;<a href="../../../com/exedio/cope/CompareCondition.html" title="class in com.exedio.cope">CompareCondition</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a>&gt;&nbsp;greaterOrEqual(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a>&nbsp;value)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../com/exedio/cope/Function.html#greaterOrEqual-E-">Function</a></code></span></div>
-<div class="block">Returns a condition, that is true for all items,
- if and only if the value of this function for that item
- is not less than the given parameter.</div>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../com/exedio/cope/Function.html#greaterOrEqual-E-">greaterOrEqual</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/exedio/cope/Function.html" title="interface in com.exedio.cope">Function</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a>&gt;</code></dd>
-</dl>
-</li>
-</ul>
-<a name="between-java.lang.Double-java.lang.Double-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>between</h4>
-<pre>public&nbsp;<a href="../../../com/exedio/cope/Condition.html" title="class in com.exedio.cope">Condition</a>&nbsp;between(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a>&nbsp;lowerBound,
-                         <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a>&nbsp;upperBound)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../com/exedio/cope/Function.html#between-E-E-">Function</a></code></span></div>
-<div class="block">Returns a condition, that is equivalent to
- <code><a href="../../../com/exedio/cope/Function.html#greaterOrEqual-E-"><code>greaterOrEqual</code></a>(lowerBound).<a href="../../../com/exedio/cope/Condition.html#and-com.exedio.cope.Condition-"><code>and</code></a>(<a href="../../../com/exedio/cope/Function.html#lessOrEqual-E-"><code>lessOrEqual</code></a>(upperBound))</code>.</div>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../com/exedio/cope/Function.html#between-E-E-">between</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/exedio/cope/Function.html" title="interface in com.exedio.cope">Function</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a>&gt;</code></dd>
-</dl>
-</li>
-</ul>
-<a name="equal-com.exedio.cope.Function-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>equal</h4>
-<pre>public final&nbsp;<a href="../../../com/exedio/cope/CompareFunctionCondition.html" title="class in com.exedio.cope">CompareFunctionCondition</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a>&gt;&nbsp;equal(<a href="../../../com/exedio/cope/Function.html" title="interface in com.exedio.cope">Function</a>&lt;? extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a>&gt;&nbsp;right)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../com/exedio/cope/Function.html#equal-com.exedio.cope.Function-">Function</a></code></span></div>
-<div class="block">Returns a condition, that is true for all items,
- if and only if the value of this function for that item
- is equal to the value of the <tt>right</tt> function.</div>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../com/exedio/cope/Function.html#equal-com.exedio.cope.Function-">equal</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/exedio/cope/Function.html" title="interface in com.exedio.cope">Function</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a>&gt;</code></dd>
-</dl>
-</li>
-</ul>
-<a name="notEqual-com.exedio.cope.Function-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>notEqual</h4>
-<pre>public final&nbsp;<a href="../../../com/exedio/cope/CompareFunctionCondition.html" title="class in com.exedio.cope">CompareFunctionCondition</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a>&gt;&nbsp;notEqual(<a href="../../../com/exedio/cope/Function.html" title="interface in com.exedio.cope">Function</a>&lt;? extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a>&gt;&nbsp;right)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../com/exedio/cope/Function.html#notEqual-com.exedio.cope.Function-">Function</a></code></span></div>
-<div class="block">Returns a condition, that is true for all items,
- if and only if the value of this function for that item
- is not equal to the value of the <tt>right</tt> function.</div>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../com/exedio/cope/Function.html#notEqual-com.exedio.cope.Function-">notEqual</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/exedio/cope/Function.html" title="interface in com.exedio.cope">Function</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a>&gt;</code></dd>
-</dl>
-</li>
-</ul>
-<a name="less-com.exedio.cope.Function-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>less</h4>
-<pre>public final&nbsp;<a href="../../../com/exedio/cope/CompareFunctionCondition.html" title="class in com.exedio.cope">CompareFunctionCondition</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a>&gt;&nbsp;less(<a href="../../../com/exedio/cope/Function.html" title="interface in com.exedio.cope">Function</a>&lt;? extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a>&gt;&nbsp;right)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../com/exedio/cope/Function.html#less-com.exedio.cope.Function-">Function</a></code></span></div>
-<div class="block">Returns a condition, that is true for all items,
- if and only if the value of this function for that item
- is less than the value of the <tt>right</tt> function.</div>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../com/exedio/cope/Function.html#less-com.exedio.cope.Function-">less</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/exedio/cope/Function.html" title="interface in com.exedio.cope">Function</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a>&gt;</code></dd>
-</dl>
-</li>
-</ul>
-<a name="lessOrEqual-com.exedio.cope.Function-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>lessOrEqual</h4>
-<pre>public final&nbsp;<a href="../../../com/exedio/cope/CompareFunctionCondition.html" title="class in com.exedio.cope">CompareFunctionCondition</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a>&gt;&nbsp;lessOrEqual(<a href="../../../com/exedio/cope/Function.html" title="interface in com.exedio.cope">Function</a>&lt;? extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a>&gt;&nbsp;right)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../com/exedio/cope/Function.html#lessOrEqual-com.exedio.cope.Function-">Function</a></code></span></div>
-<div class="block">Returns a condition, that is true for all items,
- if and only if the value of this function for that item
- is not greater than the value of the <tt>right</tt> function.</div>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../com/exedio/cope/Function.html#lessOrEqual-com.exedio.cope.Function-">lessOrEqual</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/exedio/cope/Function.html" title="interface in com.exedio.cope">Function</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a>&gt;</code></dd>
-</dl>
-</li>
-</ul>
-<a name="greater-com.exedio.cope.Function-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>greater</h4>
-<pre>public final&nbsp;<a href="../../../com/exedio/cope/CompareFunctionCondition.html" title="class in com.exedio.cope">CompareFunctionCondition</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a>&gt;&nbsp;greater(<a href="../../../com/exedio/cope/Function.html" title="interface in com.exedio.cope">Function</a>&lt;? extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a>&gt;&nbsp;right)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../com/exedio/cope/Function.html#greater-com.exedio.cope.Function-">Function</a></code></span></div>
-<div class="block">Returns a condition, that is true for all items,
- if and only if the value of this function for that item
- is greater than the value of the <tt>right</tt> function.</div>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../com/exedio/cope/Function.html#greater-com.exedio.cope.Function-">greater</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/exedio/cope/Function.html" title="interface in com.exedio.cope">Function</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a>&gt;</code></dd>
-</dl>
-</li>
-</ul>
-<a name="greaterOrEqual-com.exedio.cope.Function-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>greaterOrEqual</h4>
-<pre>public final&nbsp;<a href="../../../com/exedio/cope/CompareFunctionCondition.html" title="class in com.exedio.cope">CompareFunctionCondition</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a>&gt;&nbsp;greaterOrEqual(<a href="../../../com/exedio/cope/Function.html" title="interface in com.exedio.cope">Function</a>&lt;? extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a>&gt;&nbsp;right)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../com/exedio/cope/Function.html#greaterOrEqual-com.exedio.cope.Function-">Function</a></code></span></div>
-<div class="block">Returns a condition, that is true for all items,
- if and only if the value of this function for that item
- is not less than the value of the <tt>right</tt> function.</div>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../com/exedio/cope/Function.html#greaterOrEqual-com.exedio.cope.Function-">greaterOrEqual</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/exedio/cope/Function.html" title="interface in com.exedio.cope">Function</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a>&gt;</code></dd>
-</dl>
-</li>
-</ul>
-<a name="min--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>min</h4>
-<pre>public final&nbsp;<a href="../../../com/exedio/cope/search/ExtremumAggregate.html" title="class in com.exedio.cope.search">ExtremumAggregate</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a>&gt;&nbsp;min()</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../com/exedio/cope/Function.html#min--">min</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/exedio/cope/Function.html" title="interface in com.exedio.cope">Function</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a>&gt;</code></dd>
-</dl>
-</li>
-</ul>
-<a name="max--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>max</h4>
-<pre>public final&nbsp;<a href="../../../com/exedio/cope/search/ExtremumAggregate.html" title="class in com.exedio.cope.search">ExtremumAggregate</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a>&gt;&nbsp;max()</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../com/exedio/cope/Function.html#max--">max</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/exedio/cope/Function.html" title="interface in com.exedio.cope">Function</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a>&gt;</code></dd>
-</dl>
-</li>
-</ul>
-<a name="asString--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>asString</h4>
-<pre>public final&nbsp;<a href="../../../com/exedio/cope/AsStringView.html" title="class in com.exedio.cope">AsStringView</a>&nbsp;asString()</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../com/exedio/cope/NumberFunction.html#asString--">asString</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/exedio/cope/NumberFunction.html" title="interface in com.exedio.cope">NumberFunction</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a>&gt;</code></dd>
-</dl>
-</li>
-</ul>
-<a name="plus-java.lang.Double-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>plus</h4>
-<pre>public final&nbsp;<a href="../../../com/exedio/cope/PlusLiteralView.html" title="class in com.exedio.cope">PlusLiteralView</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a>&gt;&nbsp;plus(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a>&nbsp;value)</pre>
-<div class="block">You may want to use <a href="../../../com/exedio/cope/PlusLiteralView.html#plus-com.exedio.cope.Function-E-"><code>PlusLiteralView.plus(Function, Number)</code></a> instead, if you do not have <a href="../../../com/exedio/cope/NumberFunction.html" title="interface in com.exedio.cope"><code>NumberFunction</code></a>s available.</div>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../com/exedio/cope/NumberFunction.html#plus-E-">plus</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/exedio/cope/NumberFunction.html" title="interface in com.exedio.cope">NumberFunction</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a>&gt;</code></dd>
-</dl>
-</li>
-</ul>
-<a name="multiply-java.lang.Double-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>multiply</h4>
-<pre>public final&nbsp;<a href="../../../com/exedio/cope/MultiplyLiteralView.html" title="class in com.exedio.cope">MultiplyLiteralView</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a>&gt;&nbsp;multiply(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a>&nbsp;value)</pre>
-<div class="block">You may want to use <a href="../../../com/exedio/cope/MultiplyLiteralView.html#multiply-com.exedio.cope.Function-E-"><code>MultiplyLiteralView.multiply(Function, Number)</code></a> instead, if you do not have <a href="../../../com/exedio/cope/NumberFunction.html" title="interface in com.exedio.cope"><code>NumberFunction</code></a>s available.</div>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../com/exedio/cope/NumberFunction.html#multiply-E-">multiply</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/exedio/cope/NumberFunction.html" title="interface in com.exedio.cope">NumberFunction</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a>&gt;</code></dd>
-</dl>
-</li>
-</ul>
-<a name="plus-com.exedio.cope.NumberFunction-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>plus</h4>
-<pre>public final&nbsp;<a href="../../../com/exedio/cope/PlusView.html" title="class in com.exedio.cope">PlusView</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a>&gt;&nbsp;plus(<a href="../../../com/exedio/cope/NumberFunction.html" title="interface in com.exedio.cope">NumberFunction</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a>&gt;&nbsp;other)</pre>
-<div class="block">You may want to use <a href="../../../com/exedio/cope/PlusView.html#plus-com.exedio.cope.Function-com.exedio.cope.Function-"><code>PlusView.plus(Function, Function)</code></a> instead, if you do not have <a href="../../../com/exedio/cope/NumberFunction.html" title="interface in com.exedio.cope"><code>NumberFunction</code></a>s available.</div>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../com/exedio/cope/NumberFunction.html#plus-com.exedio.cope.NumberFunction-">plus</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/exedio/cope/NumberFunction.html" title="interface in com.exedio.cope">NumberFunction</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a>&gt;</code></dd>
-</dl>
-</li>
-</ul>
-<a name="minus-com.exedio.cope.NumberFunction-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>minus</h4>
-<pre>public final&nbsp;<a href="../../../com/exedio/cope/MinusView.html" title="class in com.exedio.cope">MinusView</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a>&gt;&nbsp;minus(<a href="../../../com/exedio/cope/NumberFunction.html" title="interface in com.exedio.cope">NumberFunction</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a>&gt;&nbsp;other)</pre>
-<div class="block">You may want to use <a href="../../../com/exedio/cope/MinusView.html#minus-com.exedio.cope.Function-com.exedio.cope.Function-"><code>MinusView.minus(Function, Function)</code></a> instead, if you do not have <a href="../../../com/exedio/cope/NumberFunction.html" title="interface in com.exedio.cope"><code>NumberFunction</code></a>s available.</div>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../com/exedio/cope/NumberFunction.html#minus-com.exedio.cope.NumberFunction-">minus</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/exedio/cope/NumberFunction.html" title="interface in com.exedio.cope">NumberFunction</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a>&gt;</code></dd>
-</dl>
-</li>
-</ul>
-<a name="multiply-com.exedio.cope.NumberFunction-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>multiply</h4>
-<pre>public final&nbsp;<a href="../../../com/exedio/cope/MultiplyView.html" title="class in com.exedio.cope">MultiplyView</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a>&gt;&nbsp;multiply(<a href="../../../com/exedio/cope/NumberFunction.html" title="interface in com.exedio.cope">NumberFunction</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a>&gt;&nbsp;other)</pre>
-<div class="block">You may want to use <a href="../../../com/exedio/cope/MultiplyView.html#multiply-com.exedio.cope.Function-com.exedio.cope.Function-"><code>MultiplyView.multiply(Function, Function)</code></a> instead, if you do not have <a href="../../../com/exedio/cope/NumberFunction.html" title="interface in com.exedio.cope"><code>NumberFunction</code></a>s available.</div>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../com/exedio/cope/NumberFunction.html#multiply-com.exedio.cope.NumberFunction-">multiply</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/exedio/cope/NumberFunction.html" title="interface in com.exedio.cope">NumberFunction</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a>&gt;</code></dd>
-</dl>
-</li>
-</ul>
-<a name="divide-com.exedio.cope.NumberFunction-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>divide</h4>
-<pre>public final&nbsp;<a href="../../../com/exedio/cope/DivideView.html" title="class in com.exedio.cope">DivideView</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a>&gt;&nbsp;divide(<a href="../../../com/exedio/cope/NumberFunction.html" title="interface in com.exedio.cope">NumberFunction</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a>&gt;&nbsp;other)</pre>
-<div class="block">You may want to use <a href="../../../com/exedio/cope/DivideView.html#divide-com.exedio.cope.Function-com.exedio.cope.Function-"><code>DivideView.divide(Function, Function)</code></a> instead, if you do not have <a href="../../../com/exedio/cope/NumberFunction.html" title="interface in com.exedio.cope"><code>NumberFunction</code></a>s available.</div>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../com/exedio/cope/NumberFunction.html#divide-com.exedio.cope.NumberFunction-">divide</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/exedio/cope/NumberFunction.html" title="interface in com.exedio.cope">NumberFunction</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a>&gt;</code></dd>
-</dl>
-</li>
-</ul>
-<a name="sum--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>sum</h4>
-<pre>public final&nbsp;<a href="../../../com/exedio/cope/search/SumAggregate.html" title="class in com.exedio.cope.search">SumAggregate</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a>&gt;&nbsp;sum()</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../com/exedio/cope/NumberFunction.html#sum--">sum</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/exedio/cope/NumberFunction.html" title="interface in com.exedio.cope">NumberFunction</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a>&gt;</code></dd>
-</dl>
-</li>
-</ul>
-<a name="average--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>average</h4>
-<pre>public final&nbsp;<a href="../../../com/exedio/cope/search/AverageAggregate.html" title="class in com.exedio.cope.search">AverageAggregate</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a>&gt;&nbsp;average()</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../com/exedio/cope/NumberFunction.html#average--">average</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/exedio/cope/NumberFunction.html" title="interface in com.exedio.cope">NumberFunction</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a>&gt;</code></dd>
-</dl>
-</li>
-</ul>
-<a name="sum-com.exedio.cope.NumberFunction-">
-<!--   -->
-</a>
-<ul class="blockListLast">
-<li class="blockList">
-<h4>sum</h4>
-<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</a>
-public final&nbsp;<a href="../../../com/exedio/cope/PlusView.html" title="class in com.exedio.cope">PlusView</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a>&gt;&nbsp;sum(<a href="../../../com/exedio/cope/NumberFunction.html" title="interface in com.exedio.cope">NumberFunction</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a>&gt;&nbsp;other)</pre>
-<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment">renamed to <a href="../../../com/exedio/cope/Random.html#plus-com.exedio.cope.NumberFunction-"><code>plus(NumberFunction)</code></a>.</span></div>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../com/exedio/cope/NumberFunction.html#sum-com.exedio.cope.NumberFunction-">sum</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/exedio/cope/NumberFunction.html" title="interface in com.exedio.cope">NumberFunction</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a>&gt;</code></dd>
 </dl>
 </li>
 </ul>

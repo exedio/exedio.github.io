@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -229,24 +229,31 @@ extends <a href="../../../../com/exedio/cope/pattern/MediaPath.html" title="clas
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/MediaRedirect.html#isContentTypeWrapped--">isContentTypeWrapped</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/MediaRedirect.html#isMandatory--">isMandatory</a></span>()</code>
+<div class="block">A MediaPath is "mandatory" if <a href="../../../../com/exedio/cope/pattern/MediaPath.html#getContentType-com.exedio.cope.Item-"><code>MediaPath.getContentType(Item)</code></a> and <a href="../../../../com/exedio/cope/pattern/MediaPath.html#getLocator-com.exedio.cope.Item-"><code>MediaPath.getLocator(Item)</code></a> will
+ not return <code>null</code> for any item.</div>
+</td>
+</tr>
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code><a href="../../../../com/exedio/cope/Condition.html" title="class in com.exedio.cope">Condition</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/MediaRedirect.html#isNotNull--">isNotNull</a></span>()</code>
 <div class="block">Returns a condition matching all items, for which <a href="../../../../com/exedio/cope/pattern/MediaPath.html#getLocator-com.exedio.cope.Item-"><code>MediaPath.getLocator(Item)</code></a> does not return null.</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="../../../../com/exedio/cope/Condition.html" title="class in com.exedio.cope">Condition</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/MediaRedirect.html#isNotNull-com.exedio.cope.Join-">isNotNull</a></span>(<a href="../../../../com/exedio/cope/Join.html" title="class in com.exedio.cope">Join</a>&nbsp;join)</code>
 <div class="block">Returns a condition matching all items, for which <a href="../../../../com/exedio/cope/pattern/MediaPath.html#getLocator-com.exedio.cope.Item-"><code>MediaPath.getLocator(Item)</code></a> does not return null.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="../../../../com/exedio/cope/Condition.html" title="class in com.exedio.cope">Condition</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/MediaRedirect.html#isNull--">isNull</a></span>()</code>
 <div class="block">Returns a condition matching all items, for which <a href="../../../../com/exedio/cope/pattern/MediaPath.html#getLocator-com.exedio.cope.Item-"><code>MediaPath.getLocator(Item)</code></a> returns null.</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code><a href="../../../../com/exedio/cope/Condition.html" title="class in com.exedio.cope">Condition</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/MediaRedirect.html#isNull-com.exedio.cope.Join-">isNull</a></span>(<a href="../../../../com/exedio/cope/Join.html" title="class in com.exedio.cope">Join</a>&nbsp;join)</code>
 <div class="block">Returns a condition matching all items, for which <a href="../../../../com/exedio/cope/pattern/MediaPath.html#getLocator-com.exedio.cope.Item-"><code>MediaPath.getLocator(Item)</code></a> returns null.</div>
@@ -265,14 +272,14 @@ extends <a href="../../../../com/exedio/cope/pattern/MediaPath.html" title="clas
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;com.exedio.cope.<a href="../../../../com/exedio/cope/Pattern.html" title="class in com.exedio.cope">Pattern</a></h3>
-<code><a href="../../../../com/exedio/cope/Pattern.html#addSource-com.exedio.cope.Feature-java.lang.String-">addSource</a>, <a href="../../../../com/exedio/cope/Pattern.html#addSource-com.exedio.cope.Feature-java.lang.String-java.lang.reflect.AnnotatedElement-">addSource</a>, <a href="../../../../com/exedio/cope/Pattern.html#addSource-com.exedio.cope.Feature-java.lang.String-java.lang.reflect.Field-">addSource</a>, <a href="../../../../com/exedio/cope/Pattern.html#annotationField-java.lang.String-">annotationField</a>, <a href="../../../../com/exedio/cope/Pattern.html#getGeneratedTypes--">getGeneratedTypes</a>, <a href="../../../../com/exedio/cope/Pattern.html#getSourceFeatures--">getSourceFeatures</a>, <a href="../../../../com/exedio/cope/Pattern.html#getSourceFields--">getSourceFields</a>, <a href="../../../../com/exedio/cope/Pattern.html#getSources--">getSources</a>, <a href="../../../../com/exedio/cope/Pattern.html#getSourceTypes--">getSourceTypes</a>, <a href="../../../../com/exedio/cope/Pattern.html#getType--">getType</a>, <a href="../../../../com/exedio/cope/Pattern.html#initialize--">initialize</a>, <a href="../../../../com/exedio/cope/Pattern.html#newSourceType-java.lang.Class-boolean-com.exedio.cope.Type-com.exedio.cope.Features-java.lang.String-">newSourceType</a>, <a href="../../../../com/exedio/cope/Pattern.html#newSourceType-java.lang.Class-boolean-com.exedio.cope.Type-java.util.LinkedHashMap-java.lang.String-">newSourceType</a>, <a href="../../../../com/exedio/cope/Pattern.html#newSourceType-java.lang.Class-com.exedio.cope.Features-">newSourceType</a>, <a href="../../../../com/exedio/cope/Pattern.html#newSourceType-java.lang.Class-com.exedio.cope.Features-java.lang.String-">newSourceType</a>, <a href="../../../../com/exedio/cope/Pattern.html#newSourceType-java.lang.Class-java.util.LinkedHashMap-">newSourceType</a>, <a href="../../../../com/exedio/cope/Pattern.html#newSourceType-java.lang.Class-java.util.LinkedHashMap-java.lang.String-">newSourceType</a>, <a href="../../../../com/exedio/cope/Pattern.html#newType-java.lang.Class-java.util.LinkedHashMap-">newType</a>, <a href="../../../../com/exedio/cope/Pattern.html#newType-java.lang.Class-java.util.LinkedHashMap-java.lang.String-">newType</a>, <a href="../../../../com/exedio/cope/Pattern.html#registerSource-com.exedio.cope.Field-java.lang.String-">registerSource</a></code></li>
+<code><a href="../../../../com/exedio/cope/Pattern.html#addSource-com.exedio.cope.Feature-java.lang.String-">addSource</a>, <a href="../../../../com/exedio/cope/Pattern.html#addSource-com.exedio.cope.Feature-java.lang.String-java.lang.reflect.AnnotatedElement-">addSource</a>, <a href="../../../../com/exedio/cope/Pattern.html#addSource-com.exedio.cope.Feature-java.lang.String-java.lang.reflect.AnnotatedElement-java.lang.Class-">addSource</a>, <a href="../../../../com/exedio/cope/Pattern.html#addSource-com.exedio.cope.Feature-java.lang.String-java.lang.reflect.Field-">addSource</a>, <a href="../../../../com/exedio/cope/Pattern.html#annotationField-java.lang.String-">annotationField</a>, <a href="../../../../com/exedio/cope/Pattern.html#getGeneratedTypes--">getGeneratedTypes</a>, <a href="../../../../com/exedio/cope/Pattern.html#getSourceFeatures--">getSourceFeatures</a>, <a href="../../../../com/exedio/cope/Pattern.html#getSourceFeaturesGather--">getSourceFeaturesGather</a>, <a href="../../../../com/exedio/cope/Pattern.html#getSourceFields--">getSourceFields</a>, <a href="../../../../com/exedio/cope/Pattern.html#getSources--">getSources</a>, <a href="../../../../com/exedio/cope/Pattern.html#getSourceTypes--">getSourceTypes</a>, <a href="../../../../com/exedio/cope/Pattern.html#getType--">getType</a>, <a href="../../../../com/exedio/cope/Pattern.html#initialize--">initialize</a>, <a href="../../../../com/exedio/cope/Pattern.html#newSourceType-java.lang.Class-boolean-com.exedio.cope.Type-com.exedio.cope.Features-java.lang.String-">newSourceType</a>, <a href="../../../../com/exedio/cope/Pattern.html#newSourceType-java.lang.Class-boolean-com.exedio.cope.Type-java.util.LinkedHashMap-java.lang.String-">newSourceType</a>, <a href="../../../../com/exedio/cope/Pattern.html#newSourceType-java.lang.Class-com.exedio.cope.Features-">newSourceType</a>, <a href="../../../../com/exedio/cope/Pattern.html#newSourceType-java.lang.Class-com.exedio.cope.Features-java.lang.String-">newSourceType</a>, <a href="../../../../com/exedio/cope/Pattern.html#newSourceType-java.lang.Class-java.util.LinkedHashMap-">newSourceType</a>, <a href="../../../../com/exedio/cope/Pattern.html#newSourceType-java.lang.Class-java.util.LinkedHashMap-java.lang.String-">newSourceType</a>, <a href="../../../../com/exedio/cope/Pattern.html#newType-java.lang.Class-java.util.LinkedHashMap-">newType</a>, <a href="../../../../com/exedio/cope/Pattern.html#newType-java.lang.Class-java.util.LinkedHashMap-java.lang.String-">newType</a>, <a href="../../../../com/exedio/cope/Pattern.html#registerSource-com.exedio.cope.Field-java.lang.String-">registerSource</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.com.exedio.cope.Feature">
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;com.exedio.cope.<a href="../../../../com/exedio/cope/Feature.html" title="class in com.exedio.cope">Feature</a></h3>
-<code><a href="../../../../com/exedio/cope/Feature.html#afterModelCreated--">afterModelCreated</a>, <a href="../../../../com/exedio/cope/Feature.html#getAnnotation-java.lang.Class-">getAnnotation</a>, <a href="../../../../com/exedio/cope/Feature.html#getID--">getID</a>, <a href="../../../../com/exedio/cope/Feature.html#getName--">getName</a>, <a href="../../../../com/exedio/cope/Feature.html#getPattern--">getPattern</a>, <a href="../../../../com/exedio/cope/Feature.html#getWrappers--">getWrappers</a>, <a href="../../../../com/exedio/cope/Feature.html#isAnnotationPresent-java.lang.Class-">isAnnotationPresent</a>, <a href="../../../../com/exedio/cope/Feature.html#isSourceAlready--">isSourceAlready</a>, <a href="../../../../com/exedio/cope/Feature.html#mount-java.lang.String-java.io.Serializable-java.lang.reflect.AnnotatedElement-">mount</a>, <a href="../../../../com/exedio/cope/Feature.html#readResolve--">readResolve</a>, <a href="../../../../com/exedio/cope/Feature.html#toString--">toString</a>, <a href="../../../../com/exedio/cope/Feature.html#toString-java.lang.StringBuilder-com.exedio.cope.Type-">toString</a>, <a href="../../../../com/exedio/cope/Feature.html#writeReplace--">writeReplace</a></code></li>
+<code><a href="../../../../com/exedio/cope/Feature.html#afterModelCreated--">afterModelCreated</a>, <a href="../../../../com/exedio/cope/Feature.html#getAbstractType--">getAbstractType</a>, <a href="../../../../com/exedio/cope/Feature.html#getAnnotation-java.lang.Class-">getAnnotation</a>, <a href="../../../../com/exedio/cope/Feature.html#getID--">getID</a>, <a href="../../../../com/exedio/cope/Feature.html#getLocalizationKeys--">getLocalizationKeys</a>, <a href="../../../../com/exedio/cope/Feature.html#getName--">getName</a>, <a href="../../../../com/exedio/cope/Feature.html#getPattern--">getPattern</a>, <a href="../../../../com/exedio/cope/Feature.html#isAnnotationPresent-java.lang.Class-">isAnnotationPresent</a>, <a href="../../../../com/exedio/cope/Feature.html#isSourceAlready--">isSourceAlready</a>, <a href="../../../../com/exedio/cope/Feature.html#mount-com.exedio.cope.AbstractType-java.lang.String-java.lang.String-java.io.Serializable-java.lang.reflect.AnnotatedElement-">mount</a>, <a href="../../../../com/exedio/cope/Feature.html#readResolve--">readResolve</a>, <a href="../../../../com/exedio/cope/Feature.html#requireMounted-T-">requireMounted</a>, <a href="../../../../com/exedio/cope/Feature.html#toString--">toString</a>, <a href="../../../../com/exedio/cope/Feature.html#toString-java.lang.StringBuilder-com.exedio.cope.Type-">toString</a>, <a href="../../../../com/exedio/cope/Feature.html#writeReplace--">writeReplace</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
@@ -321,6 +328,22 @@ public&nbsp;MediaRedirect(<a href="../../../../com/exedio/cope/pattern/MediaPath
 <li class="blockList">
 <h4>getTarget</h4>
 <pre>public&nbsp;<a href="../../../../com/exedio/cope/pattern/MediaPath.html" title="class in com.exedio.cope.pattern">MediaPath</a>&nbsp;getTarget()</pre>
+</li>
+</ul>
+<a name="isMandatory--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>isMandatory</h4>
+<pre>public&nbsp;boolean&nbsp;isMandatory()</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../../../com/exedio/cope/pattern/MediaPath.html#isMandatory--">MediaPath</a></code></span></div>
+<div class="block">A MediaPath is "mandatory" if <a href="../../../../com/exedio/cope/pattern/MediaPath.html#getContentType-com.exedio.cope.Item-"><code>MediaPath.getContentType(Item)</code></a> and <a href="../../../../com/exedio/cope/pattern/MediaPath.html#getLocator-com.exedio.cope.Item-"><code>MediaPath.getLocator(Item)</code></a> will
+ not return <code>null</code> for any item.</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../com/exedio/cope/pattern/MediaPath.html#isMandatory--">isMandatory</a></code>&nbsp;in class&nbsp;<code><a href="../../../../com/exedio/cope/pattern/MediaPath.html" title="class in com.exedio.cope.pattern">MediaPath</a></code></dd>
+</dl>
 </li>
 </ul>
 <a name="getContentType-com.exedio.cope.Item-">
@@ -381,7 +404,7 @@ public&nbsp;MediaRedirect(<a href="../../../../com/exedio/cope/pattern/MediaPath
 <div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../../../com/exedio/cope/pattern/MediaPath.html#isNull--">MediaPath</a></code></span></div>
 <div class="block">Returns a condition matching all items, for which <a href="../../../../com/exedio/cope/pattern/MediaPath.html#getLocator-com.exedio.cope.Item-"><code>MediaPath.getLocator(Item)</code></a> returns null.</div>
 <dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../../com/exedio/cope/pattern/MediaPath.html#isNull--">isNull</a></code>&nbsp;in class&nbsp;<code><a href="../../../../com/exedio/cope/pattern/MediaPath.html" title="class in com.exedio.cope.pattern">MediaPath</a></code></dd>
 </dl>
 </li>
@@ -396,8 +419,10 @@ public&nbsp;MediaRedirect(<a href="../../../../com/exedio/cope/pattern/MediaPath
 <div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../../../com/exedio/cope/pattern/MediaPath.html#isNull-com.exedio.cope.Join-">MediaPath</a></code></span></div>
 <div class="block">Returns a condition matching all items, for which <a href="../../../../com/exedio/cope/pattern/MediaPath.html#getLocator-com.exedio.cope.Item-"><code>MediaPath.getLocator(Item)</code></a> returns null.</div>
 <dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../../com/exedio/cope/pattern/MediaPath.html#isNull-com.exedio.cope.Join-">isNull</a></code>&nbsp;in class&nbsp;<code><a href="../../../../com/exedio/cope/pattern/MediaPath.html" title="class in com.exedio.cope.pattern">MediaPath</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>join</code> - the join the returned condition should be bound to</dd>
 </dl>
 </li>
 </ul>
@@ -411,7 +436,7 @@ public&nbsp;MediaRedirect(<a href="../../../../com/exedio/cope/pattern/MediaPath
 <div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../../../com/exedio/cope/pattern/MediaPath.html#isNotNull--">MediaPath</a></code></span></div>
 <div class="block">Returns a condition matching all items, for which <a href="../../../../com/exedio/cope/pattern/MediaPath.html#getLocator-com.exedio.cope.Item-"><code>MediaPath.getLocator(Item)</code></a> does not return null.</div>
 <dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../../com/exedio/cope/pattern/MediaPath.html#isNotNull--">isNotNull</a></code>&nbsp;in class&nbsp;<code><a href="../../../../com/exedio/cope/pattern/MediaPath.html" title="class in com.exedio.cope.pattern">MediaPath</a></code></dd>
 </dl>
 </li>
@@ -426,8 +451,10 @@ public&nbsp;MediaRedirect(<a href="../../../../com/exedio/cope/pattern/MediaPath
 <div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../../../com/exedio/cope/pattern/MediaPath.html#isNotNull-com.exedio.cope.Join-">MediaPath</a></code></span></div>
 <div class="block">Returns a condition matching all items, for which <a href="../../../../com/exedio/cope/pattern/MediaPath.html#getLocator-com.exedio.cope.Item-"><code>MediaPath.getLocator(Item)</code></a> does not return null.</div>
 <dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../../com/exedio/cope/pattern/MediaPath.html#isNotNull-com.exedio.cope.Join-">isNotNull</a></code>&nbsp;in class&nbsp;<code><a href="../../../../com/exedio/cope/pattern/MediaPath.html" title="class in com.exedio.cope.pattern">MediaPath</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>join</code> - the join the returned condition should be bound to</dd>
 </dl>
 </li>
 </ul>

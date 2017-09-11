@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":9};
+var methods = {"i0":9,"i1":9,"i2":9};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -127,12 +127,17 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
+<td class="colFirst"><code>static &lt;E&gt;&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Iterator.html?is-external=true" title="class or interface in java.util">Iterator</a>&lt;E&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/misc/QueryIterators.html#iterateStableQuery-com.exedio.cope.Query-int-">iterateStableQuery</a></span>(<a href="../../../../com/exedio/cope/Query.html" title="class in com.exedio.cope">Query</a>&lt;E&gt;&nbsp;query,
+                  int&nbsp;slice)</code>&nbsp;</td>
+</tr>
+<tr id="i1" class="rowColor">
 <td class="colFirst"><code>static &lt;E extends <a href="../../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&gt;<br><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Iterator.html?is-external=true" title="class or interface in java.util">Iterator</a>&lt;E&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/misc/QueryIterators.html#iterateType-com.exedio.cope.Type-com.exedio.cope.Condition-int-">iterateType</a></span>(<a href="../../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;E&gt;&nbsp;type,
            <a href="../../../../com/exedio/cope/Condition.html" title="class in com.exedio.cope">Condition</a>&nbsp;condition,
            int&nbsp;slice)</code>&nbsp;</td>
 </tr>
-<tr id="i1" class="rowColor">
+<tr id="i2" class="altColor">
 <td class="colFirst"><code>static &lt;E extends <a href="../../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&gt;<br><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Iterator.html?is-external=true" title="class or interface in java.util">Iterator</a>&lt;E&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/misc/QueryIterators.html#iterateTypeTransactionally-com.exedio.cope.Type-com.exedio.cope.Condition-int-">iterateTypeTransactionally</a></span>(<a href="../../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;E&gt;&nbsp;type,
                           <a href="../../../../com/exedio/cope/Condition.html" title="class in com.exedio.cope">Condition</a>&nbsp;condition,
@@ -177,7 +182,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <a name="iterateTypeTransactionally-com.exedio.cope.Type-com.exedio.cope.Condition-int-">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>iterateTypeTransactionally</h4>
 <pre>public static&nbsp;&lt;E extends <a href="../../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&gt;&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Iterator.html?is-external=true" title="class or interface in java.util">Iterator</a>&lt;E&gt;&nbsp;iterateTypeTransactionally(<a href="../../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;E&gt;&nbsp;type,
@@ -185,6 +190,28 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
                                                                       int&nbsp;slice)</pre>
 <div class="block">Works as <a href="../../../../com/exedio/cope/misc/QueryIterators.html#iterateType-com.exedio.cope.Type-com.exedio.cope.Condition-int-"><code>iterateType(Type, Condition, int)</code></a>
  but creates its own transaction whenever needed.</div>
+</li>
+</ul>
+<a name="iterateStableQuery-com.exedio.cope.Query-int-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>iterateStableQuery</h4>
+<pre>public static&nbsp;&lt;E&gt;&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Iterator.html?is-external=true" title="class or interface in java.util">Iterator</a>&lt;E&gt;&nbsp;iterateStableQuery(<a href="../../../../com/exedio/cope/Query.html" title="class in com.exedio.cope">Query</a>&lt;E&gt;&nbsp;query,
+                                                 int&nbsp;slice)</pre>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>query</code> - <b>BEWARE:</b>
+ The mechanism of this iterator works only,
+ if the query result is stable.
+ This means, the result of the query does not change while iterating.
+ Otherwise, the iterator may miss some results,
+ or return duplicates.
+ Consider using
+ <a href="../../../../com/exedio/cope/misc/QueryIterators.html#iterateType-com.exedio.cope.Type-com.exedio.cope.Condition-int-"><code>iterateType(com.exedio.cope.Type, com.exedio.cope.Condition, int)</code></a>
+ to deal with unstable queries.</dd>
+</dl>
 </li>
 </ul>
 </li>

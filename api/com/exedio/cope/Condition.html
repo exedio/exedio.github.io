@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":6,"i2":6,"i3":6,"i4":10,"i5":10,"i6":10,"i7":9};
+var methods = {"i0":10,"i1":6,"i2":10,"i3":6,"i4":10,"i5":10,"i6":10,"i7":9};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -188,7 +188,7 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializab
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Condition.html#equals-java.lang.Object-">equals</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;o)</code>&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code>abstract boolean</code></td>
+<td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Condition.html#get-com.exedio.cope.Item-">get</a></span>(<a href="../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&nbsp;item)</code>&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
@@ -285,7 +285,8 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializab
 <ul class="blockList">
 <li class="blockList">
 <h4>get</h4>
-<pre>public abstract&nbsp;boolean&nbsp;get(<a href="../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&nbsp;item)</pre>
+<pre>public final&nbsp;boolean&nbsp;get(<a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+                         <a href="../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&nbsp;item)</pre>
 </li>
 </ul>
 <a name="not--">

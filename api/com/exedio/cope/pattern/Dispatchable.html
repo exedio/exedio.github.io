@@ -17,8 +17,8 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":6,"i1":6};
-var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
+var methods = {"i0":6,"i1":18,"i2":18};
+var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],16:["t5","Default Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
 var tableTab = "tableTab";
@@ -46,7 +46,7 @@ var activeTableTab = "activeTableTab";
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../../com/exedio/cope/pattern/CompositeField.html" title="class in com.exedio.cope.pattern"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../../com/exedio/cope/pattern/CopeEnumFallback.html" title="annotation in com.exedio.cope.pattern"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
 <li><a href="../../../../com/exedio/cope/pattern/DispatchDeferrable.html" title="interface in com.exedio.cope.pattern"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
@@ -100,9 +100,14 @@ var activeTableTab = "activeTableTab";
 <dt>All Known Subinterfaces:</dt>
 <dd><a href="../../../../com/exedio/cope/pattern/DispatchDeferrable.html" title="interface in com.exedio.cope.pattern">DispatchDeferrable</a></dd>
 </dl>
+<dl>
+<dt>Functional Interface:</dt>
+<dd>This is a functional interface and can therefore be used as the assignment target for a lambda expression or method reference.</dd>
+</dl>
 <hr>
 <br>
-<pre>public interface <span class="typeNameLabel">Dispatchable</span></pre>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/FunctionalInterface.html?is-external=true" title="class or interface in java.lang">@FunctionalInterface</a>
+public interface <span class="typeNameLabel">Dispatchable</span></pre>
 </li>
 </ul>
 </div>
@@ -116,7 +121,7 @@ var activeTableTab = "activeTableTab";
 </a>
 <h3>Method Summary</h3>
 <table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
-<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t3" class="tableTab"><span><a href="javascript:show(4);">Abstract Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
+<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t3" class="tableTab"><span><a href="javascript:show(4);">Abstract Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t5" class="tableTab"><span><a href="javascript:show(16);">Default Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
 <tr>
 <th class="colFirst" scope="col">Modifier and Type</th>
 <th class="colLast" scope="col">Method and Description</th>
@@ -126,9 +131,19 @@ var activeTableTab = "activeTableTab";
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/Dispatchable.html#dispatch-com.exedio.cope.pattern.Dispatcher-">dispatch</a></span>(<a href="../../../../com/exedio/cope/pattern/Dispatcher.html" title="class in com.exedio.cope.pattern">Dispatcher</a>&nbsp;dispatcher)</code>&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code>void</code></td>
+<td class="colFirst"><code>default boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/Dispatchable.html#isDeferred-com.exedio.cope.pattern.Dispatcher-">isDeferred</a></span>(<a href="../../../../com/exedio/cope/pattern/Dispatcher.html" title="class in com.exedio.cope.pattern">Dispatcher</a>&nbsp;dispatcher)</code>
+<div class="block">Allows to defer
+ <a href="../../../../com/exedio/cope/pattern/Dispatchable.html#dispatch-com.exedio.cope.pattern.Dispatcher-"><code>dispatching</code></a>
+ an item even if it is pending.</div>
+</td>
+</tr>
+<tr id="i2" class="altColor">
+<td class="colFirst"><code>default void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/Dispatchable.html#notifyFinalFailure-com.exedio.cope.pattern.Dispatcher-java.lang.Exception-">notifyFinalFailure</a></span>(<a href="../../../../com/exedio/cope/pattern/Dispatcher.html" title="class in com.exedio.cope.pattern">Dispatcher</a>&nbsp;dispatcher,
-                  <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Exception.html?is-external=true" title="class or interface in java.lang">Exception</a>&nbsp;cause)</code>&nbsp;</td>
+                  <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Exception.html?is-external=true" title="class or interface in java.lang">Exception</a>&nbsp;cause)</code>
+<div class="block">The default implementation does nothing.</div>
+</td>
 </tr>
 </table>
 </li>
@@ -159,14 +174,38 @@ var activeTableTab = "activeTableTab";
 </dl>
 </li>
 </ul>
+<a name="isDeferred-com.exedio.cope.pattern.Dispatcher-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>isDeferred</h4>
+<pre>default&nbsp;boolean&nbsp;isDeferred(<a href="../../../../com/exedio/cope/pattern/Dispatcher.html" title="class in com.exedio.cope.pattern">Dispatcher</a>&nbsp;dispatcher)</pre>
+<div class="block">Allows to defer
+ <a href="../../../../com/exedio/cope/pattern/Dispatchable.html#dispatch-com.exedio.cope.pattern.Dispatcher-"><code>dispatching</code></a>
+ an item even if it is pending.
+ <p>
+ The default implementation returns false.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>dispatcher</code> - used by subclasses</dd>
+</dl>
+</li>
+</ul>
 <a name="notifyFinalFailure-com.exedio.cope.pattern.Dispatcher-java.lang.Exception-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>notifyFinalFailure</h4>
-<pre>void&nbsp;notifyFinalFailure(<a href="../../../../com/exedio/cope/pattern/Dispatcher.html" title="class in com.exedio.cope.pattern">Dispatcher</a>&nbsp;dispatcher,
-                        <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Exception.html?is-external=true" title="class or interface in java.lang">Exception</a>&nbsp;cause)</pre>
+<pre>default&nbsp;void&nbsp;notifyFinalFailure(<a href="../../../../com/exedio/cope/pattern/Dispatcher.html" title="class in com.exedio.cope.pattern">Dispatcher</a>&nbsp;dispatcher,
+                                <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Exception.html?is-external=true" title="class or interface in java.lang">Exception</a>&nbsp;cause)</pre>
+<div class="block">The default implementation does nothing.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>dispatcher</code> - used by subclasses</dd>
+<dd><code>cause</code> - used by subclasses</dd>
+</dl>
 </li>
 </ul>
 </li>
@@ -195,7 +234,7 @@ var activeTableTab = "activeTableTab";
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../../com/exedio/cope/pattern/CompositeField.html" title="class in com.exedio.cope.pattern"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../../com/exedio/cope/pattern/CopeEnumFallback.html" title="annotation in com.exedio.cope.pattern"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
 <li><a href="../../../../com/exedio/cope/pattern/DispatchDeferrable.html" title="interface in com.exedio.cope.pattern"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">

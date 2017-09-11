@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":42,"i1":42,"i2":10,"i3":10,"i4":10,"i5":10,"i6":42,"i7":10,"i8":10,"i9":10,"i10":10,"i11":9,"i12":9,"i13":42,"i14":10,"i15":10,"i16":10,"i17":42,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":10,"i27":10,"i28":10,"i29":10,"i30":10,"i31":10,"i32":10,"i33":10,"i34":10,"i35":42,"i36":42,"i37":42,"i38":42,"i39":42,"i40":42,"i41":42,"i42":42,"i43":42,"i44":42,"i45":10};
+var methods = {"i0":42,"i1":42,"i2":10,"i3":10,"i4":10,"i5":42,"i6":42,"i7":10,"i8":10,"i9":10,"i10":10,"i11":9,"i12":9,"i13":9,"i14":42,"i15":10,"i16":42,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"],32:["t6","Deprecated Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -46,7 +46,7 @@ var activeTableTab = "activeTableTab";
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../com/exedio/cope/ItemCacheInfo.html" title="class in com.exedio.cope"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../com/exedio/cope/ItemCacheStatistics.html" title="class in com.exedio.cope"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
 <li><a href="../../../com/exedio/cope/ItemField.DeletePolicy.html" title="enum in com.exedio.cope"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
@@ -196,14 +196,10 @@ implements <a href="../../../com/exedio/cope/ItemFunction.html" title="interface
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/ItemField.html#asExtends-java.lang.Class-">asExtends</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;X&gt;&nbsp;clazz)</code>&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
-<td class="colFirst"><code><a href="../../../com/exedio/cope/BindItemFunction.html" title="class in com.exedio.cope">BindItemFunction</a>&lt;<a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/ItemField.html#bind-com.exedio.cope.Join-">bind</a></span>(<a href="../../../com/exedio/cope/Join.html" title="class in com.exedio.cope">Join</a>&nbsp;join)</code>&nbsp;</td>
-</tr>
-<tr id="i5" class="rowColor">
 <td class="colFirst"><code><a href="../../../com/exedio/cope/ItemField.html" title="class in com.exedio.cope">ItemField</a>&lt;<a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/ItemField.html#cascade--">cascade</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>&lt;X extends <a href="../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&gt;<br><a href="../../../com/exedio/cope/ItemField.html" title="class in com.exedio.cope">ItemField</a>&lt;X&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/ItemField.html#cast-java.lang.Class-">cast</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;X&gt;&nbsp;clazz)</code>
 <div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
@@ -211,9 +207,15 @@ implements <a href="../../../com/exedio/cope/ItemFunction.html" title="interface
 </div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/ItemField.html#checkTypeColumn--">checkTypeColumn</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/ItemField.html#checkTypeColumn--">checkTypeColumn</a></span>()</code>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
+</td>
+</tr>
+<tr id="i7" class="rowColor">
+<td class="colFirst"><code>long</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/ItemField.html#checkTypeColumnL--">checkTypeColumnL</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code><a href="../../../com/exedio/cope/ItemField.html" title="class in com.exedio.cope">ItemField</a>&lt;<a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a>&gt;</code></td>
@@ -237,6 +239,12 @@ implements <a href="../../../com/exedio/cope/ItemFunction.html" title="interface
       <a href="../../../com/exedio/cope/ItemField.DeletePolicy.html" title="enum in com.exedio.cope">ItemField.DeletePolicy</a>&nbsp;policy)</code>&nbsp;</td>
 </tr>
 <tr id="i13" class="rowColor">
+<td class="colFirst"><code>static &lt;E extends <a href="../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&gt;<br><a href="../../../com/exedio/cope/ItemField.html" title="class in com.exedio.cope">ItemField</a>&lt;E&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/ItemField.html#create-java.lang.Class-com.exedio.cope.TypeFuture-com.exedio.cope.ItemField.DeletePolicy-">create</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;E&gt;&nbsp;valueClass,
+      <a href="../../../com/exedio/cope/TypeFuture.html" title="interface in com.exedio.cope">TypeFuture</a>&lt;E&gt;&nbsp;valueType,
+      <a href="../../../com/exedio/cope/ItemField.DeletePolicy.html" title="enum in com.exedio.cope">ItemField.DeletePolicy</a>&nbsp;policy)</code>&nbsp;</td>
+</tr>
+<tr id="i14" class="altColor">
 <td class="colFirst"><code><a href="../../../com/exedio/cope/ItemField.html" title="class in com.exedio.cope">ItemField</a>&lt;<a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/ItemField.html#defaultTo-E-">defaultTo</a></span>(<a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a>&nbsp;defaultConstant)</code>
 <div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
@@ -244,19 +252,11 @@ implements <a href="../../../com/exedio/cope/ItemFunction.html" title="interface
 </div>
 </td>
 </tr>
-<tr id="i14" class="altColor">
-<td class="colFirst"><code><a href="../../../com/exedio/cope/CompareFunctionCondition.html" title="class in com.exedio.cope">CompareFunctionCondition</a>&lt;?&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/ItemField.html#equalTarget--">equalTarget</a></span>()</code>&nbsp;</td>
-</tr>
 <tr id="i15" class="rowColor">
-<td class="colFirst"><code><a href="../../../com/exedio/cope/CompareFunctionCondition.html" title="class in com.exedio.cope">CompareFunctionCondition</a>&lt;?&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/ItemField.html#equalTarget-com.exedio.cope.Join-">equalTarget</a></span>(<a href="../../../com/exedio/cope/Join.html" title="class in com.exedio.cope">Join</a>&nbsp;targetJoin)</code>&nbsp;</td>
-</tr>
-<tr id="i16" class="altColor">
 <td class="colFirst"><code><a href="../../../com/exedio/cope/ItemField.DeletePolicy.html" title="enum in com.exedio.cope">ItemField.DeletePolicy</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/ItemField.html#getDeletePolicy--">getDeletePolicy</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i17" class="rowColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/ItemField.html#getTypeColumnName--">getTypeColumnName</a></span>()</code>
 <div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
@@ -264,83 +264,31 @@ implements <a href="../../../com/exedio/cope/ItemFunction.html" title="interface
 </div>
 </td>
 </tr>
-<tr id="i18" class="altColor">
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code><a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;<a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/ItemField.html#getValueType--">getValueType</a></span>()</code>
 <div class="block">Returns the type of items, this field accepts instances of.</div>
 </td>
 </tr>
-<tr id="i19" class="rowColor">
-<td class="colFirst"><code><a href="../../../com/exedio/cope/InstanceOfCondition.html" title="class in com.exedio.cope">InstanceOfCondition</a>&lt;<a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/ItemField.html#instanceOf-com.exedio.cope.Type:A-">instanceOf</a></span>(<a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>[]&nbsp;types)</code>&nbsp;</td>
-</tr>
-<tr id="i20" class="altColor">
-<td class="colFirst"><code><a href="../../../com/exedio/cope/InstanceOfCondition.html" title="class in com.exedio.cope">InstanceOfCondition</a>&lt;<a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/ItemField.html#instanceOf-com.exedio.cope.Type-">instanceOf</a></span>(<a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;? extends <a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a>&gt;&nbsp;type1)</code>&nbsp;</td>
-</tr>
-<tr id="i21" class="rowColor">
-<td class="colFirst"><code><a href="../../../com/exedio/cope/InstanceOfCondition.html" title="class in com.exedio.cope">InstanceOfCondition</a>&lt;<a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/ItemField.html#instanceOf-com.exedio.cope.Type-com.exedio.cope.Type-">instanceOf</a></span>(<a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;? extends <a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a>&gt;&nbsp;type1,
-          <a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;? extends <a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a>&gt;&nbsp;type2)</code>&nbsp;</td>
-</tr>
-<tr id="i22" class="altColor">
-<td class="colFirst"><code><a href="../../../com/exedio/cope/InstanceOfCondition.html" title="class in com.exedio.cope">InstanceOfCondition</a>&lt;<a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/ItemField.html#instanceOf-com.exedio.cope.Type-com.exedio.cope.Type-com.exedio.cope.Type-">instanceOf</a></span>(<a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;? extends <a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a>&gt;&nbsp;type1,
-          <a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;? extends <a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a>&gt;&nbsp;type2,
-          <a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;? extends <a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a>&gt;&nbsp;type3)</code>&nbsp;</td>
-</tr>
-<tr id="i23" class="rowColor">
-<td class="colFirst"><code><a href="../../../com/exedio/cope/InstanceOfCondition.html" title="class in com.exedio.cope">InstanceOfCondition</a>&lt;<a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/ItemField.html#instanceOf-com.exedio.cope.Type-com.exedio.cope.Type-com.exedio.cope.Type-com.exedio.cope.Type-">instanceOf</a></span>(<a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;? extends <a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a>&gt;&nbsp;type1,
-          <a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;? extends <a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a>&gt;&nbsp;type2,
-          <a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;? extends <a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a>&gt;&nbsp;type3,
-          <a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;<a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a>&gt;&nbsp;type4)</code>&nbsp;</td>
-</tr>
-<tr id="i24" class="altColor">
+<tr id="i18" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/ItemField.html#needsCheckTypeColumn--">needsCheckTypeColumn</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i25" class="rowColor">
+<tr id="i19" class="rowColor">
 <td class="colFirst"><code><a href="../../../com/exedio/cope/ItemField.html" title="class in com.exedio.cope">ItemField</a>&lt;<a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/ItemField.html#noDefault--">noDefault</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i26" class="altColor">
+<tr id="i20" class="altColor">
 <td class="colFirst"><code><a href="../../../com/exedio/cope/ItemField.html" title="class in com.exedio.cope">ItemField</a>&lt;<a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/ItemField.html#nonUnique--">nonUnique</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i27" class="rowColor">
-<td class="colFirst"><code><a href="../../../com/exedio/cope/InstanceOfCondition.html" title="class in com.exedio.cope">InstanceOfCondition</a>&lt;<a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/ItemField.html#notInstanceOf-com.exedio.cope.Type:A-">notInstanceOf</a></span>(<a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>[]&nbsp;types)</code>&nbsp;</td>
-</tr>
-<tr id="i28" class="altColor">
-<td class="colFirst"><code><a href="../../../com/exedio/cope/InstanceOfCondition.html" title="class in com.exedio.cope">InstanceOfCondition</a>&lt;<a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/ItemField.html#notInstanceOf-com.exedio.cope.Type-">notInstanceOf</a></span>(<a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;? extends <a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a>&gt;&nbsp;type1)</code>&nbsp;</td>
-</tr>
-<tr id="i29" class="rowColor">
-<td class="colFirst"><code><a href="../../../com/exedio/cope/InstanceOfCondition.html" title="class in com.exedio.cope">InstanceOfCondition</a>&lt;<a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/ItemField.html#notInstanceOf-com.exedio.cope.Type-com.exedio.cope.Type-">notInstanceOf</a></span>(<a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;? extends <a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a>&gt;&nbsp;type1,
-             <a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;? extends <a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a>&gt;&nbsp;type2)</code>&nbsp;</td>
-</tr>
-<tr id="i30" class="altColor">
-<td class="colFirst"><code><a href="../../../com/exedio/cope/InstanceOfCondition.html" title="class in com.exedio.cope">InstanceOfCondition</a>&lt;<a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/ItemField.html#notInstanceOf-com.exedio.cope.Type-com.exedio.cope.Type-com.exedio.cope.Type-">notInstanceOf</a></span>(<a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;? extends <a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a>&gt;&nbsp;type1,
-             <a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;? extends <a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a>&gt;&nbsp;type2,
-             <a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;? extends <a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a>&gt;&nbsp;type3)</code>&nbsp;</td>
-</tr>
-<tr id="i31" class="rowColor">
-<td class="colFirst"><code><a href="../../../com/exedio/cope/InstanceOfCondition.html" title="class in com.exedio.cope">InstanceOfCondition</a>&lt;<a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/ItemField.html#notInstanceOf-com.exedio.cope.Type-com.exedio.cope.Type-com.exedio.cope.Type-com.exedio.cope.Type-">notInstanceOf</a></span>(<a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;? extends <a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a>&gt;&nbsp;type1,
-             <a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;? extends <a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a>&gt;&nbsp;type2,
-             <a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;? extends <a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a>&gt;&nbsp;type3,
-             <a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;<a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a>&gt;&nbsp;type4)</code>&nbsp;</td>
-</tr>
-<tr id="i32" class="altColor">
+<tr id="i21" class="rowColor">
 <td class="colFirst"><code><a href="../../../com/exedio/cope/ItemField.html" title="class in com.exedio.cope">ItemField</a>&lt;<a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/ItemField.html#nullify--">nullify</a></span>()</code>
 <div class="block">Additionally makes the field <a href="../../../com/exedio/cope/ItemField.html#optional--"><code>optional</code></a>.</div>
 </td>
 </tr>
-<tr id="i33" class="rowColor">
+<tr id="i22" class="altColor">
 <td class="colFirst"><code><a href="../../../com/exedio/cope/ItemField.html" title="class in com.exedio.cope">ItemField</a>&lt;<a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/ItemField.html#optional--">optional</a></span>()</code>
 <div class="block">Returns a new Field,
@@ -348,7 +296,7 @@ implements <a href="../../../com/exedio/cope/ItemFunction.html" title="interface
  by being optional.</div>
 </td>
 </tr>
-<tr id="i34" class="altColor">
+<tr id="i23" class="rowColor">
 <td class="colFirst"><code><a href="../../../com/exedio/cope/ItemField.html" title="class in com.exedio.cope">ItemField</a>&lt;<a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/ItemField.html#toFinal--">toFinal</a></span>()</code>
 <div class="block">Returns a new Field,
@@ -356,79 +304,7 @@ implements <a href="../../../com/exedio/cope/ItemFunction.html" title="interface
  by being final.</div>
 </td>
 </tr>
-<tr id="i35" class="rowColor">
-<td class="colFirst"><code><a href="../../../com/exedio/cope/InstanceOfCondition.html" title="class in com.exedio.cope">InstanceOfCondition</a>&lt;<a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/ItemField.html#typeIn-com.exedio.cope.Type:A-">typeIn</a></span>(<a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>[]&nbsp;types)</code>
-<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
-</td>
-</tr>
-<tr id="i36" class="altColor">
-<td class="colFirst"><code><a href="../../../com/exedio/cope/InstanceOfCondition.html" title="class in com.exedio.cope">InstanceOfCondition</a>&lt;<a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/ItemField.html#typeIn-com.exedio.cope.Type-">typeIn</a></span>(<a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;? extends <a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a>&gt;&nbsp;type1)</code>
-<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
-</td>
-</tr>
-<tr id="i37" class="rowColor">
-<td class="colFirst"><code><a href="../../../com/exedio/cope/InstanceOfCondition.html" title="class in com.exedio.cope">InstanceOfCondition</a>&lt;<a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/ItemField.html#typeIn-com.exedio.cope.Type-com.exedio.cope.Type-">typeIn</a></span>(<a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;? extends <a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a>&gt;&nbsp;type1,
-      <a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;? extends <a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a>&gt;&nbsp;type2)</code>
-<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
-</td>
-</tr>
-<tr id="i38" class="altColor">
-<td class="colFirst"><code><a href="../../../com/exedio/cope/InstanceOfCondition.html" title="class in com.exedio.cope">InstanceOfCondition</a>&lt;<a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/ItemField.html#typeIn-com.exedio.cope.Type-com.exedio.cope.Type-com.exedio.cope.Type-">typeIn</a></span>(<a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;? extends <a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a>&gt;&nbsp;type1,
-      <a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;? extends <a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a>&gt;&nbsp;type2,
-      <a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;? extends <a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a>&gt;&nbsp;type3)</code>
-<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
-</td>
-</tr>
-<tr id="i39" class="rowColor">
-<td class="colFirst"><code><a href="../../../com/exedio/cope/InstanceOfCondition.html" title="class in com.exedio.cope">InstanceOfCondition</a>&lt;<a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/ItemField.html#typeIn-com.exedio.cope.Type-com.exedio.cope.Type-com.exedio.cope.Type-com.exedio.cope.Type-">typeIn</a></span>(<a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;? extends <a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a>&gt;&nbsp;type1,
-      <a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;? extends <a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a>&gt;&nbsp;type2,
-      <a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;? extends <a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a>&gt;&nbsp;type3,
-      <a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;<a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a>&gt;&nbsp;type4)</code>
-<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
-</td>
-</tr>
-<tr id="i40" class="altColor">
-<td class="colFirst"><code><a href="../../../com/exedio/cope/InstanceOfCondition.html" title="class in com.exedio.cope">InstanceOfCondition</a>&lt;<a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/ItemField.html#typeNotIn-com.exedio.cope.Type:A-">typeNotIn</a></span>(<a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>[]&nbsp;types)</code>
-<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
-</td>
-</tr>
-<tr id="i41" class="rowColor">
-<td class="colFirst"><code><a href="../../../com/exedio/cope/InstanceOfCondition.html" title="class in com.exedio.cope">InstanceOfCondition</a>&lt;<a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/ItemField.html#typeNotIn-com.exedio.cope.Type-">typeNotIn</a></span>(<a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;? extends <a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a>&gt;&nbsp;type1)</code>
-<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
-</td>
-</tr>
-<tr id="i42" class="altColor">
-<td class="colFirst"><code><a href="../../../com/exedio/cope/InstanceOfCondition.html" title="class in com.exedio.cope">InstanceOfCondition</a>&lt;<a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/ItemField.html#typeNotIn-com.exedio.cope.Type-com.exedio.cope.Type-">typeNotIn</a></span>(<a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;? extends <a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a>&gt;&nbsp;type1,
-         <a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;? extends <a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a>&gt;&nbsp;type2)</code>
-<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
-</td>
-</tr>
-<tr id="i43" class="rowColor">
-<td class="colFirst"><code><a href="../../../com/exedio/cope/InstanceOfCondition.html" title="class in com.exedio.cope">InstanceOfCondition</a>&lt;<a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/ItemField.html#typeNotIn-com.exedio.cope.Type-com.exedio.cope.Type-com.exedio.cope.Type-">typeNotIn</a></span>(<a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;? extends <a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a>&gt;&nbsp;type1,
-         <a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;? extends <a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a>&gt;&nbsp;type2,
-         <a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;? extends <a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a>&gt;&nbsp;type3)</code>
-<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
-</td>
-</tr>
-<tr id="i44" class="altColor">
-<td class="colFirst"><code><a href="../../../com/exedio/cope/InstanceOfCondition.html" title="class in com.exedio.cope">InstanceOfCondition</a>&lt;<a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/ItemField.html#typeNotIn-com.exedio.cope.Type-com.exedio.cope.Type-com.exedio.cope.Type-com.exedio.cope.Type-">typeNotIn</a></span>(<a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;? extends <a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a>&gt;&nbsp;type1,
-         <a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;? extends <a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a>&gt;&nbsp;type2,
-         <a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;? extends <a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a>&gt;&nbsp;type3,
-         <a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;<a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a>&gt;&nbsp;type4)</code>
-<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
-</td>
-</tr>
-<tr id="i45" class="rowColor">
+<tr id="i24" class="altColor">
 <td class="colFirst"><code><a href="../../../com/exedio/cope/ItemField.html" title="class in com.exedio.cope">ItemField</a>&lt;<a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/ItemField.html#unique--">unique</a></span>()</code>
 <div class="block">Returns a new FunctionField,
@@ -442,21 +318,21 @@ implements <a href="../../../com/exedio/cope/ItemFunction.html" title="interface
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;com.exedio.cope.<a href="../../../com/exedio/cope/FunctionField.html" title="class in com.exedio.cope">FunctionField</a></h3>
-<code><a href="../../../com/exedio/cope/FunctionField.html#addCopyFrom-com.exedio.cope.ItemField-">addCopyFrom</a>, <a href="../../../com/exedio/cope/FunctionField.html#append-com.exedio.cope.Statement-com.exedio.cope.Join-">append</a>, <a href="../../../com/exedio/cope/FunctionField.html#between-E-E-">between</a>, <a href="../../../com/exedio/cope/FunctionField.html#check-com.exedio.cope.TC-com.exedio.cope.Join-">check</a>, <a href="../../../com/exedio/cope/FunctionField.html#copy-com.exedio.cope.CopyMapper-">copy</a>, <a href="../../../com/exedio/cope/FunctionField.html#copyFunctionField--">copyFunctionField</a>, <a href="../../../com/exedio/cope/FunctionField.html#equal-E-">equal</a>, <a href="../../../com/exedio/cope/FunctionField.html#equal-com.exedio.cope.Function-">equal</a>, <a href="../../../com/exedio/cope/FunctionField.html#equal-com.exedio.cope.Join-E-">equal</a>, <a href="../../../com/exedio/cope/FunctionField.html#get-com.exedio.cope.Item-">get</a>, <a href="../../../com/exedio/cope/FunctionField.html#getDefaultConstant--">getDefaultConstant</a>, <a href="../../../com/exedio/cope/FunctionField.html#getImplicitCopyConstraint--">getImplicitCopyConstraint</a>, <a href="../../../com/exedio/cope/FunctionField.html#getImplicitCopyConstraints--">getImplicitCopyConstraints</a>, <a href="../../../com/exedio/cope/FunctionField.html#getImplicitUniqueConstraint--">getImplicitUniqueConstraint</a>, <a href="../../../com/exedio/cope/FunctionField.html#getInitialExceptions--">getInitialExceptions</a>, <a href="../../../com/exedio/cope/FunctionField.html#getUniqueConstraints--">getUniqueConstraints</a>, <a href="../../../com/exedio/cope/FunctionField.html#greater-E-">greater</a>, <a href="../../../com/exedio/cope/FunctionField.html#greater-com.exedio.cope.Function-">greater</a>, <a href="../../../com/exedio/cope/FunctionField.html#greaterOrEqual-E-">greaterOrEqual</a>, <a href="../../../com/exedio/cope/FunctionField.html#greaterOrEqual-com.exedio.cope.Function-">greaterOrEqual</a>, <a href="../../../com/exedio/cope/FunctionField.html#hasDefault--">hasDefault</a>, <a href="../../../com/exedio/cope/FunctionField.html#in-java.util.Collection-">in</a>, <a href="../../../com/exedio/cope/FunctionField.html#in-E...-">in</a>, <a href="../../../com/exedio/cope/FunctionField.html#isInitial--">isInitial</a>, <a href="../../../com/exedio/cope/FunctionField.html#isNotNull--">isNotNull</a>, <a href="../../../com/exedio/cope/FunctionField.html#isNull--">isNull</a>, <a href="../../../com/exedio/cope/FunctionField.html#less-E-">less</a>, <a href="../../../com/exedio/cope/FunctionField.html#less-com.exedio.cope.Function-">less</a>, <a href="../../../com/exedio/cope/FunctionField.html#lessOrEqual-E-">lessOrEqual</a>, <a href="../../../com/exedio/cope/FunctionField.html#lessOrEqual-com.exedio.cope.Function-">lessOrEqual</a>, <a href="../../../com/exedio/cope/FunctionField.html#max--">max</a>, <a href="../../../com/exedio/cope/FunctionField.html#min--">min</a>, <a href="../../../com/exedio/cope/FunctionField.html#notEqual-E-">notEqual</a>, <a href="../../../com/exedio/cope/FunctionField.html#notEqual-com.exedio.cope.Function-">notEqual</a>, <a href="../../../com/exedio/cope/FunctionField.html#searchUnique-java.lang.Class-E-">searchUnique</a>, <a href="../../../com/exedio/cope/FunctionField.html#searchUnique-E-">searchUnique</a>, <a href="../../../com/exedio/cope/FunctionField.html#set-com.exedio.cope.Item-E-">set</a></code></li>
+<code><a href="../../../com/exedio/cope/FunctionField.html#addCopyFrom-com.exedio.cope.ItemField-">addCopyFrom</a>, <a href="../../../com/exedio/cope/FunctionField.html#append-com.exedio.cope.Statement-com.exedio.cope.Join-">append</a>, <a href="../../../com/exedio/cope/FunctionField.html#check-com.exedio.cope.TC-com.exedio.cope.Join-">check</a>, <a href="../../../com/exedio/cope/FunctionField.html#copy-com.exedio.cope.CopyMapper-">copy</a>, <a href="../../../com/exedio/cope/FunctionField.html#copyFunctionField--">copyFunctionField</a>, <a href="../../../com/exedio/cope/FunctionField.html#get-com.exedio.cope.Item-">get</a>, <a href="../../../com/exedio/cope/FunctionField.html#getDefaultConstant--">getDefaultConstant</a>, <a href="../../../com/exedio/cope/FunctionField.html#getImplicitCopyConstraint--">getImplicitCopyConstraint</a>, <a href="../../../com/exedio/cope/FunctionField.html#getImplicitCopyConstraints--">getImplicitCopyConstraints</a>, <a href="../../../com/exedio/cope/FunctionField.html#getImplicitUniqueConstraint--">getImplicitUniqueConstraint</a>, <a href="../../../com/exedio/cope/FunctionField.html#getInitialExceptions--">getInitialExceptions</a>, <a href="../../../com/exedio/cope/FunctionField.html#getUniqueConstraints--">getUniqueConstraints</a>, <a href="../../../com/exedio/cope/FunctionField.html#hasDefault--">hasDefault</a>, <a href="../../../com/exedio/cope/FunctionField.html#isInitial--">isInitial</a>, <a href="../../../com/exedio/cope/FunctionField.html#isRedundantByCopyConstraint--">isRedundantByCopyConstraint</a>, <a href="../../../com/exedio/cope/FunctionField.html#searchUnique-java.lang.Class-E-">searchUnique</a>, <a href="../../../com/exedio/cope/FunctionField.html#searchUnique-E-">searchUnique</a>, <a href="../../../com/exedio/cope/FunctionField.html#searchUniqueStrict-java.lang.Class-E-">searchUniqueStrict</a>, <a href="../../../com/exedio/cope/FunctionField.html#set-com.exedio.cope.Item-E-">set</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.com.exedio.cope.Field">
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;com.exedio.cope.<a href="../../../com/exedio/cope/Field.html" title="class in com.exedio.cope">Field</a></h3>
-<code><a href="../../../com/exedio/cope/Field.html#castCollection-java.util.Collection-">castCollection</a>, <a href="../../../com/exedio/cope/Field.html#check-E-">check</a>, <a href="../../../com/exedio/cope/Field.html#execute-E-com.exedio.cope.Item-">execute</a>, <a href="../../../com/exedio/cope/Field.html#getColumnName--">getColumnName</a>, <a href="../../../com/exedio/cope/Field.html#getInitialType--">getInitialType</a>, <a href="../../../com/exedio/cope/Field.html#getPatterns--">getPatterns</a>, <a href="../../../com/exedio/cope/Field.html#getValueClass--">getValueClass</a>, <a href="../../../com/exedio/cope/Field.html#isFinal--">isFinal</a>, <a href="../../../com/exedio/cope/Field.html#isMandatory--">isMandatory</a>, <a href="../../../com/exedio/cope/Field.html#map-E-">map</a>, <a href="../../../com/exedio/cope/Field.html#mapNull--">mapNull</a></code></li>
+<code><a href="../../../com/exedio/cope/Field.html#castCollection-java.util.Collection-">castCollection</a>, <a href="../../../com/exedio/cope/Field.html#check-E-">check</a>, <a href="../../../com/exedio/cope/Field.html#execute-E-com.exedio.cope.Item-">execute</a>, <a href="../../../com/exedio/cope/Field.html#getColumnName--">getColumnName</a>, <a href="../../../com/exedio/cope/Field.html#getInitialType--">getInitialType</a>, <a href="../../../com/exedio/cope/Field.html#getPatterns--">getPatterns</a>, <a href="../../../com/exedio/cope/Field.html#getValueClass--">getValueClass</a>, <a href="../../../com/exedio/cope/Field.html#isFinal--">isFinal</a>, <a href="../../../com/exedio/cope/Field.html#isMandatory--">isMandatory</a>, <a href="../../../com/exedio/cope/Field.html#mapNull--">mapNull</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.com.exedio.cope.Feature">
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;com.exedio.cope.<a href="../../../com/exedio/cope/Feature.html" title="class in com.exedio.cope">Feature</a></h3>
-<code><a href="../../../com/exedio/cope/Feature.html#afterModelCreated--">afterModelCreated</a>, <a href="../../../com/exedio/cope/Feature.html#getAnnotation-java.lang.Class-">getAnnotation</a>, <a href="../../../com/exedio/cope/Feature.html#getID--">getID</a>, <a href="../../../com/exedio/cope/Feature.html#getName--">getName</a>, <a href="../../../com/exedio/cope/Feature.html#getPattern--">getPattern</a>, <a href="../../../com/exedio/cope/Feature.html#getType--">getType</a>, <a href="../../../com/exedio/cope/Feature.html#getWrappers--">getWrappers</a>, <a href="../../../com/exedio/cope/Feature.html#isAnnotationPresent-java.lang.Class-">isAnnotationPresent</a>, <a href="../../../com/exedio/cope/Feature.html#isSourceAlready--">isSourceAlready</a>, <a href="../../../com/exedio/cope/Feature.html#mount-java.lang.String-java.io.Serializable-java.lang.reflect.AnnotatedElement-">mount</a>, <a href="../../../com/exedio/cope/Feature.html#readResolve--">readResolve</a>, <a href="../../../com/exedio/cope/Feature.html#toString--">toString</a>, <a href="../../../com/exedio/cope/Feature.html#toString-java.lang.StringBuilder-com.exedio.cope.Type-">toString</a>, <a href="../../../com/exedio/cope/Feature.html#writeReplace--">writeReplace</a></code></li>
+<code><a href="../../../com/exedio/cope/Feature.html#afterModelCreated--">afterModelCreated</a>, <a href="../../../com/exedio/cope/Feature.html#getAbstractType--">getAbstractType</a>, <a href="../../../com/exedio/cope/Feature.html#getAnnotation-java.lang.Class-">getAnnotation</a>, <a href="../../../com/exedio/cope/Feature.html#getID--">getID</a>, <a href="../../../com/exedio/cope/Feature.html#getLocalizationKeys--">getLocalizationKeys</a>, <a href="../../../com/exedio/cope/Feature.html#getName--">getName</a>, <a href="../../../com/exedio/cope/Feature.html#getPattern--">getPattern</a>, <a href="../../../com/exedio/cope/Feature.html#getType--">getType</a>, <a href="../../../com/exedio/cope/Feature.html#isAnnotationPresent-java.lang.Class-">isAnnotationPresent</a>, <a href="../../../com/exedio/cope/Feature.html#isSourceAlready--">isSourceAlready</a>, <a href="../../../com/exedio/cope/Feature.html#mount-com.exedio.cope.AbstractType-java.lang.String-java.lang.String-java.io.Serializable-java.lang.reflect.AnnotatedElement-">mount</a>, <a href="../../../com/exedio/cope/Feature.html#readResolve--">readResolve</a>, <a href="../../../com/exedio/cope/Feature.html#requireMounted-T-">requireMounted</a>, <a href="../../../com/exedio/cope/Feature.html#toString--">toString</a>, <a href="../../../com/exedio/cope/Feature.html#toString-java.lang.StringBuilder-com.exedio.cope.Type-">toString</a>, <a href="../../../com/exedio/cope/Feature.html#writeReplace--">writeReplace</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
@@ -466,11 +342,18 @@ implements <a href="../../../com/exedio/cope/ItemFunction.html" title="interface
 <code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#clone--" title="class or interface in java.lang">clone</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#equals-java.lang.Object-" title="class or interface in java.lang">equals</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#finalize--" title="class or interface in java.lang">finalize</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#getClass--" title="class or interface in java.lang">getClass</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#hashCode--" title="class or interface in java.lang">hashCode</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notify--" title="class or interface in java.lang">notify</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notifyAll--" title="class or interface in java.lang">notifyAll</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait--" title="class or interface in java.lang">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait-long-" title="class or interface in java.lang">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait-long-int-" title="class or interface in java.lang">wait</a></code></li>
 </ul>
 <ul class="blockList">
+<li class="blockList"><a name="methods.inherited.from.class.com.exedio.cope.ItemFunction">
+<!--   -->
+</a>
+<h3>Methods inherited from interface&nbsp;com.exedio.cope.<a href="../../../com/exedio/cope/ItemFunction.html" title="interface in com.exedio.cope">ItemFunction</a></h3>
+<code><a href="../../../com/exedio/cope/ItemFunction.html#bind-com.exedio.cope.Join-">bind</a>, <a href="../../../com/exedio/cope/ItemFunction.html#equalTarget--">equalTarget</a>, <a href="../../../com/exedio/cope/ItemFunction.html#equalTarget-com.exedio.cope.Join-">equalTarget</a>, <a href="../../../com/exedio/cope/ItemFunction.html#instanceOf-com.exedio.cope.Type:A-">instanceOf</a>, <a href="../../../com/exedio/cope/ItemFunction.html#instanceOf-com.exedio.cope.Type-">instanceOf</a>, <a href="../../../com/exedio/cope/ItemFunction.html#instanceOf-com.exedio.cope.Type-com.exedio.cope.Type-">instanceOf</a>, <a href="../../../com/exedio/cope/ItemFunction.html#instanceOf-com.exedio.cope.Type-com.exedio.cope.Type-com.exedio.cope.Type-">instanceOf</a>, <a href="../../../com/exedio/cope/ItemFunction.html#instanceOf-com.exedio.cope.Type-com.exedio.cope.Type-com.exedio.cope.Type-com.exedio.cope.Type-">instanceOf</a>, <a href="../../../com/exedio/cope/ItemFunction.html#notInstanceOf-com.exedio.cope.Type:A-">notInstanceOf</a>, <a href="../../../com/exedio/cope/ItemFunction.html#notInstanceOf-com.exedio.cope.Type-">notInstanceOf</a>, <a href="../../../com/exedio/cope/ItemFunction.html#notInstanceOf-com.exedio.cope.Type-com.exedio.cope.Type-">notInstanceOf</a>, <a href="../../../com/exedio/cope/ItemFunction.html#notInstanceOf-com.exedio.cope.Type-com.exedio.cope.Type-com.exedio.cope.Type-">notInstanceOf</a>, <a href="../../../com/exedio/cope/ItemFunction.html#notInstanceOf-com.exedio.cope.Type-com.exedio.cope.Type-com.exedio.cope.Type-com.exedio.cope.Type-">notInstanceOf</a>, <a href="../../../com/exedio/cope/ItemFunction.html#typeIn-com.exedio.cope.Type:A-">typeIn</a>, <a href="../../../com/exedio/cope/ItemFunction.html#typeIn-com.exedio.cope.Type-">typeIn</a>, <a href="../../../com/exedio/cope/ItemFunction.html#typeIn-com.exedio.cope.Type-com.exedio.cope.Type-">typeIn</a>, <a href="../../../com/exedio/cope/ItemFunction.html#typeIn-com.exedio.cope.Type-com.exedio.cope.Type-com.exedio.cope.Type-">typeIn</a>, <a href="../../../com/exedio/cope/ItemFunction.html#typeIn-com.exedio.cope.Type-com.exedio.cope.Type-com.exedio.cope.Type-com.exedio.cope.Type-">typeIn</a>, <a href="../../../com/exedio/cope/ItemFunction.html#typeNotIn-com.exedio.cope.Type:A-">typeNotIn</a>, <a href="../../../com/exedio/cope/ItemFunction.html#typeNotIn-com.exedio.cope.Type-">typeNotIn</a>, <a href="../../../com/exedio/cope/ItemFunction.html#typeNotIn-com.exedio.cope.Type-com.exedio.cope.Type-">typeNotIn</a>, <a href="../../../com/exedio/cope/ItemFunction.html#typeNotIn-com.exedio.cope.Type-com.exedio.cope.Type-com.exedio.cope.Type-">typeNotIn</a>, <a href="../../../com/exedio/cope/ItemFunction.html#typeNotIn-com.exedio.cope.Type-com.exedio.cope.Type-com.exedio.cope.Type-com.exedio.cope.Type-">typeNotIn</a></code></li>
+</ul>
+<ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.com.exedio.cope.Function">
 <!--   -->
 </a>
 <h3>Methods inherited from interface&nbsp;com.exedio.cope.<a href="../../../com/exedio/cope/Function.html" title="interface in com.exedio.cope">Function</a></h3>
-<code><a href="../../../com/exedio/cope/Function.html#between-E-E-">between</a>, <a href="../../../com/exedio/cope/Function.html#equal-E-">equal</a>, <a href="../../../com/exedio/cope/Function.html#equal-com.exedio.cope.Function-">equal</a>, <a href="../../../com/exedio/cope/Function.html#equal-com.exedio.cope.Join-E-">equal</a>, <a href="../../../com/exedio/cope/Function.html#get-com.exedio.cope.Item-">get</a>, <a href="../../../com/exedio/cope/Function.html#greater-E-">greater</a>, <a href="../../../com/exedio/cope/Function.html#greater-com.exedio.cope.Function-">greater</a>, <a href="../../../com/exedio/cope/Function.html#greaterOrEqual-E-">greaterOrEqual</a>, <a href="../../../com/exedio/cope/Function.html#greaterOrEqual-com.exedio.cope.Function-">greaterOrEqual</a>, <a href="../../../com/exedio/cope/Function.html#in-java.util.Collection-">in</a>, <a href="../../../com/exedio/cope/Function.html#in-E...-">in</a>, <a href="../../../com/exedio/cope/Function.html#isNotNull--">isNotNull</a>, <a href="../../../com/exedio/cope/Function.html#isNull--">isNull</a>, <a href="../../../com/exedio/cope/Function.html#less-E-">less</a>, <a href="../../../com/exedio/cope/Function.html#less-com.exedio.cope.Function-">less</a>, <a href="../../../com/exedio/cope/Function.html#lessOrEqual-E-">lessOrEqual</a>, <a href="../../../com/exedio/cope/Function.html#lessOrEqual-com.exedio.cope.Function-">lessOrEqual</a>, <a href="../../../com/exedio/cope/Function.html#max--">max</a>, <a href="../../../com/exedio/cope/Function.html#min--">min</a>, <a href="../../../com/exedio/cope/Function.html#notEqual-E-">notEqual</a>, <a href="../../../com/exedio/cope/Function.html#notEqual-com.exedio.cope.Function-">notEqual</a></code></li>
+<code><a href="../../../com/exedio/cope/Function.html#any--">any</a>, <a href="../../../com/exedio/cope/Function.html#between-E-E-">between</a>, <a href="../../../com/exedio/cope/Function.html#equal-E-">equal</a>, <a href="../../../com/exedio/cope/Function.html#equal-com.exedio.cope.Function-">equal</a>, <a href="../../../com/exedio/cope/Function.html#equal-com.exedio.cope.Join-E-">equal</a>, <a href="../../../com/exedio/cope/Function.html#get-com.exedio.cope.Item-">get</a>, <a href="../../../com/exedio/cope/Function.html#greater-E-">greater</a>, <a href="../../../com/exedio/cope/Function.html#greater-com.exedio.cope.Function-">greater</a>, <a href="../../../com/exedio/cope/Function.html#greaterOrEqual-E-">greaterOrEqual</a>, <a href="../../../com/exedio/cope/Function.html#greaterOrEqual-com.exedio.cope.Function-">greaterOrEqual</a>, <a href="../../../com/exedio/cope/Function.html#in-java.util.Collection-">in</a>, <a href="../../../com/exedio/cope/Function.html#in-E...-">in</a>, <a href="../../../com/exedio/cope/Function.html#isNotNull--">isNotNull</a>, <a href="../../../com/exedio/cope/Function.html#isNull--">isNull</a>, <a href="../../../com/exedio/cope/Function.html#less-E-">less</a>, <a href="../../../com/exedio/cope/Function.html#less-com.exedio.cope.Function-">less</a>, <a href="../../../com/exedio/cope/Function.html#lessOrEqual-E-">lessOrEqual</a>, <a href="../../../com/exedio/cope/Function.html#lessOrEqual-com.exedio.cope.Function-">lessOrEqual</a>, <a href="../../../com/exedio/cope/Function.html#max--">max</a>, <a href="../../../com/exedio/cope/Function.html#min--">min</a>, <a href="../../../com/exedio/cope/Function.html#notEqual-E-">notEqual</a>, <a href="../../../com/exedio/cope/Function.html#notEqual-com.exedio.cope.Function-">notEqual</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.com.exedio.cope.Selectable">
@@ -478,6 +361,13 @@ implements <a href="../../../com/exedio/cope/ItemFunction.html" title="interface
 </a>
 <h3>Methods inherited from interface&nbsp;com.exedio.cope.<a href="../../../com/exedio/cope/Selectable.html" title="interface in com.exedio.cope">Selectable</a></h3>
 <code><a href="../../../com/exedio/cope/Selectable.html#append-com.exedio.cope.Statement-com.exedio.cope.Join-">append</a>, <a href="../../../com/exedio/cope/Selectable.html#check-com.exedio.cope.TC-com.exedio.cope.Join-">check</a>, <a href="../../../com/exedio/cope/Selectable.html#getType--">getType</a>, <a href="../../../com/exedio/cope/Selectable.html#getValueClass--">getValueClass</a>, <a href="../../../com/exedio/cope/Selectable.html#toString-java.lang.StringBuilder-com.exedio.cope.Type-">toString</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods.inherited.from.class.com.exedio.cope.Settable">
+<!--   -->
+</a>
+<h3>Methods inherited from interface&nbsp;com.exedio.cope.<a href="../../../com/exedio/cope/Settable.html" title="interface in com.exedio.cope">Settable</a></h3>
+<code><a href="../../../com/exedio/cope/Settable.html#map-E-">map</a></code></li>
 </ul>
 </li>
 </ul>
@@ -499,7 +389,7 @@ implements <a href="../../../com/exedio/cope/ItemFunction.html" title="interface
 <ul class="blockList">
 <li class="blockList">
 <h4>create</h4>
-<pre>public static final&nbsp;&lt;E extends <a href="../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&gt;&nbsp;<a href="../../../com/exedio/cope/ItemField.html" title="class in com.exedio.cope">ItemField</a>&lt;E&gt;&nbsp;create(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;E&gt;&nbsp;valueClass)</pre>
+<pre>public static&nbsp;&lt;E extends <a href="../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&gt;&nbsp;<a href="../../../com/exedio/cope/ItemField.html" title="class in com.exedio.cope">ItemField</a>&lt;E&gt;&nbsp;create(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;E&gt;&nbsp;valueClass)</pre>
 </li>
 </ul>
 <a name="create-java.lang.Class-com.exedio.cope.ItemField.DeletePolicy-">
@@ -508,8 +398,19 @@ implements <a href="../../../com/exedio/cope/ItemFunction.html" title="interface
 <ul class="blockList">
 <li class="blockList">
 <h4>create</h4>
-<pre>public static final&nbsp;&lt;E extends <a href="../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&gt;&nbsp;<a href="../../../com/exedio/cope/ItemField.html" title="class in com.exedio.cope">ItemField</a>&lt;E&gt;&nbsp;create(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;E&gt;&nbsp;valueClass,
-                                                         <a href="../../../com/exedio/cope/ItemField.DeletePolicy.html" title="enum in com.exedio.cope">ItemField.DeletePolicy</a>&nbsp;policy)</pre>
+<pre>public static&nbsp;&lt;E extends <a href="../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&gt;&nbsp;<a href="../../../com/exedio/cope/ItemField.html" title="class in com.exedio.cope">ItemField</a>&lt;E&gt;&nbsp;create(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;E&gt;&nbsp;valueClass,
+                                                   <a href="../../../com/exedio/cope/ItemField.DeletePolicy.html" title="enum in com.exedio.cope">ItemField.DeletePolicy</a>&nbsp;policy)</pre>
+</li>
+</ul>
+<a name="create-java.lang.Class-com.exedio.cope.TypeFuture-com.exedio.cope.ItemField.DeletePolicy-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>create</h4>
+<pre>public static&nbsp;&lt;E extends <a href="../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&gt;&nbsp;<a href="../../../com/exedio/cope/ItemField.html" title="class in com.exedio.cope">ItemField</a>&lt;E&gt;&nbsp;create(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;E&gt;&nbsp;valueClass,
+                                                   <a href="../../../com/exedio/cope/TypeFuture.html" title="interface in com.exedio.cope">TypeFuture</a>&lt;E&gt;&nbsp;valueType,
+                                                   <a href="../../../com/exedio/cope/ItemField.DeletePolicy.html" title="enum in com.exedio.cope">ItemField.DeletePolicy</a>&nbsp;policy)</pre>
 </li>
 </ul>
 <a name="copy--">
@@ -540,7 +441,7 @@ implements <a href="../../../com/exedio/cope/ItemFunction.html" title="interface
  the the result is equal to this Field.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../com/exedio/cope/Field.html#toFinal--">toFinal</a></code>&nbsp;in class&nbsp;<code><a href="../../../com/exedio/cope/Field.html" title="class in com.exedio.cope">Field</a>&lt;<a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a> extends <a href="../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&gt;</code></dd>
+<dd><code><a href="../../../com/exedio/cope/FunctionField.html#toFinal--">toFinal</a></code>&nbsp;in class&nbsp;<code><a href="../../../com/exedio/cope/FunctionField.html" title="class in com.exedio.cope">FunctionField</a>&lt;<a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a> extends <a href="../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&gt;</code></dd>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../com/exedio/cope/Field.html#isFinal--"><code>Field.isFinal()</code></a></dd>
 </dl>
@@ -561,7 +462,7 @@ implements <a href="../../../com/exedio/cope/ItemFunction.html" title="interface
  the the result is equal to this Field.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../com/exedio/cope/Field.html#optional--">optional</a></code>&nbsp;in class&nbsp;<code><a href="../../../com/exedio/cope/Field.html" title="class in com.exedio.cope">Field</a>&lt;<a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a> extends <a href="../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&gt;</code></dd>
+<dd><code><a href="../../../com/exedio/cope/FunctionField.html#optional--">optional</a></code>&nbsp;in class&nbsp;<code><a href="../../../com/exedio/cope/FunctionField.html" title="class in com.exedio.cope">FunctionField</a>&lt;<a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a> extends <a href="../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&gt;</code></dd>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../com/exedio/cope/Field.html#isMandatory--"><code>Field.isMandatory()</code></a></dd>
 </dl>
@@ -611,6 +512,8 @@ implements <a href="../../../com/exedio/cope/ItemFunction.html" title="interface
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../com/exedio/cope/FunctionField.html#copyFrom-com.exedio.cope.ItemField-">copyFrom</a></code>&nbsp;in class&nbsp;<code><a href="../../../com/exedio/cope/FunctionField.html" title="class in com.exedio.cope">FunctionField</a>&lt;<a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a> extends <a href="../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&gt;</code></dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../com/exedio/cope/ItemField.html#copyTo-com.exedio.cope.FunctionField-"><code>copyTo(FunctionField)</code></a></dd>
 </dl>
 </li>
 </ul>
@@ -621,6 +524,10 @@ implements <a href="../../../com/exedio/cope/ItemFunction.html" title="interface
 <li class="blockList">
 <h4>copyTo</h4>
 <pre>public&nbsp;<a href="../../../com/exedio/cope/ItemField.html" title="class in com.exedio.cope">ItemField</a>&lt;<a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a>&gt;&nbsp;copyTo(<a href="../../../com/exedio/cope/FunctionField.html" title="class in com.exedio.cope">FunctionField</a>&lt;?&gt;&nbsp;copyTo)</pre>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../com/exedio/cope/FunctionField.html#copyFrom-com.exedio.cope.ItemField-"><code>FunctionField.copyFrom(ItemField)</code></a></dd>
+</dl>
 </li>
 </ul>
 <a name="noDefault--">
@@ -733,8 +640,8 @@ public&nbsp;<a href="../../../com/exedio/cope/ItemField.html" title="class in co
 <li class="blockList">
 <h4>appendSelect</h4>
 <pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</a>
-public final&nbsp;void&nbsp;appendSelect(com.exedio.cope.Statement&nbsp;bf,
-                                           <a href="../../../com/exedio/cope/Join.html" title="class in com.exedio.cope">Join</a>&nbsp;join)</pre>
+public&nbsp;void&nbsp;appendSelect(com.exedio.cope.Statement&nbsp;bf,
+                                     <a href="../../../com/exedio/cope/Join.html" title="class in com.exedio.cope">Join</a>&nbsp;join)</pre>
 <div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment">For internal use within COPE only.</span></div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
@@ -775,203 +682,33 @@ public&nbsp;void&nbsp;appendType(com.exedio.cope.Statement&nbsp;bf,
 </dl>
 </li>
 </ul>
+<a name="checkTypeColumnL--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>checkTypeColumnL</h4>
+<pre>public&nbsp;long&nbsp;checkTypeColumnL()</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../com/exedio/cope/ItemFunction.html#checkTypeColumnL--">checkTypeColumnL</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/exedio/cope/ItemFunction.html" title="interface in com.exedio.cope">ItemFunction</a>&lt;<a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a> extends <a href="../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&gt;</code></dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../com/exedio/cope/ItemFunction.html#needsCheckTypeColumn--"><code>ItemFunction.needsCheckTypeColumn()</code></a></dd>
+</dl>
+</li>
+</ul>
 <a name="checkTypeColumn--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>checkTypeColumn</h4>
-<pre>public&nbsp;int&nbsp;checkTypeColumn()</pre>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</a>
+public&nbsp;int&nbsp;checkTypeColumn()</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../com/exedio/cope/ItemFunction.html#checkTypeColumn--">checkTypeColumn</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/exedio/cope/ItemFunction.html" title="interface in com.exedio.cope">ItemFunction</a>&lt;<a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a> extends <a href="../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&gt;</code></dd>
-<dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../com/exedio/cope/ItemFunction.html#needsCheckTypeColumn--"><code>ItemFunction.needsCheckTypeColumn()</code></a></dd>
-</dl>
-</li>
-</ul>
-<a name="equalTarget--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>equalTarget</h4>
-<pre>public&nbsp;<a href="../../../com/exedio/cope/CompareFunctionCondition.html" title="class in com.exedio.cope">CompareFunctionCondition</a>&lt;?&gt;&nbsp;equalTarget()</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../com/exedio/cope/ItemFunction.html#equalTarget--">equalTarget</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/exedio/cope/ItemFunction.html" title="interface in com.exedio.cope">ItemFunction</a>&lt;<a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a> extends <a href="../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&gt;</code></dd>
-</dl>
-</li>
-</ul>
-<a name="equalTarget-com.exedio.cope.Join-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>equalTarget</h4>
-<pre>public&nbsp;<a href="../../../com/exedio/cope/CompareFunctionCondition.html" title="class in com.exedio.cope">CompareFunctionCondition</a>&lt;?&gt;&nbsp;equalTarget(<a href="../../../com/exedio/cope/Join.html" title="class in com.exedio.cope">Join</a>&nbsp;targetJoin)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../com/exedio/cope/ItemFunction.html#equalTarget-com.exedio.cope.Join-">equalTarget</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/exedio/cope/ItemFunction.html" title="interface in com.exedio.cope">ItemFunction</a>&lt;<a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a> extends <a href="../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&gt;</code></dd>
-</dl>
-</li>
-</ul>
-<a name="bind-com.exedio.cope.Join-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>bind</h4>
-<pre>public&nbsp;<a href="../../../com/exedio/cope/BindItemFunction.html" title="class in com.exedio.cope">BindItemFunction</a>&lt;<a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a>&gt;&nbsp;bind(<a href="../../../com/exedio/cope/Join.html" title="class in com.exedio.cope">Join</a>&nbsp;join)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../com/exedio/cope/Function.html#bind-com.exedio.cope.Join-">bind</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/exedio/cope/Function.html" title="interface in com.exedio.cope">Function</a>&lt;<a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a> extends <a href="../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&gt;</code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../com/exedio/cope/ItemFunction.html#bind-com.exedio.cope.Join-">bind</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/exedio/cope/ItemFunction.html" title="interface in com.exedio.cope">ItemFunction</a>&lt;<a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a> extends <a href="../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&gt;</code></dd>
-<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../com/exedio/cope/FunctionField.html#bind-com.exedio.cope.Join-">bind</a></code>&nbsp;in class&nbsp;<code><a href="../../../com/exedio/cope/FunctionField.html" title="class in com.exedio.cope">FunctionField</a>&lt;<a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a> extends <a href="../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&gt;</code></dd>
-</dl>
-</li>
-</ul>
-<a name="instanceOf-com.exedio.cope.Type-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>instanceOf</h4>
-<pre>public&nbsp;<a href="../../../com/exedio/cope/InstanceOfCondition.html" title="class in com.exedio.cope">InstanceOfCondition</a>&lt;<a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a>&gt;&nbsp;instanceOf(<a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;? extends <a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a>&gt;&nbsp;type1)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../com/exedio/cope/ItemFunction.html#instanceOf-com.exedio.cope.Type-">instanceOf</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/exedio/cope/ItemFunction.html" title="interface in com.exedio.cope">ItemFunction</a>&lt;<a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a> extends <a href="../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&gt;</code></dd>
-</dl>
-</li>
-</ul>
-<a name="instanceOf-com.exedio.cope.Type-com.exedio.cope.Type-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>instanceOf</h4>
-<pre>public&nbsp;<a href="../../../com/exedio/cope/InstanceOfCondition.html" title="class in com.exedio.cope">InstanceOfCondition</a>&lt;<a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a>&gt;&nbsp;instanceOf(<a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;? extends <a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a>&gt;&nbsp;type1,
-                                         <a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;? extends <a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a>&gt;&nbsp;type2)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../com/exedio/cope/ItemFunction.html#instanceOf-com.exedio.cope.Type-com.exedio.cope.Type-">instanceOf</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/exedio/cope/ItemFunction.html" title="interface in com.exedio.cope">ItemFunction</a>&lt;<a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a> extends <a href="../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&gt;</code></dd>
-</dl>
-</li>
-</ul>
-<a name="instanceOf-com.exedio.cope.Type-com.exedio.cope.Type-com.exedio.cope.Type-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>instanceOf</h4>
-<pre>public&nbsp;<a href="../../../com/exedio/cope/InstanceOfCondition.html" title="class in com.exedio.cope">InstanceOfCondition</a>&lt;<a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a>&gt;&nbsp;instanceOf(<a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;? extends <a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a>&gt;&nbsp;type1,
-                                         <a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;? extends <a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a>&gt;&nbsp;type2,
-                                         <a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;? extends <a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a>&gt;&nbsp;type3)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../com/exedio/cope/ItemFunction.html#instanceOf-com.exedio.cope.Type-com.exedio.cope.Type-com.exedio.cope.Type-">instanceOf</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/exedio/cope/ItemFunction.html" title="interface in com.exedio.cope">ItemFunction</a>&lt;<a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a> extends <a href="../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&gt;</code></dd>
-</dl>
-</li>
-</ul>
-<a name="instanceOf-com.exedio.cope.Type-com.exedio.cope.Type-com.exedio.cope.Type-com.exedio.cope.Type-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>instanceOf</h4>
-<pre>public&nbsp;<a href="../../../com/exedio/cope/InstanceOfCondition.html" title="class in com.exedio.cope">InstanceOfCondition</a>&lt;<a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a>&gt;&nbsp;instanceOf(<a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;? extends <a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a>&gt;&nbsp;type1,
-                                         <a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;? extends <a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a>&gt;&nbsp;type2,
-                                         <a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;? extends <a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a>&gt;&nbsp;type3,
-                                         <a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;<a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a>&gt;&nbsp;type4)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../com/exedio/cope/ItemFunction.html#instanceOf-com.exedio.cope.Type-com.exedio.cope.Type-com.exedio.cope.Type-com.exedio.cope.Type-">instanceOf</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/exedio/cope/ItemFunction.html" title="interface in com.exedio.cope">ItemFunction</a>&lt;<a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a> extends <a href="../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&gt;</code></dd>
-</dl>
-</li>
-</ul>
-<a name="instanceOf-com.exedio.cope.Type:A-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>instanceOf</h4>
-<pre>public&nbsp;<a href="../../../com/exedio/cope/InstanceOfCondition.html" title="class in com.exedio.cope">InstanceOfCondition</a>&lt;<a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a>&gt;&nbsp;instanceOf(<a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>[]&nbsp;types)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../com/exedio/cope/ItemFunction.html#instanceOf-com.exedio.cope.Type:A-">instanceOf</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/exedio/cope/ItemFunction.html" title="interface in com.exedio.cope">ItemFunction</a>&lt;<a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a> extends <a href="../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&gt;</code></dd>
-</dl>
-</li>
-</ul>
-<a name="notInstanceOf-com.exedio.cope.Type-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>notInstanceOf</h4>
-<pre>public&nbsp;<a href="../../../com/exedio/cope/InstanceOfCondition.html" title="class in com.exedio.cope">InstanceOfCondition</a>&lt;<a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a>&gt;&nbsp;notInstanceOf(<a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;? extends <a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a>&gt;&nbsp;type1)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../com/exedio/cope/ItemFunction.html#notInstanceOf-com.exedio.cope.Type-">notInstanceOf</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/exedio/cope/ItemFunction.html" title="interface in com.exedio.cope">ItemFunction</a>&lt;<a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a> extends <a href="../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&gt;</code></dd>
-</dl>
-</li>
-</ul>
-<a name="notInstanceOf-com.exedio.cope.Type-com.exedio.cope.Type-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>notInstanceOf</h4>
-<pre>public&nbsp;<a href="../../../com/exedio/cope/InstanceOfCondition.html" title="class in com.exedio.cope">InstanceOfCondition</a>&lt;<a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a>&gt;&nbsp;notInstanceOf(<a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;? extends <a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a>&gt;&nbsp;type1,
-                                            <a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;? extends <a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a>&gt;&nbsp;type2)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../com/exedio/cope/ItemFunction.html#notInstanceOf-com.exedio.cope.Type-com.exedio.cope.Type-">notInstanceOf</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/exedio/cope/ItemFunction.html" title="interface in com.exedio.cope">ItemFunction</a>&lt;<a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a> extends <a href="../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&gt;</code></dd>
-</dl>
-</li>
-</ul>
-<a name="notInstanceOf-com.exedio.cope.Type-com.exedio.cope.Type-com.exedio.cope.Type-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>notInstanceOf</h4>
-<pre>public&nbsp;<a href="../../../com/exedio/cope/InstanceOfCondition.html" title="class in com.exedio.cope">InstanceOfCondition</a>&lt;<a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a>&gt;&nbsp;notInstanceOf(<a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;? extends <a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a>&gt;&nbsp;type1,
-                                            <a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;? extends <a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a>&gt;&nbsp;type2,
-                                            <a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;? extends <a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a>&gt;&nbsp;type3)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../com/exedio/cope/ItemFunction.html#notInstanceOf-com.exedio.cope.Type-com.exedio.cope.Type-com.exedio.cope.Type-">notInstanceOf</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/exedio/cope/ItemFunction.html" title="interface in com.exedio.cope">ItemFunction</a>&lt;<a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a> extends <a href="../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&gt;</code></dd>
-</dl>
-</li>
-</ul>
-<a name="notInstanceOf-com.exedio.cope.Type-com.exedio.cope.Type-com.exedio.cope.Type-com.exedio.cope.Type-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>notInstanceOf</h4>
-<pre>public&nbsp;<a href="../../../com/exedio/cope/InstanceOfCondition.html" title="class in com.exedio.cope">InstanceOfCondition</a>&lt;<a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a>&gt;&nbsp;notInstanceOf(<a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;? extends <a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a>&gt;&nbsp;type1,
-                                            <a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;? extends <a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a>&gt;&nbsp;type2,
-                                            <a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;? extends <a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a>&gt;&nbsp;type3,
-                                            <a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;<a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a>&gt;&nbsp;type4)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../com/exedio/cope/ItemFunction.html#notInstanceOf-com.exedio.cope.Type-com.exedio.cope.Type-com.exedio.cope.Type-com.exedio.cope.Type-">notInstanceOf</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/exedio/cope/ItemFunction.html" title="interface in com.exedio.cope">ItemFunction</a>&lt;<a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a> extends <a href="../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&gt;</code></dd>
-</dl>
-</li>
-</ul>
-<a name="notInstanceOf-com.exedio.cope.Type:A-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>notInstanceOf</h4>
-<pre>public&nbsp;<a href="../../../com/exedio/cope/InstanceOfCondition.html" title="class in com.exedio.cope">InstanceOfCondition</a>&lt;<a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a>&gt;&nbsp;notInstanceOf(<a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>[]&nbsp;types)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../com/exedio/cope/ItemFunction.html#notInstanceOf-com.exedio.cope.Type:A-">notInstanceOf</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/exedio/cope/ItemFunction.html" title="interface in com.exedio.cope">ItemFunction</a>&lt;<a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a> extends <a href="../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&gt;</code></dd>
 </dl>
 </li>
 </ul>
@@ -989,174 +726,12 @@ public&nbsp;&lt;X extends <a href="../../../com/exedio/cope/Item.html" title="cl
 <a name="getTypeColumnName--">
 <!--   -->
 </a>
-<ul class="blockList">
+<ul class="blockListLast">
 <li class="blockList">
 <h4>getTypeColumnName</h4>
 <pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</a>
 public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getTypeColumnName()</pre>
 <div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment">Use <a href="../../../com/exedio/cope/SchemaInfo.html#getTypeColumnName-com.exedio.cope.ItemField-"><code>SchemaInfo.getTypeColumnName(ItemField)</code></a> instead</span></div>
-</li>
-</ul>
-<a name="typeIn-com.exedio.cope.Type-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>typeIn</h4>
-<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</a>
-public&nbsp;<a href="../../../com/exedio/cope/InstanceOfCondition.html" title="class in com.exedio.cope">InstanceOfCondition</a>&lt;<a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a>&gt;&nbsp;typeIn(<a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;? extends <a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a>&gt;&nbsp;type1)</pre>
-<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../com/exedio/cope/ItemFunction.html#typeIn-com.exedio.cope.Type-">typeIn</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/exedio/cope/ItemFunction.html" title="interface in com.exedio.cope">ItemFunction</a>&lt;<a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a> extends <a href="../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&gt;</code></dd>
-</dl>
-</li>
-</ul>
-<a name="typeIn-com.exedio.cope.Type-com.exedio.cope.Type-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>typeIn</h4>
-<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</a>
-public&nbsp;<a href="../../../com/exedio/cope/InstanceOfCondition.html" title="class in com.exedio.cope">InstanceOfCondition</a>&lt;<a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a>&gt;&nbsp;typeIn(<a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;? extends <a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a>&gt;&nbsp;type1,
-                                                 <a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;? extends <a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a>&gt;&nbsp;type2)</pre>
-<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../com/exedio/cope/ItemFunction.html#typeIn-com.exedio.cope.Type-com.exedio.cope.Type-">typeIn</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/exedio/cope/ItemFunction.html" title="interface in com.exedio.cope">ItemFunction</a>&lt;<a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a> extends <a href="../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&gt;</code></dd>
-</dl>
-</li>
-</ul>
-<a name="typeIn-com.exedio.cope.Type-com.exedio.cope.Type-com.exedio.cope.Type-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>typeIn</h4>
-<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</a>
-public&nbsp;<a href="../../../com/exedio/cope/InstanceOfCondition.html" title="class in com.exedio.cope">InstanceOfCondition</a>&lt;<a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a>&gt;&nbsp;typeIn(<a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;? extends <a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a>&gt;&nbsp;type1,
-                                                 <a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;? extends <a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a>&gt;&nbsp;type2,
-                                                 <a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;? extends <a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a>&gt;&nbsp;type3)</pre>
-<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../com/exedio/cope/ItemFunction.html#typeIn-com.exedio.cope.Type-com.exedio.cope.Type-com.exedio.cope.Type-">typeIn</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/exedio/cope/ItemFunction.html" title="interface in com.exedio.cope">ItemFunction</a>&lt;<a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a> extends <a href="../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&gt;</code></dd>
-</dl>
-</li>
-</ul>
-<a name="typeIn-com.exedio.cope.Type-com.exedio.cope.Type-com.exedio.cope.Type-com.exedio.cope.Type-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>typeIn</h4>
-<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</a>
-public&nbsp;<a href="../../../com/exedio/cope/InstanceOfCondition.html" title="class in com.exedio.cope">InstanceOfCondition</a>&lt;<a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a>&gt;&nbsp;typeIn(<a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;? extends <a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a>&gt;&nbsp;type1,
-                                                 <a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;? extends <a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a>&gt;&nbsp;type2,
-                                                 <a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;? extends <a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a>&gt;&nbsp;type3,
-                                                 <a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;<a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a>&gt;&nbsp;type4)</pre>
-<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../com/exedio/cope/ItemFunction.html#typeIn-com.exedio.cope.Type-com.exedio.cope.Type-com.exedio.cope.Type-com.exedio.cope.Type-">typeIn</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/exedio/cope/ItemFunction.html" title="interface in com.exedio.cope">ItemFunction</a>&lt;<a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a> extends <a href="../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&gt;</code></dd>
-</dl>
-</li>
-</ul>
-<a name="typeIn-com.exedio.cope.Type:A-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>typeIn</h4>
-<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</a>
-public&nbsp;<a href="../../../com/exedio/cope/InstanceOfCondition.html" title="class in com.exedio.cope">InstanceOfCondition</a>&lt;<a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a>&gt;&nbsp;typeIn(<a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>[]&nbsp;types)</pre>
-<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../com/exedio/cope/ItemFunction.html#typeIn-com.exedio.cope.Type:A-">typeIn</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/exedio/cope/ItemFunction.html" title="interface in com.exedio.cope">ItemFunction</a>&lt;<a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a> extends <a href="../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&gt;</code></dd>
-</dl>
-</li>
-</ul>
-<a name="typeNotIn-com.exedio.cope.Type-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>typeNotIn</h4>
-<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</a>
-public&nbsp;<a href="../../../com/exedio/cope/InstanceOfCondition.html" title="class in com.exedio.cope">InstanceOfCondition</a>&lt;<a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a>&gt;&nbsp;typeNotIn(<a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;? extends <a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a>&gt;&nbsp;type1)</pre>
-<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../com/exedio/cope/ItemFunction.html#typeNotIn-com.exedio.cope.Type-">typeNotIn</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/exedio/cope/ItemFunction.html" title="interface in com.exedio.cope">ItemFunction</a>&lt;<a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a> extends <a href="../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&gt;</code></dd>
-</dl>
-</li>
-</ul>
-<a name="typeNotIn-com.exedio.cope.Type-com.exedio.cope.Type-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>typeNotIn</h4>
-<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</a>
-public&nbsp;<a href="../../../com/exedio/cope/InstanceOfCondition.html" title="class in com.exedio.cope">InstanceOfCondition</a>&lt;<a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a>&gt;&nbsp;typeNotIn(<a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;? extends <a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a>&gt;&nbsp;type1,
-                                                    <a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;? extends <a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a>&gt;&nbsp;type2)</pre>
-<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../com/exedio/cope/ItemFunction.html#typeNotIn-com.exedio.cope.Type-com.exedio.cope.Type-">typeNotIn</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/exedio/cope/ItemFunction.html" title="interface in com.exedio.cope">ItemFunction</a>&lt;<a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a> extends <a href="../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&gt;</code></dd>
-</dl>
-</li>
-</ul>
-<a name="typeNotIn-com.exedio.cope.Type-com.exedio.cope.Type-com.exedio.cope.Type-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>typeNotIn</h4>
-<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</a>
-public&nbsp;<a href="../../../com/exedio/cope/InstanceOfCondition.html" title="class in com.exedio.cope">InstanceOfCondition</a>&lt;<a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a>&gt;&nbsp;typeNotIn(<a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;? extends <a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a>&gt;&nbsp;type1,
-                                                    <a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;? extends <a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a>&gt;&nbsp;type2,
-                                                    <a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;? extends <a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a>&gt;&nbsp;type3)</pre>
-<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../com/exedio/cope/ItemFunction.html#typeNotIn-com.exedio.cope.Type-com.exedio.cope.Type-com.exedio.cope.Type-">typeNotIn</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/exedio/cope/ItemFunction.html" title="interface in com.exedio.cope">ItemFunction</a>&lt;<a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a> extends <a href="../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&gt;</code></dd>
-</dl>
-</li>
-</ul>
-<a name="typeNotIn-com.exedio.cope.Type-com.exedio.cope.Type-com.exedio.cope.Type-com.exedio.cope.Type-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>typeNotIn</h4>
-<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</a>
-public&nbsp;<a href="../../../com/exedio/cope/InstanceOfCondition.html" title="class in com.exedio.cope">InstanceOfCondition</a>&lt;<a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a>&gt;&nbsp;typeNotIn(<a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;? extends <a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a>&gt;&nbsp;type1,
-                                                    <a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;? extends <a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a>&gt;&nbsp;type2,
-                                                    <a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;? extends <a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a>&gt;&nbsp;type3,
-                                                    <a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;<a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a>&gt;&nbsp;type4)</pre>
-<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../com/exedio/cope/ItemFunction.html#typeNotIn-com.exedio.cope.Type-com.exedio.cope.Type-com.exedio.cope.Type-com.exedio.cope.Type-">typeNotIn</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/exedio/cope/ItemFunction.html" title="interface in com.exedio.cope">ItemFunction</a>&lt;<a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a> extends <a href="../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&gt;</code></dd>
-</dl>
-</li>
-</ul>
-<a name="typeNotIn-com.exedio.cope.Type:A-">
-<!--   -->
-</a>
-<ul class="blockListLast">
-<li class="blockList">
-<h4>typeNotIn</h4>
-<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</a>
-public&nbsp;<a href="../../../com/exedio/cope/InstanceOfCondition.html" title="class in com.exedio.cope">InstanceOfCondition</a>&lt;<a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a>&gt;&nbsp;typeNotIn(<a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>[]&nbsp;types)</pre>
-<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../com/exedio/cope/ItemFunction.html#typeNotIn-com.exedio.cope.Type:A-">typeNotIn</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/exedio/cope/ItemFunction.html" title="interface in com.exedio.cope">ItemFunction</a>&lt;<a href="../../../com/exedio/cope/ItemField.html" title="type parameter in ItemField">E</a> extends <a href="../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&gt;</code></dd>
-</dl>
 </li>
 </ul>
 </li>
@@ -1185,7 +760,7 @@ public&nbsp;<a href="../../../com/exedio/cope/InstanceOfCondition.html" title="c
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../com/exedio/cope/ItemCacheInfo.html" title="class in com.exedio.cope"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../com/exedio/cope/ItemCacheStatistics.html" title="class in com.exedio.cope"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
 <li><a href="../../../com/exedio/cope/ItemField.DeletePolicy.html" title="enum in com.exedio.cope"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">

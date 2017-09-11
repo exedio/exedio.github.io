@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":6,"i1":10,"i2":6,"i3":10,"i4":10};
+var methods = {"i0":6,"i1":10,"i2":6,"i3":10,"i4":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -153,7 +153,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/util/Properties.Field.html#hasHiddenValue--">hasHiddenValue</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
-<td class="colFirst"><code>boolean</code></td>
+<td class="colFirst"><code>abstract boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/util/Properties.Field.html#isSpecified--">isSpecified</a></span>()</code>&nbsp;</td>
 </tr>
 </table>
@@ -196,14 +196,13 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <pre>public abstract&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;getDefaultValue()</pre>
 </li>
 </ul>
-<a name="getValue--">
+<a name="hasHiddenValue--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>getValue</h4>
-<pre>public abstract&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;getValue()</pre>
-<div class="block">Never returns null.</div>
+<h4>hasHiddenValue</h4>
+<pre>public&nbsp;boolean&nbsp;hasHiddenValue()</pre>
 </li>
 </ul>
 <a name="isSpecified--">
@@ -212,16 +211,17 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <ul class="blockList">
 <li class="blockList">
 <h4>isSpecified</h4>
-<pre>public final&nbsp;boolean&nbsp;isSpecified()</pre>
+<pre>public abstract&nbsp;boolean&nbsp;isSpecified()</pre>
 </li>
 </ul>
-<a name="hasHiddenValue--">
+<a name="getValue--">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>hasHiddenValue</h4>
-<pre>public&nbsp;boolean&nbsp;hasHiddenValue()</pre>
+<h4>getValue</h4>
+<pre>public abstract&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;getValue()</pre>
+<div class="block">Never returns null.</div>
 </li>
 </ul>
 </li>

@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":42,"i14":10,"i15":10,"i16":10,"i17":10,"i18":9,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":10,"i27":10,"i28":10,"i29":10,"i30":10,"i31":10,"i32":10,"i33":10,"i34":10,"i35":10,"i36":10,"i37":10,"i38":10,"i39":10,"i40":10,"i41":10,"i42":10,"i43":10,"i44":10,"i45":10,"i46":10,"i47":10,"i48":10,"i49":10,"i50":10,"i51":9,"i52":9,"i53":9,"i54":9};
+var methods = {"i0":42,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":42,"i16":10,"i17":10,"i18":10,"i19":10,"i20":9,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":10,"i27":10,"i28":10,"i29":10,"i30":10,"i31":10,"i32":10,"i33":10,"i34":10,"i35":10,"i36":10,"i37":10,"i38":10,"i39":10,"i40":10,"i41":10,"i42":10,"i43":10,"i44":10,"i45":10,"i46":10,"i47":10,"i48":10,"i49":10,"i50":10,"i51":10,"i52":10,"i53":9,"i54":9,"i55":9,"i56":9};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"],32:["t6","Deprecated Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -229,26 +229,37 @@ implements <a href="../../../../com/exedio/cope/Settable.html" title="interface 
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code><a href="../../../../com/exedio/cope/Condition.html" title="class in com.exedio.cope">Condition</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/Media.html#bodyMismatchesContentType--">bodyMismatchesContentType</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/Media.html#bodyMismatchesContentType--">bodyMismatchesContentType</a></span>()</code>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
+<div class="block"><span class="deprecationComment">Use <a href="../../../../com/exedio/cope/pattern/Media.html#bodyMismatchesContentTypeIfSupported--"><code>bodyMismatchesContentTypeIfSupported()</code></a> instead.</span></div>
+</div>
+</td>
 </tr>
 <tr id="i1" class="rowColor">
+<td class="colFirst"><code><a href="../../../../com/exedio/cope/Condition.html" title="class in com.exedio.cope">Condition</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/Media.html#bodyMismatchesContentTypeIfSupported--">bodyMismatchesContentTypeIfSupported</a></span>()</code>
+<div class="block">The result may cause an <a href="../../../../com/exedio/cope/UnsupportedQueryException.html" title="class in com.exedio.cope"><code>UnsupportedQueryException</code></a> when used,
+ if the field is stored in a <a href="../../../../com/exedio/cope/Vault.html" title="annotation in com.exedio.cope"><code>vault</code></a>.</div>
+</td>
+</tr>
+<tr id="i2" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/Media.html#checkContentType-java.lang.String-">checkContentType</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;contentType)</code>&nbsp;</td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="../../../../com/exedio/cope/pattern/Media.html" title="class in com.exedio.cope.pattern">Media</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/Media.html#contentType-java.lang.String-">contentType</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;contentType)</code>
 <div class="block">Creates a new media, that must contain the given content type only.</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="../../../../com/exedio/cope/pattern/Media.html" title="class in com.exedio.cope.pattern">Media</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/Media.html#contentType-java.lang.String-java.lang.String-">contentType</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;contentType1,
            <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;contentType2)</code>
 <div class="block">Creates a new media, that must contain one of the given content types only.</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code><a href="../../../../com/exedio/cope/pattern/Media.html" title="class in com.exedio.cope.pattern">Media</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/Media.html#contentType-java.lang.String-java.lang.String-java.lang.String-">contentType</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;contentType1,
            <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;contentType2,
@@ -256,7 +267,7 @@ implements <a href="../../../../com/exedio/cope/Settable.html" title="interface 
 <div class="block">Creates a new media, that must contain one of the given content types only.</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="../../../../com/exedio/cope/pattern/Media.html" title="class in com.exedio.cope.pattern">Media</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/Media.html#contentType-java.lang.String-java.lang.String-java.lang.String-java.lang.String-">contentType</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;contentType1,
            <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;contentType2,
@@ -265,7 +276,7 @@ implements <a href="../../../../com/exedio/cope/Settable.html" title="interface 
 <div class="block">Creates a new media, that must contain one of the given content types only.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="../../../../com/exedio/cope/pattern/Media.html" title="class in com.exedio.cope.pattern">Media</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/Media.html#contentType-java.lang.String-java.lang.String-java.lang.String-java.lang.String-java.lang.String-">contentType</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;contentType1,
            <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;contentType2,
@@ -275,7 +286,7 @@ implements <a href="../../../../com/exedio/cope/Settable.html" title="interface 
 <div class="block">Creates a new media, that must contain one of the given content types only.</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code><a href="../../../../com/exedio/cope/pattern/Media.html" title="class in com.exedio.cope.pattern">Media</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/Media.html#contentType-java.lang.String-java.lang.String-java.lang.String-java.lang.String-java.lang.String-java.lang.String-">contentType</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;contentType1,
            <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;contentType2,
@@ -286,7 +297,7 @@ implements <a href="../../../../com/exedio/cope/Settable.html" title="interface 
 <div class="block">Creates a new media, that must contain one of the given content types only.</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code><a href="../../../../com/exedio/cope/pattern/Media.html" title="class in com.exedio.cope.pattern">Media</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/Media.html#contentType-java.lang.String-java.lang.String-java.lang.String-java.lang.String-java.lang.String-java.lang.String-java.lang.String-">contentType</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;contentType1,
            <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;contentType2,
@@ -298,7 +309,7 @@ implements <a href="../../../../com/exedio/cope/Settable.html" title="interface 
 <div class="block">Creates a new media, that must contain one of the given content types only.</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code><a href="../../../../com/exedio/cope/pattern/Media.html" title="class in com.exedio.cope.pattern">Media</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/Media.html#contentType-java.lang.String-java.lang.String-java.lang.String-java.lang.String-java.lang.String-java.lang.String-java.lang.String-java.lang.String-">contentType</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;contentType1,
            <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;contentType2,
@@ -311,7 +322,7 @@ implements <a href="../../../../com/exedio/cope/Settable.html" title="interface 
 <div class="block">Creates a new media, that must contain one of the given content types only.</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code><a href="../../../../com/exedio/cope/pattern/Media.html" title="class in com.exedio.cope.pattern">Media</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/Media.html#contentType-java.lang.String-java.lang.String-java.lang.String-java.lang.String-java.lang.String-java.lang.String-java.lang.String-java.lang.String-java.lang.String-">contentType</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;contentType1,
            <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;contentType2,
@@ -325,7 +336,7 @@ implements <a href="../../../../com/exedio/cope/Settable.html" title="interface 
 <div class="block">Creates a new media, that must contain one of the given content types only.</div>
 </td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code><a href="../../../../com/exedio/cope/pattern/Media.html" title="class in com.exedio.cope.pattern">Media</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/Media.html#contentType-java.lang.String-java.lang.String-java.lang.String-java.lang.String-java.lang.String-java.lang.String-java.lang.String-java.lang.String-java.lang.String-java.lang.String-">contentType</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;contentType1,
            <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;contentType2,
@@ -340,11 +351,15 @@ implements <a href="../../../../com/exedio/cope/Settable.html" title="interface 
 <div class="block">Creates a new media, that must contain one of the given content types only.</div>
 </td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code><a href="../../../../com/exedio/cope/Condition.html" title="class in com.exedio.cope">Condition</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/Media.html#contentTypeEqual-java.lang.String-">contentTypeEqual</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;contentType)</code>&nbsp;</td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i14" class="altColor">
+<td class="colFirst"><code><a href="../../../../com/exedio/cope/pattern/Media.html" title="class in com.exedio.cope.pattern">Media</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/Media.html#contentTypeLengthMax-int-">contentTypeLengthMax</a></span>(int&nbsp;maximumLength)</code>&nbsp;</td>
+</tr>
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code><a href="../../../../com/exedio/cope/pattern/Media.html" title="class in com.exedio.cope.pattern">Media</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/Media.html#contentTypeMajor-java.lang.String-">contentTypeMajor</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;majorContentType)</code>
 <div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
@@ -352,17 +367,17 @@ implements <a href="../../../../com/exedio/cope/Settable.html" title="interface 
 </div>
 </td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code><a href="../../../../com/exedio/cope/pattern/Media.html" title="class in com.exedio.cope.pattern">Media</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/Media.html#contentTypeSub-java.lang.String-">contentTypeSub</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;majorContentType)</code>
 <div class="block">Creates a new media, that must contain the a content type with the given major part only.</div>
 </td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code><a href="../../../../com/exedio/cope/pattern/Media.html" title="class in com.exedio.cope.pattern">Media</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/Media.html#copy-com.exedio.cope.CopyMapper-">copy</a></span>(<a href="../../../../com/exedio/cope/CopyMapper.html" title="class in com.exedio.cope">CopyMapper</a>&nbsp;mapper)</code>&nbsp;</td>
 </tr>
-<tr id="i16" class="altColor">
+<tr id="i18" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/Media.html#doGetAndCommit-javax.servlet.http.HttpServletRequest-javax.servlet.http.HttpServletResponse-com.exedio.cope.Item-">doGetAndCommit</a></span>(<a href="https://docs.oracle.com/javaee/1.4/api/javax/servlet/http/HttpServletRequest.html?is-external=true" title="class or interface in javax.servlet.http">HttpServletRequest</a>&nbsp;request,
               <a href="https://docs.oracle.com/javaee/1.4/api/javax/servlet/http/HttpServletResponse.html?is-external=true" title="class or interface in javax.servlet.http">HttpServletResponse</a>&nbsp;response,
@@ -371,160 +386,160 @@ implements <a href="../../../../com/exedio/cope/Settable.html" title="interface 
  if the method completes normally (without exception).</div>
 </td>
 </tr>
-<tr id="i17" class="rowColor">
+<tr id="i19" class="rowColor">
 <td class="colFirst"><code><a href="../../../../com/exedio/cope/SetValue.html" title="class in com.exedio.cope">SetValue</a>&lt;?&gt;[]</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/Media.html#execute-com.exedio.cope.pattern.Media.Value-com.exedio.cope.Item-">execute</a></span>(<a href="../../../../com/exedio/cope/pattern/Media.Value.html" title="class in com.exedio.cope.pattern">Media.Value</a>&nbsp;value,
        <a href="../../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&nbsp;exceptionItem)</code>&nbsp;</td>
 </tr>
-<tr id="i18" class="altColor">
+<tr id="i20" class="altColor">
 <td class="colFirst"><code>static <a href="../../../../com/exedio/cope/pattern/Media.html" title="class in com.exedio.cope.pattern">Media</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/Media.html#get-com.exedio.cope.DataField-">get</a></span>(<a href="../../../../com/exedio/cope/DataField.html" title="class in com.exedio.cope">DataField</a>&nbsp;field)</code>&nbsp;</td>
 </tr>
-<tr id="i19" class="rowColor">
+<tr id="i21" class="rowColor">
 <td class="colFirst"><code><a href="../../../../com/exedio/cope/DataField.html" title="class in com.exedio.cope">DataField</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/Media.html#getBody--">getBody</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i20" class="altColor">
+<tr id="i22" class="altColor">
 <td class="colFirst"><code>byte[]</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/Media.html#getBody-com.exedio.cope.Item-">getBody</a></span>(<a href="../../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&nbsp;item)</code>
 <div class="block">Returns the body of this media.</div>
 </td>
 </tr>
-<tr id="i21" class="rowColor">
+<tr id="i23" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/Media.html#getBody-com.exedio.cope.Item-java.io.File-">getBody</a></span>(<a href="../../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&nbsp;item,
        <a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a>&nbsp;body)</code>
 <div class="block">Writes the body of this media into the given file.</div>
 </td>
 </tr>
-<tr id="i22" class="altColor">
+<tr id="i24" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/Media.html#getBody-com.exedio.cope.Item-java.io.OutputStream-">getBody</a></span>(<a href="../../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&nbsp;item,
        <a href="https://docs.oracle.com/javase/8/docs/api/java/io/OutputStream.html?is-external=true" title="class or interface in java.io">OutputStream</a>&nbsp;body)</code>
 <div class="block">Writes the body of this media into the given steam.</div>
 </td>
 </tr>
-<tr id="i23" class="rowColor">
+<tr id="i25" class="rowColor">
 <td class="colFirst"><code><a href="../../../../com/exedio/cope/FunctionField.html" title="class in com.exedio.cope">FunctionField</a>&lt;?&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/Media.html#getContentType--">getContentType</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i24" class="altColor">
+<tr id="i26" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/Media.html#getContentType-com.exedio.cope.Item-">getContentType</a></span>(<a href="../../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&nbsp;item)</code>
 <div class="block">Returns the content type of this media.</div>
 </td>
 </tr>
-<tr id="i25" class="rowColor">
+<tr id="i27" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/Media.html#getContentTypeDescription--">getContentTypeDescription</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i26" class="altColor">
+<tr id="i28" class="altColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/Media.html#getContentTypeMaximumLength--">getContentTypeMaximumLength</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i29" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/Media.html#getContentTypesAllowed--">getContentTypesAllowed</a></span>()</code>
 <div class="block">Returns a list of content types allowed for this media.</div>
 </td>
 </tr>
-<tr id="i27" class="rowColor">
+<tr id="i30" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;? extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang">Throwable</a>&gt;&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/Media.html#getInitialExceptions--">getInitialExceptions</a></span>()</code>
 <div class="block">Returns the exceptions possibly thrown,
  when setting a value for this settable.</div>
 </td>
 </tr>
-<tr id="i28" class="altColor">
+<tr id="i31" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;?&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/Media.html#getInitialType--">getInitialType</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i29" class="rowColor">
+<tr id="i32" class="altColor">
 <td class="colFirst"><code><a href="../../../../com/exedio/cope/DateField.html" title="class in com.exedio.cope">DateField</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/Media.html#getLastModified--">getLastModified</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i30" class="altColor">
+<tr id="i33" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Date.html?is-external=true" title="class or interface in java.util">Date</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/Media.html#getLastModified-com.exedio.cope.Item-">getLastModified</a></span>(<a href="../../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&nbsp;item)</code>
 <div class="block">Returns the date of the last modification
  of this media.</div>
 </td>
 </tr>
-<tr id="i31" class="rowColor">
+<tr id="i34" class="altColor">
 <td class="colFirst"><code>long</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/Media.html#getLength-com.exedio.cope.Item-">getLength</a></span>(<a href="../../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&nbsp;item)</code>
 <div class="block">Returns the length of the body of this media.</div>
 </td>
 </tr>
-<tr id="i32" class="altColor">
+<tr id="i35" class="rowColor">
 <td class="colFirst"><code>long</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/Media.html#getMaximumLength--">getMaximumLength</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i33" class="rowColor">
+<tr id="i36" class="altColor">
 <td class="colFirst"><code><a href="../../../../com/exedio/cope/CheckConstraint.html" title="class in com.exedio.cope">CheckConstraint</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/Media.html#getUnison--">getUnison</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i34" class="altColor">
+<tr id="i37" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/Media.html#isContentTypeWrapped--">isContentTypeWrapped</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i35" class="rowColor">
+<tr id="i38" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/Media.html#isFinal--">isFinal</a></span>()</code>
 <div class="block">Returns, whether the contents of this media path may change or not.</div>
 </td>
 </tr>
-<tr id="i36" class="altColor">
+<tr id="i39" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/Media.html#isInitial--">isInitial</a></span>()</code>
 <div class="block">Returns true, if a value for the settable should be specified
  on the creation of an item.</div>
 </td>
 </tr>
-<tr id="i37" class="rowColor">
+<tr id="i40" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/Media.html#isMandatory--">isMandatory</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/Media.html#isMandatory--">isMandatory</a></span>()</code>
+<div class="block">A MediaPath is "mandatory" if <a href="../../../../com/exedio/cope/pattern/MediaPath.html#getContentType-com.exedio.cope.Item-"><code>MediaPath.getContentType(Item)</code></a> and <a href="../../../../com/exedio/cope/pattern/MediaPath.html#getLocator-com.exedio.cope.Item-"><code>MediaPath.getLocator(Item)</code></a> will
+ not return <code>null</code> for any item.</div>
+</td>
 </tr>
-<tr id="i38" class="altColor">
+<tr id="i41" class="rowColor">
 <td class="colFirst"><code><a href="../../../../com/exedio/cope/Condition.html" title="class in com.exedio.cope">Condition</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/Media.html#isNotNull--">isNotNull</a></span>()</code>
 <div class="block">Returns a condition matching all items, for which <a href="../../../../com/exedio/cope/pattern/MediaPath.html#getLocator-com.exedio.cope.Item-"><code>MediaPath.getLocator(Item)</code></a> does not return null.</div>
 </td>
 </tr>
-<tr id="i39" class="rowColor">
+<tr id="i42" class="altColor">
 <td class="colFirst"><code><a href="../../../../com/exedio/cope/Condition.html" title="class in com.exedio.cope">Condition</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/Media.html#isNotNull-com.exedio.cope.Join-">isNotNull</a></span>(<a href="../../../../com/exedio/cope/Join.html" title="class in com.exedio.cope">Join</a>&nbsp;join)</code>
 <div class="block">Returns a condition matching all items, for which <a href="../../../../com/exedio/cope/pattern/MediaPath.html#getLocator-com.exedio.cope.Item-"><code>MediaPath.getLocator(Item)</code></a> does not return null.</div>
 </td>
 </tr>
-<tr id="i40" class="altColor">
+<tr id="i43" class="rowColor">
 <td class="colFirst"><code><a href="../../../../com/exedio/cope/Condition.html" title="class in com.exedio.cope">Condition</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/Media.html#isNull--">isNull</a></span>()</code>
 <div class="block">Returns a condition matching all items, for which <a href="../../../../com/exedio/cope/pattern/MediaPath.html#getLocator-com.exedio.cope.Item-"><code>MediaPath.getLocator(Item)</code></a> returns null.</div>
 </td>
 </tr>
-<tr id="i41" class="rowColor">
+<tr id="i44" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/Media.html#isNull-com.exedio.cope.Item-">isNull</a></span>(<a href="../../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&nbsp;item)</code>&nbsp;</td>
 </tr>
-<tr id="i42" class="altColor">
+<tr id="i45" class="rowColor">
 <td class="colFirst"><code><a href="../../../../com/exedio/cope/Condition.html" title="class in com.exedio.cope">Condition</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/Media.html#isNull-com.exedio.cope.Join-">isNull</a></span>(<a href="../../../../com/exedio/cope/Join.html" title="class in com.exedio.cope">Join</a>&nbsp;join)</code>
 <div class="block">Returns a condition matching all items, for which <a href="../../../../com/exedio/cope/pattern/MediaPath.html#getLocator-com.exedio.cope.Item-"><code>MediaPath.getLocator(Item)</code></a> returns null.</div>
 </td>
 </tr>
-<tr id="i43" class="rowColor">
+<tr id="i46" class="altColor">
 <td class="colFirst"><code><a href="../../../../com/exedio/cope/pattern/Media.html" title="class in com.exedio.cope.pattern">Media</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/Media.html#lengthMax-long-">lengthMax</a></span>(long&nbsp;maximumLength)</code>&nbsp;</td>
 </tr>
-<tr id="i44" class="altColor">
-<td class="colFirst"><code><a href="../../../../com/exedio/cope/SetValue.html" title="class in com.exedio.cope">SetValue</a>&lt;<a href="../../../../com/exedio/cope/pattern/Media.Value.html" title="class in com.exedio.cope.pattern">Media.Value</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/Media.html#map-com.exedio.cope.pattern.Media.Value-">map</a></span>(<a href="../../../../com/exedio/cope/pattern/Media.Value.html" title="class in com.exedio.cope.pattern">Media.Value</a>&nbsp;value)</code>
-<div class="block">All implementations of this method should return
- <tt><a href="../../../../com/exedio/cope/SetValue.html#map-F-E-"><code>SetValue.map(this,value)</code></a></tt>.</div>
-</td>
-</tr>
-<tr id="i45" class="rowColor">
+<tr id="i47" class="rowColor">
 <td class="colFirst"><code><a href="../../../../com/exedio/cope/pattern/Media.html" title="class in com.exedio.cope.pattern">Media</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/Media.html#optional--">optional</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i46" class="altColor">
+<tr id="i48" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/Media.html#set-com.exedio.cope.Item-byte:A-java.lang.String-">set</a></span>(<a href="../../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&nbsp;item,
    byte[]&nbsp;body,
@@ -532,7 +547,7 @@ implements <a href="../../../../com/exedio/cope/Settable.html" title="interface 
 <div class="block">Sets the contents of this media.</div>
 </td>
 </tr>
-<tr id="i47" class="rowColor">
+<tr id="i49" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/Media.html#set-com.exedio.cope.Item-java.io.File-java.lang.String-">set</a></span>(<a href="../../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&nbsp;item,
    <a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a>&nbsp;body,
@@ -540,7 +555,7 @@ implements <a href="../../../../com/exedio/cope/Settable.html" title="interface 
 <div class="block">Sets the contents of this media.</div>
 </td>
 </tr>
-<tr id="i48" class="altColor">
+<tr id="i50" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/Media.html#set-com.exedio.cope.Item-java.io.InputStream-java.lang.String-">set</a></span>(<a href="../../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&nbsp;item,
    <a href="https://docs.oracle.com/javase/8/docs/api/java/io/InputStream.html?is-external=true" title="class or interface in java.io">InputStream</a>&nbsp;body,
@@ -548,33 +563,33 @@ implements <a href="../../../../com/exedio/cope/Settable.html" title="interface 
 <div class="block">Sets the contents of this media.</div>
 </td>
 </tr>
-<tr id="i49" class="rowColor">
+<tr id="i51" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/Media.html#set-com.exedio.cope.Item-com.exedio.cope.pattern.Media.Value-">set</a></span>(<a href="../../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&nbsp;item,
    <a href="../../../../com/exedio/cope/pattern/Media.Value.html" title="class in com.exedio.cope.pattern">Media.Value</a>&nbsp;value)</code>
 <div class="block">Sets the contents of this media.</div>
 </td>
 </tr>
-<tr id="i50" class="altColor">
+<tr id="i52" class="altColor">
 <td class="colFirst"><code><a href="../../../../com/exedio/cope/pattern/Media.html" title="class in com.exedio.cope.pattern">Media</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/Media.html#toFinal--">toFinal</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i51" class="rowColor">
+<tr id="i53" class="rowColor">
 <td class="colFirst"><code>static <a href="../../../../com/exedio/cope/pattern/Media.Value.html" title="class in com.exedio.cope.pattern">Media.Value</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/Media.html#toValue-byte:A-java.lang.String-">toValue</a></span>(byte[]&nbsp;body,
        <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;contentType)</code>&nbsp;</td>
 </tr>
-<tr id="i52" class="altColor">
+<tr id="i54" class="altColor">
 <td class="colFirst"><code>static <a href="../../../../com/exedio/cope/pattern/Media.Value.html" title="class in com.exedio.cope.pattern">Media.Value</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/Media.html#toValue-com.exedio.cope.DataField.Value-java.lang.String-">toValue</a></span>(<a href="../../../../com/exedio/cope/DataField.Value.html" title="class in com.exedio.cope">DataField.Value</a>&nbsp;body,
        <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;contentType)</code>&nbsp;</td>
 </tr>
-<tr id="i53" class="rowColor">
+<tr id="i55" class="rowColor">
 <td class="colFirst"><code>static <a href="../../../../com/exedio/cope/pattern/Media.Value.html" title="class in com.exedio.cope.pattern">Media.Value</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/Media.html#toValue-java.io.File-java.lang.String-">toValue</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a>&nbsp;body,
        <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;contentType)</code>&nbsp;</td>
 </tr>
-<tr id="i54" class="altColor">
+<tr id="i56" class="altColor">
 <td class="colFirst"><code>static <a href="../../../../com/exedio/cope/pattern/Media.Value.html" title="class in com.exedio.cope.pattern">Media.Value</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/Media.html#toValue-java.io.InputStream-java.lang.String-">toValue</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/io/InputStream.html?is-external=true" title="class or interface in java.io">InputStream</a>&nbsp;body,
        <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;contentType)</code>&nbsp;</td>
@@ -592,14 +607,14 @@ implements <a href="../../../../com/exedio/cope/Settable.html" title="interface 
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;com.exedio.cope.<a href="../../../../com/exedio/cope/Pattern.html" title="class in com.exedio.cope">Pattern</a></h3>
-<code><a href="../../../../com/exedio/cope/Pattern.html#addSource-com.exedio.cope.Feature-java.lang.String-">addSource</a>, <a href="../../../../com/exedio/cope/Pattern.html#addSource-com.exedio.cope.Feature-java.lang.String-java.lang.reflect.AnnotatedElement-">addSource</a>, <a href="../../../../com/exedio/cope/Pattern.html#addSource-com.exedio.cope.Feature-java.lang.String-java.lang.reflect.Field-">addSource</a>, <a href="../../../../com/exedio/cope/Pattern.html#annotationField-java.lang.String-">annotationField</a>, <a href="../../../../com/exedio/cope/Pattern.html#getGeneratedTypes--">getGeneratedTypes</a>, <a href="../../../../com/exedio/cope/Pattern.html#getSourceFeatures--">getSourceFeatures</a>, <a href="../../../../com/exedio/cope/Pattern.html#getSourceFields--">getSourceFields</a>, <a href="../../../../com/exedio/cope/Pattern.html#getSources--">getSources</a>, <a href="../../../../com/exedio/cope/Pattern.html#getSourceTypes--">getSourceTypes</a>, <a href="../../../../com/exedio/cope/Pattern.html#getType--">getType</a>, <a href="../../../../com/exedio/cope/Pattern.html#initialize--">initialize</a>, <a href="../../../../com/exedio/cope/Pattern.html#newSourceType-java.lang.Class-boolean-com.exedio.cope.Type-com.exedio.cope.Features-java.lang.String-">newSourceType</a>, <a href="../../../../com/exedio/cope/Pattern.html#newSourceType-java.lang.Class-boolean-com.exedio.cope.Type-java.util.LinkedHashMap-java.lang.String-">newSourceType</a>, <a href="../../../../com/exedio/cope/Pattern.html#newSourceType-java.lang.Class-com.exedio.cope.Features-">newSourceType</a>, <a href="../../../../com/exedio/cope/Pattern.html#newSourceType-java.lang.Class-com.exedio.cope.Features-java.lang.String-">newSourceType</a>, <a href="../../../../com/exedio/cope/Pattern.html#newSourceType-java.lang.Class-java.util.LinkedHashMap-">newSourceType</a>, <a href="../../../../com/exedio/cope/Pattern.html#newSourceType-java.lang.Class-java.util.LinkedHashMap-java.lang.String-">newSourceType</a>, <a href="../../../../com/exedio/cope/Pattern.html#newType-java.lang.Class-java.util.LinkedHashMap-">newType</a>, <a href="../../../../com/exedio/cope/Pattern.html#newType-java.lang.Class-java.util.LinkedHashMap-java.lang.String-">newType</a>, <a href="../../../../com/exedio/cope/Pattern.html#registerSource-com.exedio.cope.Field-java.lang.String-">registerSource</a></code></li>
+<code><a href="../../../../com/exedio/cope/Pattern.html#addSource-com.exedio.cope.Feature-java.lang.String-">addSource</a>, <a href="../../../../com/exedio/cope/Pattern.html#addSource-com.exedio.cope.Feature-java.lang.String-java.lang.reflect.AnnotatedElement-">addSource</a>, <a href="../../../../com/exedio/cope/Pattern.html#addSource-com.exedio.cope.Feature-java.lang.String-java.lang.reflect.AnnotatedElement-java.lang.Class-">addSource</a>, <a href="../../../../com/exedio/cope/Pattern.html#addSource-com.exedio.cope.Feature-java.lang.String-java.lang.reflect.Field-">addSource</a>, <a href="../../../../com/exedio/cope/Pattern.html#annotationField-java.lang.String-">annotationField</a>, <a href="../../../../com/exedio/cope/Pattern.html#getGeneratedTypes--">getGeneratedTypes</a>, <a href="../../../../com/exedio/cope/Pattern.html#getSourceFeatures--">getSourceFeatures</a>, <a href="../../../../com/exedio/cope/Pattern.html#getSourceFeaturesGather--">getSourceFeaturesGather</a>, <a href="../../../../com/exedio/cope/Pattern.html#getSourceFields--">getSourceFields</a>, <a href="../../../../com/exedio/cope/Pattern.html#getSources--">getSources</a>, <a href="../../../../com/exedio/cope/Pattern.html#getSourceTypes--">getSourceTypes</a>, <a href="../../../../com/exedio/cope/Pattern.html#getType--">getType</a>, <a href="../../../../com/exedio/cope/Pattern.html#initialize--">initialize</a>, <a href="../../../../com/exedio/cope/Pattern.html#newSourceType-java.lang.Class-boolean-com.exedio.cope.Type-com.exedio.cope.Features-java.lang.String-">newSourceType</a>, <a href="../../../../com/exedio/cope/Pattern.html#newSourceType-java.lang.Class-boolean-com.exedio.cope.Type-java.util.LinkedHashMap-java.lang.String-">newSourceType</a>, <a href="../../../../com/exedio/cope/Pattern.html#newSourceType-java.lang.Class-com.exedio.cope.Features-">newSourceType</a>, <a href="../../../../com/exedio/cope/Pattern.html#newSourceType-java.lang.Class-com.exedio.cope.Features-java.lang.String-">newSourceType</a>, <a href="../../../../com/exedio/cope/Pattern.html#newSourceType-java.lang.Class-java.util.LinkedHashMap-">newSourceType</a>, <a href="../../../../com/exedio/cope/Pattern.html#newSourceType-java.lang.Class-java.util.LinkedHashMap-java.lang.String-">newSourceType</a>, <a href="../../../../com/exedio/cope/Pattern.html#newType-java.lang.Class-java.util.LinkedHashMap-">newType</a>, <a href="../../../../com/exedio/cope/Pattern.html#newType-java.lang.Class-java.util.LinkedHashMap-java.lang.String-">newType</a>, <a href="../../../../com/exedio/cope/Pattern.html#registerSource-com.exedio.cope.Field-java.lang.String-">registerSource</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.com.exedio.cope.Feature">
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;com.exedio.cope.<a href="../../../../com/exedio/cope/Feature.html" title="class in com.exedio.cope">Feature</a></h3>
-<code><a href="../../../../com/exedio/cope/Feature.html#afterModelCreated--">afterModelCreated</a>, <a href="../../../../com/exedio/cope/Feature.html#getAnnotation-java.lang.Class-">getAnnotation</a>, <a href="../../../../com/exedio/cope/Feature.html#getID--">getID</a>, <a href="../../../../com/exedio/cope/Feature.html#getName--">getName</a>, <a href="../../../../com/exedio/cope/Feature.html#getPattern--">getPattern</a>, <a href="../../../../com/exedio/cope/Feature.html#getWrappers--">getWrappers</a>, <a href="../../../../com/exedio/cope/Feature.html#isAnnotationPresent-java.lang.Class-">isAnnotationPresent</a>, <a href="../../../../com/exedio/cope/Feature.html#isSourceAlready--">isSourceAlready</a>, <a href="../../../../com/exedio/cope/Feature.html#mount-java.lang.String-java.io.Serializable-java.lang.reflect.AnnotatedElement-">mount</a>, <a href="../../../../com/exedio/cope/Feature.html#readResolve--">readResolve</a>, <a href="../../../../com/exedio/cope/Feature.html#toString--">toString</a>, <a href="../../../../com/exedio/cope/Feature.html#toString-java.lang.StringBuilder-com.exedio.cope.Type-">toString</a>, <a href="../../../../com/exedio/cope/Feature.html#writeReplace--">writeReplace</a></code></li>
+<code><a href="../../../../com/exedio/cope/Feature.html#afterModelCreated--">afterModelCreated</a>, <a href="../../../../com/exedio/cope/Feature.html#getAbstractType--">getAbstractType</a>, <a href="../../../../com/exedio/cope/Feature.html#getAnnotation-java.lang.Class-">getAnnotation</a>, <a href="../../../../com/exedio/cope/Feature.html#getID--">getID</a>, <a href="../../../../com/exedio/cope/Feature.html#getLocalizationKeys--">getLocalizationKeys</a>, <a href="../../../../com/exedio/cope/Feature.html#getName--">getName</a>, <a href="../../../../com/exedio/cope/Feature.html#getPattern--">getPattern</a>, <a href="../../../../com/exedio/cope/Feature.html#isAnnotationPresent-java.lang.Class-">isAnnotationPresent</a>, <a href="../../../../com/exedio/cope/Feature.html#isSourceAlready--">isSourceAlready</a>, <a href="../../../../com/exedio/cope/Feature.html#mount-com.exedio.cope.AbstractType-java.lang.String-java.lang.String-java.io.Serializable-java.lang.reflect.AnnotatedElement-">mount</a>, <a href="../../../../com/exedio/cope/Feature.html#readResolve--">readResolve</a>, <a href="../../../../com/exedio/cope/Feature.html#requireMounted-T-">requireMounted</a>, <a href="../../../../com/exedio/cope/Feature.html#toString--">toString</a>, <a href="../../../../com/exedio/cope/Feature.html#toString-java.lang.StringBuilder-com.exedio.cope.Type-">toString</a>, <a href="../../../../com/exedio/cope/Feature.html#writeReplace--">writeReplace</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
@@ -607,6 +622,13 @@ implements <a href="../../../../com/exedio/cope/Settable.html" title="interface 
 </a>
 <h3>Methods inherited from class&nbsp;java.lang.<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></h3>
 <code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#clone--" title="class or interface in java.lang">clone</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#equals-java.lang.Object-" title="class or interface in java.lang">equals</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#finalize--" title="class or interface in java.lang">finalize</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#getClass--" title="class or interface in java.lang">getClass</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#hashCode--" title="class or interface in java.lang">hashCode</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notify--" title="class or interface in java.lang">notify</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notifyAll--" title="class or interface in java.lang">notifyAll</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait--" title="class or interface in java.lang">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait-long-" title="class or interface in java.lang">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait-long-int-" title="class or interface in java.lang">wait</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods.inherited.from.class.com.exedio.cope.Settable">
+<!--   -->
+</a>
+<h3>Methods inherited from interface&nbsp;com.exedio.cope.<a href="../../../../com/exedio/cope/Settable.html" title="interface in com.exedio.cope">Settable</a></h3>
+<code><a href="../../../../com/exedio/cope/Settable.html#map-E-">map</a></code></li>
 </ul>
 </li>
 </ul>
@@ -878,6 +900,15 @@ public&nbsp;Media(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/S
 <div class="block">Creates a new media, that must contain the a content type with the given major part only.</div>
 </li>
 </ul>
+<a name="contentTypeLengthMax-int-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>contentTypeLengthMax</h4>
+<pre>public&nbsp;<a href="../../../../com/exedio/cope/pattern/Media.html" title="class in com.exedio.cope.pattern">Media</a>&nbsp;contentTypeLengthMax(int&nbsp;maximumLength)</pre>
+</li>
+</ul>
 <a name="isFinal--">
 <!--   -->
 </a>
@@ -902,10 +933,15 @@ public&nbsp;Media(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/S
 <ul class="blockList">
 <li class="blockList">
 <h4>isMandatory</h4>
-<pre>public final&nbsp;boolean&nbsp;isMandatory()</pre>
+<pre>public&nbsp;boolean&nbsp;isMandatory()</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../../../com/exedio/cope/pattern/MediaPath.html#isMandatory--">MediaPath</a></code></span></div>
+<div class="block">A MediaPath is "mandatory" if <a href="../../../../com/exedio/cope/pattern/MediaPath.html#getContentType-com.exedio.cope.Item-"><code>MediaPath.getContentType(Item)</code></a> and <a href="../../../../com/exedio/cope/pattern/MediaPath.html#getLocator-com.exedio.cope.Item-"><code>MediaPath.getLocator(Item)</code></a> will
+ not return <code>null</code> for any item.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../com/exedio/cope/Settable.html#isMandatory--">isMandatory</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../com/exedio/cope/Settable.html" title="interface in com.exedio.cope">Settable</a>&lt;<a href="../../../../com/exedio/cope/pattern/Media.Value.html" title="class in com.exedio.cope.pattern">Media.Value</a>&gt;</code></dd>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../com/exedio/cope/pattern/MediaPath.html#isMandatory--">isMandatory</a></code>&nbsp;in class&nbsp;<code><a href="../../../../com/exedio/cope/pattern/MediaPath.html" title="class in com.exedio.cope.pattern">MediaPath</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -929,6 +965,15 @@ public&nbsp;Media(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/S
 <li class="blockList">
 <h4>checkContentType</h4>
 <pre>public&nbsp;boolean&nbsp;checkContentType(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;contentType)</pre>
+</li>
+</ul>
+<a name="getContentTypeMaximumLength--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getContentTypeMaximumLength</h4>
+<pre>public&nbsp;int&nbsp;getContentTypeMaximumLength()</pre>
 </li>
 </ul>
 <a name="getContentTypeDescription--">
@@ -1042,29 +1087,14 @@ public&nbsp;Media(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/S
 </dl>
 </li>
 </ul>
-<a name="map-com.exedio.cope.pattern.Media.Value-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>map</h4>
-<pre>public&nbsp;<a href="../../../../com/exedio/cope/SetValue.html" title="class in com.exedio.cope">SetValue</a>&lt;<a href="../../../../com/exedio/cope/pattern/Media.Value.html" title="class in com.exedio.cope.pattern">Media.Value</a>&gt;&nbsp;map(<a href="../../../../com/exedio/cope/pattern/Media.Value.html" title="class in com.exedio.cope.pattern">Media.Value</a>&nbsp;value)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../com/exedio/cope/Settable.html#map-E-">Settable</a></code></span></div>
-<div class="block">All implementations of this method should return
- <tt><a href="../../../../com/exedio/cope/SetValue.html#map-F-E-"><code>SetValue.map(this,value)</code></a></tt>.</div>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../com/exedio/cope/Settable.html#map-E-">map</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../com/exedio/cope/Settable.html" title="interface in com.exedio.cope">Settable</a>&lt;<a href="../../../../com/exedio/cope/pattern/Media.Value.html" title="class in com.exedio.cope.pattern">Media.Value</a>&gt;</code></dd>
-</dl>
-</li>
-</ul>
 <a name="isNull-com.exedio.cope.Item-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>isNull</h4>
-<pre>public&nbsp;boolean&nbsp;isNull(<a href="../../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&nbsp;item)</pre>
+<pre>public&nbsp;boolean&nbsp;isNull(<a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+                      <a href="../../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&nbsp;item)</pre>
 </li>
 </ul>
 <a name="getContentType-com.exedio.cope.Item-">
@@ -1088,7 +1118,8 @@ public&nbsp;Media(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/S
 <ul class="blockList">
 <li class="blockList">
 <h4>getLastModified</h4>
-<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Date.html?is-external=true" title="class or interface in java.util">Date</a>&nbsp;getLastModified(<a href="../../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&nbsp;item)</pre>
+<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Date.html?is-external=true" title="class or interface in java.util">Date</a>&nbsp;getLastModified(<a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+                            <a href="../../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&nbsp;item)</pre>
 <div class="block">Returns the date of the last modification
  of this media.
  Returns null, if this media is null.</div>
@@ -1106,7 +1137,8 @@ public&nbsp;Media(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/S
 <ul class="blockList">
 <li class="blockList">
 <h4>getLength</h4>
-<pre>public&nbsp;long&nbsp;getLength(<a href="../../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&nbsp;item)</pre>
+<pre>public&nbsp;long&nbsp;getLength(<a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+                      <a href="../../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&nbsp;item)</pre>
 <div class="block">Returns the length of the body of this media.
  Returns -1, if this media is null.</div>
 </li>
@@ -1117,7 +1149,8 @@ public&nbsp;Media(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/S
 <ul class="blockList">
 <li class="blockList">
 <h4>set</h4>
-<pre>public&nbsp;void&nbsp;set(<a href="../../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&nbsp;item,
+<pre>public&nbsp;void&nbsp;set(<a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+                <a href="../../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&nbsp;item,
                 <a href="../../../../com/exedio/cope/pattern/Media.Value.html" title="class in com.exedio.cope.pattern">Media.Value</a>&nbsp;value)
          throws <a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
 <div class="block">Sets the contents of this media.</div>
@@ -1137,7 +1170,8 @@ public&nbsp;Media(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/S
 <ul class="blockList">
 <li class="blockList">
 <h4>getBody</h4>
-<pre>public&nbsp;byte[]&nbsp;getBody(<a href="../../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&nbsp;item)</pre>
+<pre>public&nbsp;byte[]&nbsp;getBody(<a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+                      <a href="../../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&nbsp;item)</pre>
 <div class="block">Returns the body of this media.
  Returns null, if this media is null.</div>
 </li>
@@ -1148,7 +1182,8 @@ public&nbsp;Media(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/S
 <ul class="blockList">
 <li class="blockList">
 <h4>set</h4>
-<pre>public&nbsp;void&nbsp;set(<a href="../../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&nbsp;item,
+<pre>public&nbsp;void&nbsp;set(<a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+                <a href="../../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&nbsp;item,
                 byte[]&nbsp;body,
                 <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;contentType)</pre>
 <div class="block">Sets the contents of this media.</div>
@@ -1167,7 +1202,9 @@ public&nbsp;Media(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/S
 <ul class="blockList">
 <li class="blockList">
 <h4>getBody</h4>
-<pre>public&nbsp;void&nbsp;getBody(<a href="../../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&nbsp;item,
+<pre>public&nbsp;void&nbsp;getBody(<a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+                    <a href="../../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&nbsp;item,
+                    <a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
                     <a href="https://docs.oracle.com/javase/8/docs/api/java/io/OutputStream.html?is-external=true" title="class or interface in java.io">OutputStream</a>&nbsp;body)
              throws <a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
 <div class="block">Writes the body of this media into the given steam.
@@ -1185,7 +1222,8 @@ public&nbsp;Media(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/S
 <ul class="blockList">
 <li class="blockList">
 <h4>set</h4>
-<pre>public&nbsp;void&nbsp;set(<a href="../../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&nbsp;item,
+<pre>public&nbsp;void&nbsp;set(<a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+                <a href="../../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&nbsp;item,
                 <a href="https://docs.oracle.com/javase/8/docs/api/java/io/InputStream.html?is-external=true" title="class or interface in java.io">InputStream</a>&nbsp;body,
                 <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;contentType)
          throws <a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
@@ -1207,7 +1245,9 @@ public&nbsp;Media(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/S
 <ul class="blockList">
 <li class="blockList">
 <h4>getBody</h4>
-<pre>public&nbsp;void&nbsp;getBody(<a href="../../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&nbsp;item,
+<pre>public&nbsp;void&nbsp;getBody(<a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+                    <a href="../../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&nbsp;item,
+                    <a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
                     <a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a>&nbsp;body)
              throws <a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
 <div class="block">Writes the body of this media into the given file.
@@ -1225,7 +1265,8 @@ public&nbsp;Media(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/S
 <ul class="blockList">
 <li class="blockList">
 <h4>set</h4>
-<pre>public&nbsp;void&nbsp;set(<a href="../../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&nbsp;item,
+<pre>public&nbsp;void&nbsp;set(<a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+                <a href="../../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&nbsp;item,
                 <a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a>&nbsp;body,
                 <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;contentType)
          throws <a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
@@ -1246,8 +1287,8 @@ public&nbsp;Media(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/S
 <ul class="blockList">
 <li class="blockList">
 <h4>toValue</h4>
-<pre>public static final&nbsp;<a href="../../../../com/exedio/cope/pattern/Media.Value.html" title="class in com.exedio.cope.pattern">Media.Value</a>&nbsp;toValue(<a href="../../../../com/exedio/cope/DataField.Value.html" title="class in com.exedio.cope">DataField.Value</a>&nbsp;body,
-                                        <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;contentType)</pre>
+<pre>public static&nbsp;<a href="../../../../com/exedio/cope/pattern/Media.Value.html" title="class in com.exedio.cope.pattern">Media.Value</a>&nbsp;toValue(<a href="../../../../com/exedio/cope/DataField.Value.html" title="class in com.exedio.cope">DataField.Value</a>&nbsp;body,
+                                  <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;contentType)</pre>
 </li>
 </ul>
 <a name="toValue-byte:A-java.lang.String-">
@@ -1256,8 +1297,8 @@ public&nbsp;Media(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/S
 <ul class="blockList">
 <li class="blockList">
 <h4>toValue</h4>
-<pre>public static final&nbsp;<a href="../../../../com/exedio/cope/pattern/Media.Value.html" title="class in com.exedio.cope.pattern">Media.Value</a>&nbsp;toValue(byte[]&nbsp;body,
-                                        <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;contentType)</pre>
+<pre>public static&nbsp;<a href="../../../../com/exedio/cope/pattern/Media.Value.html" title="class in com.exedio.cope.pattern">Media.Value</a>&nbsp;toValue(byte[]&nbsp;body,
+                                  <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;contentType)</pre>
 </li>
 </ul>
 <a name="toValue-java.io.InputStream-java.lang.String-">
@@ -1266,8 +1307,8 @@ public&nbsp;Media(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/S
 <ul class="blockList">
 <li class="blockList">
 <h4>toValue</h4>
-<pre>public static final&nbsp;<a href="../../../../com/exedio/cope/pattern/Media.Value.html" title="class in com.exedio.cope.pattern">Media.Value</a>&nbsp;toValue(<a href="https://docs.oracle.com/javase/8/docs/api/java/io/InputStream.html?is-external=true" title="class or interface in java.io">InputStream</a>&nbsp;body,
-                                        <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;contentType)</pre>
+<pre>public static&nbsp;<a href="../../../../com/exedio/cope/pattern/Media.Value.html" title="class in com.exedio.cope.pattern">Media.Value</a>&nbsp;toValue(<a href="https://docs.oracle.com/javase/8/docs/api/java/io/InputStream.html?is-external=true" title="class or interface in java.io">InputStream</a>&nbsp;body,
+                                  <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;contentType)</pre>
 </li>
 </ul>
 <a name="toValue-java.io.File-java.lang.String-">
@@ -1276,8 +1317,8 @@ public&nbsp;Media(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/S
 <ul class="blockList">
 <li class="blockList">
 <h4>toValue</h4>
-<pre>public static final&nbsp;<a href="../../../../com/exedio/cope/pattern/Media.Value.html" title="class in com.exedio.cope.pattern">Media.Value</a>&nbsp;toValue(<a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a>&nbsp;body,
-                                        <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;contentType)</pre>
+<pre>public static&nbsp;<a href="../../../../com/exedio/cope/pattern/Media.Value.html" title="class in com.exedio.cope.pattern">Media.Value</a>&nbsp;toValue(<a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a>&nbsp;body,
+                                  <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;contentType)</pre>
 </li>
 </ul>
 <a name="execute-com.exedio.cope.pattern.Media.Value-com.exedio.cope.Item-">
@@ -1300,7 +1341,7 @@ public&nbsp;Media(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/S
 <ul class="blockList">
 <li class="blockList">
 <h4>get</h4>
-<pre>public static final&nbsp;<a href="../../../../com/exedio/cope/pattern/Media.html" title="class in com.exedio.cope.pattern">Media</a>&nbsp;get(<a href="../../../../com/exedio/cope/DataField.html" title="class in com.exedio.cope">DataField</a>&nbsp;field)</pre>
+<pre>public static&nbsp;<a href="../../../../com/exedio/cope/pattern/Media.html" title="class in com.exedio.cope.pattern">Media</a>&nbsp;get(<a href="../../../../com/exedio/cope/DataField.html" title="class in com.exedio.cope">DataField</a>&nbsp;field)</pre>
 </li>
 </ul>
 <a name="doGetAndCommit-javax.servlet.http.HttpServletRequest-javax.servlet.http.HttpServletResponse-com.exedio.cope.Item-">
@@ -1337,7 +1378,7 @@ public&nbsp;Media(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/S
 <div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../../../com/exedio/cope/pattern/MediaPath.html#isNull--">MediaPath</a></code></span></div>
 <div class="block">Returns a condition matching all items, for which <a href="../../../../com/exedio/cope/pattern/MediaPath.html#getLocator-com.exedio.cope.Item-"><code>MediaPath.getLocator(Item)</code></a> returns null.</div>
 <dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../../com/exedio/cope/pattern/MediaPath.html#isNull--">isNull</a></code>&nbsp;in class&nbsp;<code><a href="../../../../com/exedio/cope/pattern/MediaPath.html" title="class in com.exedio.cope.pattern">MediaPath</a></code></dd>
 </dl>
 </li>
@@ -1352,8 +1393,10 @@ public&nbsp;Media(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/S
 <div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../../../com/exedio/cope/pattern/MediaPath.html#isNull-com.exedio.cope.Join-">MediaPath</a></code></span></div>
 <div class="block">Returns a condition matching all items, for which <a href="../../../../com/exedio/cope/pattern/MediaPath.html#getLocator-com.exedio.cope.Item-"><code>MediaPath.getLocator(Item)</code></a> returns null.</div>
 <dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../../com/exedio/cope/pattern/MediaPath.html#isNull-com.exedio.cope.Join-">isNull</a></code>&nbsp;in class&nbsp;<code><a href="../../../../com/exedio/cope/pattern/MediaPath.html" title="class in com.exedio.cope.pattern">MediaPath</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>join</code> - the join the returned condition should be bound to</dd>
 </dl>
 </li>
 </ul>
@@ -1367,7 +1410,7 @@ public&nbsp;Media(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/S
 <div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../../../com/exedio/cope/pattern/MediaPath.html#isNotNull--">MediaPath</a></code></span></div>
 <div class="block">Returns a condition matching all items, for which <a href="../../../../com/exedio/cope/pattern/MediaPath.html#getLocator-com.exedio.cope.Item-"><code>MediaPath.getLocator(Item)</code></a> does not return null.</div>
 <dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../../com/exedio/cope/pattern/MediaPath.html#isNotNull--">isNotNull</a></code>&nbsp;in class&nbsp;<code><a href="../../../../com/exedio/cope/pattern/MediaPath.html" title="class in com.exedio.cope.pattern">MediaPath</a></code></dd>
 </dl>
 </li>
@@ -1382,8 +1425,10 @@ public&nbsp;Media(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/S
 <div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../../../com/exedio/cope/pattern/MediaPath.html#isNotNull-com.exedio.cope.Join-">MediaPath</a></code></span></div>
 <div class="block">Returns a condition matching all items, for which <a href="../../../../com/exedio/cope/pattern/MediaPath.html#getLocator-com.exedio.cope.Item-"><code>MediaPath.getLocator(Item)</code></a> does not return null.</div>
 <dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../../com/exedio/cope/pattern/MediaPath.html#isNotNull-com.exedio.cope.Join-">isNotNull</a></code>&nbsp;in class&nbsp;<code><a href="../../../../com/exedio/cope/pattern/MediaPath.html" title="class in com.exedio.cope.pattern">MediaPath</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>join</code> - the join the returned condition should be bound to</dd>
 </dl>
 </li>
 </ul>
@@ -1396,13 +1441,26 @@ public&nbsp;Media(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/S
 <pre>public&nbsp;<a href="../../../../com/exedio/cope/Condition.html" title="class in com.exedio.cope">Condition</a>&nbsp;contentTypeEqual(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;contentType)</pre>
 </li>
 </ul>
+<a name="bodyMismatchesContentTypeIfSupported--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>bodyMismatchesContentTypeIfSupported</h4>
+<pre>public&nbsp;<a href="../../../../com/exedio/cope/Condition.html" title="class in com.exedio.cope">Condition</a>&nbsp;bodyMismatchesContentTypeIfSupported()</pre>
+<div class="block">The result may cause an <a href="../../../../com/exedio/cope/UnsupportedQueryException.html" title="class in com.exedio.cope"><code>UnsupportedQueryException</code></a> when used,
+ if the field is stored in a <a href="../../../../com/exedio/cope/Vault.html" title="annotation in com.exedio.cope"><code>vault</code></a>.</div>
+</li>
+</ul>
 <a name="bodyMismatchesContentType--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>bodyMismatchesContentType</h4>
-<pre>public&nbsp;<a href="../../../../com/exedio/cope/Condition.html" title="class in com.exedio.cope">Condition</a>&nbsp;bodyMismatchesContentType()</pre>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</a>
+public&nbsp;<a href="../../../../com/exedio/cope/Condition.html" title="class in com.exedio.cope">Condition</a>&nbsp;bodyMismatchesContentType()</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment">Use <a href="../../../../com/exedio/cope/pattern/Media.html#bodyMismatchesContentTypeIfSupported--"><code>bodyMismatchesContentTypeIfSupported()</code></a> instead.</span></div>
 </li>
 </ul>
 <a name="contentTypeMajor-java.lang.String-">

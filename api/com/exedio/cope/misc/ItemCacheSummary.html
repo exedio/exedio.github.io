@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":42,"i3":10,"i4":42,"i5":10,"i6":10,"i7":42,"i8":42,"i9":42,"i10":42,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10};
+var methods = {"i0":42,"i1":42,"i2":42,"i3":42,"i4":42,"i5":42,"i6":42,"i7":42,"i8":42,"i9":42,"i10":42,"i11":42,"i12":42,"i13":42,"i14":42,"i15":42,"i16":42,"i17":42,"i18":42,"i19":42,"i20":42,"i21":42,"i22":42};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"],32:["t6","Deprecated Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -105,8 +105,12 @@ var activeTableTab = "activeTableTab";
 <ul class="blockList">
 <li class="blockList">
 <hr>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
+<div class="block"><span class="deprecationComment">Use summary methods at <a href="../../../../com/exedio/cope/ItemCacheStatistics.html" title="class in com.exedio.cope"><code>ItemCacheStatistics</code></a> instead</span></div>
+</div>
 <br>
-<pre>public final class <span class="typeNameLabel">ItemCacheSummary</span>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</a>
+public final class <span class="typeNameLabel">ItemCacheSummary</span>
 extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></pre>
 </li>
 </ul>
@@ -126,7 +130,9 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/misc/ItemCacheSummary.html#ItemCacheSummary-com.exedio.cope.ItemCacheInfo:A-">ItemCacheSummary</a></span>(<a href="../../../../com/exedio/cope/ItemCacheInfo.html" title="class in com.exedio.cope">ItemCacheInfo</a>[]&nbsp;infos)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/misc/ItemCacheSummary.html#ItemCacheSummary-com.exedio.cope.ItemCacheInfo:A-">ItemCacheSummary</a></span>(<a href="../../../../com/exedio/cope/ItemCacheInfo.html" title="class in com.exedio.cope">ItemCacheInfo</a>[]&nbsp;infos)</code>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
+&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -145,11 +151,19 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>long</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/misc/ItemCacheSummary.html#getAgeAverageMillis--">getAgeAverageMillis</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/misc/ItemCacheSummary.html#getAgeAverageMillis--">getAgeAverageMillis</a></span>()</code>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
+<div class="block"><span class="deprecationComment">due to changes to the cache implementation, this value is no longer meaningful</span></div>
+</div>
+</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>long</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/misc/ItemCacheSummary.html#getAgeMaximumMillis--">getAgeMaximumMillis</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/misc/ItemCacheSummary.html#getAgeMaximumMillis--">getAgeMaximumMillis</a></span>()</code>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
+<div class="block"><span class="deprecationComment">due to changes to the cache implementation, this value is no longer meaningful</span></div>
+</div>
+</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>long</code></td>
@@ -161,7 +175,11 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>long</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/misc/ItemCacheSummary.html#getAgeMinimumMillis--">getAgeMinimumMillis</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/misc/ItemCacheSummary.html#getAgeMinimumMillis--">getAgeMinimumMillis</a></span>()</code>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
+<div class="block"><span class="deprecationComment">due to changes to the cache implementation, this value is no longer meaningful</span></div>
+</div>
+</td>
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>long</code></td>
@@ -173,11 +191,15 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code>long</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/misc/ItemCacheSummary.html#getConcurrentLoads--">getConcurrentLoads</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/misc/ItemCacheSummary.html#getConcurrentLoads--">getConcurrentLoads</a></span>()</code>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
+&nbsp;</td>
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code>long</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/misc/ItemCacheSummary.html#getHits--">getHits</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/misc/ItemCacheSummary.html#getHits--">getHits</a></span>()</code>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
+&nbsp;</td>
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code>long</code></td>
@@ -213,47 +235,83 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 </tr>
 <tr id="i11" class="rowColor">
 <td class="colFirst"><code>long</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/misc/ItemCacheSummary.html#getInvalidationsDone--">getInvalidationsDone</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/misc/ItemCacheSummary.html#getInvalidationsDone--">getInvalidationsDone</a></span>()</code>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
+&nbsp;</td>
 </tr>
 <tr id="i12" class="altColor">
 <td class="colFirst"><code>long</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/misc/ItemCacheSummary.html#getInvalidationsOrdered--">getInvalidationsOrdered</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/misc/ItemCacheSummary.html#getInvalidationsOrdered--">getInvalidationsOrdered</a></span>()</code>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
+&nbsp;</td>
 </tr>
 <tr id="i13" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Date.html?is-external=true" title="class or interface in java.util">Date</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/misc/ItemCacheSummary.html#getLastReplacementRun--">getLastReplacementRun</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/misc/ItemCacheSummary.html#getLastReplacementRun--">getLastReplacementRun</a></span>()</code>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
+<div class="block"><span class="deprecationComment">due to changes to the cache implementation, this value is no longer meaningful</span></div>
+</div>
+</td>
 </tr>
 <tr id="i14" class="altColor">
 <td class="colFirst"><code>int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/misc/ItemCacheSummary.html#getLevel--">getLevel</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/misc/ItemCacheSummary.html#getLevel--">getLevel</a></span>()</code>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
+&nbsp;</td>
 </tr>
 <tr id="i15" class="rowColor">
 <td class="colFirst"><code>int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/misc/ItemCacheSummary.html#getLimit--">getLimit</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/misc/ItemCacheSummary.html#getLimit--">getLimit</a></span>()</code>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
+<div class="block"><span class="deprecationComment">use <a href="../../../../com/exedio/cope/ItemCacheStatistics.html#getLimit--"><code>ItemCacheStatistics.getLimit()</code></a></span></div>
+</div>
+</td>
 </tr>
 <tr id="i16" class="altColor">
 <td class="colFirst"><code>long</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/misc/ItemCacheSummary.html#getMisses--">getMisses</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/misc/ItemCacheSummary.html#getMisses--">getMisses</a></span>()</code>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
+&nbsp;</td>
 </tr>
 <tr id="i17" class="rowColor">
 <td class="colFirst"><code>int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/misc/ItemCacheSummary.html#getReplacementRuns--">getReplacementRuns</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/misc/ItemCacheSummary.html#getReplacementRuns--">getReplacementRuns</a></span>()</code>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
+<div class="block"><span class="deprecationComment">due to changes to the cache implementation, this value is no longer meaningful</span></div>
+</div>
+</td>
 </tr>
 <tr id="i18" class="altColor">
 <td class="colFirst"><code>int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/misc/ItemCacheSummary.html#getReplacements--">getReplacements</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/misc/ItemCacheSummary.html#getReplacements--">getReplacements</a></span>()</code>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
+<div class="block"><span class="deprecationComment">Use <a href="../../../../com/exedio/cope/misc/ItemCacheSummary.html#getReplacementsL--"><code>getReplacementsL()</code></a> instead</span></div>
+</div>
+</td>
 </tr>
 <tr id="i19" class="rowColor">
 <td class="colFirst"><code>long</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/misc/ItemCacheSummary.html#getStampsHits--">getStampsHits</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/misc/ItemCacheSummary.html#getReplacementsL--">getReplacementsL</a></span>()</code>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
+&nbsp;</td>
 </tr>
 <tr id="i20" class="altColor">
 <td class="colFirst"><code>long</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/misc/ItemCacheSummary.html#getStampsPurged--">getStampsPurged</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/misc/ItemCacheSummary.html#getStampsHits--">getStampsHits</a></span>()</code>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
+&nbsp;</td>
 </tr>
 <tr id="i21" class="rowColor">
+<td class="colFirst"><code>long</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/misc/ItemCacheSummary.html#getStampsPurged--">getStampsPurged</a></span>()</code>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
+&nbsp;</td>
+</tr>
+<tr id="i22" class="altColor">
 <td class="colFirst"><code>int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/misc/ItemCacheSummary.html#getStampsSize--">getStampsSize</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/misc/ItemCacheSummary.html#getStampsSize--">getStampsSize</a></span>()</code>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
+&nbsp;</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -284,6 +342,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <li class="blockList">
 <h4>ItemCacheSummary</h4>
 <pre>public&nbsp;ItemCacheSummary(<a href="../../../../com/exedio/cope/ItemCacheInfo.html" title="class in com.exedio.cope">ItemCacheInfo</a>[]&nbsp;infos)</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
 </li>
 </ul>
 </li>
@@ -300,7 +359,9 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <ul class="blockList">
 <li class="blockList">
 <h4>getLimit</h4>
-<pre>public&nbsp;int&nbsp;getLimit()</pre>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</a>
+public&nbsp;int&nbsp;getLimit()</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment">use <a href="../../../../com/exedio/cope/ItemCacheStatistics.html#getLimit--"><code>ItemCacheStatistics.getLimit()</code></a></span></div>
 </li>
 </ul>
 <a name="getLevel--">
@@ -310,6 +371,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <li class="blockList">
 <h4>getLevel</h4>
 <pre>public&nbsp;int&nbsp;getLevel()</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
 </li>
 </ul>
 <a name="getHits--">
@@ -319,6 +381,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <li class="blockList">
 <h4>getHits</h4>
 <pre>public&nbsp;long&nbsp;getHits()</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
 </li>
 </ul>
 <a name="getMisses--">
@@ -328,6 +391,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <li class="blockList">
 <h4>getMisses</h4>
 <pre>public&nbsp;long&nbsp;getMisses()</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
 </li>
 </ul>
 <a name="getConcurrentLoads--">
@@ -337,6 +401,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <li class="blockList">
 <h4>getConcurrentLoads</h4>
 <pre>public&nbsp;long&nbsp;getConcurrentLoads()</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
 </li>
 </ul>
 <a name="getReplacementRuns--">
@@ -345,7 +410,9 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <ul class="blockList">
 <li class="blockList">
 <h4>getReplacementRuns</h4>
-<pre>public&nbsp;int&nbsp;getReplacementRuns()</pre>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</a>
+public&nbsp;int&nbsp;getReplacementRuns()</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment">due to changes to the cache implementation, this value is no longer meaningful</span></div>
 </li>
 </ul>
 <a name="getReplacements--">
@@ -354,7 +421,19 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <ul class="blockList">
 <li class="blockList">
 <h4>getReplacements</h4>
-<pre>public&nbsp;int&nbsp;getReplacements()</pre>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</a>
+public&nbsp;int&nbsp;getReplacements()</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment">Use <a href="../../../../com/exedio/cope/misc/ItemCacheSummary.html#getReplacementsL--"><code>getReplacementsL()</code></a> instead</span></div>
+</li>
+</ul>
+<a name="getReplacementsL--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getReplacementsL</h4>
+<pre>public&nbsp;long&nbsp;getReplacementsL()</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
 </li>
 </ul>
 <a name="getLastReplacementRun--">
@@ -363,7 +442,9 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <ul class="blockList">
 <li class="blockList">
 <h4>getLastReplacementRun</h4>
-<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Date.html?is-external=true" title="class or interface in java.util">Date</a>&nbsp;getLastReplacementRun()</pre>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</a>
+public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Date.html?is-external=true" title="class or interface in java.util">Date</a>&nbsp;getLastReplacementRun()</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment">due to changes to the cache implementation, this value is no longer meaningful</span></div>
 </li>
 </ul>
 <a name="getAgeMinimumMillis--">
@@ -372,7 +453,9 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <ul class="blockList">
 <li class="blockList">
 <h4>getAgeMinimumMillis</h4>
-<pre>public&nbsp;long&nbsp;getAgeMinimumMillis()</pre>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</a>
+public&nbsp;long&nbsp;getAgeMinimumMillis()</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment">due to changes to the cache implementation, this value is no longer meaningful</span></div>
 </li>
 </ul>
 <a name="getAgeAverageMillis--">
@@ -381,7 +464,9 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <ul class="blockList">
 <li class="blockList">
 <h4>getAgeAverageMillis</h4>
-<pre>public&nbsp;long&nbsp;getAgeAverageMillis()</pre>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</a>
+public&nbsp;long&nbsp;getAgeAverageMillis()</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment">due to changes to the cache implementation, this value is no longer meaningful</span></div>
 </li>
 </ul>
 <a name="getAgeMaximumMillis--">
@@ -390,7 +475,9 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <ul class="blockList">
 <li class="blockList">
 <h4>getAgeMaximumMillis</h4>
-<pre>public&nbsp;long&nbsp;getAgeMaximumMillis()</pre>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</a>
+public&nbsp;long&nbsp;getAgeMaximumMillis()</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment">due to changes to the cache implementation, this value is no longer meaningful</span></div>
 </li>
 </ul>
 <a name="getInvalidationsOrdered--">
@@ -400,6 +487,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <li class="blockList">
 <h4>getInvalidationsOrdered</h4>
 <pre>public&nbsp;long&nbsp;getInvalidationsOrdered()</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
 </li>
 </ul>
 <a name="getInvalidationsDone--">
@@ -409,6 +497,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <li class="blockList">
 <h4>getInvalidationsDone</h4>
 <pre>public&nbsp;long&nbsp;getInvalidationsDone()</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
 </li>
 </ul>
 <a name="getStampsSize--">
@@ -418,6 +507,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <li class="blockList">
 <h4>getStampsSize</h4>
 <pre>public&nbsp;int&nbsp;getStampsSize()</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
 </li>
 </ul>
 <a name="getStampsHits--">
@@ -427,6 +517,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <li class="blockList">
 <h4>getStampsHits</h4>
 <pre>public&nbsp;long&nbsp;getStampsHits()</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
 </li>
 </ul>
 <a name="getStampsPurged--">
@@ -436,6 +527,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <li class="blockList">
 <h4>getStampsPurged</h4>
 <pre>public&nbsp;long&nbsp;getStampsPurged()</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
 </li>
 </ul>
 <a name="getAgeMinMillis--">

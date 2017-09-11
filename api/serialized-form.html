@@ -89,17 +89,18 @@
 <li class="blockList">
 <h4>source</h4>
 <pre><a href="com/exedio/cope/Function.html" title="interface in com.exedio.cope">Function</a>&lt;<a href="com/exedio/cope/Function.html" title="type parameter in Function">E</a>&gt; source</pre>
-<div class="block">I'm not yet sure, whether the type of the aggregate
- always equals the type of the source, but it does for
- SUM, MIN, MAX, AVG.</div>
 </li>
 <li class="blockList">
 <h4>name</h4>
 <pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> name</pre>
 </li>
-<li class="blockListLast">
+<li class="blockList">
 <h4>sqlPrefix</h4>
 <pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> sqlPrefix</pre>
+</li>
+<li class="blockListLast">
+<h4>valueType</h4>
+<pre>com.exedio.cope.SelectType&lt;E&gt; valueType</pre>
 </li>
 </ul>
 </li>
@@ -124,6 +125,15 @@
 </ul>
 </li>
 </ul>
+</li>
+<li class="blockList"><a name="com.exedio.cope.AverageAggregate">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/cope/AverageAggregate.html" title="class in com.exedio.cope">com.exedio.cope.AverageAggregate</a> extends <a href="com/exedio/cope/Aggregate.html" title="class in com.exedio.cope">Aggregate</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a>&gt; implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
 </li>
 <li class="blockList"><a name="com.exedio.cope.BindFunction">
 <!--   -->
@@ -492,8 +502,8 @@
 <pre><a href="com/exedio/cope/Model.html" title="class in com.exedio.cope">Model</a> model</pre>
 </li>
 <li class="blockList">
-<h4>column</h4>
-<pre>com.exedio.cope.BlobColumn column</pre>
+<h4>store</h4>
+<pre>com.exedio.cope.DataFieldStore store</pre>
 </li>
 <li class="blockList">
 <h4>bufferSizeDefault</h4>
@@ -543,6 +553,53 @@
 <dt>serialVersionUID:</dt>
 <dd>1L</dd>
 </dl>
+<ul class="blockList">
+<li class="blockList">
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockList">
+<h4>precision</h4>
+<pre><a href="com/exedio/cope/DateField.Precision.html" title="enum in com.exedio.cope">DateField.Precision</a> precision</pre>
+</li>
+<li class="blockListLast">
+<h4>roundingMode</h4>
+<pre><a href="com/exedio/cope/DateField.RoundingMode.html" title="enum in com.exedio.cope">DateField.RoundingMode</a> roundingMode</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a name="com.exedio.cope.DatePrecisionViolationException">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/cope/DatePrecisionViolationException.html" title="class in com.exedio.cope">com.exedio.cope.DatePrecisionViolationException</a> extends <a href="com/exedio/cope/ConstraintViolationException.html" title="class in com.exedio.cope">ConstraintViolationException</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList">
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockList">
+<h4>feature</h4>
+<pre><a href="com/exedio/cope/DateField.html" title="class in com.exedio.cope">DateField</a> feature</pre>
+</li>
+<li class="blockList">
+<h4>precision</h4>
+<pre><a href="com/exedio/cope/DateField.Precision.html" title="enum in com.exedio.cope">DateField.Precision</a> precision</pre>
+</li>
+<li class="blockList">
+<h4>value</h4>
+<pre>long value</pre>
+</li>
+<li class="blockListLast">
+<h4>violation</h4>
+<pre>int violation</pre>
+</li>
+</ul>
+</li>
+</ul>
 </li>
 <li class="blockList"><a name="com.exedio.cope.DayField">
 <!--   -->
@@ -552,6 +609,30 @@
 <dt>serialVersionUID:</dt>
 <dd>1L</dd>
 </dl>
+</li>
+<li class="blockList"><a name="com.exedio.cope.DayPartView">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/cope/DayPartView.html" title="class in com.exedio.cope">com.exedio.cope.DayPartView</a> extends <a href="com/exedio/cope/NumberView.html" title="class in com.exedio.cope">NumberView</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&gt; implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList">
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockList">
+<h4>source</h4>
+<pre><a href="com/exedio/cope/DayField.html" title="class in com.exedio.cope">DayField</a> source</pre>
+</li>
+<li class="blockListLast">
+<h4>part</h4>
+<pre>com.exedio.cope.DayPartView.Part part</pre>
+</li>
+</ul>
+</li>
+</ul>
 </li>
 <li class="blockList"><a name="com.exedio.cope.DivideView">
 <!--   -->
@@ -665,6 +746,26 @@
 </li>
 </ul>
 </li>
+<li class="blockList"><a name="com.exedio.cope.ExtremumAggregate">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/cope/ExtremumAggregate.html" title="class in com.exedio.cope">com.exedio.cope.ExtremumAggregate</a> extends <a href="com/exedio/cope/Aggregate.html" title="class in com.exedio.cope">Aggregate</a>&lt;<a href="com/exedio/cope/ExtremumAggregate.html" title="type parameter in ExtremumAggregate">E</a>&gt; implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList">
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockListLast">
+<h4>minimum</h4>
+<pre>boolean minimum</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
 <li class="blockList"><a name="com.exedio.cope.Feature">
 <!--   -->
 </a>
@@ -680,11 +781,13 @@
 <li class="blockList">
 <h4>readObject</h4>
 <pre>private&nbsp;void&nbsp;readObject(<a href="https://docs.oracle.com/javase/8/docs/api/java/io/ObjectInputStream.html?is-external=true" title="class or interface in java.io">ObjectInputStream</a>&nbsp;ois)
-                 throws <a href="https://docs.oracle.com/javase/8/docs/api/java/io/InvalidObjectException.html?is-external=true" title="class or interface in java.io">InvalidObjectException</a></pre>
+                 throws <a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a>,
+                        <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/ClassNotFoundException.html?is-external=true" title="class or interface in java.lang">ClassNotFoundException</a></pre>
 <div class="block">Block malicious data streams.</div>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/io/InvalidObjectException.html?is-external=true" title="class or interface in java.io">InvalidObjectException</a></code></dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/ClassNotFoundException.html?is-external=true" title="class or interface in java.lang">ClassNotFoundException</a></code></dd>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="com/exedio/cope/Feature.html#writeReplace--"><code>Feature.writeReplace()</code></a></dd>
 </dl>
@@ -724,9 +827,17 @@
 <h4>mountIfMounted</h4>
 <pre>com.exedio.cope.Feature.Mount mountIfMounted</pre>
 </li>
-<li class="blockListLast">
+<li class="blockList">
 <h4>patternUntilMount</h4>
 <pre><a href="com/exedio/cope/Pattern.html" title="class in com.exedio.cope">Pattern</a> patternUntilMount</pre>
+</li>
+<li class="blockList">
+<h4>precedingLocalizationKeysClassUntilMount</h4>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">T</a>&gt; precedingLocalizationKeysClassUntilMount</pre>
+</li>
+<li class="blockListLast">
+<h4>precedingLocalizationKeysPostfixUntilMount</h4>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> precedingLocalizationKeysPostfixUntilMount</pre>
 </li>
 </ul>
 </li>
@@ -816,9 +927,13 @@
 <h4>defaultSource</h4>
 <pre>com.exedio.cope.DefaultSource&lt;E&gt; defaultSource</pre>
 </li>
-<li class="blockListLast">
+<li class="blockList">
 <h4>uniqueConstraints</h4>
 <pre><a href="https://docs.oracle.com/javase/8/docs/api/java/util/ArrayList.html?is-external=true" title="class or interface in java.util">ArrayList</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/ArrayList.html?is-external=true" title="class or interface in java.util">E</a>&gt; uniqueConstraints</pre>
+</li>
+<li class="blockListLast">
+<h4>isRedundantByCopyConstraint</h4>
+<pre>boolean isRedundantByCopyConstraint</pre>
 </li>
 </ul>
 </li>
@@ -958,7 +1073,7 @@
 <h3>Class <a href="com/exedio/cope/Item.html" title="class in com.exedio.cope">com.exedio.cope.Item</a> extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a> implements Serializable</h3>
 <dl class="nameValue">
 <dt>serialVersionUID:</dt>
-<dd>1L</dd>
+<dd>2L</dd>
 </dl>
 <ul class="blockList">
 <li class="blockList">
@@ -987,7 +1102,7 @@
 <ul class="blockList">
 <li class="blockListLast">
 <h4>pk</h4>
-<pre>int pk</pre>
+<pre>long pk</pre>
 <div class="block">The primary key of the item,
  that is unique within the <a href="com/exedio/cope/Item.html#type"><code>Item.type</code></a> of this item.</div>
 </li>
@@ -1009,7 +1124,7 @@
 <ul class="blockList">
 <li class="blockList">
 <h4>valueTypeFuture</h4>
-<pre>com.exedio.cope.TypeFuture&lt;T extends <a href="com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&gt; valueTypeFuture</pre>
+<pre><a href="com/exedio/cope/TypeFuture.html" title="interface in com.exedio.cope">TypeFuture</a>&lt;<a href="com/exedio/cope/TypeFuture.html" title="type parameter in TypeFuture">T</a> extends <a href="com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&gt; valueTypeFuture</pre>
 </li>
 <li class="blockList">
 <h4>policy</h4>
@@ -1287,6 +1402,10 @@
 <h3>Serialized Fields</h3>
 <ul class="blockList">
 <li class="blockList">
+<h4>name</h4>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> name</pre>
+</li>
+<li class="blockList">
 <h4>revisions</h4>
 <pre><a href="com/exedio/cope/Revisions.Factory.html" title="interface in com.exedio.cope">Revisions.Factory</a> revisions</pre>
 </li>
@@ -1300,7 +1419,7 @@
 </li>
 <li class="blockList">
 <h4>initializeDate</h4>
-<pre>long initializeDate</pre>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/time/Instant.html?is-external=true" title="class or interface in java.time">Instant</a> initializeDate</pre>
 </li>
 <li class="blockList">
 <h4>changeListeners</h4>
@@ -1333,6 +1452,11 @@
 <li class="blockList">
 <h4>transactionCounter</h4>
 <pre>com.exedio.cope.TransactionCounter transactionCounter</pre>
+</li>
+<li class="blockList">
+<h4>withinPurgeStamps</h4>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Runnable.html?is-external=true" title="class or interface in java.lang">Runnable</a> withinPurgeStamps</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment">for unit tests only</span></div>
 </li>
 <li class="blockListLast">
 <h4>serialized</h4>
@@ -1857,6 +1981,15 @@
 <dd>1L</dd>
 </dl>
 </li>
+<li class="blockList"><a name="com.exedio.cope.SumAggregate">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/cope/SumAggregate.html" title="class in com.exedio.cope">com.exedio.cope.SumAggregate</a> extends <a href="com/exedio/cope/Aggregate.html" title="class in com.exedio.cope">Aggregate</a>&lt;<a href="com/exedio/cope/SumAggregate.html" title="type parameter in SumAggregate">E</a> extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Number.html?is-external=true" title="class or interface in java.lang">Number</a>&gt; implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+</li>
 <li class="blockList"><a name="com.exedio.cope.TemporaryTransactionException">
 <!--   -->
 </a>
@@ -2029,6 +2162,10 @@
 <pre>com.exedio.cope.FeatureSubSet&lt;F extends <a href="com/exedio/cope/Feature.html" title="class in com.exedio.cope">Feature</a>&gt; copyConstraints</pre>
 </li>
 <li class="blockList">
+<h4>copyConstraintsByCopy</h4>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">K</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">V</a>&gt; copyConstraintsByCopy</pre>
+</li>
+<li class="blockList">
 <h4>activationConstructor</h4>
 <pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/reflect/Constructor.html?is-external=true" title="class or interface in java.lang.reflect">Constructor</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/reflect/Constructor.html?is-external=true" title="class or interface in java.lang.reflect">T</a>&gt; activationConstructor</pre>
 </li>
@@ -2037,12 +2174,20 @@
 <pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/reflect/Method.html?is-external=true" title="class or interface in java.lang.reflect">Method</a>[] beforeNewItemMethods</pre>
 </li>
 <li class="blockList">
+<h4>createLimit</h4>
+<pre>long createLimit</pre>
+</li>
+<li class="blockList">
 <h4>primaryKeySequence</h4>
 <pre>com.exedio.cope.SequenceX primaryKeySequence</pre>
 </li>
 <li class="blockList">
 <h4>uniqueConstraintsProblem</h4>
 <pre>boolean uniqueConstraintsProblem</pre>
+</li>
+<li class="blockList">
+<h4>external</h4>
+<pre>boolean external</pre>
 </li>
 <li class="blockList">
 <h4>mountIfMounted</h4>
@@ -2063,9 +2208,13 @@
 <h4>table</h4>
 <pre>com.exedio.cope.Table table</pre>
 </li>
-<li class="blockListLast">
+<li class="blockList">
 <h4>featuresWhileConstruction</h4>
 <pre><a href="https://docs.oracle.com/javase/8/docs/api/java/util/ArrayList.html?is-external=true" title="class or interface in java.util">ArrayList</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/ArrayList.html?is-external=true" title="class or interface in java.util">E</a>&gt; featuresWhileConstruction</pre>
+</li>
+<li class="blockListLast">
+<h4>localizationKeysIfInitialized</h4>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">E</a>&gt; localizationKeysIfInitialized</pre>
 </li>
 </ul>
 </li>
@@ -2118,6 +2267,15 @@
 </ul>
 </li>
 </ul>
+</li>
+<li class="blockList"><a name="com.exedio.cope.UnsupportedQueryException">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/cope/UnsupportedQueryException.html" title="class in com.exedio.cope">com.exedio.cope.UnsupportedQueryException</a> extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang">IllegalArgumentException</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
 </li>
 <li class="blockList"><a name="com.exedio.cope.UppercaseView">
 <!--   -->
@@ -2231,7 +2389,7 @@
 </li>
 <li class="blockList">
 <h4>valueType</h4>
-<pre><a href="com/exedio/cope/pattern/BlockType.html" title="class in com.exedio.cope.pattern">BlockType</a>&lt;<a href="com/exedio/cope/pattern/BlockType.html" title="type parameter in BlockType">E</a>&gt; valueType</pre>
+<pre><a href="com/exedio/cope/pattern/BlockType.html" title="class in com.exedio.cope.pattern">BlockType</a>&lt;<a href="com/exedio/cope/pattern/BlockType.html" title="type parameter in BlockType">T</a> extends <a href="com/exedio/cope/pattern/Block.html" title="class in com.exedio.cope.pattern">Block</a>&gt; valueType</pre>
 </li>
 <li class="blockList">
 <h4>templateToComponent</h4>
@@ -2244,6 +2402,80 @@
 <li class="blockListLast">
 <h4>componentList</h4>
 <pre><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">E</a>&gt; componentList</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a name="com.exedio.cope.pattern.BlockType">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/cope/pattern/BlockType.html" title="class in com.exedio.cope.pattern">com.exedio.cope.pattern.BlockType</a> extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList">
+<h3>Serialization Methods</h3>
+<ul class="blockList">
+<li class="blockList">
+<h4>readObject</h4>
+<pre>private&nbsp;void&nbsp;readObject(<a href="https://docs.oracle.com/javase/8/docs/api/java/io/ObjectInputStream.html?is-external=true" title="class or interface in java.io">ObjectInputStream</a>&nbsp;ois)
+                 throws <a href="https://docs.oracle.com/javase/8/docs/api/java/io/InvalidObjectException.html?is-external=true" title="class or interface in java.io">InvalidObjectException</a></pre>
+<div class="block">Block malicious data streams.</div>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/io/InvalidObjectException.html?is-external=true" title="class or interface in java.io">InvalidObjectException</a></code></dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="com/exedio/cope/pattern/BlockType.html#writeReplace--"><code>BlockType.writeReplace()</code></a></dd>
+</dl>
+</li>
+<li class="blockList">
+<h4>readResolve</h4>
+<pre>private&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;readResolve()
+                    throws <a href="https://docs.oracle.com/javase/8/docs/api/java/io/InvalidObjectException.html?is-external=true" title="class or interface in java.io">InvalidObjectException</a></pre>
+<div class="block">Block malicious data streams.</div>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/io/InvalidObjectException.html?is-external=true" title="class or interface in java.io">InvalidObjectException</a></code></dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="com/exedio/cope/pattern/BlockType.html#writeReplace--"><code>BlockType.writeReplace()</code></a></dd>
+</dl>
+</li>
+<li class="blockListLast">
+<h4>writeReplace</h4>
+<pre>private&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;writeReplace()</pre>
+<div class="block"><a href="http://java.sun.com/j2se/1.5.0/docs/guide/serialization/spec/output.html#5324">See Spec</a></div>
+</li>
+</ul>
+</li>
+<li class="blockList">
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockList">
+<h4>javaClass</h4>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">T</a>&gt; javaClass</pre>
+</li>
+<li class="blockList">
+<h4>constructor</h4>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/reflect/Constructor.html?is-external=true" title="class or interface in java.lang.reflect">Constructor</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/reflect/Constructor.html?is-external=true" title="class or interface in java.lang.reflect">T</a>&gt; constructor</pre>
+</li>
+<li class="blockList">
+<h4>templates</h4>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/util/LinkedHashMap.html?is-external=true" title="class or interface in java.util">LinkedHashMap</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/LinkedHashMap.html?is-external=true" title="class or interface in java.util">K</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/LinkedHashMap.html?is-external=true" title="class or interface in java.util">V</a>&gt; templates</pre>
+</li>
+<li class="blockList">
+<h4>templateList</h4>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">E</a>&gt; templateList</pre>
+</li>
+<li class="blockList">
+<h4>componentSize</h4>
+<pre>int componentSize</pre>
+</li>
+<li class="blockListLast">
+<h4>localizationKeysIfInitialized</h4>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">E</a>&gt; localizationKeysIfInitialized</pre>
 </li>
 </ul>
 </li>
@@ -2288,6 +2520,10 @@
 <li class="blockList">
 <h4>rgb</h4>
 <pre><a href="com/exedio/cope/IntegerField.html" title="class in com.exedio.cope">IntegerField</a> rgb</pre>
+</li>
+<li class="blockList">
+<h4>isfinal</h4>
+<pre>boolean isfinal</pre>
 </li>
 <li class="blockList">
 <h4>mandatory</h4>
@@ -2347,7 +2583,7 @@
 </li>
 <li class="blockList">
 <h4>valueType</h4>
-<pre>com.exedio.cope.pattern.CompositeType&lt;E&gt; valueType</pre>
+<pre><a href="com/exedio/cope/pattern/CompositeType.html" title="class in com.exedio.cope.pattern">CompositeType</a>&lt;<a href="com/exedio/cope/pattern/CompositeType.html" title="type parameter in CompositeType">T</a> extends <a href="com/exedio/cope/pattern/Composite.html" title="class in com.exedio.cope.pattern">Composite</a>&gt; valueType</pre>
 </li>
 <li class="blockList">
 <h4>componentSize</h4>
@@ -2381,6 +2617,84 @@
 </li>
 </ul>
 </li>
+<li class="blockList"><a name="com.exedio.cope.pattern.CompositeType">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/cope/pattern/CompositeType.html" title="class in com.exedio.cope.pattern">com.exedio.cope.pattern.CompositeType</a> extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList">
+<h3>Serialization Methods</h3>
+<ul class="blockList">
+<li class="blockList">
+<h4>readObject</h4>
+<pre>private&nbsp;void&nbsp;readObject(<a href="https://docs.oracle.com/javase/8/docs/api/java/io/ObjectInputStream.html?is-external=true" title="class or interface in java.io">ObjectInputStream</a>&nbsp;ois)
+                 throws <a href="https://docs.oracle.com/javase/8/docs/api/java/io/InvalidObjectException.html?is-external=true" title="class or interface in java.io">InvalidObjectException</a></pre>
+<div class="block">Block malicious data streams.</div>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/io/InvalidObjectException.html?is-external=true" title="class or interface in java.io">InvalidObjectException</a></code></dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="com/exedio/cope/pattern/CompositeType.html#writeReplace--"><code>CompositeType.writeReplace()</code></a></dd>
+</dl>
+</li>
+<li class="blockList">
+<h4>readResolve</h4>
+<pre>private&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;readResolve()
+                    throws <a href="https://docs.oracle.com/javase/8/docs/api/java/io/InvalidObjectException.html?is-external=true" title="class or interface in java.io">InvalidObjectException</a></pre>
+<div class="block">Block malicious data streams.</div>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/io/InvalidObjectException.html?is-external=true" title="class or interface in java.io">InvalidObjectException</a></code></dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="com/exedio/cope/pattern/CompositeType.html#writeReplace--"><code>CompositeType.writeReplace()</code></a></dd>
+</dl>
+</li>
+<li class="blockListLast">
+<h4>writeReplace</h4>
+<pre>private&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;writeReplace()</pre>
+<div class="block"><a href="http://java.sun.com/j2se/1.5.0/docs/guide/serialization/spec/output.html#5324">See Spec</a></div>
+</li>
+</ul>
+</li>
+<li class="blockList">
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockList">
+<h4>javaClass</h4>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">T</a>&gt; javaClass</pre>
+</li>
+<li class="blockList">
+<h4>constructor</h4>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/reflect/Constructor.html?is-external=true" title="class or interface in java.lang.reflect">Constructor</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/reflect/Constructor.html?is-external=true" title="class or interface in java.lang.reflect">T</a>&gt; constructor</pre>
+</li>
+<li class="blockList">
+<h4>templates</h4>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/util/LinkedHashMap.html?is-external=true" title="class or interface in java.util">LinkedHashMap</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/LinkedHashMap.html?is-external=true" title="class or interface in java.util">K</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/LinkedHashMap.html?is-external=true" title="class or interface in java.util">V</a>&gt; templates</pre>
+</li>
+<li class="blockList">
+<h4>templatePositions</h4>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/util/HashMap.html?is-external=true" title="class or interface in java.util">HashMap</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/HashMap.html?is-external=true" title="class or interface in java.util">K</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/HashMap.html?is-external=true" title="class or interface in java.util">V</a>&gt; templatePositions</pre>
+</li>
+<li class="blockList">
+<h4>templateList</h4>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">E</a>&gt; templateList</pre>
+</li>
+<li class="blockList">
+<h4>componentSize</h4>
+<pre>int componentSize</pre>
+</li>
+<li class="blockListLast">
+<h4>localizationKeysIfInitialized</h4>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">E</a>&gt; localizationKeysIfInitialized</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
 <li class="blockList"><a name="com.exedio.cope.pattern.Dispatcher">
 <!--   -->
 </a>
@@ -2398,6 +2712,14 @@
 <pre><a href="com/exedio/cope/BooleanField.html" title="class in com.exedio.cope">BooleanField</a> pending</pre>
 </li>
 <li class="blockList">
+<h4>noPurge</h4>
+<pre><a href="com/exedio/cope/BooleanField.html" title="class in com.exedio.cope">BooleanField</a> noPurge</pre>
+</li>
+<li class="blockList">
+<h4>unpend</h4>
+<pre><a href="com/exedio/cope/pattern/CompositeField.html" title="class in com.exedio.cope.pattern">CompositeField</a>&lt;<a href="com/exedio/cope/pattern/CompositeField.html" title="type parameter in CompositeField">E</a> extends <a href="com/exedio/cope/pattern/Composite.html" title="class in com.exedio.cope.pattern">Composite</a>&gt; unpend</pre>
+</li>
+<li class="blockList">
 <h4>runDate</h4>
 <pre><a href="com/exedio/cope/DateField.html" title="class in com.exedio.cope">DateField</a> runDate</pre>
 </li>
@@ -2406,8 +2728,8 @@
 <pre><a href="com/exedio/cope/LongField.html" title="class in com.exedio.cope">LongField</a> runElapsed</pre>
 </li>
 <li class="blockList">
-<h4>runSuccess</h4>
-<pre><a href="com/exedio/cope/BooleanField.html" title="class in com.exedio.cope">BooleanField</a> runSuccess</pre>
+<h4>runResult</h4>
+<pre><a href="com/exedio/cope/EnumField.html" title="class in com.exedio.cope">EnumField</a>&lt;<a href="com/exedio/cope/EnumField.html" title="type parameter in EnumField">E</a> extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Enum.html?is-external=true" title="class or interface in java.lang">Enum</a>&lt;<a href="com/exedio/cope/EnumField.html" title="type parameter in EnumField">E</a>&gt;&gt; runResult</pre>
 </li>
 <li class="blockList">
 <h4>runFailure</h4>
@@ -2457,6 +2779,15 @@
 </ul>
 </li>
 </ul>
+</li>
+<li class="blockList"><a name="com.exedio.cope.pattern.DummyBlock">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/cope/pattern/DummyBlock.html" title="class in com.exedio.cope.pattern">com.exedio.cope.pattern.DummyBlock</a> extends <a href="com/exedio/cope/pattern/Block.html" title="class in com.exedio.cope.pattern">Block</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
 </li>
 <li class="blockList"><a name="com.exedio.cope.pattern.DynamicModel">
 <!--   -->
@@ -2586,8 +2917,16 @@
 <h3>Serialized Fields</h3>
 <ul class="blockList">
 <li class="blockList">
+<h4>isfinal</h4>
+<pre>boolean isfinal</pre>
+</li>
+<li class="blockList">
 <h4>keyClass</h4>
 <pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">T</a>&gt; keyClass</pre>
+</li>
+<li class="blockList">
+<h4>fallback</h4>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Enum.html?is-external=true" title="class or interface in java.lang">Enum</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Enum.html?is-external=true" title="class or interface in java.lang">E</a> extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Enum.html?is-external=true" title="class or interface in java.lang">Enum</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Enum.html?is-external=true" title="class or interface in java.lang">E</a>&gt;&gt; fallback</pre>
 </li>
 <li class="blockList">
 <h4>valueTemplate</h4>
@@ -2650,6 +2989,10 @@
 <pre><a href="com/exedio/cope/StringField.html" title="class in com.exedio.cope">StringField</a> storage</pre>
 </li>
 <li class="blockList">
+<h4>isfinal</h4>
+<pre>boolean isfinal</pre>
+</li>
+<li class="blockList">
 <h4>plainTextLimit</h4>
 <pre>int plainTextLimit</pre>
 </li>
@@ -2688,6 +3031,34 @@
 <li class="blockListLast">
 <h4>feature</h4>
 <pre><a href="com/exedio/cope/pattern/Hash.html" title="class in com.exedio.cope.pattern">Hash</a> feature</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a name="com.exedio.cope.pattern.HashConstraint">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/cope/pattern/HashConstraint.html" title="class in com.exedio.cope.pattern">com.exedio.cope.pattern.HashConstraint</a> extends <a href="com/exedio/cope/Pattern.html" title="class in com.exedio.cope">Pattern</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList">
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockList">
+<h4>hash</h4>
+<pre><a href="com/exedio/cope/StringField.html" title="class in com.exedio.cope">StringField</a> hash</pre>
+</li>
+<li class="blockList">
+<h4>algorithm</h4>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Supplier.html?is-external=true" title="class or interface in java.util.function">Supplier</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Supplier.html?is-external=true" title="class or interface in java.util.function">T</a>&gt; algorithm</pre>
+</li>
+<li class="blockListLast">
+<h4>data</h4>
+<pre><a href="com/exedio/cope/DataField.html" title="class in com.exedio.cope">DataField</a> data</pre>
 </li>
 </ul>
 </li>
@@ -3096,70 +3467,6 @@
 </li>
 </ul>
 </li>
-<li class="blockList"><a name="com.exedio.cope.pattern.MediaImageMagickFilter">
-<!--   -->
-</a>
-<h3>Class <a href="com/exedio/cope/pattern/MediaImageMagickFilter.html" title="class in com.exedio.cope.pattern">com.exedio.cope.pattern.MediaImageMagickFilter</a> extends <a href="com/exedio/cope/pattern/MediaFilter.html" title="class in com.exedio.cope.pattern">MediaFilter</a> implements Serializable</h3>
-<dl class="nameValue">
-<dt>serialVersionUID:</dt>
-<dd>1L</dd>
-</dl>
-<ul class="blockList">
-<li class="blockList">
-<h3>Serialized Fields</h3>
-<ul class="blockList">
-<li class="blockList">
-<h4>source</h4>
-<pre><a href="com/exedio/cope/pattern/Media.html" title="class in com.exedio.cope.pattern">Media</a> source</pre>
-</li>
-<li class="blockList">
-<h4>fallback</h4>
-<pre><a href="com/exedio/cope/pattern/MediaImageioFilter.html" title="class in com.exedio.cope.pattern">MediaImageioFilter</a> fallback</pre>
-</li>
-<li class="blockList">
-<h4>constantOutputContentType</h4>
-<pre><a href="com/exedio/cope/pattern/MediaType.html" title="class in com.exedio.cope.pattern">MediaType</a> constantOutputContentType</pre>
-</li>
-<li class="blockListLast">
-<h4>options</h4>
-<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>[] options</pre>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="blockList"><a name="com.exedio.cope.pattern.MediaImageMagickThumbnail">
-<!--   -->
-</a>
-<h3>Class <a href="com/exedio/cope/pattern/MediaImageMagickThumbnail.html" title="class in com.exedio.cope.pattern">com.exedio.cope.pattern.MediaImageMagickThumbnail</a> extends <a href="com/exedio/cope/pattern/MediaImageMagickFilter.html" title="class in com.exedio.cope.pattern">MediaImageMagickFilter</a> implements Serializable</h3>
-<dl class="nameValue">
-<dt>serialVersionUID:</dt>
-<dd>1L</dd>
-</dl>
-<ul class="blockList">
-<li class="blockList">
-<h3>Serialized Fields</h3>
-<ul class="blockList">
-<li class="blockList">
-<h4>boundX</h4>
-<pre>int boundX</pre>
-</li>
-<li class="blockList">
-<h4>boundY</h4>
-<pre>int boundY</pre>
-</li>
-<li class="blockList">
-<h4>density</h4>
-<pre>int density</pre>
-</li>
-<li class="blockListLast">
-<h4>flattenColor</h4>
-<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> flattenColor</pre>
-</li>
-</ul>
-</li>
-</ul>
-</li>
 <li class="blockList"><a name="com.exedio.cope.pattern.MediaPath">
 <!--   -->
 </a>
@@ -3219,6 +3526,42 @@
 <li class="blockListLast">
 <h4>delivered</h4>
 <pre>com.exedio.cope.pattern.VolatileInt delivered</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a name="com.exedio.cope.pattern.MediaPath.Locator">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/cope/pattern/MediaPath.Locator.html" title="class in com.exedio.cope.pattern">com.exedio.cope.pattern.MediaPath.Locator</a> extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList">
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockList">
+<h4>item</h4>
+<pre><a href="com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a> item</pre>
+</li>
+<li class="blockList">
+<h4>fingerprintLastModified</h4>
+<pre>long fingerprintLastModified</pre>
+</li>
+<li class="blockList">
+<h4>catchphrase</h4>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> catchphrase</pre>
+</li>
+<li class="blockList">
+<h4>contentType</h4>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> contentType</pre>
+</li>
+<li class="blockListLast">
+<h4>secret</h4>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> secret</pre>
 </li>
 </ul>
 </li>
@@ -3373,9 +3716,61 @@
 <h4>isfinal</h4>
 <pre>boolean isfinal</pre>
 </li>
-<li class="blockListLast">
+<li class="blockList">
 <h4>mandatory</h4>
 <pre>boolean mandatory</pre>
+</li>
+<li class="blockListLast">
+<h4>unison</h4>
+<pre><a href="com/exedio/cope/CheckConstraint.html" title="class in com.exedio.cope">CheckConstraint</a> unison</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a name="com.exedio.cope.pattern.MultiItemField">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/cope/pattern/MultiItemField.html" title="class in com.exedio.cope.pattern">com.exedio.cope.pattern.MultiItemField</a> extends <a href="com/exedio/cope/Pattern.html" title="class in com.exedio.cope">Pattern</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList">
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockList">
+<h4>valueClass</h4>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">T</a>&gt; valueClass</pre>
+</li>
+<li class="blockList">
+<h4>componentClasses</h4>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">T</a>&gt;[] componentClasses</pre>
+</li>
+<li class="blockList">
+<h4>components</h4>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">E</a>&gt; components</pre>
+</li>
+<li class="blockList">
+<h4>optional</h4>
+<pre>boolean optional</pre>
+</li>
+<li class="blockList">
+<h4>isFinal</h4>
+<pre>boolean isFinal</pre>
+</li>
+<li class="blockList">
+<h4>unique</h4>
+<pre>boolean unique</pre>
+</li>
+<li class="blockList">
+<h4>policy</h4>
+<pre><a href="com/exedio/cope/ItemField.DeletePolicy.html" title="enum in com.exedio.cope">ItemField.DeletePolicy</a> policy</pre>
+</li>
+<li class="blockListLast">
+<h4>copyToMap</h4>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/util/LinkedHashMap.html?is-external=true" title="class or interface in java.util">LinkedHashMap</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/LinkedHashMap.html?is-external=true" title="class or interface in java.util">K</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/LinkedHashMap.html?is-external=true" title="class or interface in java.util">V</a>&gt; copyToMap</pre>
 </li>
 </ul>
 </li>
@@ -3565,15 +3960,25 @@
 <h3>Class <a href="com/exedio/cope/pattern/Price.html" title="class in com.exedio.cope.pattern">com.exedio.cope.pattern.Price</a> extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a> implements Serializable</h3>
 <dl class="nameValue">
 <dt>serialVersionUID:</dt>
-<dd>1L</dd>
+<dd>2L</dd>
 </dl>
 <ul class="blockList">
+<li class="blockList">
+<h3>Serialization Methods</h3>
+<ul class="blockList">
+<li class="blockListLast">
+<h4>readResolve</h4>
+<pre>private&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;readResolve()</pre>
+<div class="block"><a href="http://java.sun.com/j2se/1.5.0/docs/guide/serialization/spec/input.html#5903">See Spec</a></div>
+</li>
+</ul>
+</li>
 <li class="blockList">
 <h3>Serialized Fields</h3>
 <ul class="blockList">
 <li class="blockListLast">
 <h4>store</h4>
-<pre>int store</pre>
+<pre>long store</pre>
 </li>
 </ul>
 </li>
@@ -3593,7 +3998,7 @@
 <ul class="blockList">
 <li class="blockList">
 <h4>integer</h4>
-<pre><a href="com/exedio/cope/IntegerField.html" title="class in com.exedio.cope">IntegerField</a> integer</pre>
+<pre><a href="com/exedio/cope/LongField.html" title="class in com.exedio.cope">LongField</a> integer</pre>
 </li>
 <li class="blockList">
 <h4>isfinal</h4>
@@ -3627,9 +4032,13 @@
 <h4>to</h4>
 <pre><a href="com/exedio/cope/FunctionField.html" title="class in com.exedio.cope">FunctionField</a>&lt;<a href="com/exedio/cope/FunctionField.html" title="type parameter in FunctionField">E</a>&gt; to</pre>
 </li>
-<li class="blockListLast">
+<li class="blockList">
 <h4>unison</h4>
 <pre><a href="com/exedio/cope/CheckConstraint.html" title="class in com.exedio.cope">CheckConstraint</a> unison</pre>
+</li>
+<li class="blockListLast">
+<h4>isfinal</h4>
+<pre>boolean isfinal</pre>
 </li>
 </ul>
 </li>
@@ -3648,12 +4057,8 @@
 <h3>Serialized Fields</h3>
 <ul class="blockList">
 <li class="blockList">
-<h4>timeZone</h4>
-<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/util/TimeZone.html?is-external=true" title="class or interface in java.util">TimeZone</a> timeZone</pre>
-</li>
-<li class="blockList">
-<h4>locale</h4>
-<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Locale.html?is-external=true" title="class or interface in java.util">Locale</a> locale</pre>
+<h4>zoneId</h4>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/time/ZoneId.html?is-external=true" title="class or interface in java.time">ZoneId</a> zoneId</pre>
 </li>
 <li class="blockList">
 <h4>enabled</h4>
@@ -3663,9 +4068,14 @@
 <h4>interval</h4>
 <pre><a href="com/exedio/cope/EnumField.html" title="class in com.exedio.cope">EnumField</a>&lt;<a href="com/exedio/cope/EnumField.html" title="type parameter in EnumField">E</a> extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Enum.html?is-external=true" title="class or interface in java.lang">Enum</a>&lt;<a href="com/exedio/cope/EnumField.html" title="type parameter in EnumField">E</a>&gt;&gt; interval</pre>
 </li>
-<li class="blockListLast">
+<li class="blockList">
 <h4>runs</h4>
 <pre>com.exedio.cope.pattern.Schedule.Runs runs</pre>
+</li>
+<li class="blockListLast">
+<h4>localeIfSupported</h4>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Locale.html?is-external=true" title="class or interface in java.util">Locale</a> localeIfSupported</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
 </li>
 </ul>
 </li>
@@ -3716,6 +4126,14 @@
 <li class="blockList">
 <h3>Serialized Fields</h3>
 <ul class="blockList">
+<li class="blockList">
+<h4>ordered</h4>
+<pre>boolean ordered</pre>
+</li>
+<li class="blockList">
+<h4>order</h4>
+<pre><a href="com/exedio/cope/IntegerField.html" title="class in com.exedio.cope">IntegerField</a> order</pre>
+</li>
 <li class="blockList">
 <h4>element</h4>
 <pre><a href="com/exedio/cope/FunctionField.html" title="class in com.exedio.cope">FunctionField</a>&lt;<a href="com/exedio/cope/FunctionField.html" title="type parameter in FunctionField">E</a>&gt; element</pre>
@@ -3797,10 +4215,6 @@
 <h4>pasteValue</h4>
 <pre><a href="com/exedio/cope/pattern/Media.html" title="class in com.exedio.cope.pattern">Media</a> pasteValue</pre>
 </li>
-<li class="blockList">
-<h4>annotationProxy</h4>
-<pre>com.exedio.cope.pattern.TextUrlFilter.AnnotationProxy annotationProxy</pre>
-</li>
 <li class="blockListLast">
 <h4>mountIfMounted</h4>
 <pre>com.exedio.cope.pattern.TextUrlFilter.Mount mountIfMounted</pre>
@@ -3850,13 +4264,9 @@
 <h4>pasteStart</h4>
 <pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> pasteStart</pre>
 </li>
-<li class="blockList">
+<li class="blockListLast">
 <h4>pasteStop</h4>
 <pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> pasteStop</pre>
-</li>
-<li class="blockListLast">
-<h4>annotationProxy</h4>
-<pre>com.exedio.cope.pattern.TextUrlFilterDelegator.AnnotationProxy annotationProxy</pre>
 </li>
 </ul>
 </li>
@@ -3882,9 +4292,13 @@
 <h4>hash</h4>
 <pre><a href="com/exedio/cope/StringField.html" title="class in com.exedio.cope">StringField</a> hash</pre>
 </li>
-<li class="blockListLast">
+<li class="blockList">
 <h4>messageDigestAlgorithm</h4>
-<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> messageDigestAlgorithm</pre>
+<pre><a href="com/exedio/cope/util/MessageDigestFactory.html" title="class in com.exedio.cope.util">MessageDigestFactory</a> messageDigestAlgorithm</pre>
+</li>
+<li class="blockListLast">
+<h4>hashConstraint</h4>
+<pre><a href="com/exedio/cope/pattern/HashConstraint.html" title="class in com.exedio.cope.pattern">HashConstraint</a> hashConstraint</pre>
 </li>
 </ul>
 </li>
@@ -3927,24 +4341,10 @@
 </li>
 </ul>
 </li>
-</ul>
-</li>
-<li class="blockList">
-<h2 title="Package">Package&nbsp;com.exedio.cope.search</h2>
-<ul class="blockList">
-<li class="blockList"><a name="com.exedio.cope.search.AverageAggregate">
+<li class="blockList"><a name="com.exedio.cope.reflect.FeatureField.NotFound">
 <!--   -->
 </a>
-<h3>Class <a href="com/exedio/cope/search/AverageAggregate.html" title="class in com.exedio.cope.search">com.exedio.cope.search.AverageAggregate</a> extends <a href="com/exedio/cope/Aggregate.html" title="class in com.exedio.cope">Aggregate</a>&lt;<a href="com/exedio/cope/search/AverageAggregate.html" title="type parameter in AverageAggregate">E</a> extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Number.html?is-external=true" title="class or interface in java.lang">Number</a>&gt; implements Serializable</h3>
-<dl class="nameValue">
-<dt>serialVersionUID:</dt>
-<dd>1L</dd>
-</dl>
-</li>
-<li class="blockList"><a name="com.exedio.cope.search.ExtremumAggregate">
-<!--   -->
-</a>
-<h3>Class <a href="com/exedio/cope/search/ExtremumAggregate.html" title="class in com.exedio.cope.search">com.exedio.cope.search.ExtremumAggregate</a> extends <a href="com/exedio/cope/Aggregate.html" title="class in com.exedio.cope">Aggregate</a>&lt;<a href="com/exedio/cope/search/ExtremumAggregate.html" title="type parameter in ExtremumAggregate">E</a>&gt; implements Serializable</h3>
+<h3>Class <a href="com/exedio/cope/reflect/FeatureField.NotFound.html" title="class in com.exedio.cope.reflect">com.exedio.cope.reflect.FeatureField.NotFound</a> extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalStateException.html?is-external=true" title="class or interface in java.lang">IllegalStateException</a> implements Serializable</h3>
 <dl class="nameValue">
 <dt>serialVersionUID:</dt>
 <dd>1L</dd>
@@ -3953,22 +4353,89 @@
 <li class="blockList">
 <h3>Serialized Fields</h3>
 <ul class="blockList">
+<li class="blockList">
+<h4>feature</h4>
+<pre><a href="com/exedio/cope/reflect/FeatureField.html" title="class in com.exedio.cope.reflect">FeatureField</a>&lt;<a href="com/exedio/cope/reflect/FeatureField.html" title="type parameter in FeatureField">E</a> extends <a href="com/exedio/cope/Feature.html" title="class in com.exedio.cope">Feature</a>&gt; feature</pre>
+</li>
+<li class="blockList">
+<h4>item</h4>
+<pre><a href="com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a> item</pre>
+</li>
+<li class="blockList">
+<h4>id</h4>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> id</pre>
+</li>
 <li class="blockListLast">
-<h4>minimum</h4>
-<pre>boolean minimum</pre>
+<h4>value</h4>
+<pre><a href="com/exedio/cope/Feature.html" title="class in com.exedio.cope">Feature</a> value</pre>
 </li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="blockList"><a name="com.exedio.cope.search.SumAggregate">
+<li class="blockList"><a name="com.exedio.cope.reflect.TypeField">
 <!--   -->
 </a>
-<h3>Class <a href="com/exedio/cope/search/SumAggregate.html" title="class in com.exedio.cope.search">com.exedio.cope.search.SumAggregate</a> extends <a href="com/exedio/cope/Aggregate.html" title="class in com.exedio.cope">Aggregate</a>&lt;<a href="com/exedio/cope/search/SumAggregate.html" title="type parameter in SumAggregate">E</a> extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Number.html?is-external=true" title="class or interface in java.lang">Number</a>&gt; implements Serializable</h3>
+<h3>Class <a href="com/exedio/cope/reflect/TypeField.html" title="class in com.exedio.cope.reflect">com.exedio.cope.reflect.TypeField</a> extends <a href="com/exedio/cope/Pattern.html" title="class in com.exedio.cope">Pattern</a> implements Serializable</h3>
 <dl class="nameValue">
 <dt>serialVersionUID:</dt>
 <dd>1L</dd>
 </dl>
+<ul class="blockList">
+<li class="blockList">
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockList">
+<h4>valueClass</h4>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">T</a>&gt; valueClass</pre>
+</li>
+<li class="blockList">
+<h4>idField</h4>
+<pre><a href="com/exedio/cope/StringField.html" title="class in com.exedio.cope">StringField</a> idField</pre>
+</li>
+<li class="blockList">
+<h4>isfinal</h4>
+<pre>boolean isfinal</pre>
+</li>
+<li class="blockListLast">
+<h4>mandatory</h4>
+<pre>boolean mandatory</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a name="com.exedio.cope.reflect.TypeField.NotFound">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/cope/reflect/TypeField.NotFound.html" title="class in com.exedio.cope.reflect">com.exedio.cope.reflect.TypeField.NotFound</a> extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalStateException.html?is-external=true" title="class or interface in java.lang">IllegalStateException</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList">
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockList">
+<h4>feature</h4>
+<pre><a href="com/exedio/cope/reflect/TypeField.html" title="class in com.exedio.cope.reflect">TypeField</a>&lt;<a href="com/exedio/cope/reflect/TypeField.html" title="type parameter in TypeField">E</a> extends <a href="com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&gt; feature</pre>
+</li>
+<li class="blockList">
+<h4>item</h4>
+<pre><a href="com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a> item</pre>
+</li>
+<li class="blockList">
+<h4>id</h4>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> id</pre>
+</li>
+<li class="blockListLast">
+<h4>value</h4>
+<pre><a href="com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;<a href="com/exedio/cope/Type.html" title="type parameter in Type">T</a> extends <a href="com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&gt; value</pre>
+</li>
+</ul>
+</li>
+</ul>
 </li>
 </ul>
 </li>
@@ -4032,6 +4499,26 @@
 </li>
 </ul>
 </li>
+<li class="blockList"><a name="com.exedio.cope.util.IllegalAlgorithmException">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/cope/util/IllegalAlgorithmException.html" title="class in com.exedio.cope.util">com.exedio.cope.util.IllegalAlgorithmException</a> extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang">IllegalArgumentException</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList">
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockListLast">
+<h4>algorithm</h4>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> algorithm</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
 <li class="blockList"><a name="com.exedio.cope.util.IllegalPropertiesException">
 <!--   -->
 </a>
@@ -4068,6 +4555,61 @@
 <dt>serialVersionUID:</dt>
 <dd>1L</dd>
 </dl>
+</li>
+<li class="blockList"><a name="com.exedio.cope.util.MessageDigestFactory">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/cope/util/MessageDigestFactory.html" title="class in com.exedio.cope.util">com.exedio.cope.util.MessageDigestFactory</a> extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList">
+<h3>Serialization Methods</h3>
+<ul class="blockList">
+<li class="blockListLast">
+<h4>readResolve</h4>
+<pre>private&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;readResolve()</pre>
+<div class="block"><a href="http://java.sun.com/j2se/1.5.0/docs/guide/serialization/spec/input.html#5903">See Spec</a></div>
+</li>
+</ul>
+</li>
+<li class="blockList">
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockListLast">
+<h4>algorithm</h4>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> algorithm</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList">
+<h2 title="Package">Package&nbsp;com.exedio.cope.vault</h2>
+<ul class="blockList">
+<li class="blockList"><a name="com.exedio.cope.vault.VaultNotFoundException">
+<!--   -->
+</a>
+<h3>Class <a href="com/exedio/cope/vault/VaultNotFoundException.html" title="class in com.exedio.cope.vault">com.exedio.cope.vault.VaultNotFoundException</a> extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Exception.html?is-external=true" title="class or interface in java.lang">Exception</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList">
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockListLast">
+<h4>hash</h4>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> hash</pre>
+</li>
+</ul>
+</li>
+</ul>
 </li>
 </ul>
 </li>

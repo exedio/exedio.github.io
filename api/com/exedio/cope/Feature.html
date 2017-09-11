@@ -17,8 +17,8 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":42,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10};
-var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"],32:["t6","Deprecated Methods"]};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":9,"i13":10,"i14":10,"i15":10};
+var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
 var tableTab = "tableTab";
@@ -46,7 +46,7 @@ var activeTableTab = "activeTableTab";
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../com/exedio/cope/EnvironmentInfo.html" title="class in com.exedio.cope"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../com/exedio/cope/ExtremumAggregate.html" title="class in com.exedio.cope"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
 <li><a href="../../../com/exedio/cope/Features.html" title="class in com.exedio.cope"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
@@ -151,7 +151,7 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializab
 </a>
 <h3>Method Summary</h3>
 <table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
-<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t6" class="tableTab"><span><a href="javascript:show(32);">Deprecated Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
+<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t1" class="tableTab"><span><a href="javascript:show(1);">Static Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
 <tr>
 <th class="colFirst" scope="col">Modifier and Type</th>
 <th class="colLast" scope="col">Method and Description</th>
@@ -164,67 +164,71 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializab
 </td>
 </tr>
 <tr id="i1" class="rowColor">
+<td class="colFirst"><code><a href="../../../com/exedio/cope/AbstractType.html" title="interface in com.exedio.cope">AbstractType</a>&lt;?&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Feature.html#getAbstractType--">getAbstractType</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i2" class="altColor">
 <td class="colFirst"><code>&lt;A extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/annotation/Annotation.html?is-external=true" title="class or interface in java.lang.annotation">Annotation</a>&gt;<br>A</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Feature.html#getAnnotation-java.lang.Class-">getAnnotation</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;A&gt;&nbsp;annotationClass)</code>&nbsp;</td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Feature.html#getID--">getID</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Feature.html#getLocalizationKeys--">getLocalizationKeys</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Feature.html#getName--">getName</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i4" class="altColor">
-<td class="colFirst"><code><a href="../../../com/exedio/cope/Pattern.html" title="class in com.exedio.cope">Pattern</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Feature.html#getPattern--">getPattern</a></span>()</code>&nbsp;</td>
-</tr>
-<tr id="i5" class="rowColor">
-<td class="colFirst"><code><a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;? extends <a href="../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Feature.html#getType--">getType</a></span>()</code>&nbsp;</td>
-</tr>
 <tr id="i6" class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../com/exedio/cope/instrument/Wrapper.html" title="class in com.exedio.cope.instrument">Wrapper</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Feature.html#getWrappers--">getWrappers</a></span>()</code>
-<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
-<div class="block"><span class="deprecationComment">Not supported anymore, throws <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/NoSuchMethodError.html?is-external=true" title="class or interface in java.lang"><code>NoSuchMethodError</code></a>.
- Not used anymore by the framework,
- equivalent of
- <a href="../../../com/exedio/cope/instrument/Wrapper.html#getByAnnotations-java.lang.Class-F-java.util.List-"><code>Wrapper.getByAnnotations(Class, Feature, List)</code></a>
- is fixed now.</span></div>
-</div>
+<td class="colFirst"><code><a href="../../../com/exedio/cope/Pattern.html" title="class in com.exedio.cope">Pattern</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Feature.html#getPattern--">getPattern</a></span>()</code>
+<div class="block">Returns the pattern, this feature is a source feature of.</div>
 </td>
 </tr>
 <tr id="i7" class="rowColor">
-<td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Feature.html#isAnnotationPresent-java.lang.Class-">isAnnotationPresent</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;? extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/annotation/Annotation.html?is-external=true" title="class or interface in java.lang.annotation">Annotation</a>&gt;&nbsp;annotationClass)</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;?&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Feature.html#getType--">getType</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Feature.html#isSourceAlready--">isSourceAlready</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Feature.html#isAnnotationPresent-java.lang.Class-">isAnnotationPresent</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;? extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/annotation/Annotation.html?is-external=true" title="class or interface in java.lang.annotation">Annotation</a>&gt;&nbsp;annotationClass)</code>&nbsp;</td>
 </tr>
 <tr id="i9" class="rowColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Feature.html#isSourceAlready--">isSourceAlready</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Feature.html#mount-java.lang.String-java.io.Serializable-java.lang.reflect.AnnotatedElement-">mount</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Feature.html#mount-com.exedio.cope.AbstractType-java.lang.String-java.lang.String-java.io.Serializable-java.lang.reflect.AnnotatedElement-">mount</a></span>(<a href="../../../com/exedio/cope/AbstractType.html" title="interface in com.exedio.cope">AbstractType</a>&lt;?&gt;&nbsp;type,
+     <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name,
+     <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string,
      <a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializable.html?is-external=true" title="class or interface in java.io">Serializable</a>&nbsp;serializable,
      <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/reflect/AnnotatedElement.html?is-external=true" title="class or interface in java.lang.reflect">AnnotatedElement</a>&nbsp;annotationSource)</code>&nbsp;</td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>protected <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Feature.html#readResolve--">readResolve</a></span>()</code>
 <div class="block">Block malicious data streams.</div>
 </td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i12" class="altColor">
+<td class="colFirst"><code>static &lt;T&gt;&nbsp;T</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Feature.html#requireMounted-T-">requireMounted</a></span>(T&nbsp;result)</code>&nbsp;</td>
+</tr>
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Feature.html#toString--">toString</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Feature.html#toString-java.lang.StringBuilder-com.exedio.cope.Type-">toString</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/StringBuilder.html?is-external=true" title="class or interface in java.lang">StringBuilder</a>&nbsp;bf,
         <a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;?&gt;&nbsp;defaultType)</code>&nbsp;</td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>protected <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Feature.html#writeReplace--">writeReplace</a></span>()</code>
 <div class="block"><a href="http://java.sun.com/j2se/1.5.0/docs/guide/serialization/spec/output.html#5324">See Spec</a></div>
@@ -269,15 +273,41 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializab
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="mount-java.lang.String-java.io.Serializable-java.lang.reflect.AnnotatedElement-">
+<a name="mount-com.exedio.cope.AbstractType-java.lang.String-java.lang.String-java.io.Serializable-java.lang.reflect.AnnotatedElement-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>mount</h4>
-<pre>public final&nbsp;void&nbsp;mount(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string,
+<pre>public final&nbsp;void&nbsp;mount(<a href="../../../com/exedio/cope/AbstractType.html" title="interface in com.exedio.cope">AbstractType</a>&lt;?&gt;&nbsp;type,
+                        <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name,
+                        <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string,
                         <a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializable.html?is-external=true" title="class or interface in java.io">Serializable</a>&nbsp;serializable,
                         <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/reflect/AnnotatedElement.html?is-external=true" title="class or interface in java.lang.reflect">AnnotatedElement</a>&nbsp;annotationSource)</pre>
+</li>
+</ul>
+<a name="requireMounted-java.lang.Object-">
+<!--   -->
+</a><a name="requireMounted-T-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>requireMounted</h4>
+<pre>public static final&nbsp;&lt;T&gt;&nbsp;T&nbsp;requireMounted(T&nbsp;result)</pre>
+</li>
+</ul>
+<a name="getAbstractType--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getAbstractType</h4>
+<pre>public&nbsp;<a href="../../../com/exedio/cope/AbstractType.html" title="interface in com.exedio.cope">AbstractType</a>&lt;?&gt;&nbsp;getAbstractType()</pre>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../com/exedio/cope/Feature.html#getType--"><code>getType()</code></a></dd>
+</dl>
 </li>
 </ul>
 <a name="getType--">
@@ -286,7 +316,11 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializab
 <ul class="blockList">
 <li class="blockList">
 <h4>getType</h4>
-<pre>public&nbsp;<a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;? extends <a href="../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&gt;&nbsp;getType()</pre>
+<pre>public&nbsp;<a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;?&gt;&nbsp;getType()</pre>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../com/exedio/cope/Feature.html#getAbstractType--"><code>getAbstractType()</code></a></dd>
+</dl>
 </li>
 </ul>
 <a name="getName--">
@@ -337,19 +371,17 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializab
 </dl>
 </li>
 </ul>
-<a name="getWrappers--">
+<a name="getLocalizationKeys--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>getWrappers</h4>
-<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</a>
-public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../com/exedio/cope/instrument/Wrapper.html" title="class in com.exedio.cope.instrument">Wrapper</a>&gt;&nbsp;getWrappers()</pre>
-<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment">Not supported anymore, throws <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/NoSuchMethodError.html?is-external=true" title="class or interface in java.lang"><code>NoSuchMethodError</code></a>.
- Not used anymore by the framework,
- equivalent of
- <a href="../../../com/exedio/cope/instrument/Wrapper.html#getByAnnotations-java.lang.Class-F-java.util.List-"><code>Wrapper.getByAnnotations(Class, Feature, List)</code></a>
- is fixed now.</span></div>
+<h4>getLocalizationKeys</h4>
+<pre>public final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;getLocalizationKeys()</pre>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../com/exedio/cope/misc/LocalizationKeys.html" title="class in com.exedio.cope.misc"><code>LocalizationKeys</code></a></dd>
+</dl>
 </li>
 </ul>
 <a name="toString--">
@@ -391,9 +423,14 @@ public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.ht
 <li class="blockList">
 <h4>getPattern</h4>
 <pre>public final&nbsp;<a href="../../../com/exedio/cope/Pattern.html" title="class in com.exedio.cope">Pattern</a>&nbsp;getPattern()</pre>
+<div class="block">Returns the pattern, this feature is a source feature of.
+ NOTE:
+ Does not return the pattern that created the type
+ of this feature. For such cases use
+ <a href="../../../com/exedio/cope/Feature.html#getType--"><code>getType()</code></a>.<a href="../../../com/exedio/cope/Type.html#getPattern--"><code>getPattern()</code></a>.</div>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../com/exedio/cope/Pattern.html#getSourceFields--"><code>Pattern.getSourceFields()</code></a></dd>
+<dd><a href="../../../com/exedio/cope/Pattern.html#getSourceFeatures--"><code>Pattern.getSourceFeatures()</code></a></dd>
 </dl>
 </li>
 </ul>
@@ -468,7 +505,7 @@ public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.ht
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../com/exedio/cope/EnvironmentInfo.html" title="class in com.exedio.cope"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../com/exedio/cope/ExtremumAggregate.html" title="class in com.exedio.cope"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
 <li><a href="../../../com/exedio/cope/Features.html" title="class in com.exedio.cope"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">

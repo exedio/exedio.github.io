@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -219,23 +219,33 @@ extends <a href="../../../com/exedio/dsmf/Node.html" title="class in com.exedio.
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/dsmf/Schema.html#getTables--">getTables</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i13" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/dsmf/Schema.html#tearDown--">tearDown</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../../com/exedio/dsmf/Sequence.html" title="class in com.exedio.dsmf">Sequence</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/dsmf/Schema.html#newSequence-java.lang.String-com.exedio.dsmf.Sequence.Type-long-">newSequence</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name,
+           <a href="../../../com/exedio/dsmf/Sequence.Type.html" title="enum in com.exedio.dsmf">Sequence.Type</a>&nbsp;type,
+           long&nbsp;start)</code>&nbsp;</td>
 </tr>
 <tr id="i14" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/dsmf/Schema.html#tearDown-com.exedio.dsmf.StatementListener-">tearDown</a></span>(<a href="../../../com/exedio/dsmf/StatementListener.html" title="interface in com.exedio.dsmf">StatementListener</a>&nbsp;listener)</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../../com/exedio/dsmf/Table.html" title="class in com.exedio.dsmf">Table</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/dsmf/Schema.html#newTable-java.lang.String-">newTable</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name)</code>&nbsp;</td>
 </tr>
 <tr id="i15" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/dsmf/Schema.html#tearDownConstraints-java.util.EnumSet-">tearDownConstraints</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/EnumSet.html?is-external=true" title="class or interface in java.util">EnumSet</a>&lt;<a href="../../../com/exedio/dsmf/Constraint.Type.html" title="enum in com.exedio.dsmf">Constraint.Type</a>&gt;&nbsp;types)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/dsmf/Schema.html#tearDown--">tearDown</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i16" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/dsmf/Schema.html#tearDown-com.exedio.dsmf.StatementListener-">tearDown</a></span>(<a href="../../../com/exedio/dsmf/StatementListener.html" title="interface in com.exedio.dsmf">StatementListener</a>&nbsp;listener)</code>&nbsp;</td>
+</tr>
+<tr id="i17" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/dsmf/Schema.html#tearDownConstraints-java.util.EnumSet-">tearDownConstraints</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/EnumSet.html?is-external=true" title="class or interface in java.util">EnumSet</a>&lt;<a href="../../../com/exedio/dsmf/Constraint.Type.html" title="enum in com.exedio.dsmf">Constraint.Type</a>&gt;&nbsp;types)</code>&nbsp;</td>
+</tr>
+<tr id="i18" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/dsmf/Schema.html#tearDownConstraints-java.util.EnumSet-com.exedio.dsmf.StatementListener-">tearDownConstraints</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/EnumSet.html?is-external=true" title="class or interface in java.util">EnumSet</a>&lt;<a href="../../../com/exedio/dsmf/Constraint.Type.html" title="enum in com.exedio.dsmf">Constraint.Type</a>&gt;&nbsp;types,
                    <a href="../../../com/exedio/dsmf/StatementListener.html" title="interface in com.exedio.dsmf">StatementListener</a>&nbsp;listener)</code>&nbsp;</td>
 </tr>
-<tr id="i17" class="rowColor">
+<tr id="i19" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/dsmf/Schema.html#verify--">verify</a></span>()</code>&nbsp;</td>
 </tr>
@@ -245,7 +255,7 @@ extends <a href="../../../com/exedio/dsmf/Node.html" title="class in com.exedio.
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;com.exedio.dsmf.<a href="../../../com/exedio/dsmf/Node.html" title="class in com.exedio.dsmf">Node</a></h3>
-<code><a href="../../../com/exedio/dsmf/Node.html#getCumulativeColor--">getCumulativeColor</a>, <a href="../../../com/exedio/dsmf/Node.html#getError--">getError</a>, <a href="../../../com/exedio/dsmf/Node.html#getParticularColor--">getParticularColor</a></code></li>
+<code><a href="../../../com/exedio/dsmf/Node.html#exists--">exists</a>, <a href="../../../com/exedio/dsmf/Node.html#getCumulativeColor--">getCumulativeColor</a>, <a href="../../../com/exedio/dsmf/Node.html#getError--">getError</a>, <a href="../../../com/exedio/dsmf/Node.html#getParticularColor--">getParticularColor</a>, <a href="../../../com/exedio/dsmf/Node.html#required--">required</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
@@ -286,6 +296,29 @@ extends <a href="../../../com/exedio/dsmf/Node.html" title="class in com.exedio.
 <!--   -->
 </a>
 <h3>Method Detail</h3>
+<a name="newTable-java.lang.String-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>newTable</h4>
+<pre>public&nbsp;<a href="../../../com/exedio/dsmf/Table.html" title="class in com.exedio.dsmf">Table</a>&nbsp;newTable(<a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+                      <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name)</pre>
+</li>
+</ul>
+<a name="newSequence-java.lang.String-com.exedio.dsmf.Sequence.Type-long-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>newSequence</h4>
+<pre>public&nbsp;<a href="../../../com/exedio/dsmf/Sequence.html" title="class in com.exedio.dsmf">Sequence</a>&nbsp;newSequence(<a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+                            <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name,
+                            <a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+                            <a href="../../../com/exedio/dsmf/Sequence.Type.html" title="enum in com.exedio.dsmf">Sequence.Type</a>&nbsp;type,
+                            long&nbsp;start)</pre>
+</li>
+</ul>
 <a name="getTable-java.lang.String-">
 <!--   -->
 </a>

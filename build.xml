@@ -19,7 +19,7 @@
 		<javadoc
 				destdir="api"
 				maxmemory="60m"
-				source="1.7"
+				source="1.8"
 				author="on"
 				version="on"
 				windowtitle="exedio persistence"
@@ -47,10 +47,10 @@
 				<include name="util/src/**/*.java" />
 			</fileset>
 			<classpath>
-				<pathelement location="submodules/persistence/lib/trove.jar" />
+				<pathelement location="submodules/persistence/lib/trove4j.jar" />
 				<pathelement location="submodules/persistence/lib/junit.jar" />
 				<pathelement location="submodules/persistence/lib/slf4j-api.jar" />
-				<pathelement location="submodules/persistence/lib/servlet-api.jar" />
+				<pathelement location="submodules/persistence/lib/javax.servlet-api.jar" />
 				<pathelement location="submodules/persistence/lib/junit.jar" />
 				<pathelement location="submodules/persistence/lib/findbugs-annotations.jar" />
 			</classpath>

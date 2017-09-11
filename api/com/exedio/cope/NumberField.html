@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":42,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":42};
+var methods = {"i0":42};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"],32:["t6","Deprecated Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -156,11 +156,11 @@ implements <a href="../../../com/exedio/cope/NumberFunction.html" title="interfa
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>protected </code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/NumberField.html#NumberField-boolean-boolean-boolean-com.exedio.cope.ItemField:A-java.lang.Class-com.exedio.cope.DefaultSource-">NumberField</a></span>(boolean&nbsp;isfinal,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/NumberField.html#NumberField-boolean-boolean-java.lang.Class-boolean-com.exedio.cope.ItemField:A-com.exedio.cope.DefaultSource-">NumberField</a></span>(boolean&nbsp;isfinal,
            boolean&nbsp;optional,
+           <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;<a href="../../../com/exedio/cope/NumberField.html" title="type parameter in NumberField">E</a>&gt;&nbsp;valueClass,
            boolean&nbsp;unique,
            <a href="../../../com/exedio/cope/ItemField.html" title="class in com.exedio.cope">ItemField</a>&lt;?&gt;[]&nbsp;copyFrom,
-           <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;<a href="../../../com/exedio/cope/NumberField.html" title="type parameter in NumberField">E</a>&gt;&nbsp;valueClass,
            com.exedio.cope.DefaultSource&lt;<a href="../../../com/exedio/cope/NumberField.html" title="type parameter in NumberField">E</a>&gt;&nbsp;defaultSource)</code>&nbsp;</td>
 </tr>
 </table>
@@ -179,70 +179,10 @@ implements <a href="../../../com/exedio/cope/NumberFunction.html" title="interfa
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code><a href="../../../com/exedio/cope/AsStringView.html" title="class in com.exedio.cope">AsStringView</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/NumberField.html#asString--">asString</a></span>()</code>&nbsp;</td>
-</tr>
-<tr id="i1" class="rowColor">
-<td class="colFirst"><code><a href="../../../com/exedio/cope/search/AverageAggregate.html" title="class in com.exedio.cope.search">AverageAggregate</a>&lt;<a href="../../../com/exedio/cope/NumberField.html" title="type parameter in NumberField">E</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/NumberField.html#average--">average</a></span>()</code>&nbsp;</td>
-</tr>
-<tr id="i2" class="altColor">
-<td class="colFirst"><code><a href="../../../com/exedio/cope/search/AverageAggregate.html" title="class in com.exedio.cope.search">AverageAggregate</a>&lt;<a href="../../../com/exedio/cope/NumberField.html" title="type parameter in NumberField">E</a>&gt;</code></td>
+<td class="colFirst"><code><a href="../../../com/exedio/cope/AverageAggregate.html" title="class in com.exedio.cope">AverageAggregate</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/NumberField.html#avg--">avg</a></span>()</code>
 <div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
-<div class="block"><span class="deprecationComment">Use <a href="../../../com/exedio/cope/NumberField.html#average--"><code>average()</code></a> instead</span></div>
-</div>
-</td>
-</tr>
-<tr id="i3" class="rowColor">
-<td class="colFirst"><code><a href="../../../com/exedio/cope/BindNumberFunction.html" title="class in com.exedio.cope">BindNumberFunction</a>&lt;<a href="../../../com/exedio/cope/NumberField.html" title="type parameter in NumberField">E</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/NumberField.html#bind-com.exedio.cope.Join-">bind</a></span>(<a href="../../../com/exedio/cope/Join.html" title="class in com.exedio.cope">Join</a>&nbsp;join)</code>&nbsp;</td>
-</tr>
-<tr id="i4" class="altColor">
-<td class="colFirst"><code><a href="../../../com/exedio/cope/DivideView.html" title="class in com.exedio.cope">DivideView</a>&lt;<a href="../../../com/exedio/cope/NumberField.html" title="type parameter in NumberField">E</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/NumberField.html#divide-com.exedio.cope.NumberFunction-">divide</a></span>(<a href="../../../com/exedio/cope/NumberFunction.html" title="interface in com.exedio.cope">NumberFunction</a>&lt;<a href="../../../com/exedio/cope/NumberField.html" title="type parameter in NumberField">E</a>&gt;&nbsp;other)</code>
-<div class="block">You may want to use <a href="../../../com/exedio/cope/DivideView.html#divide-com.exedio.cope.Function-com.exedio.cope.Function-"><code>DivideView.divide(Function, Function)</code></a> instead, if you do not have <a href="../../../com/exedio/cope/NumberFunction.html" title="interface in com.exedio.cope"><code>NumberFunction</code></a>s available.</div>
-</td>
-</tr>
-<tr id="i5" class="rowColor">
-<td class="colFirst"><code><a href="../../../com/exedio/cope/MinusView.html" title="class in com.exedio.cope">MinusView</a>&lt;<a href="../../../com/exedio/cope/NumberField.html" title="type parameter in NumberField">E</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/NumberField.html#minus-com.exedio.cope.NumberFunction-">minus</a></span>(<a href="../../../com/exedio/cope/NumberFunction.html" title="interface in com.exedio.cope">NumberFunction</a>&lt;<a href="../../../com/exedio/cope/NumberField.html" title="type parameter in NumberField">E</a>&gt;&nbsp;other)</code>
-<div class="block">You may want to use <a href="../../../com/exedio/cope/MinusView.html#minus-com.exedio.cope.Function-com.exedio.cope.Function-"><code>MinusView.minus(Function, Function)</code></a> instead, if you do not have <a href="../../../com/exedio/cope/NumberFunction.html" title="interface in com.exedio.cope"><code>NumberFunction</code></a>s available.</div>
-</td>
-</tr>
-<tr id="i6" class="altColor">
-<td class="colFirst"><code><a href="../../../com/exedio/cope/MultiplyLiteralView.html" title="class in com.exedio.cope">MultiplyLiteralView</a>&lt;<a href="../../../com/exedio/cope/NumberField.html" title="type parameter in NumberField">E</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/NumberField.html#multiply-E-">multiply</a></span>(<a href="../../../com/exedio/cope/NumberField.html" title="type parameter in NumberField">E</a>&nbsp;value)</code>
-<div class="block">You may want to use <a href="../../../com/exedio/cope/MultiplyLiteralView.html#multiply-com.exedio.cope.Function-E-"><code>MultiplyLiteralView.multiply(Function, Number)</code></a> instead, if you do not have <a href="../../../com/exedio/cope/NumberFunction.html" title="interface in com.exedio.cope"><code>NumberFunction</code></a>s available.</div>
-</td>
-</tr>
-<tr id="i7" class="rowColor">
-<td class="colFirst"><code><a href="../../../com/exedio/cope/MultiplyView.html" title="class in com.exedio.cope">MultiplyView</a>&lt;<a href="../../../com/exedio/cope/NumberField.html" title="type parameter in NumberField">E</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/NumberField.html#multiply-com.exedio.cope.NumberFunction-">multiply</a></span>(<a href="../../../com/exedio/cope/NumberFunction.html" title="interface in com.exedio.cope">NumberFunction</a>&lt;<a href="../../../com/exedio/cope/NumberField.html" title="type parameter in NumberField">E</a>&gt;&nbsp;other)</code>
-<div class="block">You may want to use <a href="../../../com/exedio/cope/MultiplyView.html#multiply-com.exedio.cope.Function-com.exedio.cope.Function-"><code>MultiplyView.multiply(Function, Function)</code></a> instead, if you do not have <a href="../../../com/exedio/cope/NumberFunction.html" title="interface in com.exedio.cope"><code>NumberFunction</code></a>s available.</div>
-</td>
-</tr>
-<tr id="i8" class="altColor">
-<td class="colFirst"><code><a href="../../../com/exedio/cope/PlusLiteralView.html" title="class in com.exedio.cope">PlusLiteralView</a>&lt;<a href="../../../com/exedio/cope/NumberField.html" title="type parameter in NumberField">E</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/NumberField.html#plus-E-">plus</a></span>(<a href="../../../com/exedio/cope/NumberField.html" title="type parameter in NumberField">E</a>&nbsp;value)</code>
-<div class="block">You may want to use <a href="../../../com/exedio/cope/PlusLiteralView.html#plus-com.exedio.cope.Function-E-"><code>PlusLiteralView.plus(Function, Number)</code></a> instead, if you do not have <a href="../../../com/exedio/cope/NumberFunction.html" title="interface in com.exedio.cope"><code>NumberFunction</code></a>s available.</div>
-</td>
-</tr>
-<tr id="i9" class="rowColor">
-<td class="colFirst"><code><a href="../../../com/exedio/cope/PlusView.html" title="class in com.exedio.cope">PlusView</a>&lt;<a href="../../../com/exedio/cope/NumberField.html" title="type parameter in NumberField">E</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/NumberField.html#plus-com.exedio.cope.NumberFunction-">plus</a></span>(<a href="../../../com/exedio/cope/NumberFunction.html" title="interface in com.exedio.cope">NumberFunction</a>&lt;<a href="../../../com/exedio/cope/NumberField.html" title="type parameter in NumberField">E</a>&gt;&nbsp;other)</code>
-<div class="block">You may want to use <a href="../../../com/exedio/cope/PlusView.html#plus-com.exedio.cope.Function-com.exedio.cope.Function-"><code>PlusView.plus(Function, Function)</code></a> instead, if you do not have <a href="../../../com/exedio/cope/NumberFunction.html" title="interface in com.exedio.cope"><code>NumberFunction</code></a>s available.</div>
-</td>
-</tr>
-<tr id="i10" class="altColor">
-<td class="colFirst"><code><a href="../../../com/exedio/cope/search/SumAggregate.html" title="class in com.exedio.cope.search">SumAggregate</a>&lt;<a href="../../../com/exedio/cope/NumberField.html" title="type parameter in NumberField">E</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/NumberField.html#sum--">sum</a></span>()</code>&nbsp;</td>
-</tr>
-<tr id="i11" class="rowColor">
-<td class="colFirst"><code><a href="../../../com/exedio/cope/PlusView.html" title="class in com.exedio.cope">PlusView</a>&lt;<a href="../../../com/exedio/cope/NumberField.html" title="type parameter in NumberField">E</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/NumberField.html#sum-com.exedio.cope.NumberFunction-">sum</a></span>(<a href="../../../com/exedio/cope/NumberFunction.html" title="interface in com.exedio.cope">NumberFunction</a>&lt;<a href="../../../com/exedio/cope/NumberField.html" title="type parameter in NumberField">E</a>&gt;&nbsp;other)</code>
-<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
-<div class="block"><span class="deprecationComment">renamed to <a href="../../../com/exedio/cope/NumberField.html#plus-com.exedio.cope.NumberFunction-"><code>plus(NumberFunction)</code></a>.</span></div>
+<div class="block"><span class="deprecationComment">Use <a href="../../../com/exedio/cope/NumberFunction.html#average--"><code>NumberFunction.average()</code></a> instead</span></div>
 </div>
 </td>
 </tr>
@@ -252,21 +192,21 @@ implements <a href="../../../com/exedio/cope/NumberFunction.html" title="interfa
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;com.exedio.cope.<a href="../../../com/exedio/cope/FunctionField.html" title="class in com.exedio.cope">FunctionField</a></h3>
-<code><a href="../../../com/exedio/cope/FunctionField.html#addCopyFrom-com.exedio.cope.ItemField-">addCopyFrom</a>, <a href="../../../com/exedio/cope/FunctionField.html#append-com.exedio.cope.Statement-com.exedio.cope.Join-">append</a>, <a href="../../../com/exedio/cope/FunctionField.html#appendSelect-com.exedio.cope.Statement-com.exedio.cope.Join-">appendSelect</a>, <a href="../../../com/exedio/cope/FunctionField.html#between-E-E-">between</a>, <a href="../../../com/exedio/cope/FunctionField.html#check-com.exedio.cope.TC-com.exedio.cope.Join-">check</a>, <a href="../../../com/exedio/cope/FunctionField.html#copy--">copy</a>, <a href="../../../com/exedio/cope/FunctionField.html#copy-com.exedio.cope.CopyMapper-">copy</a>, <a href="../../../com/exedio/cope/FunctionField.html#copyFrom-com.exedio.cope.ItemField-">copyFrom</a>, <a href="../../../com/exedio/cope/FunctionField.html#copyFunctionField--">copyFunctionField</a>, <a href="../../../com/exedio/cope/FunctionField.html#defaultTo-E-">defaultTo</a>, <a href="../../../com/exedio/cope/FunctionField.html#equal-E-">equal</a>, <a href="../../../com/exedio/cope/FunctionField.html#equal-com.exedio.cope.Function-">equal</a>, <a href="../../../com/exedio/cope/FunctionField.html#equal-com.exedio.cope.Join-E-">equal</a>, <a href="../../../com/exedio/cope/FunctionField.html#get-com.exedio.cope.Item-">get</a>, <a href="../../../com/exedio/cope/FunctionField.html#getDefaultConstant--">getDefaultConstant</a>, <a href="../../../com/exedio/cope/FunctionField.html#getImplicitCopyConstraint--">getImplicitCopyConstraint</a>, <a href="../../../com/exedio/cope/FunctionField.html#getImplicitCopyConstraints--">getImplicitCopyConstraints</a>, <a href="../../../com/exedio/cope/FunctionField.html#getImplicitUniqueConstraint--">getImplicitUniqueConstraint</a>, <a href="../../../com/exedio/cope/FunctionField.html#getInitialExceptions--">getInitialExceptions</a>, <a href="../../../com/exedio/cope/FunctionField.html#getUniqueConstraints--">getUniqueConstraints</a>, <a href="../../../com/exedio/cope/FunctionField.html#greater-E-">greater</a>, <a href="../../../com/exedio/cope/FunctionField.html#greater-com.exedio.cope.Function-">greater</a>, <a href="../../../com/exedio/cope/FunctionField.html#greaterOrEqual-E-">greaterOrEqual</a>, <a href="../../../com/exedio/cope/FunctionField.html#greaterOrEqual-com.exedio.cope.Function-">greaterOrEqual</a>, <a href="../../../com/exedio/cope/FunctionField.html#hasDefault--">hasDefault</a>, <a href="../../../com/exedio/cope/FunctionField.html#in-java.util.Collection-">in</a>, <a href="../../../com/exedio/cope/FunctionField.html#in-E...-">in</a>, <a href="../../../com/exedio/cope/FunctionField.html#isInitial--">isInitial</a>, <a href="../../../com/exedio/cope/FunctionField.html#isNotNull--">isNotNull</a>, <a href="../../../com/exedio/cope/FunctionField.html#isNull--">isNull</a>, <a href="../../../com/exedio/cope/FunctionField.html#less-E-">less</a>, <a href="../../../com/exedio/cope/FunctionField.html#less-com.exedio.cope.Function-">less</a>, <a href="../../../com/exedio/cope/FunctionField.html#lessOrEqual-E-">lessOrEqual</a>, <a href="../../../com/exedio/cope/FunctionField.html#lessOrEqual-com.exedio.cope.Function-">lessOrEqual</a>, <a href="../../../com/exedio/cope/FunctionField.html#max--">max</a>, <a href="../../../com/exedio/cope/FunctionField.html#min--">min</a>, <a href="../../../com/exedio/cope/FunctionField.html#noDefault--">noDefault</a>, <a href="../../../com/exedio/cope/FunctionField.html#nonUnique--">nonUnique</a>, <a href="../../../com/exedio/cope/FunctionField.html#notEqual-E-">notEqual</a>, <a href="../../../com/exedio/cope/FunctionField.html#notEqual-com.exedio.cope.Function-">notEqual</a>, <a href="../../../com/exedio/cope/FunctionField.html#searchUnique-java.lang.Class-E-">searchUnique</a>, <a href="../../../com/exedio/cope/FunctionField.html#searchUnique-E-">searchUnique</a>, <a href="../../../com/exedio/cope/FunctionField.html#set-com.exedio.cope.Item-E-">set</a>, <a href="../../../com/exedio/cope/FunctionField.html#unique--">unique</a></code></li>
+<code><a href="../../../com/exedio/cope/FunctionField.html#addCopyFrom-com.exedio.cope.ItemField-">addCopyFrom</a>, <a href="../../../com/exedio/cope/FunctionField.html#append-com.exedio.cope.Statement-com.exedio.cope.Join-">append</a>, <a href="../../../com/exedio/cope/FunctionField.html#appendSelect-com.exedio.cope.Statement-com.exedio.cope.Join-">appendSelect</a>, <a href="../../../com/exedio/cope/FunctionField.html#check-com.exedio.cope.TC-com.exedio.cope.Join-">check</a>, <a href="../../../com/exedio/cope/FunctionField.html#copy--">copy</a>, <a href="../../../com/exedio/cope/FunctionField.html#copy-com.exedio.cope.CopyMapper-">copy</a>, <a href="../../../com/exedio/cope/FunctionField.html#copyFrom-com.exedio.cope.ItemField-">copyFrom</a>, <a href="../../../com/exedio/cope/FunctionField.html#copyFunctionField--">copyFunctionField</a>, <a href="../../../com/exedio/cope/FunctionField.html#defaultTo-E-">defaultTo</a>, <a href="../../../com/exedio/cope/FunctionField.html#get-com.exedio.cope.Item-">get</a>, <a href="../../../com/exedio/cope/FunctionField.html#getDefaultConstant--">getDefaultConstant</a>, <a href="../../../com/exedio/cope/FunctionField.html#getImplicitCopyConstraint--">getImplicitCopyConstraint</a>, <a href="../../../com/exedio/cope/FunctionField.html#getImplicitCopyConstraints--">getImplicitCopyConstraints</a>, <a href="../../../com/exedio/cope/FunctionField.html#getImplicitUniqueConstraint--">getImplicitUniqueConstraint</a>, <a href="../../../com/exedio/cope/FunctionField.html#getInitialExceptions--">getInitialExceptions</a>, <a href="../../../com/exedio/cope/FunctionField.html#getUniqueConstraints--">getUniqueConstraints</a>, <a href="../../../com/exedio/cope/FunctionField.html#hasDefault--">hasDefault</a>, <a href="../../../com/exedio/cope/FunctionField.html#isInitial--">isInitial</a>, <a href="../../../com/exedio/cope/FunctionField.html#isRedundantByCopyConstraint--">isRedundantByCopyConstraint</a>, <a href="../../../com/exedio/cope/FunctionField.html#noDefault--">noDefault</a>, <a href="../../../com/exedio/cope/FunctionField.html#nonUnique--">nonUnique</a>, <a href="../../../com/exedio/cope/FunctionField.html#optional--">optional</a>, <a href="../../../com/exedio/cope/FunctionField.html#searchUnique-java.lang.Class-E-">searchUnique</a>, <a href="../../../com/exedio/cope/FunctionField.html#searchUnique-E-">searchUnique</a>, <a href="../../../com/exedio/cope/FunctionField.html#searchUniqueStrict-java.lang.Class-E-">searchUniqueStrict</a>, <a href="../../../com/exedio/cope/FunctionField.html#set-com.exedio.cope.Item-E-">set</a>, <a href="../../../com/exedio/cope/FunctionField.html#toFinal--">toFinal</a>, <a href="../../../com/exedio/cope/FunctionField.html#unique--">unique</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.com.exedio.cope.Field">
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;com.exedio.cope.<a href="../../../com/exedio/cope/Field.html" title="class in com.exedio.cope">Field</a></h3>
-<code><a href="../../../com/exedio/cope/Field.html#castCollection-java.util.Collection-">castCollection</a>, <a href="../../../com/exedio/cope/Field.html#check-E-">check</a>, <a href="../../../com/exedio/cope/Field.html#execute-E-com.exedio.cope.Item-">execute</a>, <a href="../../../com/exedio/cope/Field.html#getColumnName--">getColumnName</a>, <a href="../../../com/exedio/cope/Field.html#getInitialType--">getInitialType</a>, <a href="../../../com/exedio/cope/Field.html#getPatterns--">getPatterns</a>, <a href="../../../com/exedio/cope/Field.html#getValueClass--">getValueClass</a>, <a href="../../../com/exedio/cope/Field.html#isFinal--">isFinal</a>, <a href="../../../com/exedio/cope/Field.html#isMandatory--">isMandatory</a>, <a href="../../../com/exedio/cope/Field.html#map-E-">map</a>, <a href="../../../com/exedio/cope/Field.html#mapNull--">mapNull</a>, <a href="../../../com/exedio/cope/Field.html#optional--">optional</a>, <a href="../../../com/exedio/cope/Field.html#toFinal--">toFinal</a></code></li>
+<code><a href="../../../com/exedio/cope/Field.html#castCollection-java.util.Collection-">castCollection</a>, <a href="../../../com/exedio/cope/Field.html#check-E-">check</a>, <a href="../../../com/exedio/cope/Field.html#execute-E-com.exedio.cope.Item-">execute</a>, <a href="../../../com/exedio/cope/Field.html#getColumnName--">getColumnName</a>, <a href="../../../com/exedio/cope/Field.html#getInitialType--">getInitialType</a>, <a href="../../../com/exedio/cope/Field.html#getPatterns--">getPatterns</a>, <a href="../../../com/exedio/cope/Field.html#getValueClass--">getValueClass</a>, <a href="../../../com/exedio/cope/Field.html#isFinal--">isFinal</a>, <a href="../../../com/exedio/cope/Field.html#isMandatory--">isMandatory</a>, <a href="../../../com/exedio/cope/Field.html#mapNull--">mapNull</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.com.exedio.cope.Feature">
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;com.exedio.cope.<a href="../../../com/exedio/cope/Feature.html" title="class in com.exedio.cope">Feature</a></h3>
-<code><a href="../../../com/exedio/cope/Feature.html#afterModelCreated--">afterModelCreated</a>, <a href="../../../com/exedio/cope/Feature.html#getAnnotation-java.lang.Class-">getAnnotation</a>, <a href="../../../com/exedio/cope/Feature.html#getID--">getID</a>, <a href="../../../com/exedio/cope/Feature.html#getName--">getName</a>, <a href="../../../com/exedio/cope/Feature.html#getPattern--">getPattern</a>, <a href="../../../com/exedio/cope/Feature.html#getType--">getType</a>, <a href="../../../com/exedio/cope/Feature.html#getWrappers--">getWrappers</a>, <a href="../../../com/exedio/cope/Feature.html#isAnnotationPresent-java.lang.Class-">isAnnotationPresent</a>, <a href="../../../com/exedio/cope/Feature.html#isSourceAlready--">isSourceAlready</a>, <a href="../../../com/exedio/cope/Feature.html#mount-java.lang.String-java.io.Serializable-java.lang.reflect.AnnotatedElement-">mount</a>, <a href="../../../com/exedio/cope/Feature.html#readResolve--">readResolve</a>, <a href="../../../com/exedio/cope/Feature.html#toString--">toString</a>, <a href="../../../com/exedio/cope/Feature.html#toString-java.lang.StringBuilder-com.exedio.cope.Type-">toString</a>, <a href="../../../com/exedio/cope/Feature.html#writeReplace--">writeReplace</a></code></li>
+<code><a href="../../../com/exedio/cope/Feature.html#afterModelCreated--">afterModelCreated</a>, <a href="../../../com/exedio/cope/Feature.html#getAbstractType--">getAbstractType</a>, <a href="../../../com/exedio/cope/Feature.html#getAnnotation-java.lang.Class-">getAnnotation</a>, <a href="../../../com/exedio/cope/Feature.html#getID--">getID</a>, <a href="../../../com/exedio/cope/Feature.html#getLocalizationKeys--">getLocalizationKeys</a>, <a href="../../../com/exedio/cope/Feature.html#getName--">getName</a>, <a href="../../../com/exedio/cope/Feature.html#getPattern--">getPattern</a>, <a href="../../../com/exedio/cope/Feature.html#getType--">getType</a>, <a href="../../../com/exedio/cope/Feature.html#isAnnotationPresent-java.lang.Class-">isAnnotationPresent</a>, <a href="../../../com/exedio/cope/Feature.html#isSourceAlready--">isSourceAlready</a>, <a href="../../../com/exedio/cope/Feature.html#mount-com.exedio.cope.AbstractType-java.lang.String-java.lang.String-java.io.Serializable-java.lang.reflect.AnnotatedElement-">mount</a>, <a href="../../../com/exedio/cope/Feature.html#readResolve--">readResolve</a>, <a href="../../../com/exedio/cope/Feature.html#requireMounted-T-">requireMounted</a>, <a href="../../../com/exedio/cope/Feature.html#toString--">toString</a>, <a href="../../../com/exedio/cope/Feature.html#toString-java.lang.StringBuilder-com.exedio.cope.Type-">toString</a>, <a href="../../../com/exedio/cope/Feature.html#writeReplace--">writeReplace</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
@@ -276,11 +216,18 @@ implements <a href="../../../com/exedio/cope/NumberFunction.html" title="interfa
 <code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#clone--" title="class or interface in java.lang">clone</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#equals-java.lang.Object-" title="class or interface in java.lang">equals</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#finalize--" title="class or interface in java.lang">finalize</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#getClass--" title="class or interface in java.lang">getClass</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#hashCode--" title="class or interface in java.lang">hashCode</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notify--" title="class or interface in java.lang">notify</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notifyAll--" title="class or interface in java.lang">notifyAll</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait--" title="class or interface in java.lang">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait-long-" title="class or interface in java.lang">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait-long-int-" title="class or interface in java.lang">wait</a></code></li>
 </ul>
 <ul class="blockList">
+<li class="blockList"><a name="methods.inherited.from.class.com.exedio.cope.NumberFunction">
+<!--   -->
+</a>
+<h3>Methods inherited from interface&nbsp;com.exedio.cope.<a href="../../../com/exedio/cope/NumberFunction.html" title="interface in com.exedio.cope">NumberFunction</a></h3>
+<code><a href="../../../com/exedio/cope/NumberFunction.html#asString--">asString</a>, <a href="../../../com/exedio/cope/NumberFunction.html#average--">average</a>, <a href="../../../com/exedio/cope/NumberFunction.html#bind-com.exedio.cope.Join-">bind</a>, <a href="../../../com/exedio/cope/NumberFunction.html#divide-com.exedio.cope.NumberFunction-">divide</a>, <a href="../../../com/exedio/cope/NumberFunction.html#minus-com.exedio.cope.NumberFunction-">minus</a>, <a href="../../../com/exedio/cope/NumberFunction.html#multiply-E-">multiply</a>, <a href="../../../com/exedio/cope/NumberFunction.html#multiply-com.exedio.cope.NumberFunction-">multiply</a>, <a href="../../../com/exedio/cope/NumberFunction.html#plus-E-">plus</a>, <a href="../../../com/exedio/cope/NumberFunction.html#plus-com.exedio.cope.NumberFunction-">plus</a>, <a href="../../../com/exedio/cope/NumberFunction.html#sum--">sum</a>, <a href="../../../com/exedio/cope/NumberFunction.html#sum-com.exedio.cope.NumberFunction-">sum</a></code></li>
+</ul>
+<ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.com.exedio.cope.Function">
 <!--   -->
 </a>
 <h3>Methods inherited from interface&nbsp;com.exedio.cope.<a href="../../../com/exedio/cope/Function.html" title="interface in com.exedio.cope">Function</a></h3>
-<code><a href="../../../com/exedio/cope/Function.html#between-E-E-">between</a>, <a href="../../../com/exedio/cope/Function.html#equal-E-">equal</a>, <a href="../../../com/exedio/cope/Function.html#equal-com.exedio.cope.Function-">equal</a>, <a href="../../../com/exedio/cope/Function.html#equal-com.exedio.cope.Join-E-">equal</a>, <a href="../../../com/exedio/cope/Function.html#get-com.exedio.cope.Item-">get</a>, <a href="../../../com/exedio/cope/Function.html#greater-E-">greater</a>, <a href="../../../com/exedio/cope/Function.html#greater-com.exedio.cope.Function-">greater</a>, <a href="../../../com/exedio/cope/Function.html#greaterOrEqual-E-">greaterOrEqual</a>, <a href="../../../com/exedio/cope/Function.html#greaterOrEqual-com.exedio.cope.Function-">greaterOrEqual</a>, <a href="../../../com/exedio/cope/Function.html#in-java.util.Collection-">in</a>, <a href="../../../com/exedio/cope/Function.html#in-E...-">in</a>, <a href="../../../com/exedio/cope/Function.html#isNotNull--">isNotNull</a>, <a href="../../../com/exedio/cope/Function.html#isNull--">isNull</a>, <a href="../../../com/exedio/cope/Function.html#less-E-">less</a>, <a href="../../../com/exedio/cope/Function.html#less-com.exedio.cope.Function-">less</a>, <a href="../../../com/exedio/cope/Function.html#lessOrEqual-E-">lessOrEqual</a>, <a href="../../../com/exedio/cope/Function.html#lessOrEqual-com.exedio.cope.Function-">lessOrEqual</a>, <a href="../../../com/exedio/cope/Function.html#max--">max</a>, <a href="../../../com/exedio/cope/Function.html#min--">min</a>, <a href="../../../com/exedio/cope/Function.html#notEqual-E-">notEqual</a>, <a href="../../../com/exedio/cope/Function.html#notEqual-com.exedio.cope.Function-">notEqual</a></code></li>
+<code><a href="../../../com/exedio/cope/Function.html#any--">any</a>, <a href="../../../com/exedio/cope/Function.html#between-E-E-">between</a>, <a href="../../../com/exedio/cope/Function.html#equal-E-">equal</a>, <a href="../../../com/exedio/cope/Function.html#equal-com.exedio.cope.Function-">equal</a>, <a href="../../../com/exedio/cope/Function.html#equal-com.exedio.cope.Join-E-">equal</a>, <a href="../../../com/exedio/cope/Function.html#get-com.exedio.cope.Item-">get</a>, <a href="../../../com/exedio/cope/Function.html#greater-E-">greater</a>, <a href="../../../com/exedio/cope/Function.html#greater-com.exedio.cope.Function-">greater</a>, <a href="../../../com/exedio/cope/Function.html#greaterOrEqual-E-">greaterOrEqual</a>, <a href="../../../com/exedio/cope/Function.html#greaterOrEqual-com.exedio.cope.Function-">greaterOrEqual</a>, <a href="../../../com/exedio/cope/Function.html#in-java.util.Collection-">in</a>, <a href="../../../com/exedio/cope/Function.html#in-E...-">in</a>, <a href="../../../com/exedio/cope/Function.html#isNotNull--">isNotNull</a>, <a href="../../../com/exedio/cope/Function.html#isNull--">isNull</a>, <a href="../../../com/exedio/cope/Function.html#less-E-">less</a>, <a href="../../../com/exedio/cope/Function.html#less-com.exedio.cope.Function-">less</a>, <a href="../../../com/exedio/cope/Function.html#lessOrEqual-E-">lessOrEqual</a>, <a href="../../../com/exedio/cope/Function.html#lessOrEqual-com.exedio.cope.Function-">lessOrEqual</a>, <a href="../../../com/exedio/cope/Function.html#max--">max</a>, <a href="../../../com/exedio/cope/Function.html#min--">min</a>, <a href="../../../com/exedio/cope/Function.html#notEqual-E-">notEqual</a>, <a href="../../../com/exedio/cope/Function.html#notEqual-com.exedio.cope.Function-">notEqual</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.com.exedio.cope.Selectable">
@@ -288,6 +235,13 @@ implements <a href="../../../com/exedio/cope/NumberFunction.html" title="interfa
 </a>
 <h3>Methods inherited from interface&nbsp;com.exedio.cope.<a href="../../../com/exedio/cope/Selectable.html" title="interface in com.exedio.cope">Selectable</a></h3>
 <code><a href="../../../com/exedio/cope/Selectable.html#append-com.exedio.cope.Statement-com.exedio.cope.Join-">append</a>, <a href="../../../com/exedio/cope/Selectable.html#appendSelect-com.exedio.cope.Statement-com.exedio.cope.Join-">appendSelect</a>, <a href="../../../com/exedio/cope/Selectable.html#check-com.exedio.cope.TC-com.exedio.cope.Join-">check</a>, <a href="../../../com/exedio/cope/Selectable.html#getType--">getType</a>, <a href="../../../com/exedio/cope/Selectable.html#getValueClass--">getValueClass</a>, <a href="../../../com/exedio/cope/Selectable.html#getValueType--">getValueType</a>, <a href="../../../com/exedio/cope/Selectable.html#toString-java.lang.StringBuilder-com.exedio.cope.Type-">toString</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods.inherited.from.class.com.exedio.cope.Settable">
+<!--   -->
+</a>
+<h3>Methods inherited from interface&nbsp;com.exedio.cope.<a href="../../../com/exedio/cope/Settable.html" title="interface in com.exedio.cope">Settable</a></h3>
+<code><a href="../../../com/exedio/cope/Settable.html#map-E-">map</a></code></li>
 </ul>
 </li>
 </ul>
@@ -303,7 +257,7 @@ implements <a href="../../../com/exedio/cope/NumberFunction.html" title="interfa
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="NumberField-boolean-boolean-boolean-com.exedio.cope.ItemField:A-java.lang.Class-com.exedio.cope.DefaultSource-">
+<a name="NumberField-boolean-boolean-java.lang.Class-boolean-com.exedio.cope.ItemField:A-com.exedio.cope.DefaultSource-">
 <!--   -->
 </a>
 <ul class="blockListLast">
@@ -311,9 +265,9 @@ implements <a href="../../../com/exedio/cope/NumberFunction.html" title="interfa
 <h4>NumberField</h4>
 <pre>protected&nbsp;NumberField(boolean&nbsp;isfinal,
                       boolean&nbsp;optional,
+                      <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;<a href="../../../com/exedio/cope/NumberField.html" title="type parameter in NumberField">E</a>&gt;&nbsp;valueClass,
                       boolean&nbsp;unique,
                       <a href="../../../com/exedio/cope/ItemField.html" title="class in com.exedio.cope">ItemField</a>&lt;?&gt;[]&nbsp;copyFrom,
-                      <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;<a href="../../../com/exedio/cope/NumberField.html" title="type parameter in NumberField">E</a>&gt;&nbsp;valueClass,
                       com.exedio.cope.DefaultSource&lt;<a href="../../../com/exedio/cope/NumberField.html" title="type parameter in NumberField">E</a>&gt;&nbsp;defaultSource)</pre>
 </li>
 </ul>
@@ -325,165 +279,6 @@ implements <a href="../../../com/exedio/cope/NumberFunction.html" title="interfa
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="bind-com.exedio.cope.Join-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>bind</h4>
-<pre>public final&nbsp;<a href="../../../com/exedio/cope/BindNumberFunction.html" title="class in com.exedio.cope">BindNumberFunction</a>&lt;<a href="../../../com/exedio/cope/NumberField.html" title="type parameter in NumberField">E</a>&gt;&nbsp;bind(<a href="../../../com/exedio/cope/Join.html" title="class in com.exedio.cope">Join</a>&nbsp;join)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../com/exedio/cope/Function.html#bind-com.exedio.cope.Join-">bind</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/exedio/cope/Function.html" title="interface in com.exedio.cope">Function</a>&lt;<a href="../../../com/exedio/cope/NumberField.html" title="type parameter in NumberField">E</a> extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Number.html?is-external=true" title="class or interface in java.lang">Number</a>&gt;</code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../com/exedio/cope/NumberFunction.html#bind-com.exedio.cope.Join-">bind</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/exedio/cope/NumberFunction.html" title="interface in com.exedio.cope">NumberFunction</a>&lt;<a href="../../../com/exedio/cope/NumberField.html" title="type parameter in NumberField">E</a> extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Number.html?is-external=true" title="class or interface in java.lang">Number</a>&gt;</code></dd>
-<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../com/exedio/cope/FunctionField.html#bind-com.exedio.cope.Join-">bind</a></code>&nbsp;in class&nbsp;<code><a href="../../../com/exedio/cope/FunctionField.html" title="class in com.exedio.cope">FunctionField</a>&lt;<a href="../../../com/exedio/cope/NumberField.html" title="type parameter in NumberField">E</a> extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Number.html?is-external=true" title="class or interface in java.lang">Number</a>&gt;</code></dd>
-</dl>
-</li>
-</ul>
-<a name="asString--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>asString</h4>
-<pre>public final&nbsp;<a href="../../../com/exedio/cope/AsStringView.html" title="class in com.exedio.cope">AsStringView</a>&nbsp;asString()</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../com/exedio/cope/NumberFunction.html#asString--">asString</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/exedio/cope/NumberFunction.html" title="interface in com.exedio.cope">NumberFunction</a>&lt;<a href="../../../com/exedio/cope/NumberField.html" title="type parameter in NumberField">E</a> extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Number.html?is-external=true" title="class or interface in java.lang">Number</a>&gt;</code></dd>
-</dl>
-</li>
-</ul>
-<a name="plus-java.lang.Number-">
-<!--   -->
-</a><a name="plus-E-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>plus</h4>
-<pre>public final&nbsp;<a href="../../../com/exedio/cope/PlusLiteralView.html" title="class in com.exedio.cope">PlusLiteralView</a>&lt;<a href="../../../com/exedio/cope/NumberField.html" title="type parameter in NumberField">E</a>&gt;&nbsp;plus(<a href="../../../com/exedio/cope/NumberField.html" title="type parameter in NumberField">E</a>&nbsp;value)</pre>
-<div class="block">You may want to use <a href="../../../com/exedio/cope/PlusLiteralView.html#plus-com.exedio.cope.Function-E-"><code>PlusLiteralView.plus(Function, Number)</code></a> instead, if you do not have <a href="../../../com/exedio/cope/NumberFunction.html" title="interface in com.exedio.cope"><code>NumberFunction</code></a>s available.</div>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../com/exedio/cope/NumberFunction.html#plus-E-">plus</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/exedio/cope/NumberFunction.html" title="interface in com.exedio.cope">NumberFunction</a>&lt;<a href="../../../com/exedio/cope/NumberField.html" title="type parameter in NumberField">E</a> extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Number.html?is-external=true" title="class or interface in java.lang">Number</a>&gt;</code></dd>
-</dl>
-</li>
-</ul>
-<a name="multiply-java.lang.Number-">
-<!--   -->
-</a><a name="multiply-E-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>multiply</h4>
-<pre>public final&nbsp;<a href="../../../com/exedio/cope/MultiplyLiteralView.html" title="class in com.exedio.cope">MultiplyLiteralView</a>&lt;<a href="../../../com/exedio/cope/NumberField.html" title="type parameter in NumberField">E</a>&gt;&nbsp;multiply(<a href="../../../com/exedio/cope/NumberField.html" title="type parameter in NumberField">E</a>&nbsp;value)</pre>
-<div class="block">You may want to use <a href="../../../com/exedio/cope/MultiplyLiteralView.html#multiply-com.exedio.cope.Function-E-"><code>MultiplyLiteralView.multiply(Function, Number)</code></a> instead, if you do not have <a href="../../../com/exedio/cope/NumberFunction.html" title="interface in com.exedio.cope"><code>NumberFunction</code></a>s available.</div>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../com/exedio/cope/NumberFunction.html#multiply-E-">multiply</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/exedio/cope/NumberFunction.html" title="interface in com.exedio.cope">NumberFunction</a>&lt;<a href="../../../com/exedio/cope/NumberField.html" title="type parameter in NumberField">E</a> extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Number.html?is-external=true" title="class or interface in java.lang">Number</a>&gt;</code></dd>
-</dl>
-</li>
-</ul>
-<a name="plus-com.exedio.cope.NumberFunction-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>plus</h4>
-<pre>public final&nbsp;<a href="../../../com/exedio/cope/PlusView.html" title="class in com.exedio.cope">PlusView</a>&lt;<a href="../../../com/exedio/cope/NumberField.html" title="type parameter in NumberField">E</a>&gt;&nbsp;plus(<a href="../../../com/exedio/cope/NumberFunction.html" title="interface in com.exedio.cope">NumberFunction</a>&lt;<a href="../../../com/exedio/cope/NumberField.html" title="type parameter in NumberField">E</a>&gt;&nbsp;other)</pre>
-<div class="block">You may want to use <a href="../../../com/exedio/cope/PlusView.html#plus-com.exedio.cope.Function-com.exedio.cope.Function-"><code>PlusView.plus(Function, Function)</code></a> instead, if you do not have <a href="../../../com/exedio/cope/NumberFunction.html" title="interface in com.exedio.cope"><code>NumberFunction</code></a>s available.</div>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../com/exedio/cope/NumberFunction.html#plus-com.exedio.cope.NumberFunction-">plus</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/exedio/cope/NumberFunction.html" title="interface in com.exedio.cope">NumberFunction</a>&lt;<a href="../../../com/exedio/cope/NumberField.html" title="type parameter in NumberField">E</a> extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Number.html?is-external=true" title="class or interface in java.lang">Number</a>&gt;</code></dd>
-</dl>
-</li>
-</ul>
-<a name="minus-com.exedio.cope.NumberFunction-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>minus</h4>
-<pre>public final&nbsp;<a href="../../../com/exedio/cope/MinusView.html" title="class in com.exedio.cope">MinusView</a>&lt;<a href="../../../com/exedio/cope/NumberField.html" title="type parameter in NumberField">E</a>&gt;&nbsp;minus(<a href="../../../com/exedio/cope/NumberFunction.html" title="interface in com.exedio.cope">NumberFunction</a>&lt;<a href="../../../com/exedio/cope/NumberField.html" title="type parameter in NumberField">E</a>&gt;&nbsp;other)</pre>
-<div class="block">You may want to use <a href="../../../com/exedio/cope/MinusView.html#minus-com.exedio.cope.Function-com.exedio.cope.Function-"><code>MinusView.minus(Function, Function)</code></a> instead, if you do not have <a href="../../../com/exedio/cope/NumberFunction.html" title="interface in com.exedio.cope"><code>NumberFunction</code></a>s available.</div>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../com/exedio/cope/NumberFunction.html#minus-com.exedio.cope.NumberFunction-">minus</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/exedio/cope/NumberFunction.html" title="interface in com.exedio.cope">NumberFunction</a>&lt;<a href="../../../com/exedio/cope/NumberField.html" title="type parameter in NumberField">E</a> extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Number.html?is-external=true" title="class or interface in java.lang">Number</a>&gt;</code></dd>
-</dl>
-</li>
-</ul>
-<a name="multiply-com.exedio.cope.NumberFunction-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>multiply</h4>
-<pre>public final&nbsp;<a href="../../../com/exedio/cope/MultiplyView.html" title="class in com.exedio.cope">MultiplyView</a>&lt;<a href="../../../com/exedio/cope/NumberField.html" title="type parameter in NumberField">E</a>&gt;&nbsp;multiply(<a href="../../../com/exedio/cope/NumberFunction.html" title="interface in com.exedio.cope">NumberFunction</a>&lt;<a href="../../../com/exedio/cope/NumberField.html" title="type parameter in NumberField">E</a>&gt;&nbsp;other)</pre>
-<div class="block">You may want to use <a href="../../../com/exedio/cope/MultiplyView.html#multiply-com.exedio.cope.Function-com.exedio.cope.Function-"><code>MultiplyView.multiply(Function, Function)</code></a> instead, if you do not have <a href="../../../com/exedio/cope/NumberFunction.html" title="interface in com.exedio.cope"><code>NumberFunction</code></a>s available.</div>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../com/exedio/cope/NumberFunction.html#multiply-com.exedio.cope.NumberFunction-">multiply</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/exedio/cope/NumberFunction.html" title="interface in com.exedio.cope">NumberFunction</a>&lt;<a href="../../../com/exedio/cope/NumberField.html" title="type parameter in NumberField">E</a> extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Number.html?is-external=true" title="class or interface in java.lang">Number</a>&gt;</code></dd>
-</dl>
-</li>
-</ul>
-<a name="divide-com.exedio.cope.NumberFunction-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>divide</h4>
-<pre>public final&nbsp;<a href="../../../com/exedio/cope/DivideView.html" title="class in com.exedio.cope">DivideView</a>&lt;<a href="../../../com/exedio/cope/NumberField.html" title="type parameter in NumberField">E</a>&gt;&nbsp;divide(<a href="../../../com/exedio/cope/NumberFunction.html" title="interface in com.exedio.cope">NumberFunction</a>&lt;<a href="../../../com/exedio/cope/NumberField.html" title="type parameter in NumberField">E</a>&gt;&nbsp;other)</pre>
-<div class="block">You may want to use <a href="../../../com/exedio/cope/DivideView.html#divide-com.exedio.cope.Function-com.exedio.cope.Function-"><code>DivideView.divide(Function, Function)</code></a> instead, if you do not have <a href="../../../com/exedio/cope/NumberFunction.html" title="interface in com.exedio.cope"><code>NumberFunction</code></a>s available.</div>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../com/exedio/cope/NumberFunction.html#divide-com.exedio.cope.NumberFunction-">divide</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/exedio/cope/NumberFunction.html" title="interface in com.exedio.cope">NumberFunction</a>&lt;<a href="../../../com/exedio/cope/NumberField.html" title="type parameter in NumberField">E</a> extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Number.html?is-external=true" title="class or interface in java.lang">Number</a>&gt;</code></dd>
-</dl>
-</li>
-</ul>
-<a name="sum--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>sum</h4>
-<pre>public final&nbsp;<a href="../../../com/exedio/cope/search/SumAggregate.html" title="class in com.exedio.cope.search">SumAggregate</a>&lt;<a href="../../../com/exedio/cope/NumberField.html" title="type parameter in NumberField">E</a>&gt;&nbsp;sum()</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../com/exedio/cope/NumberFunction.html#sum--">sum</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/exedio/cope/NumberFunction.html" title="interface in com.exedio.cope">NumberFunction</a>&lt;<a href="../../../com/exedio/cope/NumberField.html" title="type parameter in NumberField">E</a> extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Number.html?is-external=true" title="class or interface in java.lang">Number</a>&gt;</code></dd>
-</dl>
-</li>
-</ul>
-<a name="average--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>average</h4>
-<pre>public final&nbsp;<a href="../../../com/exedio/cope/search/AverageAggregate.html" title="class in com.exedio.cope.search">AverageAggregate</a>&lt;<a href="../../../com/exedio/cope/NumberField.html" title="type parameter in NumberField">E</a>&gt;&nbsp;average()</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../com/exedio/cope/NumberFunction.html#average--">average</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/exedio/cope/NumberFunction.html" title="interface in com.exedio.cope">NumberFunction</a>&lt;<a href="../../../com/exedio/cope/NumberField.html" title="type parameter in NumberField">E</a> extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Number.html?is-external=true" title="class or interface in java.lang">Number</a>&gt;</code></dd>
-</dl>
-</li>
-</ul>
-<a name="sum-com.exedio.cope.NumberFunction-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>sum</h4>
-<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</a>
-public final&nbsp;<a href="../../../com/exedio/cope/PlusView.html" title="class in com.exedio.cope">PlusView</a>&lt;<a href="../../../com/exedio/cope/NumberField.html" title="type parameter in NumberField">E</a>&gt;&nbsp;sum(<a href="../../../com/exedio/cope/NumberFunction.html" title="interface in com.exedio.cope">NumberFunction</a>&lt;<a href="../../../com/exedio/cope/NumberField.html" title="type parameter in NumberField">E</a>&gt;&nbsp;other)</pre>
-<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment">renamed to <a href="../../../com/exedio/cope/NumberField.html#plus-com.exedio.cope.NumberFunction-"><code>plus(NumberFunction)</code></a>.</span></div>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../com/exedio/cope/NumberFunction.html#sum-com.exedio.cope.NumberFunction-">sum</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/exedio/cope/NumberFunction.html" title="interface in com.exedio.cope">NumberFunction</a>&lt;<a href="../../../com/exedio/cope/NumberField.html" title="type parameter in NumberField">E</a> extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Number.html?is-external=true" title="class or interface in java.lang">Number</a>&gt;</code></dd>
-</dl>
-</li>
-</ul>
 <a name="avg--">
 <!--   -->
 </a>
@@ -491,8 +286,8 @@ public final&nbsp;<a href="../../../com/exedio/cope/PlusView.html" title="class 
 <li class="blockList">
 <h4>avg</h4>
 <pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</a>
-public final&nbsp;<a href="../../../com/exedio/cope/search/AverageAggregate.html" title="class in com.exedio.cope.search">AverageAggregate</a>&lt;<a href="../../../com/exedio/cope/NumberField.html" title="type parameter in NumberField">E</a>&gt;&nbsp;avg()</pre>
-<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment">Use <a href="../../../com/exedio/cope/NumberField.html#average--"><code>average()</code></a> instead</span></div>
+public final&nbsp;<a href="../../../com/exedio/cope/AverageAggregate.html" title="class in com.exedio.cope">AverageAggregate</a>&nbsp;avg()</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment">Use <a href="../../../com/exedio/cope/NumberFunction.html#average--"><code>NumberFunction.average()</code></a> instead</span></div>
 </li>
 </ul>
 </li>
