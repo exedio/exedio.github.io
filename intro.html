@@ -159,12 +159,12 @@ Customer(SetValue[] setValues)
 			since by default not all fields are set by the <i>default creation constructor</i>.
 		</p>
 		<p>
-			Next one is the <i>reactivation constructor</i>:
+			Next one is the <i>activation constructor</i>:
 		</p>
 <pre>
-Customer(ReactivationConstructorDummy d, int pk)
+Customer(<a href="api/com/exedio/cope/ActivationParameters.html">ActivationParameters</a> ap)
 {
-   super(d, pk);
+   <a href="api/com/exedio/cope/Item.html#Item-com.exedio.cope.ActivationParameters-">super</a>(ap);
 }
 </pre>
 		<p>
