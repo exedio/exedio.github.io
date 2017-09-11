@@ -79,15 +79,16 @@ static final LongField loginCounter =
 		<p>
 			When you run the instrumentor, you may notice
 			a few changes in the generated code.
-			<ol>
-				<li>
-					The <i>default creation constructor</i> does not
-					include a parameter for <code>loginCounter</code> anymore.
-					This is because a value for <code>loginCounter</code> is not needed
-					for constructing an instance of Customer anymore.
-					If you still want to have <code>loginCounter</code> included into
-					the <i>default creation constructor</i> add a
-					<code>@cope.initial</code> tag to the field:
+		</p>
+		<ol>
+			<li>
+				The <i>default creation constructor</i> does not
+				include a parameter for <code>loginCounter</code> anymore.
+				This is because a value for <code>loginCounter</code> is not needed
+				for constructing an instance of Customer anymore.
+				If you still want to have <code>loginCounter</code> included into
+				the <i>default creation constructor</i> add a
+				<code>@cope.initial</code> tag to the field:
 <pre>
 /**
  * <b>@cope.initial</b>
@@ -95,24 +96,23 @@ static final LongField loginCounter =
 static final LongField loginCounter =
     new LongField().<a href="api/com/exedio/cope/LongField.html#optional--">optional</a>();
 </pre>
-				</li>
-				<li>
-					The signature of the getter and setter for <code>loginCounter</code>
-					changed.
-					Before, it used the primitive type <code>long</code>
+			</li>
+			<li>
+				The signature of the getter and setter for <code>loginCounter</code>
+				changed.
+				Before, it used the primitive type <code>long</code>
 <pre>
 <b>long</b> getLoginCounter() { ... }
 void setLoginCounter(<b>long</b> loginCounter) { ... }
 </pre>
-					but now being optional it uses the wrapper class
-					<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Long.html">Long</a>.
+				but now being optional it uses the wrapper class
+				<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Long.html">Long</a>.
 <pre>
 <b>Long</b> getLoginCounter() { ... }
 void setLoginCounter(<b>Long</b> loginCounter) { ... }
 </pre>
-				</li>
-			</ol>
-		</p>
+			</li>
+		</ol>
 		<h3 id="defaults">Default Values</h3>
 		<p>
 			What we did above with the login counter is probably not,
@@ -255,25 +255,25 @@ static final ItemField&lt;ProductGroup&gt; productGroup =
 		<p>
 			This was the field trail of the tour.
 			You may now proceed to trails:
-			<ul>
-				<li>
-					<a href="transactions.html">Transactions Trail</a>
-					tells you how to use transactions.
-				</li>
-				<li>
-					<a href="searching.html">Searching Trail</a>
-					gives you an introduction into the searching capabilities of exedio persistence.
-				</li>
-				<li>
-					<a href="fields2.html">Field Reloaded Trail</a>
-					covers all the more specific possibilities to store data with exedio persistence.
-				</li>
-				<li>
-					<a href="webapplications.html">Web Application Trail</a>
-					shows you the little differences when using the framework within a web container.
-				</li>
-			</ul>
 		</p>
+		<ul>
+			<li>
+				<a href="transactions.html">Transactions Trail</a>
+				tells you how to use transactions.
+			</li>
+			<li>
+				<a href="searching.html">Searching Trail</a>
+				gives you an introduction into the searching capabilities of exedio persistence.
+			</li>
+			<li>
+				<a href="fields2.html">Field Reloaded Trail</a>
+				covers all the more specific possibilities to store data with exedio persistence.
+			</li>
+			<li>
+				<a href="webapplications.html">Web Application Trail</a>
+				shows you the little differences when using the framework within a web container.
+			</li>
+		</ul>
 	</section>
 </div>
 

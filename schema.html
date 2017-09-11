@@ -71,15 +71,17 @@ public class Customer extends Item
 		<img src="schema2.png" alt="Console Screenshot 2" class="console" width="500" height="75">
 		<p>
 			This shows you two columns:
-			<ul>
-				<li>
-					An integer column <code>this</code>
-					holding the primary key for implementing object identity.
-				</li>
-				<li>
-					A string column <code>email</code> holding the value of
-					the field <code>email</code>.
-			</ul>
+		</p>
+		<ul>
+			<li>
+				An integer column <code>this</code>
+				holding the primary key for implementing object identity.
+			</li>
+			<li>
+				A string column <code>email</code> holding the value of
+				the field <code>email</code>.
+		</ul>
+		<p>
 			Following the columns there are the details of database constraints
 			set up by the framework,
 			but we won't deal with them in this trail.
@@ -146,12 +148,14 @@ public class Customer extends Item
 			Now that you have some sql for revising your database
 			to the new application version,
 			you may want to reuse it for two purposes:
-			<ul>
-				<li>Communicate it to your coworkers, so they can adapt their database,
-					once they check out your modification from the source code repository.</li>
-				<li>If there is already any production system, apply it to it,
-					once your modification is deployed there.</li>
-			</ul>
+		</p>
+		<ul>
+			<li>Communicate it to your coworkers, so they can adapt their database,
+				once they check out your modification from the source code repository.</li>
+			<li>If there is already any production system, apply it to it,
+				once your modification is deployed there.</li>
+		</ul>
+		<p>
 			With <i>Revisions</i> both is achieved easily.
 			All you have to do is to register the sql command at the model
 			of your application.
@@ -202,26 +206,28 @@ static final <a href="api/com/exedio/cope/Model.html">Model</a> model = new <a h
 		<p>
 			However, before you really can start with revisions,
 			you have to do two one-time preparations:
-			<ol>
-				<li>
-					Make sure, that Model.<a href="api/com/exedio/cope/Model.html#revise--">revise</a>()
-					is called before you use the application.
-					This method actually executes the sql commands when necessary.
-					The best place for this call is immediately after
-					<a href="api/com/exedio/cope/Model.html#connect-com.exedio.cope.ConnectProperties-">connecting</a>.
-					If you already use the
-					<a href="api/com/exedio/cope/misc/CopeFilter.html">CopeFilter</a>,
-					you don't have do do anything, the filter calls Model.revise() for you.
-				</li>
-				<li>
-					exedio persistence stores the information about revisions already applied to
-					the database schema in an extra table named '<code>while</code>'.
-					Create this table with the <i>exedio console</i>,
-					and make sure, this is done on the production system and the systems
-					of your coworkers as well.
-					It will be the last time, you have to do something like this manually.
-				</li>
-			</ol>
+		</p>
+		<ol>
+			<li>
+				Make sure, that Model.<a href="api/com/exedio/cope/Model.html#revise--">revise</a>()
+				is called before you use the application.
+				This method actually executes the sql commands when necessary.
+				The best place for this call is immediately after
+				<a href="api/com/exedio/cope/Model.html#connect-com.exedio.cope.ConnectProperties-">connecting</a>.
+				If you already use the
+				<a href="api/com/exedio/cope/misc/CopeFilter.html">CopeFilter</a>,
+				you don't have do do anything, the filter calls Model.revise() for you.
+			</li>
+			<li>
+				exedio persistence stores the information about revisions already applied to
+				the database schema in an extra table named '<code>while</code>'.
+				Create this table with the <i>exedio console</i>,
+				and make sure, this is done on the production system and the systems
+				of your coworkers as well.
+				It will be the last time, you have to do something like this manually.
+			</li>
+		</ol>
+		<p>
 			exedio console also shows information about revisions
 			and their execution on the database currently used.
 		</p>
@@ -229,17 +235,17 @@ static final <a href="api/com/exedio/cope/Model.html">Model</a> model = new <a h
 		<p>
 			After having a look at the exedio console,
 			you may want to go back to exedio persistence itself.
-			<ul>
-				<li>
-					<a href="searching.html">Searching Trail</a>
-					gives you an introduction into the searching capabilities of exedio persistence.
-				</li>
-				<li>
-					<a href="fields2.html">Field Reloaded Trail</a>
-					covers all the more specific possibilities to store data.
-				</li>
-			</ul>
 		</p>
+		<ul>
+			<li>
+				<a href="searching.html">Searching Trail</a>
+				gives you an introduction into the searching capabilities of exedio persistence.
+			</li>
+			<li>
+				<a href="fields2.html">Field Reloaded Trail</a>
+				covers all the more specific possibilities to store data.
+			</li>
+		</ul>
 	</section>
 </div>
 
