@@ -41,7 +41,7 @@
 		<h3 id="common">Common Primitives</h3>
 		<p>
 			exedio persistence provides fields for all commonly used java primitives
-			as well as for <tt>String</tt> and <tt>java.util.Date</tt>.
+			as well as for <code>String</code> and <code>java.util.Date</code>.
 			This looks like this.
 		</p>
 <pre>
@@ -82,12 +82,12 @@ static final LongField loginCounter =
 			<ol>
 				<li>
 					The <i>default creation constructor</i> does not
-					include a parameter for <tt>loginCounter</tt> anymore.
-					This is because a value for <tt>loginCounter</tt> is not needed
+					include a parameter for <code>loginCounter</code> anymore.
+					This is because a value for <code>loginCounter</code> is not needed
 					for constructing an instance of Customer anymore.
-					If you still want to have <tt>loginCounter</tt> included into
+					If you still want to have <code>loginCounter</code> included into
 					the <i>default creation constructor</i> add a
-					<tt>@cope.initial</tt> tag to the field:
+					<code>@cope.initial</code> tag to the field:
 <pre>
 /**
  * <b>@cope.initial</b>
@@ -97,9 +97,9 @@ static final LongField loginCounter =
 </pre>
 				</li>
 				<li>
-					The signature of the getter and setter for <tt>loginCounter</tt>
+					The signature of the getter and setter for <code>loginCounter</code>
 					changed.
-					Before, it used the primitive type <tt>long</tt>
+					Before, it used the primitive type <code>long</code>
 <pre>
 <b>long</b> getLoginCounter() { ... }
 void setLoginCounter(<b>long</b> loginCounter) { ... }
@@ -129,12 +129,12 @@ static final LongField loginCounter =
 			In the instrumented code the type for setter/getter
 			changes back to primitives again,
 			but the <i>default creation constructor</i> does also
-			not have a parameter for <tt>loginCounter</tt>.
+			not have a parameter for <code>loginCounter</code>.
 		</p>
 		<p>
 			If you want to make the current date the default value
 			of any date field,
-			then of course <tt>defaultTo(new Date())</tt> won't work.
+			then of course <code>defaultTo(new Date())</code> won't work.
 			Use instead:
 		</p>
 <pre>
@@ -153,7 +153,7 @@ static final StringField email =
 </pre>
 		<p>
 			If you violate this unique constraint either via a
-			creation constructor or via <tt>setEmail</tt>
+			creation constructor or via <code>setEmail</code>
 			this will throw a <a href="api/com/exedio/cope/UniqueViolationException.html">UniqueViolationException</a>.
 		</p>
 		<p>

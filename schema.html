@@ -55,8 +55,8 @@
 		<img src="schema1.png" alt="Console Screenshot 1" class="console" width="500" height="51">
 		<p>
 			The example model used to create this screenshot
-			contains two types <tt>Customer</tt> and <tt>Order</tt>.
-			Lets say, type <tt>Customer</tt> looks like this:
+			contains two types <code>Customer</code> and <code>Order</code>.
+			Lets say, type <code>Customer</code> looks like this:
 		</p>
 <pre>
 public class Customer extends Item
@@ -73,12 +73,12 @@ public class Customer extends Item
 			This shows you two columns:
 			<ul>
 				<li>
-					An integer column <tt>this</tt>
+					An integer column <code>this</code>
 					holding the primary key for implementing object identity.
 				</li>
 				<li>
-					A string column <tt>email</tt> holding the value of
-					the field <tt>email</tt>.
+					A string column <code>email</code> holding the value of
+					the field <code>email</code>.
 			</ul>
 			Following the columns there are the details of database constraints
 			set up by the framework,
@@ -99,7 +99,7 @@ public class Customer extends Item
 			If you want to adjust the database schema
 			without loosing all your data,
 			you have to issue some SQL like
-			<tt>alter table Customer add column blocked integer</tt>.
+			<code>alter table Customer add column blocked integer</code>.
 			The framework can do that for you,
 			but much more comfortable.
 		</p>

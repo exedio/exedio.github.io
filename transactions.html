@@ -34,8 +34,8 @@
 			Whenever you want to read, write or search persistent data,
 			this must happen within the boundaries of a transaction.
 			These boundaries are marked by calls to the methods
-			<tt>Model.startTransaction()</tt> and <tt>Model.commit()</tt>
-			or <tt>Model.rollback()</tt>.
+			<code>Model.startTransaction()</code> and <code>Model.commit()</code>
+			or <code>Model.rollback()</code>.
 		</p>
 		<p>
 			Any attempt to access persistent data outside a transaction
@@ -65,7 +65,7 @@ finally
 </pre>
 		<p>
 			For your convenience, the framework provides a method
-			<tt>Model.rollbackIfNotCommitted()</tt>
+			<code>Model.rollbackIfNotCommitted()</code>
 			which does a <i>rollback</i> if and only if the transaction
 			has not been closed (committed or rolled back) before.
 			Therefore you can make the code a little bit shorter:

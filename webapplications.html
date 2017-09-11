@@ -50,9 +50,9 @@
 		<p>
 			The framework must be told, where to connect to the database.
 			Within a servlet you probably
-			want to do this in the <tt>init()</tt> method.
-			The file <tt>cope.properties</tt> should be in the
-			<tt>WEB-INF</tt> subdirectory to protect it against client access.
+			want to do this in the <code>init()</code> method.
+			The file <code>cope.properties</code> should be in the
+			<code>WEB-INF</code> subdirectory to protect it against client access.
 			So you will probably want to write something like this:
 		</p>
 <pre>
@@ -78,7 +78,7 @@ public void init() throws ServletException
 			Even this can be ommitted, if you use the <i>CopeFilter</i>
 			explained below.
 			Please note, that
-			<tt><a href="api/com/exedio/cope/Model.html#connect-com.exedio.cope.ConnectProperties-">connect</a></tt>
+			<code><a href="api/com/exedio/cope/Model.html#connect-com.exedio.cope.ConnectProperties-">connect</a></code>
 			is idempotent,
 			it doesn't hurt to call it more than once,
 			for example if you have more than one servlet.
@@ -111,7 +111,7 @@ protected void doGet(
 			Sometimes you just don't have a single servlet
 			(or a small number of servlets)
 			in your application.
-			Even worse, the method <tt>doGet</tt> could be called reentrantly.
+			Even worse, the method <code>doGet</code> could be called reentrantly.
 			This is very common when using the struts framework.
 		</p>
 		<p>
@@ -120,7 +120,7 @@ protected void doGet(
 			Class
 			<a href="api/com/exedio/cope/misc/CopeFilter.html">CopeFilter</a>
 			provides such a filter.
-			It must be deployed in your <tt>web.xml</tt>:
+			It must be deployed in your <code>web.xml</code>:
 		</p>
 <pre>
 &lt;filter&gt;
@@ -138,14 +138,14 @@ protected void doGet(
 &lt;/filter-mapping&gt;
 </pre>
 		<p>
-			The example above applies the filter for all request to <tt>*.do</tt>,
+			The example above applies the filter for all request to <code>*.do</code>,
 			a typical setting for struts.
-			It assumes, that the main class resides in package <tt>com.exedio.copedemo</tt>,
+			It assumes, that the main class resides in package <code>com.exedio.copedemo</code>,
 			please adapt this to your package.
 		</p>
 		<p>
 			As a side effect, the <i>CopeFilter</i> connects the
-			model in its own <tt>init()</tt>,
+			model in its own <code>init()</code>,
 			so you don't have to care about it anymore.
 		</p>
 		<h3 id="console">exedio console</h3>
@@ -153,7 +153,7 @@ protected void doGet(
 		<p>
 			When you start up your web application,
 			you have to create the database schema at least once.
-			This is done by calling <tt>Main.model.createDatabase()</tt>.
+			This is done by calling <code>Main.model.createDatabase()</code>.
 			Instead of putting a button somewhere in a jsp of your application,
 			you can use the <i>exedio console</i>,
 			which assists you in creating/dropping/revising the database schema
@@ -166,9 +166,9 @@ protected void doGet(
 		</p>
 		<p>
 			To deploy the <i>exedio console</i> in your application,
-			put the file <tt>exedio-cope-console.jar</tt> into your
-			<tt>WEB-INF/lib</tt> directory.
-			Then you just mount another servlet within your <tt>web.xml</tt>:
+			put the file <code>exedio-cope-console.jar</code> into your
+			<code>WEB-INF/lib</code> directory.
+			Then you just mount another servlet within your <code>web.xml</code>:
 		</p>
 		<br clear="right">
 <pre>
@@ -210,9 +210,9 @@ protected void doGet(
 		<p>
 			Deploying <i>Copernica</i> in your application
 			is very similar to the <i>exedio console</i>.
-			Put the file <tt>exedio-copernica.jar</tt> into your
-			<tt>WEB-INF/lib</tt> directory
-			and the following snippet into your <tt>web.xml</tt>:
+			Put the file <code>exedio-copernica.jar</code> into your
+			<code>WEB-INF/lib</code> directory
+			and the following snippet into your <code>web.xml</code>:
 		</p>
 		<br clear="right">
 <pre>

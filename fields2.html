@@ -43,7 +43,7 @@
 		<p>
 			If you want to store a string encoded by a hash algorithm,
 			such as the password of the customer,
-			then put the following into class <tt>Customer</tt>:
+			then put the following into class <code>Customer</code>:
 		</p>
 <pre>
 static final <a href="api/com/exedio/cope/pattern/MD5Hash.html">MD5Hash</a> password = new <a href="api/com/exedio/cope/pattern/MD5Hash.html#MD5Hash--">MD5Hash</a>();
@@ -59,7 +59,7 @@ boolean checkPassword(String password)
 }
 </pre>
 		<p>
-			Using the super classes of <tt>MD5Hash</tt>
+			Using the super classes of <code>MD5Hash</code>
 			you can choose any hash algorithm provided by the java.security package
 			or even implement a custom algorithm.
 		</p>
@@ -114,7 +114,7 @@ void setDescription(Language k, String description)
 }
 </pre>
 		<p>
-			This example assumes, that there is already a persistent item <tt>Language</tt>.
+			This example assumes, that there is already a persistent item <code>Language</code>.
 			If you decide to use use a fixed set of languages in your application,
 			you may use an enum instead:
 		</p>
@@ -140,7 +140,7 @@ static final <a href="api/com/exedio/cope/pattern/EnumMapField.html">EnumMapFiel
 </pre>
 		<p>
 			Internally three string fields
-			<tt>nameDE</tt>, <tt>nameEN</tt>, <tt>namePL</tt>
+			<code>nameDE</code>, <code>nameEN</code>, <code>namePL</code>
 			are used for storing the values of the map.
 		</p>
 		<h3 id="dayfields">Day Fields</h3>
