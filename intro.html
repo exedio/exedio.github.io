@@ -35,7 +35,7 @@
 			<br>
 			<a href="http://sourceforge.net/project/showfiles.php?group_id=152867">Download</a>
 		</p>
-		<h3><a name="contents">Contents</a></h3>
+		<h3 id="contents">Contents</h3>
 		<ul>
 			<li><a href="#item">Your first item</a></li>
 			<li><a href="#instrument">Setting up the instrumentor</a></li>
@@ -43,7 +43,7 @@
 			<li><a href="#run">Make it run</a></li>
 			<li><a href="#further">Further Reading</a></li>
 		</ul>
-		<h3><a name="item">Your first item</a></h3>
+		<h3 id="item">Your first item</h3>
 		<p>
 			Creating a new persistent class is
 			as easy as creating any java class.
@@ -71,7 +71,7 @@ class Customer extends <a href="api/com/exedio/cope/Item.html">Item</a>
 			Thats the way you declare persistent classes and fields.
 			Now we have to setup the source code instrumentor.
 		</p>
-		<h3><a name="instrument">Setting up the instrumentor</a></h3>
+		<h3 id="instrument">Setting up the instrumentor</h3>
 		<p>
 			The instrumentor inserts a few methods and constructors into your
 			source code, so you don't have to write it on your own.
@@ -122,7 +122,7 @@ class Customer extends <a href="api/com/exedio/cope/Item.html">Item</a>
 			Now the instrumentor is ready to run.
 			On the command line type <tt>ant instrument</tt>.
 		</p>
-		<h3><a name="results">Results of the instrumentor</a></h3>
+		<h3 id="results">Results of the instrumentor</h3>
 		<p>
 			After running the instrumentor,
 			the class <tt>Customer</tt> contains a few more methods and constructors.
@@ -209,7 +209,7 @@ static final Type&lt;Customer&gt; TYPE =
 		<p>
 			Next we will really store some persistent data.
 		</p>
-		<h3><a name="run">Make it run</a></h3>
+		<h3 id="run">Make it run</h3>
 		<p>
 			First we have to tell the framework,
 			which persistent types are to be maintained by the project.
@@ -286,7 +286,7 @@ public static void main(String[] args)
 			On hsqldb the method work multiple times,
 			because the database is in-memory only.
 		</p>
-		<h3><a name="further">Further Reading</a></h3>
+		<h3 id="further">Further Reading</h3>
 		<p>
 			This was the initial trail of the tour.
 			You may now proceed to the following trails:

@@ -32,7 +32,7 @@
 			and it will completely remove any chance of
 			<a href="https://en.wikipedia.org/wiki/SQL_injection">SQL injection</a>.
 		</p>
-		<h3><a name="contents">Contents</a></h3>
+		<h3 id="contents">Contents</h3>
 		<ul>
 			<li><a href="#simple">Simple Query</a></li>
 			<li><a href="#conditions">Conditions</a></li>
@@ -42,7 +42,7 @@
 			<li><a href="#joins">Joins</a></li>
 			<li><a href="#further">Further Reading</a></li>
 		</ul>
-		<h3><a name="simple">Simple Query</a></h3>
+		<h3 id="simple">Simple Query</h3>
 		<p>
 			First we define a simple example model
 			consisting of one persistent class only:
@@ -81,7 +81,7 @@ List&lt;Customer&gt; allCustomers = TYPE.<a href="api/com/exedio/cope/Type.html#
 			For brevity we will assume, that all the examples below are
 			located in class <tt>Customer</tt>.
 		</p>
-		<h3><a name="conditions">Conditions</a></h3>
+		<h3 id="conditions">Conditions</h3>
 		<p>
 			Conditions restrict the number of items found by a query.
 			This is equivalent to the "where clause" in SQL.
@@ -150,7 +150,7 @@ TYPE.<a href="api/com/exedio/cope/Type.html#search-com.exedio.cope.Condition-">s
 			The second query compares an integer field to a string field.
 			The third uses the operator "like" on an integer field instead of a string field.
 		</p>
-		<h3><a name="sorting">Sorting</a></h3>
+		<h3 id="sorting">Sorting</h3>
 		<p>
 			Here again a query, that searches for customers,
 			that have logged in more than 8 times,
@@ -186,7 +186,7 @@ List&lt;Customer&gt; customers = q.search();
 			use an instance of <tt>Query</tt> in their implementation as well.
 			They are convenience methods for the most common and simple queries.
 		</p>
-		<h3><a name="limits">Limits</a></h3>
+		<h3 id="limits">Limits</h3>
 		<p>
 			Sometimes you want to fetch just a part of the result of a query.
 			This is commonly needed for paging.
@@ -240,7 +240,7 @@ return q.<a href="api/com/exedio/cope/Query.html#searchSingleton--">searchSingle
 			you restrict your query to match a <i>unique</i> field or
 			when using <i>aggregators</i> as explained below.
 		</p>
-		<h3><a name="selecting">Selecting and Aggregating</a></h3>
+		<h3 id="selecting">Selecting and Aggregating</h3>
 		<p>
 			Sometimes you just want to deal with values of fields, not items.
 			For instance you might want to have a list of the email addresses of
@@ -279,7 +279,7 @@ Query&lt;Integer&gt; q =
    new Query&lt;Integer&gt;(loginCounter.<b>max()</b>);
 Integer maximumLoginCounter = q.searchSingleton();
 </pre>
-		<h3><a name="joins">Joins</a></h3>
+		<h3 id="joins">Joins</h3>
 		<p>
 			To demonstrate joins with exedio persistence,
 			we have to define another persistent class:
@@ -312,7 +312,7 @@ List&lt;Order&gt; orders = q.search();
 <pre>
 q.join(Customer.TYPE, Order.buyer.<b>equalTarget()</b>);
 </pre>
-		<h3><a name="further">Further Reading</a></h3>
+		<h3 id="further">Further Reading</h3>
 		<p>
 			This was the searching trail of the tour.
 			You may now proceed to trails:

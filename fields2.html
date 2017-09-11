@@ -30,7 +30,7 @@
 			(means subclasses of class <a href="api/com/exedio/cope/Field.html">Field</a>)
 			you don't have to care about this until you want to develop such features yourself.
 		</p>
-		<h3><a name="contents">Contents</a></h3>
+		<h3 id="contents">Contents</h3>
 		<ul>
 			<li><a href="#hashes">Hashes</a></li>
 			<li><a href="#list">List Fields</a></li>
@@ -39,7 +39,7 @@
 			<li><a href="#constraints">Check Constraints</a></li>
 			<li><a href="#further">Further Reading</a></li>
 		</ul>
-		<h3><a name="hashes">Hashes</a></h3>
+		<h3 id="hashes">Hashes</h3>
 		<p>
 			If you want to store a string encoded by a hash algorithm,
 			such as the password of the customer,
@@ -63,7 +63,7 @@ boolean checkPassword(String password)
 			you can choose any hash algorithm provided by the java.security package
 			or even implement a custom algorithm.
 		</p>
-		<h3><a name="list">List Fields</a></h3>
+		<h3 id="list">List Fields</h3>
 		<p>
 			Sometimes you may want to store multiple values for an field,
 			such as multiple email addresses for the customer.
@@ -88,7 +88,7 @@ static final <a href="api/com/exedio/cope/pattern/LimitedListField.html">Limited
 			If someone tries to store a list of more than 4 elements,
 			an exception is thrown.
 		</p>
-		<h3><a name="map">Map Fields</a></h3>
+		<h3 id="map">Map Fields</h3>
 		<p>
 			Especially in international applications you may want to store multiple field values,
 			such as one price of a product for each country or one description for each language.
@@ -143,7 +143,7 @@ static final <a href="api/com/exedio/cope/pattern/EnumMapField.html">EnumMapFiel
 			<tt>nameDE</tt>, <tt>nameEN</tt>, <tt>namePL</tt>
 			are used for storing the values of the map.
 		</p>
-		<h3><a name="dayfields">Day Fields</a></h3>
+		<h3 id="dayfields">Day Fields</h3>
 		<p>
 			Class <a href="api/com/exedio/cope/DateField.html">DateField</a>
 			already stores time stamps with millisecond precision.
@@ -156,7 +156,7 @@ static final <a href="api/com/exedio/cope/pattern/EnumMapField.html">EnumMapFiel
 <pre>
 static final <a href="api/com/exedio/cope/DayField.html">DayField</a> dateOfBirth = new <a href="api/com/exedio/cope/DayField.html#DayField--">DayField</a>();
 </pre>
-		<h3><a name="constraints">Check Constraints</a></h3>
+		<h3 id="constraints">Check Constraints</h3>
 		<p>
 			exedio persistence makes it easy to define check constraints for persistent fields.
 			Here an example with a string field, that holds at most 40 characters
@@ -176,7 +176,7 @@ class Customer extends Item
 			<a href="api/com/exedio/cope/StringLengthViolationException.html">StringLengthViolationException</a> or
 			<a href="api/com/exedio/cope/IntegerRangeViolationException.html">IntegerRangeViolationException</a> to be thrown.
 		</p>
-		<h3><a name="further">Further Reading</a></h3>
+		<h3 id="further">Further Reading</h3>
 		<p>
 			This was the advanced field trail of the tour.
 			You may now proceed to trails:

@@ -28,7 +28,7 @@
 			this trails visits all kinds of other fields
 			as well as the more special features of string fields.
 		</p>
-		<h3><a name="contents">Contents</a></h3>
+		<h3 id="contents">Contents</h3>
 		<ul>
 			<li><a href="#common">Common Primitives</a></li>
 			<li><a href="#null">Allowing Null</a></li>
@@ -38,7 +38,7 @@
 			<li><a href="#item">Item Fields</a></li>
 			<li><a href="#further">Further Reading</a></li>
 		</ul>
-		<h3><a name="common">Common Primitives</a></h3>
+		<h3 id="common">Common Primitives</h3>
 		<p>
 			exedio persistence provides fields for all commonly used java primitives
 			as well as for <tt>String</tt> and <tt>java.util.Date</tt>.
@@ -65,7 +65,7 @@ class Customer extends Item
 			Also the <i>default creation constructor</i>
 			will have parameters for the initial values of these fields.
 		</p>
-		<h3><a name="null">Allowing Null</a></h3>
+		<h3 id="null">Allowing Null</h3>
 		<p>
 			You may have noticed, that you cannot store null
 			into any of the fields.
@@ -113,7 +113,7 @@ void setLoginCounter(<b>Long</b> loginCounter) { ... }
 				</li>
 			</ol>
 		</p>
-		<h3><a name="defaults">Default Values</a></h3>
+		<h3 id="defaults">Default Values</h3>
 		<p>
 			What we did above with the login counter is probably not,
 			what one would want in a real project.
@@ -141,7 +141,7 @@ static final LongField loginCounter =
 static final DateField registrationDate =
     new DateField()<b>.defaultToNow()</b>;
 </pre>
-		<h3><a name="unique">Unique Fields</a></h3>
+		<h3 id="unique">Unique Fields</h3>
 		<p>
 			Probably you wouldn't want to have more than one customer
 			for any given email address.
@@ -180,7 +180,7 @@ class MatrixElement extends Item
        new UniqueConstraint(x, y);
 }
 </pre>
-		<h3><a name="enum">Enum Fields</a></h3>
+		<h3 id="enum">Enum Fields</h3>
 		<p>
 			A common pattern in persistent models are fields,
 			the can have a value out of a predefined set of values.
@@ -202,7 +202,7 @@ class Customer extends Item
        newEnumField(Status.class);
 }
 </pre>
-		<h3><a name="item">Item Fields</a></h3>
+		<h3 id="item">Item Fields</h3>
 		<p>
 			An item fields stores a reference to another persistent item.
 			It's the object oriented counter part of
@@ -251,7 +251,7 @@ static final ItemField&lt;ProductGroup&gt; productGroup =
 			Of course <i>nullify</i> makes no sense for a <i>mandatory</i> field.
 			Therefore such item fields are <i>optional</i> by default.
 		</p>
-		<h3><a name="further">Further Reading</a></h3>
+		<h3 id="further">Further Reading</h3>
 		<p>
 			This was the field trail of the tour.
 			You may now proceed to trails:
