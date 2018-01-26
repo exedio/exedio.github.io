@@ -64,10 +64,10 @@
 				<th><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/DatabaseMetaData.html#getDriverVersion--">Version</a></th>
 			</tr>
 			<tr>
-				<td class="text" rowspan="10">HSQL Database Engine <small>(10x)</small></td>
-				<td class="text" rowspan="10">2.2.9</td>
-				<td class="text" rowspan="10">HSQL Database Engine Driver</td>
-				<td class="text" rowspan="10">2.2.9</td>
+				<td class="text" rowspan="13">HSQL Database Engine <small>(13x)</small></td>
+				<td class="text" rowspan="13">2.4.0</td>
+				<td class="text" rowspan="13">HSQL Database Engine Driver</td>
+				<td class="text" rowspan="13">2.4.0</td>
 				<td class="text">hy</td>
 				<td class="text">connectionPool.idleInitial=2<br>dataField.bufferSizeDefault=1000<br>dataField.bufferSizeLimit=2000<br></td>
 			</tr>
@@ -84,12 +84,24 @@
 				<td class="text">schema.mysql.lower_case_table_names=true<br>schema.primaryKeyGenerator=sequence<br></td>
 			</tr>
 			<tr>
+				<td class="text">hy-my55</td>
+				<td class="text">dialect.approximate=mysql55<br>schema.primaryKeyGenerator=sequence<br></td>
+			</tr>
+			<tr>
+				<td class="text">hy-my56</td>
+				<td class="text">dialect.approximate=mysql56<br>schema.primaryKeyGenerator=sequence<br></td>
+			</tr>
+			<tr>
 				<td class="text">hy-nprep</td>
 				<td class="text">disableSupport.preparedStatements=true<br></td>
 			</tr>
 			<tr>
 				<td class="text">hy-nstmp</td>
 				<td class="text">cache.stamps=false<br></td>
+			</tr>
+			<tr>
+				<td class="text">hy-ora</td>
+				<td class="text">dialect.approximate=oracle<br>schema.primaryKeyGenerator=sequence<br></td>
 			</tr>
 			<tr>
 				<td class="text">hy-sq</td>
@@ -108,10 +120,10 @@
 				<td class="text">cache.item.limit=0<br>cache.query.limit=0<br>connectionPool.idleLimit=0<br>dataField.bufferSizeDefault=1<br>dataField.bufferSizeLimit=2<br>media.offsetExpires=0<br></td>
 			</tr>
 			<tr>
-				<td class="text" rowspan="28">MySQL <small>(28x)</small></td>
-				<td class="text" rowspan="9">5.5.54-0+deb8u1 <small>(9x)</small></td>
-				<td class="text" rowspan="18">MySQL-AB JDBC Driver <small>(18x)</small></td>
-				<td class="text" rowspan="18">mysql-connector-java-5.1.15 ( Revision: ${bzr.revision-id} )</td>
+				<td class="text" rowspan="29">MySQL <small>(29x)</small></td>
+				<td class="text" rowspan="9">5.5.59-0ubuntu0.14.04.1 <small>(9x)</small></td>
+				<td class="text" rowspan="18">MySQL Connector Java <small>(18x)</small></td>
+				<td class="text" rowspan="18">mysql-connector-java-5.1.45 ( Revision: 9131eef )</td>
 				<td class="text">my55</td>
 				<td class="text"></td>
 			</tr>
@@ -154,7 +166,7 @@
 			</tr>
 			<tr>
 				<td class="text">my56-legacy</td>
-				<td class="text">dialect.fullSequenceColumnName=false<br>dialect.longConstraintNames=false<br>dialect.smallIntegerTypes=false<br>dialect.utf8mb4=false<br></td>
+				<td class="text">dialect.fullSequenceColumnName=false<br>dialect.longConstraintNames=false<br>dialect.smallIntegerTypes=false<br>dialect.utf8mb4=false<br>disableSupport.nativeDate=true<br></td>
 			</tr>
 			<tr>
 				<td class="text">my56-nprep</td>
@@ -186,7 +198,7 @@
 			</tr>
 			<tr>
 				<td class="text" rowspan="2">MariaDB connector/J <small>(2x)</small></td>
-				<td class="text" rowspan="2">1.4.2</td>
+				<td class="text" rowspan="2">2.2.1</td>
 				<td class="text">my56m-nprep</td>
 				<td class="text">disableSupport.preparedStatements=true<br></td>
 			</tr>
@@ -195,15 +207,19 @@
 				<td class="text">schema.primaryKeyGenerator=sequence<br></td>
 			</tr>
 			<tr>
-				<td class="text" rowspan="8">5.7.19-0ubuntu0.16.04.1 <small>(8x)</small></td>
-				<td class="text" rowspan="8">MySQL-AB JDBC Driver</td>
-				<td class="text" rowspan="8">mysql-connector-java-5.1.15 ( Revision: ${bzr.revision-id} )</td>
+				<td class="text" rowspan="9">5.7.21-0ubuntu0.16.04.1 <small>(9x)</small></td>
+				<td class="text" rowspan="9">MySQL Connector Java</td>
+				<td class="text" rowspan="9">mysql-connector-java-5.1.45 ( Revision: 9131eef )</td>
 				<td class="text">my57</td>
 				<td class="text"></td>
 			</tr>
 			<tr>
 				<td class="text">my57-compress</td>
 				<td class="text">dialect.rowFormat=COMPRESSED<br></td>
+			</tr>
+			<tr>
+				<td class="text">my57-legacy</td>
+				<td class="text">disableSupport.nativeDate=true<br></td>
 			</tr>
 			<tr>
 				<td class="text">my57-nprep</td>
@@ -233,7 +249,7 @@
 				<td class="text" rowspan="2">Oracle <small>(2x)</small></td>
 				<td class="text" rowspan="2">Oracle Database 11g Release 11.2.0.1.0 - 64bit Production</td>
 				<td class="text" rowspan="2">Oracle JDBC driver</td>
-				<td class="text" rowspan="2">11.1.0.7.0-Production</td>
+				<td class="text" rowspan="2">11.2.0.4.0</td>
 				<td class="text">ora</td>
 				<td class="text"></td>
 			</tr>
@@ -243,7 +259,7 @@
 			</tr>
 			<tr>
 				<td class="text" rowspan="8">PostgreSQL <small>(8x)</small></td>
-				<td class="text" rowspan="4">9.3.18 <small>(4x)</small></td>
+				<td class="text" rowspan="4">9.3.20 <small>(4x)</small></td>
 				<td class="text" rowspan="8">PostgreSQL Native Driver <small>(8x)</small></td>
 				<td class="text" rowspan="8">PostgreSQL 9.3 JDBC4.1 (build 1102)</td>
 				<td class="text">pg93</td>
@@ -262,7 +278,7 @@
 				<td class="text">schema.primaryKeyGenerator=sequence<br></td>
 			</tr>
 			<tr>
-				<td class="text" rowspan="4">9.5.8 <small>(4x)</small></td>
+				<td class="text" rowspan="4">9.5.10 <small>(4x)</small></td>
 				<td class="text">pg95</td>
 				<td class="text"></td>
 			</tr>
