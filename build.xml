@@ -5,8 +5,6 @@
 	<property file="local.properties" />
 	<property file="project.properties" />
 
-	<taskdef name="LoadFile" classname="org.apache.tools.ant.taskdefs.LoadFile" />
-
 	<target name="clean">
 		<delete dir="build" />
 		<delete dir="home/api" /><!-- not created anymore -->
