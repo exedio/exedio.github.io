@@ -17,8 +17,8 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":42,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10};
-var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"],32:["t6","Deprecated Methods"]};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10};
+var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
 var tableTab = "tableTab";
@@ -153,7 +153,7 @@ implements <a href="../../../../com/exedio/cope/util/JobContext.html" title="int
 </a>
 <h3>Method Summary</h3>
 <table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
-<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t6" class="tableTab"><span><a href="javascript:show(32);">Deprecated Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
+<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
 <tr>
 <th class="colFirst" scope="col">Modifier and Type</th>
 <th class="colLast" scope="col">Method and Description</th>
@@ -172,43 +172,36 @@ implements <a href="../../../../com/exedio/cope/util/JobContext.html" title="int
 </td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/util/EmptyJobContext.html#requestedToStop--">requestedToStop</a></span>()</code>
-<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
-</td>
-</tr>
-<tr id="i3" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/util/EmptyJobContext.html#setCompleteness-double-">setCompleteness</a></span>(double&nbsp;completeness)</code>
 <div class="block">This default implementation does nothing.</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/util/EmptyJobContext.html#setMessage-java.lang.String-">setMessage</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;message)</code>
 <div class="block">This default implementation does nothing.</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/util/EmptyJobContext.html#stopIfRequested--">stopIfRequested</a></span>()</code>
-<div class="block">This default implementation throws a <a href="../../../../com/exedio/cope/util/JobStop.html" title="class in com.exedio.cope.util"><code>JobStop</code></a>,
- if <a href="../../../../com/exedio/cope/util/EmptyJobContext.html#requestedToStop--"><code>requestedToStop()</code></a> returns <i>true</i>.</div>
+<div class="block">This default implementation does nothing.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/util/EmptyJobContext.html#supportsCompleteness--">supportsCompleteness</a></span>()</code>
 <div class="block">This default implementation always returns <i>false</i>.</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/util/EmptyJobContext.html#supportsMessage--">supportsMessage</a></span>()</code>
 <div class="block">This default implementation always returns <i>false</i>.</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/util/EmptyJobContext.html#supportsProgress--">supportsProgress</a></span>()</code>
 <div class="block">This default implementation always returns <i>false</i>.</div>
@@ -221,6 +214,13 @@ implements <a href="../../../../com/exedio/cope/util/JobContext.html" title="int
 </a>
 <h3>Methods inherited from class&nbsp;java.lang.<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></h3>
 <code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#clone--" title="class or interface in java.lang">clone</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#equals-java.lang.Object-" title="class or interface in java.lang">equals</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#finalize--" title="class or interface in java.lang">finalize</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#getClass--" title="class or interface in java.lang">getClass</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#hashCode--" title="class or interface in java.lang">hashCode</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notify--" title="class or interface in java.lang">notify</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notifyAll--" title="class or interface in java.lang">notifyAll</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#toString--" title="class or interface in java.lang">toString</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait--" title="class or interface in java.lang">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait-long-" title="class or interface in java.lang">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait-long-int-" title="class or interface in java.lang">wait</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods.inherited.from.class.com.exedio.cope.util.JobContext">
+<!--   -->
+</a>
+<h3>Methods inherited from interface&nbsp;com.exedio.cope.util.<a href="../../../../com/exedio/cope/util/JobContext.html" title="interface in com.exedio.cope.util">JobContext</a></h3>
+<code><a href="../../../../com/exedio/cope/util/JobContext.html#deferOrStopIfRequested-com.exedio.cope.util.JobContext-">deferOrStopIfRequested</a>, <a href="../../../../com/exedio/cope/util/JobContext.html#requestsDeferral--">requestsDeferral</a>, <a href="../../../../com/exedio/cope/util/JobContext.html#sleepAndStopIfRequested-java.time.Duration-">sleepAndStopIfRequested</a>, <a href="../../../../com/exedio/cope/util/JobContext.html#sleepAndStopIfRequested-com.exedio.cope.util.JobContext-java.time.Duration-">sleepAndStopIfRequested</a></code></li>
 </ul>
 </li>
 </ul>
@@ -261,29 +261,12 @@ implements <a href="../../../../com/exedio/cope/util/JobContext.html" title="int
 <h4>stopIfRequested</h4>
 <pre>public&nbsp;void&nbsp;stopIfRequested()
                      throws <a href="../../../../com/exedio/cope/util/JobStop.html" title="class in com.exedio.cope.util">JobStop</a></pre>
-<div class="block">This default implementation throws a <a href="../../../../com/exedio/cope/util/JobStop.html" title="class in com.exedio.cope.util"><code>JobStop</code></a>,
- if <a href="../../../../com/exedio/cope/util/EmptyJobContext.html#requestedToStop--"><code>requestedToStop()</code></a> returns <i>true</i>.</div>
+<div class="block">This default implementation does nothing.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../com/exedio/cope/util/JobContext.html#stopIfRequested--">stopIfRequested</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../com/exedio/cope/util/JobContext.html" title="interface in com.exedio.cope.util">JobContext</a></code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code><a href="../../../../com/exedio/cope/util/JobStop.html" title="class in com.exedio.cope.util">JobStop</a></code></dd>
-</dl>
-</li>
-</ul>
-<a name="requestedToStop--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>requestedToStop</h4>
-<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</a>
-public&nbsp;boolean&nbsp;requestedToStop()</pre>
-<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
-<div class="block">This default implementation always returns <i>false</i>.</div>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../com/exedio/cope/util/JobContext.html#requestedToStop--">requestedToStop</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../com/exedio/cope/util/JobContext.html" title="interface in com.exedio.cope.util">JobContext</a></code></dd>
 </dl>
 </li>
 </ul>

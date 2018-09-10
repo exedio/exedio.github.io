@@ -17,8 +17,8 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":6,"i1":6,"i2":6};
-var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
+var methods = {"i0":6,"i1":6,"i2":6,"i3":18};
+var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],16:["t5","Default Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
 var tableTab = "tableTab";
@@ -47,7 +47,7 @@ var activeTableTab = "activeTableTab";
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../../com/exedio/cope/util/Properties.PropertiesField.html" title="class in com.exedio.cope.util"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../../com/exedio/cope/util/Properties.StringField.html" title="class in com.exedio.cope.util"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../com/exedio/cope/util/ProxyJobContext.html" title="class in com.exedio.cope.util"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../index.html?com/exedio/cope/util/Properties.Source.html" target="_top">Frames</a></li>
@@ -98,7 +98,7 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <dl>
 <dt>All Known Implementing Classes:</dt>
-<dd><a href="../../../../com/exedio/cope/util/PrefixSource.html" title="class in com.exedio.cope.util">PrefixSource</a></dd>
+<dd><a href="../../../../com/exedio/cope/util/AssertionErrorPropertiesSource.html" title="class in com.exedio.cope.util">AssertionErrorPropertiesSource</a>, <a href="../../../../com/exedio/cope/util/PrefixSource.html" title="class in com.exedio.cope.util">PrefixSource</a>, <a href="../../../../com/exedio/cope/util/ProxyPropertiesSource.html" title="class in com.exedio.cope.util">ProxyPropertiesSource</a></dd>
 </dl>
 <dl>
 <dt>Enclosing class:</dt>
@@ -120,7 +120,7 @@ var activeTableTab = "activeTableTab";
 </a>
 <h3>Method Summary</h3>
 <table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
-<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t3" class="tableTab"><span><a href="javascript:show(4);">Abstract Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
+<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t3" class="tableTab"><span><a href="javascript:show(4);">Abstract Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t5" class="tableTab"><span><a href="javascript:show(16);">Default Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
 <tr>
 <th class="colFirst" scope="col">Modifier and Type</th>
 <th class="colLast" scope="col">Method and Description</th>
@@ -138,6 +138,13 @@ var activeTableTab = "activeTableTab";
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/util/Properties.Source.html#keySet--">keySet</a></span>()</code>
 <div class="block">Returns all keys, for which <a href="../../../../com/exedio/cope/util/Properties.Source.html#get-java.lang.String-"><code>get(String)</code></a>
  does not return null.</div>
+</td>
+</tr>
+<tr id="i3" class="rowColor">
+<td class="colFirst"><code>default <a href="../../../../com/exedio/cope/util/Properties.Source.html" title="interface in com.exedio.cope.util">Properties.Source</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/util/Properties.Source.html#reload--">reload</a></span>()</code>
+<div class="block">Reloads the contents of this source from its origin,
+ if this makes sense for the implementation.</div>
 </td>
 </tr>
 </table>
@@ -184,6 +191,23 @@ var activeTableTab = "activeTableTab";
  The result is always unmodifiable.</div>
 </li>
 </ul>
+<a name="reload--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>reload</h4>
+<pre>default&nbsp;<a href="../../../../com/exedio/cope/util/Properties.Source.html" title="interface in com.exedio.cope.util">Properties.Source</a>&nbsp;reload()</pre>
+<div class="block">Reloads the contents of this source from its origin,
+ if this makes sense for the implementation.
+ The reloaded contents are returned as a new source -
+ this source is not modified.
+ <p>
+ If the implementation does not support reloading,
+ simply return <code>this</code>,
+ which is also the default implementation.</div>
+</li>
+</ul>
 <a name="getDescription--">
 <!--   -->
 </a>
@@ -220,7 +244,7 @@ var activeTableTab = "activeTableTab";
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../../com/exedio/cope/util/Properties.PropertiesField.html" title="class in com.exedio.cope.util"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../../com/exedio/cope/util/Properties.StringField.html" title="class in com.exedio.cope.util"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../com/exedio/cope/util/ProxyJobContext.html" title="class in com.exedio.cope.util"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../index.html?com/exedio/cope/util/Properties.Source.html" target="_top">Frames</a></li>
