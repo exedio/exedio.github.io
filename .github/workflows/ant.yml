@@ -16,6 +16,6 @@ jobs:
         submodules: 'true'
     - uses: actions/setup-java@v2
       with:
-        java-version: '8'
+        java-version: '17'
         distribution: 'adopt'
     - run: ant -noinput clean jenkins

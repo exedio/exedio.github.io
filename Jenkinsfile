@@ -4,7 +4,11 @@ import groovy.transform.stc.ClosureParams
 import groovy.transform.stc.SimpleType
 
 @Field
-String jdk = 'openjdk-11'
+String debianRelease = 'bullseye'
+@Field
+String debianSnapshot = '20220418'
+@Field
+String jdk = 'openjdk-17'
 
 boolean isRelease = env.BRANCH_NAME=="master"
 
@@ -101,6 +105,8 @@ def mainImage(String imageName)
 {
 	return docker.build(
 		imageName,
+		'--build-arg DEBIAN_RELEASE=' + debianRelease + ' ' +
+		'--build-arg DEBIAN_SNAPSHOT=' + debianSnapshot + ' ' +
 		'--build-arg JDK=' + jdk + ' ' +
 		'--build-arg JENKINS_OWNER=' + env.JENKINS_OWNER + ' ' +
 		'conf/main')
