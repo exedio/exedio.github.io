@@ -3,7 +3,4 @@ language: java
 jdk:
   - openjdk8
 
-before_script:
-  - ant -version
-
 script: "ant clean jenkins"
