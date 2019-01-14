@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -188,13 +188,20 @@ extends <a href="../../../com/exedio/cope/FunctionField.html" title="class in co
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code><a href="../../../com/exedio/cope/BooleanField.html" title="class in com.exedio.cope">BooleanField</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/BooleanField.html#noDefault--">noDefault</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/BooleanField.html#noCopyFrom--">noCopyFrom</a></span>()</code>
+<div class="block">Returns a new FunctionField that differs from this FunctionField
+ by having no <a href="../../../com/exedio/cope/FunctionField.html#copyFrom-com.exedio.cope.ItemField-"><code>copyFrom</code></a> fields set.</div>
+</td>
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="../../../com/exedio/cope/BooleanField.html" title="class in com.exedio.cope">BooleanField</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/BooleanField.html#nonUnique--">nonUnique</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/BooleanField.html#noDefault--">noDefault</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i7" class="rowColor">
+<td class="colFirst"><code><a href="../../../com/exedio/cope/BooleanField.html" title="class in com.exedio.cope">BooleanField</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/BooleanField.html#nonUnique--">nonUnique</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i8" class="altColor">
 <td class="colFirst"><code><a href="../../../com/exedio/cope/BooleanField.html" title="class in com.exedio.cope">BooleanField</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/BooleanField.html#optional--">optional</a></span>()</code>
 <div class="block">Returns a new Field,
@@ -202,19 +209,19 @@ extends <a href="../../../com/exedio/cope/FunctionField.html" title="class in co
  by being optional.</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>&lt;P extends <a href="../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&gt;<br>P</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/BooleanField.html#searchUnique-java.lang.Class-boolean-">searchUnique</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;P&gt;&nbsp;typeClass,
             boolean&nbsp;value)</code>
 <div class="block">Finds an item by it's unique fields.</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/BooleanField.html#set-com.exedio.cope.Item-boolean-">set</a></span>(<a href="../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&nbsp;item,
    boolean&nbsp;value)</code>&nbsp;</td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code><a href="../../../com/exedio/cope/BooleanField.html" title="class in com.exedio.cope">BooleanField</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/BooleanField.html#toFinal--">toFinal</a></span>()</code>
 <div class="block">Returns a new Field,
@@ -222,7 +229,7 @@ extends <a href="../../../com/exedio/cope/FunctionField.html" title="class in co
  by being final.</div>
 </td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code><a href="../../../com/exedio/cope/BooleanField.html" title="class in com.exedio.cope">BooleanField</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/BooleanField.html#unique--">unique</a></span>()</code>
 <div class="block">Returns a new FunctionField,
@@ -236,7 +243,7 @@ extends <a href="../../../com/exedio/cope/FunctionField.html" title="class in co
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;com.exedio.cope.<a href="../../../com/exedio/cope/FunctionField.html" title="class in com.exedio.cope">FunctionField</a></h3>
-<code><a href="../../../com/exedio/cope/FunctionField.html#addCopyFrom-com.exedio.cope.ItemField-">addCopyFrom</a>, <a href="../../../com/exedio/cope/FunctionField.html#append-com.exedio.cope.Statement-com.exedio.cope.Join-">append</a>, <a href="../../../com/exedio/cope/FunctionField.html#appendSelect-com.exedio.cope.Statement-com.exedio.cope.Join-">appendSelect</a>, <a href="../../../com/exedio/cope/FunctionField.html#check-com.exedio.cope.TC-com.exedio.cope.Join-">check</a>, <a href="../../../com/exedio/cope/FunctionField.html#copy-com.exedio.cope.CopyMapper-">copy</a>, <a href="../../../com/exedio/cope/FunctionField.html#copyFunctionField--">copyFunctionField</a>, <a href="../../../com/exedio/cope/FunctionField.html#get-com.exedio.cope.Item-">get</a>, <a href="../../../com/exedio/cope/FunctionField.html#getDefaultConstant--">getDefaultConstant</a>, <a href="../../../com/exedio/cope/FunctionField.html#getImplicitCopyConstraint--">getImplicitCopyConstraint</a>, <a href="../../../com/exedio/cope/FunctionField.html#getImplicitCopyConstraints--">getImplicitCopyConstraints</a>, <a href="../../../com/exedio/cope/FunctionField.html#getImplicitUniqueConstraint--">getImplicitUniqueConstraint</a>, <a href="../../../com/exedio/cope/FunctionField.html#getInitialExceptions--">getInitialExceptions</a>, <a href="../../../com/exedio/cope/FunctionField.html#getUniqueConstraints--">getUniqueConstraints</a>, <a href="../../../com/exedio/cope/FunctionField.html#hasDefault--">hasDefault</a>, <a href="../../../com/exedio/cope/FunctionField.html#isInitial--">isInitial</a>, <a href="../../../com/exedio/cope/FunctionField.html#isRedundantByCopyConstraint--">isRedundantByCopyConstraint</a>, <a href="../../../com/exedio/cope/FunctionField.html#searchUnique-java.lang.Class-E-">searchUnique</a>, <a href="../../../com/exedio/cope/FunctionField.html#searchUnique-E-">searchUnique</a>, <a href="../../../com/exedio/cope/FunctionField.html#searchUniqueStrict-java.lang.Class-E-">searchUniqueStrict</a>, <a href="../../../com/exedio/cope/FunctionField.html#set-com.exedio.cope.Item-E-">set</a></code></li>
+<code><a href="../../../com/exedio/cope/FunctionField.html#addCopyFrom-com.exedio.cope.ItemField-">addCopyFrom</a>, <a href="../../../com/exedio/cope/FunctionField.html#append-com.exedio.cope.Statement-com.exedio.cope.Join-">append</a>, <a href="../../../com/exedio/cope/FunctionField.html#appendSelect-com.exedio.cope.Statement-com.exedio.cope.Join-">appendSelect</a>, <a href="../../../com/exedio/cope/FunctionField.html#check-com.exedio.cope.TC-com.exedio.cope.Join-">check</a>, <a href="../../../com/exedio/cope/FunctionField.html#copy-com.exedio.cope.CopyMapper-">copy</a>, <a href="../../../com/exedio/cope/FunctionField.html#copyFunctionField--">copyFunctionField</a>, <a href="../../../com/exedio/cope/FunctionField.html#get-com.exedio.cope.FieldValues-">get</a>, <a href="../../../com/exedio/cope/FunctionField.html#get-com.exedio.cope.Item-">get</a>, <a href="../../../com/exedio/cope/FunctionField.html#getDefaultConstant--">getDefaultConstant</a>, <a href="../../../com/exedio/cope/FunctionField.html#getImplicitCopyConstraint--">getImplicitCopyConstraint</a>, <a href="../../../com/exedio/cope/FunctionField.html#getImplicitCopyConstraints--">getImplicitCopyConstraints</a>, <a href="../../../com/exedio/cope/FunctionField.html#getImplicitUniqueConstraint--">getImplicitUniqueConstraint</a>, <a href="../../../com/exedio/cope/FunctionField.html#getInitialExceptions--">getInitialExceptions</a>, <a href="../../../com/exedio/cope/FunctionField.html#getUniqueConstraints--">getUniqueConstraints</a>, <a href="../../../com/exedio/cope/FunctionField.html#hasDefault--">hasDefault</a>, <a href="../../../com/exedio/cope/FunctionField.html#isInitial--">isInitial</a>, <a href="../../../com/exedio/cope/FunctionField.html#isRedundantByCopyConstraint--">isRedundantByCopyConstraint</a>, <a href="../../../com/exedio/cope/FunctionField.html#searchUnique-java.lang.Class-E-">searchUnique</a>, <a href="../../../com/exedio/cope/FunctionField.html#searchUnique-E-">searchUnique</a>, <a href="../../../com/exedio/cope/FunctionField.html#searchUniqueStrict-java.lang.Class-E-">searchUniqueStrict</a>, <a href="../../../com/exedio/cope/FunctionField.html#set-com.exedio.cope.Item-E-">set</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.com.exedio.cope.Field">
@@ -412,6 +419,22 @@ extends <a href="../../../com/exedio/cope/FunctionField.html" title="class in co
 <dd><code><a href="../../../com/exedio/cope/FunctionField.html#copyFrom-com.exedio.cope.ItemField-">copyFrom</a></code>&nbsp;in class&nbsp;<code><a href="../../../com/exedio/cope/FunctionField.html" title="class in com.exedio.cope">FunctionField</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang">Boolean</a>&gt;</code></dd>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../com/exedio/cope/ItemField.html#copyTo-com.exedio.cope.FunctionField-"><code>ItemField.copyTo(FunctionField)</code></a></dd>
+</dl>
+</li>
+</ul>
+<a name="noCopyFrom--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>noCopyFrom</h4>
+<pre>public&nbsp;<a href="../../../com/exedio/cope/BooleanField.html" title="class in com.exedio.cope">BooleanField</a>&nbsp;noCopyFrom()</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../../com/exedio/cope/FunctionField.html#noCopyFrom--">FunctionField</a></code></span></div>
+<div class="block">Returns a new FunctionField that differs from this FunctionField
+ by having no <a href="../../../com/exedio/cope/FunctionField.html#copyFrom-com.exedio.cope.ItemField-"><code>copyFrom</code></a> fields set.</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../com/exedio/cope/FunctionField.html#noCopyFrom--">noCopyFrom</a></code>&nbsp;in class&nbsp;<code><a href="../../../com/exedio/cope/FunctionField.html" title="class in com.exedio.cope">FunctionField</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang">Boolean</a>&gt;</code></dd>
 </dl>
 </li>
 </ul>

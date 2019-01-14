@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":9,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":42,"i19":10,"i20":10,"i21":9,"i22":9,"i23":9,"i24":9};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":9,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":42,"i23":10,"i24":10,"i25":9,"i26":9,"i27":9,"i28":9,"i29":9};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"],32:["t6","Deprecated Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -200,7 +200,7 @@ extends <a href="../../../com/exedio/cope/Field.html" title="class in com.exedio
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code>com.exedio.cope.DataField.ArrayValue</code></td>
+<td class="colFirst"><code><a href="../../../com/exedio/cope/DataField.Value.html" title="class in com.exedio.cope">DataField.Value</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/DataField.html#get-com.exedio.cope.Item-">get</a></span>(<a href="../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&nbsp;item)</code>
 <div class="block">Returns the data of this persistent data field.</div>
 </td>
@@ -208,7 +208,7 @@ extends <a href="../../../com/exedio/cope/Field.html" title="class in com.exedio
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/DataField.html#get-com.exedio.cope.Item-java.io.File-">get</a></span>(<a href="../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&nbsp;item,
-   <a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a>&nbsp;data)</code>
+   <a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a>&nbsp;sink)</code>
 <div class="block">Reads data for this persistent data field
  and writes it into the given file.</div>
 </td>
@@ -216,59 +216,72 @@ extends <a href="../../../com/exedio/cope/Field.html" title="class in com.exedio
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/DataField.html#get-com.exedio.cope.Item-java.io.OutputStream-">get</a></span>(<a href="../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&nbsp;item,
-   <a href="https://docs.oracle.com/javase/8/docs/api/java/io/OutputStream.html?is-external=true" title="class or interface in java.io">OutputStream</a>&nbsp;data)</code>
+   <a href="https://docs.oracle.com/javase/8/docs/api/java/io/OutputStream.html?is-external=true" title="class or interface in java.io">OutputStream</a>&nbsp;sink)</code>
 <div class="block">Reads data for this persistent data field
  and writes it into the given stream.</div>
 </td>
 </tr>
 <tr id="i3" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/DataField.html#get-com.exedio.cope.Item-java.nio.file.Path-">get</a></span>(<a href="../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&nbsp;item,
+   <a href="https://docs.oracle.com/javase/8/docs/api/java/nio/file/Path.html?is-external=true" title="class or interface in java.nio.file">Path</a>&nbsp;sink)</code>&nbsp;</td>
+</tr>
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>byte[]</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/DataField.html#getArray-com.exedio.cope.Item-">getArray</a></span>(<a href="../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&nbsp;item)</code>
 <div class="block">Returns the data of this persistent data field.</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>long</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/DataField.html#getLength-com.exedio.cope.Item-">getLength</a></span>(<a href="../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&nbsp;item)</code>
 <div class="block">Returns the length of the data of this persistent data field.</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>long</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/DataField.html#getMaximumLength--">getMaximumLength</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="../../../com/exedio/cope/DataFieldVaultInfo.html" title="class in com.exedio.cope">DataFieldVaultInfo</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/DataField.html#getVaultInfo--">getVaultInfo</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/DataField.html#isAnnotatedVault--">isAnnotatedVault</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/DataField.html#isNull-com.exedio.cope.Item-">isNull</a></span>(<a href="../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&nbsp;item)</code>
 <div class="block">Returns, whether there is no data for this field.</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code><a href="../../../com/exedio/cope/DataField.html" title="class in com.exedio.cope">DataField</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/DataField.html#lengthMax-long-">lengthMax</a></span>(long&nbsp;maximumLength)</code>&nbsp;</td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code><a href="../../../com/exedio/cope/SetValue.html" title="class in com.exedio.cope">SetValue</a>&lt;?&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/DataField.html#map-byte:A-">map</a></span>(byte[]&nbsp;array)</code>&nbsp;</td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code><a href="../../../com/exedio/cope/SetValue.html" title="class in com.exedio.cope">SetValue</a>&lt;?&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/DataField.html#map-java.io.File-">map</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a>&nbsp;file)</code>&nbsp;</td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code><a href="../../../com/exedio/cope/SetValue.html" title="class in com.exedio.cope">SetValue</a>&lt;?&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/DataField.html#map-java.io.InputStream-">map</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/io/InputStream.html?is-external=true" title="class or interface in java.io">InputStream</a>&nbsp;stream)</code>&nbsp;</td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i14" class="altColor">
+<td class="colFirst"><code><a href="../../../com/exedio/cope/SetValue.html" title="class in com.exedio.cope">SetValue</a>&lt;?&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/DataField.html#map-java.nio.file.Path-">map</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/nio/file/Path.html?is-external=true" title="class or interface in java.nio.file">Path</a>&nbsp;path)</code>&nbsp;</td>
+</tr>
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>static int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/DataField.html#min-int-long-">min</a></span>(int&nbsp;i,
    long&nbsp;l)</code>&nbsp;</td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code><a href="../../../com/exedio/cope/DataField.html" title="class in com.exedio.cope">DataField</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/DataField.html#optional--">optional</a></span>()</code>
 <div class="block">Returns a new Field,
@@ -276,35 +289,42 @@ extends <a href="../../../com/exedio/cope/Field.html" title="class in com.exedio
  by being optional.</div>
 </td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/DataField.html#set-com.exedio.cope.Item-byte:A-">set</a></span>(<a href="../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&nbsp;item,
    byte[]&nbsp;data)</code>
 <div class="block">Provides data for this persistent data field.</div>
 </td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i18" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/DataField.html#set-com.exedio.cope.Item-com.exedio.cope.DataField.Value-">set</a></span>(<a href="../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&nbsp;item,
    <a href="../../../com/exedio/cope/DataField.Value.html" title="class in com.exedio.cope">DataField.Value</a>&nbsp;data)</code>
 <div class="block">Provides data for this persistent data field.</div>
 </td>
 </tr>
-<tr id="i16" class="altColor">
+<tr id="i19" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/DataField.html#set-com.exedio.cope.Item-java.io.File-">set</a></span>(<a href="../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&nbsp;item,
    <a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a>&nbsp;data)</code>
 <div class="block">Provides data for this persistent data field.</div>
 </td>
 </tr>
-<tr id="i17" class="rowColor">
+<tr id="i20" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/DataField.html#set-com.exedio.cope.Item-java.io.InputStream-">set</a></span>(<a href="../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&nbsp;item,
    <a href="https://docs.oracle.com/javase/8/docs/api/java/io/InputStream.html?is-external=true" title="class or interface in java.io">InputStream</a>&nbsp;data)</code>
 <div class="block">Provides data for this persistent data field.</div>
 </td>
 </tr>
-<tr id="i18" class="altColor">
+<tr id="i21" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/DataField.html#set-com.exedio.cope.Item-java.nio.file.Path-">set</a></span>(<a href="../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&nbsp;item,
+   <a href="https://docs.oracle.com/javase/8/docs/api/java/nio/file/Path.html?is-external=true" title="class or interface in java.nio.file">Path</a>&nbsp;data)</code>
+<div class="block">Provides data for this persistent data field.</div>
+</td>
+</tr>
+<tr id="i22" class="altColor">
 <td class="colFirst"><code><a href="../../../com/exedio/cope/StartsWithCondition.html" title="class in com.exedio.cope">StartsWithCondition</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/DataField.html#startsWith-byte:A-">startsWith</a></span>(byte[]&nbsp;value)</code>
 <div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
@@ -312,14 +332,14 @@ extends <a href="../../../com/exedio/cope/Field.html" title="class in com.exedio
 </div>
 </td>
 </tr>
-<tr id="i19" class="rowColor">
+<tr id="i23" class="rowColor">
 <td class="colFirst"><code><a href="../../../com/exedio/cope/StartsWithCondition.html" title="class in com.exedio.cope">StartsWithCondition</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/DataField.html#startsWithIfSupported-byte:A-">startsWithIfSupported</a></span>(byte[]&nbsp;value)</code>
 <div class="block">The result may cause an <a href="../../../com/exedio/cope/UnsupportedQueryException.html" title="class in com.exedio.cope"><code>UnsupportedQueryException</code></a> when used,
  if the field is stored in a <a href="../../../com/exedio/cope/Vault.html" title="annotation in com.exedio.cope"><code>vault</code></a>.</div>
 </td>
 </tr>
-<tr id="i20" class="altColor">
+<tr id="i24" class="altColor">
 <td class="colFirst"><code><a href="../../../com/exedio/cope/DataField.html" title="class in com.exedio.cope">DataField</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/DataField.html#toFinal--">toFinal</a></span>()</code>
 <div class="block">Returns a new Field,
@@ -327,25 +347,31 @@ extends <a href="../../../com/exedio/cope/Field.html" title="class in com.exedio
  by being final.</div>
 </td>
 </tr>
-<tr id="i21" class="rowColor">
+<tr id="i25" class="rowColor">
 <td class="colFirst"><code>static <a href="../../../com/exedio/cope/DataField.Value.html" title="class in com.exedio.cope">DataField.Value</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/DataField.html#toValue-byte:A-">toValue</a></span>(byte[]&nbsp;array)</code>
 <div class="block">Returns null, if <code>array</code> is null.</div>
 </td>
 </tr>
-<tr id="i22" class="altColor">
+<tr id="i26" class="altColor">
 <td class="colFirst"><code>static <a href="../../../com/exedio/cope/DataField.Value.html" title="class in com.exedio.cope">DataField.Value</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/DataField.html#toValue-java.io.File-">toValue</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a>&nbsp;file)</code>
 <div class="block">Returns null, if <code>file</code> is null.</div>
 </td>
 </tr>
-<tr id="i23" class="rowColor">
+<tr id="i27" class="rowColor">
 <td class="colFirst"><code>static <a href="../../../com/exedio/cope/DataField.Value.html" title="class in com.exedio.cope">DataField.Value</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/DataField.html#toValue-java.io.InputStream-">toValue</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/io/InputStream.html?is-external=true" title="class or interface in java.io">InputStream</a>&nbsp;stream)</code>
 <div class="block">Returns null, if <code>stream</code> is null.</div>
 </td>
 </tr>
-<tr id="i24" class="altColor">
+<tr id="i28" class="altColor">
+<td class="colFirst"><code>static <a href="../../../com/exedio/cope/DataField.Value.html" title="class in com.exedio.cope">DataField.Value</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/DataField.html#toValue-java.nio.file.Path-">toValue</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/nio/file/Path.html?is-external=true" title="class or interface in java.nio.file">Path</a>&nbsp;path)</code>
+<div class="block">Returns null, if <code>file</code> is null.</div>
+</td>
+</tr>
+<tr id="i29" class="rowColor">
 <td class="colFirst"><code>static <a href="../../../com/exedio/cope/DataField.Value.html" title="class in com.exedio.cope">DataField.Value</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/DataField.html#toValue-java.util.zip.ZipFile-java.util.zip.ZipEntry-">toValue</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/zip/ZipFile.html?is-external=true" title="class or interface in java.util.zip">ZipFile</a>&nbsp;file,
        <a href="https://docs.oracle.com/javase/8/docs/api/java/util/zip/ZipEntry.html?is-external=true" title="class or interface in java.util.zip">ZipEntry</a>&nbsp;entry)</code>
@@ -493,6 +519,15 @@ extends <a href="../../../com/exedio/cope/Field.html" title="class in com.exedio
 <pre>public&nbsp;long&nbsp;getMaximumLength()</pre>
 </li>
 </ul>
+<a name="isAnnotatedVault--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>isAnnotatedVault</h4>
+<pre>public&nbsp;boolean&nbsp;isAnnotatedVault()</pre>
+</li>
+</ul>
 <a name="min-int-long-">
 <!--   -->
 </a>
@@ -536,7 +571,7 @@ extends <a href="../../../com/exedio/cope/Field.html" title="class in com.exedio
 <ul class="blockList">
 <li class="blockList">
 <h4>get</h4>
-<pre>public&nbsp;com.exedio.cope.DataField.ArrayValue&nbsp;get(<a href="../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&nbsp;item)</pre>
+<pre>public&nbsp;<a href="../../../com/exedio/cope/DataField.Value.html" title="class in com.exedio.cope">DataField.Value</a>&nbsp;get(<a href="../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&nbsp;item)</pre>
 <div class="block">Returns the data of this persistent data field.
  Returns null, if there is no data for this field.</div>
 <dl>
@@ -567,15 +602,32 @@ public&nbsp;byte[]&nbsp;getArray(<a href="https://docs.oracle.com/javase/8/docs/
 <pre>public&nbsp;void&nbsp;get(<a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
                 <a href="../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&nbsp;item,
                 <a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
-                <a href="https://docs.oracle.com/javase/8/docs/api/java/io/OutputStream.html?is-external=true" title="class or interface in java.io">OutputStream</a>&nbsp;data)
+                <a href="https://docs.oracle.com/javase/8/docs/api/java/io/OutputStream.html?is-external=true" title="class or interface in java.io">OutputStream</a>&nbsp;sink)
          throws <a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
 <div class="block">Reads data for this persistent data field
  and writes it into the given stream.
  Does nothing, if there is no data for this field.</div>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/NullPointerException.html?is-external=true" title="class or interface in java.lang">NullPointerException</a></code> - if data is null.</dd>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code> - if writing data throws an IOException.</dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/NullPointerException.html?is-external=true" title="class or interface in java.lang">NullPointerException</a></code> - if <code>sink</code> is null.</dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code> - if writing <code>sink</code> throws an IOException.</dd>
+</dl>
+</li>
+</ul>
+<a name="get-com.exedio.cope.Item-java.nio.file.Path-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>get</h4>
+<pre>public&nbsp;void&nbsp;get(<a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+                <a href="../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&nbsp;item,
+                <a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+                <a href="https://docs.oracle.com/javase/8/docs/api/java/nio/file/Path.html?is-external=true" title="class or interface in java.nio.file">Path</a>&nbsp;sink)
+         throws <a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -588,15 +640,15 @@ public&nbsp;byte[]&nbsp;getArray(<a href="https://docs.oracle.com/javase/8/docs/
 <pre>public&nbsp;void&nbsp;get(<a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
                 <a href="../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&nbsp;item,
                 <a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
-                <a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a>&nbsp;data)
+                <a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a>&nbsp;sink)
          throws <a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
 <div class="block">Reads data for this persistent data field
  and writes it into the given file.
  Does nothing, if there is no data for this field.</div>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/NullPointerException.html?is-external=true" title="class or interface in java.lang">NullPointerException</a></code> - if data is null.</dd>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code> - if writing data throws an IOException.</dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/NullPointerException.html?is-external=true" title="class or interface in java.lang">NullPointerException</a></code> - if <code>sink</code> is null.</dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code> - if writing <code>sink</code> throws an IOException.</dd>
 </dl>
 </li>
 </ul>
@@ -662,6 +714,27 @@ public&nbsp;byte[]&nbsp;getArray(<a href="https://docs.oracle.com/javase/8/docs/
 </dl>
 </li>
 </ul>
+<a name="set-com.exedio.cope.Item-java.nio.file.Path-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>set</h4>
+<pre>public&nbsp;void&nbsp;set(<a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+                <a href="../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&nbsp;item,
+                <a href="https://docs.oracle.com/javase/8/docs/api/java/nio/file/Path.html?is-external=true" title="class or interface in java.nio.file">Path</a>&nbsp;data)
+         throws <a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<div class="block">Provides data for this persistent data field.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>data</code> - give null to remove data.</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="../../../com/exedio/cope/MandatoryViolationException.html" title="class in com.exedio.cope">MandatoryViolationException</a></code> - if data is null and field is <a href="../../../com/exedio/cope/Field.html#isMandatory--"><code>mandatory</code></a>.</dd>
+<dd><code><a href="../../../com/exedio/cope/DataLengthViolationException.html" title="class in com.exedio.cope">DataLengthViolationException</a></code> - if data is longer than <a href="../../../com/exedio/cope/DataField.html#getMaximumLength--"><code>getMaximumLength()</code></a></dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code> - if reading data throws an IOException.</dd>
+</dl>
+</li>
+</ul>
 <a name="set-com.exedio.cope.Item-java.io.File-">
 <!--   -->
 </a>
@@ -703,6 +776,16 @@ public&nbsp;byte[]&nbsp;getArray(<a href="https://docs.oracle.com/javase/8/docs/
 <div class="block">Returns null, if <code>stream</code> is null.</div>
 </li>
 </ul>
+<a name="toValue-java.nio.file.Path-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>toValue</h4>
+<pre>public static&nbsp;<a href="../../../com/exedio/cope/DataField.Value.html" title="class in com.exedio.cope">DataField.Value</a>&nbsp;toValue(<a href="https://docs.oracle.com/javase/8/docs/api/java/nio/file/Path.html?is-external=true" title="class or interface in java.nio.file">Path</a>&nbsp;path)</pre>
+<div class="block">Returns null, if <code>file</code> is null.</div>
+</li>
+</ul>
 <a name="toValue-java.io.File-">
 <!--   -->
 </a>
@@ -740,6 +823,15 @@ public&nbsp;byte[]&nbsp;getArray(<a href="https://docs.oracle.com/javase/8/docs/
 <li class="blockList">
 <h4>map</h4>
 <pre>public&nbsp;<a href="../../../com/exedio/cope/SetValue.html" title="class in com.exedio.cope">SetValue</a>&lt;?&gt;&nbsp;map(<a href="https://docs.oracle.com/javase/8/docs/api/java/io/InputStream.html?is-external=true" title="class or interface in java.io">InputStream</a>&nbsp;stream)</pre>
+</li>
+</ul>
+<a name="map-java.nio.file.Path-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>map</h4>
+<pre>public&nbsp;<a href="../../../com/exedio/cope/SetValue.html" title="class in com.exedio.cope">SetValue</a>&lt;?&gt;&nbsp;map(<a href="https://docs.oracle.com/javase/8/docs/api/java/nio/file/Path.html?is-external=true" title="class or interface in java.nio.file">Path</a>&nbsp;path)</pre>
 </li>
 </ul>
 <a name="map-java.io.File-">

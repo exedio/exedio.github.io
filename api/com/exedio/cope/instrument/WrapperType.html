@@ -145,6 +145,12 @@ public @interface <span class="memberNameLabel">WrapperType</span></pre>
 <div class="block">Overrides the visibility of the generated TYPE constant.</div>
 </td>
 </tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../com/exedio/cope/instrument/Visibility.html" title="enum in com.exedio.cope.instrument">Visibility</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/instrument/WrapperType.html#wildcardClass--">wildcardClass</a></span></code>
+<div class="block">Overrides the visibility of the generated inner class <code>classWildcard</code>.</div>
+</td>
+</tr>
 </table>
 </li>
 </ul>
@@ -160,7 +166,30 @@ public @interface <span class="memberNameLabel">WrapperType</span></pre>
 <!--   -->
 </a>
 <h3>Element Detail</h3>
-<a name="type--">
+<a name="wildcardClass--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>wildcardClass</h4>
+<pre>public abstract&nbsp;<a href="../../../../com/exedio/cope/instrument/Visibility.html" title="enum in com.exedio.cope.instrument">Visibility</a>&nbsp;wildcardClass</pre>
+<div class="block">Overrides the visibility of the generated inner class <code>classWildcard</code>.
+ This is needed to workaround
+ <a href="https://bugs.java.com/view_bug.do?bug_id=7101374">rawtypes warnings</a>
+ in the generated code, if the class has type parameters.
+ <p>
+ The visibility <a href="../../../../com/exedio/cope/instrument/Visibility.html#DEFAULT"><code>defaults</code></a> to
+ the visibility of the class.</div>
+<dl>
+<dt>Default:</dt>
+<dd>com.exedio.cope.instrument.Visibility.DEFAULT</dd>
+</dl>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="type--">
 <!--   -->
 </a>
 <ul class="blockList">

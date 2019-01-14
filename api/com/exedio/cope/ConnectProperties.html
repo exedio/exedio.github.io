@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":9,"i2":42,"i3":42,"i4":10,"i5":10,"i6":10,"i7":10,"i8":42,"i9":10,"i10":42,"i11":42,"i12":42,"i13":42,"i14":42,"i15":42,"i16":42,"i17":42,"i18":9,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":42,"i27":10,"i28":10,"i29":10,"i30":10,"i31":42,"i32":10,"i33":42,"i34":10,"i35":10,"i36":42,"i37":10,"i38":10,"i39":10,"i40":10};
+var methods = {"i0":9,"i1":9,"i2":42,"i3":42,"i4":10,"i5":10,"i6":10,"i7":10,"i8":42,"i9":10,"i10":42,"i11":42,"i12":42,"i13":42,"i14":42,"i15":42,"i16":42,"i17":42,"i18":9,"i19":10,"i20":9,"i21":10,"i22":10,"i23":10,"i24":42,"i25":10,"i26":10,"i27":10,"i28":42,"i29":42,"i30":10,"i31":10,"i32":10,"i33":42,"i34":10,"i35":10,"i36":10,"i37":42,"i38":10,"i39":10,"i40":42,"i41":10,"i42":10,"i43":10,"i44":42};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"],32:["t6","Deprecated Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -72,7 +72,7 @@ var activeTableTab = "activeTableTab";
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
 <li><a href="#nested.class.summary">Nested</a>&nbsp;|&nbsp;</li>
-<li><a href="#fields.inherited.from.class.com.exedio.cope.util.Properties">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#fields.inherited.from.class.com.exedio.cope.misc.FactoryProperties">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
 </ul>
@@ -100,7 +100,12 @@ var activeTableTab = "activeTableTab";
 <li><a href="../../../com/exedio/cope/util/Properties.html" title="class in com.exedio.cope.util">com.exedio.cope.util.Properties</a></li>
 <li>
 <ul class="inheritance">
+<li><a href="../../../com/exedio/cope/misc/FactoryProperties.html" title="class in com.exedio.cope.misc">com.exedio.cope.misc.FactoryProperties</a>&lt;<a href="../../../com/exedio/cope/ConnectProperties.Factory.html" title="class in com.exedio.cope">ConnectProperties.Factory</a>&gt;</li>
+<li>
+<ul class="inheritance">
 <li>com.exedio.cope.ConnectProperties</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -112,7 +117,7 @@ var activeTableTab = "activeTableTab";
 <hr>
 <br>
 <pre>public final class <span class="typeNameLabel">ConnectProperties</span>
-extends <a href="../../../com/exedio/cope/util/Properties.html" title="class in com.exedio.cope.util">Properties</a></pre>
+extends <a href="../../../com/exedio/cope/misc/FactoryProperties.html" title="class in com.exedio.cope.misc">FactoryProperties</a>&lt;<a href="../../../com/exedio/cope/ConnectProperties.Factory.html" title="class in com.exedio.cope">ConnectProperties.Factory</a>&gt;</pre>
 </li>
 </ul>
 </div>
@@ -141,7 +146,7 @@ extends <a href="../../../com/exedio/cope/util/Properties.html" title="class in 
 <!--   -->
 </a>
 <h3>Nested classes/interfaces inherited from class&nbsp;com.exedio.cope.util.<a href="../../../com/exedio/cope/util/Properties.html" title="class in com.exedio.cope.util">Properties</a></h3>
-<code><a href="../../../com/exedio/cope/util/Properties.Field.html" title="class in com.exedio.cope.util">Properties.Field</a>&lt;<a href="../../../com/exedio/cope/util/Properties.Field.html" title="type parameter in Properties.Field">E</a>&gt;, <a href="../../../com/exedio/cope/util/Properties.Probe.html" title="annotation in com.exedio.cope.util">Properties.Probe</a>, <a href="../../../com/exedio/cope/util/Properties.PropertiesField.html" title="class in com.exedio.cope.util">Properties.PropertiesField</a>&lt;<a href="../../../com/exedio/cope/util/Properties.PropertiesField.html" title="type parameter in Properties.PropertiesField">T</a> extends <a href="../../../com/exedio/cope/util/Properties.html" title="class in com.exedio.cope.util">Properties</a>&gt;, <a href="../../../com/exedio/cope/util/Properties.Source.html" title="interface in com.exedio.cope.util">Properties.Source</a></code></li>
+<code><a href="../../../com/exedio/cope/util/Properties.Field.html" title="class in com.exedio.cope.util">Properties.Field</a>&lt;<a href="../../../com/exedio/cope/util/Properties.Field.html" title="type parameter in Properties.Field">E</a>&gt;, <a href="../../../com/exedio/cope/util/Properties.Probe.html" title="annotation in com.exedio.cope.util">Properties.Probe</a>, <a href="../../../com/exedio/cope/util/Properties.ProbeAbortedException.html" title="class in com.exedio.cope.util">Properties.ProbeAbortedException</a>, <a href="../../../com/exedio/cope/util/Properties.PropertiesField.html" title="class in com.exedio.cope.util">Properties.PropertiesField</a>&lt;<a href="../../../com/exedio/cope/util/Properties.PropertiesField.html" title="type parameter in Properties.PropertiesField">T</a> extends <a href="../../../com/exedio/cope/util/Properties.html" title="class in com.exedio.cope.util">Properties</a>&gt;, <a href="../../../com/exedio/cope/util/Properties.Source.html" title="interface in com.exedio.cope.util">Properties.Source</a></code></li>
 </ul>
 </li>
 </ul>
@@ -151,6 +156,13 @@ extends <a href="../../../com/exedio/cope/util/Properties.html" title="class in 
 <!--   -->
 </a>
 <h3>Field Summary</h3>
+<ul class="blockList">
+<li class="blockList"><a name="fields.inherited.from.class.com.exedio.cope.misc.FactoryProperties">
+<!--   -->
+</a>
+<h3>Fields inherited from class&nbsp;com.exedio.cope.misc.<a href="../../../com/exedio/cope/misc/FactoryProperties.html" title="class in com.exedio.cope.misc">FactoryProperties</a></h3>
+<code><a href="../../../com/exedio/cope/misc/FactoryProperties.html#factory">factory</a></code></li>
+</ul>
 <ul class="blockList">
 <li class="blockList"><a name="fields.inherited.from.class.com.exedio.cope.util.Properties">
 <!--   -->
@@ -358,33 +370,45 @@ extends <a href="../../../com/exedio/cope/util/Properties.html" title="class in 
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/ConnectProperties.html#getDialect--">getDialect</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i20" class="altColor">
+<td class="colFirst"><code>static <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html?is-external=true" title="class or interface in java.lang">Iterable</a>&lt;?&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/ConnectProperties.html#getDialectUrlMappers--">getDialectUrlMappers</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i21" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/ConnectProperties.html#getFulltextIndex--">getFulltextIndex</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i21" class="rowColor">
+<tr id="i22" class="altColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/ConnectProperties.html#getItemCacheLimit--">getItemCacheLimit</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i22" class="altColor">
+<tr id="i23" class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/ConnectProperties.html#getMediaMaxAge--">getMediaMaxAge</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i23" class="rowColor">
+<tr id="i24" class="altColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/ConnectProperties.html#getMediaOffsetExpires--">getMediaOffsetExpires</a></span>()</code>
-<div class="block">Returns the offset, the Expires http header of media
- is set into the future.</div>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
+<div class="block"><span class="deprecationComment">Use <a href="../../../com/exedio/cope/ConnectProperties.html#getMediaMaxAge--"><code>getMediaMaxAge()</code></a> instead</span></div>
+</div>
 </td>
-</tr>
-<tr id="i24" class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/ConnectProperties.html#getMediaRootUrl--">getMediaRootUrl</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i25" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/ConnectProperties.html#getMediaUrlSecret--">getMediaUrlSecret</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/ConnectProperties.html#getMediaRootUrl--">getMediaRootUrl</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i26" class="altColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/time/Duration.html?is-external=true" title="class or interface in java.time">Duration</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/ConnectProperties.html#getMediaServletMaximumAge--">getMediaServletMaximumAge</a></span>()</code>
+<div class="block">Returns a duration suitable for
+ <a href="../../../com/exedio/cope/pattern/MediaServlet.html#getMaximumAge-com.exedio.cope.pattern.MediaPath-com.exedio.cope.Item-"><code>MediaServlet.getMaximumAge(com.exedio.cope.pattern.MediaPath, Item)</code></a>.</div>
+</td>
+</tr>
+<tr id="i27" class="rowColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/ConnectProperties.html#getMediaUrlSecret--">getMediaUrlSecret</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i28" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/ConnectProperties.html#getOracleVarchar--">getOracleVarchar</a></span>()</code>
 <div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
@@ -393,23 +417,29 @@ extends <a href="../../../com/exedio/cope/util/Properties.html" title="class in 
 </div>
 </td>
 </tr>
-<tr id="i27" class="rowColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/Callable.html?is-external=true" title="class or interface in java.util.concurrent">Callable</a>&lt;?&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/ConnectProperties.html#getProbeTest--">getProbeTest</a></span>()</code>&nbsp;</td>
-</tr>
-<tr id="i28" class="altColor">
-<td class="colFirst"><code>int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/ConnectProperties.html#getQueryCacheLimit--">getQueryCacheLimit</a></span>()</code>&nbsp;</td>
-</tr>
 <tr id="i29" class="rowColor">
-<td class="colFirst"><code>int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/ConnectProperties.html#getQueryCacheSizeLimit--">getQueryCacheSizeLimit</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/Callable.html?is-external=true" title="class or interface in java.util.concurrent">Callable</a>&lt;?&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/ConnectProperties.html#getProbeTest--">getProbeTest</a></span>()</code>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
+<div class="block"><span class="deprecationComment">Calling this method within methods overriding <a href="../../../com/exedio/cope/util/Properties.html#getTests--"><code>Properties.getTests()</code></a>
+ is no longer needed, as class <code>ConnectProperties</code>
+ provides <a href="../../../com/exedio/cope/util/Properties.Probe.html" title="annotation in com.exedio.cope.util"><code>probes</code></a> anyway.</span></div>
+</div>
+</td>
 </tr>
 <tr id="i30" class="altColor">
 <td class="colFirst"><code>int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/ConnectProperties.html#getQuerySearchSizeLimit--">getQuerySearchSizeLimit</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/ConnectProperties.html#getQueryCacheLimit--">getQueryCacheLimit</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i31" class="rowColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/ConnectProperties.html#getQueryCacheSizeLimit--">getQueryCacheSizeLimit</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i32" class="altColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/ConnectProperties.html#getQuerySearchSizeLimit--">getQuerySearchSizeLimit</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i33" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/ConnectProperties.html#getTransactionLog--">getTransactionLog</a></span>()</code>
 <div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
@@ -418,11 +448,19 @@ extends <a href="../../../com/exedio/cope/util/Properties.html" title="class in 
 </div>
 </td>
 </tr>
-<tr id="i32" class="altColor">
+<tr id="i34" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/ConnectProperties.html#getVaultAlgorithm--">getVaultAlgorithm</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i33" class="rowColor">
+<tr id="i35" class="rowColor">
+<td class="colFirst"><code><a href="../../../com/exedio/cope/vault/VaultProperties.html" title="class in com.exedio.cope.vault">VaultProperties</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/ConnectProperties.html#getVaultProperties--">getVaultProperties</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i36" class="altColor">
+<td class="colFirst"><code><a href="../../../com/exedio/cope/vault/VaultProperties.html" title="class in com.exedio.cope.vault">VaultProperties</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/ConnectProperties.html#getVaultPropertiesStrict--">getVaultPropertiesStrict</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i37" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/ConnectProperties.html#isLoggingEnabled--">isLoggingEnabled</a></span>()</code>
 <div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
@@ -430,15 +468,15 @@ extends <a href="../../../com/exedio/cope/util/Properties.html" title="class in 
 </div>
 </td>
 </tr>
-<tr id="i34" class="altColor">
+<tr id="i38" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/ConnectProperties.html#isSupportDisabledForEmptyStrings--">isSupportDisabledForEmptyStrings</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i35" class="rowColor">
+<tr id="i39" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/ConnectProperties.html#isSupportDisabledForNativeDate--">isSupportDisabledForNativeDate</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i36" class="altColor">
+<tr id="i40" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/ConnectProperties.html#isSupportDisabledForNotNull--">isSupportDisabledForNotNull</a></span>()</code>
 <div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
@@ -447,21 +485,27 @@ extends <a href="../../../com/exedio/cope/util/Properties.html" title="class in 
 </div>
 </td>
 </tr>
-<tr id="i37" class="rowColor">
+<tr id="i41" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/ConnectProperties.html#isSupportDisabledForPreparedStatements--">isSupportDisabledForPreparedStatements</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i38" class="altColor">
+<tr id="i42" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/ConnectProperties.html#isSupportDisabledForSemicolon--">isSupportDisabledForSemicolon</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i39" class="rowColor">
+<tr id="i43" class="rowColor">
 <td class="colFirst"><code><a href="../../../com/exedio/cope/pattern/MediaFingerprintOffset.html" title="class in com.exedio.cope.pattern">MediaFingerprintOffset</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/ConnectProperties.html#mediaFingerprintOffset--">mediaFingerprintOffset</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i40" class="altColor">
+<tr id="i44" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/ConnectProperties.html#probe--">probe</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/ConnectProperties.html#probe--">probe</a></span>()</code>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
+<div class="block"><span class="deprecationComment">Calling this method within <a href="../../../com/exedio/cope/util/Properties.Probe.html" title="annotation in com.exedio.cope.util"><code>probes</code></a>
+ is no longer needed, as class <code>ConnectProperties</code>
+ provides <a href="../../../com/exedio/cope/util/Properties.Probe.html" title="annotation in com.exedio.cope.util"><code>probes</code></a> anyway.</span></div>
+</div>
+</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -469,7 +513,7 @@ extends <a href="../../../com/exedio/cope/util/Properties.html" title="class in 
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;com.exedio.cope.util.<a href="../../../com/exedio/cope/util/Properties.html" title="class in com.exedio.cope.util">Properties</a></h3>
-<code><a href="../../../com/exedio/cope/util/Properties.html#ensureEquality-com.exedio.cope.util.Properties-">ensureEquality</a>, <a href="../../../com/exedio/cope/util/Properties.html#ensureValidity-java.lang.String...-">ensureValidity</a>, <a href="../../../com/exedio/cope/util/Properties.html#field-java.lang.String-boolean-">field</a>, <a href="../../../com/exedio/cope/util/Properties.html#field-java.lang.String-com.exedio.cope.util.Day-">field</a>, <a href="../../../com/exedio/cope/util/Properties.html#field-java.lang.String-int-int-">field</a>, <a href="../../../com/exedio/cope/util/Properties.html#field-java.lang.String-com.exedio.cope.util.Properties.Factory-">field</a>, <a href="../../../com/exedio/cope/util/Properties.html#field-java.lang.String-java.lang.String-">field</a>, <a href="../../../com/exedio/cope/util/Properties.html#fieldFile-java.lang.String-">fieldFile</a>, <a href="../../../com/exedio/cope/util/Properties.html#getContext--">getContext</a>, <a href="../../../com/exedio/cope/util/Properties.html#getContext-java.util.Properties-java.lang.String-">getContext</a>, <a href="../../../com/exedio/cope/util/Properties.html#getContext-java.lang.String-">getContext</a>, <a href="../../../com/exedio/cope/util/Properties.html#getField-java.lang.String-">getField</a>, <a href="../../../com/exedio/cope/util/Properties.html#getFields--">getFields</a>, <a href="../../../com/exedio/cope/util/Properties.html#getOrphanedKeys--">getOrphanedKeys</a>, <a href="../../../com/exedio/cope/util/Properties.html#getProbes--">getProbes</a>, <a href="../../../com/exedio/cope/util/Properties.html#getSource--">getSource</a>, <a href="../../../com/exedio/cope/util/Properties.html#getSource-java.io.File-">getSource</a>, <a href="../../../com/exedio/cope/util/Properties.html#getSource-java.util.Properties-java.lang.String-">getSource</a>, <a href="../../../com/exedio/cope/util/Properties.html#getSourceObject--">getSourceObject</a>, <a href="../../../com/exedio/cope/util/Properties.html#getSystemPropertyContext--">getSystemPropertyContext</a>, <a href="../../../com/exedio/cope/util/Properties.html#getSystemPropertySource--">getSystemPropertySource</a>, <a href="../../../com/exedio/cope/util/Properties.html#getTests--">getTests</a>, <a href="../../../com/exedio/cope/util/Properties.html#loadProperties-java.io.File-">loadProperties</a>, <a href="../../../com/exedio/cope/util/Properties.html#newException-java.lang.String-java.lang.String-">newException</a>, <a href="../../../com/exedio/cope/util/Properties.html#newException-java.lang.String-java.lang.String-java.lang.Throwable-">newException</a>, <a href="../../../com/exedio/cope/util/Properties.html#valnp-java.lang.String-com.exedio.cope.util.Properties.Factory-">valnp</a>, <a href="../../../com/exedio/cope/util/Properties.html#value-java.lang.String-boolean-">value</a>, <a href="../../../com/exedio/cope/util/Properties.html#value-java.lang.String-boolean-com.exedio.cope.util.Properties.Factory-">value</a>, <a href="../../../com/exedio/cope/util/Properties.html#value-java.lang.String-java.nio.charset.Charset-">value</a>, <a href="../../../com/exedio/cope/util/Properties.html#value-java.lang.String-java.lang.Class-">value</a>, <a href="../../../com/exedio/cope/util/Properties.html#value-java.lang.String-com.exedio.cope.util.Day-">value</a>, <a href="../../../com/exedio/cope/util/Properties.html#value-java.lang.String-java.time.Duration-java.time.Duration-">value</a>, <a href="../../../com/exedio/cope/util/Properties.html#value-java.lang.String-java.time.Duration-java.time.Duration-java.time.Duration-">value</a>, <a href="../../../com/exedio/cope/util/Properties.html#value-java.lang.String-E-">value</a>, <a href="../../../com/exedio/cope/util/Properties.html#value-java.lang.String-int-int-">value</a>, <a href="../../../com/exedio/cope/util/Properties.html#value-java.lang.String-com.exedio.cope.util.Properties.Factory-">value</a>, <a href="../../../com/exedio/cope/util/Properties.html#value-java.lang.String-java.lang.String-">value</a>, <a href="../../../com/exedio/cope/util/Properties.html#value-java.lang.String-java.time.ZoneId-">value</a>, <a href="../../../com/exedio/cope/util/Properties.html#valueFile-java.lang.String-">valueFile</a>, <a href="../../../com/exedio/cope/util/Properties.html#valueHidden-java.lang.String-java.lang.String-">valueHidden</a>, <a href="../../../com/exedio/cope/util/Properties.html#valueMessageDigest-java.lang.String-java.lang.String-">valueMessageDigest</a>, <a href="../../../com/exedio/cope/util/Properties.html#valueService-java.lang.String-java.lang.Class-java.lang.Class-">valueService</a>, <a href="../../../com/exedio/cope/util/Properties.html#valueService-java.lang.String-java.lang.String-java.lang.Class-java.lang.Class-">valueService</a></code></li>
+<code><a href="../../../com/exedio/cope/util/Properties.html#ensureEquality-com.exedio.cope.util.Properties-">ensureEquality</a>, <a href="../../../com/exedio/cope/util/Properties.html#ensureValidity-java.lang.String...-">ensureValidity</a>, <a href="../../../com/exedio/cope/util/Properties.html#field-java.lang.String-boolean-">field</a>, <a href="../../../com/exedio/cope/util/Properties.html#field-java.lang.String-com.exedio.cope.util.Day-">field</a>, <a href="../../../com/exedio/cope/util/Properties.html#field-java.lang.String-int-int-">field</a>, <a href="../../../com/exedio/cope/util/Properties.html#field-java.lang.String-com.exedio.cope.util.Properties.Factory-">field</a>, <a href="../../../com/exedio/cope/util/Properties.html#field-java.lang.String-java.lang.String-">field</a>, <a href="../../../com/exedio/cope/util/Properties.html#fieldFile-java.lang.String-">fieldFile</a>, <a href="../../../com/exedio/cope/util/Properties.html#getContext--">getContext</a>, <a href="../../../com/exedio/cope/util/Properties.html#getContext-java.util.Properties-java.lang.String-">getContext</a>, <a href="../../../com/exedio/cope/util/Properties.html#getContext-java.lang.String-">getContext</a>, <a href="../../../com/exedio/cope/util/Properties.html#getField-java.lang.String-">getField</a>, <a href="../../../com/exedio/cope/util/Properties.html#getFields--">getFields</a>, <a href="../../../com/exedio/cope/util/Properties.html#getOrphanedKeys--">getOrphanedKeys</a>, <a href="../../../com/exedio/cope/util/Properties.html#getProbes--">getProbes</a>, <a href="../../../com/exedio/cope/util/Properties.html#getSource--">getSource</a>, <a href="../../../com/exedio/cope/util/Properties.html#getSource-java.io.File-">getSource</a>, <a href="../../../com/exedio/cope/util/Properties.html#getSource-java.util.Properties-java.lang.String-">getSource</a>, <a href="../../../com/exedio/cope/util/Properties.html#getSourceObject--">getSourceObject</a>, <a href="../../../com/exedio/cope/util/Properties.html#getSystemPropertyContext--">getSystemPropertyContext</a>, <a href="../../../com/exedio/cope/util/Properties.html#getSystemPropertySource--">getSystemPropertySource</a>, <a href="../../../com/exedio/cope/util/Properties.html#getTests--">getTests</a>, <a href="../../../com/exedio/cope/util/Properties.html#loadProperties-java.io.File-">loadProperties</a>, <a href="../../../com/exedio/cope/util/Properties.html#newException-java.lang.String-java.lang.String-">newException</a>, <a href="../../../com/exedio/cope/util/Properties.html#newException-java.lang.String-java.lang.String-java.lang.Throwable-">newException</a>, <a href="../../../com/exedio/cope/util/Properties.html#newProbeAbortedException-java.lang.String-">newProbeAbortedException</a>, <a href="../../../com/exedio/cope/util/Properties.html#valnp-java.lang.String-com.exedio.cope.util.Properties.Factory-">valnp</a>, <a href="../../../com/exedio/cope/util/Properties.html#value-java.lang.String-boolean-">value</a>, <a href="../../../com/exedio/cope/util/Properties.html#value-java.lang.String-boolean-com.exedio.cope.util.Properties.Factory-">value</a>, <a href="../../../com/exedio/cope/util/Properties.html#value-java.lang.String-java.nio.charset.Charset-">value</a>, <a href="../../../com/exedio/cope/util/Properties.html#value-java.lang.String-java.lang.Class-">value</a>, <a href="../../../com/exedio/cope/util/Properties.html#value-java.lang.String-com.exedio.cope.util.Day-">value</a>, <a href="../../../com/exedio/cope/util/Properties.html#value-java.lang.String-java.time.Duration-java.time.Duration-">value</a>, <a href="../../../com/exedio/cope/util/Properties.html#value-java.lang.String-java.time.Duration-java.time.Duration-java.time.Duration-">value</a>, <a href="../../../com/exedio/cope/util/Properties.html#value-java.lang.String-E-">value</a>, <a href="../../../com/exedio/cope/util/Properties.html#value-java.lang.String-int-int-">value</a>, <a href="../../../com/exedio/cope/util/Properties.html#value-java.lang.String-com.exedio.cope.util.Properties.Factory-">value</a>, <a href="../../../com/exedio/cope/util/Properties.html#value-java.lang.String-java.lang.String-">value</a>, <a href="../../../com/exedio/cope/util/Properties.html#value-java.lang.String-java.time.ZoneId-">value</a>, <a href="../../../com/exedio/cope/util/Properties.html#valueFile-java.lang.String-">valueFile</a>, <a href="../../../com/exedio/cope/util/Properties.html#valueHidden-java.lang.String-java.lang.String-">valueHidden</a>, <a href="../../../com/exedio/cope/util/Properties.html#valueMessageDigest-java.lang.String-java.lang.String-">valueMessageDigest</a>, <a href="../../../com/exedio/cope/util/Properties.html#valuePath-java.lang.String-">valuePath</a>, <a href="../../../com/exedio/cope/util/Properties.html#valueService-java.lang.String-java.lang.Class-java.lang.Class-java.lang.Class-">valueService</a>, <a href="../../../com/exedio/cope/util/Properties.html#valueService-java.lang.String-java.lang.Class-java.lang.Class-">valueService</a>, <a href="../../../com/exedio/cope/util/Properties.html#valueService-java.lang.String-java.lang.String-java.lang.Class-java.lang.Class-">valueService</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
@@ -676,6 +720,25 @@ public&nbsp;ConnectProperties(<a href="../../../com/exedio/cope/util/Properties.
 <pre>public&nbsp;int&nbsp;getQueryCacheSizeLimit()</pre>
 </li>
 </ul>
+<a name="getVaultProperties--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getVaultProperties</h4>
+<pre>public&nbsp;<a href="../../../com/exedio/cope/vault/VaultProperties.html" title="class in com.exedio.cope.vault">VaultProperties</a>&nbsp;getVaultProperties()</pre>
+</li>
+</ul>
+<a name="getVaultPropertiesStrict--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getVaultPropertiesStrict</h4>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+public&nbsp;<a href="../../../com/exedio/cope/vault/VaultProperties.html" title="class in com.exedio.cope.vault">VaultProperties</a>&nbsp;getVaultPropertiesStrict()</pre>
+</li>
+</ul>
 <a name="getVaultAlgorithm--">
 <!--   -->
 </a>
@@ -700,19 +763,15 @@ public&nbsp;ConnectProperties(<a href="../../../com/exedio/cope/util/Properties.
 <ul class="blockList">
 <li class="blockList">
 <h4>getMediaOffsetExpires</h4>
-<pre>public&nbsp;int&nbsp;getMediaOffsetExpires()</pre>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</a>
+public&nbsp;int&nbsp;getMediaOffsetExpires()</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment">Use <a href="../../../com/exedio/cope/ConnectProperties.html#getMediaMaxAge--"><code>getMediaMaxAge()</code></a> instead</span></div>
 <div class="block">Returns the offset, the Expires http header of media
  is set into the future.
  Together with a http reverse proxy this ensures,
  that for that time no request for that data will reach the servlet.
  This may reduce the load on the server.
- If zero, no Expires header is sent.
-
- TODO: make this configurable per media as well.</div>
-<dl>
-<dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../com/exedio/cope/ConnectProperties.html#getMediaMaxAge--"><code>getMediaMaxAge()</code></a></dd>
-</dl>
+ If zero, no Expires header is sent.</div>
 </li>
 </ul>
 <a name="getMediaMaxAge--">
@@ -722,10 +781,17 @@ public&nbsp;ConnectProperties(<a href="../../../com/exedio/cope/util/Properties.
 <li class="blockList">
 <h4>getMediaMaxAge</h4>
 <pre>public&nbsp;int&nbsp;getMediaMaxAge()</pre>
-<dl>
-<dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../com/exedio/cope/ConnectProperties.html#getMediaOffsetExpires--"><code>getMediaOffsetExpires()</code></a></dd>
-</dl>
+</li>
+</ul>
+<a name="getMediaServletMaximumAge--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getMediaServletMaximumAge</h4>
+<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/time/Duration.html?is-external=true" title="class or interface in java.time">Duration</a>&nbsp;getMediaServletMaximumAge()</pre>
+<div class="block">Returns a duration suitable for
+ <a href="../../../com/exedio/cope/pattern/MediaServlet.html#getMaximumAge-com.exedio.cope.pattern.MediaPath-com.exedio.cope.Item-"><code>MediaServlet.getMaximumAge(com.exedio.cope.pattern.MediaPath, Item)</code></a>.</div>
 </li>
 </ul>
 <a name="mediaFingerprintOffset--">
@@ -773,6 +839,15 @@ public&nbsp;ConnectProperties(<a href="../../../com/exedio/cope/util/Properties.
 <pre>public static&nbsp;<a href="../../../com/exedio/cope/ConnectProperties.html" title="class in com.exedio.cope">ConnectProperties</a>&nbsp;create(<a href="../../../com/exedio/cope/util/Properties.Source.html" title="interface in com.exedio.cope.util">Properties.Source</a>&nbsp;source)</pre>
 </li>
 </ul>
+<a name="getDialectUrlMappers--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getDialectUrlMappers</h4>
+<pre>public static&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html?is-external=true" title="class or interface in java.lang">Iterable</a>&lt;?&gt;&nbsp;getDialectUrlMappers()</pre>
+</li>
+</ul>
 <a name="getDialect--">
 <!--   -->
 </a>
@@ -815,7 +890,11 @@ public&nbsp;ConnectProperties(<a href="../../../com/exedio/cope/util/Properties.
 <ul class="blockList">
 <li class="blockList">
 <h4>getProbeTest</h4>
-<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/Callable.html?is-external=true" title="class or interface in java.util.concurrent">Callable</a>&lt;?&gt;&nbsp;getProbeTest()</pre>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</a>
+public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/Callable.html?is-external=true" title="class or interface in java.util.concurrent">Callable</a>&lt;?&gt;&nbsp;getProbeTest()</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment">Calling this method within methods overriding <a href="../../../com/exedio/cope/util/Properties.html#getTests--"><code>Properties.getTests()</code></a>
+ is no longer needed, as class <code>ConnectProperties</code>
+ provides <a href="../../../com/exedio/cope/util/Properties.Probe.html" title="annotation in com.exedio.cope.util"><code>probes</code></a> anyway.</span></div>
 </li>
 </ul>
 <a name="probe--">
@@ -824,7 +903,11 @@ public&nbsp;ConnectProperties(<a href="../../../com/exedio/cope/util/Properties.
 <ul class="blockList">
 <li class="blockList">
 <h4>probe</h4>
-<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;probe()</pre>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</a>
+public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;probe()</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment">Calling this method within <a href="../../../com/exedio/cope/util/Properties.Probe.html" title="annotation in com.exedio.cope.util"><code>probes</code></a>
+ is no longer needed, as class <code>ConnectProperties</code>
+ provides <a href="../../../com/exedio/cope/util/Properties.Probe.html" title="annotation in com.exedio.cope.util"><code>probes</code></a> anyway.</span></div>
 </li>
 </ul>
 <a name="getConnectionUser--">
@@ -1048,7 +1131,7 @@ public&nbsp;boolean&nbsp;isSupportDisabledForNotNull()</pre>
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
 <li><a href="#nested.class.summary">Nested</a>&nbsp;|&nbsp;</li>
-<li><a href="#fields.inherited.from.class.com.exedio.cope.util.Properties">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#fields.inherited.from.class.com.exedio.cope.misc.FactoryProperties">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
 </ul>

@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -125,9 +125,9 @@ extends <a href="https://docs.oracle.com/javaee/1.4/api/javax/servlet/http/HttpS
 <div class="block">A servlet providing access to the contents of <a href="../../../../com/exedio/cope/pattern/MediaPath.html" title="class in com.exedio.cope.pattern"><code>MediaPath</code></a>
  and its subclasses.
 
- In order to use it, you have to deploy the servlet in your <tt>web.xml</tt>,
+ In order to use it, you have to deploy the servlet in your <code>web.xml</code>,
  providing the name of the cope model via an init-parameter.
- Typically, your <tt>web.xml</tt> would contain a snippet like this:
+ Typically, your <code>web.xml</code> would contain a snippet like this:
 
  <pre>
  &lt;servlet&gt;
@@ -202,14 +202,23 @@ extends <a href="https://docs.oracle.com/javaee/1.4/api/javax/servlet/http/HttpS
      <a href="https://docs.oracle.com/javaee/1.4/api/javax/servlet/http/HttpServletResponse.html?is-external=true" title="class or interface in javax.servlet.http">HttpServletResponse</a>&nbsp;response)</code>&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/MediaServlet.html#init--">init</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code>protected <a href="https://docs.oracle.com/javase/8/docs/api/java/time/Duration.html?is-external=true" title="class or interface in java.time">Duration</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/MediaServlet.html#getMaximumAge-com.exedio.cope.pattern.MediaPath-com.exedio.cope.Item-">getMaximumAge</a></span>(<a href="../../../../com/exedio/cope/pattern/MediaPath.html" title="class in com.exedio.cope.pattern">MediaPath</a>&nbsp;path,
+             <a href="../../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&nbsp;item)</code>
+<div class="block">Let this method return the maximum age, that will be put into header
+ <code>Cache-Control: max-age=&lt;seconds&gt;</code>
+ of the response.</div>
+</td>
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/MediaServlet.html#initConnected-com.exedio.cope.Model-">initConnected</a></span>(<a href="../../../../com/exedio/cope/Model.html" title="class in com.exedio.cope">Model</a>&nbsp;model)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/MediaServlet.html#init--">init</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i5" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/MediaServlet.html#initConnected-com.exedio.cope.Model-">initConnected</a></span>(<a href="../../../../com/exedio/cope/Model.html" title="class in com.exedio.cope">Model</a>&nbsp;model)</code>&nbsp;</td>
+</tr>
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>protected boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/MediaServlet.html#isAccessControlAllowOriginWildcard-com.exedio.cope.pattern.MediaPath-com.exedio.cope.Item-">isAccessControlAllowOriginWildcard</a></span>(<a href="../../../../com/exedio/cope/pattern/MediaPath.html" title="class in com.exedio.cope.pattern">MediaPath</a>&nbsp;path,
                                   <a href="../../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&nbsp;item)</code>
@@ -218,7 +227,16 @@ extends <a href="https://docs.oracle.com/javaee/1.4/api/javax/servlet/http/HttpS
  to the response.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
+<td class="colFirst"><code>protected boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/MediaServlet.html#isCacheControlPrivate-com.exedio.cope.pattern.MediaPath-com.exedio.cope.Item-">isCacheControlPrivate</a></span>(<a href="../../../../com/exedio/cope/pattern/MediaPath.html" title="class in com.exedio.cope.pattern">MediaPath</a>&nbsp;path,
+                     <a href="../../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&nbsp;item)</code>
+<div class="block">Let this method return true, if you want to add a header
+ <code>Cache-Control: private</code>
+ to the response.</div>
+</td>
+</tr>
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>protected void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/MediaServlet.html#onException-javax.servlet.http.HttpServletRequest-java.lang.Exception-">onException</a></span>(<a href="https://docs.oracle.com/javaee/1.4/api/javax/servlet/http/HttpServletRequest.html?is-external=true" title="class or interface in javax.servlet.http">HttpServletRequest</a>&nbsp;request,
            <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Exception.html?is-external=true" title="class or interface in java.lang">Exception</a>&nbsp;exception)</code>&nbsp;</td>
@@ -333,6 +351,64 @@ extends <a href="https://docs.oracle.com/javaee/1.4/api/javax/servlet/http/HttpS
 </dl>
 </li>
 </ul>
+<a name="getMaximumAge-com.exedio.cope.pattern.MediaPath-com.exedio.cope.Item-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getMaximumAge</h4>
+<pre>protected&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/time/Duration.html?is-external=true" title="class or interface in java.time">Duration</a>&nbsp;getMaximumAge(<a href="../../../../com/exedio/cope/pattern/MediaPath.html" title="class in com.exedio.cope.pattern">MediaPath</a>&nbsp;path,
+                                 <a href="../../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&nbsp;item)</pre>
+<div class="block">Let this method return the maximum age, that will be put into header
+ <code>Cache-Control: max-age=&lt;seconds&gt;</code>
+ of the response.
+ If method returns null, no maximum age is sent.
+ Negative values are treated like zero.
+ Fractional seconds are ignored.
+ This method is not called for @<a href="../../../../com/exedio/cope/pattern/UrlFingerPrinting.html" title="annotation in com.exedio.cope.pattern"><code>UrlFingerPrinting</code></a> pathes -
+ such pathes do send a maximum age of 363 days.
+ <p>
+ The default implementation returns
+ <a href="../../../../com/exedio/cope/ConnectProperties.html#getMediaServletMaximumAge--"><code>ConnectProperties.getMediaServletMaximumAge()</code></a>.
+ <p>
+ See
+ RFC 2616 Section 14.9.3 Modifications of the Basic Expiration Mechanism,
+ https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Expiration.html#ExpirationDownloadDist .</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>path</code> - the media path of the current request</dd>
+<dd><code>item</code> - the item of the current request</dd>
+</dl>
+</li>
+</ul>
+<a name="isCacheControlPrivate-com.exedio.cope.pattern.MediaPath-com.exedio.cope.Item-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>isCacheControlPrivate</h4>
+<pre>protected&nbsp;boolean&nbsp;isCacheControlPrivate(<a href="../../../../com/exedio/cope/pattern/MediaPath.html" title="class in com.exedio.cope.pattern">MediaPath</a>&nbsp;path,
+                                        <a href="../../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&nbsp;item)</pre>
+<div class="block">Let this method return true, if you want to add a header
+ <code>Cache-Control: private</code>
+ to the response.
+ This forbids shared caches, such as company proxies to cache
+ such urls.
+ <p>
+ The default implementation returns true iff
+ <a href="../../../../com/exedio/cope/pattern/MediaPath.html#isUrlGuessingPrevented--"><code>url guessing</code></a> is prevented.
+ <p>
+ See
+ RFC 2616 Section 14.9.1 What is Cacheable,
+ https://httpd.apache.org/docs/2.2/mod/mod_cache.html#cachestoreprivate , and
+ https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Expiration.html#ExpirationDownloadDist .</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>path</code> - the media path of the current request</dd>
+<dd><code>item</code> - the item of the current request</dd>
+</dl>
+</li>
+</ul>
 <a name="isAccessControlAllowOriginWildcard-com.exedio.cope.pattern.MediaPath-com.exedio.cope.Item-">
 <!--   -->
 </a>
@@ -363,7 +439,7 @@ extends <a href="https://docs.oracle.com/javaee/1.4/api/javax/servlet/http/HttpS
                                              <a href="../../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&nbsp;item)</pre>
 <div class="block">Tomcat automatically adds <code>Content-Length: 0</code> to the response
  if the response body is smaller than the buffer size.
- Unfortunatly it does so for 304 responses as well.
+ Unfortunately it does so for 304 responses as well.
  Apache 2.4 does not accept 304 responses with a <code>Content-Length</code>
  unequal to the original 200 response.
  The call to <a href="https://docs.oracle.com/javaee/1.4/api/javax/servlet/ServletResponse.html?is-external=true#flushBuffer--" title="class or interface in javax.servlet"><code>flushBuffer</code></a> prevents Tomcat from adding

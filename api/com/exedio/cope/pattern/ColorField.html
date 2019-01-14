@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":9,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":9};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":9,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":9};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -47,7 +47,7 @@ var activeTableTab = "activeTableTab";
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../../com/exedio/cope/pattern/ColorAlphaViolationException.html" title="class in com.exedio.cope.pattern"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../../com/exedio/cope/pattern/Composite.html" title="class in com.exedio.cope.pattern"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../com/exedio/cope/pattern/ColorFunction.html" title="interface in com.exedio.cope.pattern"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../index.html?com/exedio/cope/pattern/ColorField.html" target="_top">Frames</a></li>
@@ -116,13 +116,13 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><a href="../../../../com/exedio/cope/Copyable.html" title="interface in com.exedio.cope">Copyable</a>, <a href="../../../../com/exedio/cope/Settable.html" title="interface in com.exedio.cope">Settable</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/awt/Color.html?is-external=true" title="class or interface in java.awt">Color</a>&gt;, <a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializable.html?is-external=true" title="class or interface in java.io">Serializable</a></dd>
+<dd><a href="../../../../com/exedio/cope/Copyable.html" title="interface in com.exedio.cope">Copyable</a>, <a href="../../../../com/exedio/cope/pattern/ColorFunction.html" title="interface in com.exedio.cope.pattern">ColorFunction</a>, <a href="../../../../com/exedio/cope/Settable.html" title="interface in com.exedio.cope">Settable</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/awt/Color.html?is-external=true" title="class or interface in java.awt">Color</a>&gt;, <a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializable.html?is-external=true" title="class or interface in java.io">Serializable</a></dd>
 </dl>
 <hr>
 <br>
 <pre>public final class <span class="typeNameLabel">ColorField</span>
 extends <a href="../../../../com/exedio/cope/Pattern.html" title="class in com.exedio.cope">Pattern</a>
-implements <a href="../../../../com/exedio/cope/Settable.html" title="interface in com.exedio.cope">Settable</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/awt/Color.html?is-external=true" title="class or interface in java.awt">Color</a>&gt;, <a href="../../../../com/exedio/cope/Copyable.html" title="interface in com.exedio.cope">Copyable</a></pre>
+implements <a href="../../../../com/exedio/cope/Settable.html" title="interface in com.exedio.cope">Settable</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/awt/Color.html?is-external=true" title="class or interface in java.awt">Color</a>&gt;, <a href="../../../../com/exedio/cope/Copyable.html" title="interface in com.exedio.cope">Copyable</a>, <a href="../../../../com/exedio/cope/pattern/ColorFunction.html" title="interface in com.exedio.cope.pattern">ColorFunction</a></pre>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../../serialized-form.html#com.exedio.cope.pattern.ColorField">Serialized Form</a></dd>
@@ -167,49 +167,53 @@ implements <a href="../../../../com/exedio/cope/Settable.html" title="interface 
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/ColorField.html#allowAlpha--">allowAlpha</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code><a href="../../../../com/exedio/cope/pattern/ColorField.html" title="class in com.exedio.cope.pattern">ColorField</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/ColorField.html#copy-com.exedio.cope.CopyMapper-">copy</a></span>(<a href="../../../../com/exedio/cope/CopyMapper.html" title="class in com.exedio.cope">CopyMapper</a>&nbsp;mapper)</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../../../com/exedio/cope/pattern/ColorFunction.html" title="interface in com.exedio.cope.pattern">ColorFunction</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/ColorField.html#bind-com.exedio.cope.Join-">bind</a></span>(<a href="../../../../com/exedio/cope/Join.html" title="class in com.exedio.cope">Join</a>&nbsp;join)</code>&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="../../../../com/exedio/cope/pattern/ColorField.html" title="class in com.exedio.cope.pattern">ColorField</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/ColorField.html#defaultTo-java.awt.Color-">defaultTo</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/awt/Color.html?is-external=true" title="class or interface in java.awt">Color</a>&nbsp;defaultConstant)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/ColorField.html#copy-com.exedio.cope.CopyMapper-">copy</a></span>(<a href="../../../../com/exedio/cope/CopyMapper.html" title="class in com.exedio.cope">CopyMapper</a>&nbsp;mapper)</code>&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
+<td class="colFirst"><code><a href="../../../../com/exedio/cope/pattern/ColorField.html" title="class in com.exedio.cope.pattern">ColorField</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/ColorField.html#defaultTo-java.awt.Color-">defaultTo</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/awt/Color.html?is-external=true" title="class or interface in java.awt">Color</a>&nbsp;defaultConstant)</code>&nbsp;</td>
+</tr>
+<tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="../../../../com/exedio/cope/Condition.html" title="class in com.exedio.cope">Condition</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/ColorField.html#equal-java.awt.Color-">equal</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/awt/Color.html?is-external=true" title="class or interface in java.awt">Color</a>&nbsp;value)</code>&nbsp;</td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code><a href="../../../../com/exedio/cope/SetValue.html" title="class in com.exedio.cope">SetValue</a>&lt;?&gt;[]</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/ColorField.html#execute-java.awt.Color-com.exedio.cope.Item-">execute</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/awt/Color.html?is-external=true" title="class or interface in java.awt">Color</a>&nbsp;value,
        <a href="../../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&nbsp;exceptionItem)</code>&nbsp;</td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>static <a href="https://docs.oracle.com/javase/8/docs/api/java/awt/Color.html?is-external=true" title="class or interface in java.awt">Color</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/ColorField.html#fromRGB-int-">fromRGB</a></span>(int&nbsp;rgb)</code>
 <div class="block">Converts a value for field <a href="../../../../com/exedio/cope/pattern/ColorField.html#getRGB--"><code>getRGB()</code></a>
  into a color.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/awt/Color.html?is-external=true" title="class or interface in java.awt">Color</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/ColorField.html#get-com.exedio.cope.Item-">get</a></span>(<a href="../../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&nbsp;item)</code>&nbsp;</td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/awt/Color.html?is-external=true" title="class or interface in java.awt">Color</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/ColorField.html#getDefaultConstant--">getDefaultConstant</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;? extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang">Throwable</a>&gt;&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/ColorField.html#getInitialExceptions--">getInitialExceptions</a></span>()</code>
 <div class="block">Returns the exceptions possibly thrown,
  when setting a value for this settable.</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;?&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/ColorField.html#getInitialType--">getInitialType</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code><a href="../../../../com/exedio/cope/IntegerField.html" title="class in com.exedio.cope">IntegerField</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/ColorField.html#getRGB--">getRGB</a></span>()</code>
 <div class="block">Returns the field containing <b>almost</b>
@@ -217,67 +221,67 @@ implements <a href="../../../../com/exedio/cope/Settable.html" title="interface 
  of the persisted color.</div>
 </td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/ColorField.html#isAlphaAllowed--">isAlphaAllowed</a></span>()</code>
 <div class="block">If this method returns false, this ColorField
  allows opaque colors only.</div>
 </td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/ColorField.html#isFinal--">isFinal</a></span>()</code>
 <div class="block">Returns true, if a value for the settable can be specified
  on the creation of an item only, thus cannot be modified later.</div>
 </td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/ColorField.html#isInitial--">isInitial</a></span>()</code>
 <div class="block">Returns true, if a value for the settable should be specified
  on the creation of an item.</div>
 </td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/ColorField.html#isMandatory--">isMandatory</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code><a href="../../../../com/exedio/cope/IsNullCondition.html" title="class in com.exedio.cope">IsNullCondition</a>&lt;?&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/ColorField.html#isNotNull--">isNotNull</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i16" class="altColor">
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code><a href="../../../../com/exedio/cope/Condition.html" title="class in com.exedio.cope">Condition</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/ColorField.html#isNotOpaque--">isNotOpaque</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i17" class="rowColor">
+<tr id="i18" class="altColor">
 <td class="colFirst"><code><a href="../../../../com/exedio/cope/IsNullCondition.html" title="class in com.exedio.cope">IsNullCondition</a>&lt;?&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/ColorField.html#isNull--">isNull</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i18" class="altColor">
+<tr id="i19" class="rowColor">
 <td class="colFirst"><code><a href="../../../../com/exedio/cope/Condition.html" title="class in com.exedio.cope">Condition</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/ColorField.html#isOpaque--">isOpaque</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i19" class="rowColor">
+<tr id="i20" class="altColor">
 <td class="colFirst"><code><a href="../../../../com/exedio/cope/Condition.html" title="class in com.exedio.cope">Condition</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/ColorField.html#notEqual-java.awt.Color-">notEqual</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/awt/Color.html?is-external=true" title="class or interface in java.awt">Color</a>&nbsp;value)</code>
 <div class="block">NOT EQUAL Condition.</div>
 </td>
 </tr>
-<tr id="i20" class="altColor">
+<tr id="i21" class="rowColor">
 <td class="colFirst"><code><a href="../../../../com/exedio/cope/pattern/ColorField.html" title="class in com.exedio.cope.pattern">ColorField</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/ColorField.html#optional--">optional</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i21" class="rowColor">
+<tr id="i22" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/ColorField.html#set-com.exedio.cope.Item-java.awt.Color-">set</a></span>(<a href="../../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&nbsp;item,
    <a href="https://docs.oracle.com/javase/8/docs/api/java/awt/Color.html?is-external=true" title="class or interface in java.awt">Color</a>&nbsp;value)</code>&nbsp;</td>
 </tr>
-<tr id="i22" class="altColor">
+<tr id="i23" class="rowColor">
 <td class="colFirst"><code><a href="../../../../com/exedio/cope/pattern/ColorField.html" title="class in com.exedio.cope.pattern">ColorField</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/ColorField.html#toFinal--">toFinal</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i23" class="rowColor">
+<tr id="i24" class="altColor">
 <td class="colFirst"><code>static int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/ColorField.html#toRGB-java.awt.Color-">toRGB</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/awt/Color.html?is-external=true" title="class or interface in java.awt">Color</a>&nbsp;color)</code>
 <div class="block">Returns the value for field <a href="../../../../com/exedio/cope/pattern/ColorField.html#getRGB--"><code>getRGB()</code></a>
@@ -290,7 +294,7 @@ implements <a href="../../../../com/exedio/cope/Settable.html" title="interface 
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;com.exedio.cope.<a href="../../../../com/exedio/cope/Pattern.html" title="class in com.exedio.cope">Pattern</a></h3>
-<code><a href="../../../../com/exedio/cope/Pattern.html#addSource-com.exedio.cope.Feature-java.lang.String-">addSource</a>, <a href="../../../../com/exedio/cope/Pattern.html#addSource-com.exedio.cope.Feature-java.lang.String-java.lang.reflect.AnnotatedElement-">addSource</a>, <a href="../../../../com/exedio/cope/Pattern.html#addSource-com.exedio.cope.Feature-java.lang.String-java.lang.reflect.AnnotatedElement-java.lang.Class-">addSource</a>, <a href="../../../../com/exedio/cope/Pattern.html#addSource-com.exedio.cope.Feature-java.lang.String-java.lang.reflect.Field-">addSource</a>, <a href="../../../../com/exedio/cope/Pattern.html#annotationField-java.lang.String-">annotationField</a>, <a href="../../../../com/exedio/cope/Pattern.html#getGeneratedTypes--">getGeneratedTypes</a>, <a href="../../../../com/exedio/cope/Pattern.html#getSourceFeatures--">getSourceFeatures</a>, <a href="../../../../com/exedio/cope/Pattern.html#getSourceFeaturesGather--">getSourceFeaturesGather</a>, <a href="../../../../com/exedio/cope/Pattern.html#getSourceFields--">getSourceFields</a>, <a href="../../../../com/exedio/cope/Pattern.html#getSources--">getSources</a>, <a href="../../../../com/exedio/cope/Pattern.html#getSourceTypes--">getSourceTypes</a>, <a href="../../../../com/exedio/cope/Pattern.html#getType--">getType</a>, <a href="../../../../com/exedio/cope/Pattern.html#initialize--">initialize</a>, <a href="../../../../com/exedio/cope/Pattern.html#newSourceType-java.lang.Class-boolean-com.exedio.cope.Type-com.exedio.cope.Features-java.lang.String-">newSourceType</a>, <a href="../../../../com/exedio/cope/Pattern.html#newSourceType-java.lang.Class-boolean-com.exedio.cope.Type-java.util.LinkedHashMap-java.lang.String-">newSourceType</a>, <a href="../../../../com/exedio/cope/Pattern.html#newSourceType-java.lang.Class-com.exedio.cope.Features-">newSourceType</a>, <a href="../../../../com/exedio/cope/Pattern.html#newSourceType-java.lang.Class-com.exedio.cope.Features-java.lang.String-">newSourceType</a>, <a href="../../../../com/exedio/cope/Pattern.html#newSourceType-java.lang.Class-java.util.LinkedHashMap-">newSourceType</a>, <a href="../../../../com/exedio/cope/Pattern.html#newSourceType-java.lang.Class-java.util.LinkedHashMap-java.lang.String-">newSourceType</a>, <a href="../../../../com/exedio/cope/Pattern.html#newType-java.lang.Class-java.util.LinkedHashMap-">newType</a>, <a href="../../../../com/exedio/cope/Pattern.html#newType-java.lang.Class-java.util.LinkedHashMap-java.lang.String-">newType</a>, <a href="../../../../com/exedio/cope/Pattern.html#onMount--">onMount</a>, <a href="../../../../com/exedio/cope/Pattern.html#registerSource-com.exedio.cope.Field-java.lang.String-">registerSource</a></code></li>
+<code><a href="../../../../com/exedio/cope/Pattern.html#addSource-com.exedio.cope.Feature-java.lang.String-">addSource</a>, <a href="../../../../com/exedio/cope/Pattern.html#addSource-com.exedio.cope.Feature-java.lang.String-java.lang.reflect.AnnotatedElement-">addSource</a>, <a href="../../../../com/exedio/cope/Pattern.html#addSource-com.exedio.cope.Feature-java.lang.String-java.lang.reflect.AnnotatedElement-java.lang.Class-">addSource</a>, <a href="../../../../com/exedio/cope/Pattern.html#addSource-com.exedio.cope.Feature-java.lang.String-java.lang.reflect.Field-">addSource</a>, <a href="../../../../com/exedio/cope/Pattern.html#addSourceFeature-F-java.lang.String-">addSourceFeature</a>, <a href="../../../../com/exedio/cope/Pattern.html#addSourceFeature-F-java.lang.String-java.lang.reflect.AnnotatedElement-">addSourceFeature</a>, <a href="../../../../com/exedio/cope/Pattern.html#addSourceFeature-F-java.lang.String-java.lang.reflect.AnnotatedElement-java.lang.Class-">addSourceFeature</a>, <a href="../../../../com/exedio/cope/Pattern.html#annotationField-java.lang.String-">annotationField</a>, <a href="../../../../com/exedio/cope/Pattern.html#equals-java.lang.Object-">equals</a>, <a href="../../../../com/exedio/cope/Pattern.html#getGeneratedTypes--">getGeneratedTypes</a>, <a href="../../../../com/exedio/cope/Pattern.html#getSourceFeatures--">getSourceFeatures</a>, <a href="../../../../com/exedio/cope/Pattern.html#getSourceFeaturesGather--">getSourceFeaturesGather</a>, <a href="../../../../com/exedio/cope/Pattern.html#getSourceFields--">getSourceFields</a>, <a href="../../../../com/exedio/cope/Pattern.html#getSources--">getSources</a>, <a href="../../../../com/exedio/cope/Pattern.html#getSourceTypes--">getSourceTypes</a>, <a href="../../../../com/exedio/cope/Pattern.html#getType--">getType</a>, <a href="../../../../com/exedio/cope/Pattern.html#hashCode--">hashCode</a>, <a href="../../../../com/exedio/cope/Pattern.html#initialize--">initialize</a>, <a href="../../../../com/exedio/cope/Pattern.html#newSourceType-java.lang.Class-boolean-com.exedio.cope.Type-com.exedio.cope.Features-java.lang.String-">newSourceType</a>, <a href="../../../../com/exedio/cope/Pattern.html#newSourceType-java.lang.Class-boolean-com.exedio.cope.Type-java.util.LinkedHashMap-java.lang.String-">newSourceType</a>, <a href="../../../../com/exedio/cope/Pattern.html#newSourceType-java.lang.Class-com.exedio.cope.Features-">newSourceType</a>, <a href="../../../../com/exedio/cope/Pattern.html#newSourceType-java.lang.Class-com.exedio.cope.Features-java.lang.String-">newSourceType</a>, <a href="../../../../com/exedio/cope/Pattern.html#newSourceType-java.lang.Class-java.util.LinkedHashMap-">newSourceType</a>, <a href="../../../../com/exedio/cope/Pattern.html#newSourceType-java.lang.Class-java.util.LinkedHashMap-java.lang.String-">newSourceType</a>, <a href="../../../../com/exedio/cope/Pattern.html#newType-java.lang.Class-java.util.LinkedHashMap-">newType</a>, <a href="../../../../com/exedio/cope/Pattern.html#newType-java.lang.Class-java.util.LinkedHashMap-java.lang.String-">newType</a>, <a href="../../../../com/exedio/cope/Pattern.html#onMount--">onMount</a>, <a href="../../../../com/exedio/cope/Pattern.html#registerSource-com.exedio.cope.Field-java.lang.String-">registerSource</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.com.exedio.cope.Feature">
@@ -304,7 +308,7 @@ implements <a href="../../../../com/exedio/cope/Settable.html" title="interface 
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;java.lang.<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></h3>
-<code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#clone--" title="class or interface in java.lang">clone</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#equals-java.lang.Object-" title="class or interface in java.lang">equals</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#finalize--" title="class or interface in java.lang">finalize</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#getClass--" title="class or interface in java.lang">getClass</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#hashCode--" title="class or interface in java.lang">hashCode</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notify--" title="class or interface in java.lang">notify</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notifyAll--" title="class or interface in java.lang">notifyAll</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait--" title="class or interface in java.lang">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait-long-" title="class or interface in java.lang">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait-long-int-" title="class or interface in java.lang">wait</a></code></li>
+<code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#clone--" title="class or interface in java.lang">clone</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#finalize--" title="class or interface in java.lang">finalize</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#getClass--" title="class or interface in java.lang">getClass</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notify--" title="class or interface in java.lang">notify</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notifyAll--" title="class or interface in java.lang">notifyAll</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait--" title="class or interface in java.lang">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait-long-" title="class or interface in java.lang">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait-long-int-" title="class or interface in java.lang">wait</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.com.exedio.cope.Settable">
@@ -583,6 +587,15 @@ implements <a href="../../../../com/exedio/cope/Settable.html" title="interface 
  into a color.</div>
 </li>
 </ul>
+<a name="bind-com.exedio.cope.Join-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>bind</h4>
+<pre>public&nbsp;<a href="../../../../com/exedio/cope/pattern/ColorFunction.html" title="interface in com.exedio.cope.pattern">ColorFunction</a>&nbsp;bind(<a href="../../../../com/exedio/cope/Join.html" title="class in com.exedio.cope">Join</a>&nbsp;join)</pre>
+</li>
+</ul>
 <a name="isNull--">
 <!--   -->
 </a>
@@ -590,6 +603,10 @@ implements <a href="../../../../com/exedio/cope/Settable.html" title="interface 
 <li class="blockList">
 <h4>isNull</h4>
 <pre>public&nbsp;<a href="../../../../com/exedio/cope/IsNullCondition.html" title="class in com.exedio.cope">IsNullCondition</a>&lt;?&gt;&nbsp;isNull()</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../com/exedio/cope/pattern/ColorFunction.html#isNull--">isNull</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../com/exedio/cope/pattern/ColorFunction.html" title="interface in com.exedio.cope.pattern">ColorFunction</a></code></dd>
+</dl>
 </li>
 </ul>
 <a name="isNotNull--">
@@ -599,6 +616,10 @@ implements <a href="../../../../com/exedio/cope/Settable.html" title="interface 
 <li class="blockList">
 <h4>isNotNull</h4>
 <pre>public&nbsp;<a href="../../../../com/exedio/cope/IsNullCondition.html" title="class in com.exedio.cope">IsNullCondition</a>&lt;?&gt;&nbsp;isNotNull()</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../com/exedio/cope/pattern/ColorFunction.html#isNotNull--">isNotNull</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../com/exedio/cope/pattern/ColorFunction.html" title="interface in com.exedio.cope.pattern">ColorFunction</a></code></dd>
+</dl>
 </li>
 </ul>
 <a name="equal-java.awt.Color-">
@@ -608,6 +629,10 @@ implements <a href="../../../../com/exedio/cope/Settable.html" title="interface 
 <li class="blockList">
 <h4>equal</h4>
 <pre>public&nbsp;<a href="../../../../com/exedio/cope/Condition.html" title="class in com.exedio.cope">Condition</a>&nbsp;equal(<a href="https://docs.oracle.com/javase/8/docs/api/java/awt/Color.html?is-external=true" title="class or interface in java.awt">Color</a>&nbsp;value)</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../com/exedio/cope/pattern/ColorFunction.html#equal-java.awt.Color-">equal</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../com/exedio/cope/pattern/ColorFunction.html" title="interface in com.exedio.cope.pattern">ColorFunction</a></code></dd>
+</dl>
 </li>
 </ul>
 <a name="notEqual-java.awt.Color-">
@@ -620,6 +645,10 @@ implements <a href="../../../../com/exedio/cope/Settable.html" title="interface 
 <div class="block">NOT EQUAL Condition.
 
  Note: according to SQL, a NULL value is evaluated to unknown, so a NOT EQUAL using a non null RHS is false for null values</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../com/exedio/cope/pattern/ColorFunction.html#notEqual-java.awt.Color-">notEqual</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../com/exedio/cope/pattern/ColorFunction.html" title="interface in com.exedio.cope.pattern">ColorFunction</a></code></dd>
+</dl>
 </li>
 </ul>
 <a name="isOpaque--">
@@ -667,7 +696,7 @@ implements <a href="../../../../com/exedio/cope/Settable.html" title="interface 
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../../com/exedio/cope/pattern/ColorAlphaViolationException.html" title="class in com.exedio.cope.pattern"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../../com/exedio/cope/pattern/Composite.html" title="class in com.exedio.cope.pattern"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../com/exedio/cope/pattern/ColorFunction.html" title="interface in com.exedio.cope.pattern"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../index.html?com/exedio/cope/pattern/ColorField.html" target="_top">Frames</a></li>

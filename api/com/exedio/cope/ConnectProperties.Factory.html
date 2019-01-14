@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -114,7 +114,7 @@ var activeTableTab = "activeTableTab";
 </dl>
 <hr>
 <br>
-<pre>public static class <span class="typeNameLabel">ConnectProperties.Factory</span>
+<pre>public static final class <span class="typeNameLabel">ConnectProperties.Factory</span>
 extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>
 implements <a href="../../../com/exedio/cope/util/Properties.Factory.html" title="interface in com.exedio.cope.util">Properties.Factory</a>&lt;<a href="../../../com/exedio/cope/ConnectProperties.html" title="class in com.exedio.cope">ConnectProperties</a>&gt;</pre>
 </li>
@@ -141,11 +141,20 @@ implements <a href="../../../com/exedio/cope/util/Properties.Factory.html" title
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code><a href="../../../com/exedio/cope/ConnectProperties.Factory.html" title="class in com.exedio.cope">ConnectProperties.Factory</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/ConnectProperties.Factory.html#mediaRootUrl-java.lang.String-">mediaRootUrl</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;mediaRootUrl)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/ConnectProperties.Factory.html#disableNativeDate--">disableNativeDate</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="../../../com/exedio/cope/ConnectProperties.Factory.html" title="class in com.exedio.cope">ConnectProperties.Factory</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/ConnectProperties.Factory.html#mediaRootUrl-java.lang.String-">mediaRootUrl</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;mediaRootUrl)</code>&nbsp;</td>
+</tr>
+<tr id="i3" class="rowColor">
+<td class="colFirst"><code><a href="../../../com/exedio/cope/ConnectProperties.Factory.html" title="class in com.exedio.cope">ConnectProperties.Factory</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/ConnectProperties.Factory.html#primaryKeyGeneratorSequence--">primaryKeyGeneratorSequence</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i4" class="altColor">
+<td class="colFirst"><code><a href="../../../com/exedio/cope/ConnectProperties.Factory.html" title="class in com.exedio.cope">ConnectProperties.Factory</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/ConnectProperties.Factory.html#revisionTable-java.lang.String-java.lang.String-">revisionTable</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name,
+             <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;primaryKeyName)</code>&nbsp;</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -169,6 +178,15 @@ implements <a href="../../../com/exedio/cope/util/Properties.Factory.html" title
 <!--   -->
 </a>
 <h3>Method Detail</h3>
+<a name="disableNativeDate--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>disableNativeDate</h4>
+<pre>public&nbsp;<a href="../../../com/exedio/cope/ConnectProperties.Factory.html" title="class in com.exedio.cope">ConnectProperties.Factory</a>&nbsp;disableNativeDate()</pre>
+</li>
+</ul>
 <a name="primaryKeyGeneratorSequence--">
 <!--   -->
 </a>
@@ -176,6 +194,16 @@ implements <a href="../../../com/exedio/cope/util/Properties.Factory.html" title
 <li class="blockList">
 <h4>primaryKeyGeneratorSequence</h4>
 <pre>public&nbsp;<a href="../../../com/exedio/cope/ConnectProperties.Factory.html" title="class in com.exedio.cope">ConnectProperties.Factory</a>&nbsp;primaryKeyGeneratorSequence()</pre>
+</li>
+</ul>
+<a name="revisionTable-java.lang.String-java.lang.String-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>revisionTable</h4>
+<pre>public&nbsp;<a href="../../../com/exedio/cope/ConnectProperties.Factory.html" title="class in com.exedio.cope">ConnectProperties.Factory</a>&nbsp;revisionTable(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name,
+                                               <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;primaryKeyName)</pre>
 </li>
 </ul>
 <a name="mediaRootUrl-java.lang.String-">

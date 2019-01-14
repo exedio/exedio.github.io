@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -191,6 +191,14 @@ extends <a href="../../../../com/exedio/cope/ConstraintViolationException.html" 
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/Hash.InvalidPlainTextException.html#getPlainText--">getPlainText</a></span>()</code>&nbsp;</td>
 </tr>
+<tr id="i3" class="rowColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/pattern/Hash.InvalidPlainTextException.html#wasLimit--">wasLimit</a></span>()</code>
+<div class="block">Returns true if this exception was raised because the
+ <a href="../../../../com/exedio/cope/pattern/Hash.html#getPlainTextLimit--"><code>plain text limit</code></a>
+ was exceeded.</div>
+</td>
+</tr>
 </table>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.com.exedio.cope.ConstraintViolationException">
@@ -276,10 +284,22 @@ extends <a href="../../../../com/exedio/cope/ConstraintViolationException.html" 
 <a name="getPlainText--">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>getPlainText</h4>
 <pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getPlainText()</pre>
+</li>
+</ul>
+<a name="wasLimit--">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>wasLimit</h4>
+<pre>public&nbsp;boolean&nbsp;wasLimit()</pre>
+<div class="block">Returns true if this exception was raised because the
+ <a href="../../../../com/exedio/cope/pattern/Hash.html#getPlainTextLimit--"><code>plain text limit</code></a>
+ was exceeded.</div>
 </li>
 </ul>
 </li>

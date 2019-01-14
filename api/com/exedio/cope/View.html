@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":42,"i1":42,"i2":10,"i3":10,"i4":42,"i5":10,"i6":10,"i7":10,"i8":10,"i9":6};
+var methods = {"i0":42,"i1":42,"i2":10,"i3":10,"i4":10,"i5":42,"i6":10,"i7":10,"i8":10,"i9":10,"i10":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],8:["t4","Concrete Methods"],32:["t6","Deprecated Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -122,7 +122,7 @@ var activeTableTab = "activeTableTab";
 <pre>public abstract class <span class="typeNameLabel">View&lt;E&gt;</span>
 extends <a href="../../../com/exedio/cope/Feature.html" title="class in com.exedio.cope">Feature</a>
 implements <a href="../../../com/exedio/cope/Function.html" title="interface in com.exedio.cope">Function</a>&lt;E&gt;</pre>
-<div class="block">A <tt>view</tt> represents a value computed from the
+<div class="block">A <code>view</code> represents a value computed from the
  fields of a <a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope"><code>Type</code></a>.
  The computation is available both in Java and SQL,
  so you can use views in search conditions.</div>
@@ -195,9 +195,13 @@ implements <a href="../../../com/exedio/cope/Function.html" title="interface in 
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="../../../com/exedio/cope/View.html" title="type parameter in View">E</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/View.html#get-com.exedio.cope.Item-">get</a></span>(<a href="../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&nbsp;item)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/View.html#get-com.exedio.cope.FieldValues-">get</a></span>(<a href="../../../com/exedio/cope/FieldValues.html" title="class in com.exedio.cope">FieldValues</a>&nbsp;item)</code>&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
+<td class="colFirst"><code><a href="../../../com/exedio/cope/View.html" title="type parameter in View">E</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/View.html#get-com.exedio.cope.Item-">get</a></span>(<a href="../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&nbsp;item)</code>&nbsp;</td>
+</tr>
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/View.html#getObject-com.exedio.cope.Item-">getObject</a></span>(<a href="../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&nbsp;item)</code>
 <div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
@@ -205,25 +209,25 @@ implements <a href="../../../com/exedio/cope/Function.html" title="interface in 
 </div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../com/exedio/cope/Function.html" title="interface in com.exedio.cope">Function</a>&lt;?&gt;&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/View.html#getSources--">getSources</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;?&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/View.html#getType--">getType</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;<a href="../../../com/exedio/cope/View.html" title="type parameter in View">E</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/View.html#getValueClass--">getValueClass</a></span>()</code>
 <div class="block">Returns <a href="../../../com/exedio/cope/Selectable.html#getValueType--"><code>Selectable.getValueType()</code></a>.<code>getJavaClass()</code></div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/View.html#hashCode--">hashCode</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>protected abstract <a href="../../../com/exedio/cope/View.html" title="type parameter in View">E</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/View.html#mapJava-java.lang.Object:A-">mapJava</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>[]&nbsp;sourceValues)</code>&nbsp;</td>
 </tr>
@@ -334,6 +338,19 @@ public final&nbsp;void&nbsp;check(com.exedio.cope.TC&nbsp;tc,
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../com/exedio/cope/Function.html#get-com.exedio.cope.Item-">get</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/exedio/cope/Function.html" title="interface in com.exedio.cope">Function</a>&lt;<a href="../../../com/exedio/cope/View.html" title="type parameter in View">E</a>&gt;</code></dd>
+</dl>
+</li>
+</ul>
+<a name="get-com.exedio.cope.FieldValues-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>get</h4>
+<pre>public final&nbsp;<a href="../../../com/exedio/cope/View.html" title="type parameter in View">E</a>&nbsp;get(<a href="../../../com/exedio/cope/FieldValues.html" title="class in com.exedio.cope">FieldValues</a>&nbsp;item)</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../com/exedio/cope/Function.html#get-com.exedio.cope.FieldValues-">get</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/exedio/cope/Function.html" title="interface in com.exedio.cope">Function</a>&lt;<a href="../../../com/exedio/cope/View.html" title="type parameter in View">E</a>&gt;</code></dd>
 </dl>
 </li>
 </ul>

@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -136,29 +136,68 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code><a href="../../../../com/exedio/cope/util/Properties.Field.html" title="type parameter in Properties.Field">E</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/util/Properties.Field.html#getDefaultValue--">getDefaultValue</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/util/Properties.Field.html#getDefaultValue--">getDefaultValue</a></span>()</code>
+<div class="block">Do no apply <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#toString--" title="class or interface in java.lang"><code>Object.toString()</code></a> to the result,
+ but use <a href="../../../../com/exedio/cope/util/Properties.Field.html#getDefaultValueString--"><code>getDefaultValueString()</code></a> instead.</div>
+</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/util/Properties.Field.html#getKey--">getKey</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/util/Properties.Field.html#getDefaultValueFailure--">getDefaultValueFailure</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code><a href="../../../../com/exedio/cope/util/Properties.Field.html" title="type parameter in Properties.Field">E</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/util/Properties.Field.html#getMinimum--">getMinimum</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/util/Properties.Field.html#getDefaultValueString--">getDefaultValueString</a></span>()</code>
+<div class="block">Returns <a href="../../../../com/exedio/cope/util/Properties.Field.html#getString-java.lang.Object-"><code>getString</code></a>(<a href="../../../../com/exedio/cope/util/Properties.Field.html#getDefaultValue--"><code>getDefaultValue()</code></a>).</div>
+</td>
 </tr>
 <tr id="i4" class="altColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/util/Properties.Field.html#getKey--">getKey</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i5" class="rowColor">
+<td class="colFirst"><code><a href="../../../../com/exedio/cope/util/Properties.Field.html" title="type parameter in Properties.Field">E</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/util/Properties.Field.html#getMinimum--">getMinimum</a></span>()</code>
+<div class="block">Do no apply <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#toString--" title="class or interface in java.lang"><code>Object.toString()</code></a> to the result,
+ but use <a href="../../../../com/exedio/cope/util/Properties.Field.html#getMinimumString--"><code>getMinimumString()</code></a> instead.</div>
+</td>
+</tr>
+<tr id="i6" class="altColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/util/Properties.Field.html#getMinimumString--">getMinimumString</a></span>()</code>
+<div class="block">Returns <a href="../../../../com/exedio/cope/util/Properties.Field.html#getString-java.lang.Object-"><code>getString</code></a>(<a href="../../../../com/exedio/cope/util/Properties.Field.html#getMinimum--"><code>getMinimum()</code></a>).</div>
+</td>
+</tr>
+<tr id="i7" class="rowColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/util/Properties.Field.html#getString-java.lang.Object-">getString</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;someValue)</code>
+<div class="block">Returns a string that would be parsed to the same
+ <a href="../../../../com/exedio/cope/util/Properties.Field.html#getValue--"><code>value</code></a> <code>someValue</code> by this field.</div>
+</td>
+</tr>
+<tr id="i8" class="altColor">
 <td class="colFirst"><code><a href="../../../../com/exedio/cope/util/Properties.Field.html" title="type parameter in Properties.Field">E</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/util/Properties.Field.html#getValue--">getValue</a></span>()</code>
 <div class="block">Never returns null.</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i9" class="rowColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/util/Properties.Field.html#getValueString--">getValueString</a></span>()</code>
+<div class="block">Returns <a href="../../../../com/exedio/cope/util/Properties.Field.html#getString-java.lang.Object-"><code>getString</code></a>(<a href="../../../../com/exedio/cope/util/Properties.Field.html#getValue--"><code>getValue()</code></a>).</div>
+</td>
+</tr>
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/util/Properties.Field.html#hasHiddenValue--">hasHiddenValue</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/util/Properties.Field.html#isSpecified--">isSpecified</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i12" class="altColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/util/Properties.Field.html#toString--">toString</a></span>()</code>&nbsp;</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -166,7 +205,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;java.lang.<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></h3>
-<code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#clone--" title="class or interface in java.lang">clone</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#equals-java.lang.Object-" title="class or interface in java.lang">equals</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#finalize--" title="class or interface in java.lang">finalize</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#getClass--" title="class or interface in java.lang">getClass</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#hashCode--" title="class or interface in java.lang">hashCode</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notify--" title="class or interface in java.lang">notify</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notifyAll--" title="class or interface in java.lang">notifyAll</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#toString--" title="class or interface in java.lang">toString</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait--" title="class or interface in java.lang">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait-long-" title="class or interface in java.lang">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait-long-int-" title="class or interface in java.lang">wait</a></code></li>
+<code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#clone--" title="class or interface in java.lang">clone</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#equals-java.lang.Object-" title="class or interface in java.lang">equals</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#finalize--" title="class or interface in java.lang">finalize</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#getClass--" title="class or interface in java.lang">getClass</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#hashCode--" title="class or interface in java.lang">hashCode</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notify--" title="class or interface in java.lang">notify</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notifyAll--" title="class or interface in java.lang">notifyAll</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait--" title="class or interface in java.lang">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait-long-" title="class or interface in java.lang">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait-long-int-" title="class or interface in java.lang">wait</a></code></li>
 </ul>
 </li>
 </ul>
@@ -199,6 +238,18 @@ public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.
 <li class="blockList">
 <h4>getMinimum</h4>
 <pre>public&nbsp;<a href="../../../../com/exedio/cope/util/Properties.Field.html" title="type parameter in Properties.Field">E</a>&nbsp;getMinimum()</pre>
+<div class="block">Do no apply <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#toString--" title="class or interface in java.lang"><code>Object.toString()</code></a> to the result,
+ but use <a href="../../../../com/exedio/cope/util/Properties.Field.html#getMinimumString--"><code>getMinimumString()</code></a> instead.</div>
+</li>
+</ul>
+<a name="getMinimumString--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getMinimumString</h4>
+<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getMinimumString()</pre>
+<div class="block">Returns <a href="../../../../com/exedio/cope/util/Properties.Field.html#getString-java.lang.Object-"><code>getString</code></a>(<a href="../../../../com/exedio/cope/util/Properties.Field.html#getMinimum--"><code>getMinimum()</code></a>).</div>
 </li>
 </ul>
 <a name="getDefaultValue--">
@@ -208,6 +259,27 @@ public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.
 <li class="blockList">
 <h4>getDefaultValue</h4>
 <pre>public&nbsp;<a href="../../../../com/exedio/cope/util/Properties.Field.html" title="type parameter in Properties.Field">E</a>&nbsp;getDefaultValue()</pre>
+<div class="block">Do no apply <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#toString--" title="class or interface in java.lang"><code>Object.toString()</code></a> to the result,
+ but use <a href="../../../../com/exedio/cope/util/Properties.Field.html#getDefaultValueString--"><code>getDefaultValueString()</code></a> instead.</div>
+</li>
+</ul>
+<a name="getDefaultValueString--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getDefaultValueString</h4>
+<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getDefaultValueString()</pre>
+<div class="block">Returns <a href="../../../../com/exedio/cope/util/Properties.Field.html#getString-java.lang.Object-"><code>getString</code></a>(<a href="../../../../com/exedio/cope/util/Properties.Field.html#getDefaultValue--"><code>getDefaultValue()</code></a>).</div>
+</li>
+</ul>
+<a name="getDefaultValueFailure--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getDefaultValueFailure</h4>
+<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getDefaultValueFailure()</pre>
 </li>
 </ul>
 <a name="hasHiddenValue--">
@@ -236,17 +308,60 @@ public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.
 <h4>getValue</h4>
 <pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
 public&nbsp;<a href="../../../../com/exedio/cope/util/Properties.Field.html" title="type parameter in Properties.Field">E</a>&nbsp;getValue()</pre>
-<div class="block">Never returns null.</div>
+<div class="block">Never returns null.
+ <p>
+ Do no apply <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#toString--" title="class or interface in java.lang"><code>Object.toString()</code></a> to the result,
+ but use <a href="../../../../com/exedio/cope/util/Properties.Field.html#getValueString--"><code>getValueString()</code></a> instead.</div>
+</li>
+</ul>
+<a name="getValueString--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getValueString</h4>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getValueString()</pre>
+<div class="block">Returns <a href="../../../../com/exedio/cope/util/Properties.Field.html#getString-java.lang.Object-"><code>getString</code></a>(<a href="../../../../com/exedio/cope/util/Properties.Field.html#getValue--"><code>getValue()</code></a>).</div>
+</li>
+</ul>
+<a name="getString-java.lang.Object-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getString</h4>
+<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getString(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;someValue)</pre>
+<div class="block">Returns a string that would be parsed to the same
+ <a href="../../../../com/exedio/cope/util/Properties.Field.html#getValue--"><code>value</code></a> <code>someValue</code> by this field.
+ Returns <code>null</code>, if <code>someValue</code> is <code>null</code>.</div>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/ClassCastException.html?is-external=true" title="class or interface in java.lang">ClassCastException</a></code> - if <code>someValue</code> does not match class of <a href="../../../../com/exedio/cope/util/Properties.Field.html#getValue--"><code>value</code></a></dd>
+</dl>
 </li>
 </ul>
 <a name="get--">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>get</h4>
 <pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
 public&nbsp;<a href="../../../../com/exedio/cope/util/Properties.Field.html" title="type parameter in Properties.Field">E</a>&nbsp;get()</pre>
+</li>
+</ul>
+<a name="toString--">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>toString</h4>
+<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;toString()</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#toString--" title="class or interface in java.lang">toString</a></code>&nbsp;in class&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></dd>
+</dl>
 </li>
 </ul>
 </li>

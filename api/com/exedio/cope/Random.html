@@ -110,7 +110,7 @@ var activeTableTab = "activeTableTab";
 </dl>
 <hr>
 <br>
-<pre>public class <span class="typeNameLabel">Random</span>
+<pre>public final class <span class="typeNameLabel">Random</span>
 extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>
 implements <a href="../../../com/exedio/cope/NumberFunction.html" title="interface in com.exedio.cope">NumberFunction</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a>&gt;</pre>
 <dl>
@@ -211,7 +211,7 @@ implements <a href="../../../com/exedio/cope/NumberFunction.html" title="interfa
 <!--   -->
 </a>
 <h3>Methods inherited from interface&nbsp;com.exedio.cope.<a href="../../../com/exedio/cope/Function.html" title="interface in com.exedio.cope">Function</a></h3>
-<code><a href="../../../com/exedio/cope/Function.html#any--">any</a>, <a href="../../../com/exedio/cope/Function.html#between-E-E-">between</a>, <a href="../../../com/exedio/cope/Function.html#equal-E-">equal</a>, <a href="../../../com/exedio/cope/Function.html#equal-com.exedio.cope.Function-">equal</a>, <a href="../../../com/exedio/cope/Function.html#equal-com.exedio.cope.Join-E-">equal</a>, <a href="../../../com/exedio/cope/Function.html#greater-E-">greater</a>, <a href="../../../com/exedio/cope/Function.html#greater-com.exedio.cope.Function-">greater</a>, <a href="../../../com/exedio/cope/Function.html#greaterOrEqual-E-">greaterOrEqual</a>, <a href="../../../com/exedio/cope/Function.html#greaterOrEqual-com.exedio.cope.Function-">greaterOrEqual</a>, <a href="../../../com/exedio/cope/Function.html#in-java.util.Collection-">in</a>, <a href="../../../com/exedio/cope/Function.html#in-E...-">in</a>, <a href="../../../com/exedio/cope/Function.html#isNotNull--">isNotNull</a>, <a href="../../../com/exedio/cope/Function.html#isNull--">isNull</a>, <a href="../../../com/exedio/cope/Function.html#less-E-">less</a>, <a href="../../../com/exedio/cope/Function.html#less-com.exedio.cope.Function-">less</a>, <a href="../../../com/exedio/cope/Function.html#lessOrEqual-E-">lessOrEqual</a>, <a href="../../../com/exedio/cope/Function.html#lessOrEqual-com.exedio.cope.Function-">lessOrEqual</a>, <a href="../../../com/exedio/cope/Function.html#max--">max</a>, <a href="../../../com/exedio/cope/Function.html#min--">min</a>, <a href="../../../com/exedio/cope/Function.html#notEqual-E-">notEqual</a>, <a href="../../../com/exedio/cope/Function.html#notEqual-com.exedio.cope.Function-">notEqual</a></code></li>
+<code><a href="../../../com/exedio/cope/Function.html#any--">any</a>, <a href="../../../com/exedio/cope/Function.html#between-E-E-">between</a>, <a href="../../../com/exedio/cope/Function.html#equal-E-">equal</a>, <a href="../../../com/exedio/cope/Function.html#equal-com.exedio.cope.Function-">equal</a>, <a href="../../../com/exedio/cope/Function.html#equal-com.exedio.cope.Join-E-">equal</a>, <a href="../../../com/exedio/cope/Function.html#get-com.exedio.cope.FieldValues-">get</a>, <a href="../../../com/exedio/cope/Function.html#greater-E-">greater</a>, <a href="../../../com/exedio/cope/Function.html#greater-com.exedio.cope.Function-">greater</a>, <a href="../../../com/exedio/cope/Function.html#greaterOrEqual-E-">greaterOrEqual</a>, <a href="../../../com/exedio/cope/Function.html#greaterOrEqual-com.exedio.cope.Function-">greaterOrEqual</a>, <a href="../../../com/exedio/cope/Function.html#in-java.util.Collection-">in</a>, <a href="../../../com/exedio/cope/Function.html#in-E...-">in</a>, <a href="../../../com/exedio/cope/Function.html#isNotNull--">isNotNull</a>, <a href="../../../com/exedio/cope/Function.html#isNull--">isNull</a>, <a href="../../../com/exedio/cope/Function.html#less-E-">less</a>, <a href="../../../com/exedio/cope/Function.html#less-com.exedio.cope.Function-">less</a>, <a href="../../../com/exedio/cope/Function.html#lessOrEqual-E-">lessOrEqual</a>, <a href="../../../com/exedio/cope/Function.html#lessOrEqual-com.exedio.cope.Function-">lessOrEqual</a>, <a href="../../../com/exedio/cope/Function.html#max--">max</a>, <a href="../../../com/exedio/cope/Function.html#min--">min</a>, <a href="../../../com/exedio/cope/Function.html#notEqual-E-">notEqual</a>, <a href="../../../com/exedio/cope/Function.html#notEqual-com.exedio.cope.Function-">notEqual</a></code></li>
 </ul>
 </li>
 </ul>
@@ -287,7 +287,7 @@ implements <a href="../../../com/exedio/cope/NumberFunction.html" title="interfa
 <ul class="blockList">
 <li class="blockList">
 <h4>equals</h4>
-<pre>public final&nbsp;boolean&nbsp;equals(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;other)</pre>
+<pre>public&nbsp;boolean&nbsp;equals(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;other)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#equals-java.lang.Object-" title="class or interface in java.lang">equals</a></code>&nbsp;in class&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></dd>
@@ -300,7 +300,7 @@ implements <a href="../../../com/exedio/cope/NumberFunction.html" title="interfa
 <ul class="blockList">
 <li class="blockList">
 <h4>hashCode</h4>
-<pre>public final&nbsp;int&nbsp;hashCode()</pre>
+<pre>public&nbsp;int&nbsp;hashCode()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#hashCode--" title="class or interface in java.lang">hashCode</a></code>&nbsp;in class&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></dd>
@@ -327,7 +327,7 @@ implements <a href="../../../com/exedio/cope/NumberFunction.html" title="interfa
 <ul class="blockList">
 <li class="blockList">
 <h4>toString</h4>
-<pre>public final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;toString()</pre>
+<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;toString()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#toString--" title="class or interface in java.lang">toString</a></code>&nbsp;in class&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></dd>

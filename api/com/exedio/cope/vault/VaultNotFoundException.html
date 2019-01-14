@@ -123,7 +123,9 @@ var activeTableTab = "activeTableTab";
 <pre>public final class <span class="typeNameLabel">VaultNotFoundException</span>
 extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Exception.html?is-external=true" title="class or interface in java.lang">Exception</a></pre>
 <div class="block">Signals, that an attempt to fetch data by its hash from a <a href="../../../../com/exedio/cope/vault/VaultService.html" title="interface in com.exedio.cope.vault"><code>VaultService</code></a> failed
- because for this hash nothing was <a href="../../../../com/exedio/cope/vault/VaultService.html#put-java.lang.String-byte:A-"><code>put</code></a> to the service before.
+ because for this hash nothing was
+ <a href="../../../../com/exedio/cope/vault/VaultService.html#put-java.lang.String-byte:A-com.exedio.cope.vault.VaultPutInfo-"><code>put</code></a>
+ to the service before.
  <p>
  Is thrown for valid hashes only, i.e. hashes for which the service could store data.
  Should not be thrown for invalid hashes, such as hashes which are either too short or too long

@@ -41,7 +41,7 @@
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../../com/exedio/cope/instrument/WrapperType.html" title="annotation in com.exedio.cope.instrument"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../../com/exedio/cope/instrument/WrapType.Type.html" title="annotation in com.exedio.cope.instrument"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li>Next&nbsp;Class</li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../index.html?com/exedio/cope/instrument/WrapType.html" target="_top">Frames</a></li>
@@ -114,7 +114,11 @@ public @interface <span class="memberNameLabel">WrapType</span></pre>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;?&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/instrument/WrapType.html#dummy--">dummy</a></span></code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/instrument/WrapType.html#top--">top</a></span></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;?&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/instrument/WrapType.html#wildcardClassCaster--">wildcardClassCaster</a></span></code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -160,8 +164,12 @@ public @interface <span class="memberNameLabel">WrapType</span></pre>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/instrument/WrapType.html#revertFeatureBody--">revertFeatureBody</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code><a href="../../../../com/exedio/cope/instrument/WrapType.Type.html" title="annotation in com.exedio.cope.instrument">WrapType.Type</a></code></td>
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;?&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/instrument/WrapType.html#type--">type</a></span></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/instrument/WrapType.html#typeDoc--">typeDoc</a></span></code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -178,13 +186,29 @@ public @interface <span class="memberNameLabel">WrapType</span></pre>
 <!--   -->
 </a>
 <h3>Element Detail</h3>
-<a name="dummy--">
+<a name="wildcardClassCaster--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>wildcardClassCaster</h4>
+<pre>public abstract&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;?&gt;&nbsp;wildcardClassCaster</pre>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../com/exedio/cope/instrument/WrapperType.html#wildcardClass--"><code>WrapperType.wildcardClass()</code></a></dd>
+</dl>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="top--">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>dummy</h4>
-<pre>public abstract&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;?&gt;&nbsp;dummy</pre>
+<h4>top</h4>
+<pre>public abstract&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;?&gt;&nbsp;top</pre>
 </li>
 </ul>
 </li>
@@ -197,10 +221,30 @@ public @interface <span class="memberNameLabel">WrapType</span></pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>type</h4>
-<pre>public abstract&nbsp;<a href="../../../../com/exedio/cope/instrument/WrapType.Type.html" title="annotation in com.exedio.cope.instrument">WrapType.Type</a>&nbsp;type</pre>
+<pre>public abstract&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;?&gt;&nbsp;type</pre>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../com/exedio/cope/instrument/WrapperType.html#type--"><code>WrapperType.type()</code></a></dd>
+</dl>
 <dl>
 <dt>Default:</dt>
-<dd>@com.exedio.cope.instrument.WrapType.Type(doc="", field=com.exedio.cope.instrument.StringGetterDefault.class, factory=com.exedio.cope.instrument.StringGetterDefault.class)</dd>
+<dd>com.exedio.cope.instrument.StringGetterDefault.class</dd>
+</dl>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="typeDoc--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>typeDoc</h4>
+<pre>public abstract&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;typeDoc</pre>
+<dl>
+<dt>Default:</dt>
+<dd>"The type information for {0}."</dd>
 </dl>
 </li>
 </ul>
@@ -343,7 +387,7 @@ public @interface <span class="memberNameLabel">WrapType</span></pre>
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../../com/exedio/cope/instrument/WrapperType.html" title="annotation in com.exedio.cope.instrument"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../../com/exedio/cope/instrument/WrapType.Type.html" title="annotation in com.exedio.cope.instrument"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li>Next&nbsp;Class</li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../index.html?com/exedio/cope/instrument/WrapType.html" target="_top">Frames</a></li>

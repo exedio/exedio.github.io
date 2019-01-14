@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":10,"i2":42,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10};
+var methods = {"i0":9,"i1":10,"i2":42,"i3":10,"i4":42,"i5":42,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"],32:["t6","Deprecated Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -177,21 +177,37 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Query.Result.html#getLimit--">getLimit</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Query.Result.html#getLimit--">getLimit</a></span>()</code>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
+<div class="block"><span class="deprecationComment">Use <a href="../../../com/exedio/cope/Query.Result.html#getPageLimitOrMinusOne--"><code>getPageLimitOrMinusOne()</code></a> instead.</span></div>
+</div>
+</td>
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code>int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Query.Result.html#getOffset--">getOffset</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Query.Result.html#getOffset--">getOffset</a></span>()</code>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
+<div class="block"><span class="deprecationComment">Use <a href="../../../com/exedio/cope/Query.Result.html#getPageOffset--"><code>getPageOffset()</code></a> instead.</span></div>
+</div>
+</td>
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code>int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Query.Result.html#getTotal--">getTotal</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Query.Result.html#getPageLimitOrMinusOne--">getPageLimitOrMinusOne</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code>int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Query.Result.html#hashCode--">hashCode</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Query.Result.html#getPageOffset--">getPageOffset</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i8" class="altColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Query.Result.html#getTotal--">getTotal</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i9" class="rowColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Query.Result.html#hashCode--">hashCode</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i10" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Query.Result.html#toString--">toString</a></span>()</code>&nbsp;</td>
 </tr>
@@ -255,6 +271,12 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <li class="blockList">
 <h4>getData</h4>
 <pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../com/exedio/cope/Query.Result.html" title="type parameter in Query.Result">R</a>&gt;&nbsp;getData()</pre>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the result of <a href="../../../com/exedio/cope/Query.html#search--"><code>Query.search()</code></a>
+ evaluated within the execution of <a href="../../../com/exedio/cope/Query.html#searchAndTotal--"><code>Query.searchAndTotal()</code></a>
+ that created this <code>Result</code>.</dd>
+</dl>
 </li>
 </ul>
 <a name="getTotal--">
@@ -264,24 +286,42 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <li class="blockList">
 <h4>getTotal</h4>
 <pre>public&nbsp;int&nbsp;getTotal()</pre>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the result of <a href="../../../com/exedio/cope/Query.html#total--"><code>Query.total()</code></a>
+ evaluated within the execution of <a href="../../../com/exedio/cope/Query.html#searchAndTotal--"><code>Query.searchAndTotal()</code></a>
+ that created this <code>Result</code>.</dd>
+</dl>
 </li>
 </ul>
-<a name="getOffset--">
+<a name="getPageOffset--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>getOffset</h4>
-<pre>public&nbsp;int&nbsp;getOffset()</pre>
+<h4>getPageOffset</h4>
+<pre>public&nbsp;int&nbsp;getPageOffset()</pre>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the result of <a href="../../../com/exedio/cope/Query.html#getPageOffset--"><code>Query.getPageOffset()</code></a>
+ evaluated within the execution of <a href="../../../com/exedio/cope/Query.html#searchAndTotal--"><code>Query.searchAndTotal()</code></a>
+ that created this <code>Result</code>.</dd>
+</dl>
 </li>
 </ul>
-<a name="getLimit--">
+<a name="getPageLimitOrMinusOne--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>getLimit</h4>
-<pre>public&nbsp;int&nbsp;getLimit()</pre>
+<h4>getPageLimitOrMinusOne</h4>
+<pre>public&nbsp;int&nbsp;getPageLimitOrMinusOne()</pre>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the result of <a href="../../../com/exedio/cope/Query.html#getPageLimitOrMinusOne--"><code>Query.getPageLimitOrMinusOne()</code></a>
+ evaluated within the execution of <a href="../../../com/exedio/cope/Query.html#searchAndTotal--"><code>Query.searchAndTotal()</code></a>
+ that created this <code>Result</code>.</dd>
+</dl>
 </li>
 </ul>
 <a name="equals-java.lang.Object-">
@@ -330,6 +370,28 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <li class="blockList">
 <h4>empty</h4>
 <pre>public static&nbsp;&lt;R&gt;&nbsp;<a href="../../../com/exedio/cope/Query.Result.html" title="class in com.exedio.cope">Query.Result</a>&lt;R&gt;&nbsp;empty()</pre>
+</li>
+</ul>
+<a name="getOffset--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getOffset</h4>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</a>
+public&nbsp;int&nbsp;getOffset()</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment">Use <a href="../../../com/exedio/cope/Query.Result.html#getPageOffset--"><code>getPageOffset()</code></a> instead.</span></div>
+</li>
+</ul>
+<a name="getLimit--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getLimit</h4>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</a>
+public&nbsp;int&nbsp;getLimit()</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment">Use <a href="../../../com/exedio/cope/Query.Result.html#getPageLimitOrMinusOne--"><code>getPageLimitOrMinusOne()</code></a> instead.</span></div>
 </li>
 </ul>
 <a name="getCountWithoutLimit--">

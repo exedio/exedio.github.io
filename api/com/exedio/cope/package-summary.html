@@ -84,6 +84,16 @@
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
+<td class="colFirst"><a href="../../../com/exedio/cope/ChangeHook.html" title="interface in com.exedio.cope">ChangeHook</a></td>
+<td class="colLast">
+<div class="block">ChangeHooks allow to listen to changes of persistent data.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="../../../com/exedio/cope/ChangeHook.Factory.html" title="interface in com.exedio.cope">ChangeHook.Factory</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><a href="../../../com/exedio/cope/ChangeListener.html" title="interface in com.exedio.cope">ChangeListener</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
@@ -111,7 +121,7 @@
 <td class="colFirst"><a href="../../../com/exedio/cope/Revisions.Factory.html" title="interface in com.exedio.cope">Revisions.Factory</a></td>
 <td class="colLast">
 <div class="block">If you supply an instance of <a href="../../../com/exedio/cope/Revisions.Factory.html" title="interface in com.exedio.cope"><code>Revisions.Factory</code></a> to a <a href="../../../com/exedio/cope/Model.html" title="class in com.exedio.cope"><code>Model</code></a>
- via <code>Model#Model(Factory, Type...)</code> etc.</div>
+ via <a href="../../../com/exedio/cope/Model.html#Model-com.exedio.cope.Revisions.Factory-com.exedio.cope.Type...-"><code>Model.Model(Revisions.Factory, Type...)</code></a> etc.</div>
 </td>
 </tr>
 <tr class="altColor">
@@ -292,84 +302,99 @@
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><a href="../../../com/exedio/cope/DivideView.html" title="class in com.exedio.cope">DivideView</a>&lt;E extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Number.html?is-external=true" title="class or interface in java.lang">Number</a>&gt;</td>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><a href="../../../com/exedio/cope/DoubleField.html" title="class in com.exedio.cope">DoubleField</a></td>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><a href="../../../com/exedio/cope/Dumper.html" title="class in com.exedio.cope">Dumper</a></td>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><a href="../../../com/exedio/cope/EnumField.html" title="class in com.exedio.cope">EnumField</a>&lt;E extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Enum.html?is-external=true" title="class or interface in java.lang">Enum</a>&lt;E&gt;&gt;</td>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><a href="../../../com/exedio/cope/EnvironmentInfo.html" title="class in com.exedio.cope">EnvironmentInfo</a></td>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><a href="../../../com/exedio/cope/ExtremumAggregate.html" title="class in com.exedio.cope">ExtremumAggregate</a>&lt;E&gt;</td>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><a href="../../../com/exedio/cope/Feature.html" title="class in com.exedio.cope">Feature</a></td>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><a href="../../../com/exedio/cope/Features.html" title="class in com.exedio.cope">Features</a></td>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><a href="../../../com/exedio/cope/Field.html" title="class in com.exedio.cope">Field</a>&lt;E&gt;</td>
+<td class="colFirst"><a href="../../../com/exedio/cope/DefaultChangeHook.html" title="class in com.exedio.cope">DefaultChangeHook</a></td>
 <td class="colLast">
-<div class="block">An <tt>field</tt> represents a persistently
- stored field of a <a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope"><code>Type</code></a>.</div>
+<div class="block">Implements a <a href="../../../com/exedio/cope/ChangeHook.html" title="interface in com.exedio.cope"><code>ChangeHook</code></a> that calls
+ <code>static beforeNewCopeItem(SetValue[])</code>,
+ <a href="../../../com/exedio/cope/Item.html#afterNewCopeItem--"><code>Item.afterNewCopeItem</code></a>,
+ <a href="../../../com/exedio/cope/Item.html#beforeSetCopeItem-com.exedio.cope.SetValue:A-"><code>Item.beforeSetCopeItem</code></a>, and
+ <a href="../../../com/exedio/cope/Item.html#beforeDeleteCopeItem--"><code>Item.beforeDeleteCopeItem</code></a>
+ according to their specifications.</div>
 </td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><a href="../../../com/exedio/cope/FieldValues.html" title="class in com.exedio.cope">FieldValues</a></td>
+<td class="colFirst"><a href="../../../com/exedio/cope/DivideView.html" title="class in com.exedio.cope">DivideView</a>&lt;E extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Number.html?is-external=true" title="class or interface in java.lang">Number</a>&gt;</td>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><a href="../../../com/exedio/cope/FunctionField.html" title="class in com.exedio.cope">FunctionField</a>&lt;E&gt;</td>
+<td class="colFirst"><a href="../../../com/exedio/cope/DoubleField.html" title="class in com.exedio.cope">DoubleField</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><a href="../../../com/exedio/cope/InstanceOfCondition.html" title="class in com.exedio.cope">InstanceOfCondition</a>&lt;E extends <a href="../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&gt;</td>
+<td class="colFirst"><a href="../../../com/exedio/cope/Dumper.html" title="class in com.exedio.cope">Dumper</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
+<td class="colFirst"><a href="../../../com/exedio/cope/EnumField.html" title="class in com.exedio.cope">EnumField</a>&lt;E extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Enum.html?is-external=true" title="class or interface in java.lang">Enum</a>&lt;E&gt;&gt;</td>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="../../../com/exedio/cope/EnvironmentInfo.html" title="class in com.exedio.cope">EnvironmentInfo</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="../../../com/exedio/cope/ExtremumAggregate.html" title="class in com.exedio.cope">ExtremumAggregate</a>&lt;E&gt;</td>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="../../../com/exedio/cope/Feature.html" title="class in com.exedio.cope">Feature</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="../../../com/exedio/cope/Features.html" title="class in com.exedio.cope">Features</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="../../../com/exedio/cope/Field.html" title="class in com.exedio.cope">Field</a>&lt;E&gt;</td>
+<td class="colLast">
+<div class="block">An <code>field</code> represents a persistently
+ stored field of a <a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope"><code>Type</code></a>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="../../../com/exedio/cope/FieldValues.html" title="class in com.exedio.cope">FieldValues</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="../../../com/exedio/cope/FunctionField.html" title="class in com.exedio.cope">FunctionField</a>&lt;E&gt;</td>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="../../../com/exedio/cope/InstanceOfCondition.html" title="class in com.exedio.cope">InstanceOfCondition</a>&lt;E extends <a href="../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&gt;</td>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
 <td class="colFirst"><a href="../../../com/exedio/cope/IntegerField.html" title="class in com.exedio.cope">IntegerField</a></td>
 <td class="colLast">
 <div class="block">Represents a field within a <a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope"><code>type</code></a>,
  that enables instances of that type to store a integer.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><a href="../../../com/exedio/cope/IsNullCondition.html" title="class in com.exedio.cope">IsNullCondition</a>&lt;E&gt;</td>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><a href="../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a></td>
 <td class="colLast">
 <div class="block">This is the super class for all classes,
  that want to store their data persistently with COPE.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><a href="../../../com/exedio/cope/ItemCacheInfo.html" title="class in com.exedio.cope">ItemCacheInfo</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><a href="../../../com/exedio/cope/ItemCacheStatistics.html" title="class in com.exedio.cope">ItemCacheStatistics</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><a href="../../../com/exedio/cope/ItemField.html" title="class in com.exedio.cope">ItemField</a>&lt;E extends <a href="../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&gt;</td>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="../../../com/exedio/cope/ItemWildcardCast.html" title="class in com.exedio.cope">ItemWildcardCast</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
@@ -587,7 +612,7 @@
 <tr class="rowColor">
 <td class="colFirst"><a href="../../../com/exedio/cope/View.html" title="class in com.exedio.cope">View</a>&lt;E&gt;</td>
 <td class="colLast">
-<div class="block">A <tt>view</tt> represents a value computed from the
+<div class="block">A <code>view</code> represents a value computed from the
  fields of a <a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope"><code>Type</code></a>.</div>
 </td>
 </tr>
@@ -670,6 +695,20 @@
 <td class="colLast">
 <div class="block">Signals, that an attempt to write a <a href="../../../com/exedio/cope/DateField.html" title="class in com.exedio.cope"><code>date field</code></a> has been failed,
  because the value to be written violated the precision constraint on that field.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="../../../com/exedio/cope/DateRangeViolationException.html" title="class in com.exedio.cope">DateRangeViolationException</a></td>
+<td class="colLast">
+<div class="block">Signals, that an attempt to write an <a href="../../../com/exedio/cope/DateField.html" title="class in com.exedio.cope"><code>DateField</code></a> has been failed,
+ because the value to be written violated the range constraint on that field.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="../../../com/exedio/cope/DayRangeViolationException.html" title="class in com.exedio.cope">DayRangeViolationException</a></td>
+<td class="colLast">
+<div class="block">Signals, that an attempt to write an <a href="../../../com/exedio/cope/DayField.html" title="class in com.exedio.cope"><code>DayField</code></a> has been failed,
+ because the value to be written violated the range constraint on that field.</div>
 </td>
 </tr>
 <tr class="altColor">

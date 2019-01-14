@@ -94,29 +94,36 @@
  <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/annotation/Retention.html?is-external=true" title="class or interface in java.lang.annotation">@Retention</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/annotation/Retention.html?is-external=true#value--" title="class or interface in java.lang.annotation">value</a>=<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/annotation/RetentionPolicy.html?is-external=true#RUNTIME" title="class or interface in java.lang.annotation">RUNTIME</a>)
  <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/annotation/Inherited.html?is-external=true" title="class or interface in java.lang.annotation">@Inherited</a>
 public @interface <span class="memberNameLabel">Computed</span></pre>
-<div class="block">This annotation marks a feature or type as <i>computed</i>.
- This means, that the persistent contents of that feature or type
- are typically not modified by human users, but by some computational process.
- So any generic editing facility is advised to not let a human user
- modify this type or feature.
+<div class="block">This annotation marks a
+ <a href="../../../../com/exedio/cope/Type.html" title="class in com.exedio.cope"><code>type</code></a> or
+ <a href="../../../../com/exedio/cope/Feature.html" title="class in com.exedio.cope"><code>feature</code></a>
+ as <i>computed</i>.
+ This means, that the persistent contents of that type or feature
+ are not allowed to be modified by human users directly,
+ using some generic editing facility.
+ Typically such a type or feature is modified (computed)
+ by some application logic instead.
  <p>
- For types, this means, that items of the type shall not be created or deleted
- by human users. For features this means, that the state of the feature shall
- not be modified by a human user. A <i>computed</i> type does not imply, that the type's
+ <b>Types</b><br>
+ A generic editing facility for human users MUST NOT
+ allow the human user to directly cause
+ creation or deletion of items
+ of any <i>computed</i> type.
+ <p>
+ Making a type <i>computed</i> does not imply, that the type's
  features are <i>computed</i> as well.
  <p>
- When creating items, a <i>computed</i> feature must not be specified
- via a <a href="../../../../com/exedio/cope/SetValue.html" title="class in com.exedio.cope"><code>SetValue</code></a>
- given to
- <a href="../../../../com/exedio/cope/Type.html#newItem-com.exedio.cope.SetValue...-"><code>Type.newItem</code></a>,
- so that any default mechanisms such as
- <a href="../../../../com/exedio/cope/FunctionField.html#defaultTo-E-"><code>defaultTo</code></a>
- can take effect.
- As a consequence, items of types with <i>computed</i> features, that are
- <a href="../../../../com/exedio/cope/Field.html#isMandatory--"><code>mandatory</code></a> and
- have no default mechanisms, cannot be created.
+ <b>Features</b><br>
+ A generic editing facility for human users MUST NOT
+ allow the human user to directly specify the value
+ of any <i>computed</i> feature.
+ This applies both to creation and modification of items.
  <p>
- This annotation does not specify, whether this feature or type shall be
+ A generic editing facility for human users MAY allow human users
+ to trigger application logic that (indirectly) modifies
+ <i>computed</i> types or features.
+ <p>
+ This annotation does not specify, whether a feature or type shall be
  shown to a human user.</div>
 </li>
 </ul>

@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":42,"i4":42,"i5":42,"i6":10,"i7":10,"i8":42,"i9":42,"i10":10,"i11":10,"i12":42,"i13":10,"i14":42,"i15":10,"i16":10,"i17":42,"i18":42,"i19":42,"i20":42,"i21":10,"i22":42};
+var methods = {"i0":42,"i1":42,"i2":42,"i3":42,"i4":10,"i5":10,"i6":10,"i7":42,"i8":10,"i9":42,"i10":10,"i11":10,"i12":42,"i13":42,"i14":10,"i15":10,"i16":10,"i17":42,"i18":10,"i19":42,"i20":10,"i21":10,"i22":42,"i23":42,"i24":42,"i25":42,"i26":10,"i27":42};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"],32:["t6","Deprecated Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -189,20 +189,32 @@ extends <a href="../../../com/exedio/cope/Feature.html" title="class in com.exed
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>protected void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Pattern.html#addSource-com.exedio.cope.Feature-java.lang.String-">addSource</a></span>(<a href="../../../com/exedio/cope/Feature.html" title="class in com.exedio.cope">Feature</a>&nbsp;feature,
-         <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;postfix)</code>&nbsp;</td>
+         <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;postfix)</code>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
+<div class="block"><span class="deprecationComment">Use <a href="../../../com/exedio/cope/Pattern.html#addSourceFeature-F-java.lang.String-"><code>addSourceFeature(Feature, String)</code></a> instead and benefit from result.</span></div>
+</div>
+</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>protected void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Pattern.html#addSource-com.exedio.cope.Feature-java.lang.String-java.lang.reflect.AnnotatedElement-">addSource</a></span>(<a href="../../../com/exedio/cope/Feature.html" title="class in com.exedio.cope">Feature</a>&nbsp;feature,
          <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;postfix,
-         <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/reflect/AnnotatedElement.html?is-external=true" title="class or interface in java.lang.reflect">AnnotatedElement</a>&nbsp;annotationSource)</code>&nbsp;</td>
+         <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/reflect/AnnotatedElement.html?is-external=true" title="class or interface in java.lang.reflect">AnnotatedElement</a>&nbsp;annotationSource)</code>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
+<div class="block"><span class="deprecationComment">Use <a href="../../../com/exedio/cope/Pattern.html#addSourceFeature-F-java.lang.String-java.lang.reflect.AnnotatedElement-"><code>addSourceFeature(Feature, String, AnnotatedElement)</code></a> instead and benefit from result.</span></div>
+</div>
+</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>protected void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Pattern.html#addSource-com.exedio.cope.Feature-java.lang.String-java.lang.reflect.AnnotatedElement-java.lang.Class-">addSource</a></span>(<a href="../../../com/exedio/cope/Feature.html" title="class in com.exedio.cope">Feature</a>&nbsp;feature,
          <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;postfix,
          <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/reflect/AnnotatedElement.html?is-external=true" title="class or interface in java.lang.reflect">AnnotatedElement</a>&nbsp;annotationSource,
-         <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;?&gt;&nbsp;precedingLocalizationKeysClass)</code>&nbsp;</td>
+         <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;?&gt;&nbsp;precedingLocalizationKeysClass)</code>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
+<div class="block"><span class="deprecationComment">Use <a href="../../../com/exedio/cope/Pattern.html#addSourceFeature-F-java.lang.String-java.lang.reflect.AnnotatedElement-java.lang.Class-"><code>addSourceFeature(Feature, String, AnnotatedElement, Class)</code></a> instead and benefit from result.</span></div>
+</div>
+</td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>protected void</code></td>
@@ -210,11 +222,29 @@ extends <a href="../../../com/exedio/cope/Feature.html" title="class in com.exed
          <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;postfix,
          <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/reflect/Field.html?is-external=true" title="class or interface in java.lang.reflect">Field</a>&nbsp;annotationSource)</code>
 <div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
-<div class="block"><span class="deprecationComment">For binary compatibility only, use <a href="../../../com/exedio/cope/Pattern.html#addSource-com.exedio.cope.Feature-java.lang.String-java.lang.reflect.AnnotatedElement-"><code>addSource(Feature,String,AnnotatedElement)</code></a> instead.</span></div>
+<div class="block"><span class="deprecationComment">For binary compatibility only, use <a href="../../../com/exedio/cope/Pattern.html#addSourceFeature-F-java.lang.String-java.lang.reflect.AnnotatedElement-"><code>addSourceFeature(Feature,String,AnnotatedElement)</code></a> instead.</span></div>
 </div>
 </td>
 </tr>
 <tr id="i4" class="altColor">
+<td class="colFirst"><code>protected &lt;F extends <a href="../../../com/exedio/cope/Feature.html" title="class in com.exedio.cope">Feature</a>&gt;<br>F</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Pattern.html#addSourceFeature-F-java.lang.String-">addSourceFeature</a></span>(F&nbsp;feature,
+                <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;postfix)</code>&nbsp;</td>
+</tr>
+<tr id="i5" class="rowColor">
+<td class="colFirst"><code>protected &lt;F extends <a href="../../../com/exedio/cope/Feature.html" title="class in com.exedio.cope">Feature</a>&gt;<br>F</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Pattern.html#addSourceFeature-F-java.lang.String-java.lang.reflect.AnnotatedElement-">addSourceFeature</a></span>(F&nbsp;feature,
+                <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;postfix,
+                <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/reflect/AnnotatedElement.html?is-external=true" title="class or interface in java.lang.reflect">AnnotatedElement</a>&nbsp;annotationSource)</code>&nbsp;</td>
+</tr>
+<tr id="i6" class="altColor">
+<td class="colFirst"><code>protected &lt;F extends <a href="../../../com/exedio/cope/Feature.html" title="class in com.exedio.cope">Feature</a>&gt;<br>F</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Pattern.html#addSourceFeature-F-java.lang.String-java.lang.reflect.AnnotatedElement-java.lang.Class-">addSourceFeature</a></span>(F&nbsp;feature,
+                <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;postfix,
+                <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/reflect/AnnotatedElement.html?is-external=true" title="class or interface in java.lang.reflect">AnnotatedElement</a>&nbsp;annotationSource,
+                <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;?&gt;&nbsp;precedingLocalizationKeysClass)</code>&nbsp;</td>
+</tr>
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>protected <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/reflect/Field.html?is-external=true" title="class or interface in java.lang.reflect">Field</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Pattern.html#annotationField-java.lang.String-">annotationField</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name)</code>
 <div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
@@ -222,7 +252,13 @@ extends <a href="../../../com/exedio/cope/Feature.html" title="class in com.exed
 </div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i8" class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Pattern.html#equals-java.lang.Object-">equals</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;other)</code>
+<div class="block">Forbid override by subclasses.</div>
+</td>
+</tr>
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;?&gt;&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Pattern.html#getGeneratedTypes--">getGeneratedTypes</a></span>()</code>
 <div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
@@ -230,15 +266,15 @@ extends <a href="../../../com/exedio/cope/Feature.html" title="class in com.exed
 </div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;? extends <a href="../../../com/exedio/cope/Feature.html" title="class in com.exedio.cope">Feature</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Pattern.html#getSourceFeatures--">getSourceFeatures</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../com/exedio/cope/Feature.html" title="class in com.exedio.cope">Feature</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Pattern.html#getSourceFeaturesGather--">getSourceFeaturesGather</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;? extends <a href="../../../com/exedio/cope/Field.html" title="class in com.exedio.cope">Field</a>&lt;?&gt;&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Pattern.html#getSourceFields--">getSourceFields</a></span>()</code>
 <div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
@@ -246,7 +282,7 @@ extends <a href="../../../com/exedio/cope/Feature.html" title="class in com.exed
 </div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;? extends <a href="../../../com/exedio/cope/Field.html" title="class in com.exedio.cope">Field</a>&lt;?&gt;&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Pattern.html#getSources--">getSources</a></span>()</code>
 <div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
@@ -254,15 +290,23 @@ extends <a href="../../../com/exedio/cope/Feature.html" title="class in com.exed
 </div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;?&gt;&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Pattern.html#getSourceTypes--">getSourceTypes</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code><a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;?&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Pattern.html#getType--">getType</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Pattern.html#getType--">getType</a></span>()</code>
+<div class="block">Forbid override by subclasses.</div>
+</td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i16" class="altColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Pattern.html#hashCode--">hashCode</a></span>()</code>
+<div class="block">Forbid override by subclasses.</div>
+</td>
+</tr>
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code>protected void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Pattern.html#initialize--">initialize</a></span>()</code>
 <div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
@@ -270,7 +314,7 @@ extends <a href="../../../com/exedio/cope/Feature.html" title="class in com.exed
 </div>
 </td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i18" class="altColor">
 <td class="colFirst"><code>protected &lt;T extends <a href="../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&gt;<br><a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;T&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Pattern.html#newSourceType-java.lang.Class-boolean-com.exedio.cope.Type-com.exedio.cope.Features-java.lang.String-">newSourceType</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;T&gt;&nbsp;javaClass,
              boolean&nbsp;isAbstract,
@@ -278,7 +322,7 @@ extends <a href="../../../com/exedio/cope/Feature.html" title="class in com.exed
              <a href="../../../com/exedio/cope/Features.html" title="class in com.exedio.cope">Features</a>&nbsp;features,
              <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;postfix)</code>&nbsp;</td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i19" class="rowColor">
 <td class="colFirst"><code>protected &lt;T extends <a href="../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&gt;<br><a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;T&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Pattern.html#newSourceType-java.lang.Class-boolean-com.exedio.cope.Type-java.util.LinkedHashMap-java.lang.String-">newSourceType</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;T&gt;&nbsp;javaClass,
              boolean&nbsp;isAbstract,
@@ -288,25 +332,25 @@ extends <a href="../../../com/exedio/cope/Feature.html" title="class in com.exed
 <div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
 </td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i20" class="altColor">
 <td class="colFirst"><code>protected &lt;T extends <a href="../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&gt;<br><a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;T&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Pattern.html#newSourceType-java.lang.Class-com.exedio.cope.Features-">newSourceType</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;T&gt;&nbsp;javaClass,
              <a href="../../../com/exedio/cope/Features.html" title="class in com.exedio.cope">Features</a>&nbsp;features)</code>&nbsp;</td>
 </tr>
-<tr id="i16" class="altColor">
+<tr id="i21" class="rowColor">
 <td class="colFirst"><code>protected &lt;T extends <a href="../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&gt;<br><a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;T&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Pattern.html#newSourceType-java.lang.Class-com.exedio.cope.Features-java.lang.String-">newSourceType</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;T&gt;&nbsp;javaClass,
              <a href="../../../com/exedio/cope/Features.html" title="class in com.exedio.cope">Features</a>&nbsp;features,
              <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;postfix)</code>&nbsp;</td>
 </tr>
-<tr id="i17" class="rowColor">
+<tr id="i22" class="altColor">
 <td class="colFirst"><code>protected &lt;T extends <a href="../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&gt;<br><a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;T&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Pattern.html#newSourceType-java.lang.Class-java.util.LinkedHashMap-">newSourceType</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;T&gt;&nbsp;javaClass,
              <a href="https://docs.oracle.com/javase/8/docs/api/java/util/LinkedHashMap.html?is-external=true" title="class or interface in java.util">LinkedHashMap</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../com/exedio/cope/Feature.html" title="class in com.exedio.cope">Feature</a>&gt;&nbsp;features)</code>
 <div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
 </td>
 </tr>
-<tr id="i18" class="altColor">
+<tr id="i23" class="rowColor">
 <td class="colFirst"><code>protected &lt;T extends <a href="../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&gt;<br><a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;T&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Pattern.html#newSourceType-java.lang.Class-java.util.LinkedHashMap-java.lang.String-">newSourceType</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;T&gt;&nbsp;javaClass,
              <a href="https://docs.oracle.com/javase/8/docs/api/java/util/LinkedHashMap.html?is-external=true" title="class or interface in java.util">LinkedHashMap</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../com/exedio/cope/Feature.html" title="class in com.exedio.cope">Feature</a>&gt;&nbsp;features,
@@ -314,7 +358,7 @@ extends <a href="../../../com/exedio/cope/Feature.html" title="class in com.exed
 <div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
 </td>
 </tr>
-<tr id="i19" class="rowColor">
+<tr id="i24" class="altColor">
 <td class="colFirst"><code>protected &lt;T extends <a href="../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&gt;<br><a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;T&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Pattern.html#newType-java.lang.Class-java.util.LinkedHashMap-">newType</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;T&gt;&nbsp;javaClass,
        <a href="https://docs.oracle.com/javase/8/docs/api/java/util/LinkedHashMap.html?is-external=true" title="class or interface in java.util">LinkedHashMap</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../com/exedio/cope/Feature.html" title="class in com.exedio.cope">Feature</a>&gt;&nbsp;features)</code>
@@ -323,7 +367,7 @@ extends <a href="../../../com/exedio/cope/Feature.html" title="class in com.exed
 </div>
 </td>
 </tr>
-<tr id="i20" class="altColor">
+<tr id="i25" class="rowColor">
 <td class="colFirst"><code>protected &lt;T extends <a href="../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&gt;<br><a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;T&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Pattern.html#newType-java.lang.Class-java.util.LinkedHashMap-java.lang.String-">newType</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;T&gt;&nbsp;javaClass,
        <a href="https://docs.oracle.com/javase/8/docs/api/java/util/LinkedHashMap.html?is-external=true" title="class or interface in java.util">LinkedHashMap</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../com/exedio/cope/Feature.html" title="class in com.exedio.cope">Feature</a>&gt;&nbsp;features,
@@ -333,18 +377,18 @@ extends <a href="../../../com/exedio/cope/Feature.html" title="class in com.exed
 </div>
 </td>
 </tr>
-<tr id="i21" class="rowColor">
+<tr id="i26" class="altColor">
 <td class="colFirst"><code>protected void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Pattern.html#onMount--">onMount</a></span>()</code>
 <div class="block">Here you can do additional initialization not yet done in the constructor.</div>
 </td>
 </tr>
-<tr id="i22" class="altColor">
+<tr id="i27" class="rowColor">
 <td class="colFirst"><code>protected void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Pattern.html#registerSource-com.exedio.cope.Field-java.lang.String-">registerSource</a></span>(<a href="../../../com/exedio/cope/Field.html" title="class in com.exedio.cope">Field</a>&lt;?&gt;&nbsp;field,
               <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;postfix)</code>
 <div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
-<div class="block"><span class="deprecationComment">Use <a href="../../../com/exedio/cope/Pattern.html#addSource-com.exedio.cope.Feature-java.lang.String-"><code>addSource(Feature,String)</code></a> instead</span></div>
+<div class="block"><span class="deprecationComment">Use <a href="../../../com/exedio/cope/Pattern.html#addSourceFeature-F-java.lang.String-"><code>addSourceFeature(Feature,String)</code></a> instead</span></div>
 </div>
 </td>
 </tr>
@@ -361,7 +405,7 @@ extends <a href="../../../com/exedio/cope/Feature.html" title="class in com.exed
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;java.lang.<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></h3>
-<code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#clone--" title="class or interface in java.lang">clone</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#equals-java.lang.Object-" title="class or interface in java.lang">equals</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#finalize--" title="class or interface in java.lang">finalize</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#getClass--" title="class or interface in java.lang">getClass</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#hashCode--" title="class or interface in java.lang">hashCode</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notify--" title="class or interface in java.lang">notify</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notifyAll--" title="class or interface in java.lang">notifyAll</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait--" title="class or interface in java.lang">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait-long-" title="class or interface in java.lang">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait-long-int-" title="class or interface in java.lang">wait</a></code></li>
+<code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#clone--" title="class or interface in java.lang">clone</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#finalize--" title="class or interface in java.lang">finalize</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#getClass--" title="class or interface in java.lang">getClass</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notify--" title="class or interface in java.lang">notify</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notifyAll--" title="class or interface in java.lang">notifyAll</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait--" title="class or interface in java.lang">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait-long-" title="class or interface in java.lang">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait-long-int-" title="class or interface in java.lang">wait</a></code></li>
 </ul>
 </li>
 </ul>
@@ -394,37 +438,61 @@ extends <a href="../../../com/exedio/cope/Feature.html" title="class in com.exed
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="addSource-com.exedio.cope.Feature-java.lang.String-">
+<a name="addSourceFeature-com.exedio.cope.Feature-java.lang.String-">
+<!--   -->
+</a><a name="addSourceFeature-F-java.lang.String-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>addSource</h4>
-<pre>protected final&nbsp;void&nbsp;addSource(<a href="../../../com/exedio/cope/Feature.html" title="class in com.exedio.cope">Feature</a>&nbsp;feature,
-                               <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;postfix)</pre>
+<h4>addSourceFeature</h4>
+<pre>protected final&nbsp;&lt;F extends <a href="../../../com/exedio/cope/Feature.html" title="class in com.exedio.cope">Feature</a>&gt;&nbsp;F&nbsp;addSourceFeature(F&nbsp;feature,
+                                                       <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;postfix)</pre>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>parameter <code>feature</code></dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../com/exedio/cope/Pattern.html#getSourceFeatures--"><code>getSourceFeatures()</code></a></dd>
+</dl>
 </li>
 </ul>
-<a name="addSource-com.exedio.cope.Feature-java.lang.String-java.lang.reflect.AnnotatedElement-">
+<a name="addSourceFeature-com.exedio.cope.Feature-java.lang.String-java.lang.reflect.AnnotatedElement-">
+<!--   -->
+</a><a name="addSourceFeature-F-java.lang.String-java.lang.reflect.AnnotatedElement-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>addSource</h4>
-<pre>protected final&nbsp;void&nbsp;addSource(<a href="../../../com/exedio/cope/Feature.html" title="class in com.exedio.cope">Feature</a>&nbsp;feature,
-                               <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;postfix,
-                               <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/reflect/AnnotatedElement.html?is-external=true" title="class or interface in java.lang.reflect">AnnotatedElement</a>&nbsp;annotationSource)</pre>
+<h4>addSourceFeature</h4>
+<pre>protected final&nbsp;&lt;F extends <a href="../../../com/exedio/cope/Feature.html" title="class in com.exedio.cope">Feature</a>&gt;&nbsp;F&nbsp;addSourceFeature(F&nbsp;feature,
+                                                       <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;postfix,
+                                                       <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/reflect/AnnotatedElement.html?is-external=true" title="class or interface in java.lang.reflect">AnnotatedElement</a>&nbsp;annotationSource)</pre>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>parameter <code>feature</code></dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../com/exedio/cope/Pattern.html#getSourceFeatures--"><code>getSourceFeatures()</code></a></dd>
+</dl>
 </li>
 </ul>
-<a name="addSource-com.exedio.cope.Feature-java.lang.String-java.lang.reflect.AnnotatedElement-java.lang.Class-">
+<a name="addSourceFeature-com.exedio.cope.Feature-java.lang.String-java.lang.reflect.AnnotatedElement-java.lang.Class-">
+<!--   -->
+</a><a name="addSourceFeature-F-java.lang.String-java.lang.reflect.AnnotatedElement-java.lang.Class-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>addSource</h4>
-<pre>protected final&nbsp;void&nbsp;addSource(<a href="../../../com/exedio/cope/Feature.html" title="class in com.exedio.cope">Feature</a>&nbsp;feature,
-                               <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;postfix,
-                               <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/reflect/AnnotatedElement.html?is-external=true" title="class or interface in java.lang.reflect">AnnotatedElement</a>&nbsp;annotationSource,
-                               <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;?&gt;&nbsp;precedingLocalizationKeysClass)</pre>
+<h4>addSourceFeature</h4>
+<pre>protected final&nbsp;&lt;F extends <a href="../../../com/exedio/cope/Feature.html" title="class in com.exedio.cope">Feature</a>&gt;&nbsp;F&nbsp;addSourceFeature(F&nbsp;feature,
+                                                       <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;postfix,
+                                                       <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/reflect/AnnotatedElement.html?is-external=true" title="class or interface in java.lang.reflect">AnnotatedElement</a>&nbsp;annotationSource,
+                                                       <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;?&gt;&nbsp;precedingLocalizationKeysClass)</pre>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>parameter <code>feature</code></dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../com/exedio/cope/Pattern.html#getSourceFeatures--"><code>getSourceFeatures()</code></a></dd>
+</dl>
 </li>
 </ul>
 <a name="onMount--">
@@ -447,6 +515,10 @@ extends <a href="../../../com/exedio/cope/Feature.html" title="class in com.exed
 <h4>newSourceType</h4>
 <pre>protected final&nbsp;&lt;T extends <a href="../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&gt;&nbsp;<a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;T&gt;&nbsp;newSourceType(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;T&gt;&nbsp;javaClass,
                                                        <a href="../../../com/exedio/cope/Features.html" title="class in com.exedio.cope">Features</a>&nbsp;features)</pre>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../com/exedio/cope/Pattern.html#getSourceTypes--"><code>getSourceTypes()</code></a></dd>
+</dl>
 </li>
 </ul>
 <a name="newSourceType-java.lang.Class-com.exedio.cope.Features-java.lang.String-">
@@ -458,6 +530,10 @@ extends <a href="../../../com/exedio/cope/Feature.html" title="class in com.exed
 <pre>protected final&nbsp;&lt;T extends <a href="../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&gt;&nbsp;<a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;T&gt;&nbsp;newSourceType(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;T&gt;&nbsp;javaClass,
                                                        <a href="../../../com/exedio/cope/Features.html" title="class in com.exedio.cope">Features</a>&nbsp;features,
                                                        <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;postfix)</pre>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../com/exedio/cope/Pattern.html#getSourceTypes--"><code>getSourceTypes()</code></a></dd>
+</dl>
 </li>
 </ul>
 <a name="newSourceType-java.lang.Class-boolean-com.exedio.cope.Type-com.exedio.cope.Features-java.lang.String-">
@@ -471,6 +547,10 @@ extends <a href="../../../com/exedio/cope/Feature.html" title="class in com.exed
                                                        <a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;? super T&gt;&nbsp;supertype,
                                                        <a href="../../../com/exedio/cope/Features.html" title="class in com.exedio.cope">Features</a>&nbsp;features,
                                                        <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;postfix)</pre>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../com/exedio/cope/Pattern.html#getSourceTypes--"><code>getSourceTypes()</code></a></dd>
+</dl>
 </li>
 </ul>
 <a name="getSourceFeaturesGather--">
@@ -491,7 +571,8 @@ extends <a href="../../../com/exedio/cope/Feature.html" title="class in com.exed
 <pre>public final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;? extends <a href="../../../com/exedio/cope/Feature.html" title="class in com.exedio.cope">Feature</a>&gt;&nbsp;getSourceFeatures()</pre>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../com/exedio/cope/Feature.html#getPattern--"><code>Feature.getPattern()</code></a></dd>
+<dd><a href="../../../com/exedio/cope/Pattern.html#addSourceFeature-F-java.lang.String-"><code>addSourceFeature(Feature, String)</code></a>, 
+<a href="../../../com/exedio/cope/Feature.html#getPattern--"><code>Feature.getPattern()</code></a></dd>
 </dl>
 </li>
 </ul>
@@ -504,7 +585,8 @@ extends <a href="../../../com/exedio/cope/Feature.html" title="class in com.exed
 <pre>public final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;?&gt;&gt;&nbsp;getSourceTypes()</pre>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../com/exedio/cope/Type.html#getPattern--"><code>Type.getPattern()</code></a></dd>
+<dd><a href="../../../com/exedio/cope/Pattern.html#newSourceType-java.lang.Class-com.exedio.cope.Features-"><code>newSourceType(Class, Features)</code></a>, 
+<a href="../../../com/exedio/cope/Type.html#getPattern--"><code>Type.getPattern()</code></a></dd>
 </dl>
 </li>
 </ul>
@@ -515,11 +597,91 @@ extends <a href="../../../com/exedio/cope/Feature.html" title="class in com.exed
 <li class="blockList">
 <h4>getType</h4>
 <pre>public final&nbsp;<a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;?&gt;&nbsp;getType()</pre>
+<div class="block">Forbid override by subclasses.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../com/exedio/cope/Feature.html#getType--">getType</a></code>&nbsp;in class&nbsp;<code><a href="../../../com/exedio/cope/Feature.html" title="class in com.exedio.cope">Feature</a></code></dd>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../com/exedio/cope/Feature.html#getAbstractType--"><code>Feature.getAbstractType()</code></a></dd>
+</dl>
+</li>
+</ul>
+<a name="equals-java.lang.Object-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>equals</h4>
+<pre>public final&nbsp;boolean&nbsp;equals(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;other)</pre>
+<div class="block">Forbid override by subclasses.</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#equals-java.lang.Object-" title="class or interface in java.lang">equals</a></code>&nbsp;in class&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="hashCode--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>hashCode</h4>
+<pre>public final&nbsp;int&nbsp;hashCode()</pre>
+<div class="block">Forbid override by subclasses.</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#hashCode--" title="class or interface in java.lang">hashCode</a></code>&nbsp;in class&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="addSource-com.exedio.cope.Feature-java.lang.String-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>addSource</h4>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</a>
+protected final&nbsp;void&nbsp;addSource(<a href="../../../com/exedio/cope/Feature.html" title="class in com.exedio.cope">Feature</a>&nbsp;feature,
+                                           <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;postfix)</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment">Use <a href="../../../com/exedio/cope/Pattern.html#addSourceFeature-F-java.lang.String-"><code>addSourceFeature(Feature, String)</code></a> instead and benefit from result.</span></div>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../com/exedio/cope/Pattern.html#getSourceFeatures--"><code>getSourceFeatures()</code></a></dd>
+</dl>
+</li>
+</ul>
+<a name="addSource-com.exedio.cope.Feature-java.lang.String-java.lang.reflect.AnnotatedElement-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>addSource</h4>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</a>
+protected final&nbsp;void&nbsp;addSource(<a href="../../../com/exedio/cope/Feature.html" title="class in com.exedio.cope">Feature</a>&nbsp;feature,
+                                           <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;postfix,
+                                           <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/reflect/AnnotatedElement.html?is-external=true" title="class or interface in java.lang.reflect">AnnotatedElement</a>&nbsp;annotationSource)</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment">Use <a href="../../../com/exedio/cope/Pattern.html#addSourceFeature-F-java.lang.String-java.lang.reflect.AnnotatedElement-"><code>addSourceFeature(Feature, String, AnnotatedElement)</code></a> instead and benefit from result.</span></div>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../com/exedio/cope/Pattern.html#getSourceFeatures--"><code>getSourceFeatures()</code></a></dd>
+</dl>
+</li>
+</ul>
+<a name="addSource-com.exedio.cope.Feature-java.lang.String-java.lang.reflect.AnnotatedElement-java.lang.Class-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>addSource</h4>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</a>
+protected final&nbsp;void&nbsp;addSource(<a href="../../../com/exedio/cope/Feature.html" title="class in com.exedio.cope">Feature</a>&nbsp;feature,
+                                           <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;postfix,
+                                           <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/reflect/AnnotatedElement.html?is-external=true" title="class or interface in java.lang.reflect">AnnotatedElement</a>&nbsp;annotationSource,
+                                           <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;?&gt;&nbsp;precedingLocalizationKeysClass)</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment">Use <a href="../../../com/exedio/cope/Pattern.html#addSourceFeature-F-java.lang.String-java.lang.reflect.AnnotatedElement-java.lang.Class-"><code>addSourceFeature(Feature, String, AnnotatedElement, Class)</code></a> instead and benefit from result.</span></div>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../com/exedio/cope/Pattern.html#getSourceFeatures--"><code>getSourceFeatures()</code></a></dd>
 </dl>
 </li>
 </ul>
@@ -565,7 +727,7 @@ public final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/L
 <pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</a>
 protected final&nbsp;void&nbsp;registerSource(<a href="../../../com/exedio/cope/Field.html" title="class in com.exedio.cope">Field</a>&lt;?&gt;&nbsp;field,
                                                 <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;postfix)</pre>
-<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment">Use <a href="../../../com/exedio/cope/Pattern.html#addSource-com.exedio.cope.Feature-java.lang.String-"><code>addSource(Feature,String)</code></a> instead</span></div>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment">Use <a href="../../../com/exedio/cope/Pattern.html#addSourceFeature-F-java.lang.String-"><code>addSourceFeature(Feature,String)</code></a> instead</span></div>
 </li>
 </ul>
 <a name="newType-java.lang.Class-java.util.LinkedHashMap-">
@@ -665,7 +827,7 @@ protected final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lan
 protected final&nbsp;void&nbsp;addSource(<a href="../../../com/exedio/cope/Feature.html" title="class in com.exedio.cope">Feature</a>&nbsp;feature,
                                            <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;postfix,
                                            <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/reflect/Field.html?is-external=true" title="class or interface in java.lang.reflect">Field</a>&nbsp;annotationSource)</pre>
-<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment">For binary compatibility only, use <a href="../../../com/exedio/cope/Pattern.html#addSource-com.exedio.cope.Feature-java.lang.String-java.lang.reflect.AnnotatedElement-"><code>addSource(Feature,String,AnnotatedElement)</code></a> instead.</span></div>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment">For binary compatibility only, use <a href="../../../com/exedio/cope/Pattern.html#addSourceFeature-F-java.lang.String-java.lang.reflect.AnnotatedElement-"><code>addSourceFeature(Feature,String,AnnotatedElement)</code></a> instead.</span></div>
 </li>
 </ul>
 </li>

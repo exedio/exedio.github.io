@@ -17,8 +17,8 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":9,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10};
-var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
+var methods = {"i0":9,"i1":9,"i2":42,"i3":42,"i4":10,"i5":10,"i6":10,"i7":10,"i8":42,"i9":42,"i10":10,"i11":10};
+var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"],32:["t6","Deprecated Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
 var tableTab = "tableTab";
@@ -138,7 +138,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 </a>
 <h3>Method Summary</h3>
 <table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
-<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t1" class="tableTab"><span><a href="javascript:show(1);">Static Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
+<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t1" class="tableTab"><span><a href="javascript:show(1);">Static Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t6" class="tableTab"><span><a href="javascript:show(32);">Deprecated Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
 <tr>
 <th class="colFirst" scope="col">Modifier and Type</th>
 <th class="colLast" scope="col">Method and Description</th>
@@ -156,28 +156,61 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/misc/QueryAggregator.html#getLimit--">getLimit</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/misc/QueryAggregator.html#getLimit--">getLimit</a></span>()</code>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
+<div class="block"><span class="deprecationComment">Use <a href="../../../../com/exedio/cope/misc/QueryAggregator.html#getPageLimitOrMinusOne--"><code>getPageLimitOrMinusOne()</code></a> instead.</span></div>
+</div>
+</td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/misc/QueryAggregator.html#getOffset--">getOffset</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/misc/QueryAggregator.html#getOffset--">getOffset</a></span>()</code>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
+<div class="block"><span class="deprecationComment">Use <a href="../../../../com/exedio/cope/misc/QueryAggregator.html#getPageOffset--"><code>getPageOffset()</code></a> instead.</span></div>
+</div>
+</td>
 </tr>
 <tr id="i4" class="altColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/misc/QueryAggregator.html#getPageLimitOrMinusOne--">getPageLimitOrMinusOne</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i5" class="rowColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/misc/QueryAggregator.html#getPageOffset--">getPageOffset</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../com/exedio/cope/Query.html" title="class in com.exedio.cope">Query</a>&lt;? extends <a href="../../../../com/exedio/cope/misc/QueryAggregator.html" title="type parameter in QueryAggregator">R</a>&gt;&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/misc/QueryAggregator.html#getQueries--">getQueries</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="../../../../com/exedio/cope/Query.Result.html" title="class in com.exedio.cope">Query.Result</a>&lt;<a href="../../../../com/exedio/cope/misc/QueryAggregator.html" title="type parameter in QueryAggregator">R</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/misc/QueryAggregator.html#searchAndTotal--">searchAndTotal</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/misc/QueryAggregator.html#setLimit-int-">setLimit</a></span>(int&nbsp;offset)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/misc/QueryAggregator.html#setLimit-int-">setLimit</a></span>(int&nbsp;offset)</code>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
+<div class="block"><span class="deprecationComment">Use <a href="../../../../com/exedio/cope/misc/QueryAggregator.html#setPageUnlimited-int-"><code>setPageUnlimited(int)</code></a> instead.</span></div>
+</div>
+</td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/misc/QueryAggregator.html#setLimit-int-int-">setLimit</a></span>(int&nbsp;offset,
-        int&nbsp;limit)</code>&nbsp;</td>
+        int&nbsp;limit)</code>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
+<div class="block"><span class="deprecationComment">Use <a href="../../../../com/exedio/cope/misc/QueryAggregator.html#setPage-int-int-"><code>setPage(int, int)</code></a> instead.</span></div>
+</div>
+</td>
+</tr>
+<tr id="i10" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/misc/QueryAggregator.html#setPage-int-int-">setPage</a></span>(int&nbsp;offset,
+       int&nbsp;limit)</code>&nbsp;</td>
+</tr>
+<tr id="i11" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/misc/QueryAggregator.html#setPageUnlimited-int-">setPageUnlimited</a></span>(int&nbsp;offset)</code>&nbsp;</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -248,17 +281,81 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../com/exedio/cope/Query.html" title="class in com.exedio.cope">Query</a>&lt;? extends <a href="../../../../com/exedio/cope/misc/QueryAggregator.html" title="type parameter in QueryAggregator">R</a>&gt;&gt;&nbsp;getQueries()</pre>
 </li>
 </ul>
+<a name="getPageOffset--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getPageOffset</h4>
+<pre>public&nbsp;int&nbsp;getPageOffset()</pre>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../com/exedio/cope/Query.html#getPageOffset--"><code>Query.getPageOffset()</code></a></dd>
+</dl>
+</li>
+</ul>
+<a name="getPageLimitOrMinusOne--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getPageLimitOrMinusOne</h4>
+<pre>public&nbsp;int&nbsp;getPageLimitOrMinusOne()</pre>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../com/exedio/cope/Query.html#getPageLimitOrMinusOne--"><code>Query.getPageLimitOrMinusOne()</code></a></dd>
+</dl>
+</li>
+</ul>
+<a name="setPage-int-int-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setPage</h4>
+<pre>public&nbsp;void&nbsp;setPage(int&nbsp;offset,
+                    int&nbsp;limit)</pre>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../com/exedio/cope/Query.html#setPage-int-int-"><code>Query.setPage(int,int)</code></a></dd>
+</dl>
+</li>
+</ul>
+<a name="setPageUnlimited-int-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setPageUnlimited</h4>
+<pre>public&nbsp;void&nbsp;setPageUnlimited(int&nbsp;offset)</pre>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../com/exedio/cope/Query.html#setPageUnlimited-int-"><code>Query.setPageUnlimited(int)</code></a></dd>
+</dl>
+</li>
+</ul>
+<a name="searchAndTotal--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>searchAndTotal</h4>
+<pre>public&nbsp;<a href="../../../../com/exedio/cope/Query.Result.html" title="class in com.exedio.cope">Query.Result</a>&lt;<a href="../../../../com/exedio/cope/misc/QueryAggregator.html" title="type parameter in QueryAggregator">R</a>&gt;&nbsp;searchAndTotal()</pre>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../com/exedio/cope/Query.html#searchAndTotal--"><code>Query.searchAndTotal()</code></a></dd>
+</dl>
+</li>
+</ul>
 <a name="getOffset--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>getOffset</h4>
-<pre>public&nbsp;int&nbsp;getOffset()</pre>
-<dl>
-<dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../com/exedio/cope/Query.html#getOffset--"><code>Query.getOffset()</code></a></dd>
-</dl>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</a>
+public&nbsp;int&nbsp;getOffset()</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment">Use <a href="../../../../com/exedio/cope/misc/QueryAggregator.html#getPageOffset--"><code>getPageOffset()</code></a> instead.</span></div>
 </li>
 </ul>
 <a name="getLimit--">
@@ -267,11 +364,9 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <ul class="blockList">
 <li class="blockList">
 <h4>getLimit</h4>
-<pre>public&nbsp;int&nbsp;getLimit()</pre>
-<dl>
-<dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../com/exedio/cope/Query.html#getLimit--"><code>Query.getLimit()</code></a></dd>
-</dl>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</a>
+public&nbsp;int&nbsp;getLimit()</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment">Use <a href="../../../../com/exedio/cope/misc/QueryAggregator.html#getPageLimitOrMinusOne--"><code>getPageLimitOrMinusOne()</code></a> instead.</span></div>
 </li>
 </ul>
 <a name="setLimit-int-int-">
@@ -280,38 +375,21 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <ul class="blockList">
 <li class="blockList">
 <h4>setLimit</h4>
-<pre>public&nbsp;void&nbsp;setLimit(int&nbsp;offset,
-                     int&nbsp;limit)</pre>
-<dl>
-<dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../com/exedio/cope/Query.html#setLimit-int-int-"><code>Query.setLimit(int,int)</code></a></dd>
-</dl>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</a>
+public&nbsp;void&nbsp;setLimit(int&nbsp;offset,
+                                 int&nbsp;limit)</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment">Use <a href="../../../../com/exedio/cope/misc/QueryAggregator.html#setPage-int-int-"><code>setPage(int, int)</code></a> instead.</span></div>
 </li>
 </ul>
 <a name="setLimit-int-">
 <!--   -->
 </a>
-<ul class="blockList">
-<li class="blockList">
-<h4>setLimit</h4>
-<pre>public&nbsp;void&nbsp;setLimit(int&nbsp;offset)</pre>
-<dl>
-<dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../com/exedio/cope/Query.html#setLimit-int-"><code>Query.setLimit(int)</code></a></dd>
-</dl>
-</li>
-</ul>
-<a name="searchAndTotal--">
-<!--   -->
-</a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>searchAndTotal</h4>
-<pre>public&nbsp;<a href="../../../../com/exedio/cope/Query.Result.html" title="class in com.exedio.cope">Query.Result</a>&lt;<a href="../../../../com/exedio/cope/misc/QueryAggregator.html" title="type parameter in QueryAggregator">R</a>&gt;&nbsp;searchAndTotal()</pre>
-<dl>
-<dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../com/exedio/cope/Query.html#searchAndTotal--"><code>Query.searchAndTotal()</code></a></dd>
-</dl>
+<h4>setLimit</h4>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</a>
+public&nbsp;void&nbsp;setLimit(int&nbsp;offset)</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment">Use <a href="../../../../com/exedio/cope/misc/QueryAggregator.html#setPageUnlimited-int-"><code>setPageUnlimited(int)</code></a> instead.</span></div>
 </li>
 </ul>
 </li>

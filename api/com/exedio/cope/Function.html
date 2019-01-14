@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":18,"i1":18,"i2":18,"i3":18,"i4":18,"i5":18,"i6":6,"i7":18,"i8":18,"i9":18,"i10":18,"i11":18,"i12":18,"i13":18,"i14":18,"i15":18,"i16":18,"i17":18,"i18":18,"i19":18,"i20":18,"i21":18,"i22":18};
+var methods = {"i0":18,"i1":18,"i2":18,"i3":18,"i4":18,"i5":18,"i6":18,"i7":6,"i8":18,"i9":18,"i10":18,"i11":18,"i12":18,"i13":18,"i14":18,"i15":18,"i16":18,"i17":18,"i18":18,"i19":18,"i20":18,"i21":18,"i22":18,"i23":18};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],16:["t5","Default Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -181,7 +181,7 @@ extends <a href="../../../com/exedio/cope/Selectable.html" title="interface in c
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Function.html#equal-com.exedio.cope.Function-">equal</a></span>(<a href="../../../com/exedio/cope/Function.html" title="interface in com.exedio.cope">Function</a>&lt;? extends <a href="../../../com/exedio/cope/Function.html" title="type parameter in Function">E</a>&gt;&nbsp;right)</code>
 <div class="block">Returns a condition, that is true for all items,
  if and only if the value of this function for that item
- is equal to the value of the <tt>right</tt> function.</div>
+ is equal to the value of the <code>right</code> function.</div>
 </td>
 </tr>
 <tr id="i5" class="rowColor">
@@ -190,10 +190,14 @@ extends <a href="../../../com/exedio/cope/Selectable.html" title="interface in c
      <a href="../../../com/exedio/cope/Function.html" title="type parameter in Function">E</a>&nbsp;value)</code>&nbsp;</td>
 </tr>
 <tr id="i6" class="altColor">
+<td class="colFirst"><code>default <a href="../../../com/exedio/cope/Function.html" title="type parameter in Function">E</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Function.html#get-com.exedio.cope.FieldValues-">get</a></span>(<a href="../../../com/exedio/cope/FieldValues.html" title="class in com.exedio.cope">FieldValues</a>&nbsp;item)</code>&nbsp;</td>
+</tr>
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="../../../com/exedio/cope/Function.html" title="type parameter in Function">E</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Function.html#get-com.exedio.cope.Item-">get</a></span>(<a href="../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&nbsp;item)</code>&nbsp;</td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>default <a href="../../../com/exedio/cope/CompareCondition.html" title="class in com.exedio.cope">CompareCondition</a>&lt;<a href="../../../com/exedio/cope/Function.html" title="type parameter in Function">E</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Function.html#greater-E-">greater</a></span>(<a href="../../../com/exedio/cope/Function.html" title="type parameter in Function">E</a>&nbsp;value)</code>
 <div class="block">Returns a condition, that is true for all items,
@@ -201,15 +205,15 @@ extends <a href="../../../com/exedio/cope/Selectable.html" title="interface in c
  is greater than the given parameter.</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>default <a href="../../../com/exedio/cope/CompareFunctionCondition.html" title="class in com.exedio.cope">CompareFunctionCondition</a>&lt;<a href="../../../com/exedio/cope/Function.html" title="type parameter in Function">E</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Function.html#greater-com.exedio.cope.Function-">greater</a></span>(<a href="../../../com/exedio/cope/Function.html" title="interface in com.exedio.cope">Function</a>&lt;? extends <a href="../../../com/exedio/cope/Function.html" title="type parameter in Function">E</a>&gt;&nbsp;right)</code>
 <div class="block">Returns a condition, that is true for all items,
  if and only if the value of this function for that item
- is greater than the value of the <tt>right</tt> function.</div>
+ is greater than the value of the <code>right</code> function.</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>default <a href="../../../com/exedio/cope/CompareCondition.html" title="class in com.exedio.cope">CompareCondition</a>&lt;<a href="../../../com/exedio/cope/Function.html" title="type parameter in Function">E</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Function.html#greaterOrEqual-E-">greaterOrEqual</a></span>(<a href="../../../com/exedio/cope/Function.html" title="type parameter in Function">E</a>&nbsp;value)</code>
 <div class="block">Returns a condition, that is true for all items,
@@ -217,23 +221,23 @@ extends <a href="../../../com/exedio/cope/Selectable.html" title="interface in c
  is not less than the given parameter.</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>default <a href="../../../com/exedio/cope/CompareFunctionCondition.html" title="class in com.exedio.cope">CompareFunctionCondition</a>&lt;<a href="../../../com/exedio/cope/Function.html" title="type parameter in Function">E</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Function.html#greaterOrEqual-com.exedio.cope.Function-">greaterOrEqual</a></span>(<a href="../../../com/exedio/cope/Function.html" title="interface in com.exedio.cope">Function</a>&lt;? extends <a href="../../../com/exedio/cope/Function.html" title="type parameter in Function">E</a>&gt;&nbsp;right)</code>
 <div class="block">Returns a condition, that is true for all items,
  if and only if the value of this function for that item
- is not less than the value of the <tt>right</tt> function.</div>
+ is not less than the value of the <code>right</code> function.</div>
 </td>
-</tr>
-<tr id="i11" class="rowColor">
-<td class="colFirst"><code>default <a href="../../../com/exedio/cope/Condition.html" title="class in com.exedio.cope">Condition</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Function.html#in-java.util.Collection-">in</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&lt;? extends <a href="../../../com/exedio/cope/Function.html" title="type parameter in Function">E</a>&gt;&nbsp;values)</code>&nbsp;</td>
 </tr>
 <tr id="i12" class="altColor">
 <td class="colFirst"><code>default <a href="../../../com/exedio/cope/Condition.html" title="class in com.exedio.cope">Condition</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Function.html#in-E...-">in</a></span>(<a href="../../../com/exedio/cope/Function.html" title="type parameter in Function">E</a>...&nbsp;values)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Function.html#in-java.util.Collection-">in</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&lt;? extends <a href="../../../com/exedio/cope/Function.html" title="type parameter in Function">E</a>&gt;&nbsp;values)</code>&nbsp;</td>
 </tr>
 <tr id="i13" class="rowColor">
+<td class="colFirst"><code>default <a href="../../../com/exedio/cope/Condition.html" title="class in com.exedio.cope">Condition</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Function.html#in-E...-">in</a></span>(<a href="../../../com/exedio/cope/Function.html" title="type parameter in Function">E</a>...&nbsp;values)</code>&nbsp;</td>
+</tr>
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>default <a href="../../../com/exedio/cope/IsNullCondition.html" title="class in com.exedio.cope">IsNullCondition</a>&lt;<a href="../../../com/exedio/cope/Function.html" title="type parameter in Function">E</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Function.html#isNotNull--">isNotNull</a></span>()</code>
 <div class="block">Returns a condition, that is true for all items,
@@ -241,7 +245,7 @@ extends <a href="../../../com/exedio/cope/Selectable.html" title="interface in c
  is not null.</div>
 </td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>default <a href="../../../com/exedio/cope/IsNullCondition.html" title="class in com.exedio.cope">IsNullCondition</a>&lt;<a href="../../../com/exedio/cope/Function.html" title="type parameter in Function">E</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Function.html#isNull--">isNull</a></span>()</code>
 <div class="block">Returns a condition, that is true for all items,
@@ -249,7 +253,7 @@ extends <a href="../../../com/exedio/cope/Selectable.html" title="interface in c
  is null.</div>
 </td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code>default <a href="../../../com/exedio/cope/CompareCondition.html" title="class in com.exedio.cope">CompareCondition</a>&lt;<a href="../../../com/exedio/cope/Function.html" title="type parameter in Function">E</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Function.html#less-E-">less</a></span>(<a href="../../../com/exedio/cope/Function.html" title="type parameter in Function">E</a>&nbsp;value)</code>
 <div class="block">Returns a condition, that is true for all items,
@@ -257,15 +261,15 @@ extends <a href="../../../com/exedio/cope/Selectable.html" title="interface in c
  is less than the given parameter.</div>
 </td>
 </tr>
-<tr id="i16" class="altColor">
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code>default <a href="../../../com/exedio/cope/CompareFunctionCondition.html" title="class in com.exedio.cope">CompareFunctionCondition</a>&lt;<a href="../../../com/exedio/cope/Function.html" title="type parameter in Function">E</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Function.html#less-com.exedio.cope.Function-">less</a></span>(<a href="../../../com/exedio/cope/Function.html" title="interface in com.exedio.cope">Function</a>&lt;? extends <a href="../../../com/exedio/cope/Function.html" title="type parameter in Function">E</a>&gt;&nbsp;right)</code>
 <div class="block">Returns a condition, that is true for all items,
  if and only if the value of this function for that item
- is less than the value of the <tt>right</tt> function.</div>
+ is less than the value of the <code>right</code> function.</div>
 </td>
 </tr>
-<tr id="i17" class="rowColor">
+<tr id="i18" class="altColor">
 <td class="colFirst"><code>default <a href="../../../com/exedio/cope/CompareCondition.html" title="class in com.exedio.cope">CompareCondition</a>&lt;<a href="../../../com/exedio/cope/Function.html" title="type parameter in Function">E</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Function.html#lessOrEqual-E-">lessOrEqual</a></span>(<a href="../../../com/exedio/cope/Function.html" title="type parameter in Function">E</a>&nbsp;value)</code>
 <div class="block">Returns a condition, that is true for all items,
@@ -273,32 +277,32 @@ extends <a href="../../../com/exedio/cope/Selectable.html" title="interface in c
  is not greater than the given parameter.</div>
 </td>
 </tr>
-<tr id="i18" class="altColor">
+<tr id="i19" class="rowColor">
 <td class="colFirst"><code>default <a href="../../../com/exedio/cope/CompareFunctionCondition.html" title="class in com.exedio.cope">CompareFunctionCondition</a>&lt;<a href="../../../com/exedio/cope/Function.html" title="type parameter in Function">E</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Function.html#lessOrEqual-com.exedio.cope.Function-">lessOrEqual</a></span>(<a href="../../../com/exedio/cope/Function.html" title="interface in com.exedio.cope">Function</a>&lt;? extends <a href="../../../com/exedio/cope/Function.html" title="type parameter in Function">E</a>&gt;&nbsp;right)</code>
 <div class="block">Returns a condition, that is true for all items,
  if and only if the value of this function for that item
- is not greater than the value of the <tt>right</tt> function.</div>
+ is not greater than the value of the <code>right</code> function.</div>
 </td>
-</tr>
-<tr id="i19" class="rowColor">
-<td class="colFirst"><code>default <a href="../../../com/exedio/cope/ExtremumAggregate.html" title="class in com.exedio.cope">ExtremumAggregate</a>&lt;<a href="../../../com/exedio/cope/Function.html" title="type parameter in Function">E</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Function.html#max--">max</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i20" class="altColor">
 <td class="colFirst"><code>default <a href="../../../com/exedio/cope/ExtremumAggregate.html" title="class in com.exedio.cope">ExtremumAggregate</a>&lt;<a href="../../../com/exedio/cope/Function.html" title="type parameter in Function">E</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Function.html#min--">min</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Function.html#max--">max</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i21" class="rowColor">
+<td class="colFirst"><code>default <a href="../../../com/exedio/cope/ExtremumAggregate.html" title="class in com.exedio.cope">ExtremumAggregate</a>&lt;<a href="../../../com/exedio/cope/Function.html" title="type parameter in Function">E</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Function.html#min--">min</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i22" class="altColor">
 <td class="colFirst"><code>default <a href="../../../com/exedio/cope/Condition.html" title="class in com.exedio.cope">Condition</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Function.html#notEqual-E-">notEqual</a></span>(<a href="../../../com/exedio/cope/Function.html" title="type parameter in Function">E</a>&nbsp;value)</code>&nbsp;</td>
 </tr>
-<tr id="i22" class="altColor">
+<tr id="i23" class="rowColor">
 <td class="colFirst"><code>default <a href="../../../com/exedio/cope/CompareFunctionCondition.html" title="class in com.exedio.cope">CompareFunctionCondition</a>&lt;<a href="../../../com/exedio/cope/Function.html" title="type parameter in Function">E</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Function.html#notEqual-com.exedio.cope.Function-">notEqual</a></span>(<a href="../../../com/exedio/cope/Function.html" title="interface in com.exedio.cope">Function</a>&lt;? extends <a href="../../../com/exedio/cope/Function.html" title="type parameter in Function">E</a>&gt;&nbsp;right)</code>
 <div class="block">Returns a condition, that is true for all items,
  if and only if the value of this function for that item
- is not equal to the value of the <tt>right</tt> function.</div>
+ is not equal to the value of the <code>right</code> function.</div>
 </td>
 </tr>
 </table>
@@ -351,6 +355,15 @@ extends <a href="../../../com/exedio/cope/Selectable.html" title="interface in c
 <li class="blockList">
 <h4>get</h4>
 <pre><a href="../../../com/exedio/cope/Function.html" title="type parameter in Function">E</a>&nbsp;get(<a href="../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&nbsp;item)</pre>
+</li>
+</ul>
+<a name="get-com.exedio.cope.FieldValues-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>get</h4>
+<pre>default&nbsp;<a href="../../../com/exedio/cope/Function.html" title="type parameter in Function">E</a>&nbsp;get(<a href="../../../com/exedio/cope/FieldValues.html" title="class in com.exedio.cope">FieldValues</a>&nbsp;item)</pre>
 </li>
 </ul>
 <a name="isNull--">
@@ -513,7 +526,7 @@ extends <a href="../../../com/exedio/cope/Selectable.html" title="interface in c
 <pre>default&nbsp;<a href="../../../com/exedio/cope/CompareFunctionCondition.html" title="class in com.exedio.cope">CompareFunctionCondition</a>&lt;<a href="../../../com/exedio/cope/Function.html" title="type parameter in Function">E</a>&gt;&nbsp;equal(<a href="../../../com/exedio/cope/Function.html" title="interface in com.exedio.cope">Function</a>&lt;? extends <a href="../../../com/exedio/cope/Function.html" title="type parameter in Function">E</a>&gt;&nbsp;right)</pre>
 <div class="block">Returns a condition, that is true for all items,
  if and only if the value of this function for that item
- is equal to the value of the <tt>right</tt> function.</div>
+ is equal to the value of the <code>right</code> function.</div>
 </li>
 </ul>
 <a name="notEqual-com.exedio.cope.Function-">
@@ -525,7 +538,7 @@ extends <a href="../../../com/exedio/cope/Selectable.html" title="interface in c
 <pre>default&nbsp;<a href="../../../com/exedio/cope/CompareFunctionCondition.html" title="class in com.exedio.cope">CompareFunctionCondition</a>&lt;<a href="../../../com/exedio/cope/Function.html" title="type parameter in Function">E</a>&gt;&nbsp;notEqual(<a href="../../../com/exedio/cope/Function.html" title="interface in com.exedio.cope">Function</a>&lt;? extends <a href="../../../com/exedio/cope/Function.html" title="type parameter in Function">E</a>&gt;&nbsp;right)</pre>
 <div class="block">Returns a condition, that is true for all items,
  if and only if the value of this function for that item
- is not equal to the value of the <tt>right</tt> function.</div>
+ is not equal to the value of the <code>right</code> function.</div>
 </li>
 </ul>
 <a name="less-com.exedio.cope.Function-">
@@ -537,7 +550,7 @@ extends <a href="../../../com/exedio/cope/Selectable.html" title="interface in c
 <pre>default&nbsp;<a href="../../../com/exedio/cope/CompareFunctionCondition.html" title="class in com.exedio.cope">CompareFunctionCondition</a>&lt;<a href="../../../com/exedio/cope/Function.html" title="type parameter in Function">E</a>&gt;&nbsp;less(<a href="../../../com/exedio/cope/Function.html" title="interface in com.exedio.cope">Function</a>&lt;? extends <a href="../../../com/exedio/cope/Function.html" title="type parameter in Function">E</a>&gt;&nbsp;right)</pre>
 <div class="block">Returns a condition, that is true for all items,
  if and only if the value of this function for that item
- is less than the value of the <tt>right</tt> function.</div>
+ is less than the value of the <code>right</code> function.</div>
 </li>
 </ul>
 <a name="lessOrEqual-com.exedio.cope.Function-">
@@ -549,7 +562,7 @@ extends <a href="../../../com/exedio/cope/Selectable.html" title="interface in c
 <pre>default&nbsp;<a href="../../../com/exedio/cope/CompareFunctionCondition.html" title="class in com.exedio.cope">CompareFunctionCondition</a>&lt;<a href="../../../com/exedio/cope/Function.html" title="type parameter in Function">E</a>&gt;&nbsp;lessOrEqual(<a href="../../../com/exedio/cope/Function.html" title="interface in com.exedio.cope">Function</a>&lt;? extends <a href="../../../com/exedio/cope/Function.html" title="type parameter in Function">E</a>&gt;&nbsp;right)</pre>
 <div class="block">Returns a condition, that is true for all items,
  if and only if the value of this function for that item
- is not greater than the value of the <tt>right</tt> function.</div>
+ is not greater than the value of the <code>right</code> function.</div>
 </li>
 </ul>
 <a name="greater-com.exedio.cope.Function-">
@@ -561,7 +574,7 @@ extends <a href="../../../com/exedio/cope/Selectable.html" title="interface in c
 <pre>default&nbsp;<a href="../../../com/exedio/cope/CompareFunctionCondition.html" title="class in com.exedio.cope">CompareFunctionCondition</a>&lt;<a href="../../../com/exedio/cope/Function.html" title="type parameter in Function">E</a>&gt;&nbsp;greater(<a href="../../../com/exedio/cope/Function.html" title="interface in com.exedio.cope">Function</a>&lt;? extends <a href="../../../com/exedio/cope/Function.html" title="type parameter in Function">E</a>&gt;&nbsp;right)</pre>
 <div class="block">Returns a condition, that is true for all items,
  if and only if the value of this function for that item
- is greater than the value of the <tt>right</tt> function.</div>
+ is greater than the value of the <code>right</code> function.</div>
 </li>
 </ul>
 <a name="greaterOrEqual-com.exedio.cope.Function-">
@@ -573,7 +586,7 @@ extends <a href="../../../com/exedio/cope/Selectable.html" title="interface in c
 <pre>default&nbsp;<a href="../../../com/exedio/cope/CompareFunctionCondition.html" title="class in com.exedio.cope">CompareFunctionCondition</a>&lt;<a href="../../../com/exedio/cope/Function.html" title="type parameter in Function">E</a>&gt;&nbsp;greaterOrEqual(<a href="../../../com/exedio/cope/Function.html" title="interface in com.exedio.cope">Function</a>&lt;? extends <a href="../../../com/exedio/cope/Function.html" title="type parameter in Function">E</a>&gt;&nbsp;right)</pre>
 <div class="block">Returns a condition, that is true for all items,
  if and only if the value of this function for that item
- is not less than the value of the <tt>right</tt> function.</div>
+ is not less than the value of the <code>right</code> function.</div>
 </li>
 </ul>
 <a name="min--">

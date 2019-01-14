@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":42,"i3":10,"i4":42,"i5":10,"i6":42,"i7":10,"i8":42,"i9":42,"i10":10,"i11":42,"i12":10,"i13":10,"i14":10,"i15":41,"i16":41,"i17":41,"i18":41,"i19":10,"i20":42,"i21":10,"i22":10,"i23":10,"i24":42,"i25":10,"i26":10,"i27":10,"i28":10,"i29":10,"i30":10,"i31":10,"i32":10,"i33":10,"i34":10,"i35":10,"i36":10,"i37":10,"i38":10,"i39":10,"i40":42,"i41":10,"i42":10,"i43":10,"i44":42,"i45":10,"i46":42,"i47":10,"i48":42,"i49":10,"i50":42,"i51":10,"i52":10,"i53":42,"i54":10,"i55":10,"i56":10,"i57":10,"i58":42,"i59":42,"i60":10,"i61":10,"i62":10,"i63":10,"i64":10,"i65":10,"i66":10,"i67":10,"i68":10,"i69":10,"i70":10,"i71":10,"i72":42,"i73":10};
+var methods = {"i0":10,"i1":10,"i2":42,"i3":10,"i4":10,"i5":42,"i6":10,"i7":42,"i8":10,"i9":42,"i10":42,"i11":10,"i12":42,"i13":10,"i14":10,"i15":10,"i16":41,"i17":41,"i18":41,"i19":41,"i20":10,"i21":42,"i22":10,"i23":10,"i24":10,"i25":42,"i26":10,"i27":10,"i28":10,"i29":10,"i30":10,"i31":10,"i32":10,"i33":10,"i34":10,"i35":10,"i36":10,"i37":10,"i38":10,"i39":10,"i40":10,"i41":42,"i42":10,"i43":10,"i44":10,"i45":42,"i46":10,"i47":42,"i48":10,"i49":42,"i50":10,"i51":42,"i52":10,"i53":10,"i54":42,"i55":10,"i56":10,"i57":10,"i58":10,"i59":42,"i60":42,"i61":10,"i62":10,"i63":10,"i64":10,"i65":10,"i66":10,"i67":10,"i68":10,"i69":10,"i70":10,"i71":10,"i72":10,"i73":42,"i74":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"],32:["t6","Deprecated Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -152,10 +152,14 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparab
 </td>
 </tr>
 <tr id="i3" class="rowColor">
+<td class="colFirst"><code>&lt;X extends <a href="../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&gt;<br><a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;? super X&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Type.html#asSuper-java.lang.Class-">asSuper</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;X&gt;&nbsp;clazz)</code>&nbsp;</td>
+</tr>
+<tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="../../../com/exedio/cope/Type.html" title="type parameter in Type">T</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Type.html#cast-com.exedio.cope.Item-">cast</a></span>(<a href="../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&nbsp;item)</code>&nbsp;</td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>&lt;X extends <a href="../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&gt;<br><a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;X&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Type.html#castType-java.lang.Class-">castType</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;X&gt;&nbsp;clazz)</code>
 <div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
@@ -163,11 +167,11 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparab
 </div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;? extends <a href="../../../com/exedio/cope/Type.html" title="type parameter in Type">T</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Type.html#castTypeExtends-com.exedio.cope.Type-">castTypeExtends</a></span>(<a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;?&gt;&nbsp;subtype)</code>&nbsp;</td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Type.html#checkCompleteness-com.exedio.cope.Type-">checkCompleteness</a></span>(<a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;? extends <a href="../../../com/exedio/cope/Type.html" title="type parameter in Type">T</a>&gt;&nbsp;subType)</code>
 <div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
@@ -175,11 +179,11 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparab
 </div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>long</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Type.html#checkCompletenessL-com.exedio.cope.Type-">checkCompletenessL</a></span>(<a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;? extends <a href="../../../com/exedio/cope/Type.html" title="type parameter in Type">T</a>&gt;&nbsp;subType)</code>&nbsp;</td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Type.html#checkModificationCounter--">checkModificationCounter</a></span>()</code>
 <div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
@@ -187,7 +191,7 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparab
 </div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Type.html#checkPrimaryKey--">checkPrimaryKey</a></span>()</code>
 <div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
@@ -195,11 +199,11 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparab
 </div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code><a href="../../../com/exedio/cope/SequenceBehindInfo.html" title="class in com.exedio.cope">SequenceBehindInfo</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Type.html#checkSequenceBehindPrimaryKey--">checkSequenceBehindPrimaryKey</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Type.html#checkUpdateCounter--">checkUpdateCounter</a></span>()</code>
 <div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
@@ -207,19 +211,19 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparab
 </div>
 </td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>long</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Type.html#checkUpdateCounterL--">checkUpdateCounterL</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Type.html#compareTo-com.exedio.cope.Type-">compareTo</a></span>(<a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;?&gt;&nbsp;o)</code>&nbsp;</td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code><a href="../../../com/exedio/cope/Query.html" title="class in com.exedio.cope">Query</a>&lt;<a href="../../../com/exedio/cope/Type.html" title="type parameter in Type">T</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Type.html#emptyQuery--">emptyQuery</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code>static &lt;X extends <a href="../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&gt;<br><a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;X&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Type.html#findByJavaClass-java.lang.Class-">findByJavaClass</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;X&gt;&nbsp;javaClass)</code>
 <div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
@@ -227,7 +231,7 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparab
 </div>
 </td>
 </tr>
-<tr id="i16" class="altColor">
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code>static <a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;?&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Type.html#findByJavaClassUnchecked-java.lang.Class-">findByJavaClassUnchecked</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;? extends <a href="../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&gt;&nbsp;javaClass)</code>
 <div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
@@ -235,7 +239,7 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparab
 </div>
 </td>
 </tr>
-<tr id="i17" class="rowColor">
+<tr id="i18" class="altColor">
 <td class="colFirst"><code>static &lt;X extends <a href="../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&gt;<br><a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;X&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Type.html#forClass-java.lang.Class-">forClass</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;X&gt;&nbsp;javaClass)</code>
 <div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
@@ -243,7 +247,7 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparab
 </div>
 </td>
 </tr>
-<tr id="i18" class="altColor">
+<tr id="i19" class="rowColor">
 <td class="colFirst"><code>static <a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;?&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Type.html#forClassUnchecked-java.lang.Class-">forClassUnchecked</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;? extends <a href="../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&gt;&nbsp;javaClass)</code>
 <div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
@@ -251,11 +255,11 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparab
 </div>
 </td>
 </tr>
-<tr id="i19" class="rowColor">
+<tr id="i20" class="altColor">
 <td class="colFirst"><code>&lt;A extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/annotation/Annotation.html?is-external=true" title="class or interface in java.lang.annotation">Annotation</a>&gt;<br>A</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Type.html#getAnnotation-java.lang.Class-">getAnnotation</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;A&gt;&nbsp;annotationClass)</code>&nbsp;</td>
 </tr>
-<tr id="i20" class="altColor">
+<tr id="i21" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;? extends <a href="../../../com/exedio/cope/Field.html" title="class in com.exedio.cope">Field</a>&lt;?&gt;&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Type.html#getAttributes--">getAttributes</a></span>()</code>
 <div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
@@ -263,19 +267,19 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparab
 </div>
 </td>
 </tr>
-<tr id="i21" class="rowColor">
+<tr id="i22" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;? extends <a href="../../../com/exedio/cope/CheckConstraint.html" title="class in com.exedio.cope">CheckConstraint</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Type.html#getCheckConstraints--">getCheckConstraints</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i22" class="altColor">
+<tr id="i23" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;? extends <a href="../../../com/exedio/cope/CopyConstraint.html" title="class in com.exedio.cope">CopyConstraint</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Type.html#getCopyConstraints--">getCopyConstraints</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i23" class="rowColor">
+<tr id="i24" class="altColor">
 <td class="colFirst"><code>long</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Type.html#getCreateLimit--">getCreateLimit</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i24" class="altColor">
+<tr id="i25" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;? extends <a href="../../../com/exedio/cope/Field.html" title="class in com.exedio.cope">Field</a>&lt;?&gt;&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Type.html#getDeclaredAttributes--">getDeclaredAttributes</a></span>()</code>
 <div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
@@ -283,76 +287,76 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparab
 </div>
 </td>
 </tr>
-<tr id="i25" class="rowColor">
+<tr id="i26" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;? extends <a href="../../../com/exedio/cope/CheckConstraint.html" title="class in com.exedio.cope">CheckConstraint</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Type.html#getDeclaredCheckConstraints--">getDeclaredCheckConstraints</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i26" class="altColor">
+<tr id="i27" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;? extends <a href="../../../com/exedio/cope/CopyConstraint.html" title="class in com.exedio.cope">CopyConstraint</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Type.html#getDeclaredCopyConstraints--">getDeclaredCopyConstraints</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i27" class="rowColor">
+<tr id="i28" class="altColor">
 <td class="colFirst"><code><a href="../../../com/exedio/cope/Feature.html" title="class in com.exedio.cope">Feature</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Type.html#getDeclaredFeature-java.lang.String-">getDeclaredFeature</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name)</code>&nbsp;</td>
 </tr>
-<tr id="i28" class="altColor">
+<tr id="i29" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;? extends <a href="../../../com/exedio/cope/Feature.html" title="class in com.exedio.cope">Feature</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Type.html#getDeclaredFeatures--">getDeclaredFeatures</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i29" class="rowColor">
+<tr id="i30" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;? extends <a href="../../../com/exedio/cope/Field.html" title="class in com.exedio.cope">Field</a>&lt;?&gt;&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Type.html#getDeclaredFields--">getDeclaredFields</a></span>()</code>
 <div class="block">Returns the list of persistent fields declared by the this type.</div>
 </td>
 </tr>
-<tr id="i30" class="altColor">
+<tr id="i31" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../com/exedio/cope/ItemField.html" title="class in com.exedio.cope">ItemField</a>&lt;<a href="../../../com/exedio/cope/Type.html" title="type parameter in Type">T</a>&gt;&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Type.html#getDeclaredReferences--">getDeclaredReferences</a></span>()</code>
 <div class="block">Returns all <a href="../../../com/exedio/cope/ItemField.html" title="class in com.exedio.cope"><code>ItemField</code></a>s of the model this type belongs to,
  which <a href="../../../com/exedio/cope/ItemField.html#getValueType--"><code>value type</code></a> equals this type.</div>
 </td>
 </tr>
-<tr id="i31" class="rowColor">
+<tr id="i32" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;? extends <a href="../../../com/exedio/cope/UniqueConstraint.html" title="class in com.exedio.cope">UniqueConstraint</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Type.html#getDeclaredUniqueConstraints--">getDeclaredUniqueConstraints</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i32" class="altColor">
+<tr id="i33" class="rowColor">
 <td class="colFirst"><code><a href="../../../com/exedio/cope/Feature.html" title="class in com.exedio.cope">Feature</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Type.html#getFeature-java.lang.String-">getFeature</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name)</code>&nbsp;</td>
 </tr>
-<tr id="i33" class="rowColor">
+<tr id="i34" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;? extends <a href="../../../com/exedio/cope/Feature.html" title="class in com.exedio.cope">Feature</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Type.html#getFeatures--">getFeatures</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i34" class="altColor">
+<tr id="i35" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;? extends <a href="../../../com/exedio/cope/Field.html" title="class in com.exedio.cope">Field</a>&lt;?&gt;&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Type.html#getFields--">getFields</a></span>()</code>
 <div class="block">Returns the list of accessible persistent fields of this type.</div>
 </td>
 </tr>
-<tr id="i35" class="rowColor">
+<tr id="i36" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Type.html#getID--">getID</a></span>()</code>
 <div class="block">Returns the id of this type.</div>
 </td>
 </tr>
-<tr id="i36" class="altColor">
+<tr id="i37" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;<a href="../../../com/exedio/cope/Type.html" title="type parameter in Type">T</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Type.html#getJavaClass--">getJavaClass</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i37" class="rowColor">
+<tr id="i38" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Type.html#getLocalizationKeys--">getLocalizationKeys</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i38" class="altColor">
+<tr id="i39" class="rowColor">
 <td class="colFirst"><code><a href="../../../com/exedio/cope/Model.html" title="class in com.exedio.cope">Model</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Type.html#getModel--">getModel</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i39" class="rowColor">
+<tr id="i40" class="altColor">
 <td class="colFirst"><code><a href="../../../com/exedio/cope/Pattern.html" title="class in com.exedio.cope">Pattern</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Type.html#getPattern--">getPattern</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i40" class="altColor">
+<tr id="i41" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Type.html#getPrimaryKeyColumnName--">getPrimaryKeyColumnName</a></span>()</code>
 <div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
@@ -360,26 +364,26 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparab
 </div>
 </td>
 </tr>
-<tr id="i41" class="rowColor">
+<tr id="i42" class="altColor">
 <td class="colFirst"><code><a href="../../../com/exedio/cope/SequenceInfo.html" title="class in com.exedio.cope">SequenceInfo</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Type.html#getPrimaryKeyInfo--">getPrimaryKeyInfo</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i42" class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../com/exedio/cope/ItemField.html" title="class in com.exedio.cope">ItemField</a>&lt;?&gt;&gt;</code></td>
+<tr id="i43" class="rowColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../com/exedio/cope/ItemField.html" title="class in com.exedio.cope">ItemField</a>&lt;? super <a href="../../../com/exedio/cope/Type.html" title="type parameter in Type">T</a>&gt;&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Type.html#getReferences--">getReferences</a></span>()</code>
 <div class="block">Returns all <a href="../../../com/exedio/cope/ItemField.html" title="class in com.exedio.cope"><code>ItemField</code></a>s of the model this type belongs to,
  which <a href="../../../com/exedio/cope/ItemField.html#getValueType--"><code>value type</code></a> equals this type
  or any of it's super types.</div>
 </td>
 </tr>
-<tr id="i43" class="rowColor">
+<tr id="i44" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;? extends <a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;? extends <a href="../../../com/exedio/cope/Type.html" title="type parameter in Type">T</a>&gt;&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Type.html#getSubtypes--">getSubtypes</a></span>()</code>
 <div class="block">Returns all types whose <a href="../../../com/exedio/cope/Type.html#getSupertype--"><code>super type</code></a>
  is this type.</div>
 </td>
 </tr>
-<tr id="i44" class="altColor">
+<tr id="i45" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;? extends <a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;? extends <a href="../../../com/exedio/cope/Type.html" title="type parameter in Type">T</a>&gt;&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Type.html#getSubTypes--">getSubTypes</a></span>()</code>
 <div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
@@ -387,14 +391,14 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparab
 </div>
 </td>
 </tr>
-<tr id="i45" class="rowColor">
+<tr id="i46" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;? extends <a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;? extends <a href="../../../com/exedio/cope/Type.html" title="type parameter in Type">T</a>&gt;&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Type.html#getSubtypesTransitively--">getSubtypesTransitively</a></span>()</code>
 <div class="block">Returns a list of all <a href="../../../com/exedio/cope/Type.html#getSubtypes--"><code>subtypes</code></a>
  and all subtypes of the subtypes etc.</div>
 </td>
 </tr>
-<tr id="i46" class="altColor">
+<tr id="i47" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;? extends <a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;? extends <a href="../../../com/exedio/cope/Type.html" title="type parameter in Type">T</a>&gt;&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Type.html#getSubTypesTransitively--">getSubTypesTransitively</a></span>()</code>
 <div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
@@ -402,14 +406,14 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparab
 </div>
 </td>
 </tr>
-<tr id="i47" class="rowColor">
+<tr id="i48" class="altColor">
 <td class="colFirst"><code><a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;? super <a href="../../../com/exedio/cope/Type.html" title="type parameter in Type">T</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Type.html#getSupertype--">getSupertype</a></span>()</code>
 <div class="block">Returns the type representing the <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true#getSuperclass--" title="class or interface in java.lang"><code>superclass</code></a>
  of this type's <a href="../../../com/exedio/cope/Type.html#getJavaClass--"><code>java class</code></a>.</div>
 </td>
 </tr>
-<tr id="i48" class="altColor">
+<tr id="i49" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Type.html#getTableName--">getTableName</a></span>()</code>
 <div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
@@ -417,11 +421,11 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparab
 </div>
 </td>
 </tr>
-<tr id="i49" class="rowColor">
+<tr id="i50" class="altColor">
 <td class="colFirst"><code><a href="../../../com/exedio/cope/This.html" title="class in com.exedio.cope">This</a>&lt;<a href="../../../com/exedio/cope/Type.html" title="type parameter in Type">T</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Type.html#getThis--">getThis</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i50" class="altColor">
+<tr id="i51" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Type.html#getTypeColumnName--">getTypeColumnName</a></span>()</code>
 <div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
@@ -429,18 +433,18 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparab
 </div>
 </td>
 </tr>
-<tr id="i51" class="rowColor">
+<tr id="i52" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;? extends <a href="../../../com/exedio/cope/Type.html" title="type parameter in Type">T</a>&gt;&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Type.html#getTypesOfInstances--">getTypesOfInstances</a></span>()</code>
 <div class="block">Returns a list of types,
  that instances (items) of this type can have.</div>
 </td>
 </tr>
-<tr id="i52" class="altColor">
+<tr id="i53" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;? extends <a href="../../../com/exedio/cope/UniqueConstraint.html" title="class in com.exedio.cope">UniqueConstraint</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Type.html#getUniqueConstraints--">getUniqueConstraints</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i53" class="rowColor">
+<tr id="i54" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Type.html#hasUniqueJavaClass--">hasUniqueJavaClass</a></span>()</code>
 <div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
@@ -448,25 +452,25 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparab
 </div>
 </td>
 </tr>
-<tr id="i54" class="altColor">
+<tr id="i55" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Type.html#isAbstract--">isAbstract</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i55" class="rowColor">
+<tr id="i56" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Type.html#isAnnotationPresent-java.lang.Class-">isAnnotationPresent</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;? extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/annotation/Annotation.html?is-external=true" title="class or interface in java.lang.annotation">Annotation</a>&gt;&nbsp;annotationClass)</code>&nbsp;</td>
 </tr>
-<tr id="i56" class="altColor">
+<tr id="i57" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Type.html#isAssignableFrom-com.exedio.cope.Type-">isAssignableFrom</a></span>(<a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;?&gt;&nbsp;type)</code>&nbsp;</td>
 </tr>
-<tr id="i57" class="rowColor">
+<tr id="i58" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Type.html#isBound--">isBound</a></span>()</code>
 <div class="block">Returns, whether this type bound to it's java class.</div>
 </td>
 </tr>
-<tr id="i58" class="altColor">
+<tr id="i59" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Type.html#isJavaClassExclusive--">isJavaClassExclusive</a></span>()</code>
 <div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
@@ -474,7 +478,7 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparab
 </div>
 </td>
 </tr>
-<tr id="i59" class="rowColor">
+<tr id="i60" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Type.html#needsCheckModificationCounter--">needsCheckModificationCounter</a></span>()</code>
 <div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
@@ -482,47 +486,47 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparab
 </div>
 </td>
 </tr>
-<tr id="i60" class="altColor">
+<tr id="i61" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Type.html#needsCheckUpdateCounter--">needsCheckUpdateCounter</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i61" class="rowColor">
+<tr id="i62" class="altColor">
 <td class="colFirst"><code><a href="../../../com/exedio/cope/Type.html" title="type parameter in Type">T</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Type.html#newItem-java.util.List-">newItem</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../com/exedio/cope/SetValue.html" title="class in com.exedio.cope">SetValue</a>&lt;?&gt;&gt;&nbsp;setValues)</code>&nbsp;</td>
 </tr>
-<tr id="i62" class="altColor">
+<tr id="i63" class="rowColor">
 <td class="colFirst"><code><a href="../../../com/exedio/cope/Type.html" title="type parameter in Type">T</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Type.html#newItem-com.exedio.cope.SetValue...-">newItem</a></span>(<a href="../../../com/exedio/cope/SetValue.html" title="class in com.exedio.cope">SetValue</a>&lt;?&gt;...&nbsp;setValues)</code>&nbsp;</td>
 </tr>
-<tr id="i63" class="rowColor">
+<tr id="i64" class="altColor">
 <td class="colFirst"><code><a href="../../../com/exedio/cope/ItemField.html" title="class in com.exedio.cope">ItemField</a>&lt;<a href="../../../com/exedio/cope/Type.html" title="type parameter in Type">T</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Type.html#newItemField-com.exedio.cope.ItemField.DeletePolicy-">newItemField</a></span>(<a href="../../../com/exedio/cope/ItemField.DeletePolicy.html" title="enum in com.exedio.cope">ItemField.DeletePolicy</a>&nbsp;policy)</code>&nbsp;</td>
 </tr>
-<tr id="i64" class="altColor">
+<tr id="i65" class="rowColor">
 <td class="colFirst"><code><a href="../../../com/exedio/cope/Query.html" title="class in com.exedio.cope">Query</a>&lt;<a href="../../../com/exedio/cope/Type.html" title="type parameter in Type">T</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Type.html#newQuery--">newQuery</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i65" class="rowColor">
+<tr id="i66" class="altColor">
 <td class="colFirst"><code><a href="../../../com/exedio/cope/Query.html" title="class in com.exedio.cope">Query</a>&lt;<a href="../../../com/exedio/cope/Type.html" title="type parameter in Type">T</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Type.html#newQuery-com.exedio.cope.Condition-">newQuery</a></span>(<a href="../../../com/exedio/cope/Condition.html" title="class in com.exedio.cope">Condition</a>&nbsp;condition)</code>&nbsp;</td>
 </tr>
-<tr id="i66" class="altColor">
+<tr id="i67" class="rowColor">
 <td class="colFirst"><code><a href="../../../com/exedio/cope/Random.html" title="class in com.exedio.cope">Random</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Type.html#random-int-">random</a></span>(int&nbsp;seed)</code>&nbsp;</td>
 </tr>
-<tr id="i67" class="rowColor">
+<tr id="i68" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../com/exedio/cope/Type.html" title="type parameter in Type">T</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Type.html#search--">search</a></span>()</code>
 <div class="block">Searches for all items of this type.</div>
 </td>
 </tr>
-<tr id="i68" class="altColor">
+<tr id="i69" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../com/exedio/cope/Type.html" title="type parameter in Type">T</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Type.html#search-com.exedio.cope.Condition-">search</a></span>(<a href="../../../com/exedio/cope/Condition.html" title="class in com.exedio.cope">Condition</a>&nbsp;condition)</code>
 <div class="block">Searches for items of this type, that match the given condition.</div>
 </td>
 </tr>
-<tr id="i69" class="rowColor">
+<tr id="i70" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../com/exedio/cope/Type.html" title="type parameter in Type">T</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Type.html#search-com.exedio.cope.Condition-com.exedio.cope.Function-boolean-">search</a></span>(<a href="../../../com/exedio/cope/Condition.html" title="class in com.exedio.cope">Condition</a>&nbsp;condition,
       <a href="../../../com/exedio/cope/Function.html" title="interface in com.exedio.cope">Function</a>&lt;?&gt;&nbsp;orderBy,
@@ -530,21 +534,21 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparab
 <div class="block">Searches for items of this type, that match the given condition.</div>
 </td>
 </tr>
-<tr id="i70" class="altColor">
+<tr id="i71" class="rowColor">
 <td class="colFirst"><code><a href="../../../com/exedio/cope/Type.html" title="type parameter in Type">T</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Type.html#searchSingleton-com.exedio.cope.Condition-">searchSingleton</a></span>(<a href="../../../com/exedio/cope/Condition.html" title="class in com.exedio.cope">Condition</a>&nbsp;condition)</code>
 <div class="block">Searches equivalently to <a href="../../../com/exedio/cope/Type.html#search-com.exedio.cope.Condition-"><code>search(Condition)</code></a>,
  but assumes that the condition forces the search result to have at most one element.</div>
 </td>
 </tr>
-<tr id="i71" class="rowColor">
+<tr id="i72" class="altColor">
 <td class="colFirst"><code><a href="../../../com/exedio/cope/Type.html" title="type parameter in Type">T</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Type.html#searchSingletonStrict-com.exedio.cope.Condition-">searchSingletonStrict</a></span>(<a href="../../../com/exedio/cope/Condition.html" title="class in com.exedio.cope">Condition</a>&nbsp;condition)</code>
 <div class="block">Searches equivalently to <a href="../../../com/exedio/cope/Type.html#search-com.exedio.cope.Condition-"><code>search(Condition)</code></a>,
  but assumes that the condition forces the search result to have exactly one element.</div>
 </td>
 </tr>
-<tr id="i72" class="altColor">
+<tr id="i73" class="rowColor">
 <td class="colFirst"><code><a href="../../../com/exedio/cope/Type.html" title="type parameter in Type">T</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Type.html#searchUnique-com.exedio.cope.Condition-">searchUnique</a></span>(<a href="../../../com/exedio/cope/Condition.html" title="class in com.exedio.cope">Condition</a>&nbsp;condition)</code>
 <div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
@@ -552,7 +556,7 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparab
 </div>
 </td>
 </tr>
-<tr id="i73" class="rowColor">
+<tr id="i74" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Type.html#toString--">toString</a></span>()</code>&nbsp;</td>
 </tr>
@@ -588,6 +592,7 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparab
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../com/exedio/cope/Type.html#asExtends-java.lang.Class-"><code>asExtends(Class)</code></a>, 
+<a href="../../../com/exedio/cope/Type.html#asSuper-java.lang.Class-"><code>asSuper(Class)</code></a>, 
 <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true#asSubclass-java.lang.Class-" title="class or interface in java.lang"><code>Class.asSubclass(Class)</code></a></dd>
 </dl>
 </li>
@@ -603,6 +608,19 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparab
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../com/exedio/cope/Type.html#as-java.lang.Class-"><code>as(Class)</code></a>, 
 <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true#asSubclass-java.lang.Class-" title="class or interface in java.lang"><code>Class.asSubclass(Class)</code></a></dd>
+</dl>
+</li>
+</ul>
+<a name="asSuper-java.lang.Class-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>asSuper</h4>
+<pre>public&nbsp;&lt;X extends <a href="../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&gt;&nbsp;<a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;? super X&gt;&nbsp;asSuper(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;X&gt;&nbsp;clazz)</pre>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../com/exedio/cope/Type.html#as-java.lang.Class-"><code>as(Class)</code></a></dd>
 </dl>
 </li>
 </ul>
@@ -844,7 +862,7 @@ public&nbsp;int&nbsp;checkPrimaryKey()</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>getReferences</h4>
-<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../com/exedio/cope/ItemField.html" title="class in com.exedio.cope">ItemField</a>&lt;?&gt;&gt;&nbsp;getReferences()</pre>
+<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../com/exedio/cope/ItemField.html" title="class in com.exedio.cope">ItemField</a>&lt;? super <a href="../../../com/exedio/cope/Type.html" title="type parameter in Type">T</a>&gt;&gt;&nbsp;getReferences()</pre>
 <div class="block">Returns all <a href="../../../com/exedio/cope/ItemField.html" title="class in com.exedio.cope"><code>ItemField</code></a>s of the model this type belongs to,
  which <a href="../../../com/exedio/cope/ItemField.html#getValueType--"><code>value type</code></a> equals this type
  or any of it's super types.</div>
@@ -1087,7 +1105,7 @@ public&nbsp;int&nbsp;checkPrimaryKey()</pre>
  <p>
  Returns an unmodifiable collection.
  Any attempts to modify the returned collection, whether direct or via its iterator,
- result in an <tt>UnsupportedOperationException</tt>.</div>
+ result in an <code>UnsupportedOperationException</code>.</div>
 </li>
 </ul>
 <a name="search-com.exedio.cope.Condition-">
@@ -1101,7 +1119,7 @@ public&nbsp;int&nbsp;checkPrimaryKey()</pre>
  <p>
  Returns an unmodifiable collection.
  Any attempts to modify the returned collection, whether direct or via its iterator,
- result in an <tt>UnsupportedOperationException</tt>.</div>
+ result in an <code>UnsupportedOperationException</code>.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>condition</code> - the condition the searched items must match.</dd>
@@ -1118,15 +1136,15 @@ public&nbsp;int&nbsp;checkPrimaryKey()</pre>
                       <a href="../../../com/exedio/cope/Function.html" title="interface in com.exedio.cope">Function</a>&lt;?&gt;&nbsp;orderBy,
                       boolean&nbsp;ascending)</pre>
 <div class="block">Searches for items of this type, that match the given condition.
- The result is sorted by the given function <tt>orderBy</tt>.
+ The result is sorted by the given function <code>orderBy</code>.
  <p>
  Returns an unmodifiable collection.
  Any attempts to modify the returned collection, whether direct or via its iterator,
- result in an <tt>UnsupportedOperationException</tt>.</div>
+ result in an <code>UnsupportedOperationException</code>.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>condition</code> - the condition the searched items must match.</dd>
-<dd><code>ascending</code> - whether the result is sorted ascendingly (<tt>true</tt>) or descendingly (<tt>false</tt>).</dd>
+<dd><code>ascending</code> - whether the result is sorted ascendingly (<code>true&lt;/tt&gt;) or descendingly (&lt;tt&gt;false</code>).</dd>
 </dl>
 </li>
 </ul>

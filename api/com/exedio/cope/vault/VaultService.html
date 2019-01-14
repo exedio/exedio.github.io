@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":18,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6};
+var methods = {"i0":18,"i1":6,"i2":6,"i3":6,"i4":18,"i5":6,"i6":6,"i7":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],16:["t5","Default Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -102,7 +102,7 @@ var activeTableTab = "activeTableTab";
 </dl>
 <dl>
 <dt>All Known Implementing Classes:</dt>
-<dd><a href="../../../../com/exedio/cope/junit/AssertionErrorVaultService.html" title="class in com.exedio.cope.junit">AssertionErrorVaultService</a>, <a href="../../../../com/exedio/cope/vault/VaultFileService.html" title="class in com.exedio.cope.vault">VaultFileService</a>, <a href="../../../../com/exedio/cope/vault/VaultReferenceService.html" title="class in com.exedio.cope.vault">VaultReferenceService</a>, <a href="../../../../com/exedio/cope/junit/VaultTestService.html" title="class in com.exedio.cope.junit">VaultTestService</a></dd>
+<dd><a href="../../../../com/exedio/cope/vault/VaultFileService.html" title="class in com.exedio.cope.vault">VaultFileService</a>, <a href="../../../../com/exedio/cope/vault/VaultReferenceService.html" title="class in com.exedio.cope.vault">VaultReferenceService</a></dd>
 </dl>
 <hr>
 <br>
@@ -148,9 +148,10 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/AutoCloseab
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/vault/VaultService.html#get-java.lang.String-java.io.OutputStream-">get</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;hash,
-   <a href="https://docs.oracle.com/javase/8/docs/api/java/io/OutputStream.html?is-external=true" title="class or interface in java.io">OutputStream</a>&nbsp;value)</code>
-<div class="block">If this method throws a <a href="../../../../com/exedio/cope/vault/VaultNotFoundException.html" title="class in com.exedio.cope.vault"><code>VaultNotFoundException</code></a>,
- it MUST not have modified <code>value</code> in any way.</div>
+   <a href="https://docs.oracle.com/javase/8/docs/api/java/io/OutputStream.html?is-external=true" title="class or interface in java.io">OutputStream</a>&nbsp;sink)</code>
+<div class="block">Must not
+ <a href="https://docs.oracle.com/javase/8/docs/api/java/io/OutputStream.html?is-external=true#close--" title="class or interface in java.io"><code>close</code></a> or
+ <a href="https://docs.oracle.com/javase/8/docs/api/java/io/OutputStream.html?is-external=true#flush--" title="class or interface in java.io"><code>flush</code></a> <code>sink</code>.</div>
 </td>
 </tr>
 <tr id="i3" class="rowColor">
@@ -158,26 +159,35 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/AutoCloseab
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/vault/VaultService.html#getLength-java.lang.String-">getLength</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;hash)</code>&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
-<td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/vault/VaultService.html#put-java.lang.String-byte:A-">put</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;hash,
-   byte[]&nbsp;value)</code>
-<div class="block">Is not called, if service instance was created with
- <a href="../../../../com/exedio/cope/vault/VaultServiceParameters.html#isWritable--"><code>VaultServiceParameters.isWritable()</code></a>==false.</div>
+<td class="colFirst"><code>default void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/vault/VaultService.html#purgeSchema-com.exedio.cope.util.JobContext-">purgeSchema</a></span>(<a href="../../../../com/exedio/cope/util/JobContext.html" title="interface in com.exedio.cope.util">JobContext</a>&nbsp;ctx)</code>
+<div class="block">Gives this service the chance to purge / cleanup whatever it needs to.</div>
 </td>
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/vault/VaultService.html#put-java.lang.String-java.io.File-">put</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;hash,
-   <a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a>&nbsp;value)</code>
-<div class="block">The caller must make sure, that <code>value</code> is not modified during the call.</div>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/vault/VaultService.html#put-java.lang.String-byte:A-com.exedio.cope.vault.VaultPutInfo-">put</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;hash,
+   byte[]&nbsp;value,
+   <a href="../../../../com/exedio/cope/vault/VaultPutInfo.html" title="interface in com.exedio.cope.vault">VaultPutInfo</a>&nbsp;info)</code>
+<div class="block">Is not called, if service instance was created with
+ <a href="../../../../com/exedio/cope/vault/VaultServiceParameters.html#isWritable--"><code>VaultServiceParameters.isWritable()</code></a>==false.</div>
 </td>
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/vault/VaultService.html#put-java.lang.String-java.io.InputStream-">put</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;hash,
-   <a href="https://docs.oracle.com/javase/8/docs/api/java/io/InputStream.html?is-external=true" title="class or interface in java.io">InputStream</a>&nbsp;value)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/vault/VaultService.html#put-java.lang.String-java.io.InputStream-com.exedio.cope.vault.VaultPutInfo-">put</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;hash,
+   <a href="https://docs.oracle.com/javase/8/docs/api/java/io/InputStream.html?is-external=true" title="class or interface in java.io">InputStream</a>&nbsp;value,
+   <a href="../../../../com/exedio/cope/vault/VaultPutInfo.html" title="interface in com.exedio.cope.vault">VaultPutInfo</a>&nbsp;info)</code>
 <div class="block">Is not called, if service instance was created with
  <a href="../../../../com/exedio/cope/vault/VaultServiceParameters.html#isWritable--"><code>VaultServiceParameters.isWritable()</code></a>==false.</div>
+</td>
+</tr>
+<tr id="i7" class="rowColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/exedio/cope/vault/VaultService.html#put-java.lang.String-java.nio.file.Path-com.exedio.cope.vault.VaultPutInfo-">put</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;hash,
+   <a href="https://docs.oracle.com/javase/8/docs/api/java/nio/file/Path.html?is-external=true" title="class or interface in java.nio.file">Path</a>&nbsp;value,
+   <a href="../../../../com/exedio/cope/vault/VaultPutInfo.html" title="interface in com.exedio.cope.vault">VaultPutInfo</a>&nbsp;info)</code>
+<div class="block">The caller must make sure, that <code>value</code> is not modified during the call.</div>
 </td>
 </tr>
 </table>
@@ -195,6 +205,19 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/AutoCloseab
 <!--   -->
 </a>
 <h3>Method Detail</h3>
+<a name="purgeSchema-com.exedio.cope.util.JobContext-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>purgeSchema</h4>
+<pre>default&nbsp;void&nbsp;purgeSchema(<a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+                         <a href="../../../../com/exedio/cope/util/JobContext.html" title="interface in com.exedio.cope.util">JobContext</a>&nbsp;ctx)</pre>
+<div class="block">Gives this service the chance to purge / cleanup whatever it needs to.
+ Is called by <a href="../../../../com/exedio/cope/Model.html#purgeSchema-com.exedio.cope.util.JobContext-"><code>Model.purgeSchema(JobContext)</code></a>.
+ The default implementation does nothing.</div>
+</li>
+</ul>
 <a name="close--">
 <!--   -->
 </a>
@@ -249,12 +272,16 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/AutoCloseab
 <pre>void&nbsp;get(<a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
          <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;hash,
          <a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
-         <a href="https://docs.oracle.com/javase/8/docs/api/java/io/OutputStream.html?is-external=true" title="class or interface in java.io">OutputStream</a>&nbsp;value)
+         <a href="https://docs.oracle.com/javase/8/docs/api/java/io/OutputStream.html?is-external=true" title="class or interface in java.io">OutputStream</a>&nbsp;sink)
   throws <a href="../../../../com/exedio/cope/vault/VaultNotFoundException.html" title="class in com.exedio.cope.vault">VaultNotFoundException</a>,
          <a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
-<div class="block">If this method throws a <a href="../../../../com/exedio/cope/vault/VaultNotFoundException.html" title="class in com.exedio.cope.vault"><code>VaultNotFoundException</code></a>,
- it MUST not have modified <code>value</code> in any way.
- In particular it must not have written any byte to <code>value</code>.</div>
+<div class="block">Must not
+ <a href="https://docs.oracle.com/javase/8/docs/api/java/io/OutputStream.html?is-external=true#close--" title="class or interface in java.io"><code>close</code></a> or
+ <a href="https://docs.oracle.com/javase/8/docs/api/java/io/OutputStream.html?is-external=true#flush--" title="class or interface in java.io"><code>flush</code></a> <code>sink</code>.
+ <p>
+ If this method throws a <a href="../../../../com/exedio/cope/vault/VaultNotFoundException.html" title="class in com.exedio.cope.vault"><code>VaultNotFoundException</code></a>,
+ it MUST not have modified <code>sink</code> in any way.
+ In particular it must not have written any byte to <code>sink</code>.</div>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code><a href="../../../../com/exedio/cope/vault/VaultNotFoundException.html" title="class in com.exedio.cope.vault">VaultNotFoundException</a></code></dd>
@@ -262,7 +289,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/AutoCloseab
 </dl>
 </li>
 </ul>
-<a name="put-java.lang.String-byte:A-">
+<a name="put-java.lang.String-byte:A-com.exedio.cope.vault.VaultPutInfo-">
 <!--   -->
 </a>
 <ul class="blockList">
@@ -271,7 +298,9 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/AutoCloseab
 <pre>boolean&nbsp;put(<a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
             <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;hash,
             <a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
-            byte[]&nbsp;value)</pre>
+            byte[]&nbsp;value,
+            <a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+            <a href="../../../../com/exedio/cope/vault/VaultPutInfo.html" title="interface in com.exedio.cope.vault">VaultPutInfo</a>&nbsp;info)</pre>
 <div class="block">Is not called, if service instance was created with
  <a href="../../../../com/exedio/cope/vault/VaultServiceParameters.html#isWritable--"><code>VaultServiceParameters.isWritable()</code></a>==false.</div>
 <dl>
@@ -282,7 +311,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/AutoCloseab
 </dl>
 </li>
 </ul>
-<a name="put-java.lang.String-java.io.InputStream-">
+<a name="put-java.lang.String-java.io.InputStream-com.exedio.cope.vault.VaultPutInfo-">
 <!--   -->
 </a>
 <ul class="blockList">
@@ -291,7 +320,9 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/AutoCloseab
 <pre>boolean&nbsp;put(<a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
             <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;hash,
             <a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
-            <a href="https://docs.oracle.com/javase/8/docs/api/java/io/InputStream.html?is-external=true" title="class or interface in java.io">InputStream</a>&nbsp;value)
+            <a href="https://docs.oracle.com/javase/8/docs/api/java/io/InputStream.html?is-external=true" title="class or interface in java.io">InputStream</a>&nbsp;value,
+            <a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+            <a href="../../../../com/exedio/cope/vault/VaultPutInfo.html" title="interface in com.exedio.cope.vault">VaultPutInfo</a>&nbsp;info)
      throws <a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
 <div class="block">Is not called, if service instance was created with
  <a href="../../../../com/exedio/cope/vault/VaultServiceParameters.html#isWritable--"><code>VaultServiceParameters.isWritable()</code></a>==false.</div>
@@ -305,7 +336,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/AutoCloseab
 </dl>
 </li>
 </ul>
-<a name="put-java.lang.String-java.io.File-">
+<a name="put-java.lang.String-java.nio.file.Path-com.exedio.cope.vault.VaultPutInfo-">
 <!--   -->
 </a>
 <ul class="blockListLast">
@@ -314,7 +345,9 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/AutoCloseab
 <pre>boolean&nbsp;put(<a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
             <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;hash,
             <a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
-            <a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a>&nbsp;value)
+            <a href="https://docs.oracle.com/javase/8/docs/api/java/nio/file/Path.html?is-external=true" title="class or interface in java.nio.file">Path</a>&nbsp;value,
+            <a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+            <a href="../../../../com/exedio/cope/vault/VaultPutInfo.html" title="interface in com.exedio.cope.vault">VaultPutInfo</a>&nbsp;info)
      throws <a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
 <div class="block">The caller must make sure, that <code>value</code> is not modified during the call.
  Is not called, if service instance was created with

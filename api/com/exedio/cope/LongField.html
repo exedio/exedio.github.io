@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -220,13 +220,20 @@ extends <a href="../../../com/exedio/cope/NumberField.html" title="class in com.
 </tr>
 <tr id="i11" class="rowColor">
 <td class="colFirst"><code><a href="../../../com/exedio/cope/LongField.html" title="class in com.exedio.cope">LongField</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/LongField.html#noDefault--">noDefault</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/LongField.html#noCopyFrom--">noCopyFrom</a></span>()</code>
+<div class="block">Returns a new FunctionField that differs from this FunctionField
+ by having no <a href="../../../com/exedio/cope/FunctionField.html#copyFrom-com.exedio.cope.ItemField-"><code>copyFrom</code></a> fields set.</div>
+</td>
 </tr>
 <tr id="i12" class="altColor">
 <td class="colFirst"><code><a href="../../../com/exedio/cope/LongField.html" title="class in com.exedio.cope">LongField</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/LongField.html#nonUnique--">nonUnique</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/LongField.html#noDefault--">noDefault</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i13" class="rowColor">
+<td class="colFirst"><code><a href="../../../com/exedio/cope/LongField.html" title="class in com.exedio.cope">LongField</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/LongField.html#nonUnique--">nonUnique</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i14" class="altColor">
 <td class="colFirst"><code><a href="../../../com/exedio/cope/LongField.html" title="class in com.exedio.cope">LongField</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/LongField.html#optional--">optional</a></span>()</code>
 <div class="block">Returns a new Field,
@@ -234,33 +241,33 @@ extends <a href="../../../com/exedio/cope/NumberField.html" title="class in com.
  by being optional.</div>
 </td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code><a href="../../../com/exedio/cope/LongField.html" title="class in com.exedio.cope">LongField</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/LongField.html#range-long-long-">range</a></span>(long&nbsp;minimum,
      long&nbsp;maximum)</code>&nbsp;</td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code><a href="../../../com/exedio/cope/LongField.html" title="class in com.exedio.cope">LongField</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/LongField.html#rangeDigits-int-">rangeDigits</a></span>(int&nbsp;digits)</code>&nbsp;</td>
 </tr>
-<tr id="i16" class="altColor">
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code><a href="../../../com/exedio/cope/LongField.html" title="class in com.exedio.cope">LongField</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/LongField.html#rangeDigits-int-int-">rangeDigits</a></span>(int&nbsp;minimumDigits,
            int&nbsp;maximumDigits)</code>&nbsp;</td>
 </tr>
-<tr id="i17" class="rowColor">
+<tr id="i18" class="altColor">
 <td class="colFirst"><code>&lt;P extends <a href="../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&gt;<br>P</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/LongField.html#searchUnique-java.lang.Class-long-">searchUnique</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;P&gt;&nbsp;typeClass,
             long&nbsp;value)</code>
 <div class="block">Finds an item by it's unique fields.</div>
 </td>
 </tr>
-<tr id="i18" class="altColor">
+<tr id="i19" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/LongField.html#set-com.exedio.cope.Item-long-">set</a></span>(<a href="../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&nbsp;item,
    long&nbsp;value)</code>&nbsp;</td>
 </tr>
-<tr id="i19" class="rowColor">
+<tr id="i20" class="altColor">
 <td class="colFirst"><code><a href="../../../com/exedio/cope/LongField.html" title="class in com.exedio.cope">LongField</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/LongField.html#toFinal--">toFinal</a></span>()</code>
 <div class="block">Returns a new Field,
@@ -268,7 +275,7 @@ extends <a href="../../../com/exedio/cope/NumberField.html" title="class in com.
  by being final.</div>
 </td>
 </tr>
-<tr id="i20" class="altColor">
+<tr id="i21" class="rowColor">
 <td class="colFirst"><code><a href="../../../com/exedio/cope/LongField.html" title="class in com.exedio.cope">LongField</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/LongField.html#unique--">unique</a></span>()</code>
 <div class="block">Returns a new FunctionField,
@@ -289,7 +296,7 @@ extends <a href="../../../com/exedio/cope/NumberField.html" title="class in com.
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;com.exedio.cope.<a href="../../../com/exedio/cope/FunctionField.html" title="class in com.exedio.cope">FunctionField</a></h3>
-<code><a href="../../../com/exedio/cope/FunctionField.html#addCopyFrom-com.exedio.cope.ItemField-">addCopyFrom</a>, <a href="../../../com/exedio/cope/FunctionField.html#append-com.exedio.cope.Statement-com.exedio.cope.Join-">append</a>, <a href="../../../com/exedio/cope/FunctionField.html#appendSelect-com.exedio.cope.Statement-com.exedio.cope.Join-">appendSelect</a>, <a href="../../../com/exedio/cope/FunctionField.html#check-com.exedio.cope.TC-com.exedio.cope.Join-">check</a>, <a href="../../../com/exedio/cope/FunctionField.html#copy-com.exedio.cope.CopyMapper-">copy</a>, <a href="../../../com/exedio/cope/FunctionField.html#copyFunctionField--">copyFunctionField</a>, <a href="../../../com/exedio/cope/FunctionField.html#get-com.exedio.cope.Item-">get</a>, <a href="../../../com/exedio/cope/FunctionField.html#getDefaultConstant--">getDefaultConstant</a>, <a href="../../../com/exedio/cope/FunctionField.html#getImplicitCopyConstraint--">getImplicitCopyConstraint</a>, <a href="../../../com/exedio/cope/FunctionField.html#getImplicitCopyConstraints--">getImplicitCopyConstraints</a>, <a href="../../../com/exedio/cope/FunctionField.html#getImplicitUniqueConstraint--">getImplicitUniqueConstraint</a>, <a href="../../../com/exedio/cope/FunctionField.html#getUniqueConstraints--">getUniqueConstraints</a>, <a href="../../../com/exedio/cope/FunctionField.html#hasDefault--">hasDefault</a>, <a href="../../../com/exedio/cope/FunctionField.html#isInitial--">isInitial</a>, <a href="../../../com/exedio/cope/FunctionField.html#isRedundantByCopyConstraint--">isRedundantByCopyConstraint</a>, <a href="../../../com/exedio/cope/FunctionField.html#searchUnique-java.lang.Class-E-">searchUnique</a>, <a href="../../../com/exedio/cope/FunctionField.html#searchUnique-E-">searchUnique</a>, <a href="../../../com/exedio/cope/FunctionField.html#searchUniqueStrict-java.lang.Class-E-">searchUniqueStrict</a>, <a href="../../../com/exedio/cope/FunctionField.html#set-com.exedio.cope.Item-E-">set</a></code></li>
+<code><a href="../../../com/exedio/cope/FunctionField.html#addCopyFrom-com.exedio.cope.ItemField-">addCopyFrom</a>, <a href="../../../com/exedio/cope/FunctionField.html#append-com.exedio.cope.Statement-com.exedio.cope.Join-">append</a>, <a href="../../../com/exedio/cope/FunctionField.html#appendSelect-com.exedio.cope.Statement-com.exedio.cope.Join-">appendSelect</a>, <a href="../../../com/exedio/cope/FunctionField.html#check-com.exedio.cope.TC-com.exedio.cope.Join-">check</a>, <a href="../../../com/exedio/cope/FunctionField.html#copy-com.exedio.cope.CopyMapper-">copy</a>, <a href="../../../com/exedio/cope/FunctionField.html#copyFunctionField--">copyFunctionField</a>, <a href="../../../com/exedio/cope/FunctionField.html#get-com.exedio.cope.FieldValues-">get</a>, <a href="../../../com/exedio/cope/FunctionField.html#get-com.exedio.cope.Item-">get</a>, <a href="../../../com/exedio/cope/FunctionField.html#getDefaultConstant--">getDefaultConstant</a>, <a href="../../../com/exedio/cope/FunctionField.html#getImplicitCopyConstraint--">getImplicitCopyConstraint</a>, <a href="../../../com/exedio/cope/FunctionField.html#getImplicitCopyConstraints--">getImplicitCopyConstraints</a>, <a href="../../../com/exedio/cope/FunctionField.html#getImplicitUniqueConstraint--">getImplicitUniqueConstraint</a>, <a href="../../../com/exedio/cope/FunctionField.html#getUniqueConstraints--">getUniqueConstraints</a>, <a href="../../../com/exedio/cope/FunctionField.html#hasDefault--">hasDefault</a>, <a href="../../../com/exedio/cope/FunctionField.html#isInitial--">isInitial</a>, <a href="../../../com/exedio/cope/FunctionField.html#isRedundantByCopyConstraint--">isRedundantByCopyConstraint</a>, <a href="../../../com/exedio/cope/FunctionField.html#searchUnique-java.lang.Class-E-">searchUnique</a>, <a href="../../../com/exedio/cope/FunctionField.html#searchUnique-E-">searchUnique</a>, <a href="../../../com/exedio/cope/FunctionField.html#searchUniqueStrict-java.lang.Class-E-">searchUniqueStrict</a>, <a href="../../../com/exedio/cope/FunctionField.html#set-com.exedio.cope.Item-E-">set</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.com.exedio.cope.Field">
@@ -324,7 +331,7 @@ extends <a href="../../../com/exedio/cope/NumberField.html" title="class in com.
 <!--   -->
 </a>
 <h3>Methods inherited from interface&nbsp;com.exedio.cope.<a href="../../../com/exedio/cope/Function.html" title="interface in com.exedio.cope">Function</a></h3>
-<code><a href="../../../com/exedio/cope/Function.html#any--">any</a>, <a href="../../../com/exedio/cope/Function.html#between-E-E-">between</a>, <a href="../../../com/exedio/cope/Function.html#equal-E-">equal</a>, <a href="../../../com/exedio/cope/Function.html#equal-com.exedio.cope.Function-">equal</a>, <a href="../../../com/exedio/cope/Function.html#equal-com.exedio.cope.Join-E-">equal</a>, <a href="../../../com/exedio/cope/Function.html#get-com.exedio.cope.Item-">get</a>, <a href="../../../com/exedio/cope/Function.html#greater-E-">greater</a>, <a href="../../../com/exedio/cope/Function.html#greater-com.exedio.cope.Function-">greater</a>, <a href="../../../com/exedio/cope/Function.html#greaterOrEqual-E-">greaterOrEqual</a>, <a href="../../../com/exedio/cope/Function.html#greaterOrEqual-com.exedio.cope.Function-">greaterOrEqual</a>, <a href="../../../com/exedio/cope/Function.html#in-java.util.Collection-">in</a>, <a href="../../../com/exedio/cope/Function.html#in-E...-">in</a>, <a href="../../../com/exedio/cope/Function.html#isNotNull--">isNotNull</a>, <a href="../../../com/exedio/cope/Function.html#isNull--">isNull</a>, <a href="../../../com/exedio/cope/Function.html#less-E-">less</a>, <a href="../../../com/exedio/cope/Function.html#less-com.exedio.cope.Function-">less</a>, <a href="../../../com/exedio/cope/Function.html#lessOrEqual-E-">lessOrEqual</a>, <a href="../../../com/exedio/cope/Function.html#lessOrEqual-com.exedio.cope.Function-">lessOrEqual</a>, <a href="../../../com/exedio/cope/Function.html#max--">max</a>, <a href="../../../com/exedio/cope/Function.html#min--">min</a>, <a href="../../../com/exedio/cope/Function.html#notEqual-E-">notEqual</a>, <a href="../../../com/exedio/cope/Function.html#notEqual-com.exedio.cope.Function-">notEqual</a></code></li>
+<code><a href="../../../com/exedio/cope/Function.html#any--">any</a>, <a href="../../../com/exedio/cope/Function.html#between-E-E-">between</a>, <a href="../../../com/exedio/cope/Function.html#equal-E-">equal</a>, <a href="../../../com/exedio/cope/Function.html#equal-com.exedio.cope.Function-">equal</a>, <a href="../../../com/exedio/cope/Function.html#equal-com.exedio.cope.Join-E-">equal</a>, <a href="../../../com/exedio/cope/Function.html#get-com.exedio.cope.FieldValues-">get</a>, <a href="../../../com/exedio/cope/Function.html#get-com.exedio.cope.Item-">get</a>, <a href="../../../com/exedio/cope/Function.html#greater-E-">greater</a>, <a href="../../../com/exedio/cope/Function.html#greater-com.exedio.cope.Function-">greater</a>, <a href="../../../com/exedio/cope/Function.html#greaterOrEqual-E-">greaterOrEqual</a>, <a href="../../../com/exedio/cope/Function.html#greaterOrEqual-com.exedio.cope.Function-">greaterOrEqual</a>, <a href="../../../com/exedio/cope/Function.html#in-java.util.Collection-">in</a>, <a href="../../../com/exedio/cope/Function.html#in-E...-">in</a>, <a href="../../../com/exedio/cope/Function.html#isNotNull--">isNotNull</a>, <a href="../../../com/exedio/cope/Function.html#isNull--">isNull</a>, <a href="../../../com/exedio/cope/Function.html#less-E-">less</a>, <a href="../../../com/exedio/cope/Function.html#less-com.exedio.cope.Function-">less</a>, <a href="../../../com/exedio/cope/Function.html#lessOrEqual-E-">lessOrEqual</a>, <a href="../../../com/exedio/cope/Function.html#lessOrEqual-com.exedio.cope.Function-">lessOrEqual</a>, <a href="../../../com/exedio/cope/Function.html#max--">max</a>, <a href="../../../com/exedio/cope/Function.html#min--">min</a>, <a href="../../../com/exedio/cope/Function.html#notEqual-E-">notEqual</a>, <a href="../../../com/exedio/cope/Function.html#notEqual-com.exedio.cope.Function-">notEqual</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.com.exedio.cope.Selectable">
@@ -472,6 +479,22 @@ extends <a href="../../../com/exedio/cope/NumberField.html" title="class in com.
 <dd><code><a href="../../../com/exedio/cope/FunctionField.html#copyFrom-com.exedio.cope.ItemField-">copyFrom</a></code>&nbsp;in class&nbsp;<code><a href="../../../com/exedio/cope/FunctionField.html" title="class in com.exedio.cope">FunctionField</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Long.html?is-external=true" title="class or interface in java.lang">Long</a>&gt;</code></dd>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../com/exedio/cope/ItemField.html#copyTo-com.exedio.cope.FunctionField-"><code>ItemField.copyTo(FunctionField)</code></a></dd>
+</dl>
+</li>
+</ul>
+<a name="noCopyFrom--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>noCopyFrom</h4>
+<pre>public&nbsp;<a href="../../../com/exedio/cope/LongField.html" title="class in com.exedio.cope">LongField</a>&nbsp;noCopyFrom()</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../../com/exedio/cope/FunctionField.html#noCopyFrom--">FunctionField</a></code></span></div>
+<div class="block">Returns a new FunctionField that differs from this FunctionField
+ by having no <a href="../../../com/exedio/cope/FunctionField.html#copyFrom-com.exedio.cope.ItemField-"><code>copyFrom</code></a> fields set.</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../com/exedio/cope/FunctionField.html#noCopyFrom--">noCopyFrom</a></code>&nbsp;in class&nbsp;<code><a href="../../../com/exedio/cope/FunctionField.html" title="class in com.exedio.cope">FunctionField</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Long.html?is-external=true" title="class or interface in java.lang">Long</a>&gt;</code></dd>
 </dl>
 </li>
 </ul>

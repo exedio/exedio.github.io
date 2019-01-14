@@ -120,7 +120,7 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializab
 <div class="block">This is the super class for all classes,
  that want to store their data persistently with COPE.
  <p>
- Serialization of instances of <tt>Item</tt>
+ Serialization of instances of <code>Item</code>
  is guaranteed to be light-weight -
  there are no non-static, non-transient object reference
  fields in this class or its superclasses.</div>
@@ -227,7 +227,7 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializab
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Item.html#appendCopeID-java.lang.StringBuilder-">appendCopeID</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/StringBuilder.html?is-external=true" title="class or interface in java.lang">StringBuilder</a>&nbsp;bf)</code>
-<div class="block">Is equivalent to <tt>bf.<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/StringBuilder.html?is-external=true#append-java.lang.String-" title="class or interface in java.lang"><code>append</code></a>(<a href="../../../com/exedio/cope/Item.html#getCopeID--"><code>getCopeID()</code></a>);</tt></div>
+<div class="block">Is equivalent to <code>bf.{@link StringBuilder#append(String) append}({@link #getCopeID()});</code></div>
 </td>
 </tr>
 <tr id="i3" class="rowColor">
@@ -257,7 +257,7 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializab
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Item.html#equals-java.lang.Object-">equals</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;o)</code>
-<div class="block">Returns true, if <tt>o</tt> represents the same item as this item.</div>
+<div class="block">Returns true, if <code>o</code> represents the same item as this item.</div>
 </td>
 </tr>
 <tr id="i8" class="altColor">
@@ -371,7 +371,7 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializab
 <tr id="i24" class="altColor">
 <td class="colFirst"><code>protected <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Item.html#writeReplace--">writeReplace</a></span>()</code>
-<div class="block"><a href="http://java.sun.com/j2se/1.5.0/docs/guide/serialization/spec/output.html#5324">See Spec</a></div>
+<div class="block"><a href="https://java.sun.com/j2se/1.5.0/docs/guide/serialization/spec/output.html#5324">See Spec</a></div>
 </td>
 </tr>
 </table>
@@ -475,9 +475,9 @@ public static final&nbsp;<a href="../../../com/exedio/cope/ItemField.DeletePolic
 <h4>getCopeID</h4>
 <pre>public final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getCopeID()</pre>
 <div class="block">Returns a string unique for this item in all other items of the model.
- For any item <tt>a</tt> in its model <tt>m</tt>
+ For any item <code>a&lt;/tt&gt; in its model &lt;tt&gt;m</code>
  the following holds true:
- <tt>a.equals(m.getItem(a.getCopeID()).</tt>
+ <code>a.equals(m.getItem(a.getCopeID()).</code>
  Does not activate this item, if it's not already active.
  Never returns null.</div>
 <dl>
@@ -493,7 +493,7 @@ public static final&nbsp;<a href="../../../com/exedio/cope/ItemField.DeletePolic
 <li class="blockList">
 <h4>appendCopeID</h4>
 <pre>public final&nbsp;void&nbsp;appendCopeID(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/StringBuilder.html?is-external=true" title="class or interface in java.lang">StringBuilder</a>&nbsp;bf)</pre>
-<div class="block">Is equivalent to <tt>bf.<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/StringBuilder.html?is-external=true#append-java.lang.String-" title="class or interface in java.lang"><code>append</code></a>(<a href="../../../com/exedio/cope/Item.html#getCopeID--"><code>getCopeID()</code></a>);</tt></div>
+<div class="block">Is equivalent to <code>bf.{@link StringBuilder#append(String) append}({@link #getCopeID()});</code></div>
 </li>
 </ul>
 <a name="getCopeType--">
@@ -514,7 +514,7 @@ public static final&nbsp;<a href="../../../com/exedio/cope/ItemField.DeletePolic
 <li class="blockList">
 <h4>equals</h4>
 <pre>public final&nbsp;boolean&nbsp;equals(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;o)</pre>
-<div class="block">Returns true, if <tt>o</tt> represents the same item as this item.
+<div class="block">Returns true, if <code>o</code> represents the same item as this item.
  Is equivalent to
  <pre>(o != null) &amp;&amp; (o instanceof Item) &amp;&amp; getCopeID().equals(((Item)o).getCopeID())</pre>
  Does not activate this item, if it's not already active.</div>
@@ -532,7 +532,7 @@ public static final&nbsp;<a href="../../../com/exedio/cope/ItemField.DeletePolic
 <h4>hashCode</h4>
 <pre>public final&nbsp;int&nbsp;hashCode()</pre>
 <div class="block">Returns a hash code, that is consistent with <a href="../../../com/exedio/cope/Item.html#equals-java.lang.Object-"><code>equals(Object)</code></a>.
- Note, that this is not necessarily equivalent to <tt>getCopeID().hashCode()</tt>.
+ Note, that this is not necessarily equivalent to <code>getCopeID().hashCode()</code>.
  Does not activate this item, if it's not already active.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
@@ -589,14 +589,14 @@ public static final&nbsp;<a href="../../../com/exedio/cope/ItemField.DeletePolic
 <h4>activeCopeItem</h4>
 <pre>public final&nbsp;<a href="../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&nbsp;activeCopeItem()</pre>
 <div class="block">Returns the active item object representing the same item as this item object.
- For any two item objects <tt>a</tt>, <tt>b</tt> the following holds true:
+ For any two item objects <code>a&lt;/tt&gt;, &lt;tt&gt;b</code> the following holds true:
  <p>
- If and only if <tt>a.equals(b)</tt> then <tt>a.activeCopeItem() == b.activeCopeItem()</tt>.
+ If and only if <code>a.equals(b)&lt;/tt&gt; then &lt;tt&gt;a.activeCopeItem() == b.activeCopeItem()</code>.
  <p>
  So it does for items, what <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true#intern--" title="class or interface in java.lang"><code>String.intern()</code></a> does for strings.
  Does activate this item, if it's not already active.
  Is guaranteed to be very cheap, if this item object is already active, which means
- this method returns <tt>this</tt>.
+ this method returns <code>this</code>.
  Never returns null.</div>
 </li>
 </ul>
@@ -608,6 +608,8 @@ public static final&nbsp;<a href="../../../com/exedio/cope/ItemField.DeletePolic
 <h4>afterNewCopeItem</h4>
 <pre>protected&nbsp;void&nbsp;afterNewCopeItem()</pre>
 <div class="block">Is called after every item creation.
+ Is called only, if <a href="../../../com/exedio/cope/DefaultChangeHook.html" title="class in com.exedio.cope"><code>DefaultChangeHook</code></a> has been
+ <a href="../../../com/exedio/cope/ModelBuilder.html#changeHooks-com.exedio.cope.ChangeHook.Factory...-"><code>installed</code></a>.
  Override this method when needed.
  The default implementation does nothing.
  <p>
@@ -619,7 +621,11 @@ public static final&nbsp;<a href="../../../com/exedio/cope/ItemField.DeletePolic
  If you want to postpone your action until the current transaction commits,
  use either
  <a href="../../../com/exedio/cope/Model.html#addPreCommitHookIfAbsent-R-"><code>pre</code></a>- or
- <a href="../../../com/exedio/cope/Model.html#addPreCommitHookIfAbsent-R-"><code>post</code></a>-commit hooks.</div>
+ <a href="../../../com/exedio/cope/Model.html#addPostCommitHookIfAbsent-R-"><code>post</code></a>-commit hooks.</div>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../com/exedio/cope/ChangeHook.html#afterNew-com.exedio.cope.Item-"><code>ChangeHook.afterNew(Item)</code></a></dd>
+</dl>
 </li>
 </ul>
 <a name="beforeSetCopeItem-com.exedio.cope.SetValue:A-">
@@ -630,6 +636,8 @@ public static final&nbsp;<a href="../../../com/exedio/cope/ItemField.DeletePolic
 <h4>beforeSetCopeItem</h4>
 <pre>protected&nbsp;<a href="../../../com/exedio/cope/SetValue.html" title="class in com.exedio.cope">SetValue</a>&lt;?&gt;[]&nbsp;beforeSetCopeItem(<a href="../../../com/exedio/cope/SetValue.html" title="class in com.exedio.cope">SetValue</a>&lt;?&gt;[]&nbsp;setValues)</pre>
 <div class="block">Is called before every item modification.
+ Is called only, if <a href="../../../com/exedio/cope/DefaultChangeHook.html" title="class in com.exedio.cope"><code>DefaultChangeHook</code></a> has been
+ <a href="../../../com/exedio/cope/ModelBuilder.html#changeHooks-com.exedio.cope.ChangeHook.Factory...-"><code>installed</code></a>.
  Override this method when needed.
  The default implementation does nothing.
  <p>
@@ -641,7 +649,7 @@ public static final&nbsp;<a href="../../../com/exedio/cope/ItemField.DeletePolic
  If you want to postpone your action until the current transaction commits,
  use either
  <a href="../../../com/exedio/cope/Model.html#addPreCommitHookIfAbsent-R-"><code>pre</code></a>- or
- <a href="../../../com/exedio/cope/Model.html#addPreCommitHookIfAbsent-R-"><code>post</code></a>-commit hooks.</div>
+ <a href="../../../com/exedio/cope/Model.html#addPostCommitHookIfAbsent-R-"><code>post</code></a>-commit hooks.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>setValues</code> - is never null and never empty</dd>
@@ -649,7 +657,8 @@ public static final&nbsp;<a href="../../../com/exedio/cope/ItemField.DeletePolic
 <dd>must not return null</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../com/exedio/cope/Item.html#set-com.exedio.cope.SetValue...-"><code>set(SetValue[])</code></a>, 
-<a href="../../../com/exedio/cope/Item.html#set-com.exedio.cope.FunctionField-E-"><code>set(FunctionField, Object)</code></a></dd>
+<a href="../../../com/exedio/cope/Item.html#set-com.exedio.cope.FunctionField-E-"><code>set(FunctionField, Object)</code></a>, 
+<a href="../../../com/exedio/cope/ChangeHook.html#beforeSet-com.exedio.cope.Item-com.exedio.cope.SetValue:A-"><code>ChangeHook.beforeSet(Item, SetValue[])</code></a></dd>
 </dl>
 </li>
 </ul>
@@ -674,10 +683,10 @@ public static final&nbsp;<a href="../../../com/exedio/cope/ItemField.DeletePolic
                           E&nbsp;value)</pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="../../../com/exedio/cope/MandatoryViolationException.html" title="class in com.exedio.cope">MandatoryViolationException</a></code> - if <tt>value</tt> is null and <tt>field</tt>
+<dd><code><a href="../../../com/exedio/cope/MandatoryViolationException.html" title="class in com.exedio.cope">MandatoryViolationException</a></code> - if <code>value&lt;/tt&gt; is null and &lt;tt&gt;field</code>
          is <a href="../../../com/exedio/cope/Field.html#isMandatory--"><code>mandatory</code></a>.</dd>
-<dd><code><a href="../../../com/exedio/cope/FinalViolationException.html" title="class in com.exedio.cope">FinalViolationException</a></code> - if <tt>field</tt> is <a href="../../../com/exedio/cope/Field.html#isFinal--"><code>final</code></a>.</dd>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/ClassCastException.html?is-external=true" title="class or interface in java.lang">ClassCastException</a></code> - if <tt>value</tt> is not compatible to <tt>field</tt>.</dd>
+<dd><code><a href="../../../com/exedio/cope/FinalViolationException.html" title="class in com.exedio.cope">FinalViolationException</a></code> - if <code>field</code> is <a href="../../../com/exedio/cope/Field.html#isFinal--"><code>final</code></a>.</dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/ClassCastException.html?is-external=true" title="class or interface in java.lang">ClassCastException</a></code> - if <code>value&lt;/tt&gt; is not compatible to &lt;tt&gt;field</code>.</dd>
 </dl>
 </li>
 </ul>
@@ -690,10 +699,10 @@ public static final&nbsp;<a href="../../../com/exedio/cope/ItemField.DeletePolic
 <pre>public final&nbsp;void&nbsp;set(<a href="../../../com/exedio/cope/SetValue.html" title="class in com.exedio.cope">SetValue</a>&lt;?&gt;...&nbsp;setValues)</pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="../../../com/exedio/cope/MandatoryViolationException.html" title="class in com.exedio.cope">MandatoryViolationException</a></code> - if <tt>value</tt> is null and <tt>field</tt>
+<dd><code><a href="../../../com/exedio/cope/MandatoryViolationException.html" title="class in com.exedio.cope">MandatoryViolationException</a></code> - if <code>value&lt;/tt&gt; is null and &lt;tt&gt;field</code>
          is <a href="../../../com/exedio/cope/Field.html#isMandatory--"><code>mandatory</code></a>.</dd>
-<dd><code><a href="../../../com/exedio/cope/FinalViolationException.html" title="class in com.exedio.cope">FinalViolationException</a></code> - if <tt>field</tt> is <a href="../../../com/exedio/cope/Field.html#isFinal--"><code>final</code></a>.</dd>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/ClassCastException.html?is-external=true" title="class or interface in java.lang">ClassCastException</a></code> - if <tt>value</tt> is not compatible to <tt>field</tt>.</dd>
+<dd><code><a href="../../../com/exedio/cope/FinalViolationException.html" title="class in com.exedio.cope">FinalViolationException</a></code> - if <code>field</code> is <a href="../../../com/exedio/cope/Field.html#isFinal--"><code>final</code></a>.</dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/ClassCastException.html?is-external=true" title="class or interface in java.lang">ClassCastException</a></code> - if <code>value&lt;/tt&gt; is not compatible to &lt;tt&gt;field</code>.</dd>
 </dl>
 </li>
 </ul>
@@ -719,13 +728,19 @@ public static final&nbsp;<a href="../../../com/exedio/cope/ItemField.DeletePolic
 <h4>beforeDeleteCopeItem</h4>
 <pre>protected&nbsp;void&nbsp;beforeDeleteCopeItem()</pre>
 <div class="block">Is called before every item deletion.
+ Is called only, if <a href="../../../com/exedio/cope/DefaultChangeHook.html" title="class in com.exedio.cope"><code>DefaultChangeHook</code></a> has been
+ <a href="../../../com/exedio/cope/ModelBuilder.html#changeHooks-com.exedio.cope.ChangeHook.Factory...-"><code>installed</code></a>.
  Override this method when needed.
  The default implementation does nothing.
  <p>
  If you want to postpone your action until the current transaction commits,
  use either
  <a href="../../../com/exedio/cope/Model.html#addPreCommitHookIfAbsent-R-"><code>pre</code></a>- or
- <a href="../../../com/exedio/cope/Model.html#addPreCommitHookIfAbsent-R-"><code>post</code></a>-commit hooks.</div>
+ <a href="../../../com/exedio/cope/Model.html#addPostCommitHookIfAbsent-R-"><code>post</code></a>-commit hooks.</div>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../com/exedio/cope/ChangeHook.html#beforeDelete-com.exedio.cope.Item-"><code>ChangeHook.beforeDelete(Item)</code></a></dd>
+</dl>
 </li>
 </ul>
 <a name="existsCopeItem--">
@@ -751,7 +766,7 @@ public static final&nbsp;<a href="../../../com/exedio/cope/ItemField.DeletePolic
 <li class="blockList">
 <h4>writeReplace</h4>
 <pre>protected final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;writeReplace()</pre>
-<div class="block"><a href="http://java.sun.com/j2se/1.5.0/docs/guide/serialization/spec/output.html#5324">See Spec</a></div>
+<div class="block"><a href="https://java.sun.com/j2se/1.5.0/docs/guide/serialization/spec/output.html#5324">See Spec</a></div>
 </li>
 </ul>
 <a name="newEnumField-java.lang.Class-">

@@ -98,9 +98,10 @@
 <br>
 <pre>public static interface <span class="typeNameLabel">Money.Currency</span></pre>
 <div class="block">Empty interface.
- Make sure, that <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#equals-java.lang.Object-" title="class or interface in java.lang"><code>Object.equals(Object)</code></a> and <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#hashCode--" title="class or interface in java.lang"><code>Object.hashCode()</code></a> are
+ Make sure, that <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#equals-java.lang.Object-" title="class or interface in java.lang"><code>equals</code></a> and <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#hashCode--" title="class or interface in java.lang"><code>hashCode</code></a> are
  implemented correctly.
- For good exception messages, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#toString--" title="class or interface in java.lang"><code>Object.toString()</code></a> should be implemented as well.</div>
+ <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#toString--" title="class or interface in java.lang"><code>toString</code></a> should be implemented as well,
+ otherwise <a href="../../../../com/exedio/cope/pattern/Money.html#toString--"><code>Money.toString</code></a> will not be useful.</div>
 </li>
 </ul>
 </div>

@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -159,20 +159,28 @@ extends <a href="../../../com/exedio/cope/ConstraintViolationException.html" tit
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/CopyViolationException.html#getActualValue--">getActualValue</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
+<td class="colFirst"><code><a href="../../../com/exedio/cope/CopyConstraint.html" title="class in com.exedio.cope">CopyConstraint</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/CopyViolationException.html#getAdditionalFeature--">getAdditionalFeature</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i2" class="altColor">
+<td class="colFirst"><code><a href="../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/CopyViolationException.html#getAdditionalTargetItem--">getAdditionalTargetItem</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/CopyViolationException.html#getExpectedValue--">getExpectedValue</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="../../../com/exedio/cope/CopyConstraint.html" title="class in com.exedio.cope">CopyConstraint</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/CopyViolationException.html#getFeature--">getFeature</a></span>()</code>
 <div class="block">Returns the field, that was attempted to be written.</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/CopyViolationException.html#getMessage-boolean-">getMessage</a></span>(boolean&nbsp;withFeature)</code>&nbsp;</td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/CopyViolationException.html#getTargetItem--">getTargetItem</a></span>()</code>&nbsp;</td>
 </tr>
@@ -218,12 +226,23 @@ extends <a href="../../../com/exedio/cope/ConstraintViolationException.html" tit
 <ul class="blockList">
 <li class="blockList">
 <h4>getFeature</h4>
-<pre>public&nbsp;<a href="../../../com/exedio/cope/CopyConstraint.html" title="class in com.exedio.cope">CopyConstraint</a>&nbsp;getFeature()</pre>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+public&nbsp;<a href="../../../com/exedio/cope/CopyConstraint.html" title="class in com.exedio.cope">CopyConstraint</a>&nbsp;getFeature()</pre>
 <div class="block">Returns the field, that was attempted to be written.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../com/exedio/cope/ConstraintViolationException.html#getFeature--">getFeature</a></code>&nbsp;in class&nbsp;<code><a href="../../../com/exedio/cope/ConstraintViolationException.html" title="class in com.exedio.cope">ConstraintViolationException</a></code></dd>
 </dl>
+</li>
+</ul>
+<a name="getAdditionalFeature--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getAdditionalFeature</h4>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
+public&nbsp;<a href="../../../com/exedio/cope/CopyConstraint.html" title="class in com.exedio.cope">CopyConstraint</a>&nbsp;getAdditionalFeature()</pre>
 </li>
 </ul>
 <a name="getExpectedValue--">
@@ -250,7 +269,18 @@ extends <a href="../../../com/exedio/cope/ConstraintViolationException.html" tit
 <ul class="blockList">
 <li class="blockList">
 <h4>getTargetItem</h4>
-<pre>public&nbsp;<a href="../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&nbsp;getTargetItem()</pre>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+public&nbsp;<a href="../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&nbsp;getTargetItem()</pre>
+</li>
+</ul>
+<a name="getAdditionalTargetItem--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getAdditionalTargetItem</h4>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
+public&nbsp;<a href="../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&nbsp;getAdditionalTargetItem()</pre>
 </li>
 </ul>
 <a name="getMessage-boolean-">

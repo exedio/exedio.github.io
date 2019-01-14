@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":42,"i7":41,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":9,"i27":10,"i28":10,"i29":42,"i30":10,"i31":10,"i32":10,"i33":42,"i34":10,"i35":10,"i36":10,"i37":10,"i38":10,"i39":10,"i40":10,"i41":10,"i42":10,"i43":10,"i44":10,"i45":10,"i46":10,"i47":10,"i48":10,"i49":10,"i50":10,"i51":10,"i52":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":42,"i7":41,"i8":10,"i9":10,"i10":10,"i11":10,"i12":42,"i13":42,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":10,"i27":10,"i28":9,"i29":10,"i30":10,"i31":42,"i32":10,"i33":10,"i34":10,"i35":42,"i36":10,"i37":10,"i38":10,"i39":10,"i40":42,"i41":42,"i42":10,"i43":10,"i44":10,"i45":10,"i46":10,"i47":10,"i48":10,"i49":10,"i50":10,"i51":10,"i52":10,"i53":10,"i54":10,"i55":10,"i56":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"],32:["t6","Deprecated Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -260,11 +260,19 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializab
 </tr>
 <tr id="i12" class="altColor">
 <td class="colFirst"><code>int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Query.html#getLimit--">getLimit</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Query.html#getLimit--">getLimit</a></span>()</code>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
+<div class="block"><span class="deprecationComment">Use <a href="../../../com/exedio/cope/Query.html#getPageLimitOrMinusOne--"><code>getPageLimitOrMinusOne()</code></a> instead.</span></div>
+</div>
+</td>
 </tr>
 <tr id="i13" class="rowColor">
 <td class="colFirst"><code>int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Query.html#getOffset--">getOffset</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Query.html#getOffset--">getOffset</a></span>()</code>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
+<div class="block"><span class="deprecationComment">Use <a href="../../../com/exedio/cope/Query.html#getPageOffset--"><code>getPageOffset()</code></a> instead.</span></div>
+</div>
+</td>
 </tr>
 <tr id="i14" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang">Boolean</a>&gt;</code></td>
@@ -276,72 +284,80 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializab
 </tr>
 <tr id="i16" class="altColor">
 <td class="colFirst"><code>int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Query.html#getSearchSizeCacheLimit--">getSearchSizeCacheLimit</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Query.html#getPageLimitOrMinusOne--">getPageLimitOrMinusOne</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i17" class="rowColor">
 <td class="colFirst"><code>int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Query.html#getSearchSizeLimit--">getSearchSizeLimit</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Query.html#getPageOffset--">getPageOffset</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i18" class="altColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Query.html#getSearchSizeCacheLimit--">getSearchSizeCacheLimit</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i19" class="rowColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Query.html#getSearchSizeLimit--">getSearchSizeLimit</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i20" class="altColor">
 <td class="colFirst"><code><a href="../../../com/exedio/cope/Selectable.html" title="interface in com.exedio.cope">Selectable</a>&lt;? extends <a href="../../../com/exedio/cope/Query.html" title="type parameter in Query">R</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Query.html#getSelectSingle--">getSelectSingle</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i19" class="rowColor">
+<tr id="i21" class="rowColor">
 <td class="colFirst"><code><a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;?&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Query.html#getType--">getType</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i20" class="altColor">
+<tr id="i22" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Query.html#isDistinct--">isDistinct</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i21" class="rowColor">
+<tr id="i23" class="rowColor">
 <td class="colFirst"><code><a href="../../../com/exedio/cope/Join.html" title="class in com.exedio.cope">Join</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Query.html#join-com.exedio.cope.Type-">join</a></span>(<a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;?&gt;&nbsp;type)</code>
 <div class="block">Does an inner join with the given type without any join condition.</div>
 </td>
 </tr>
-<tr id="i22" class="altColor">
+<tr id="i24" class="altColor">
 <td class="colFirst"><code><a href="../../../com/exedio/cope/Join.html" title="class in com.exedio.cope">Join</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Query.html#join-com.exedio.cope.Type-com.exedio.cope.Condition-">join</a></span>(<a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;?&gt;&nbsp;type,
     <a href="../../../com/exedio/cope/Condition.html" title="class in com.exedio.cope">Condition</a>&nbsp;condition)</code>
 <div class="block">Does an inner join with the given type on the given join condition.</div>
 </td>
 </tr>
-<tr id="i23" class="rowColor">
+<tr id="i25" class="rowColor">
 <td class="colFirst"><code><a href="../../../com/exedio/cope/Join.html" title="class in com.exedio.cope">Join</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Query.html#joinOuterLeft-com.exedio.cope.Type-com.exedio.cope.Condition-">joinOuterLeft</a></span>(<a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;?&gt;&nbsp;type,
              <a href="../../../com/exedio/cope/Condition.html" title="class in com.exedio.cope">Condition</a>&nbsp;condition)</code>&nbsp;</td>
 </tr>
-<tr id="i24" class="altColor">
+<tr id="i26" class="altColor">
 <td class="colFirst"><code><a href="../../../com/exedio/cope/Join.html" title="class in com.exedio.cope">Join</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Query.html#joinOuterRight-com.exedio.cope.Type-com.exedio.cope.Condition-">joinOuterRight</a></span>(<a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;?&gt;&nbsp;type,
               <a href="../../../com/exedio/cope/Condition.html" title="class in com.exedio.cope">Condition</a>&nbsp;condition)</code>&nbsp;</td>
 </tr>
-<tr id="i25" class="rowColor">
+<tr id="i27" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Query.html#narrow-com.exedio.cope.Condition-">narrow</a></span>(<a href="../../../com/exedio/cope/Condition.html" title="class in com.exedio.cope">Condition</a>&nbsp;narrowingCondition)</code>
 <div class="block">If there is already a condition set for this query,
  this is equivalent to
- <tt><a href="../../../com/exedio/cope/Query.html#setCondition-com.exedio.cope.Condition-"><code>setCondition</code></a>(<a href="../../../com/exedio/cope/Query.html#getCondition--"><code>getCondition()</code></a>.<a href="../../../com/exedio/cope/Condition.html#and-com.exedio.cope.Condition-"><code>and</code></a>(narrowingCondition))</tt>.</div>
+ <code>{@link #setCondition(Condition) setCondition}({@link #getCondition()}.{@link Condition#and(Condition) and}(narrowingCondition))</code>.</div>
 </td>
 </tr>
-<tr id="i26" class="altColor">
+<tr id="i28" class="altColor">
 <td class="colFirst"><code>static <a href="../../../com/exedio/cope/Query.html" title="class in com.exedio.cope">Query</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&gt;&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Query.html#newQuery-com.exedio.cope.Selectable:A-com.exedio.cope.Type-com.exedio.cope.Condition-">newQuery</a></span>(<a href="../../../com/exedio/cope/Selectable.html" title="interface in com.exedio.cope">Selectable</a>&lt;?&gt;[]&nbsp;selects,
         <a href="../../../com/exedio/cope/Type.html" title="class in com.exedio.cope">Type</a>&lt;?&gt;&nbsp;type,
         <a href="../../../com/exedio/cope/Condition.html" title="class in com.exedio.cope">Condition</a>&nbsp;condition)</code>&nbsp;</td>
 </tr>
-<tr id="i27" class="rowColor">
+<tr id="i29" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Query.html#resetOrderBy--">resetOrderBy</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i28" class="altColor">
+<tr id="i30" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../com/exedio/cope/Query.html" title="type parameter in Query">R</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Query.html#search--">search</a></span>()</code>
 <div class="block">Searches for items matching this query.</div>
 </td>
 </tr>
-<tr id="i29" class="rowColor">
+<tr id="i31" class="rowColor">
 <td class="colFirst"><code><a href="../../../com/exedio/cope/Query.Result.html" title="class in com.exedio.cope">Query.Result</a>&lt;<a href="../../../com/exedio/cope/Query.html" title="type parameter in Query">R</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Query.html#searchAndCountWithoutLimit--">searchAndCountWithoutLimit</a></span>()</code>
 <div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
@@ -349,27 +365,27 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializab
 </div>
 </td>
 </tr>
-<tr id="i30" class="altColor">
+<tr id="i32" class="altColor">
 <td class="colFirst"><code><a href="../../../com/exedio/cope/Query.Result.html" title="class in com.exedio.cope">Query.Result</a>&lt;<a href="../../../com/exedio/cope/Query.html" title="type parameter in Query">R</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Query.html#searchAndTotal--">searchAndTotal</a></span>()</code>
 <div class="block">Searches for items matching this query.</div>
 </td>
 </tr>
-<tr id="i31" class="rowColor">
+<tr id="i33" class="rowColor">
 <td class="colFirst"><code><a href="../../../com/exedio/cope/Query.html" title="type parameter in Query">R</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Query.html#searchSingleton--">searchSingleton</a></span>()</code>
 <div class="block">Searches equivalently to <a href="../../../com/exedio/cope/Query.html#search--"><code>search()</code></a>,
  but assumes that the search result has at most one element.</div>
 </td>
 </tr>
-<tr id="i32" class="altColor">
+<tr id="i34" class="altColor">
 <td class="colFirst"><code><a href="../../../com/exedio/cope/Query.html" title="type parameter in Query">R</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Query.html#searchSingletonStrict--">searchSingletonStrict</a></span>()</code>
 <div class="block">Searches equivalently to <a href="../../../com/exedio/cope/Query.html#search--"><code>search()</code></a>,
  but assumes that the search result has exactly one element.</div>
 </td>
 </tr>
-<tr id="i33" class="rowColor">
+<tr id="i35" class="rowColor">
 <td class="colFirst"><code><a href="../../../com/exedio/cope/Query.html" title="type parameter in Query">R</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Query.html#searchUnique--">searchUnique</a></span>()</code>
 <div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
@@ -377,90 +393,107 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializab
 </div>
 </td>
 </tr>
-<tr id="i34" class="altColor">
+<tr id="i36" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Query.html#setCondition-com.exedio.cope.Condition-">setCondition</a></span>(<a href="../../../com/exedio/cope/Condition.html" title="class in com.exedio.cope">Condition</a>&nbsp;condition)</code>&nbsp;</td>
 </tr>
-<tr id="i35" class="rowColor">
+<tr id="i37" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Query.html#setDistinct-boolean-">setDistinct</a></span>(boolean&nbsp;distinct)</code>&nbsp;</td>
 </tr>
-<tr id="i36" class="altColor">
+<tr id="i38" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Query.html#setGroupBy-com.exedio.cope.Selectable...-">setGroupBy</a></span>(<a href="../../../com/exedio/cope/Selectable.html" title="interface in com.exedio.cope">Selectable</a>&lt;?&gt;...&nbsp;groupBy)</code>&nbsp;</td>
 </tr>
-<tr id="i37" class="rowColor">
+<tr id="i39" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Query.html#setHaving-com.exedio.cope.Condition-">setHaving</a></span>(<a href="../../../com/exedio/cope/Condition.html" title="class in com.exedio.cope">Condition</a>&nbsp;having)</code>&nbsp;</td>
 </tr>
-<tr id="i38" class="altColor">
+<tr id="i40" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Query.html#setLimit-int-">setLimit</a></span>(int&nbsp;offset)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Query.html#setLimit-int-">setLimit</a></span>(int&nbsp;offset)</code>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
+<div class="block"><span class="deprecationComment">Use <a href="../../../com/exedio/cope/Query.html#setPageUnlimited-int-"><code>setPageUnlimited(int)</code></a> instead.</span></div>
+</div>
+</td>
 </tr>
-<tr id="i39" class="rowColor">
+<tr id="i41" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Query.html#setLimit-int-int-">setLimit</a></span>(int&nbsp;offset,
-        int&nbsp;limit)</code>&nbsp;</td>
+        int&nbsp;limit)</code>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
+<div class="block"><span class="deprecationComment">Use <a href="../../../com/exedio/cope/Query.html#setPage-int-int-"><code>setPage(int, int)</code></a> instead.</span></div>
+</div>
+</td>
 </tr>
-<tr id="i40" class="altColor">
+<tr id="i42" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Query.html#setOrderBy-com.exedio.cope.Function:A-boolean:A-">setOrderBy</a></span>(<a href="../../../com/exedio/cope/Function.html" title="interface in com.exedio.cope">Function</a>&lt;?&gt;[]&nbsp;orderBy,
           boolean[]&nbsp;ascending)</code>&nbsp;</td>
 </tr>
-<tr id="i41" class="rowColor">
+<tr id="i43" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Query.html#setOrderBy-com.exedio.cope.Function-boolean-">setOrderBy</a></span>(<a href="../../../com/exedio/cope/Function.html" title="interface in com.exedio.cope">Function</a>&lt;?&gt;&nbsp;orderBy,
           boolean&nbsp;ascending)</code>&nbsp;</td>
 </tr>
-<tr id="i42" class="altColor">
+<tr id="i44" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Query.html#setOrderBy-com.exedio.cope.Selectable:A-boolean:A-">setOrderBy</a></span>(<a href="../../../com/exedio/cope/Selectable.html" title="interface in com.exedio.cope">Selectable</a>&lt;?&gt;[]&nbsp;orderBy,
           boolean[]&nbsp;ascending)</code>&nbsp;</td>
 </tr>
-<tr id="i43" class="rowColor">
+<tr id="i45" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Query.html#setOrderBy-com.exedio.cope.Selectable-boolean-">setOrderBy</a></span>(<a href="../../../com/exedio/cope/Selectable.html" title="interface in com.exedio.cope">Selectable</a>&lt;?&gt;&nbsp;orderBy,
           boolean&nbsp;ascending)</code>&nbsp;</td>
 </tr>
-<tr id="i44" class="altColor">
+<tr id="i46" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Query.html#setOrderByAndThis-com.exedio.cope.Function-boolean-">setOrderByAndThis</a></span>(<a href="../../../com/exedio/cope/Function.html" title="interface in com.exedio.cope">Function</a>&lt;?&gt;&nbsp;orderBy,
                  boolean&nbsp;ascending)</code>&nbsp;</td>
 </tr>
-<tr id="i45" class="rowColor">
+<tr id="i47" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Query.html#setOrderByAndThis-com.exedio.cope.Selectable-boolean-">setOrderByAndThis</a></span>(<a href="../../../com/exedio/cope/Selectable.html" title="interface in com.exedio.cope">Selectable</a>&lt;?&gt;&nbsp;orderBy,
                  boolean&nbsp;ascending)</code>&nbsp;</td>
 </tr>
-<tr id="i46" class="altColor">
+<tr id="i48" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Query.html#setOrderByThis-boolean-">setOrderByThis</a></span>(boolean&nbsp;ascending)</code>&nbsp;</td>
 </tr>
-<tr id="i47" class="rowColor">
+<tr id="i49" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Query.html#setPage-int-int-">setPage</a></span>(int&nbsp;offset,
+       int&nbsp;limit)</code>&nbsp;</td>
+</tr>
+<tr id="i50" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Query.html#setPageUnlimited-int-">setPageUnlimited</a></span>(int&nbsp;offset)</code>&nbsp;</td>
+</tr>
+<tr id="i51" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Query.html#setSearchSizeCacheLimit-int-">setSearchSizeCacheLimit</a></span>(int&nbsp;searchSizeCacheLimit)</code>
 <div class="block">Sets the search size cache limit for this query.</div>
 </td>
 </tr>
-<tr id="i48" class="altColor">
+<tr id="i52" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Query.html#setSearchSizeLimit-int-">setSearchSizeLimit</a></span>(int&nbsp;searchSizeLimit)</code>
 <div class="block">Sets the search size limit for this query.</div>
 </td>
 </tr>
-<tr id="i49" class="rowColor">
+<tr id="i53" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Query.html#setSelect-com.exedio.cope.Selectable-">setSelect</a></span>(<a href="../../../com/exedio/cope/Selectable.html" title="interface in com.exedio.cope">Selectable</a>&lt;? extends <a href="../../../com/exedio/cope/Query.html" title="type parameter in Query">R</a>&gt;&nbsp;select)</code>&nbsp;</td>
 </tr>
-<tr id="i50" class="altColor">
+<tr id="i54" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Query.html#setSelects-com.exedio.cope.Selectable...-">setSelects</a></span>(<a href="../../../com/exedio/cope/Selectable.html" title="interface in com.exedio.cope">Selectable</a>&lt;?&gt;...&nbsp;selects)</code>&nbsp;</td>
 </tr>
-<tr id="i51" class="rowColor">
+<tr id="i55" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Query.html#toString--">toString</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i52" class="altColor">
+<tr id="i56" class="altColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/Query.html#total--">total</a></span>()</code>
 <div class="block">Counts the items matching this query.</div>
@@ -652,7 +685,7 @@ public&nbsp;Query(<a href="../../../com/exedio/cope/Selectable.html" title="inte
 <pre>public&nbsp;void&nbsp;narrow(<a href="../../../com/exedio/cope/Condition.html" title="class in com.exedio.cope">Condition</a>&nbsp;narrowingCondition)</pre>
 <div class="block">If there is already a condition set for this query,
  this is equivalent to
- <tt><a href="../../../com/exedio/cope/Query.html#setCondition-com.exedio.cope.Condition-"><code>setCondition</code></a>(<a href="../../../com/exedio/cope/Query.html#getCondition--"><code>getCondition()</code></a>.<a href="../../../com/exedio/cope/Condition.html#and-com.exedio.cope.Condition-"><code>and</code></a>(narrowingCondition))</tt>.</div>
+ <code>{@link #setCondition(Condition) setCondition}({@link #getCondition()}.{@link Condition#and(Condition) and}(narrowingCondition))</code>.</div>
 </li>
 </ul>
 <a name="join-com.exedio.cope.Type-">
@@ -798,7 +831,7 @@ public&nbsp;Query(<a href="../../../com/exedio/cope/Selectable.html" title="inte
                        boolean[]&nbsp;ascending)</pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang">IllegalArgumentException</a></code> - if <tt>orderBy.length!=ascending.length</tt></dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang">IllegalArgumentException</a></code> - if <code>orderBy.length!=ascending.length</code></dd>
 </dl>
 </li>
 </ul>
@@ -839,56 +872,56 @@ public&nbsp;Query(<a href="../../../com/exedio/cope/Selectable.html" title="inte
 <pre>public&nbsp;void&nbsp;resetOrderBy()</pre>
 </li>
 </ul>
-<a name="getOffset--">
+<a name="getPageOffset--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>getOffset</h4>
-<pre>public&nbsp;int&nbsp;getOffset()</pre>
+<h4>getPageOffset</h4>
+<pre>public&nbsp;int&nbsp;getPageOffset()</pre>
 </li>
 </ul>
-<a name="getLimit--">
+<a name="getPageLimitOrMinusOne--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>getLimit</h4>
-<pre>public&nbsp;int&nbsp;getLimit()</pre>
+<h4>getPageLimitOrMinusOne</h4>
+<pre>public&nbsp;int&nbsp;getPageLimitOrMinusOne()</pre>
 </li>
 </ul>
-<a name="setLimit-int-int-">
+<a name="setPage-int-int-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>setLimit</h4>
-<pre>public&nbsp;void&nbsp;setLimit(int&nbsp;offset,
-                     int&nbsp;limit)</pre>
+<h4>setPage</h4>
+<pre>public&nbsp;void&nbsp;setPage(int&nbsp;offset,
+                    int&nbsp;limit)</pre>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>limit</code> - the maximum number of items to be found.
-        For specifying no limit use <a href="../../../com/exedio/cope/Query.html#setLimit-int-"><code>setLimit(int)</code></a> instead.</dd>
+        For specifying offset but no limit use <a href="../../../com/exedio/cope/Query.html#setPageUnlimited-int-"><code>setPageUnlimited(int)</code></a> instead.</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang">IllegalArgumentException</a></code> - if offset is a negative value</dd>
 <dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang">IllegalArgumentException</a></code> - if limit is a negative value</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../com/exedio/cope/Query.html#setLimit-int-"><code>setLimit(int)</code></a></dd>
+<dd><a href="../../../com/exedio/cope/Query.html#setPageUnlimited-int-"><code>setPageUnlimited(int)</code></a></dd>
 </dl>
 </li>
 </ul>
-<a name="setLimit-int-">
+<a name="setPageUnlimited-int-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>setLimit</h4>
-<pre>public&nbsp;void&nbsp;setLimit(int&nbsp;offset)</pre>
+<h4>setPageUnlimited</h4>
+<pre>public&nbsp;void&nbsp;setPageUnlimited(int&nbsp;offset)</pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang">IllegalArgumentException</a></code> - if offset is a negative value</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../com/exedio/cope/Query.html#setLimit-int-int-"><code>setLimit(int, int)</code></a></dd>
+<dd><a href="../../../com/exedio/cope/Query.html#setPage-int-int-"><code>setPage(int, int)</code></a></dd>
 </dl>
 </li>
 </ul>
@@ -980,7 +1013,7 @@ public&nbsp;Query(<a href="../../../com/exedio/cope/Selectable.html" title="inte
  <p>
  Returns an unmodifiable collection.
  Any attempts to modify the returned collection, whether direct or via its iterator,
- result in an <tt>UnsupportedOperationException</tt>.</div>
+ result in an <code>UnsupportedOperationException</code>.</div>
 </li>
 </ul>
 <a name="total--">
@@ -995,7 +1028,7 @@ public&nbsp;Query(<a href="../../../com/exedio/cope/Selectable.html" title="inte
  Returns the
  <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true#size--" title="class or interface in java.util"><code>size</code></a> of what
  <a href="../../../com/exedio/cope/Query.html#search--"><code>search()</code></a> would have returned for this query with
- <a href="../../../com/exedio/cope/Query.html#setLimit-int-"><code>setLimit(int)</code></a> reset set to <tt>(0)</tt>.</div>
+ <a href="../../../com/exedio/cope/Query.html#setPageUnlimited-int-"><code>setPageUnlimited(int)</code></a> reset set to <code>(0)</code>.</div>
 </li>
 </ul>
 <a name="searchAndTotal--">
@@ -1131,6 +1164,51 @@ public&nbsp;Query(<a href="../../../com/exedio/cope/Selectable.html" title="inte
 <h4>addOrderBy</h4>
 <pre>public&nbsp;void&nbsp;addOrderBy(<a href="../../../com/exedio/cope/Function.html" title="interface in com.exedio.cope">Function</a>&lt;?&gt;&nbsp;orderBy,
                        boolean&nbsp;ascending)</pre>
+</li>
+</ul>
+<a name="getOffset--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getOffset</h4>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</a>
+public&nbsp;int&nbsp;getOffset()</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment">Use <a href="../../../com/exedio/cope/Query.html#getPageOffset--"><code>getPageOffset()</code></a> instead.</span></div>
+</li>
+</ul>
+<a name="getLimit--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getLimit</h4>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</a>
+public&nbsp;int&nbsp;getLimit()</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment">Use <a href="../../../com/exedio/cope/Query.html#getPageLimitOrMinusOne--"><code>getPageLimitOrMinusOne()</code></a> instead.</span></div>
+</li>
+</ul>
+<a name="setLimit-int-int-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setLimit</h4>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</a>
+public&nbsp;void&nbsp;setLimit(int&nbsp;offset,
+                                 int&nbsp;limit)</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment">Use <a href="../../../com/exedio/cope/Query.html#setPage-int-int-"><code>setPage(int, int)</code></a> instead.</span></div>
+</li>
+</ul>
+<a name="setLimit-int-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setLimit</h4>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</a>
+public&nbsp;void&nbsp;setLimit(int&nbsp;offset)</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment">Use <a href="../../../com/exedio/cope/Query.html#setPageUnlimited-int-"><code>setPageUnlimited(int)</code></a> instead.</span></div>
 </li>
 </ul>
 <a name="searchAndCountWithoutLimit--">

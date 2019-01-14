@@ -17,8 +17,8 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":6,"i1":42,"i2":6,"i3":10,"i4":6,"i5":10,"i6":10,"i7":10};
-var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],8:["t4","Concrete Methods"],32:["t6","Deprecated Methods"]};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":6,"i4":6,"i5":42,"i6":10,"i7":10,"i8":10,"i9":10,"i10":9,"i11":9,"i12":6,"i13":10,"i14":9,"i15":6,"i16":10,"i17":9,"i18":9,"i19":9,"i20":9,"i21":9,"i22":9,"i23":10,"i24":10,"i25":6,"i26":10,"i27":10,"i28":10,"i29":6,"i30":10,"i31":9,"i32":9,"i33":9,"i34":9};
+var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],8:["t4","Concrete Methods"],32:["t6","Deprecated Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
 var tableTab = "tableTab";
@@ -47,7 +47,7 @@ var activeTableTab = "activeTableTab";
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../com/exedio/dsmf/Constraint.Type.html" title="enum in com.exedio.dsmf"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../com/exedio/dsmf/ForeignKeyConstraint.html" title="class in com.exedio.dsmf"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../com/exedio/dsmf/Dialect.ResultSetHandler.html" title="interface in com.exedio.dsmf"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../index.html?com/exedio/dsmf/Dialect.html" target="_top">Frames</a></li>
@@ -71,15 +71,15 @@ var activeTableTab = "activeTableTab";
 <div>
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
-<li>Nested&nbsp;|&nbsp;</li>
+<li><a href="#nested.class.summary">Nested</a>&nbsp;|&nbsp;</li>
 <li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
-<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
 <li><a href="#field.detail">Field</a>&nbsp;|&nbsp;</li>
-<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.detail">Method</a></li>
 </ul>
 </div>
@@ -104,10 +104,6 @@ var activeTableTab = "activeTableTab";
 <div class="description">
 <ul class="blockList">
 <li class="blockList">
-<dl>
-<dt>Direct Known Subclasses:</dt>
-<dd><a href="../../../com/exedio/dsmf/HsqldbDialect.html" title="class in com.exedio.dsmf">HsqldbDialect</a>, <a href="../../../com/exedio/dsmf/MysqlDialect.html" title="class in com.exedio.dsmf">MysqlDialect</a>, <a href="../../../com/exedio/dsmf/OracleDialect.html" title="class in com.exedio.dsmf">OracleDialect</a>, <a href="../../../com/exedio/dsmf/PostgresqlDialect.html" title="class in com.exedio.dsmf">PostgresqlDialect</a></dd>
-</dl>
 <hr>
 <br>
 <pre>public abstract class <span class="typeNameLabel">Dialect</span>
@@ -118,6 +114,33 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <div class="summary">
 <ul class="blockList">
 <li class="blockList">
+<!-- ======== NESTED CLASS SUMMARY ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="nested.class.summary">
+<!--   -->
+</a>
+<h3>Nested Class Summary</h3>
+<table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Nested Class Summary table, listing nested classes, and an explanation">
+<caption><span>Nested Classes</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected static interface&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/dsmf/Dialect.ResultSetHandler.html" title="interface in com.exedio.dsmf">Dialect.ResultSetHandler</a></span></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected static class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/dsmf/Dialect.SequenceTypeMapper.html" title="class in com.exedio.dsmf">Dialect.SequenceTypeMapper</a></span></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected static class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/dsmf/Dialect.UniqueConstraintCollector.html" title="class in com.exedio.dsmf">Dialect.UniqueConstraintCollector</a></span></code>&nbsp;</td>
+</tr>
+</table>
+</li>
+</ul>
 <!-- =========== FIELD SUMMARY =========== -->
 <ul class="blockList">
 <li class="blockList"><a name="field.summary">
@@ -137,6 +160,25 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 </table>
 </li>
 </ul>
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor.summary">
+<!--   -->
+</a>
+<h3>Constructor Summary</h3>
+<table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Constructor Summary table, listing constructors, and an explanation">
+<caption><span>Constructors</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier</th>
+<th class="colLast" scope="col">Constructor and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected </code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/dsmf/Dialect.html#Dialect-java.lang.String-">Dialect</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;schema)</code>&nbsp;</td>
+</tr>
+</table>
+</li>
+</ul>
 <!-- ========== METHOD SUMMARY =========== -->
 <ul class="blockList">
 <li class="blockList"><a name="method.summary">
@@ -144,18 +186,37 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 </a>
 <h3>Method Summary</h3>
 <table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
-<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t3" class="tableTab"><span><a href="javascript:show(4);">Abstract Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t6" class="tableTab"><span><a href="javascript:show(32);">Deprecated Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
+<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t1" class="tableTab"><span><a href="javascript:show(1);">Static Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t3" class="tableTab"><span><a href="javascript:show(4);">Abstract Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t6" class="tableTab"><span><a href="javascript:show(32);">Deprecated Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
 <tr>
 <th class="colFirst" scope="col">Modifier and Type</th>
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
+<td class="colFirst"><code>protected <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/dsmf/Dialect.html#adjustExistingCheckConstraintCondition-java.lang.String-">adjustExistingCheckConstraintCondition</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;s)</code>&nbsp;</td>
+</tr>
+<tr id="i1" class="rowColor">
+<td class="colFirst"><code>protected void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/dsmf/Dialect.html#appendForeignKeyCreateStatement-java.lang.StringBuilder-">appendForeignKeyCreateStatement</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/StringBuilder.html?is-external=true" title="class or interface in java.lang">StringBuilder</a>&nbsp;bf)</code>&nbsp;</td>
+</tr>
+<tr id="i2" class="altColor">
+<td class="colFirst"><code>protected void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/dsmf/Dialect.html#appendTableCreateStatement-java.lang.StringBuilder-">appendTableCreateStatement</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/StringBuilder.html?is-external=true" title="class or interface in java.lang">StringBuilder</a>&nbsp;bf)</code>&nbsp;</td>
+</tr>
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>abstract <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/dsmf/Dialect.html#createColumn-java.lang.String-java.lang.String-java.lang.String-">createColumn</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;tableName,
             <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;columnName,
             <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;columnType)</code>&nbsp;</td>
 </tr>
-<tr id="i1" class="rowColor">
+<tr id="i4" class="altColor">
+<td class="colFirst"><code>protected abstract void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/dsmf/Dialect.html#createSequence-java.lang.StringBuilder-java.lang.String-com.exedio.dsmf.Sequence.Type-long-">createSequence</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/StringBuilder.html?is-external=true" title="class or interface in java.lang">StringBuilder</a>&nbsp;bf,
+              <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;sequenceName,
+              <a href="../../../com/exedio/dsmf/Sequence.Type.html" title="enum in com.exedio.dsmf">Sequence.Type</a>&nbsp;type,
+              long&nbsp;start)</code>&nbsp;</td>
+</tr>
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/dsmf/Dialect.html#deleteSchema-com.exedio.dsmf.Schema-">deleteSchema</a></span>(<a href="../../../com/exedio/dsmf/Schema.html" title="class in com.exedio.dsmf">Schema</a>&nbsp;schema)</code>
 <div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
@@ -163,37 +224,157 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 </div>
 </td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i6" class="altColor">
+<td class="colFirst"><code>protected void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/dsmf/Dialect.html#dropForeignKeyConstraint-java.lang.StringBuilder-java.lang.String-java.lang.String-">dropForeignKeyConstraint</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/StringBuilder.html?is-external=true" title="class or interface in java.lang">StringBuilder</a>&nbsp;bf,
+                        <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;tableName,
+                        <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;constraintName)</code>&nbsp;</td>
+</tr>
+<tr id="i7" class="rowColor">
+<td class="colFirst"><code>protected void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/dsmf/Dialect.html#dropPrimaryKeyConstraint-java.lang.StringBuilder-java.lang.String-java.lang.String-">dropPrimaryKeyConstraint</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/StringBuilder.html?is-external=true" title="class or interface in java.lang">StringBuilder</a>&nbsp;bf,
+                        <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;tableName,
+                        <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;constraintName)</code>&nbsp;</td>
+</tr>
+<tr id="i8" class="altColor">
+<td class="colFirst"><code>protected void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/dsmf/Dialect.html#dropSequence-java.lang.StringBuilder-java.lang.String-">dropSequence</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/StringBuilder.html?is-external=true" title="class or interface in java.lang">StringBuilder</a>&nbsp;bf,
+            <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;sequenceName)</code>&nbsp;</td>
+</tr>
+<tr id="i9" class="rowColor">
+<td class="colFirst"><code>protected void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/dsmf/Dialect.html#dropUniqueConstraint-java.lang.StringBuilder-java.lang.String-java.lang.String-">dropUniqueConstraint</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/StringBuilder.html?is-external=true" title="class or interface in java.lang">StringBuilder</a>&nbsp;bf,
+                    <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;tableName,
+                    <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;constraintName)</code>&nbsp;</td>
+</tr>
+<tr id="i10" class="altColor">
+<td class="colFirst"><code>protected static boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/dsmf/Dialect.html#getBooleanStrict-java.sql.ResultSet-int-java.lang.String-java.lang.String-">getBooleanStrict</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/sql/ResultSet.html?is-external=true" title="class or interface in java.sql">ResultSet</a>&nbsp;resultSet,
+                int&nbsp;columnIndex,
+                <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;trueValue,
+                <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;falseValue)</code>&nbsp;</td>
+</tr>
+<tr id="i11" class="rowColor">
+<td class="colFirst"><code>protected static <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/dsmf/Dialect.html#getCatalog-com.exedio.dsmf.Schema-">getCatalog</a></span>(<a href="../../../com/exedio/dsmf/Schema.html" title="class in com.exedio.dsmf">Schema</a>&nbsp;schema)</code>&nbsp;</td>
+</tr>
+<tr id="i12" class="altColor">
+<td class="colFirst"><code>protected abstract <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/dsmf/Dialect.html#getColumnType-int-java.sql.ResultSet-">getColumnType</a></span>(int&nbsp;dataType,
+             <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/ResultSet.html?is-external=true" title="class or interface in java.sql">ResultSet</a>&nbsp;resultSet)</code>&nbsp;</td>
+</tr>
+<tr id="i13" class="rowColor">
+<td class="colFirst"><code>protected <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/dsmf/Dialect.html#getSchema--">getSchema</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i14" class="altColor">
+<td class="colFirst"><code>protected static <a href="../../../com/exedio/dsmf/Table.html" title="class in com.exedio.dsmf">Table</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/dsmf/Dialect.html#getTableStrict-com.exedio.dsmf.Schema-java.sql.ResultSet-int-">getTableStrict</a></span>(<a href="../../../com/exedio/dsmf/Schema.html" title="class in com.exedio.dsmf">Schema</a>&nbsp;schema,
+              <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/ResultSet.html?is-external=true" title="class or interface in java.sql">ResultSet</a>&nbsp;resultSet,
+              int&nbsp;columnIndex)</code>&nbsp;</td>
+</tr>
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>abstract <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/dsmf/Dialect.html#modifyColumn-java.lang.String-java.lang.String-java.lang.String-">modifyColumn</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;tableName,
             <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;columnName,
             <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;newColumnType)</code>&nbsp;</td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i16" class="altColor">
+<td class="colFirst"><code>protected boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/dsmf/Dialect.html#needsTargetColumnName--">needsTargetColumnName</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i17" class="rowColor">
+<td class="colFirst"><code>protected static void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/dsmf/Dialect.html#notifyExistentCheck-com.exedio.dsmf.Table-java.lang.String-java.lang.String-">notifyExistentCheck</a></span>(<a href="../../../com/exedio/dsmf/Table.html" title="class in com.exedio.dsmf">Table</a>&nbsp;table,
+                   <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;constraintName,
+                   <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;condition)</code>&nbsp;</td>
+</tr>
+<tr id="i18" class="altColor">
+<td class="colFirst"><code>protected static <a href="../../../com/exedio/dsmf/Column.html" title="class in com.exedio.dsmf">Column</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/dsmf/Dialect.html#notifyExistentColumn-com.exedio.dsmf.Table-java.lang.String-java.lang.String-">notifyExistentColumn</a></span>(<a href="../../../com/exedio/dsmf/Table.html" title="class in com.exedio.dsmf">Table</a>&nbsp;table,
+                    <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;columnName,
+                    <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;existingType)</code>&nbsp;</td>
+</tr>
+<tr id="i19" class="rowColor">
+<td class="colFirst"><code>protected static void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/dsmf/Dialect.html#notifyExistentPrimaryKey-com.exedio.dsmf.Table-java.lang.String-">notifyExistentPrimaryKey</a></span>(<a href="../../../com/exedio/dsmf/Table.html" title="class in com.exedio.dsmf">Table</a>&nbsp;table,
+                        <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;constraintName)</code>&nbsp;</td>
+</tr>
+<tr id="i20" class="altColor">
+<td class="colFirst"><code>protected static void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/dsmf/Dialect.html#notifyExistentTable-com.exedio.dsmf.Schema-java.lang.String-">notifyExistentTable</a></span>(<a href="../../../com/exedio/dsmf/Schema.html" title="class in com.exedio.dsmf">Schema</a>&nbsp;schema,
+                   <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;tableName)</code>&nbsp;</td>
+</tr>
+<tr id="i21" class="rowColor">
+<td class="colFirst"><code>protected static void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/dsmf/Dialect.html#notifyExistentUnique-com.exedio.dsmf.Table-java.lang.String-java.lang.String-">notifyExistentUnique</a></span>(<a href="../../../com/exedio/dsmf/Table.html" title="class in com.exedio.dsmf">Table</a>&nbsp;table,
+                    <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;constraintName,
+                    <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;condition)</code>&nbsp;</td>
+</tr>
+<tr id="i22" class="altColor">
+<td class="colFirst"><code>protected static void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/dsmf/Dialect.html#notifyExists-com.exedio.dsmf.Sequence-com.exedio.dsmf.Sequence.Type-">notifyExists</a></span>(<a href="../../../com/exedio/dsmf/Sequence.html" title="class in com.exedio.dsmf">Sequence</a>&nbsp;sequence,
+            <a href="../../../com/exedio/dsmf/Sequence.Type.html" title="enum in com.exedio.dsmf">Sequence.Type</a>&nbsp;existingType)</code>&nbsp;</td>
+</tr>
+<tr id="i23" class="rowColor">
+<td class="colFirst"><code>protected void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/dsmf/Dialect.html#querySQL-com.exedio.dsmf.Schema-java.lang.String-com.exedio.dsmf.Dialect.ResultSetHandler-">querySQL</a></span>(<a href="../../../com/exedio/dsmf/Schema.html" title="class in com.exedio.dsmf">Schema</a>&nbsp;schema,
+        <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;statement,
+        <a href="../../../com/exedio/dsmf/Dialect.ResultSetHandler.html" title="interface in com.exedio.dsmf">Dialect.ResultSetHandler</a>&nbsp;resultSetHandler)</code>&nbsp;</td>
+</tr>
+<tr id="i24" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/dsmf/Dialect.html#quoteName-java.lang.String-">quoteName</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name)</code>
 <div class="block">Quotes a database name.</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i25" class="rowColor">
 <td class="colFirst"><code>abstract <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/dsmf/Dialect.html#renameColumn-java.lang.String-java.lang.String-java.lang.String-java.lang.String-">renameColumn</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;tableName,
             <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;oldColumnName,
             <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;newColumnName,
             <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;columnType)</code>&nbsp;</td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i26" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/dsmf/Dialect.html#renameTable-java.lang.String-java.lang.String-">renameTable</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;tableName,
            <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;newTableName)</code>&nbsp;</td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i27" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/dsmf/Dialect.html#supportsCheckConstraints--">supportsCheckConstraints</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i28" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/dsmf/Dialect.html#supportsSemicolon--">supportsSemicolon</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i29" class="rowColor">
+<td class="colFirst"><code>protected abstract void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/dsmf/Dialect.html#verify-com.exedio.dsmf.Schema-">verify</a></span>(<a href="../../../com/exedio/dsmf/Schema.html" title="class in com.exedio.dsmf">Schema</a>&nbsp;schema)</code>&nbsp;</td>
+</tr>
+<tr id="i30" class="altColor">
+<td class="colFirst"><code>protected void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/dsmf/Dialect.html#verifyColumnsByMetaData-com.exedio.dsmf.Schema-java.lang.String-">verifyColumnsByMetaData</a></span>(<a href="../../../com/exedio/dsmf/Schema.html" title="class in com.exedio.dsmf">Schema</a>&nbsp;schema,
+                       <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;tableSchema)</code>&nbsp;</td>
+</tr>
+<tr id="i31" class="rowColor">
+<td class="colFirst"><code>protected static void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/dsmf/Dialect.html#verifyForeignKeyConstraints-java.lang.String-com.exedio.dsmf.Schema-">verifyForeignKeyConstraints</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;sql,
+                           <a href="../../../com/exedio/dsmf/Schema.html" title="class in com.exedio.dsmf">Schema</a>&nbsp;schema)</code>&nbsp;</td>
+</tr>
+<tr id="i32" class="altColor">
+<td class="colFirst"><code>protected static void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/dsmf/Dialect.html#verifySequences-java.lang.String-com.exedio.dsmf.Schema-">verifySequences</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;sql,
+               <a href="../../../com/exedio/dsmf/Schema.html" title="class in com.exedio.dsmf">Schema</a>&nbsp;schema)</code>&nbsp;</td>
+</tr>
+<tr id="i33" class="rowColor">
+<td class="colFirst"><code>protected static void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/dsmf/Dialect.html#verifyTablesByMetaData-com.exedio.dsmf.Schema-">verifyTablesByMetaData</a></span>(<a href="../../../com/exedio/dsmf/Schema.html" title="class in com.exedio.dsmf">Schema</a>&nbsp;schema)</code>&nbsp;</td>
+</tr>
+<tr id="i34" class="altColor">
+<td class="colFirst"><code>protected static void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/dsmf/Dialect.html#verifyUniqueConstraints-java.lang.String-com.exedio.dsmf.Schema-">verifyUniqueConstraints</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;sql,
+                       <a href="../../../com/exedio/dsmf/Schema.html" title="class in com.exedio.dsmf">Schema</a>&nbsp;schema)</code>&nbsp;</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -232,12 +413,38 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 </ul>
 </li>
 </ul>
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor.detail">
+<!--   -->
+</a>
+<h3>Constructor Detail</h3>
+<a name="Dialect-java.lang.String-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>Dialect</h4>
+<pre>protected&nbsp;Dialect(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;schema)</pre>
+</li>
+</ul>
+</li>
+</ul>
 <!-- ============ METHOD DETAIL ========== -->
 <ul class="blockList">
 <li class="blockList"><a name="method.detail">
 <!--   -->
 </a>
 <h3>Method Detail</h3>
+<a name="getSchema--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getSchema</h4>
+<pre>protected final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getSchema()</pre>
+</li>
+</ul>
 <a name="quoteName-java.lang.String-">
 <!--   -->
 </a>
@@ -266,6 +473,243 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <li class="blockList">
 <h4>supportsSemicolon</h4>
 <pre>public&nbsp;boolean&nbsp;supportsSemicolon()</pre>
+</li>
+</ul>
+<a name="adjustExistingCheckConstraintCondition-java.lang.String-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>adjustExistingCheckConstraintCondition</h4>
+<pre>protected&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;adjustExistingCheckConstraintCondition(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;s)</pre>
+</li>
+</ul>
+<a name="getColumnType-int-java.sql.ResultSet-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getColumnType</h4>
+<pre>protected abstract&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getColumnType(int&nbsp;dataType,
+                                        <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/ResultSet.html?is-external=true" title="class or interface in java.sql">ResultSet</a>&nbsp;resultSet)
+                                 throws <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLException.html?is-external=true" title="class or interface in java.sql">SQLException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLException.html?is-external=true" title="class or interface in java.sql">SQLException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="verify-com.exedio.dsmf.Schema-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>verify</h4>
+<pre>protected abstract&nbsp;void&nbsp;verify(<a href="../../../com/exedio/dsmf/Schema.html" title="class in com.exedio.dsmf">Schema</a>&nbsp;schema)</pre>
+</li>
+</ul>
+<a name="verifyTablesByMetaData-com.exedio.dsmf.Schema-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>verifyTablesByMetaData</h4>
+<pre>protected static final&nbsp;void&nbsp;verifyTablesByMetaData(<a href="../../../com/exedio/dsmf/Schema.html" title="class in com.exedio.dsmf">Schema</a>&nbsp;schema)</pre>
+</li>
+</ul>
+<a name="verifyColumnsByMetaData-com.exedio.dsmf.Schema-java.lang.String-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>verifyColumnsByMetaData</h4>
+<pre>protected final&nbsp;void&nbsp;verifyColumnsByMetaData(<a href="../../../com/exedio/dsmf/Schema.html" title="class in com.exedio.dsmf">Schema</a>&nbsp;schema,
+                                             <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;tableSchema)</pre>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>tableSchema</code> - null means any schema is allowed</dd>
+</dl>
+</li>
+</ul>
+<a name="verifyForeignKeyConstraints-java.lang.String-com.exedio.dsmf.Schema-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>verifyForeignKeyConstraints</h4>
+<pre>protected static final&nbsp;void&nbsp;verifyForeignKeyConstraints(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;sql,
+                                                        <a href="../../../com/exedio/dsmf/Schema.html" title="class in com.exedio.dsmf">Schema</a>&nbsp;schema)</pre>
+</li>
+</ul>
+<a name="verifyUniqueConstraints-java.lang.String-com.exedio.dsmf.Schema-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>verifyUniqueConstraints</h4>
+<pre>protected static final&nbsp;void&nbsp;verifyUniqueConstraints(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;sql,
+                                                    <a href="../../../com/exedio/dsmf/Schema.html" title="class in com.exedio.dsmf">Schema</a>&nbsp;schema)</pre>
+</li>
+</ul>
+<a name="verifySequences-java.lang.String-com.exedio.dsmf.Schema-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>verifySequences</h4>
+<pre>protected static final&nbsp;void&nbsp;verifySequences(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;sql,
+                                            <a href="../../../com/exedio/dsmf/Schema.html" title="class in com.exedio.dsmf">Schema</a>&nbsp;schema)</pre>
+</li>
+</ul>
+<a name="notifyExistentTable-com.exedio.dsmf.Schema-java.lang.String-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>notifyExistentTable</h4>
+<pre>protected static final&nbsp;void&nbsp;notifyExistentTable(<a href="../../../com/exedio/dsmf/Schema.html" title="class in com.exedio.dsmf">Schema</a>&nbsp;schema,
+                                                <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;tableName)</pre>
+</li>
+</ul>
+<a name="notifyExistentColumn-com.exedio.dsmf.Table-java.lang.String-java.lang.String-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>notifyExistentColumn</h4>
+<pre>protected static final&nbsp;<a href="../../../com/exedio/dsmf/Column.html" title="class in com.exedio.dsmf">Column</a>&nbsp;notifyExistentColumn(<a href="../../../com/exedio/dsmf/Table.html" title="class in com.exedio.dsmf">Table</a>&nbsp;table,
+                                                   <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;columnName,
+                                                   <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;existingType)</pre>
+</li>
+</ul>
+<a name="notifyExistentCheck-com.exedio.dsmf.Table-java.lang.String-java.lang.String-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>notifyExistentCheck</h4>
+<pre>protected static final&nbsp;void&nbsp;notifyExistentCheck(<a href="../../../com/exedio/dsmf/Table.html" title="class in com.exedio.dsmf">Table</a>&nbsp;table,
+                                                <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;constraintName,
+                                                <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;condition)</pre>
+</li>
+</ul>
+<a name="notifyExistentPrimaryKey-com.exedio.dsmf.Table-java.lang.String-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>notifyExistentPrimaryKey</h4>
+<pre>protected static final&nbsp;void&nbsp;notifyExistentPrimaryKey(<a href="../../../com/exedio/dsmf/Table.html" title="class in com.exedio.dsmf">Table</a>&nbsp;table,
+                                                     <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;constraintName)</pre>
+</li>
+</ul>
+<a name="notifyExistentUnique-com.exedio.dsmf.Table-java.lang.String-java.lang.String-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>notifyExistentUnique</h4>
+<pre>protected static final&nbsp;void&nbsp;notifyExistentUnique(<a href="../../../com/exedio/dsmf/Table.html" title="class in com.exedio.dsmf">Table</a>&nbsp;table,
+                                                 <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;constraintName,
+                                                 <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;condition)</pre>
+</li>
+</ul>
+<a name="notifyExists-com.exedio.dsmf.Sequence-com.exedio.dsmf.Sequence.Type-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>notifyExists</h4>
+<pre>protected static final&nbsp;void&nbsp;notifyExists(<a href="../../../com/exedio/dsmf/Sequence.html" title="class in com.exedio.dsmf">Sequence</a>&nbsp;sequence,
+                                         <a href="../../../com/exedio/dsmf/Sequence.Type.html" title="enum in com.exedio.dsmf">Sequence.Type</a>&nbsp;existingType)</pre>
+</li>
+</ul>
+<a name="getBooleanStrict-java.sql.ResultSet-int-java.lang.String-java.lang.String-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getBooleanStrict</h4>
+<pre>protected static final&nbsp;boolean&nbsp;getBooleanStrict(<a href="https://docs.oracle.com/javase/8/docs/api/java/sql/ResultSet.html?is-external=true" title="class or interface in java.sql">ResultSet</a>&nbsp;resultSet,
+                                                int&nbsp;columnIndex,
+                                                <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;trueValue,
+                                                <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;falseValue)
+                                         throws <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLException.html?is-external=true" title="class or interface in java.sql">SQLException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLException.html?is-external=true" title="class or interface in java.sql">SQLException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="getTableStrict-com.exedio.dsmf.Schema-java.sql.ResultSet-int-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getTableStrict</h4>
+<pre>protected static final&nbsp;<a href="../../../com/exedio/dsmf/Table.html" title="class in com.exedio.dsmf">Table</a>&nbsp;getTableStrict(<a href="../../../com/exedio/dsmf/Schema.html" title="class in com.exedio.dsmf">Schema</a>&nbsp;schema,
+                                            <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/ResultSet.html?is-external=true" title="class or interface in java.sql">ResultSet</a>&nbsp;resultSet,
+                                            int&nbsp;columnIndex)
+                                     throws <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLException.html?is-external=true" title="class or interface in java.sql">SQLException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLException.html?is-external=true" title="class or interface in java.sql">SQLException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="querySQL-com.exedio.dsmf.Schema-java.lang.String-com.exedio.dsmf.Dialect.ResultSetHandler-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>querySQL</h4>
+<pre>protected final&nbsp;void&nbsp;querySQL(<a href="../../../com/exedio/dsmf/Schema.html" title="class in com.exedio.dsmf">Schema</a>&nbsp;schema,
+                              <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;statement,
+                              <a href="../../../com/exedio/dsmf/Dialect.ResultSetHandler.html" title="interface in com.exedio.dsmf">Dialect.ResultSetHandler</a>&nbsp;resultSetHandler)</pre>
+</li>
+</ul>
+<a name="getCatalog-com.exedio.dsmf.Schema-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getCatalog</h4>
+<pre>protected static final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getCatalog(<a href="../../../com/exedio/dsmf/Schema.html" title="class in com.exedio.dsmf">Schema</a>&nbsp;schema)</pre>
+</li>
+</ul>
+<a name="appendTableCreateStatement-java.lang.StringBuilder-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>appendTableCreateStatement</h4>
+<pre>protected&nbsp;void&nbsp;appendTableCreateStatement(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/StringBuilder.html?is-external=true" title="class or interface in java.lang">StringBuilder</a>&nbsp;bf)</pre>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>bf</code> - used in subclasses</dd>
+</dl>
+</li>
+</ul>
+<a name="needsTargetColumnName--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>needsTargetColumnName</h4>
+<pre>protected&nbsp;boolean&nbsp;needsTargetColumnName()</pre>
+</li>
+</ul>
+<a name="appendForeignKeyCreateStatement-java.lang.StringBuilder-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>appendForeignKeyCreateStatement</h4>
+<pre>protected&nbsp;void&nbsp;appendForeignKeyCreateStatement(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/StringBuilder.html?is-external=true" title="class or interface in java.lang">StringBuilder</a>&nbsp;bf)</pre>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>bf</code> - used in subclasses</dd>
+</dl>
 </li>
 </ul>
 <a name="renameTable-java.lang.String-java.lang.String-">
@@ -312,6 +756,61 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
                                     <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;newColumnType)</pre>
 </li>
 </ul>
+<a name="dropPrimaryKeyConstraint-java.lang.StringBuilder-java.lang.String-java.lang.String-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>dropPrimaryKeyConstraint</h4>
+<pre>protected&nbsp;void&nbsp;dropPrimaryKeyConstraint(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/StringBuilder.html?is-external=true" title="class or interface in java.lang">StringBuilder</a>&nbsp;bf,
+                                        <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;tableName,
+                                        <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;constraintName)</pre>
+</li>
+</ul>
+<a name="dropForeignKeyConstraint-java.lang.StringBuilder-java.lang.String-java.lang.String-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>dropForeignKeyConstraint</h4>
+<pre>protected&nbsp;void&nbsp;dropForeignKeyConstraint(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/StringBuilder.html?is-external=true" title="class or interface in java.lang">StringBuilder</a>&nbsp;bf,
+                                        <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;tableName,
+                                        <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;constraintName)</pre>
+</li>
+</ul>
+<a name="dropUniqueConstraint-java.lang.StringBuilder-java.lang.String-java.lang.String-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>dropUniqueConstraint</h4>
+<pre>protected&nbsp;void&nbsp;dropUniqueConstraint(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/StringBuilder.html?is-external=true" title="class or interface in java.lang">StringBuilder</a>&nbsp;bf,
+                                    <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;tableName,
+                                    <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;constraintName)</pre>
+</li>
+</ul>
+<a name="createSequence-java.lang.StringBuilder-java.lang.String-com.exedio.dsmf.Sequence.Type-long-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>createSequence</h4>
+<pre>protected abstract&nbsp;void&nbsp;createSequence(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/StringBuilder.html?is-external=true" title="class or interface in java.lang">StringBuilder</a>&nbsp;bf,
+                                       <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;sequenceName,
+                                       <a href="../../../com/exedio/dsmf/Sequence.Type.html" title="enum in com.exedio.dsmf">Sequence.Type</a>&nbsp;type,
+                                       long&nbsp;start)</pre>
+</li>
+</ul>
+<a name="dropSequence-java.lang.StringBuilder-java.lang.String-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>dropSequence</h4>
+<pre>protected&nbsp;void&nbsp;dropSequence(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/StringBuilder.html?is-external=true" title="class or interface in java.lang">StringBuilder</a>&nbsp;bf,
+                            <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;sequenceName)</pre>
+</li>
+</ul>
 <a name="deleteSchema-com.exedio.dsmf.Schema-">
 <!--   -->
 </a>
@@ -352,7 +851,7 @@ public final&nbsp;void&nbsp;deleteSchema(<a href="../../../com/exedio/dsmf/Schem
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../com/exedio/dsmf/Constraint.Type.html" title="enum in com.exedio.dsmf"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../com/exedio/dsmf/ForeignKeyConstraint.html" title="class in com.exedio.dsmf"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../com/exedio/dsmf/Dialect.ResultSetHandler.html" title="interface in com.exedio.dsmf"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../index.html?com/exedio/dsmf/Dialect.html" target="_top">Frames</a></li>
@@ -376,15 +875,15 @@ public final&nbsp;void&nbsp;deleteSchema(<a href="../../../com/exedio/dsmf/Schem
 <div>
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
-<li>Nested&nbsp;|&nbsp;</li>
+<li><a href="#nested.class.summary">Nested</a>&nbsp;|&nbsp;</li>
 <li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
-<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
 <li><a href="#field.detail">Field</a>&nbsp;|&nbsp;</li>
-<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.detail">Method</a></li>
 </ul>
 </div>

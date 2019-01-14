@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":42,"i2":42,"i3":42,"i4":6,"i5":10,"i6":6,"i7":42,"i8":6,"i9":10,"i10":10,"i11":42,"i12":42,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":6,"i20":6,"i21":6,"i22":10,"i23":10,"i24":10,"i25":10,"i26":6,"i27":6};
+var methods = {"i0":10,"i1":42,"i2":42,"i3":42,"i4":6,"i5":10,"i6":6,"i7":42,"i8":6,"i9":10,"i10":10,"i11":10,"i12":42,"i13":42,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":6,"i21":6,"i22":6,"i23":6,"i24":10,"i25":10,"i26":10,"i27":10,"i28":6,"i29":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],8:["t4","Concrete Methods"],32:["t6","Deprecated Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -206,13 +206,17 @@ implements <a href="../../../com/exedio/cope/Function.html" title="interface in 
 </tr>
 <tr id="i9" class="rowColor">
 <td class="colFirst"><code><a href="../../../com/exedio/cope/FunctionField.html" title="type parameter in FunctionField">E</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/FunctionField.html#get-com.exedio.cope.Item-">get</a></span>(<a href="../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&nbsp;item)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/FunctionField.html#get-com.exedio.cope.FieldValues-">get</a></span>(<a href="../../../com/exedio/cope/FieldValues.html" title="class in com.exedio.cope">FieldValues</a>&nbsp;item)</code>&nbsp;</td>
 </tr>
 <tr id="i10" class="altColor">
 <td class="colFirst"><code><a href="../../../com/exedio/cope/FunctionField.html" title="type parameter in FunctionField">E</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/FunctionField.html#getDefaultConstant--">getDefaultConstant</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/FunctionField.html#get-com.exedio.cope.Item-">get</a></span>(<a href="../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&nbsp;item)</code>&nbsp;</td>
 </tr>
 <tr id="i11" class="rowColor">
+<td class="colFirst"><code><a href="../../../com/exedio/cope/FunctionField.html" title="type parameter in FunctionField">E</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/FunctionField.html#getDefaultConstant--">getDefaultConstant</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i12" class="altColor">
 <td class="colFirst"><code><a href="../../../com/exedio/cope/CopyConstraint.html" title="class in com.exedio.cope">CopyConstraint</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/FunctionField.html#getImplicitCopyConstraint--">getImplicitCopyConstraint</a></span>()</code>
 <div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
@@ -221,7 +225,7 @@ implements <a href="../../../com/exedio/cope/Function.html" title="interface in 
 </div>
 </td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../com/exedio/cope/CopyConstraint.html" title="class in com.exedio.cope">CopyConstraint</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/FunctionField.html#getImplicitCopyConstraints--">getImplicitCopyConstraints</a></span>()</code>
 <div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
@@ -230,50 +234,57 @@ implements <a href="../../../com/exedio/cope/Function.html" title="interface in 
 </div>
 </td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code><a href="../../../com/exedio/cope/UniqueConstraint.html" title="class in com.exedio.cope">UniqueConstraint</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/FunctionField.html#getImplicitUniqueConstraint--">getImplicitUniqueConstraint</a></span>()</code>
 <div class="block">Returns the unique constraint of this field,
  that has been created implicitly when creating this field.</div>
 </td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;? extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang">Throwable</a>&gt;&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/FunctionField.html#getInitialExceptions--">getInitialExceptions</a></span>()</code>
 <div class="block">Returns the exceptions possibly thrown,
  when setting a value for this settable.</div>
 </td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../com/exedio/cope/UniqueConstraint.html" title="class in com.exedio.cope">UniqueConstraint</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/FunctionField.html#getUniqueConstraints--">getUniqueConstraints</a></span>()</code>
 <div class="block">Returns a list of unique constraints this field is part of.</div>
 </td>
 </tr>
-<tr id="i16" class="altColor">
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/FunctionField.html#hasDefault--">hasDefault</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i17" class="rowColor">
+<tr id="i18" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/FunctionField.html#isInitial--">isInitial</a></span>()</code>
 <div class="block">Returns true, if a value for the field should be specified
  on the creation of an item.</div>
 </td>
 </tr>
-<tr id="i18" class="altColor">
+<tr id="i19" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/FunctionField.html#isRedundantByCopyConstraint--">isRedundantByCopyConstraint</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i19" class="rowColor">
+<tr id="i20" class="altColor">
+<td class="colFirst"><code>abstract <a href="../../../com/exedio/cope/FunctionField.html" title="class in com.exedio.cope">FunctionField</a>&lt;<a href="../../../com/exedio/cope/FunctionField.html" title="type parameter in FunctionField">E</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/FunctionField.html#noCopyFrom--">noCopyFrom</a></span>()</code>
+<div class="block">Returns a new FunctionField that differs from this FunctionField
+ by having no <a href="../../../com/exedio/cope/FunctionField.html#copyFrom-com.exedio.cope.ItemField-"><code>copyFrom</code></a> fields set.</div>
+</td>
+</tr>
+<tr id="i21" class="rowColor">
 <td class="colFirst"><code>abstract <a href="../../../com/exedio/cope/FunctionField.html" title="class in com.exedio.cope">FunctionField</a>&lt;<a href="../../../com/exedio/cope/FunctionField.html" title="type parameter in FunctionField">E</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/FunctionField.html#noDefault--">noDefault</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i20" class="altColor">
+<tr id="i22" class="altColor">
 <td class="colFirst"><code>abstract <a href="../../../com/exedio/cope/FunctionField.html" title="class in com.exedio.cope">FunctionField</a>&lt;<a href="../../../com/exedio/cope/FunctionField.html" title="type parameter in FunctionField">E</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/FunctionField.html#nonUnique--">nonUnique</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i21" class="rowColor">
+<tr id="i23" class="rowColor">
 <td class="colFirst"><code>abstract <a href="../../../com/exedio/cope/FunctionField.html" title="class in com.exedio.cope">FunctionField</a>&lt;<a href="../../../com/exedio/cope/FunctionField.html" title="type parameter in FunctionField">E</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/FunctionField.html#optional--">optional</a></span>()</code>
 <div class="block">Returns a new Field,
@@ -281,32 +292,32 @@ implements <a href="../../../com/exedio/cope/Function.html" title="interface in 
  by being optional.</div>
 </td>
 </tr>
-<tr id="i22" class="altColor">
+<tr id="i24" class="altColor">
 <td class="colFirst"><code>&lt;P extends <a href="../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&gt;<br>P</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/FunctionField.html#searchUnique-java.lang.Class-E-">searchUnique</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;P&gt;&nbsp;typeClass,
             <a href="../../../com/exedio/cope/FunctionField.html" title="type parameter in FunctionField">E</a>&nbsp;value)</code>
 <div class="block">Finds an item by it's unique fields.</div>
 </td>
 </tr>
-<tr id="i23" class="rowColor">
+<tr id="i25" class="rowColor">
 <td class="colFirst"><code><a href="../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/FunctionField.html#searchUnique-E-">searchUnique</a></span>(<a href="../../../com/exedio/cope/FunctionField.html" title="type parameter in FunctionField">E</a>&nbsp;value)</code>
 <div class="block">Finds an item by it's unique fields.</div>
 </td>
 </tr>
-<tr id="i24" class="altColor">
+<tr id="i26" class="altColor">
 <td class="colFirst"><code>&lt;P extends <a href="../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&gt;<br>P</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/FunctionField.html#searchUniqueStrict-java.lang.Class-E-">searchUniqueStrict</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;P&gt;&nbsp;typeClass,
                   <a href="../../../com/exedio/cope/FunctionField.html" title="type parameter in FunctionField">E</a>&nbsp;value)</code>
 <div class="block">Finds an item by its unique fields.</div>
 </td>
 </tr>
-<tr id="i25" class="rowColor">
+<tr id="i27" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/FunctionField.html#set-com.exedio.cope.Item-E-">set</a></span>(<a href="../../../com/exedio/cope/Item.html" title="class in com.exedio.cope">Item</a>&nbsp;item,
    <a href="../../../com/exedio/cope/FunctionField.html" title="type parameter in FunctionField">E</a>&nbsp;value)</code>&nbsp;</td>
 </tr>
-<tr id="i26" class="altColor">
+<tr id="i28" class="altColor">
 <td class="colFirst"><code>abstract <a href="../../../com/exedio/cope/FunctionField.html" title="class in com.exedio.cope">FunctionField</a>&lt;<a href="../../../com/exedio/cope/FunctionField.html" title="type parameter in FunctionField">E</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/FunctionField.html#toFinal--">toFinal</a></span>()</code>
 <div class="block">Returns a new Field,
@@ -314,7 +325,7 @@ implements <a href="../../../com/exedio/cope/Function.html" title="interface in 
  by being final.</div>
 </td>
 </tr>
-<tr id="i27" class="rowColor">
+<tr id="i29" class="rowColor">
 <td class="colFirst"><code>abstract <a href="../../../com/exedio/cope/FunctionField.html" title="class in com.exedio.cope">FunctionField</a>&lt;<a href="../../../com/exedio/cope/FunctionField.html" title="type parameter in FunctionField">E</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/exedio/cope/FunctionField.html#unique--">unique</a></span>()</code>
 <div class="block">Returns a new FunctionField,
@@ -407,7 +418,7 @@ implements <a href="../../../com/exedio/cope/Function.html" title="interface in 
 <div class="block">Returns true, if a value for the field should be specified
  on the creation of an item.
  This implementation returns
- <tt>(<a href="../../../com/exedio/cope/Field.html#isFinal--"><code>isFinal()</code></a> || <a href="../../../com/exedio/cope/Field.html#isMandatory--"><code>isMandatory()</code></a>) &amp;&amp; !<a href="../../../com/exedio/cope/FunctionField.html#hasDefault--"><code>hasDefault()</code></a></tt>.</div>
+ <code>({@link #isFinal() isFinal()} || {@link #isMandatory() isMandatory()}) &amp;amp;&amp;amp; !{@link #hasDefault()}</code>.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../com/exedio/cope/Settable.html#isInitial--">isInitial</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/exedio/cope/Settable.html" title="interface in com.exedio.cope">Settable</a>&lt;<a href="../../../com/exedio/cope/FunctionField.html" title="type parameter in FunctionField">E</a>&gt;</code></dd>
@@ -529,6 +540,17 @@ implements <a href="../../../com/exedio/cope/Function.html" title="interface in 
 </dl>
 </li>
 </ul>
+<a name="noCopyFrom--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>noCopyFrom</h4>
+<pre>public abstract&nbsp;<a href="../../../com/exedio/cope/FunctionField.html" title="class in com.exedio.cope">FunctionField</a>&lt;<a href="../../../com/exedio/cope/FunctionField.html" title="type parameter in FunctionField">E</a>&gt;&nbsp;noCopyFrom()</pre>
+<div class="block">Returns a new FunctionField that differs from this FunctionField
+ by having no <a href="../../../com/exedio/cope/FunctionField.html#copyFrom-com.exedio.cope.ItemField-"><code>copyFrom</code></a> fields set.</div>
+</li>
+</ul>
 <a name="noDefault--">
 <!--   -->
 </a>
@@ -562,6 +584,19 @@ implements <a href="../../../com/exedio/cope/Function.html" title="interface in 
 <dd><code><a href="../../../com/exedio/cope/Function.html#get-com.exedio.cope.Item-">get</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/exedio/cope/Function.html" title="interface in com.exedio.cope">Function</a>&lt;<a href="../../../com/exedio/cope/FunctionField.html" title="type parameter in FunctionField">E</a>&gt;</code></dd>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../com/exedio/cope/Field.html#get-com.exedio.cope.Item-">get</a></code>&nbsp;in class&nbsp;<code><a href="../../../com/exedio/cope/Field.html" title="class in com.exedio.cope">Field</a>&lt;<a href="../../../com/exedio/cope/FunctionField.html" title="type parameter in FunctionField">E</a>&gt;</code></dd>
+</dl>
+</li>
+</ul>
+<a name="get-com.exedio.cope.FieldValues-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>get</h4>
+<pre>public final&nbsp;<a href="../../../com/exedio/cope/FunctionField.html" title="type parameter in FunctionField">E</a>&nbsp;get(<a href="../../../com/exedio/cope/FieldValues.html" title="class in com.exedio.cope">FieldValues</a>&nbsp;item)</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../com/exedio/cope/Function.html#get-com.exedio.cope.FieldValues-">get</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/exedio/cope/Function.html" title="interface in com.exedio.cope">Function</a>&lt;<a href="../../../com/exedio/cope/FunctionField.html" title="type parameter in FunctionField">E</a>&gt;</code></dd>
 </dl>
 </li>
 </ul>
