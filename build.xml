@@ -20,6 +20,7 @@
 				destdir="api"
 				maxmemory="60m"
 				source="1.8"
+				locale="en_US"
 				author="on"
 				version="on"
 				windowtitle="exedio persistence"
