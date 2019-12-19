@@ -120,10 +120,10 @@
 				<td class="text">cache.item.limit=0<br>cache.query.limit=0<br>connectionPool.idleLimit=0<br>dataField.bufferSizeDefault=1<br>dataField.bufferSizeLimit=2<br>media.offsetExpires=PT0S<br></td>
 			</tr>
 			<tr>
-				<td class="text" rowspan="29">MySQL <small>(29x)</small></td>
-				<td class="text" rowspan="9">5.5.59-0ubuntu0.14.04.1 <small>(9x)</small></td>
-				<td class="text" rowspan="18">MySQL Connector Java <small>(18x)</small></td>
-				<td class="text" rowspan="18">mysql-connector-java-5.1.45 ( Revision: 9131eef )</td>
+				<td class="text" rowspan="35">MySQL <small>(35x)</small></td>
+				<td class="text" rowspan="9">5.5.62-0+deb8u1 <small>(9x)</td>
+				<td class="text" rowspan="28">MySQL Connector/J <small>(28x)</small></td>
+				<td class="text" rowspan="28">mysql-connector-java-8.0.13 (Revision: 66459e9d)</td>
 				<td class="text">my55</td>
 				<td class="text"></td>
 			</tr>
@@ -160,7 +160,7 @@
 				<td class="text">disableSupport.uniqueViolation=true<br></td>
 			</tr>
 			<tr>
-				<td class="text" rowspan="11">5.6.33-0ubuntu0.14.04.1-log <small>(11x)</small></td>
+				<td class="text" rowspan="9">5.6.33-0ubuntu0.14.04.1-log <small>(9x)</small></td>
 				<td class="text">my56</td>
 				<td class="text"></td>
 			</tr>
@@ -197,19 +197,7 @@
 				<td class="text">disableSupport.uniqueViolation=true<br></td>
 			</tr>
 			<tr>
-				<td class="text" rowspan="2">MariaDB connector/J <small>(2x)</small></td>
-				<td class="text" rowspan="2">2.2.1</td>
-				<td class="text">my56m-nprep</td>
-				<td class="text">disableSupport.preparedStatements=true<br></td>
-			</tr>
-			<tr>
-				<td class="text">my56m-sq</td>
-				<td class="text">schema.primaryKeyGenerator=sequence<br></td>
-			</tr>
-			<tr>
-				<td class="text" rowspan="9">5.7.21-0ubuntu0.16.04.1 <small>(9x)</small></td>
-				<td class="text" rowspan="9">MySQL Connector Java</td>
-				<td class="text" rowspan="9">mysql-connector-java-5.1.45 ( Revision: 9131eef )</td>
+				<td class="text" rowspan="17">5.7.27-log <small>(17x)</td>
 				<td class="text">my57</td>
 				<td class="text"></td>
 			</tr>
@@ -246,12 +234,50 @@
 				<td class="text">disableSupport.uniqueViolation=true<br></td>
 			</tr>
 			<tr>
-				<td class="text" rowspan="2">Oracle <small>(2x)</small></td>
-				<td class="text" rowspan="2">Oracle Database 11g Release 11.2.0.1.0 - 64bit Production</td>
-				<td class="text" rowspan="2">Oracle JDBC driver</td>
-				<td class="text" rowspan="2">11.2.0.4.0</td>
+				<td class="text">my57-z</td>
+				<td class="text">dialect.connection.compress=true<br>schema.primaryKeyGenerator=sequence<br></td>
+			</tr>
+			<tr>
+				<td class="text" rowspan="7">MariaDB connector/J <small>(7x)</small></td>
+				<td class="text" rowspan="7">2.2.1</td>
+				<td class="text">my57m</td>
+				<td class="text"></td>
+			</tr>
+			<tr>
+				<td class="text">my57m-legacy</td>
+				<td class="text">disableSupport.nativeDate=true<br></td>
+			</tr>
+			<tr>
+				<td class="text">my57m-nprep</td>
+				<td class="text">disableSupport.preparedStatements=true<br></td>
+			</tr>
+			<tr>
+				<td class="text">my57m-nstmp</td>
+				<td class="text">cache.stamps=false<br></td>
+			</tr>
+			<tr>
+				<td class="text">my57m-nstmp-sq</td>
+				<td class="text">cache.stamps=false<br>dialect.fullSequenceColumnName=false<br>schema.primaryKeyGenerator=sequence<br></td>
+			</tr>
+			<tr>
+				<td class="text">my57m-sq</td>
+				<td class="text">schema.primaryKeyGenerator=sequence<br></td>
+			</tr>
+			<tr>
+				<td class="text">my57m-z</td>
+				<td class="text">dialect.connection.compress=true<br>schema.primaryKeyGenerator=sequence<br></td>
+			</tr>
+			<tr>
+				<td class="text" rowspan="3">Oracle <small>(3x)</small></td>
+				<td class="text" rowspan="3">Oracle Database 11g Release 11.2.0.1.0 - 64bit Production</td>
+				<td class="text" rowspan="3">Oracle JDBC driver</td>
+				<td class="text" rowspan="3">11.2.0.4.0</td>
 				<td class="text">ora</td>
 				<td class="text"></td>
+			</tr>
+			<tr>
+				<td class="text">ora-nstmp</td>
+				<td class="text">cache.stamps=false<br></td>
 			</tr>
 			<tr>
 				<td class="text">ora-sq</td>
