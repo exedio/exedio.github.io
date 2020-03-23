@@ -1,8 +1,10 @@
 
 timestamps
 {
+	def jdk = 'openjdk-8-deb9'
+
 	//noinspection GroovyAssignabilityCheck
-	node('GitCloneExedio && OpenJdk18Debian9')
+	node('GitCloneExedio && ' + jdk)
 	{
 		try
 		{
@@ -13,7 +15,7 @@ timestamps
 
 				checkout scm
 
-				env.JAVA_HOME = "${tool 'openjdk 1.8 debian9'}"
+				env.JAVA_HOME = tool jdk
 				env.PATH = "${env.JAVA_HOME}/bin:${env.PATH}"
 				def antHome = tool 'Ant version 1.9.3'
 
