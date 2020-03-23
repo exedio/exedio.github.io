@@ -58,8 +58,8 @@
 <pre>
 public void init() throws ServletException
 {
-   Main.model.<a href="api/com/exedio/cope/Model.html#connect-com.exedio.cope.ConnectProperties-">connect</a>(
-      new <a href="api/com/exedio/cope/ConnectProperties.html#ConnectProperties-java.io.File-">ConnectProperties</a>(
+   Main.model.<a href="api/com/exedio/cope/Model.html#connect(com.exedio.cope.ConnectProperties)">connect</a>(
+      new <a href="api/com/exedio/cope/ConnectProperties.html#ConnectProperties(java.io.File)">ConnectProperties</a>(
          new File(getServletContext().
            getRealPath("WEB-INF/cope.properties"))));
 }
@@ -71,14 +71,14 @@ public void init() throws ServletException
 <pre>
 public void init() throws ServletException
 {
-   ServletUtil.<a href="api/com/exedio/cope/util/ServletUtil.html#connect-com.exedio.cope.Model-javax.servlet.ServletConfig-java.lang.String-">connect</a>(Main.model, getServletContext());
+   ServletUtil.<a href="api/com/exedio/cope/util/ServletUtil.html#connect(com.exedio.cope.Model, javax.servlet.ServletConfig, java.lang.String)">connect</a>(Main.model, getServletContext());
 }
 </pre>
 		<p>
 			Even this can be ommitted, if you use the <i>CopeFilter</i>
 			explained below.
 			Please note, that
-			<code><a href="api/com/exedio/cope/Model.html#connect-com.exedio.cope.ConnectProperties-">connect</a></code>
+			<code><a href="api/com/exedio/cope/Model.html#connect(com.exedio.cope.ConnectProperties)">connect</a></code>
 			is idempotent,
 			it doesn't hurt to call it more than once,
 			for example if you have more than one servlet.

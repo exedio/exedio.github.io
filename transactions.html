@@ -52,15 +52,15 @@
 boolean failure = true;
 try
 {
-   Main.model.<a href="api/com/exedio/cope/Model.html#startTransaction--">startTransaction</a>();
+   Main.model.<a href="api/com/exedio/cope/Model.html#startTransaction()">startTransaction</a>();
    // put the body of the transaction here
-   Main.model.<a href="api/com/exedio/cope/Model.html#commit--">commit</a>();
+   Main.model.<a href="api/com/exedio/cope/Model.html#commit()">commit</a>();
    failure = false;
 }
 finally
 {
    if(failure)
-      Main.model.<a href="api/com/exedio/cope/Model.html#rollback--">rollback</a>();
+      Main.model.<a href="api/com/exedio/cope/Model.html#rollback()">rollback</a>();
 }
 </pre>
 		<p>
@@ -73,13 +73,13 @@ finally
 <pre>
 try
 {
-   Main.model.<a href="api/com/exedio/cope/Model.html#startTransaction--">startTransaction</a>();
+   Main.model.<a href="api/com/exedio/cope/Model.html#startTransaction()">startTransaction</a>();
    // put the body of the transaction here
-   Main.model.<a href="api/com/exedio/cope/Model.html#commit--">commit</a>();
+   Main.model.<a href="api/com/exedio/cope/Model.html#commit()">commit</a>();
 }
 finally
 {
-   Main.model.<a href="api/com/exedio/cope/Model.html#rollbackIfNotCommitted--">rollbackIfNotCommitted</a>();
+   Main.model.<a href="api/com/exedio/cope/Model.html#rollbackIfNotCommitted()">rollbackIfNotCommitted</a>();
 }
 </pre>
 		<p>
@@ -87,10 +87,10 @@ finally
 			introduced in Java 1.7:
 		</p>
 <pre>
-try(<a href="api/com/exedio/cope/TransactionTry.html">TransactionTry</a> tx = Main.model.<a href="api/com/exedio/cope/Model.html#startTransactionTry-java.lang.String-">startTransactionTry</a>("web"))
+try(<a href="api/com/exedio/cope/TransactionTry.html">TransactionTry</a> tx = Main.model.<a href="api/com/exedio/cope/Model.html#startTransactionTry(java.lang.String)">startTransactionTry</a>("web"))
 {
    // put the body of the transaction here
-   tx.<a href="api/com/exedio/cope/TransactionTry.html#commit--">commit</a>();
+   tx.<a href="api/com/exedio/cope/TransactionTry.html#commit()">commit</a>();
 }
 </pre>
 		<h3>Further Reading</h3>
