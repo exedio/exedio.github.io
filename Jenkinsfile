@@ -1,7 +1,7 @@
 
 timestamps
 {
-	def jdk = 'openjdk-8-deb9'
+	def jdk = 'openjdk-11-deb10'
 
 	//noinspection GroovyAssignabilityCheck
 	node('GitCloneExedio && ' + jdk)
@@ -41,7 +41,7 @@ timestamps
 
 				sh "git status --porcelain --untracked-files=normal > git-status.txt"
 				def gitStatus = readFile('git-status.txt')
-				if(gitStatus!='?? git-status.txt\n')
+				if(gitStatus!=' M api/overview-summary.html\n?? git-status.txt\n')
 				{
 					archive 'git-status.txt'
 					currentBuild.result = 'FAILURE';
