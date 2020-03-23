@@ -64,7 +64,7 @@ class Customer extends <a href="api/com/exedio/cope/Item.html">Item</a>
 <pre>
 class Customer extends <a href="api/com/exedio/cope/Item.html">Item</a>
 {
-   static final <a href="api/com/exedio/cope/StringField.html">StringField</a> email = new <a href="api/com/exedio/cope/StringField.html#StringField()">StringField</a>();
+   static final <a href="api/com/exedio/cope/StringField.html">StringField</a> email = new <a href="api/com/exedio/cope/StringField.html#&lt;init&gt;()">StringField</a>();
 }
 </pre>
 		<p>
@@ -164,7 +164,7 @@ Customer(SetValue[] setValues)
 <pre>
 Customer(<a href="api/com/exedio/cope/ActivationParameters.html">ActivationParameters</a> ap)
 {
-   <a href="api/com/exedio/cope/Item.html#Item-com.exedio.cope.ActivationParameters-">super</a>(ap);
+   <a href="api/com/exedio/cope/Item.html#&lt;init&gt;(com.exedio.cope.ActivationParameters)">super</a>(ap);
 }
 </pre>
 		<p>
@@ -219,7 +219,7 @@ static final Type&lt;Customer&gt; TYPE =
 <pre>
 class Main
 {
-   static final <a href="api/com/exedio/cope/Model.html">Model</a> model = new <a href="api/com/exedio/cope/Model.html#Model(com.exedio.cope.Type...)">Model</a>(
+   static final <a href="api/com/exedio/cope/Model.html">Model</a> model = new <a href="api/com/exedio/cope/Model.html#&lt;init&gt;(com.exedio.cope.Type...)">Model</a>(
          Customer.TYPE
       );
 }
@@ -265,7 +265,7 @@ connection.password=<i>password</i>
 public static void main(String[] args)
 {
    model.<a href="api/com/exedio/cope/Model.html#connect(com.exedio.cope.ConnectProperties)">connect</a>(
-      new <a href="api/com/exedio/cope/ConnectProperties.html#ConnectProperties(java.io.File)">ConnectProperties</a>(new File("cope.properties")));
+      new <a href="api/com/exedio/cope/ConnectProperties.html#&lt;init&gt;(java.io.File)">ConnectProperties</a>(new File("cope.properties")));
    model.createDatabase();
    model.startTransaction();
    Customer c = new Customer("copetest@exedio.com");
