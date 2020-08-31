@@ -64,16 +64,16 @@
 				<th><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/DatabaseMetaData.html#getDriverVersion--">Version</a></th>
 			</tr>
 			<tr>
-				<td class="text" rowspan="13">HSQL Database Engine <small>(13x)</small></td>
-				<td class="text" rowspan="13">2.4.0</td>
-				<td class="text" rowspan="13">HSQL Database Engine Driver</td>
-				<td class="text" rowspan="13">2.4.0</td>
+				<td class="text" rowspan="12">HSQL Database Engine <small>(12x)</small></td>
+				<td class="text" rowspan="12">2.5.1</td>
+				<td class="text" rowspan="12">HSQL Database Engine Driver</td>
+				<td class="text" rowspan="12">2.5.1</td>
 				<td class="text">hy</td>
 				<td class="text">connectionPool.idleInitial=2<br>dataField.bufferSizeDefault=1000<br>dataField.bufferSizeLimit=2000<br></td>
 			</tr>
 			<tr>
 				<td class="text">hy-extra</td>
-				<td class="text">cache.item.limit=300<br>cache.query.limit=200<br>changeListeners.queueCapacity=10<br>changeListeners.threads.initial=2<br>changeListeners.threads.max=3<br>changeListeners.threads.priority.set=true<br>changeListeners.threads.priority.value=1<br>connectionPool.idleLimit=200<br>dataField.bufferSizeDefault=1000<br>dataField.bufferSizeLimit=2000<br>dialect=com.exedio.cope.HsqldbDialect<br>disableSupport.emptyStrings=true<br>disableSupport.nativeDate=true<br>disableSupport.semicolon=true<br>disableSupport.uniqueViolation=true<br>media.offsetExpires=PT1M6S<br>media.rooturl=mediaroot<br>query.searchSizeLimit=160<br>revise.savepoint=true<br>schema.revision.table=whilex<br>schema.revision.unique=protectedx<br></td>
+				<td class="text">cache.item.limit=300<br>cache.query.limit=200<br>changeListeners.queueCapacity=10<br>changeListeners.threads.initial=2<br>changeListeners.threads.max=3<br>changeListeners.threads.priority.set=true<br>changeListeners.threads.priority.value=1<br>connectionPool.idleLimit=200<br>dataField.bufferSizeDefault=1000<br>dataField.bufferSizeLimit=2000<br>dialect=com.exedio.cope.HsqldbDialect<br>disableSupport.nativeDate=true<br>disableSupport.semicolon=true<br>disableSupport.uniqueViolation=true<br>media.offsetExpires=PT1M6S<br>media.rooturl=mediaroot<br>query.searchSizeLimit=160<br>revise.savepoint=true<br>schema.revision.table=whilex<br>schema.revision.unique=protectedx<br></td>
 			</tr>
 			<tr>
 				<td class="text">hy-low</td>
@@ -100,10 +100,6 @@
 				<td class="text">cache.stamps=false<br></td>
 			</tr>
 			<tr>
-				<td class="text">hy-ora</td>
-				<td class="text">dialect.approximate=oracle<br>schema.primaryKeyGenerator=sequence<br></td>
-			</tr>
-			<tr>
 				<td class="text">hy-sq</td>
 				<td class="text">schema.primaryKeyGenerator=sequence<br>schema.tableInNames=true<br></td>
 			</tr>
@@ -120,16 +116,16 @@
 				<td class="text">cache.item.limit=0<br>cache.query.limit=0<br>connectionPool.idleLimit=0<br>dataField.bufferSizeDefault=1<br>dataField.bufferSizeLimit=2<br>media.offsetExpires=PT0S<br></td>
 			</tr>
 			<tr>
-				<td class="text" rowspan="35">MySQL <small>(35x)</small></td>
-				<td class="text" rowspan="9">5.5.62-0+deb8u1 <small>(9x)</td>
+				<td class="text" rowspan="52">MySQL <small>(52x)</small></td>
+				<td class="text" rowspan="9">5.5.62 <small>(9x)</td>
 				<td class="text" rowspan="28">MySQL Connector/J <small>(28x)</small></td>
-				<td class="text" rowspan="28">mysql-connector-java-8.0.13 (Revision: 66459e9d)</td>
+				<td class="text" rowspan="28">mysql-connector-java-8.0.21 (Revision: 33f65445)</td>
 				<td class="text">my55</td>
 				<td class="text"></td>
 			</tr>
 			<tr>
 				<td class="text">my55-legacy</td>
-				<td class="text">dialect.fullSequenceColumnName=false<br>dialect.longConstraintNames=false<br>dialect.smallIntegerTypes=false<br>dialect.utf8mb4=false<br></td>
+				<td class="text">dialect.fullSequenceColumnName=false<br>dialect.longConstraintNames=false<br>dialect.smallIntegerTypes=false<br>dialect.utf8mb4=false<br>disableSupport.semicolon=true<br></td>
 			</tr>
 			<tr>
 				<td class="text">my55-nprep</td>
@@ -160,13 +156,13 @@
 				<td class="text">disableSupport.uniqueViolation=true<br></td>
 			</tr>
 			<tr>
-				<td class="text" rowspan="9">5.6.33-0ubuntu0.14.04.1-log <small>(9x)</small></td>
+				<td class="text" rowspan="9">5.6.33-log <small>(9x)</td>
 				<td class="text">my56</td>
 				<td class="text"></td>
 			</tr>
 			<tr>
 				<td class="text">my56-legacy</td>
-				<td class="text">dialect.fullSequenceColumnName=false<br>dialect.longConstraintNames=false<br>dialect.smallIntegerTypes=false<br>dialect.utf8mb4=false<br>disableSupport.nativeDate=true<br></td>
+				<td class="text">dialect.fullSequenceColumnName=false<br>dialect.longConstraintNames=false<br>dialect.smallIntegerTypes=false<br>dialect.utf8mb4=false<br>disableSupport.nativeDate=true<br>disableSupport.semicolon=true<br></td>
 			</tr>
 			<tr>
 				<td class="text">my56-nprep</td>
@@ -207,7 +203,7 @@
 			</tr>
 			<tr>
 				<td class="text">my57-legacy</td>
-				<td class="text">disableSupport.nativeDate=true<br></td>
+				<td class="text">disableSupport.nativeDate=true<br>disableSupport.semicolon=true<br></td>
 			</tr>
 			<tr>
 				<td class="text">my57-nprep</td>
@@ -245,7 +241,7 @@
 			</tr>
 			<tr>
 				<td class="text">my57m-legacy</td>
-				<td class="text">disableSupport.nativeDate=true<br></td>
+				<td class="text">disableSupport.nativeDate=true<br>disableSupport.semicolon=true<br></td>
 			</tr>
 			<tr>
 				<td class="text">my57m-nprep</td>
@@ -268,32 +264,89 @@
 				<td class="text">dialect.connection.compress=true<br>schema.primaryKeyGenerator=sequence<br></td>
 			</tr>
 			<tr>
-				<td class="text" rowspan="3">Oracle <small>(3x)</small></td>
-				<td class="text" rowspan="3">Oracle Database 11g Release 11.2.0.1.0 - 64bit Production</td>
-				<td class="text" rowspan="3">Oracle JDBC driver</td>
-				<td class="text" rowspan="3">11.2.0.4.0</td>
-				<td class="text">ora</td>
+				<td class="text" rowspan="17">8.0.20 <small>(17x)</td>
+				<td class="text" rowspan="10">MySQL Connector/J <small>(10x)</small></td>
+				<td class="text" rowspan="10">mysql-connector-java-8.0.21 (Revision: 33f65445)</td>
+				<td class="text">my80</td>
 				<td class="text"></td>
 			</tr>
 			<tr>
-				<td class="text">ora-nstmp</td>
+				<td class="text">my80-compress</td>
+				<td class="text">dialect.rowFormat=COMPRESSED<br></td>
+			</tr>
+			<tr>
+				<td class="text">my80-legacy</td>
+				<td class="text">disableSupport.nativeDate=true<br>disableSupport.semicolon=true<br></td>
+			</tr>
+			<tr>
+				<td class="text">my80-nprep</td>
+				<td class="text">disableSupport.preparedStatements=true<br></td>
+			</tr>
+			<tr>
+				<td class="text">my80-nstmp</td>
 				<td class="text">cache.stamps=false<br></td>
 			</tr>
 			<tr>
-				<td class="text">ora-sq</td>
+				<td class="text">my80-nstmp-sq</td>
+				<td class="text">cache.stamps=false<br>dialect.fullSequenceColumnName=false<br>schema.primaryKeyGenerator=sequence<br></td>
+			</tr>
+			<tr>
+				<td class="text">my80-sq</td>
 				<td class="text">schema.primaryKeyGenerator=sequence<br></td>
 			</tr>
 			<tr>
+				<td class="text">my80-sqb</td>
+				<td class="text">schema.primaryKeyGenerator=batchedSequence<br></td>
+			</tr>
+			<tr>
+				<td class="text">my80-unique</td>
+				<td class="text">disableSupport.uniqueViolation=true<br></td>
+			</tr>
+			<tr>
+				<td class="text">my80-z</td>
+				<td class="text">dialect.connection.compress=true<br>schema.primaryKeyGenerator=sequence<br></td>
+			</tr>
+			<tr>
+				<td class="text" rowspan="7">MariaDB connector/J <small>(7x)</small></td>
+				<td class="text" rowspan="7">2.2.1</td>
+				<td class="text">my80m</td>
+				<td class="text"></td>
+			</tr>
+			<tr>
+				<td class="text">my80m-legacy</td>
+				<td class="text">disableSupport.nativeDate=true<br>disableSupport.semicolon=true<br></td>
+			</tr>
+			<tr>
+				<td class="text">my80m-nprep</td>
+				<td class="text">disableSupport.preparedStatements=true<br></td>
+			</tr>
+			<tr>
+				<td class="text">my80m-nstmp</td>
+				<td class="text">cache.stamps=false<br></td>
+			</tr>
+			<tr>
+				<td class="text">my80m-nstmp-sq</td>
+				<td class="text">cache.stamps=false<br>dialect.fullSequenceColumnName=false<br>schema.primaryKeyGenerator=sequence<br></td>
+			</tr>
+			<tr>
+				<td class="text">my80m-sq</td>
+				<td class="text">schema.primaryKeyGenerator=sequence<br></td>
+			</tr>
+			<tr>
+				<td class="text">my80m-z</td>
+				<td class="text">dialect.connection.compress=true<br>schema.primaryKeyGenerator=sequence<br></td>
+			</tr>
+			<tr>
 				<td class="text" rowspan="12">PostgreSQL <small>(12x)</small></td>
-				<td class="text" rowspan="6">9.6.15</td>
-				<td class="text" rowspan="12">PostgreSQL JDBC Driver</td>
+				<td class="text" rowspan="6">9.6.19 <small>(6x)</small></td>
+				<td class="text" rowspan="12">PostgreSQL JDBC Driver <small>(12x)</small></td>
 				<td class="text" rowspan="12">42.2.9</td>
 				<td class="text">pg96</td>
 				<td class="text"></td>
 			</tr>
 			<tr>
 				<td class="text">pg96-mysql</td>
-				<td class="text">disableSupport.nativeDate=true<br></td>
+				<td class="text">disableSupport.nativeDate=true<br>disableSupport.semicolon=true<br></td>
 			</tr>
 			<tr>
 				<td class="text">pg96-nprep</td>
@@ -305,20 +358,20 @@
 			</tr>
 			<tr>
 				<td class="text">pg96-public</td>
-				<td class="text">dialect.search_path=public<br>schema.primaryKeyGenerator=sequence<br></td>
+				<td class="text">dialect.connection.schema=public<br>schema.primaryKeyGenerator=sequence<br></td>
 			</tr>
 			<tr>
 				<td class="text">pg96-sq</td>
 				<td class="text">dialect.pgcryptoSchema=&lt;disabled&gt;<br>schema.primaryKeyGenerator=sequence<br></td>
 			</tr>
 			<tr>
-				<td class="text" rowspan="6">11.5 (Debian 11.5-1+deb10u1)</td>
+				<td class="text" rowspan="6">11.7 (Debian 11.7-2.pgdg90+1) <small>(6x)</small></td>
 				<td class="text">pg11</td>
 				<td class="text"></td>
 			</tr>
 			<tr>
 				<td class="text">pg11-mysql</td>
-				<td class="text">disableSupport.nativeDate=true<br></td>
+				<td class="text">disableSupport.nativeDate=true<br>disableSupport.semicolon=true<br></td>
 			</tr>
 			<tr>
 				<td class="text">pg11-nprep</td>
@@ -330,7 +383,7 @@
 			</tr>
 			<tr>
 				<td class="text">pg11-public</td>
-				<td class="text">dialect.search_path=public<br>schema.primaryKeyGenerator=sequence<br></td>
+				<td class="text">dialect.connection.schema=public<br>schema.primaryKeyGenerator=sequence<br></td>
 			</tr>
 			<tr>
 				<td class="text">pg11-sq</td>
