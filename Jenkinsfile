@@ -28,15 +28,14 @@ timestamps
 
 				sh "${antHome}/bin/ant clean jenkins"
 
-				warnings(
-						canComputeNew: true,
-						canResolveRelativePaths: true,
-						categoriesPattern: '',
-						consoleParsers: [[parserName: 'Java Compiler (javac)']],
-						defaultEncoding: '', excludePattern: '', healthy: '', includePattern: '', messagesPattern: '', unHealthy: '',
-						unstableTotalAll: '0',
-						usePreviousBuildAsReference: false,
-						useStableBuildAsReference: false,
+				recordIssues(
+						failOnError: true,
+						enabledForFailure: true,
+						ignoreFailedBuilds: false,
+						qualityGates: [[threshold: 1, type: 'TOTAL', unstable: true]],
+						tools: [
+							java(),
+						],
 				)
 
 				sh "git status --porcelain --untracked-files=normal > git-status.txt"
