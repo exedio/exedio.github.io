@@ -1,10 +1,10 @@
 
 timestamps
 {
-	def jdk = 'openjdk-11-deb10'
+	def jdk = 'openjdk-11'
 
 	//noinspection GroovyAssignabilityCheck
-	node('GitCloneExedio && ' + jdk)
+	node('GitCloneExedio && docker')
 	{
 		try
 		{
@@ -15,10 +15,6 @@ timestamps
 
 				checkout scm
 
-				env.JAVA_HOME = tool jdk
-				env.PATH = "${env.JAVA_HOME}/bin:${env.PATH}"
-				def antHome = tool 'Ant version 1.9.3'
-
 				properties([
 						buildDiscarder(logRotator(
 								numToKeepStr         : '1000',
@@ -26,7 +22,20 @@ timestamps
 						))
 				])
 
-				sh "${antHome}/bin/ant clean jenkins"
+				def dockerName = env.JOB_NAME.replace("/", "-") + "-" + env.BUILD_NUMBER
+				def dockerDate = new Date().format("yyyyMMdd")
+				def mainImage = docker.build(
+						'exedio-jenkins:' + dockerName + '-' + dockerDate,
+						'--build-arg JDK=' + jdk + ' ' +
+						'conf/main')
+				mainImage.inside(
+						"--name '" + dockerName + "' " +
+						"--cap-drop all " +
+						"--security-opt no-new-privileges " +
+						"--network none")
+				{
+					sh "ant -noinput clean jenkins"
+				}
 
 				recordIssues(
 						failOnError: true,
