@@ -34,7 +34,7 @@ timestamps
 						"--security-opt no-new-privileges " +
 						"--network none")
 				{
-					sh "ant -noinput clean jenkins"
+					sh "java -jar submodules/persistence/ant/lib/ant-launcher.jar -noinput clean jenkins"
 				}
 
 				recordIssues(
