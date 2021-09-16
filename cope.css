@@ -21,12 +21,12 @@
 	display: block;
 	bottom: -40px;
 	right: 0;
-	width: 100px;
-	height:30px;
+	width: 154px;
+	height: 24px;
 	z-index: 10;
 	text-indent: -5000px;
 	overflow: hidden;
-	background: url('https://api.travis-ci.org/exedio/persistence.svg?branch=master') no-repeat 0% 90%;
+	background: url('https://github.com/exedio/persistence/actions/workflows/ant.yml/badge.svg?branch=master') no-repeat 0% 90%;
 }
 
 a.validhtml
