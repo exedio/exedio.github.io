@@ -49,7 +49,7 @@ timestamps
 
 				sh "git status --porcelain --untracked-files=normal > git-status.txt"
 				def gitStatus = readFile('git-status.txt')
-				if(gitStatus!=' M api/overview-summary.html\n?? git-status.txt\n')
+				if(gitStatus!='?? git-status.txt\n')
 				{
 					archive 'git-status.txt'
 					currentBuild.result = 'FAILURE';
