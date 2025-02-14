@@ -118,7 +118,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/AutoCloseab
 <div class="block">Implementations of VaultService must conform to the requirements set by
  <a href="../util/Properties.html#valueService(java.lang.String,java.lang.Class,java.lang.Class)"><code>Properties.valueService</code></a>.
  <p>
- It is highly recommended to override <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#toString()" title="class or interface in java.lang" class="externalLink"><code>toString</code></a> with a informative message
+ It is highly recommended to override <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#toString--" title="class or interface in java.lang" class="externalLink"><code>toString</code></a> with a informative message
  containing essential configuration of the service.
  For instance, this message is included into the result of <a href="../ConnectProperties.html#probe()"><code>ConnectProperties.probe()</code></a>.
  <p>
@@ -162,8 +162,8 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/AutoCloseab
    <a href="https://docs.oracle.com/javase/8/docs/api/java/io/OutputStream.html?is-external=true" title="class or interface in java.io" class="externalLink">OutputStream</a>&nbsp;sink)</code></th>
 <td class="colLast">
 <div class="block">Must not
- <a href="https://docs.oracle.com/javase/8/docs/api/java/io/OutputStream.html?is-external=true#close()" title="class or interface in java.io" class="externalLink"><code>close</code></a> or
- <a href="https://docs.oracle.com/javase/8/docs/api/java/io/OutputStream.html?is-external=true#flush()" title="class or interface in java.io" class="externalLink"><code>flush</code></a> <code>sink</code>.</div>
+ <a href="https://docs.oracle.com/javase/8/docs/api/java/io/OutputStream.html?is-external=true#close--" title="class or interface in java.io" class="externalLink"><code>close</code></a> or
+ <a href="https://docs.oracle.com/javase/8/docs/api/java/io/OutputStream.html?is-external=true#flush--" title="class or interface in java.io" class="externalLink"><code>flush</code></a> <code>sink</code>.</div>
 </td>
 </tr>
 <tr id="i3" class="rowColor">
@@ -248,7 +248,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/AutoCloseab
  Also requires implementations not to declare any checked exception to be thrown.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/AutoCloseable.html?is-external=true#close()" title="class or interface in java.lang" class="externalLink">close</a></code>&nbsp;in interface&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/AutoCloseable.html?is-external=true" title="class or interface in java.lang" class="externalLink">AutoCloseable</a></code></dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/AutoCloseable.html?is-external=true#close--" title="class or interface in java.lang" class="externalLink">close</a></code>&nbsp;in interface&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/AutoCloseable.html?is-external=true" title="class or interface in java.lang" class="externalLink">AutoCloseable</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -295,8 +295,8 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/AutoCloseab
   throws <a href="VaultNotFoundException.html" title="class in com.exedio.cope.vault">VaultNotFoundException</a>,
          <a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io" class="externalLink">IOException</a></pre>
 <div class="block">Must not
- <a href="https://docs.oracle.com/javase/8/docs/api/java/io/OutputStream.html?is-external=true#close()" title="class or interface in java.io" class="externalLink"><code>close</code></a> or
- <a href="https://docs.oracle.com/javase/8/docs/api/java/io/OutputStream.html?is-external=true#flush()" title="class or interface in java.io" class="externalLink"><code>flush</code></a> <code>sink</code>.
+ <a href="https://docs.oracle.com/javase/8/docs/api/java/io/OutputStream.html?is-external=true#close--" title="class or interface in java.io" class="externalLink"><code>close</code></a> or
+ <a href="https://docs.oracle.com/javase/8/docs/api/java/io/OutputStream.html?is-external=true#flush--" title="class or interface in java.io" class="externalLink"><code>flush</code></a> <code>sink</code>.
  <p>
  If this method throws a <a href="VaultNotFoundException.html" title="class in com.exedio.cope.vault"><code>VaultNotFoundException</code></a>,
  it MUST not have modified <code>sink</code> in any way.

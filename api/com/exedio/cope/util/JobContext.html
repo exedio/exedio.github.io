@@ -322,7 +322,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Sleeps for the specified duration.
  In contrast to <a href="#deferOrStopIfRequested(com.exedio.cope.util.JobContext)"><code>deferOrStopIfRequested(JobContext)</code></a> this method actually waits
  for the specified amount of time.
- In contrast to <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Thread.html?is-external=true#sleep(long)" title="class or interface in java.lang" class="externalLink"><code>Thread.sleep</code></a> it aborts prematurely
+ In contrast to <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Thread.html?is-external=true#sleep-long-" title="class or interface in java.lang" class="externalLink"><code>Thread.sleep</code></a> it aborts prematurely
  by throwing a <a href="JobStop.html" title="class in com.exedio.cope.util"><code>JobStop</code></a>,
  if the the job has been requested to stop or
  becomes requested to stop while sleeping.
@@ -340,7 +340,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
  <a href="#stopIfRequested()"><code>stopIfRequested()</code></a> every 100 milliseconds.
  Implementers are encouraged to provide a more efficient implementation.
  The default implementation fails for <code>duration</code>s
- too large for <a href="https://docs.oracle.com/javase/8/docs/api/java/time/Duration.html?is-external=true#toNanos()" title="class or interface in java.time" class="externalLink"><code>Duration.toNanos()</code></a>, which is approximately 292 years.</div>
+ too large for <a href="https://docs.oracle.com/javase/8/docs/api/java/time/Duration.html?is-external=true#toNanos--" title="class or interface in java.time" class="externalLink"><code>Duration.toNanos()</code></a>, which is approximately 292 years.</div>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code><a href="JobStop.html" title="class in com.exedio.cope.util">JobStop</a></code></dd>
@@ -359,7 +359,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Sleeps for the specified duration.
  In contrast to <a href="#deferOrStopIfRequested(com.exedio.cope.util.JobContext)"><code>deferOrStopIfRequested(JobContext)</code></a> this method actually waits
  for the specified amount of time.
- In contrast to <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Thread.html?is-external=true#sleep(long)" title="class or interface in java.lang" class="externalLink"><code>Thread.sleep</code></a> it aborts prematurely
+ In contrast to <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Thread.html?is-external=true#sleep-long-" title="class or interface in java.lang" class="externalLink"><code>Thread.sleep</code></a> it aborts prematurely
  by throwing a <a href="JobStop.html" title="class in com.exedio.cope.util"><code>JobStop</code></a>,
  if the the job has been requested to stop or
  becomes requested to stop while sleeping.
