@@ -116,7 +116,7 @@ String imageName(String pipelineBranch, String subImage = '')
 {
 	String isoToday = new Date().format("yyyyMMdd")
 	String name = 'exedio-jenkins:' + jobNameAndBuildNumber() + '-' + pipelineBranch + '-' + isoToday
-	if (!subImage.isBlank()) name += '-' + subImage
+	if (!subImage.isEmpty()) name += '-' + subImage
 	return name
 }
 
